@@ -1,7 +1,3 @@
----
-title: "FAQs"
-excerpt: ""
----
 ## Can I keep my `AION ERC-20` and not participate in the Swap?
 
 No. There will be no future utility for the `AION ERC-20` token after the swap period, and consequently, we will be removing support for the `AION ERC-20` token at the end of November. If you opt out of the token swap process your `AION ERC-20` tokens will not retain their value in the future.

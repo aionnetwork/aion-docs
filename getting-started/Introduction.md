@@ -1,7 +1,3 @@
----
-title: "Introduction"
-excerpt: "Welcome to the Official Aion documentation."
----
 # Getting Started
 
 Welcome to the Aion Documentation Hub! Here you can find reference docs, users guides, and basic tutorials on how to get up and running with Aion.

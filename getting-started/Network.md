@@ -1,7 +1,3 @@
----
-title: "Network"
-excerpt: "This section details the different networks available on Aion."
----
 There are two public networks available on the Aion platform, **mainnet** and **mastery**.
 
 # Mainnet
