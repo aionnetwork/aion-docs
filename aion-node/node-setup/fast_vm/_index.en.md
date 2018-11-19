@@ -21,7 +21,7 @@ This virtual machine is a modified version of the Ethereum Virtual Machine (EVM)
 
 One of the major changes between the EVN and the FastVM is that the word-size has been reduced from 256 to 128. Another major change is the introduction of LLVM JIT as the execution engine. We wrote a [detailed blog post](https://blog.aion.network/aionfastvm-c5ccd1628da0) about these changes.
 
-## Prerequisites
+## Prerequisites for FastVM
 
 Ubuntu 16.04 or 18.04
 
@@ -33,13 +33,13 @@ Ubuntu 16.04 or 18.04
 sudo apt install build-essential llvm-4.0-dev libboost-all-dev libjsoncpp-dev git
 ```
 
-2. Clone the Aion FastVM repository: 
+2. Clone the Aion FastVM repository:
 
 ```bash
 git clone https://github.com/aionnetwork/aion_fastvm.git
 ```
 
-3. Build the virtual machine by using the `Makefile`: 
+3. Build the virtual machine by using the `Makefile`:
 
 ```bash
 cd aion_fastvm
@@ -48,7 +48,7 @@ make
 
 4. Build the Solidity compiler:
 
-```
+```bash
 cd solidity
 make
 ```
@@ -67,7 +67,7 @@ Docker allows you to run virtual machines using the underlying unix sub-system o
 
 The benefit this Docker Image has over the FastVM, is that there is very little setup required.
 
-## Prerequisites
+## Prerequisites for Docker
 
 You must have [Docker](https://www.docker.com/) installed on you machine in order to run the Docker image. Docker runs on Linux, macOS, and Windows.
 
@@ -76,7 +76,7 @@ You must have [Docker](https://www.docker.com/) installed on you machine in orde
 1. Make sure that [Docker](https://www.docker.com/) is installed. You should be able to run `docker --version` and get something like this:
 
 ```bash
-$ Docker version 18.06.1-ce, build e68fc7a
+> Docker version 18.06.1-ce, build e68fc7a
 ```
 
 2. Run `docker pull satran004/aion-fastvm:0.3.1` to pull in the latest Docker image.

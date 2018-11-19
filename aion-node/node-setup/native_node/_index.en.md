@@ -13,14 +13,14 @@ Native nodes are ran on your local machine or server. You can either run one of 
 Use one of the pre-compiled packages to get up and running faster.
 
 1. Connect to your machine via SSH or open a terminal if you are working on a local installation.
-2. Change to your root `~` directory and update your system: 
+2. Change to your root `~` directory and update your system:
 
 ```bash
 cd ~
 sudo apt update -y && sudo apt upgrade -y
 ```
 
-3. Download and unzip the latest Aion build from https://github.com/aionnetwork/aion/releases: 
+3. Download and unzip the [latest Aion build from](https://github.com/aionnetwork/aion/releases):
 
 ```bash
 wget https://github.com/aionnetwork/aion/releases/download/v0.3.1/aion-v0.3.1.dcaf9e8-2018-08-30.tar.bz2
@@ -36,7 +36,7 @@ tar xvjf aion-v0.3.1.dcaf9e8-2018-08-30.tar.bz2
 5. Enter a password. You should write this down, you'll need it later.
 6. The terminal shows an account address. Copy it down somewhere, as you'll need this later.
 
-```
+```bash
 user@local:~$ ~/.aion/aion.sh -a create
 Please enter a password:
 Please re-enter your password:
@@ -47,13 +47,13 @@ user@local:~$ _
 
 7. The build script creates a keystore file in `aion/keystore`. Create a backup of the file:
 
-**On a Local Machine**
+## On a Local Machine
 
 ```bash
-cp ~/aion/keystore/* ~/Documents/aion-keystore 
+cp ~/aion/keystore/* ~/Documents/aion-keystore
 ```
 
-**On a Remote Machine (via SSH)**
+## On a Remote Machine over SSH
 
 Replace `user` and `node_id_address` with your credentials.
 
@@ -61,9 +61,9 @@ Replace `user` and `node_id_address` with your credentials.
 scp user@node_ip_address:~/aion/keystore/* ~/Desktop
 ```
 
-8. Start syncing your node:
+1. Start syncing your node:
 
-```
+```bash
 ~/aion/aion.sh
 ```
 
@@ -95,7 +95,7 @@ sudo apt install -y git g++ cmake wget llvm-4.0 lsb-release libjsoncpp1 libjsonc
 2. Clone the Aion repository:
 
 ```bash
-git clone --recursive https://github.com/aionnetwork/aion 
+git clone --recursive https://github.com/aionnetwork/aion
 ```
 
 3. Edit you `$PATH` by changing your `.bash_rc` file:
@@ -120,6 +120,6 @@ ant pack_build
 ant test
 ```
 
-6. Once the build has finished, you should be able to see a file like `aion-v<KERNEL VERSION>.<GIT REVISION>-<BUILD DATE>.tar.bz2` within the `pack` directory. This is your kernel build. 
+6. Once the build has finished, you should be able to see a file like `aion-v<KERNEL VERSION>.<GIT REVISION>-<BUILD DATE>.tar.bz2` within the `pack` directory. This is your kernel build.
 
 You can use the [precompiled package instructions](#section-precompiled-packages) to install your Aion kernel. You do not have to install the kernel on the same machine you used to build the package.

@@ -22,7 +22,7 @@ The [Aion White Papers](https://aion.network/developers/#whitepapers) provides m
 
 If you're interested in application development on Aion or make improvements to the Java Implementation of Aion:
 
-- Refer to the details in the [Build Your Aion Network]() wiki to determine how to start setting up and building your Aion Network.
+- Refer to the details in the [Build Your Aion Network](/aion-node/networks/local-blockchain) wiki to determine how to start setting up and building your Aion Network.
 - Refer to the [Installation](https://github.com/aionnetwork/aion/wiki/Installation) wiki for a guide on installing and configuring the kernel.
 - The [Owner's Manual](https://github.com/aionnetwork/aion/wiki/Aion-Owner's-Manual) wiki will include further instructions and details on working with the kernel.
 
