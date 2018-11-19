@@ -14,7 +14,7 @@ If you don't have an existing testnet you wish to migrate, you can:
 2. Extract the files and navigate into the `aion` directory
 3. Launch the testnet kernel by running:
 
-```
+```bash
 ./aion.sh
 ```
 
