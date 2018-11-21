@@ -9,30 +9,68 @@ chapter: true
 From a terminal, you can interact with Aion though the command line interface which offers the following options:
 
 ```bash
-    Usage: ./aion.sh [options] [arguments]
+Usage: ./aion.sh [OPTIONS] [ARGUMENTS]
+    -h, --help
+        display help information
 
-    -h                                  show help info
+    ac, -a create, --account create
+        create a new account
 
-    -a create                           create a new account
-    -a list                             list all existing accounts
-    -a export [address]                 export private key of an account
-    -a import [private_key]             import private key
+    al, -a list, --account list
+        list all existing accounts
 
-    -c [network]                        create config with default values to select network
+    ae, -a export, --account export <account>
+        export private key of an account
 
-    -n, --network [network]             execute kernel with selected network
+    ai, -a import, --account import <key>
+        import private key
 
-    -d, --datadir [directory]           execute kernel with selected database directory
+    -c, --config [<network>]
+        create config for the selected network
+            options: mainnet, conquest, mastery
 
-    -i                                  show information
+    -i, --info
+        display information
 
-    -s create                           create an ssl certificate for localhost
-    -s create [[hostname] [ip]]         create an ssl certificate for a custom hostname and ip
+    -v
+        display version
 
-    -r                                  remove blocks on side chains and correct block info
-    -r [block_number]                   revert db up to specific block number
+    --version
+        display version tag
 
-    -v                                  show version
+    sc, -s create [<hostname> <ip>]
+        create a ssl certificate for:
+            - localhost (when no parameters are given), or
+            - the given hostname and ip
+  
+    pb, --prune-blocks
+        remove blocks on side chains and update block info
+  
+    -r, --revert <block_number>
+        revert database state to given block number
+
+    -n, --network <network>
+        execute kernel with selected network
+            options: mainnet, conquest, mastery
+
+    -d, --datadir <directory>
+        execute kernel with selected database directory
+
+    ps, --state <prune_mode>
+        reorganize the state storage
+            options: FULL, TOP, SPREAD
+
+    --dump-blocks [<block_count>]
+        print top blocks from database
+
+    --dump-state-size [<block_count>]
+        retrieves the state size (node count) for the top blocks
+
+    --dump-state [<block_count>]
+        retrieves the state for the top main chain blocks
+
+    --db-compact
+        if using leveldb, it triggers its database compaction processes
 ```
 
 ## Multi-Arguments CLI
@@ -68,20 +106,3 @@ Generates new `config.xml` file at the project's root directory.
 ```
 
 If the parameters are not valid, the kernel will not execute. If the config folder does't exist, the config folder and config file will be generated at the project's root directory.
-
-### Creating new accounts `(-a)`
-
-```bash
-./aion.sh -a create -n [valid network] -d [valid datadir]
-./aion.sh -a list -n [valid network] -d [valid datadir]
-./aion.sh -a export [valid address] -n [valid network] -d [valid datadir]
-./aion.sh -a import [private key] -n [valid network] -d [valid datadir]
-```
-
-Creates a new account using the specified datadir and network path:
-
-```bash
-/home/aion/[datadir]/[network]/keystore
-```
-
-Invalid parameters - or no parameters - will set to default keystore folder. If the `datadir` directory doesn't exist, the keystore account will generate the new directory.
