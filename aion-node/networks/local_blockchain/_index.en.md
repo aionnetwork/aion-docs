@@ -8,9 +8,17 @@ chapter: true
 
 Before getting started on this section, make sure you have already [set-up your node and created an account](/aion-node/node-setup).
 
+## Connecting to a Local Blockchain
+
+To connect to a custom blockchain network, use the `-n` network flag when calling the `aion` binary:
+
+```bash
+./aion.sh -n custom
+```
+
 ## Modify Configure File Names
 
-Note that your `aion/config` folder contains two JSON files:
+Note that your `aion/config/custom` folder contains two JSON files:
 
 - `genesis.json`
 - `testnet.json`
@@ -24,7 +32,7 @@ This lowers the difficulty of the network for testing & development purposes.
 
 ## Configure the `config.xml`
 
-1. Navigate to the `aion/config` folder and open `config.xml`.
+1. Navigate to the `aion/config/custom` folder and open `config.xml`.
 2. Delete all the seed nodes in the `<nodes>` section:
 
 ```json
@@ -69,4 +77,4 @@ This lowers the difficulty of the network for testing & development purposes.
 
 ## Remove any Existing Databases
 
-If applicable, delete the `aion/database` folder and reboot the node in order for genesis to take in effect.
+If applicable, delete the `aion/database/custom` folder and reboot the node in order for genesis to take in effect.

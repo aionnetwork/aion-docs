@@ -69,6 +69,10 @@ These log levels maps directly to logback's log levels. `OFF` turns off all the 
 
 Note that the `ROOT` logger maps to the logback root logger, and captures all logs not emitted directly by any of the modules.
 
+### Absolute Paths
+
+The logs now allow for absolute paths. Absolute paths refer to a very specific location on the your computer, and do not use aliases such as `~`.
+
 ### Rolling Persistent Logs
 
 The kernel's logger is configured to persist all generated log data into the log folder by default. The logs roll-over every data at midnight, and every time a log file gets larger than `100MB`.
