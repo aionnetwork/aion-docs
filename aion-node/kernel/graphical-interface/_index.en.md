@@ -30,7 +30,7 @@ If a kernel process is launched by the GUI and then terminated by some mechanism
 
 ### Slow Transaction History Update
 
-Recently sent transactions sometimes are slow to appear. 
+Recently sent transactions sometimes are slow to appear.
 
 #### Resolution
 
@@ -77,13 +77,13 @@ This window should open shortly:
 
 The GUI can be used to launch an instance of the kernel by clicking **Launch Kernel** in the dashboard screen. After a kernel has been launched, it can be terminated by clicking **Terminate kernel**. The status of the kernel is indicated in the bottom-right corner:
 
- - `NOT RUNNING`: Kernel is not running
+- `NOT RUNNING`: Kernel is not running
 
- - `CONNECTING`: Kernel is running, but the GUI has not yet connected to it.
+- `CONNECTING`: Kernel is running, but the GUI has not yet connected to it.
 
- - `CONNECTED`: Kernel is running and GUI is connected to it.
+- `CONNECTED`: Kernel is running and GUI is connected to it.
 
- - `DISCONNECTED`: Kernel is running but the GUI is not connected to it. This is the state when kernel termination is in progress, but kernel has not yet exited.
+- `DISCONNECTED`: Kernel is running but the GUI is not connected to it. This is the state when kernel termination is in progress, but kernel has not yet exited.
 
 **Note: Upon kernel launch, it must run an integrity check for its database. During this time, the GUI will be in `CONNECTING` state. For large databases, this can take some time.**
 
@@ -144,8 +144,8 @@ Clicking on **Add account** after creating the first account will automatically 
 
 There are two options to import an existing account:
 
- - Import using a keystore file and password.
- - Import using a private key.
+- Import using a keystore file and password.
+- Import using a private key.
 
 #### Import with Keystore File
 
@@ -165,7 +165,7 @@ There are two options to import an existing account:
 
 There is a **Remember Me** option when importing accounts. Selecting this will display your imported accounts even if you re-launch your wallet. If this option is not selected, you will have to reimport these accounts if you re-launch the Aion Desktop Wallet.
 
-**Export Account**
+#### Export Account
 
 You may wish to save your accounts created on the Aion Wallet elsewhere. In this case, you will need to export the wallet (using the icon right of the accounts listing) and save the keystore file in your desired location. Note that the password you input here will be the new password to access the keystore file:
 
