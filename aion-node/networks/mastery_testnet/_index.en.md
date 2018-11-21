@@ -6,29 +6,17 @@ chapter: true
 
 # Mastery Testnet
 
-This is the guide for the [Aion Mastery testnet](https://mastery.aion.network/#/dashboard).
-
-If you don't have an existing testnet you wish to migrate, you can:
-
-1. [Download Mastery here](https://github.com/aionnetwork/aion/releases/tag/v0.3.0.q)
-2. Extract the files and navigate into the `aion` directory
-3. Launch the testnet kernel by running:
+You can now connect and sync to the _Mastery_ testnet using the same binary as the mainnet.
 
 ```bash
-./aion.sh
+./aion.sh -n mastery
 ```
 
-This will begin syncing your node from genesis. Note that any changes made to ``config.xml`` requires you to re-deploy the node. For more indepth instructions on how to install a local node on the _Mastery_ test nework, see [Native Node](/aion-node/node-setup/native_node).
-
-[block:callout]
-{
-  "type": "info",
-  "title": "Database",
-  "body": "Migrating from Conquest to Mastery requires resetting the database. If you want to maintain your data on the Conquest testnet, please **backup your database folder.**"
-}
-[/block]
+This will begin syncing your node from genesis. Note that any changes made to `config.xml` requires you to re-deploy the node. For more indepth instructions on how to install a local node on the _Mastery_ test nework, see [Native Node](/aion-node/node-setup/native_node).
 
 ## Migrating from Conquest to Mastery
+
+Migrating from Conquest to Mastery requires resetting the database. If you want to maintain your data on the Conquest testnet, please **backup your database folder.**
 
 Before the migration, you should also backup the `keystore` and `config` folders from the aion kernel for the Conquest network.
 
@@ -51,7 +39,7 @@ If your configuration settings are broken, or if you just want to start with a f
 2. Launch the node by running:
 
 ```bash
-./aion.sh -c
+./aion.sh -n mastery -c
 ```
 
 This will create a new `config.xml` file with the default config settings. Alternatively, you can copy and paste the contents of [this file](https://github.com/aionnetwork/aion/blob/testnet_q3_mastery/modBoot/resource/`config.xml`).
