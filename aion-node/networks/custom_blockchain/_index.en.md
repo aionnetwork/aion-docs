@@ -1,10 +1,10 @@
 ---
-title: Local Blockchain
+title: Custom Blockchain
 weight: 1
 chapter: true
 ---
 
-# Local Blockchain
+# Custom Blockchain
 
 Before getting started on this section, make sure you have already [set-up your node and created an account](/aion-node/node-setup).
 
