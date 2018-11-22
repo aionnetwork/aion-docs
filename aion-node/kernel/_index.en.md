@@ -4,21 +4,13 @@ weight: 1
 chapter: true
 ---
 
-# Kernel Overview
+Aion has lots of different aspects and products, and everything can get a bit confusing. If you think of the Aion network like a train, the kernel is the engine. It's the thing that does all the hard work, computing all the processes, and pulling the rest of the network along.
 
-Mainstream adoption of blockchains has been limited because of scalability, privacy, and interoperability challenges. Aion is a multi-tier blockchain network designed to address these challenges.
+Things like the FastVM, local nodes, and third party hosting services all use a copy of the Aion kernel. They are just different methods of hosting the same thing. The [Aion White Papers](https://aion.network/developers/#whitepapers) provide a deeper look into what the kernel is and how it works.
 
-Core to our hypothesis is the idea that many blockchains will be created to solve unique business challenges within unique industries. As such, the Aion network is designed to support custom blockchain architectures while providing a trustless mechanism for cross-chain interoperability.
+This section of the docs goes over how to configure and interact with the kernel directly. If you're looking to develop the Aion kernel itself, or mine on Aion, then this section is for you! If you're just looking to create some Dapps, then you can leave this section for now.
 
-The [Aion White Papers](https://aion.network/developers/#whitepapers) provides more details regarding our design and project roadmap.
-
-## System Requirements
-
-- **Ubuntu 16.04** or a later version
-
-## Getting Started
-
-### Developers
+## Aion Kernel Development
 
 If you're interested in application development on Aion or make improvements to the Java Implementation of Aion:
 
@@ -26,12 +18,6 @@ If you're interested in application development on Aion or make improvements to 
 - Refer to the [Installation](https://github.com/aionnetwork/aion/wiki/Installation) wiki for a guide on installing and configuring the kernel.
 - The [Owner's Manual](https://github.com/aionnetwork/aion/wiki/Aion-Owner's-Manual) wiki will include further instructions and details on working with the kernel.
 
-Please refer to the [wiki pages](https://github.com/aionnetwork/aion/wiki) for further documentation on mining, using the Web3 API, command line options, etc.
+## Miners
 
-### Miners
-
-If you're interested in mining on the Aion networks, refer to our [Aion Mining Docs](https://docs.aion.network/docs/aion-mining-overview)
-
-### Users
-
-If you're interested in interacting with dApps and _using_ Aion, refer to our [Aion Desktop Wallet Docs](https://docs.aion.network/docs/aion-desktop-wallet)
+If you're interested in mining on the Aion networks, refer to our [Aion Mining Docs](/docs/aion-mining-overview)
