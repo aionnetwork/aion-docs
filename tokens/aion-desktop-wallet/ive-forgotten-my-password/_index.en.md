@@ -1,3 +1,11 @@
+---
+title: I've Forgotten My Password
+weight: 1
+chapter: true
+---
+
+# I've Forgotten My Password
+
 If you forget the password to your Aion wallet, follow these steps to attempt to recover your wallet. You need to have your `mnemonic` / `seed phrase` ready. 
 
 

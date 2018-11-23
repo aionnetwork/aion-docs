@@ -1,3 +1,11 @@
+---
+title: Interact with your Wallet
+weight: 1
+chapter: true
+---
+
+# Interact with your Wallet
+
 [block:api-header]
 {
   "title": "Open your Wallet"

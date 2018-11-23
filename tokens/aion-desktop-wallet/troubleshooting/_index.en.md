@@ -1,8 +1,16 @@
-# Obtaining Logs
+---
+title: Troubleshooting
+weight: 1
+chapter: true
+---
+
+# TroubleShooting
+
+## Obtaining Logs
 
 If our support team have requested logs off you, follow the process for the operating system to retrieve them.
 
-## Linux / macOS
+### Linux / macOS
 
 The `log` file is stored at `~/.aion/logs`. You can copy the contents of the folder to your Desktop by running `cp -r ~/.aion/logs ~/Desktop`. You may need to run this command as `sudo`. The `log` file is now on your Desktop.
 
@@ -23,7 +31,8 @@ You can now email this file to [support@aion.network](mailto:support@aion.networ
   ]
 }
 [/block]
-## Windows
+
+### Windows
 
 To view the Aion Desktop Wallet logs in Windows, navigate to `c:\Users\Your_Username` replacing `Your_Username` with your Windows username. You may need to [enable viewing of hidden files and folders](//support.microsoft.com/en-ca/help/4028316/windows-view-hidden-files-and-folders-in-windows-10).
 [block:image]
@@ -44,7 +53,7 @@ To view the Aion Desktop Wallet logs in Windows, navigate to `c:\Users\Your_User
 [/block]
 You can now email this file to [support@aion.network](mailto:support@aion.network) when requested.
 
-# Problems with Ledger
+## Problems with Ledger
 
 If you're having problems connecting your Ledger wallet to your Aion wallet, take a look at the troubleshooting steps below.
 
@@ -54,10 +63,14 @@ If you're having problems connecting your Ledger wallet to your Aion wallet, tak
 
 If you're still having issues after following these steps, please reach out to us at [support@aion.network](mailto:support@aion.network) or through any of [our community groups](http://aion.network/community/). We have encountered a decent amount of issues with Ledger in the latest Aion Desktop Wallet build, are we're currently trying to find a solution.
 
-# Windows and Antivirus Software
+## Windows and Antivirus Software
 
 Due to the nature and fast release of the Aion Desktop Wallet, the `.exe` is not signed. This can cause certain installations of Windows and / or antivirus software such as McAfee and AVG to flag the wallet as malicious.
 
 You may also encounter the following error: `CreateProcess failed code: 1450 insufficient system resources exist to complete the requested service.`
 
 We recommend validating your download, and then adding exception in your antivirus software for the Aion Desktop Wallet. The exception can be made temporarily until you have completed the swap process.
+
+## I can't Install the Wallet
+
+The Aion Desktop Wallet needs admin rights in order to be installed. If you are a _Standard User_ on

@@ -1,3 +1,11 @@
+---
+title: Installation
+weight: 1
+chapter: true
+---
+
+# Installation
+
 The Aion Desktop Wallet is a local application that is **stored and ran from your local machine**. It is not a cloud application.
 [block:parameters]
 {

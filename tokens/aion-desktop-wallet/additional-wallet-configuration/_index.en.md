@@ -1,3 +1,11 @@
+---
+title: Additional Wallet Configuration
+weight: 1
+chapter: true
+---
+
+# Additional Wallet Configuration
+
 [block:api-header]
 {
   "title": "Connect with a Remote Node"

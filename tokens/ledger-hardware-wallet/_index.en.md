@@ -1,3 +1,11 @@
+---
+title: Ledger Hardware Wallet
+weight: 1
+chapter: true
+---
+
+# Ledger Hardware Wallet
+
 The Ledger Nano S is a hardware wallet that connects to your computer through USB. It functions as a more secure way to store your private keys for AION accounts, and supports various other cryptocurrencies as well. An individual accessing a Ledger hardware wallet would need to have both the physical device and PIN code to access their crypto assets, and each transaction will need to be confirmed through the hardware wallet in order to be processed.
 
 You will need to install the Aion app on your Ledger device to manage AION coins with the Aion Desktop Wallet (walkthrough below). The Aion app is developed and supported by the [Aion community](https://aion.network/). 

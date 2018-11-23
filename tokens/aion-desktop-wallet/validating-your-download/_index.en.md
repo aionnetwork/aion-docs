@@ -1,3 +1,11 @@
+---
+title: Validating Your Download
+weight: 1
+chapter: true
+---
+
+# Validating Your Download
+
 In order to validate that your download and lower your chances of being caught in a [man-in-the-middle attack](https://en.wikipedia.org/wiki/Man-in-the-middle_attack), follow the instructions for your operating system.
 
 # Linux
