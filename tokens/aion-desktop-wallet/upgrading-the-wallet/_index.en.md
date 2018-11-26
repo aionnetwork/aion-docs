@@ -10,4 +10,12 @@ A new update for the Aion Desktop Wallet is available. In order to keep your `AI
 
 ## Linux / macOS
 
+1. First off, open a terminal and make a copy of your Aion data:
+
+```bash
+cp -r ~/.aion ~/.aion-old
+```
+
+2. 
+
 ## Windows
