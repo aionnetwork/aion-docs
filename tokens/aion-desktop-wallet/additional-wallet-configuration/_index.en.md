@@ -59,3 +59,10 @@ rm -rf ~/.aion
 ```
 
 3. Relaunch the **Aion Desktop Wallet**. You can now click on **Add an Account**.
+
+### Windows
+
+1. Go to `C:/Users/YOUR_USERNAME`.
+2. Turn on **Show hidden files and folders**.
+3. Delete `.aion`.
+4. Relaunch the **Aion Desktop Wallet**. You can now click on **Add an Account**.
