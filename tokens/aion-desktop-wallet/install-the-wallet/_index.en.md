@@ -8,20 +8,11 @@ chapter: true
 
 The Aion Desktop Wallet is a local application that is **stored and ran from your local machine**. It is not a cloud application.
 
-[block:parameters]
-{
-  "data": {
-    "h-0": "Mac",
-    "h-1": "Linux",
-    "h-2": "Windows",
-    "0-0": "[![Mac Logo](https://files.readme.io/ef347d5-if_apple-ios-system-platform-os-mac-linux_652586_1.png)](#section-mac)",
-    "0-1": "[![Linux Logo](https://files.readme.io/cac69d5-if_linux-server-system-platform-os-computer-penguin_652577_1.png)](#section-linux)",
-    "0-2": "[![Windows Logo](https://files.readme.io/133dd97-if_windows_1296843_1.png)](#section-windows)"
-  },
-  "cols": 3,
-  "rows": 1
-}
-[/block]
+![Linux Logo](images/linux-icon.png)
+
+![Apple Logo](images/apple-icon.png)
+
+![Windows Logo](images/windows-icon.png)
 
 ## Upgrading from a Previous Version
 
