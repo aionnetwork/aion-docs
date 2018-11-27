@@ -4,6 +4,12 @@ weight: 1
 chapter: true
 ---
 
+## Download
+
+If you're looking to download the kernel and get started right away, head on over to our Github where you can [download the latest release](https://github.com/aionnetwork/aion/releases). Also, take a look at the [Node Setup](https://docs.aion.network/docs/node-setup) docs to get a handle on what goes where.
+
+## Super Brief Overview
+
 Aion has lots of different aspects and products, and everything can get a bit confusing. If you think of the Aion network like a train, the kernel is the engine. It's the thing that does all the hard work, computing all the processes, and pulling the rest of the network along.
 
 Things like the FastVM, local nodes, and third party hosting services all use a copy of the Aion kernel. They are just different methods of hosting the same thing. The [Aion White Papers](https://aion.network/developers/#whitepapers) provide a deeper look into what the kernel is and how it works.
