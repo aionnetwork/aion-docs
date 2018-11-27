@@ -916,3 +916,81 @@ web3.utils.toTwosComplement(-15);
 web3.utils.toTwosComplement('-0x1');
 > "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
 ```
+
+## toNAmp
+
+```javascript
+web3.utils.toNAmp(number [, unit])
+```
+
+Converts any `Aion` value value into `Amp`. `Amp` are the smallest Aion unit, and you should always make calculations in `Amp` and convert only for display reasons.
+
+<h3>Parameters</h3>
+
+1. `number` - **String**|**Number**: The value.
+2. `unit` - **String** (optional, defaults to `aion`): The aion to convert from. Possible units are:
+    - `namp`: `1`,
+    - `uamp`: `1000`,
+    - `mamp`: `1000000`,
+    - `amp`: `1000000000`,
+    - `uaion`: `1000000000000`,
+    - `maion`: `1000000000000000`,
+    - `caion`: `10000000000000000`,
+    - `daion`: `100000000000000000`,
+    - `aion`: `100000000000000000`'
+
+<h3>Returns</h3>
+
+`String`: If a number, or string is given it returns a number string.
+
+<h3>Example</h3>
+
+```javascript
+web3.utils.toNAmp('3.141592654')
+>'3141592654000000000'
+
+web3.utils.toNAmp('0.000000000000000001')
+>'1'
+
+web3.utils.toNAmp('1', 'namp')
+> '1'
+```
+
+## fromNAmp
+
+```javascript
+web3.utils.fromNAmp(number [, unit])
+```
+
+Converts any `Amp` value into a `Aion` value. `Amp` are the smallest `Aion` unit, and you should always make calculations in `Amp` and convert only for display reasons.
+
+<h3>Parameters</h3>
+
+1. `number` - **String**|**Number**: The value.
+2. `unit` - **String** (optional, defaults to `aion`): The aion to convert from. Possible units are:
+    - `namp`: `1`,
+    - `uamp`: `1000`,
+    - `mamp`: `1000000`,
+    - `amp`: `1000000000`,
+    - `uaion`: `1000000000000`,
+    - `maion`: `1000000000000000`,
+    - `caion`: `10000000000000000`,
+    - `daion`: `100000000000000000`,
+    - `aion`: `100000000000000000`'
+
+<h3>Returns</h3>
+
+`String`: If a number, or string is given it returns a number string.
+
+<h3>Example</h3>
+
+```javascript
+web3.utils.fromNAmp('3141592654000000000')
+>'3.141592654'
+
+web3.utils.fromNAmp('1')
+>'0.000000000000000001'
+
+web3.utils.fromNAmp('1', 'namp')
+> '1'
+```

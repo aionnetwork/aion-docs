@@ -8,6 +8,7 @@ When you make a request to Web3.js it converts it into a [JSON RPC](https://www.
   "body": "Want to get your hands dirty and build something straight away? Check out the new Web3 tutorial over at [Aion University](https://learn.aion.network/v1.0/docs/how-to-deploy-a-smart-contract)."
 }
 [/block]
+
 # Prerequisites
 
 Make sure the following software is installed locally on your machine before attempting to run Web3.
@@ -92,9 +93,10 @@ This method of installation is a bit more hands on, but allows for more granular
 {
   "type": "info",
   "title": "Super Quick Install",
-  "body": "Run this _one-liner_ if you're super busy and don't have time to read more than one line:\n\n```bash\ngit clone https://github.com/aionnetwork/aion_web3.git && cd aion_web3 && npm install && node console.js\n```"
+  "body": "Run this _one-liner_ if you're super busy and don't have time to read more than one line:\n\n```bash\ngit clone https://github.com/aionnetwork/aion_web3.git && cd aion_web3 && npm install && node console.js\n```If your terminal _hangs_ after running this one liner and doesn't display anything, hit `RETURN` on your keyboard. Sometimes Node doesn't show the output of `console.js` automatically."
 }
 [/block]
+
 1. Clone the `aion_web3` repository from Github.
 
 ```bash
