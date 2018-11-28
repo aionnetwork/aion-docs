@@ -1,7 +1,7 @@
 ---
 title: Graphical Interface
 weight: 1
-chapter: true
+chapter: false
 ---
 
 # Graphical Interface

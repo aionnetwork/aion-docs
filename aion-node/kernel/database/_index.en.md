@@ -1,7 +1,7 @@
 ---
 title: Database
 weight: 1
-chapter: true
+chapter: false
 ---
 
 # Database

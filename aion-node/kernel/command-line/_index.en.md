@@ -1,7 +1,7 @@
 ---
 title: Command Line
 weight: 1
-chapter: true
+chapter: false
 ---
 
 # Command Line

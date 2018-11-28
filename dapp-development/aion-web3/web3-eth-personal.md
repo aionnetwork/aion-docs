@@ -17,15 +17,15 @@ web3.eth.personal.newAccount(password, [callback])
 
 Creates a new account. **Never call this function over a unsecured Websocket or HTTP provider, as your password will be send in plain text!**
 
-### Parameters
+<h3>Parameters</h3>
 
 1. `password` - **String**: The password to encrypt this account with.
 
-### Returns
+<h3>Returns</h3>
 
 `Promise` returns **String**: The address of the newly created account.
 
-### Example
+<h3>Example</h3>
 
 ```javascript
 web3.eth.personal.newAccount('!@superpassword')
@@ -41,18 +41,18 @@ web3.eth.personal.sign(dataToSign, address, password [, callback])
 
 Signs data using a specific account. Keep in mind that sending your account password over an unsecured HTTP RPC connection is highly unsecure.
 
-### Parameters
+<h3>Parameters</h3>
 
 1. `dataToSign` - **String**: Data to sign. If String it will be converted using [:ref:`web3.utils.utf8ToHex <utils-utf8tohex>`](https://github.com/aionnetwork/aion_web3/blob/v1.0/docs/web3-eth-personal.rst#id2).
 2. `address` - **String**: Address to sign data with.
 3. `password` - **String**: The password of the account to sign data with.
 4. `callback` - **Function**: (optional) Optional callback, returns an error object as first parameter and the result as second.
 
-### Returns
+<h3>Returns</h3>
 
 `Promise` returns **String** - The signature.
 
-### Example
+<h3>Example</h3>
 
 ```javascript
 web3.eth.personal.sign("Hello world", "0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe", "test password!")
@@ -73,15 +73,15 @@ web3.eth.personal.ecRecover(dataThatWasSigned, signature [, callback])
 
 Recovers the account that signed the data.
 
-### Parameters
+<h3>Parameters</h3>
 1. **String** - Data that was signed. If String it will be converted using :ref:`web3.utils.utf8ToHex <utils-utf8tohex>`.
 2. **String** - The signature.
 3. **Function** - (optional) Optional callback, returns an error object as first parameter and the result as second.
 
-### Returns
+<h3>Returns</h3>
 `Promise` returns **String** - The account.
 
-### Example
+<h3>Example</h3>
 
 ```javascript
 web3.eth.personal.ecRecover("Hello world", "0x30755ed65396facf86c53e6217c52b4daebe72aa4941d89635409de4c9c7f9466d4e9aaec7977f05e923889b33c0d0dd27d7226b6e6f56ce737465c5cfd04be400").then(console.log);
@@ -96,17 +96,17 @@ web3.eth.personal.signTransaction(transaction, password [, callback])
 
 Signs a transaction. This account needs to be unlocked. Keep in mind that sending your account password over an unsecured HTTP RPC connection is highly unsecure.
 
-### Parameters
+<h3>Parameters</h3>
 
 1. **Object** - The transaction data to sign.
 2. **String** - The password of the from account, to sign the transaction with.
 3. **Function** - (optional) Optional callback, returns an error object as first parameter and the result as second.
 
-### Returns
+<h3>Returns</h3>
 
 Promise returns Object - The RLP encoded transaction. The raw property can be used to send the transaction using `web3.eth.sendSignedTransaction`.
 
-### Example
+<h3>Example</h3>
 
 ```javascript
 web3.eth.signTransaction({
@@ -142,16 +142,20 @@ web3.eth.personal.unlockAccount(address, password, unlockDuraction [, callback])
 
 Signs data using a specific account. Keep in mind that sending your account password over an unsecured HTTP RPC connection is highly unsecure.
 
-### Parameters
+<h3>Parameters</h3>
 
 1. `address` - **String**: The account address.
 2. `password` - **String** - The password of the account.
 3. `unlockDuration` - `Number` - The duration for the account to remain unlocked.
 
-### Example
+<h3>Example</h3>
 
 ```javascript
 web3.eth.personal.unlockAccount("0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe", "test password!", 600)
 .then(console.log('Account unlocked!'));
 > "Account unlocked!"
 ```
+
+<h1>Need Help?</h1>
+
+If you get stuck, head over to our [Gitter channels](https://gitter.im/aionnetwork/Lobby) or [StackOverflow](https://stackoverflow.com/search?q=aion) for answers to some common questions.

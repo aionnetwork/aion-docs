@@ -1,7 +1,7 @@
 ---
 Name: Import Accounts
 Weight: 1
-Chapter: true
+Chapter: false
 ---
 
 # Import Accounts

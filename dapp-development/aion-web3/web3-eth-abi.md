@@ -9,18 +9,18 @@ web3.eth.abi.encodeFunctionSignature(functionName);
 Encodes the function name to its ABI signature, which are the first 4
 bytes of the sha3 hash of the function name including types.
 
-### Parameters
+<h3>Parameters</h3>
 
 1\. `functionName` - `String|Object`: The function name to encode. or
 the `JSON interface <glossary-json-interface>` object of the function.
 If string it has to be in the form `function(type,type,...)`, e.g:
 `myFunction(uint256,uint32[],bytes10,bytes)`
 
-### Returns
+<h3>Returns</h3>
 
 `String` - The ABI signature of the function.
 
-### Example
+<h3>Example</h3>
 
 ```javascript
 // From a JSON interface object
@@ -51,18 +51,18 @@ web3.eth.abi.encodeEventSignature(eventName);
 Encodes the event name to its ABI signature, which are the sha3 hash of
 the event name including input types.
 
-### Parameters
+<h3>Parameters</h3>
 
 1\. `eventName` - `String|Object`: The event name to encode. or the
 `JSON interface <glossary-json-interface>` object of the event. If
 string it has to be in the form `event(type,type,...)`, e.g:
 `myEvent(uint256,uint32[],bytes10,bytes)`
 
-### Returns
+<h3>Returns</h3>
 
 `String` - The ABI signature of the event.
 
-### Example
+<h3>Example</h3>
 
 ```javascript
 web3.eth.abi.encodeEventSignature('myEvent(uint256,bytes32)')
@@ -91,7 +91,7 @@ web3.eth.abi.encodeParameter(type, parameter);
 
 Encodes a parameter based on its type to its ABI representation.
 
-### Parameters
+<h3>Parameters</h3>
 
 1.  `type` - `String|Object`: The type of the parameter, see the
     [solidity
@@ -99,11 +99,11 @@ Encodes a parameter based on its type to its ABI representation.
     for a list of types.
 2.  `parameter` - `Mixed`: The actual parameter to encode.
 
-### Returns
+<h3>Returns</h3>
 
 `String` - The ABI encoded parameter.
 
-### Example
+<h3>Example</h3>
 
 ```javascript
 web3.eth.abi.encodeParameter('uint256', '2345675643');
@@ -153,7 +153,7 @@ web3.eth.abi.encodeParameters(typesArray, parameters);
 Encodes a function parameters based on its `JSON interface
 <glossary-json-interface>` object.
 
-### Parameters
+<h3>Parameters</h3>
 
 1.  `typesArray` - `Array<String|Object>|Object`: An array with types or
     a `JSON interface <glossary-json-interface>` of a function. See the
@@ -162,12 +162,12 @@ Encodes a function parameters based on its `JSON interface
     for a list of types.
 2.  `parameters` - `Array`: The parameters to encode.
 
-### Returns
+<h3>Returns</h3>
 
 `String` - The ABI encoded
 parameters.
 
-### Example
+<h3>Example</h3>
 
 ```javascript
 web3.eth.abi.encodeParameters(['uint256','string'], ['2345675643', 'Hello!%']);
@@ -214,18 +214,18 @@ web3.eth.abi.encodeFunctionCall(jsonInterface, parameters);
 Encodes a function call using its `JSON interface
 <glossary-json-interface>` object and given paramaters.
 
-### Parameters
+<h3>Parameters</h3>
 
 1.  `jsonInterface` - `Object`: The `JSON interface
     <glossary-json-interface>` object of a function.
 2.  `parameters` - `Array`: The parameters to encode.
 
-### Returns
+<h3>Returns</h3>
 
 `String` - The ABI encoded function call. Means function signature +
 parameters.
 
-### Example
+<h3>Example</h3>
 
 ```javascript
 web3.eth.abi.encodeFunctionCall({
@@ -250,7 +250,7 @@ web3.eth.abi.decodeParameter(type, hexString);
 
 Decodes an ABI encoded parameter to its JavaScript type.
 
-### Parameters
+<h3>Parameters</h3>
 
 1.  `type` - `String|Object`: The type of the parameter, see the
     [solidity
@@ -258,12 +258,12 @@ Decodes an ABI encoded parameter to its JavaScript type.
     for a list of types.
 2.  `hexString` - `String`: The ABI byte code to decode.
 
-### Returns
+<h3>Returns</h3>
 
 `Mixed` - The decoded
 parameter.
 
-### Example
+<h3>Example</h3>
 
 ```javascript
 web3.eth.abi.decodeParameter('uint256', '0x0000000000000000000000000000000000000000000000000000000000000010');
@@ -336,7 +336,7 @@ web3.eth.abi.decodeParameters(typesArray, hexString);
 
 Decodes ABI encoded parameters to its JavaScript types.
 
-### Parameters
+<h3>Parameters</h3>
 
 1.  `typesArray` - `Array<String|Object>|Object`: An array with types or
     a `JSON interface <glossary-json-interface>` outputs array. See the
@@ -345,12 +345,12 @@ Decodes ABI encoded parameters to its JavaScript types.
     for a list of types.
 2.  `hexString` - `String`: The ABI byte code to decode.
 
-### Returns
+<h3>Returns</h3>
 
 `Object` - The result object containing the decoded
 parameters.
 
-### Example
+<h3>Example</h3>
 
 ```javascript
 web3.eth.abi.decodeParameters(['string', 'uint256'], '0x000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000ea000000000000000000000000000000000000000000000000000000000000000848656c6c6f212521000000000000000000000000000000000000000000000000');
@@ -416,7 +416,7 @@ web3.eth.abi.decodeLog(inputs, hexString, topics);
 
 Decodes ABI encoded log data and indexed topic data.
 
-### Parameters
+<h3>Parameters</h3>
 
 1.  `inputs` - `Object`: A `JSON interface <glossary-json-interface>`
     inputs array. See the [solidity
@@ -428,11 +428,11 @@ Decodes ABI encoded log data and indexed topic data.
     log, without the topic\[0\] if its a non-anonymous event, otherwise
     with topic\[0\].
 
-### Returns
+<h3>Returns</h3>
 
 `Object` - The result object containing the decoded parameters.
 
-### Example
+<h3>Example</h3>
 
 ```javascript
 web3.eth.abi.decodeLog([{
@@ -458,3 +458,7 @@ web3.eth.abi.decodeLog([{
     mySmallNumber: '16'
 }
 ```
+
+<h1>Need Help?</h1>
+
+If you get stuck, head over to our [Gitter channels](https://gitter.im/aionnetwork/Lobby) or [StackOverflow](https://stackoverflow.com/search?q=aion) for answers to some common questions.
