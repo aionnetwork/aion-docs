@@ -6,7 +6,7 @@ chapter: false
 
 # Command Line
 
-From a terminal, you can interact with Aion though the command line interface which offers the following options:
+From a terminal, you can interact with Aion though the command line interface by running `./aion.sh`. The following options are **completely optional**, and are not required for the kernel to execute:
 
 ```bash
 Usage: ./aion.sh [OPTIONS] [ARGUMENTS]
@@ -81,7 +81,7 @@ Usage: ./aion.sh [OPTIONS] [ARGUMENTS]
 ./aion.sh -n [valid network] -d [valid datadir]
 ```
 
-Creates new directory and copies the `config.xml` and `genesis.json` files with subpaths:
+Creates new directory and copies the `config.xml` and `genesis.json` files with subpaths, while also starting a kernel running on the given network:
 
 ```bash
 /home/aion/[datadir]/[network]/config/config.xml
@@ -99,10 +99,10 @@ If the parameters are not valid, the kernel will not execute.
 ./aion.sh -c [valid network]
 ```
 
-Generates new `config.xml` file at the project's root directory.
+Generates new `config.xml` file, and places it in the coresponding network folder (`mainnet, conquest, mastery`).
 
 ```bash
-/home/aion/config/config.xml
+/home/aion/config/[network]/config.xml
 ```
 
 If the parameters are not valid, the kernel will not execute. If the config folder does't exist, the config folder and config file will be generated at the project's root directory.
