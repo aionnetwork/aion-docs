@@ -12,18 +12,18 @@ The following are some frequent use cases when the configurations should be modi
 
 ## Importing a Pre-Existing Configuration
 
-When booting up, the kernel will search for a pre-existing `config.xml` file. If you are booting the kernel for the first time and no `config.xml` file is present, then one will be created.
+When booting up (using `./aion.sh`), the kernel will search for a pre-existing `config.xml` file. If you are booting the kernel for the first time and no `config.xml` file is present, then one will be created.
 
-If a `config.xml` file is found:
+If a `config.xml` file is found (in the corresponding network folder):
 
-1. The `config/config.xml` file is read.
+1. The `config/[network]/config.xml` file is read.
 2. The kernel checks the network ID within `config.xml` and matches it to an available network:
     - `conquest`
     - `mainnet`
     - `mastery`
     - `custom`
-3. `config/config.xml` and `config/genesis.json` are both deleted.
-4. `[network]/config/config.xml` is overwritten with the read configuration.
+3. `config/[network]/config.xml` and `config/[network]/genesis.json` are both deleted.
+4. `/config/[network]/config.xml` is overwritten with the read configuration. 
 5. `database`, `log`, and `keystore` are all set with absolute paths based on the location read from the _old_ config.
 
 ## Mining
