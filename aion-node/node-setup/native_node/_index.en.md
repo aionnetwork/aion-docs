@@ -12,7 +12,7 @@ Make sure you're running **Ubuntu 16.04 or higher**. Currently we cannot support
 
 # Pre-compiled Packages
 
-Use one of the pre-compiled packages to get up and running faster.
+Use one of the pre-compiled packages to get up and running faster. We have used the latest build as an example on this page. If you want to use a different version of the Aion kernel you will need to change the commands to fit the version you are using. We do not recommend always using the latest Aion kernel version.
 
 1. Connect to your machine via SSH or open a terminal if you are working on a local installation.
 2. Change to your root `~` directory and update your system:
@@ -22,14 +22,19 @@ cd ~
 sudo apt update -y && sudo apt upgrade -y
 ```
 
-3. Download and unzip the [latest Aion build from](https://github.com/aionnetwork/aion/releases):
+1. Download and validate the [latest build from Github](https://github.com/aionnetwork/aion/releases):
 
 ```bash
-wget https://github.com/aionnetwork/aion/releases/download/v0.3.1/aion-v0.3.1.dcaf9e8-2018-08-30.tar.bz2
-tar xvjf aion-v0.3.1.dcaf9e8-2018-08-30.tar.bz2
+wget https://github.com/aionnetwork/aion/releases/download/v0.3.2/aion-v0.3.2.2cfa29c-2018-11-28.tar.bz2
 ```
 
-4. Create an address and keystore:
+1. Unzip the package:
+
+```bashg
+tar xvjf aion-v0.3.2.2cfa29c-2018-11-28.tar.bz2
+```
+
+2. Create an address and keystore:
 
 ```bash
 ~/aion/aion.sh -a create
