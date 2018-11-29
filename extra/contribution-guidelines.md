@@ -1,3 +1,7 @@
+# How to Contribute
+
+If you want to suggest any changes to the docs or edit the docs yourself, [raise an issue](https://github.com/mohnjatthews/aion-docs/issues) or [make a pull request](https://github.com/mohnjatthews/aion-docs/pulls) on the [aion-docs GitHub repository](https://github.com/mohnjatthews/aion-docs).
+
 # General Writing
 
 By following these guidelines you're helping to keep the Aion docs sounding consistent.

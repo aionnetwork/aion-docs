@@ -50,7 +50,7 @@ After extraction of the archive you will have a directory structure like this
 │   └── web-console
 └── aion-v0.3.2.2cfa29c-2018-11-28.tar.bz2```
 
-### Create Mainnet Directory 
+### Create Mainnet Directory
 run `./aion.sh` to create the structure and and kill the process (ctrl-c). The structure will look like this.
 
 ```~/aion032/aion
@@ -165,3 +165,16 @@ in order to create the mastery testnet directory structure. The directory struct
 ├── script
 └── web-console
 ```
+
+
+
+
+
+---
+
+
+1. Download package from Github.
+2. Make a directory for the new kernel: `mkdir ~/aion-version-x-y-z`
+3. Unpack the `.tar`: `tar vxjf aion-vx-y-z.tar.bz2`
+4. Move the unpacked kernel to `~/aion-version-x-y-z`.
+5. 
