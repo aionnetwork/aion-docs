@@ -16,6 +16,8 @@ This will begin syncing your node from genesis. Note that any changes made to `c
 
 ## Migrating from Conquest to Mastery
 
+This section is only relevant if you are currently on Aion `v0.2.8`.
+
 Migrating from Conquest to Mastery requires resetting the database. If you want to maintain your data on the Conquest testnet, please **backup your database folder.**
 
 Before the migration, you should also backup the `keystore` and `config` folders from the aion kernel for the Conquest network.
@@ -36,10 +38,10 @@ Before the migration, you should also backup the `keystore` and `config` folders
 If your configuration settings are broken, or if you just want to start with a fresh configuration file with the default settings, you can reset the file:
 
 1. Remove the `config.xml` file
-2. Launch the node by running:
+2. Launch the kernel by running:
 
 ```bash
-./aion.sh -n mastery -c
+./aion.sh -n mastery
 ```
 
 This will create a new `config.xml` file with the default config settings. Alternatively, you can copy and paste the contents of [this file](https://github.com/aionnetwork/aion/blob/testnet_q3_mastery/modBoot/resource/`config.xml`).
