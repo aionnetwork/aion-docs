@@ -106,3 +106,26 @@ Generates new `config.xml` file, and places it in the coresponding network folde
 ```
 
 If the parameters are not valid, the kernel will not execute. If the config folder does't exist, the config folder and config file will be generated at the project's root directory.
+
+### Account Management
+
+Here are some examples use-cases for account management:
+
+```bash
+./aion.sh -a create -n [valid network] -d [valid datadir]
+./aion.sh -a list -n [valid network] -d [valid datadir]
+./aion.sh -a export [valid address] -n [valid network] -d [valid datadir]
+./aion.sh -a import [private key] -n [valid network] -d [valid datadir]
+```
+
+The options can be given in any order, for example:
+
+```bash
+./aion.sh -a list -n [valid network] -d [valid datadir]
+```
+
+has the same effect as
+
+```bash
+./aion.sh -n [valid network] -a list -d [valid datadir]
+```
