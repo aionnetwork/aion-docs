@@ -44,22 +44,8 @@ If our support team have requested logs off you, follow the process for the oper
 The `log` file is stored at `~/.aion/logs`. You can copy the contents of the folder to your Desktop by running `cp -r ~/.aion/logs ~/Desktop`. You may need to run this command as `sudo`. The `log` file is now on your Desktop.
 
 You can now email this file to [support@aion.network](mailto:support@aion.network) when requested.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/dbf2a51-terminal.gif",
-        "terminal.gif",
-        745,
-        384,
-        "#202020"
-      ],
-      "caption": "Running the copy command and then viewing the contents of a file in a terminal."
-    }
-  ]
-}
-[/block]
+
+![Running the copy command and then viewing the contents of a file in a terminal.](images/terminal.gif)
 
 ### Windows
 
