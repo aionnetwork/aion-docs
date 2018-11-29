@@ -18,13 +18,15 @@ If a `config.xml` file is found (in the corresponding network folder):
 
 1. The `config/[network]/config.xml` file is read.
 2. The kernel checks the network ID within `config.xml` and matches it to an available network:
-    - `conquest`
-    - `mainnet`
-    - `mastery`
-    - `custom`
+    - `256` -> `mainnet`
+    - `128` -> `conquest`
+    - `32` -> `mastery`
+    - any positive number not listed above -> `custom`
 3. `config/[network]/config.xml` and `config/[network]/genesis.json` are both deleted.
-4. `/config/[network]/config.xml` is overwritten with the read configuration. 
+4. `/config/[network]/config.xml` is overwritten with the read configuration.
 5. `database`, `log`, and `keystore` are all set with absolute paths based on the location read from the _old_ config.
+
+If you are going to use a different network for the next execution, you must supply the `n [network]` option.
 
 ## Mining
 
