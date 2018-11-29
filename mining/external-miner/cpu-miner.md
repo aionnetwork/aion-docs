@@ -1,29 +1,17 @@
-[block:callout]
-{
-  "type": "info",
-  "title": "For Testing Only",
-  "body": "The CPU miner is for testing and developing on the test network only. Do not use this miner on the main network or in a production environment. It will not work."
-}
-[/block]
+The CPU miner is for **testing and developing** on the test network **only**. Do not use this miner on the main network or in a production environment. It will not work.
 
-[block:api-header]
-{
-  "title": "Prerequisites"
-}
-[/block]
-You will need:
-- [Ubuntu 16.04 or a later version](https://www.ubuntu.com/download/desktop) (installation tutorial [here](https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop#0))
-- [Aion node](doc:node-set-up)
-[block:api-header]
-{
-  "title": "Set-up"
-}
-[/block]
-1. Download the the pre-built CPU miner binary aionminer_CPU.tar.bz2 from the aion_miner [release page](https://github.com/aionnetwork/aion_miner/releases) 
-2. Extract the folder to your desired location
+# Prerequisites
+
+- [Ubuntu 16.04 or a later version](https://www.ubuntu.com/download/desktop)
+- [Aion node](https://docs.aion.network/docs/node-setup)
+
+# Setup
+
+1. Download the the pre-built CPU miner binary `aionminer_CPU.tar.bz2` from the [`aion_miner` release page](https://github.com/aionnetwork/aion_miner/releases).
+2. Extract the folder to your desired location.
 3. Open terminal and run aionminer with the desired parameter values:
 
-[block:parameters]
+```json
 {
   "data": {
     "0-0": "```-h```",
@@ -54,29 +42,18 @@ You will need:
   "cols": 3,
   "rows": 7
 }
-[/block]
-
-[block:callout]
-{
-  "type": "warning",
-  "title": "CPU Threads",
-  "body": "We recommend that you allocate between 25% - 75% of your system's total number of CPUs."
-}
-[/block]
-Please refer to the above CPU Miner Parameters. The following example will run the AION CPU miner with 4 threads connecting to a mining pool running locally, listening on port 3333 for incoming connections:
-
 ```
+
+We recommend that you allocate between 25% - 75% of your system's total number of CPUs. Please refer to the above CPU Miner Parameters. The following example will run the AION CPU miner with 4 threads connecting to a mining pool running locally, listening on port 3333 for incoming connections:
+
+```bash
 ./aionminer -t 4 -l 127.0.0.1:3333 -u {0xacc}
 ```
-[block:api-header]
-{
-  "title": "Running a Benchmark on your CPU"
-}
-[/block]
-The default benchmark will assess the performance of your CPU configuration by running 200 blocks.
 
-This example will run a benchmark on your CPU using a single thread: 
+## Running a Benchmark on your CPU
 
-```
+The default benchmark will assess the performance of your CPU configuration by running 200 blocks. This example will run a benchmark on your CPU using a single thread:
+
+```bash
 ./aionminer -b -t 1
 ```
