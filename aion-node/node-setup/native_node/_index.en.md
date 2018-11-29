@@ -25,18 +25,25 @@ sudo apt update -y && sudo apt upgrade -y
 1. Download and validate the [latest build from Github](https://github.com/aionnetwork/aion/releases):
 
 ```bash
-wget https://github.com/aionnetwork/aion/releases/download/v0.3.2/aion-v0.3.2.2cfa29c-2018-11-28.tar.bz2
+wget https://github.com/aionnetwork/aion/releases/download/v0.3.2/aion-v0.3.2.2cfa29c-2018-11-28.tar.bz2 https://github.com/aionnetwork/aion/releases/download/v0.3.2/SHA1SUMS
+sha1sum -c SHA1SUMS
 ```
 
-1. Unzip the package:
+If the terminal outputs `aion-v0.3.2.2cfa29c-2018-11-28.tar.bz2: OK` then the package passed the validation.
 
-```bashg
-tar xvjf aion-v0.3.2.2cfa29c-2018-11-28.tar.bz2
-```
+If it failed, **stop here and reboot your machine** - you may have been a victim to a [man-in-the-middle attack](https://en.wikipedia.org/wiki/Man-in-the-middle_attack). Consult your administrator to find out the next course of action.
 
-2. Create an address and keystore:
+1. Unzip the package and move the `aion` directory to your home `~` directory:
 
 ```bash
+tar xvjf aion-v0.3.2.2cfa29c-2018-11-28.tar.bz2
+mv aion ~/
+```
+
+2. Move to your `aion` directory and create an address & keystore:
+
+```bash
+cd ~/
 ~/aion/aion.sh -a create
 ```
 
@@ -57,18 +64,18 @@ user@local:~$ _
 ## On a Local Machine
 
 ```bash
-cp ~/aion/keystore/* ~/Documents/aion-keystore
+cp ~/aion/mainnet/keystore/* ~/Documents/aion-keystore
 ```
 
 ## On a Remote Machine over SSH
 
-Replace `user` and `node_id_address` with your credentials.
+    # exit your remote machine
+    exit
 
-```bash
-scp user@node_ip_address:~/aion/keystore/* ~/Desktop
-```
+    # copy the aion keystore to your local machine
+    scp user@node_ip_address:~/aion/mainnet/keystore/* ~/Desktop
 
-1. Start syncing your node:
+8. Reconnect to your remote machine (if you disconnected) and start syncing your node:
 
 ```bash
 ~/aion/aion.sh
