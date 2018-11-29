@@ -3,7 +3,7 @@ The CPU miner is for **testing and developing** on the test network **only**. Do
 # Prerequisites
 
 - [Ubuntu 16.04 or a later version](https://www.ubuntu.com/download/desktop)
-- [Aion node](https://docs.aion.network/docs/node-setup)
+- [Aion Node](https://docs.aion.network/docs/node-setup)
 
 # Setup
 

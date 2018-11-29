@@ -1,29 +1,18 @@
-[block:callout]
-{
-  "type": "info",
-  "title": "Windows and Alternative Linux Distributions",
-  "body": "This external miner assumes you will be mining with a Linux Ubuntu machine. Our community has developed other mining software compatible with both Windows and other Linux distributions. Links can be found in our [external resources section](https://docs.aion.network/docs/external-resources)."
-}
-[/block]
+This external miner assumes you will be mining with a Linux Ubuntu machine. Our community has developed other mining software compatible with both Windows and other Linux distributions. Links can be found in our [external resources section](https://docs.aion.network/docs/external-resources).
 
-[block:api-header]
-{
-  "title": "Prerequisites"
-}
-[/block]
-You will need:
-- [Ubuntu 16.04 or a later version](https://www.ubuntu.com/download/desktop) (installation tutorial [here](https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop#0))
-- [Aion node](doc:node-set-up)
+## Prerequisites
+
+- [Ubuntu 16.04 or a later version](https://www.ubuntu.com/download/desktop)
+- [Aion Node](https://docs.aion.network/docs/node-setup)
 - CUDA 9.0 compatible driver (NVIDIA 387.34+)
-[block:api-header]
-{
-  "title": "Set-up"
-}
-[/block]
-1. Download the pre-built GPU miner binary aionminer_CUDA.tar.bz2 from the aion_miner [release page](https://github.com/aionnetwork/aion_miner/releases)
-2. Extract the aionminer folder to the desired location
-3. Run the aionminer file with the desired parameter values:
-[block:parameters]
+
+## Setup
+
+1. Download the the pre-built CPU miner binary `aionminer_CUDA.tar.bz2` from the [`aion_miner` release page](https://github.com/aionnetwork/aion_miner/releases).
+2. Extract the folder to your desired location.
+3. Open terminal and run aionminer with the desired parameter values:
+
+```json
 {
   "data": {
     "h-0": "**Parameter**",
@@ -66,21 +55,20 @@ You will need:
   "cols": 3,
   "rows": 11
 }
-[/block]
+```
+
 Please refer to the above GPU-CUDA Miner Parameters. The following example will run the AION CUDA miner with 64 blocks and 64 threads per block on device 0 using solver version 1 (CUDA Tromp):
 
-```
+```bash
 ./aionminer -cd 0 -cv 1 -cb 64 -ct 64 -u {0xacc}
 ```
-[block:api-header]
-{
-  "title": "Running a benchmark on your GPU (optional):"
-}
-[/block]
+
+## Running a Benchmark on your GPU (optional)
+
 The benchmark will assess the performance of your GPU configuration by running 200 blocks.
 
 This example will run a benchmark on your GPU using 64 blocks and 64 threads per block on device 0 and the CUDA-Tromp solver:
 
-```
+```bash
 ./aionminer -cd 0 -cv 1 -cb 64 -ct 64 -b
 ```
