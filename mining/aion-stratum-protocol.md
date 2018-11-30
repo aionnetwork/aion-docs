@@ -52,7 +52,7 @@ Once validation a miners subscription request a server may reply with a `set_dif
     “target”,
     “headerHash”
   ]
-} 
+}
 ```
 
 Parameters:
@@ -80,8 +80,8 @@ Clients submit jobs by sending:
 
 Parameters:
 
-1.  Worker Id to which to assign the share
-2.  Original job ID
-3.  Submit timestamp
-4.  Client generated extraNonce value
-5.  Calculated Equihash solution
+1. Worker Id to which to assign the share
+2. Original job ID
+3. Submit timestamp
+4. Client generated extraNonce value
+5. Calculated Equihash solution

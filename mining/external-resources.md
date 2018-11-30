@@ -1,22 +1,15 @@
-[block:api-header]
-{
-  "title": "Mining Calculator"
-}
-[/block]
+## Mining Calculator
+
 [CoinCalculators.io](https://www.coincalculators.io/coin.aspx?crypto=aion-mining-calculator)
 [WhatToMine.com](https://whattomine.com/coins/272-aion-equihash-210-9)
-[block:api-header]
-{
-  "title": "Miners"
-}
-[/block]
+
+## Miners
+
 [EWBF's Nvidia/CUDA Miner (Windows & Linux)](https://bitcointalk.org/index.php?topic=4466962.0)
 [lolMiner's AMD/OpenGL Miner](https://bitcointalk.org/index.php?topic=4724735.0)
-[block:api-header]
-{
-  "title": "Public Pools"
-}
-[/block]
+
+## Public Pools
+
 [aionpool.tech](https://aionpool.tech/)
 [aionmine.org](https://aionmine.org/)
 [aion.social](https://aion.social)
@@ -31,11 +24,9 @@
 [whitbbit.cn](https://pool.whibbit.cn/)
 [sainapool.com](http://sainapool.com)
 [x100orgtfo.science](https://aion.x100orgtfo.science/)
-[block:api-header]
-{
-  "title": "Exchanges (Native AION Coin):"
-}
-[/block]
+
+## Exchanges (Native AION Coin)
+
 [BCEX](https://BCEX.ca)
 [Bilaxy](https://Bilaxy.com)
 [Binance](https://Binance.com)
