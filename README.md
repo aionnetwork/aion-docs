@@ -4,7 +4,7 @@ The repository contains all the documentation found on [docs.aion.network](https
 
 ## Suggestions
 
-If you want to make a suggestion to an article, create an [Issue](https://github.com/mohnjatthews/aion-docs/issues). Or if you are able to, create a [Pull Request](https://github.com/mohnjatthews/aion-docs/pulls) and fix it yourself!
+If you want to make a suggestion to an article, create an [Issue](https://github.com/mohnjatthews/aion-docs/issues). If you want to create a completely new article, make a [Pull Request](https://github.com/mohnjatthews/aion-docs/pulls)! If you just want to show us some love, click the [Star :star:](https://github.com/mohnjatthews/aion_docs/stargazers) button!
 
 ## Contributions
 
