@@ -1,3 +1,7 @@
+## What is the Recovery Period?
+
+The next few weeks are being refered to as the _recovery period_. Since the token swap has ended, you have up until 10th December 2018 to finish the swap process using the Aion Token Bridge, or up until 21st December 2018 to finish the swap process using Changelly. Changelly is the only exchange available now. No other exchanges are supported by Aion. Do not use any other exchanges other than Changelly.
+
 ## Can I keep my `AION ERC-20` and not participate in the Swap?
 
 No. There will be no future utility for the `AION ERC-20` token after the swap period, and consequently, we will be removing support for the `AION ERC-20` token at the end of November. If you opt out of the token swap process your `AION ERC-20` tokens will not retain their value in the future.

@@ -51,22 +51,16 @@ You can now install version 1.1.0:
 
 ### Standard Installation
 
-1. Download the `aion_ui.zip` file from the [Aion Wallet Repository](https://github.com/aionnetwork/Desktop-Wallet/releases/tag/1.1.0)
+1. Download the `aion_ui.zip` file from the [Aion Wallet Repository](https://github.com/aionnetwork/Desktop-Wallet/releases)
 2. Extract the folder to your root `~` directory.
 3. Open a terminal and run: `~/aion_ui/aion_ui.sh`.
 4. The Aion Desktop Wallet is now open on your desktop. Run the above command again if you want to re-open the wallet.
-
-### One-line Installation
-
-```bash
-wget https://github.com/aionnetwork/Desktop-Wallet/releases/download/1.1.0/aion_ui.zip && unzip ~/Downloads/aion_ui.zip ~/aion_ui && ~aion_ui/aion_ui.sh
-```
 
 <div class="nextSteps"><h2>What's Next?</h2><table><tbody><tr><td><a ui-sref="docs.show({'doc': 'interact-with-your-wallet'})" href="#section-setup-your-wallet"><i class="fa fa-chevron-right"></i>Setup Your Wallet</a></td></tr></tbody></table></div>
 
 ## macOS
 
-1. Download the [AionWallet.dmg](https://github.com/aionnetwork/Desktop-Wallet/releases/tag/1.1.0) application image
+1. Download the `AionWallet.dmg` application package from the [Aion Wallet Github repository](https://github.com/aionnetwork/Desktop-Wallet/releases/)
 2. Extract and open the installer. A window containing **AionWallet.app** should appear.
 3. Drag and drop **AionWallet.app** into the **Applications** folder.
 
@@ -89,7 +83,7 @@ You may encounter a warning that you cannot run the application. If this happens
 The Aion Desktop Wallet is compatiable with Windows 7 and above.
 
 1. If you don't already have it, [download and install the latest stable Java release](https://java.com/en/download/manual.jsp).
-2. Download the `AionWalletSetup.exe` executable from the [Aion Wallet repository](https://github.com/aionnetwork/Desktop-Wallet/releases/download/1.1.0/AionWalletSetup.exe).
+2. Download the `AionWalletSetup.exe` executable from the [Aion Wallet repository](https://github.com/aionnetwork/Desktop-Wallet/releases/).
 3. Run `AionWalletSetup.exe` on your computer. Accept any security warnings that pop up.
 4. Follow through the installation and restart your computer.
 5. You can now open the wallet through the **Start Menu**.
@@ -106,7 +100,7 @@ The `AionWalletSetup.exe` currently isn't signed, which means you may run into s
 
 ![The Aion Desktop Wallet](https://files.readme.io/90cc2c2-1-accounts.png)
 
-This tutorial assumes that you want to create a new account within your wallet. If you already have an account setup in your wallet but you have forgotten your password, you can recover it by following the [I've Forgotten My Password guide](https://docs.aion.network/v1.1/docs/ive-forgotten-my-password).
+This tutorial assumes that you want to create a new account within your wallet. If you already have an account setup in your wallet but you have forgotten your password, you can recover it by following the [I've Forgotten My Password guide](https://docs.aion.network/v1.1/docs/troubleshooting#section-i-ve-forgotten-my-password).
 
 ## Create an Account
 
@@ -138,7 +132,7 @@ Congrats! You now have an Aion wallet address to use for the Aion Token Swap
 In order for you to swap your `AION ERC-20` Tokens into `AION` Coins, you will be using **MyEtherWallet** or **MyCrypto**. To use these interfaces you will need to have:
 
 - `AION ERC-20` Tokens stored in one of the following wallets: **MetaMask**, **Ledger**, **Trezor**, **Digital Bitbox**, and **Secalot**
-- An `AION` Coin wallet address using either the official [Aion Desktop wallet](doc:create-an-aion-wallet) (Windows, Mac, Linux), or a **Coinomi** wallet.
+- An `AION` Coin wallet address using either the official [Aion Desktop wallet](https://docs.aion.network/v1.1/docs/aion-desktop-wallet) (Windows, Mac, Linux), or a **Coinomi** wallet.
 
 ![MyEtherWallet & MyCrypto supported Wallets](https://files.readme.io/1a43064-wallet-logo-headers.jpg)
 
@@ -227,7 +221,7 @@ This step contains pre-populated fields that should not be changed. Editing thes
 [/block]
 Based on your inputs in the Bridge UI we have pre-populated the fields in MyCrypto. No other inputs are required for you to input. **Altering any of the fields can result in a transaction failure or loss of funds.**
 
-1. You should now be on [legacy.mycrypto.com](legacy.mycrypto.com). Double check that the URL is `https://legacy.mycrypto.com/` and the certificate is signed by `MyCrypto, Inc (US)`.
+1. You should now be on [legacy.mycrypto.com](https://legacy.mycrypto.com/). Double check that the URL is `https://legacy.mycrypto.com/` and the certificate is signed by `MyCrypto, Inc (US)`.
 [block:image]
 {
   "images": [
@@ -345,7 +339,7 @@ This step contains pre-populated fields that should not be changed. Editing thes
 
 Based on your inputs in the Bridge UI we have pre-populated the fields in MyEtherWallet. No other inputs are required for you to input. **Altering any of the fields can result in a transaction failure or loss of funds.**
 
-1. You should now be on [MyEtherWallet.com](MyEtherWallet.com). Double check that the URL is `https://www.myetherwallet.com/` and the certificate is `MyEtherWallet Inc (US)`.
+1. You should now be on [MyEtherWallet.com](https://www.myetherwallet.com/). Double check that the URL is `https://www.myetherwallet.com/` and the certificate is `MyEtherWallet Inc (US)`.
 [block:image]
 {
   "images": [
@@ -489,7 +483,7 @@ Transaction can take up to 2 minutes start to process, and can take up to 3 hour
 
 ## Check Aion Wallet
 
-Once your transfer is complete, you can check your `Aion` coin balance using the [Aion Desktop Wallet](https://docs.aion.network/page/create-an-aion-wallet) or [Coinomi](https://docs.aion.network/page/create-an-aion-wallet).
+Once your transfer is complete, you can check your `Aion` coin balance using the [Aion Desktop Wallet](https://docs.aion.network/v1.1/docs/aion-desktop-wallet) or [Coinomi](https://www.coinomi.com/en/).
 
 [block:callout]
 {

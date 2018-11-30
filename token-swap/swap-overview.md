@@ -1,3 +1,12 @@
+# Recovery Period
+
+#### The token swap is ending and we are now in the recovery period for the token swap. 
+
+- The official [Aion Token Bridge](https://docs.aion.network/v1.1/docs/using-the-bridge) will be available until **10th December 2018**. 
+- The [Changelly exchange](https://docs.aion.network/v1.1/docs/using-an-exchange) will be available until **21st December 2018**. All other exchanges are now unavailable.
+
+After these dates, you will no longer be able to swap your `ERC 20` tokens. Please swap your tokens as soon as possible.
+
 ## Disclaimer
 
 The Token Swap is now live and production ready. Given the nature of decentralized technology, it is imperative you exercise **extreme caution** when transacting with cryptocurrency. You, and only you, have custody over your tokens and coins, so it is critical you securely store your private keys. When using the Aion Token Transfer Bridge it is recommended that you **perform a test transaction of a small amount** to verify that you are using the correct address and have access to your account.
@@ -21,13 +30,23 @@ Now that you're _mentally prepped_ for what's coming up, follow all the steps in
 }
 [/block]
 
+[block:image]
+{
+  "images": [
+    {
+      "image": []
+    }
+  ]
+}
+[/block]
+
 [block:parameters]
 {
   "data": {
     "h-0": "",
     "h-1": "",
     "0-0": "[![](https://files.readme.io/c6c5ca8-bridge.png)](/docs/using-the-bridge)",
-    "0-1": "[![](https://files.readme.io/14a5adc-exchange.png)](/docs/using-an-exchange)",
+    "0-1": "[![](https://files.readme.io/27dc7ce-changelly-logo.png)](/docs/using-an-exchange)",
     "1-0": "Use the official Aion Token Transfer Bridge to exchange your `AION ERC-20` for `AION Coins`.",
     "1-1": "Use a third party exchange to transfer your coins.",
     "2-1": "This is a **beginner friendly** route with a simple process. However you could be charged a small **transaction fee** by the exchanges, and could take up to **2-3 days** to process.",
@@ -45,7 +64,7 @@ Now that you're _mentally prepped_ for what's coming up, follow all the steps in
   "title": "Video Walkthrough"
 }
 [/block]
-If you're more into watching video tutorials, take a look at the videos below. If not, carry on with the [written guides](#section-how-to-proceed).
+If you're more into watching video tutorials, take a look at the videos below.
 
 ## Using **MyEtherWallet **
 [block:embed]
