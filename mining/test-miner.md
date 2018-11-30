@@ -1,18 +1,15 @@
-[block:api-header]
-{
-  "title": "Prerequisites"
-}
-[/block]
+## Prerequisites
+
 You will need:
-- [Ubuntu 16.04 or a later version](https://www.ubuntu.com/download/desktop) (installation tutorial [here](https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop#0))
+
+- [Ubuntu 16.04 or a later version](https://www.ubuntu.com/download/desktop)
 - [Aion node](doc:node-set-up)
-[block:api-header]
-{
-  "title": "Set-Up"
-}
-[/block]
+
+Set-Up
+
 The internal miner runs on the local node and is provided with the kernel. It can be configured by modifying the `config.xml` file in the `aion/config/`. To setup internal mining, update the following fields in the consensus section:
-[block:parameters]
+
+```json
 {
   "data": {
     "h-0": "Field",
@@ -29,11 +26,13 @@ The internal miner runs on the local node and is provided with the kernel. It ca
   "cols": 2,
   "rows": 4
 }
-[/block]
+```
+
 Once the config file has been updated and saved, re-launch the kernel to run the new settings.  Mining is normally delayed 10 seconds to allow sufficient time for the kernel to fully start.
 
 An example configuration for the consensus section:
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -42,12 +41,6 @@ An example configuration for the consensus section:
     }
   ]
 }
-[/block]
+```
 
-[block:callout]
-{
-  "type": "info",
-  "title": "Configure File",
-  "body": "More information on the sections of the `config.xml` file can be found on the [GitHub repository](https://github.com/aionnetwork/aion/blob/e22231526367328e84ee9b342288eeb7bc0e9ed3/modBoot/resource/config.xml)."
-}
-[/block]
+More information on the sections of the `config.xml` file can be found on the [GitHub repository](https://github.com/aionnetwork/aion/blob/e22231526367328e84ee9b342288eeb7bc0e9ed3/modBoot/resource/config.xml).
