@@ -64,9 +64,6 @@ One minor change to the validation procedure is in the final step of verifying b
 
 Each step must process of portion of the hash; `DIGITBITS` bits long. Due to the asymmetry in processing of the 210,9 parameters, the bits to process in each step must be calculated individually. Figure 1 shows the bits to be processed at each step. The `prevbo` parameter within the implementation tracks the starting byte to process at each step; thus following figure 1 the appropriate bitshift operations are applied to isolate and XOR `DIGITBITS` at each step.
 
-<!-- TODO: find image and put it here. -->
-![Aion Hash Processing](media/image4.png)**Figure 1. Bit shift operations**.
-
 ## Hash Size
 
 In order to reduce the total amount of memory used the Equihash solver attempts to minimise the number of bytes stored at each step, excluding bytes processed in previous steps. Stored hashes are reduced in chunks of `4 bytes`.
