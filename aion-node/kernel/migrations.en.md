@@ -90,13 +90,17 @@ cp ~/aion-old/config/config.xml ~/aion/mainnet/config/config-old.xml
   - Copy the Database:
 
     ```bash
+
     cp -r ~/aion-old/database ~/aion/mainnet
+
     ```
 
   - Resync the database:
 
     ```bash
+
     <!-- TODO: find out how to resync -->
+
     ```
 
 8. Copy the keystore file into the new Aion kernel directory. You can press `TAB` while typing the command to auto-complete a file or folder. This is useful when typing in your keystore name.
@@ -118,7 +122,13 @@ cp -r ~/aion-old/log ~/aion/log/aion-old/
 
 10. Depending on your infrastructure, you may need to kill the existing process in order to run the new kernel. If you have no other Java applications running, you can issue the `killjava` command to end all Java processes. Or, using `pidof java` find out the `PID` of the old Aion kernel and kill it selectively using `kill 1234` (where `1234` is the `PID` of your Java process.)
 
-![TOP view of some processes running on Ubuntu](images/kill-java-processes.png)
+```bash
+
+pidof java
+> 22175
+kill 22175
+
+```
 
 11. Run the new kernel.
 
