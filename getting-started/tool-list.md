@@ -1,116 +1,63 @@
-<h1>Integrated Development Environments (IDEs)</h1>
+## Intergrated Development Environments
 
-[block:parameters]
-{
-  "data": {
-    "h-0": "Tool",
-    "h-1": "Description",
-    "0-0": "**[Titan Suite](https://titan-suite.com/) **",
-    "0-1": "Build decentralised applications (dApps) on the AION blockchain with our IDE (Integrated Development Environment) and (CLI) Command Line Interface toolsets."
-  },
-  "cols": 2,
-  "rows": 1
-}
-[/block]
+IDEs help developer get up and running faster without having to install independent tools and plugins.
 
-<h1>Command Line Interface based development management tools</h1>
+### [Tian Suite](https://titan-suite.com/)
 
-[block:parameters]
-{
-  "data": {
-    "h-0": "Tool",
-    "h-1": "Description",
-    "0-1": "Build decentralised applications (dApps) on the AION blockchain with our IDE (Integrated Development Environment) and (CLI) Command Line Interface toolsets.",
-    "0-0": "**[Titan Suite](https://titan-suite.com/) **"
-  },
-  "cols": 2,
-  "rows": 1
-}
-[/block]
+Titan Suite is an online intergrated development environment (IDE). It allows developers to create and test DApp online without having to install anything.
 
-<h1>Nodes as a Service</h1>
+## Node Services
 
-[block:parameters]
-{
-  "data": {
-    "h-0": "Tool",
-    "h-1": "Description",
-    "0-1": "Fully functional AionNode with running Kernel",
-    "0-0": "[Azure Node Service](https://azuremarketplace.microsoft.com/en-in/marketplace/apps/nuco-networks.aionnode?tab=Overview)",
-    "1-0": "[Blockdaemon](http://bit.ly/blockdaemon-aion-node)",
-    "1-1": "Launch your node on a public blockchain network or join a private network in three clicks. Blockdaemon is the only multi-cloud platform that supports the leading blockchain protocols.",
-    "2-0": "[Nodesmith]\nhttps://nodesmith.io/",
-    "2-1": "Simple & reliable access to decentralized networks"
-  },
-  "cols": 2,
-  "rows": 3
-}
-[/block]
+The following platform allow you to connect to pre-existing nodes without the need for you to sync to the next work manually.
 
-<h1>Code Analysis Tools</h1>
+### [Azure Node Service](https://azuremarketplace.microsoft.com/en-in/marketplace/apps/nuco-networks.aionnode?tab=Overview)
 
-[block:parameters]
-{
-  "data": {
-    "h-0": "Tool",
-    "h-1": "Description",
-    "0-0": "",
-    "0-1": ""
-  },
-  "cols": 2,
-  "rows": 1
-}
-[/block]
+Spin up a fully functional Aion Node from within Azure's software as a service (SaaS) platform.
 
-<h1>Explorers and blockchain stats</h1>
+### [Blockdaemon](http://bit.ly/blockdaemon-aion-node)
 
-[block:parameters]
-{
-  "data": {
-    "h-0": "Tool",
-    "h-1": "Description",
-    "0-0": "**[Aion Explorer](https://mainnet.aion.network/#/dashboard)** ",
-    "0-1": "The Aion Blockchain Explorer service, hosted by the Aion Foundation.",
-    "1-0": "**[Amberdata Dashboard](https://aion-kilimanjaro.amberdata.io/) **",
-    "1-1": "SaaS platform for monitoring, searching, analyzing, and securing public and private blockchains. Amberdata enables operational intelligence for blockchain infrastructure, applications and transactions."
-  },
-  "cols": 2,
-  "rows": 2
-}
-[/block]
+Launch your own Aion node on a public blockchain network, or join a private network in three clicks. Blockdaemon is super simple to setup, and comes with a free 2 month trail on all shared nodes.
 
-<h1>Browsers</h1>
+### [Nodesmith](https://nodesmith.io/)
 
-[block:parameters]
-{
-  "data": {
-    "h-0": "Tool",
-    "h-1": "Description"
-  },
-  "cols": 2,
-  "rows": 1
-}
-[/block]
+Quickly spin up and connect to an Aion node with web3 built in. All nodes are free and come with unlimited usage.
 
-<h1>Wallets</h1>
+## Explorers and Blockchain Statistics
 
-[block:parameters]
-{
-  "data": {
-    "h-0": "Tool",
-    "h-1": "Description",
-    "0-0": "**[Linux Desktop Wallet](https://github.com/aionnetwork/aion_ui/releases/tag/v1.0.0) **",
-    "0-1": "The Aion wallet is a software program that allows users to manage their Aion coin accounts. The wallet facilitates sending and receiving Aion and gives ownership of the balance to the user.",
-    "1-0": "**[Coinomi](https://www.coinomi.com/)** ",
-    "1-1": "Coinomi securely stores more than 500 digital assets including the AION native coin.",
-    "2-0": "**[Ledger](https://www.ledger.com/)**",
-    "2-1": "Protect your crypto assets with the most popular hardware wallet in the market",
-    "3-0": "**[Magnum](https://magnumwallet.co/)**",
-    "3-1": "Light universal web-based crypto wallet",
-    "4-1": "A next generation wallet that simplifies investing, trading, and asset management across all blockchains.",
-    "4-0": "**[CryptoCurve](https://cryptocurve.io/wallet)**"
-  },
-  "cols": 2,
-  "rows": 5
-}
-[/block]
+These tools help you to monitor the Aion network as you develop your DApps.
+
+### [Aion Explorer](https://mainnet.aion.network/#/dashboard)
+
+The Aion Blockchain Explorer service, hosted by the Aion Foundation.
+
+### [Amberdata Dashboard](https://aion-kilimanjaro.amberdata.io/)
+
+SaaS platform for monitoring, searching, analyzing, and securing public and private blockchains. Amberdata enables operational intelligence for blockchain infrastructure, applications and transactions.
+
+## Wallets
+
+Wallets all you to store you native Aion tokens and other cryptocurrency locally on your machine, sometimes called _offline wallets_. Other wallets allow you to keep your tokens online, however these are generally seen as slighly less secure then locally stored wallets.
+
+### Offline Wallets
+
+#### [Aion Desktop Wallet](https://github.com/aionnetwork/aion_ui/releases/tag/v1.0.0)
+
+The Aion wallet is a software program that allows users to manage their Aion coin accounts. The wallet facilitates sending and receiving Aion and gives ownership of the balance to the user.
+
+#### [Ledger](https://www.ledger.com/)
+
+Protect your crypto assets with the most popular hardware wallet in the market
+
+### Online Wallets
+
+#### [Coinomi](https://www.coinomi.com/)
+
+Coinomi securely stores more than 500 digital assets including the AION native coin.
+
+#### [CryptoCurve](https://cryptocurve.io/wallet)
+
+A next generation wallet that simplifies investing, trading, and asset management across all blockchains.
+
+#### [Magnum](https://magnumwallet.co/)
+
+Light universal web-based crypto wallet
