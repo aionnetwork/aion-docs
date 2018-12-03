@@ -1,7 +1,5 @@
 ---
 title: Command Line
-weight: 1
-chapter: false
 ---
 
 # Command Line

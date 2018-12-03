@@ -1,7 +1,5 @@
 ---
 title: Environment Settings
-weight: 1
-chapter: false
 ---
 
 # Environment Settings

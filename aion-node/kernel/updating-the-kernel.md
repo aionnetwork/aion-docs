@@ -1,3 +1,7 @@
+---
+title: Updating the Kernel
+---
+
 # Updating the Kernel
 
 When a new version of the kernel is released, you will likely have to migrate your existing kernel to the new version.

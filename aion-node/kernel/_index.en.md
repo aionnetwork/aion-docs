@@ -1,8 +1,12 @@
 ---
 title: Kernel Overview
-weight: 1
+weight: 5
 chapter: true
 ---
+
+### Aion Node
+
+# Kernel Overview
 
 ## Download
 

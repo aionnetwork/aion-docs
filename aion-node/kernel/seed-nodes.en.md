@@ -1,7 +1,5 @@
 ---
 title: Seed Nodes
-weight: 1
-chapter: false
 ---
 
 # Seed Nodes

@@ -1,10 +1,6 @@
 ---
 title: Mastery Testnet
-weight: 1
-chapter: true
 ---
-
-# Mastery Testnet
 
 You can now connect and sync to the _Mastery_ testnet using the same binary as the mainnet.
 

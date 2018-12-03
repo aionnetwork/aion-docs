@@ -1,7 +1,5 @@
 ---
 title: Genesis Block
-weight: 1
-chapter: false
 ---
 
 # Genesis Block

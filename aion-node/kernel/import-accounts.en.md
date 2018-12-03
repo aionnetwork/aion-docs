@@ -1,7 +1,5 @@
 ---
 Name: Import Accounts
-Weight: 1
-Chapter: false
 ---
 
 # Import Accounts

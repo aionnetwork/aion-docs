@@ -1,7 +1,5 @@
 ---
-title: 
-weight: 1
-chapter: false
+title: Secure Java Connection
 ---
 
 # Enabling Secure connection for Aion Java API
