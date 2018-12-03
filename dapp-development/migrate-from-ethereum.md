@@ -1,39 +1,51 @@
 There are several differences in type between Aion and Ethereum, all of which are listed below:
-[block:parameters]
-{
-  "data": {
-    "h-0": "Type",
-    "h-1": "Ethereum",
-    "h-2": "Aion",
-    "0-0": "Data Word",
-    "1-0": "Local Variable Count",
-    "2-0": "int Size",
-    "3-0": "uint Size",
-    "4-0": "Inline Assembly",
-    "5-0": "Address",
-    "0-1": "256 bits",
-    "0-2": "128 bits",
-    "1-1": "16 data word (256 bits)",
-    "1-2": "16 data word (128 bits)",
-    "3-1": "uint8 - uint256",
-    "3-2": "uint8 - uint128",
-    "2-1": "int8 - int256",
-    "2-2": "int8 - int128",
-    "4-1": "Supported",
-    "4-2": "Not Supported (currently)",
-    "5-1": "20 bytes",
-    "5-2": "32 bytes",
-    "6-0": "Hash Function (signatures & wallet)",
-    "6-1": "Keccak-256",
-    "6-2": "Blake2b",
-    "7-0": "Signature Function",
-    "8-0": "Compilers",
-    "7-1": "ECDSA – curve secp256k1",
-    "7-2": "ECDSA - curve ED25519",
-    "8-1": "Solidity, LLL, Serpent",
-    "8-2": "Solidity"
-  },
-  "cols": 3,
-  "rows": 9
-}
-[/block]
+
+### Data Word
+
+**Aion**: `128 bits`
+**Ethereum**: `256 bits`
+
+### Solidity Version
+
+**Aion**: `v0.4.15`
+**Ethereum**: `v0.4.25`
+
+### Local Variable Count
+
+**Aion**: 16 Data Word (`128 bits`)
+**Ethereum**: 16 Data Word (`265 bits`)
+
+### `INT` Size
+
+**Aion**: `int8 - int128`
+**Ethereum**: `int8 - int256`
+
+### `UINT` Size
+
+**Aion**: `uint8 - uint128`
+**Ethereum**: `uint8 - uint256`
+
+### Inline Assembly
+
+**Aion**: Not Currently Supported
+**Ethereum**: Supported
+
+### Address
+
+**Aion**: `32 bytes`
+**Ethereum**: `20 bytes`
+
+### Hash Function (Signatures and Wallet)
+
+**Aion**: [Blake2b](https://en.wikipedia.org/wiki/BLAKE_(hash_function))
+**Ethereum**: [Keccak-265](https://keccak.team/keccak_specs_summary.html)
+
+### Signature Function
+
+**Aion**: `ECDSA - curve ED25519`
+**Ethereum**: `ECDSA – curve secp256k1`
+
+### Compilers
+
+**Aion**: Solidity
+**Ethereum**: Solidity, LLL, Serpent
