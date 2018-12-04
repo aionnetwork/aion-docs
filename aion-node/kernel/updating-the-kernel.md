@@ -71,7 +71,7 @@ CTRL + C
 5. Copy your existing `config.xml` file into the new directory as `config-old.xml`.
 
 ```bash
-cp ~/aion-old/config/config.xml ~/aion-0.3.2/aion/mainnet/config/config-old.xml
+cp ~/aion/config/config.xml ~/aion-0.3.2/aion/mainnet/config/config-old.xml
 ```
 
 6. Open both `config.xml` and `config-old.xml` in a text editor. Copy over any settings you wish to migrate from your old aion kernel to the new one.
@@ -81,7 +81,7 @@ cp ~/aion-old/config/config.xml ~/aion-0.3.2/aion/mainnet/config/config-old.xml
   - Copy the Database:
 
     ```bash
-    cp -r ~/aion-old/database ~/aion-0.3.2/aion/mainnet
+    cp -r ~/aion/database ~/aion-0.3.2/aion/mainnet
     ```
 
   - Resync the database:
@@ -93,14 +93,14 @@ cp ~/aion-old/config/config.xml ~/aion-0.3.2/aion/mainnet/config/config-old.xml
 8. Copy the keystore file into the new Aion kernel directory. You can press `TAB` while typing the command to auto-complete a file or folder. This is useful when typing in your keystore name.
 
 ```bash
-cp ~/aion-old/keystore/UTC--2018... ~/aion-0.3.2/aion/mainnet/keystore
+cp ~/aion/keystore/UTC--2018... ~/aion-0.3.2/aion/mainnet/keystore
 ```
 
 9. If you want to create a backup of your olds from the old kernel, create a new directory in the new Aion kernel installation and copy the logs over.
 
 ```bash
 mkdir ~/aion-0.3.2/aion/log/
-cp -r ~/aion-old/log ~/aion-0.3.2/aion/log/aion-old/
+cp -r ~/aion/log ~/aion-0.3.2/aion/log/aion/
 ```
 
 10. Depending on your infrastructure, you may need to kill the existing process in order to run the new kernel. If you have no other Java applications running, you can issue the `killjava` command to end all Java processes. Or, using `pidof java` find out the `PID` of the old Aion kernel and kill it selectively using `kill 1234` (where `1234` is the `PID` of your Java process.)
