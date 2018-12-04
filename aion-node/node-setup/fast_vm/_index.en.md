@@ -76,14 +76,14 @@ You must have [Docker](https://www.docker.com/) installed on you machine in orde
 1. Make sure that [Docker](https://www.docker.com/) is installed. You should be able to run `docker --version` and get something like this:
 
 ```bash
-> Docker version 18.06.1-ce, build e68fc7a
+> Docker version 18.09.0, build 4d60db4
 ```
 
-2. Run `docker pull satran004/aion-fastvm:0.3.1` to pull in the latest Docker image.
+2. Run `docker pull satran004/aion-fastvm:0.3.2` to pull in the latest Docker image.
 3. If you are on Linux or macOS, add the following line to your `.bash_rc` or `.bash_profile` file:
 
 ```bash
-alias solc='docker run --rm -v "$(pwd):/src" satran004/aion-fastvm:0.3.1 solc'
+alias solc='docker run --rm -v "$(pwd):/project" satran004/aion-fastvm:0.3.2 solc'
 ```
 
     If you are on Windows, you do not need to change anything.
