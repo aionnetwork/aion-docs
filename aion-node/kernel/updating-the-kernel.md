@@ -27,27 +27,28 @@ sha1sum -c ~/SHA1SUMS
 4. Extract the new kernel to the home `~` directory.
 
 ```bash
-tar xvjf ~/aion-v0.3.2.a0b68b7-2018-11-29.tar.bz2
+mkdir ~/aion-0.3.2
+tar xvjf ~/aion-v0.3.2.a0b68b7-2018-11-29.tar.bz2 -C ~/aion-0.3.2
 ```
 
-5. Start the kernel `~/aion/aion.sh` and them immediately cancel `CTRL + c` as soon as you see the AION logo. This process creates the mainnet directory structure.
+5. Start the kernel `~/aion-0.3.2/aion/aion.sh` and them immediately cancel `CTRL + c` as soon as you see the AION logo. This process creates the mainnet directory structure.
 
 ```bash
-~/aion/aion.sh
+~/aion-0.3.2/aion/aion.sh
 > Config Override
 > <Protocol name: fork0.3.2 block#: 1920000 updated!
 > 18-12-03 12:23:48.251 INFO  GEN  [main]: 
 > -------------------------------- USED PATHS --------------------------------
-> > Logger path:   /home/john/aion/mainnet/log
-> > Database path: /home/john/aion/mainnet/database
-> > Keystore path: /home/john/aion/mainnet/keystore
-> > Config write:  /home/john/aion/mainnet/config/config.xml
-> > Genesis write: /home/john/aion/mainnet/config/genesis.json
-> > Fork write:    /home/john/aion/mainnet/config/fork.properties
+> > Logger path:   /home/john/aion-0.3.2/aion/mainnet/log
+> > Database path: /home/john/aion-0.3.2/aion/mainnet/database
+> > Keystore path: /home/john/aion-0.3.2/aion/mainnet/keystore
+> > Config write:  /home/john/aion-0.3.2/aion/mainnet/config/config.xml
+> > Genesis write: /home/john/aion-0.3.2/aion/mainnet/config/genesis.json
+> > Fork write:    /home/john/aion-0.3.2/aion/mainnet/config/fork.properties
 > ----------------------------------------------------------------------------
-> > Config read:   /home/john/aion/config/mainnet/config.xml
-> > Genesis read:  /home/john/aion/config/mainnet/genesis.json
-> > Fork read:     /home/john/aion/config/mainnet/fork.properties
+> > Config read:   /home/john/aion-0.3.2/aion/config/mainnet/config.xml
+> > Genesis read:  /home/john/aion-0.3.2/aion/config/mainnet/genesis.json
+> > Fork read:     /home/john/aion-0.3.2/aion/config/mainnet/fork.properties
 > ----------------------------------------------------------------------------
 >
 >
@@ -70,7 +71,7 @@ CTRL + C
 5. Copy your existing `config.xml` file into the new directory as `config-old.xml`.
 
 ```bash
-cp ~/aion-old/config/config.xml ~/aion/mainnet/config/config-old.xml
+cp ~/aion-old/config/config.xml ~/aion-0.3.2/aion/mainnet/config/config-old.xml
 ```
 
 6. Open both `config.xml` and `config-old.xml` in a text editor. Copy over any settings you wish to migrate from your old aion kernel to the new one.
@@ -80,26 +81,26 @@ cp ~/aion-old/config/config.xml ~/aion/mainnet/config/config-old.xml
   - Copy the Database:
 
     ```bash
-    cp -r ~/aion-old/database ~/aion/mainnet
+    cp -r ~/aion-old/database ~/aion-0.3.2/aion/mainnet
     ```
 
   - Resync the database:
 
     ```bash
-    ~/aion/aion.sh
+    ~/aion-0.3.2/aion/aion.sh
     ```
 
 8. Copy the keystore file into the new Aion kernel directory. You can press `TAB` while typing the command to auto-complete a file or folder. This is useful when typing in your keystore name.
 
 ```bash
-cp ~/aion-old/keystore/UTC--2018... ~/aion/mainnet/keystore
+cp ~/aion-old/keystore/UTC--2018... ~/aion-0.3.2/aion/mainnet/keystore
 ```
 
 9. If you want to create a backup of your olds from the old kernel, create a new directory in the new Aion kernel installation and copy the logs over.
 
 ```bash
-mkdir ~/aion/log/
-cp -r ~/aion-old/log ~/aion/log/aion-old/
+mkdir ~/aion-0.3.2/aion/log/
+cp -r ~/aion-old/log ~/aion-0.3.2/aion/log/aion-old/
 ```
 
 10. Depending on your infrastructure, you may need to kill the existing process in order to run the new kernel. If you have no other Java applications running, you can issue the `killjava` command to end all Java processes. Or, using `pidof java` find out the `PID` of the old Aion kernel and kill it selectively using `kill 1234` (where `1234` is the `PID` of your Java process.)
@@ -113,21 +114,21 @@ kill 22175
 11. Run the new kernel.
 
 ```bash
-~/aion/aion.sh
+~/aion-0.3.2/aion/aion.sh
 
 > <Protocol name: fork0.3.2 block#: 1920000 updated!
 > 18-12-03 13:49:58.381 INFO  GEN  [main]:
 > -------------------------------- USED PATHS > --------------------------------
-> > Logger path:   /home/john/aion/mainnet/log
-> > Database path: /home/john/aion/mainnet/database
-> > Keystore path: /home/john/aion/mainnet/keystore
-> > Config write:  /home/john/aion/mainnet/config/config.xml
-> > Genesis write: /home/john/aion/mainnet/config/genesis.json
-> > Fork write:    /home/john/aion/mainnet/config/fork.properties
+> > Logger path:   /home/john/aion-0.3.2/aion/mainnet/log
+> > Database path: /home/john/aion-0.3.2/aion/mainnet/database
+> > Keystore path: /home/john/aion-0.3.2/aion/mainnet/keystore
+> > Config write:  /home/john/aion-0.3.2/aion/mainnet/config/config.xml
+> > Genesis write: /home/john/aion-0.3.2/aion/mainnet/config/genesis.json
+> > Fork write:    /home/john/aion-0.3.2/aion/mainnet/config/fork.properties
 > -------------------------------------------------------------------------> ---
-> > Config read:   /home/john/aion/mainnet/config/config.xml
-> > Genesis read:  /home/john/aion/mainnet/config/genesis.json
-> > Fork read:     /home/john/aion/mainnet/config/fork.properties
+> > Config read:   /home/john/aion-0.3.2/aion/mainnet/config/config.xml
+> > Genesis read:  /home/john/aion-0.3.2/aion/mainnet/config/genesis.json
+> > Fork read:     /home/john/aion-0.3.2/aion/mainnet/config/fork.properties
 > -------------------------------------------------------------------------> ---
 >
 >
@@ -154,7 +155,7 @@ kill 22175
 If you want to perform a migration for the testnet (mastery) or a custom network, the steps are very similar. However, in step 5 you will select the network you want to use.
 
 ```bash
-~/aion/aion.sh -n mastery
+~/aion-0.3.2/aion/aion.sh -n mastery
 ```
 
 For more information on selecting networks, take a look at the [Aion kernel command line documentation](/aion-node/kernel/command-line).
