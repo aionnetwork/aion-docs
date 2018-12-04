@@ -2,24 +2,22 @@
 title: Updating the Kernel
 ---
 
+# Taking the Kernel Offline
+
+This process requires you to take your kernel offline. We **highly** recommend that you run this process through on a testing / staging environment beford deploying to a production server.
+
 # Updating the Kernel
 
 When a new version of the kernel is released, you will likely have to migrate your existing kernel to the new version.
 
-1. Rename current Aion kernel.
-
-```bash
-mv ~/aion ~/aion-old
-```
-
-2. Download the new kernel `.tar.bz2` file and `SHA1SUMS` file from [GitHub](https://github.com/aionnetwork/aion/releases).
+1. Download the new kernel `.tar.bz2` file and `SHA1SUMS` file from [GitHub](https://github.com/aionnetwork/aion/releases).
 
 ```bash
 wget https://github.com/aionnetwork/aion/releases/download/v0.3.2/aion-v0.3.2.a0b68b7-2018-11-29.tar.bz2 -P ~/
 wget https://github.com/aionnetwork/aion/releases/download/v0.3.2/SHA1SUMS -P ~/
 ```
 
-3. Validate your download.
+2. Validate your download.
 
 ```bash
 sha1sum -c ~/SHA1SUMS
