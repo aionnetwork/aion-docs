@@ -10,6 +10,7 @@ Create Aion Wallet
 Download Mining Solver
 - [EWBF Nvidia/CUDA](doc:external-resources#section-miners)
 - [lolMiner AMD/OpenGL](doc:external-resources#section-miners)
+- [GMiner Nvidia/CUDA](doc:external-resources#section-miners)
 
 Connect Miners to Aion Network
 - [Solo Miner](doc:solo-mining-pool)
