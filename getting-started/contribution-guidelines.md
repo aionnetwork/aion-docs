@@ -31,7 +31,7 @@ By following these guidelines you're helping to keep the Aion docs sounding cons
 
 10. Avoid using specific version numbers whenever possible.
 
-11. If you absolutely have to use the acronym **dApp** (and we'd prefer you not to), then keep the _d_ lowercase, and the _a_ of _app uppercase. We had a vote in the Aion Community office and _d_**App** won.
+11. If you absolutely have to use the acronym **dApp** (and we'd prefer you not to), then keep the _d_ lowercase, and the _a_ of _app_ uppercase. We had a vote in the Aion Community office and _d_**App** won.
 
 ## Formatting
 
