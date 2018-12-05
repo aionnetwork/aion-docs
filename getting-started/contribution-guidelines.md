@@ -47,10 +47,10 @@ Here are a few guidelines that should help to keep all the Aion documentation ni
 
   - Multi-line code blocks should have the language supplied in line with the markdown. This helps the syntax highlighter know which language classes to use. To select a particular language in markdown, add the language name to the end of the first code tag:
 
-        ```python
-        import example.py
-        import crypto.py
-        ```
+    ```python
+    import example.py
+    import crypto.py
+    ```
 
 ## Suggestions
 
