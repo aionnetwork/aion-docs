@@ -71,7 +71,7 @@ CTRL + C
 5. Copy your existing `config.xml` file into the new directory as `config-old.xml`.
 
 ```bash
-cp ~/aion-old/config/config.xml ~/aion-0.3.2/aion/mainnet/config/config-old.xml
+cp ~/aion/config/config.xml ~/aion-0.3.2/aion/mainnet/config/config-old.xml
 ```
 
 6. Open both `config.xml` and `config-old.xml` in a text editor. Copy over any settings you wish to migrate from your old aion kernel to the new one.
