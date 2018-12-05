@@ -7,6 +7,7 @@
 
 [EWBF's Nvidia/CUDA Miner (Windows & Linux)](https://bitcointalk.org/index.php?topic=4466962.0)
 [lolMiner's AMD/OpenGL Miner](https://bitcointalk.org/index.php?topic=4724735.0)
+[GMiner's Nvidia/CUDA Miner (Windows & Linux)](https://bitcointalk.org/index.php?topic=5034735.0)
 
 ## Public Pools
 
@@ -27,15 +28,18 @@
 
 ## Exchanges (Native AION Coin)
 
-[BCEX](https://BCEX.ca)
-[Bilaxy](https://Bilaxy.com)
-[Binance](https://Binance.com)
-[BITBOX](https://BITBOX.me)
-[Bitfinex](https://bitfinex.com)
-[Changelly](https://Changelly.com)
-[CoinBene](https://CoinBene.com)
-[Dragonex](https://Dragonex.io)
-[EasyRabbit](https://easyrabbit.net)
-[Kucoin](https://kucoin.com)
-[LATOKEN](https://LATOKEN.com)
-[VVBTC](https://VVBTC.com)
+[BCEX](https://www.bcex.ca/index/coins
+[Bilaxy](https://bilaxy.com/
+[Binance](https://www.binance.com/en
+[Bitbox](https://www.bitbox.me/
+[Bitfinex](http://bitfinex.com/
+[BitFinex](https://www.bitfinex.com/
+[BitForex](https://www.bitforex.com/
+[Changelly](https://changelly.com/
+[ChangeNow.IO](http://changenow.io/
+[CoinBene](https://www.coinbene.com/
+[Dragonex](https://dragonex.im/en-us/
+[EasyRabbit](https://easyrabbit.net/
+[Kucoin](http://kucoin.com/
+[LAToken](https://latoken.com/
+[VBTC](https://vbtc.exchange/
