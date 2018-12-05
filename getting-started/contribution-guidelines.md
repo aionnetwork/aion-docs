@@ -13,6 +13,7 @@ By following these guidelines you're helping to keep the Aion docs sounding cons
 3. Follow each list of three or more items with a comma. This is known as the [Oxford or Serial Comma](https://en.wikipedia.org/wiki/Serial_comma).
 
     > One, two, three, and four.
+
     > Henry, Elizabeth, and George.
 
 4. Write clearly and concisely. Sentences should be shorter than 25 sentences. Any longer and things tend to get a little _blurry_.
@@ -21,7 +22,7 @@ By following these guidelines you're helping to keep the Aion docs sounding cons
 7. Use American English spelling. When in doubt, use _z_ instead of _s_.
 8. Spell out acronyms and include them in parentheses the first time they are used in **each document**.
 
-    > Decentralized Application (DApp)
+    > Decentralized Application (dApp)
     > Virtual Machine (VM)
 
 9. Capitalize all the significant words in titles.
@@ -29,6 +30,8 @@ By following these guidelines you're helping to keep the Aion docs sounding cons
     > **T**his is a **P**ublic **S**ervice **A**nnouncement
 
 10. Avoid using specific version numbers whenever possible.
+
+11. If you absolutely have to use the acronym **dApp** (and we'd prefer you not to), then keep the _d_ lowercase, and the _a_ of _app uppercase. We had a vote in the Aion Community office and _d_**App** won.
 
 ## Formatting
 
