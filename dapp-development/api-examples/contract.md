@@ -256,7 +256,7 @@ Sample output:
 }
 [/block]
 
-Take a look at our tutorial on how to [Deploy a Smart Contract](https://learn.aion.network/docs/deploy-a-smart-contract-using-web3), over a [learn.aion.network](https://learn.aion.network).
+Take a look at our tutorial on how to [Deploy a Smart Contract](https://learn.aion.network/docs/deploy-a-smart-contract-using-web3), over at [learn.aion.network](https://learn.aion.network).
 
 The examples below show how to use the APIs to deploy a contract.
 In each code snippet, after deploying the contract the resulting account address, transaction hash and receipt are printed to the standard output.
@@ -364,7 +364,7 @@ Sample output:
   "codes": [
     {
       "code": "ADD response:\nconstant: true,\ndata:\ntransactionHash: 0000000000000000000000000000000000000000000000000000000000000000,\nstatus: Api failed.,\nerror: null\n\nGET response:\nconstant: true,\ndata:\n[a0ab123ab123ab123ab123ab123ab123ab123ab123ab123ab123ab123ab123ab]\ntransactionHash: 0000000000000000000000000000000000000000000000000000000000000000,\nstatus: Api failed.,\nerror: null\n\nThe received value:\na0ab123ab123ab123ab123ab123ab123ab123ab123ab123ab123ab123ab123ab\ndoes not match the given parameter:\na0ab234ab234ab234ab234ab234ab234ab234ab234ab234ab234ab234ab234ab\n",
-      "language": "text",
+      "laovnguage": "text",
       "name": "Java Output"
     }
   ]
