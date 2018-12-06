@@ -1,10 +1,10 @@
-## Intergrated Development Environments
+## Integrated Development Environments
 
 IDEs help developer get up and running faster without having to install independent tools and plugins.
 
-### [Tian Suite](https://titan-suite.com/)
+### [Titan Suite](https://titan-suite.com/)
 
-Titan Suite is an online intergrated development environment (IDE). It allows developers to create and test DApp online without having to install anything.
+Titan Suite is an online integrated development environment (IDE). It allows developers to create and test DApp online without having to install anything.
 
 ## Node Services
 
@@ -36,7 +36,7 @@ SaaS platform for monitoring, searching, analyzing, and securing public and priv
 
 ## Wallets
 
-Wallets all you to store you native Aion tokens and other cryptocurrency locally on your machine, sometimes called _offline wallets_. Other wallets allow you to keep your tokens online, however these are generally seen as slighly less secure then locally stored wallets.
+Wallets all you to store you native Aion tokens and other cryptocurrency locally on your machine, sometimes called _offline wallets_. Other wallets allow you to keep your tokens online, however these are generally seen as slightly less secure than locally stored wallets.
 
 ### Offline Wallets
 
@@ -47,6 +47,9 @@ The Aion wallet is a software program that allows users to manage their Aion coi
 #### [Ledger](https://www.ledger.com/)
 
 Protect your crypto assets with the most popular hardware wallet in the market
+
+#### [WandX](https://www.wandx.co/)
+The WandX desktop app is a decentralized token trading platform on Ethereum and NEO blockchains for ERC20 and NEP5 tokens respectively, all with a wallet built in.
 
 ### Online Wallets
 
