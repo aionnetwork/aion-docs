@@ -2,11 +2,13 @@
 Title: Contribution Guidelines
 ---
 
-# How to Contribute
+# Contribution Guidelines
+
+## How to Contribute
 
 If you want to suggest any changes to the docs or edit the docs yourself, [raise an issue](https://github.com/mohnjatthews/aion-docs/issues) or [make a pull request](https://github.com/mohnjatthews/aion-docs/pulls) on the [aion-docs GitHub repository](https://github.com/aionnetwork/docs).
 
-## General Writing
+### General Writing
 
 By following these guidelines you're helping to keep the Aion docs sounding consistent.
 
@@ -37,7 +39,7 @@ By following these guidelines you're helping to keep the Aion docs sounding cons
 
 10. If you absolutely have to use the acronym **dApp** (and we'd prefer you not to), then keep the _d_ lowercase, and the _a_ of _app_ uppercase. We had a vote in the Aion Community office and _d_**App** won.
 
-## Formatting
+### Formatting
 
 Here are a few guidelines that should help to keep all the Aion documentation nice and tidy.
 
