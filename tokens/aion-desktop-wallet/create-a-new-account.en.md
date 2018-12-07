@@ -5,6 +5,8 @@ title: Create a New Account
 
 # Create a New Account
 
+# Create a New Account
+
 You can create a completely brand new account within the blockchain, or recover an account into this wallet using your **Mnemonic** and **Password**.
 
 To create a completely brand new account:

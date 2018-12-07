@@ -2,6 +2,8 @@
 Title: Test Miner
 ---
 
+# Test Miner
+
 ## Prerequisites
 
 You will need:

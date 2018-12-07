@@ -2,6 +2,8 @@
 Title: External Resources
 ---
 
+# External Resources
+
 ## Mining Calculator
 
 - [CoinCalculators.io](https://www.coincalculators.io/coin.aspx?crypto=aion-mining-calculator)

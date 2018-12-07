@@ -2,6 +2,8 @@
 title: Additional Wallet Configuration
 ---
 
+# Additionaln Wallet Configuration
+
 ## Connect with a Remote Node
 
 If you wish to sync your wallet to an Aion node that is not running on your local machine, you may do so after making two changes in:

@@ -3,24 +3,11 @@ Title: Using an Exchange
 Weight: 5
 ---
 
-# Recovery Period
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ba19356-changelly-logo.png",
-        "changelly-logo.png",
-        227,
-        57,
-        "#30684e"
-      ],
-      "caption": "Changelly logo"
-    }
-  ]
-}
-[/block]
-#### We are now in the recovery period of the token swap.
+# Using an Exchange
+
+## Recovery Period
+
+We are now in the recovery period of the token swap.
 
 Changelly is now the **only** exchange available to do the token swap. Changelly will remain available **until 21st December 2018**. After that date you will not be able to perform the token swap using Changelly.
 [block:callout]
@@ -30,7 +17,10 @@ Changelly is now the **only** exchange available to do the token swap. Changelly
   "title": "We're here if you need us!"
 }
 [/block]
-# Install the Desktop Wallet
+
+------
+
+## Install the Desktop Wallet
 
 At this time the Aion Desktop wallet and [Coinomi](https://coinomi.com/) are the only supported wallets for receiving your AION coins. [Ledger is also available](https://docs.aion.network/docs/ledger-hardware-wallet-guide). This guide walks you through using the Aion Desktop Wallet only.
 
@@ -52,11 +42,11 @@ At this time the Aion Desktop wallet and [Coinomi](https://coinomi.com/) are the
 }
 [/block]
 
-## Linux
+### Linux
 
 Although it is possible to install the Aion Desktop Wallet on any Linux distribution, only Ubuntu is officially supported.
 
-### Updating from Version 1.0
+#### Updating from Version 1.0
 
 To properly install the new Desktop Wallet release make sure that you have exported your keystore or written down your seed phrase. Once you have confirmed, execute the following command to remove release 1.0:
 
@@ -66,18 +56,18 @@ rm -rf ~/.aion
 
 You can now install version 1.1.0:
 
-### Standard Installation
+#### Standard Installation
 
 1. Download the `aion_ui.zip` file from the [Aion Wallet Repository](https://github.com/aionnetwork/Desktop-Wallet/releases/).
 2. Extract the folder to your root `~` directory.
 3. Open a terminal and run: `~/aion_ui/aion_ui.sh`.
 4. The Aion Desktop Wallet is now open on your desktop. Run the above command again if you want to re-open the wallet.
 
-### One-line Installation
+#### One-line Installation
 
 <div class="nextSteps"><h2>What's Next?</h2><table><tbody><tr><td><a ui-sref="docs.show({'doc': 'interact-with-your-wallet'})" href="#section-setup-your-wallet"><i class="fa fa-chevron-right"></i>Setup Your Wallet</a></td></tr></tbody></table></div>
 
-## macOS
+### macOS
 
 1. Download the `AionWallet.dmg` application image from the [Aion Wallet Github repository](https://github.com/aionnetwork/Desktop-Wallet/releases/).
 2. Extract and open the installer. A window containing **AionWallet.app** should appear.
@@ -97,7 +87,7 @@ You may encounter a warning that you cannot run the application. If this happens
 
 <div class="nextSteps"><h2>What's Next?</h2><table><tbody><tr><td><a ui-sref="docs.show({'doc': 'interact-with-your-wallet'})" href="#section-setup-your-wallet"><i class="fa fa-chevron-right"></i>Setup Your Wallet</a></td></tr></tbody></table></div>
 
-## Windows
+### Windows
 
 The Aion Desktop Wallet is compatiable with Windows 7 and above.
 
@@ -115,13 +105,13 @@ The `AionWalletSetup.exe` currently isn't signed, which means you may run into s
 
 -------------------
 
-# Setup Your Wallet
+## Setup Your Wallet
 
 This tutorial assumes that you want to create a new account within your wallet. If you already have an account setup in your wallet but you have forgotten your password, you can recover it by following the [I've Forgotten My Password guide](https://docs.aion.network/v1.1/docs/troubleshooting#section-i-ve-forgotten-my-password).
 
 ![The Aion Desktop Wallet](https://files.readme.io/90cc2c2-1-accounts.png)
 
-## Create an Account
+### Create an Account
 
 1. Open the Wallet.
 2. Click **Add account**.
@@ -146,11 +136,11 @@ Congrats! You now have an Aion wallet address to use for the Aion Token Swap
 
 -------------------
 
-# Currently Supported Exchanges
+## Currently Supported Exchanges
 
 We are now in the recovery period of the token swap. Changelly is now the **only** exchange available to do the token swap. Changelly will remain available **until 21st December 2018**. After that date you will not be able to perform the token swap using Changelly.
 
-## <a href="https://changelly.com/" target="_blank">Changelly</a>
+### <a href="https://changelly.com/" target="_blank">Changelly</a>
 
 For an up-to-date and detailed breakdown of Changelly's swap process please refer to <a href="https://medium.com/@Changelly/wanna-swap-your-aion-erc20-tokens-to-aion-coin-do-it-with-changelly-e2d722ec8ab8" target="_blank">their guide</a>.
 
@@ -172,7 +162,7 @@ For an up-to-date and detailed breakdown of Changelly's swap process please refe
 
 -------------------
 
-# Monitor Swap Progress
+## Monitor Swap Progress
 
 1. Navigate to <a href="https://bridge.aion.network">bridge.aion.network</a>.
 2. Input the **TX Hash** into the search bar.
@@ -211,7 +201,7 @@ For an up-to-date and detailed breakdown of Changelly's swap process please refe
 }
 [/block]
 
-## Check Aion Wallet
+### Check Aion Wallet
 
 Once your transfer is complete, you can check your `Aion` coin balance using the [Aion Desktop Wallet](https://docs.aion.network/v1.1/docs/aion-desktop-wallet) or [Coinomi](https://www.coinomi.com/en/).
 
@@ -227,7 +217,7 @@ Once your transfer is complete, you can check your `Aion` coin balance using the
 
 -------------------
 
-# Token Swap Feedback
+## Token Swap Feedback
 
 [block:embed]
 {
