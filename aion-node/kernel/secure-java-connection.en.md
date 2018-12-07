@@ -2,6 +2,8 @@
 title: Secure Java Connection
 ---
 
+# Secure Java Connection
+
 Securing traffic between client application and Kernel is common security case. AION provides a conventional mechanism to enable secure connection for Java API client. Please refer to steps below.
 
 ## Requirements

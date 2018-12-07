@@ -2,11 +2,13 @@
 title: Updating the Kernel
 ---
 
+# Updating the Kernel
+
 ## Taking the Kernel Offline
 
 This process requires you to take your kernel offline. We **highly** recommend that you run this process through on a testing / staging environment beford deploying to a production server.
 
-## Updating the Kernel
+## Updating
 
 When a new version of the kernel is released, you will likely have to migrate your existing kernel to the new version.
 
