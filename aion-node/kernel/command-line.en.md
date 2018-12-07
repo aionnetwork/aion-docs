@@ -2,8 +2,6 @@
 title: Command Line
 ---
 
-# Command Line
-
 From a terminal, you can interact with Aion though the command line interface by running `./aion.sh`. The following options are **completely optional**, and are not required for the kernel to execute:
 
 ```bash

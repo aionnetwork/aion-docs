@@ -2,8 +2,6 @@
 title: Seed Nodes
 ---
 
-# Seed Nodes
-
 Aion seed nodes are the 24/7 running nodes keeping the most adequate and reliable chain, and are the best solution for runnning an initial synchronization and time-check.
 
 ## Deployment Details

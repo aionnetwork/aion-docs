@@ -2,8 +2,6 @@
 title: Graphical Interface
 ---
 
-# Graphical Interface
-
 The Aion Kernel _Core_ includes a graphical user interface (GUI) which facilitates kernel management and provides basic wallet functionality. There are some [known issues and limitations](https://github.com/aionnetwork/aion/wiki/Graphical-Interface#known-issues--limitations).
 
 To run the GUI, first download and extract the Aion kernel as per the [Getting the Kernel] in the [Kernel section of the Aion Owner's Manual](https://github.com/aionnetwork/aion/wiki/Aion-Owner's-Manual#kernel). Then, from the `aion` folder, run the following command:

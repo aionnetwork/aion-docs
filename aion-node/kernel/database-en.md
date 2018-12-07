@@ -2,8 +2,6 @@
 title: Database
 ---
 
-# Database
-
 ## Configuration
 
 The database configuration can be set from the `config` folder by editing the `config.xml` file.

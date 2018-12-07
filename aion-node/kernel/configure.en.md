@@ -2,8 +2,6 @@
 title: Configure
 ---
 
-# Configure
-
 The kernel configuration can be found inside `aion/config/config.xml`. This file is read only once when the kernel is started. Any updates made in the `config.xml` file while the kernel is running will not take effect until you stop the kernel (`CTRL` + `C`) and restart it (`./aion.sh`).
 
 The following are some frequent use cases when the configurations should be modified.

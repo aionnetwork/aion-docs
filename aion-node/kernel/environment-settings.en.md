@@ -2,8 +2,6 @@
 title: Environment Settings
 ---
 
-# Environment Settings
-
 The following environment variables must be assigned in order for JDK 11 to function properly.
 
 ## `JAVA11_HOME`
