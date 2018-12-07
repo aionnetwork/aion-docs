@@ -1,7 +1,6 @@
 ---
 title: Fast VM
 weight: 1
-chapter: true
 ---
 
 # Fast VM
@@ -13,7 +12,7 @@ There are currently two ways to run the FastVM:
 - [Virtual Machine on Ubuntu](#section-virtual-machine-on-ubuntu)
 - [Docker Image](#section-docker-image)
 
-# Virtual Machine on Ubuntu
+## Virtual Machine on Ubuntu
 
 ![Ubuntu Logo](images/ubuntu-logo.png)
 
@@ -21,11 +20,11 @@ This virtual machine is a modified version of the Ethereum Virtual Machine (EVM)
 
 One of the major changes between the EVN and the FastVM is that the word-size has been reduced from 256 to 128. Another major change is the introduction of LLVM JIT as the execution engine. We wrote a [detailed blog post](https://blog.aion.network/aionfastvm-c5ccd1628da0) about these changes.
 
-## Prerequisites for FastVM
+### Prerequisites for FastVM
 
 Ubuntu 16.04 or 18.04
 
-## Install FastVM
+#### Install FastVM
 
 1. Run the following to install the required dependencies:
 
@@ -57,7 +56,7 @@ make
 
 ---------------
 
-# Docker
+## Docker
 
 ![Docker Logo](images/docker-logo.png)
 
@@ -67,11 +66,11 @@ Docker allows you to run virtual machines using the underlying unix sub-system o
 
 The benefit this Docker Image has over the FastVM, is that there is very little setup required.
 
-## Prerequisites for Docker
+### Prerequisites for Docker
 
 You must have [Docker](https://www.docker.com/) installed on you machine in order to run the Docker image. Docker runs on Linux, macOS, and Windows.
 
-## Install with Docker
+### Install with Docker
 
 1. Make sure that [Docker](https://www.docker.com/) is installed. You should be able to run `docker --version` and get something like this:
 
@@ -90,9 +89,9 @@ alias solc='docker run --rm -v "$(pwd):/project" satran004/aion-fastvm:0.3.2 sol
 
 4. You can now compile Solidity code by running `solc --abi --bin -o . <source_file>.sol`.
 
-## Troubleshooting the Docker Image
+### Troubleshooting the Docker Image
 
-### I get `Error response from daemon: Get https://registry-1.docker.io/v2/: unauthorized: incorrect username or password`
+#### I get `Error response from daemon: Get https://registry-1.docker.io/v2/: unauthorized: incorrect username or password`
 
 You need to make sure you are logged into Docker via the terminal. Run `docker login` and enter your credentials. If you are on macOS, you also need to login to the Docker application.
 
