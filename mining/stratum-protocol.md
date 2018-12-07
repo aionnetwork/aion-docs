@@ -4,7 +4,7 @@ Title: Stratum Protocol
 
 In order to support the Aion PoW algorithm the stratum protocol definition has been modified to fit Aion. This document describes protocol version 1 which will be the first stratum standard supported by Aion.
 
-# Specifications
+## Specifications
 
 A handshake occurs after a TCP connection is established from a miner to the pool. The miner starts the handshake with the following:
 
