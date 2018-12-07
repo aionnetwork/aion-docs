@@ -1,5 +1,6 @@
 ---
 Title: Using the Bridge
+Weight: 3
 ---
 
 [block:callout]

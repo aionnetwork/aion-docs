@@ -1,7 +1,5 @@
 ---
 title: Open the Wallet
-weight: 1
-chapter: true
 ---
 
 # Open your Wallet

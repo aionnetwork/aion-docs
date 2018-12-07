@@ -1,7 +1,5 @@
 ---
 title: Upgrading the Wallet
-weight: 1
-chapter: true
 ---
 
 # Upgrading the Wallet

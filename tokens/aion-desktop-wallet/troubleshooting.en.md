@@ -1,7 +1,5 @@
 ---
 title: Troubleshooting
-weight: 1
-chapter: true
 ---
 
 # TroubleShooting

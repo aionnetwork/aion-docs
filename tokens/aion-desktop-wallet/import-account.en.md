@@ -1,7 +1,5 @@
 ---
 title: Import Account
-weight: 1
-chapter: true
 ---
 
 # Import Account

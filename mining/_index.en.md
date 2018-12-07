@@ -1,6 +1,7 @@
 ---
 Title: Mining
 Chapter: true
+Weight: 4
 ---
 
 # Mining

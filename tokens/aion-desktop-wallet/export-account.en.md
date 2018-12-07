@@ -1,7 +1,5 @@
 ---
 title: Export Account
-weight: 1
-chapter: true
 ---
 
 # Export Account

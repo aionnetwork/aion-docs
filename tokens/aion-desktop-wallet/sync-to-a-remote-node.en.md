@@ -1,7 +1,5 @@
 ---
 title: Sync to a Remote Node
-weight: 1
-chapter: true
 ---
 
 # Sync to a Remote Node

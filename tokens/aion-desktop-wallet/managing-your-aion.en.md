@@ -1,3 +1,7 @@
+---
+Title: Managing your Aion
+---
+
 # Managing your `AION`
 
 There are several ways you can interact and manage your `AION` tokens.

@@ -1,7 +1,6 @@
 ---
 title: Create a New Account
-weight: 1
-chapter: true
+
 ---
 
 # Create a New Account

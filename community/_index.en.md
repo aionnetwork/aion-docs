@@ -1,7 +1,7 @@
 ---
 Title: Community
 Chapter: true
-Weight: 100
+Weight: 10
 ---
 
 # Community

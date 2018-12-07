@@ -1,10 +1,6 @@
 ---
 title: Additional Wallet Configuration
-weight: 1
-chapter: true
 ---
-
-# Additional Wallet Configuration
 
 ## Connect with a Remote Node
 

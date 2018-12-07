@@ -1,7 +1,5 @@
 ---
 title: Validating Your Download
-weight: 1
-chapter: true
 ---
 
 # Validating Your Download

@@ -1,6 +1,5 @@
 ---
 title: Aion Desktop Wallet
-weight: 1
 chapter: true
 ---
 
