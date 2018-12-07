@@ -1,7 +1,9 @@
 ---
-Title: Aion Web3
+Title: Aion Web3.js
 Chapter: true
 ---
+
+# Aion Web3.js
 
 Aion nodes only understand [bytecode](https://en.wikipedia.org/wiki/Bytecode), and have no idea what to do with Solidity, Python, or Java. Since bytecode isn't very nice to deal with, you can use the Web3 API.
 

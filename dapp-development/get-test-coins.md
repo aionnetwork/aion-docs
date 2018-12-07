@@ -2,6 +2,8 @@
 Title: Get Test Coins
 ---
 
+# Get Test Coins
+
 Test faucets are a way for developers to get some cryptocurrency to test with. This faucet is in it's early stages, and we understand that it's inconvenient. We are working on implementing this faucet function into a website, which will be released soon.
 
 The Aion faucet is currently connected to the [`mastery_faucet` Gitter channel](https://gitter.im/aionnetwork/mastery_faucet). In order to receive `AION` from the faucet:

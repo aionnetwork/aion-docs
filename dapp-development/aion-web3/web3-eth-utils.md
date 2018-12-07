@@ -2,6 +2,8 @@
 Title: web3-eth-utils
 ---
 
+# web3-eth-utils
+
 This package provides utility functions for Aion dapps and other web3.js packages.
 
 ## randomHex

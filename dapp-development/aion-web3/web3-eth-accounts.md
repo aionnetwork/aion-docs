@@ -2,6 +2,8 @@
 Title: web3-eth-accounts
 ---
 
+# web3-eth-accounts
+
 The `web3.eth.accounts` contains functions to generate Aion accounts and sign transactions and data.
 
 This package has NOT been audited and might potentially be unsafe. Take precautions to clear memory properly, store the private keys safely, and test transaction receiving and sending functionality properly before using in production!

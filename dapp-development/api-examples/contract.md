@@ -2,6 +2,8 @@
 Title: Contract
 ---
 
+# Contract
+
 This section will illustrate the API calls for querying the following information:
 * available compilers
 * current energy price

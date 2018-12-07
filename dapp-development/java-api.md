@@ -2,6 +2,8 @@
 Title: Java API
 ---
 
+# Java API
+
 The Java API provides high throughput connection to the kernel and is ideal for Java applications.
 
 [block:api-header]

@@ -2,6 +2,8 @@
 Title: Transaction
 ---
 
+# Transaction
+
 Next we illustrate the API calls for querying the following information:
 
 - transaction information given its hash

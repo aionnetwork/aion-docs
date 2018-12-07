@@ -3,6 +3,8 @@ Title: API Examples
 Chapter: true
 ---
 
+# API Examples
+
 At the end of each section, there is a complete example that covers all the interactions for each functionality. To jump directly to the complete examples, click the links below:
 
 - [account example](doc:account-functionality)

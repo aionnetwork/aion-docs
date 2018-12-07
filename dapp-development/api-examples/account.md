@@ -2,6 +2,8 @@
 Title: Account
 ---
 
+# Account
+
 Here you'll find the API calls for querying the following information:
 * all client accounts
 * coinbase account
