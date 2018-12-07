@@ -1,3 +1,7 @@
+---
+Title: Mining Pools
+---
+
 This section will take you through installation of the [Aion solo mining pool](doc:solo-mining-pool), which should be used with the [external miner](doc:external-miner). During the initial Kilimanjaro (Aion Phase 1) launch, only the Aion solo miner was officially supported on the network. We have since released Aion pool mining software for individuals to run their own pools:
 
 - [Blog Post](https://blog.aion.network/new-aion-pool-software-6e3232527fa) (overview and features)

@@ -1,3 +1,7 @@
+---
+Title: Aion Equihash
+---
+
 # Introduction
 
 The Aion proof of work (PoW) protocol is based on the Equihash algorithm: a memory hard PoW algorithm solving the [Generalized Birthday Problem](https://en.wikipedia.org/wiki/Birthday_problem). The original Equihash algorithm developed by Alex Biryukov and Dmitry Khovratovich may be found [here](https://github.com/khovratovich/equihash).

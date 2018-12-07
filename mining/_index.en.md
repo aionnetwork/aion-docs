@@ -1,18 +1,28 @@
+---
+Title: Mining
+Chapter: true
+---
+
+# Mining
+
 ## Quickstart
 
 Run through the following sections to get set up quickly.
 
-Create Aion Wallet
+Create Aion Wallet:
+
 - [Ledger](doc:ledger-hardware-wallet-guide)
 - [Desktop Wallet](doc:aion-desktop-wallet)
 - [Coinomni](https://www.coinomi.com/)
 
-Download Mining Solver
+Download Mining Solver:
+
 - [EWBF Nvidia/CUDA](doc:external-resources#section-miners)
 - [lolMiner AMD/OpenGL](doc:external-resources#section-miners)
 - [GMiner Nvidia/CUDA](doc:external-resources#section-miners)
 
-Connect Miners to Aion Network
+Connect Miners to Aion Network:
+
 - [Solo Miner](doc:solo-mining-pool)
 - [Pool Miner](doc:external-resources#section-public-pools)
 
