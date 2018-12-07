@@ -1,3 +1,7 @@
+---
+Title: Network
+---
+
 This page will take you through the API calls for querying the following information:
 * syncing status
 * current peer count

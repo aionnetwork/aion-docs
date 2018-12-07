@@ -1,4 +1,9 @@
+---
+Title: web3-eth
+---
+
 # web3.eth
+
 The `web3-eth` package allows you to interact with an Aion blockchain and Aion smart contracts.
 
 ```javascript

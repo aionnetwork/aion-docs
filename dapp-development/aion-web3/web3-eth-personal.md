@@ -1,3 +1,7 @@
+---
+Title: web3-eth-personal
+---
+
 The `web3-eth-personal` package allows you to interact with the Aion node accounts.
 
 Many of these functions send sensitive information, like `password`. Never call these functions over a unsecured Websocket or HTTP provider, as your password will be sent in plain text!

@@ -1,3 +1,8 @@
+---
+Title: Aion Web3
+Chapter: true
+---
+
 Aion nodes only understand [bytecode](https://en.wikipedia.org/wiki/Bytecode), and have no idea what to do with Solidity, Python, or Java. Since bytecode isn't very nice to deal with, you can use the Web3 API.
 
 When you make a request to Web3.js it converts it into a [JSON RPC](https://www.jsonrpc.org/specification) process. This abstracts the interaction between your code and the blockchain.

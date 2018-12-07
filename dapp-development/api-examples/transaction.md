@@ -1,10 +1,16 @@
+---
+Title: Transaction
+---
+
 Next we illustrate the API calls for querying the following information:
+
 - transaction information given its hash
 - transaction information given its index and block hash
 - transaction information given its index and block number
 - transaction receipt given its hash
 
 and performing the following actions:
+
 - send transaction
 - send transaction with raw data
 - perform signatures

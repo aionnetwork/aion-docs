@@ -1,3 +1,7 @@
+---
+Title: Block
+---
+
 Here you'll find the API calls for querying the following information:
 * recent block number
 * block information given its hash

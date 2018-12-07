@@ -1,3 +1,7 @@
+---
+Title: Migrating from Ethereum
+---
+
 # Migrating from Ethereum
 
 There are several differences in type between Aion and Ethereum, all of which are listed below:

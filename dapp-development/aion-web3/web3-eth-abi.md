@@ -1,3 +1,7 @@
+---
+Title: web3-eth-abi
+---
+
 The `web3.eth.abi` functions let you decode and encode parameters to ABI (Application Binary Interface) for function calls to the FastVM.
 
 ## encodeFunctionSignature
