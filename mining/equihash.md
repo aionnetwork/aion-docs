@@ -1,5 +1,5 @@
 ---
-Title: Aion Equihash
+Title: Equihash
 ---
 
 # Introduction

@@ -1,5 +1,5 @@
 ---
-Title: Aion Stratum Protocol
+Title: Stratum Protocol
 ---
 
 In order to support the Aion PoW algorithm the stratum protocol definition has been modified to fit Aion. This document describes protocol version 1 which will be the first stratum standard supported by Aion.
