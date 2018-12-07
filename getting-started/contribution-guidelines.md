@@ -10,28 +10,28 @@ By following these guidelines you're helping to keep the Aion docs sounding cons
 
     > **You** can install the virtual machine.
 
-3. Follow each list of three or more items with a comma. This is known as the [Oxford or Serial Comma](https://en.wikipedia.org/wiki/Serial_comma).
+2. Follow each list of three or more items with a comma. This is known as the [Oxford or Serial Comma](https://en.wikipedia.org/wiki/Serial_comma).
 
     > One, two, three, and four.
 
     > Henry, Elizabeth, and George.
 
-4. Write clearly and concisely. Sentences should be shorter than 25 sentences. Any longer and things tend to get a little _blurry_.
-5. Don’t use formal or long words when easy or short ones will do. Use **get** instead of **acquire**, or **help** instead of **assist**.
-6. Use consistent terminology. This isn't creative writing, so you don't need to describe the same thing differently every time you mention it.
-7. Use American English spelling. When in doubt, use _z_ instead of _s_.
-8. Spell out acronyms and include them in parentheses the first time they are used in **each document**.
+3. Write clearly and concisely. Sentences should be shorter than 25 sentences. Any longer and things tend to get a little _blurry_.
+4. Don’t use formal or long words when easy or short ones will do. Use **get** instead of **acquire**, or **help** instead of **assist**.
+5. Use consistent terminology. This isn't creative writing, so you don't need to describe the same thing differently every time you mention it.
+6. Use American English spelling. When in doubt, use _z_ instead of _s_.
+7. Spell out acronyms and include them in parentheses the first time they are used in **each document**.
 
     > Decentralized Application (dApp)
     > Virtual Machine (VM)
 
-9. Capitalize all the significant words in titles.
+8. Capitalize all the significant words in titles.
 
     > **T**his is a **P**ublic **S**ervice **A**nnouncement
 
-10. Avoid using specific version numbers whenever possible.
+9. Avoid using specific version numbers whenever possible.
 
-11. If you absolutely have to use the acronym **dApp** (and we'd prefer you not to), then keep the _d_ lowercase, and the _a_ of _app_ uppercase. We had a vote in the Aion Community office and _d_**App** won.
+10. If you absolutely have to use the acronym **dApp** (and we'd prefer you not to), then keep the _d_ lowercase, and the _a_ of _app_ uppercase. We had a vote in the Aion Community office and _d_**App** won.
 
 ## Formatting
 
