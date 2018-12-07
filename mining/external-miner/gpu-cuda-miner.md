@@ -1,3 +1,7 @@
+---
+Title: GPUI CUDA Miner
+---
+
 This external miner assumes you will be mining with a Linux Ubuntu machine. Our community has developed other mining software compatible with both Windows and other Linux distributions. Links can be found in our [external resources section](https://docs.aion.network/docs/external-resources).
 
 ## Prerequisites

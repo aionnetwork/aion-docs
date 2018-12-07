@@ -1,3 +1,10 @@
+---
+Title: External Miner
+Chapter: true
+---
+
+# External Miner
+
 There are two types of miners that are options for external mining:
 
 - [CPU](doc:cpu-miner)

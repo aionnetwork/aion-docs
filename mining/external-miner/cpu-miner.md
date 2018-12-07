@@ -1,3 +1,7 @@
+---
+Title: CPU Miner
+---
+
 The CPU miner is for **testing and developing** on the test network **only**. Do not use this miner on the main network or in a production environment. It will not work.
 
 # Prerequisites
