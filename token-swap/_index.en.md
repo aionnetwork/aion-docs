@@ -1,11 +1,20 @@
-# Recovery Period
+---
+Title: Token Swap
+Chapter: true
+---
 
-#### The token swap has ended and we are now in the recovery period.
+# Token Swap
+
+### Recovery Period
+
+The token swap has ended and we are now in the recovery period.
 
 - The official [Aion Token Bridge](https://docs.aion.network/v1.1/docs/using-the-bridge) will be available until **10th December 2018**. 
 - The [Changelly exchange](https://docs.aion.network/v1.1/docs/using-an-exchange) will be available until **21st December 2018**. All other exchanges are now unavailable.
 
 After these dates, you will no longer be able to swap your `ERC 20` tokens. Please swap your tokens as soon as possible.
+
+------
 
 ## Disclaimer
 

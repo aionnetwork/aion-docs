@@ -1,3 +1,7 @@
+---
+Title: Using an Exchange
+---
+
 # Recovery Period
 [block:image]
 {
