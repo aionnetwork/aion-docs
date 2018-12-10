@@ -52,7 +52,7 @@ The Aion wallet is a software program that allows users to manage their Aion coi
 
 #### [Ledger](https://www.ledger.com/)
 
-Protect your crypto assets with the most popular hardware wallet in the market
+Protect your crypto assets with the most popular hardware wallet in the market.
 
 #### [WandX](https://www.wandx.co/)
 The WandX desktop app is a decentralized token trading platform on Ethereum and NEO blockchains for ERC20 and NEP5 tokens respectively, all with a wallet built in.
@@ -69,4 +69,4 @@ A next generation wallet that simplifies investing, trading, and asset managemen
 
 #### [Magnum](https://magnumwallet.co/)
 
-Light universal web-based crypto wallet that supports Ledger integration.
+Light universal web-based crypto wallet that supports Ledger wallet integration.
