@@ -69,4 +69,4 @@ A next generation wallet that simplifies investing, trading, and asset managemen
 
 #### [Magnum](https://magnumwallet.co/)
 
-Light universal web-based crypto wallet
+Light universal web-based crypto wallet that supports Ledger integration.
