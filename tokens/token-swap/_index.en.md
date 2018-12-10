@@ -5,104 +5,142 @@ Chapter: true
 
 # Token Swap
 
-### Recovery Period
-
-The token swap has ended and we are now in the recovery period.
-
-- The official [Aion Token Bridge](https://docs.aion.network/v1.1/docs/using-the-bridge) will be available until **10th December 2018**. 
-- The [Changelly exchange](https://docs.aion.network/v1.1/docs/using-an-exchange) will be available until **21st December 2018**. All other exchanges are now unavailable.
-
-After these dates, you will no longer be able to swap your `ERC 20` tokens. Please swap your tokens as soon as possible.
-
-------
+The token swap has ended and we are now in the recovery period. The [Changelly](https://changelly.com/) exchange will be available until **21st December 2018**. All other exchanges are now unavailable. Swapping tokens via the Aion Token Swap Bridge is no longer available.
 
 ## Disclaimer
 
-The Token Swap has ended We are now in the recovery period. Given the nature of decentralized technology, it is imperative you exercise **extreme caution** when transacting with cryptocurrency. You, and only you, have custody over your tokens and coins, so it is critical you securely store your private keys. When using the Aion Token Transfer Bridge it is recommended that you **perform a test transaction of a small amount** to verify that you are using the correct address and have access to your account.
-[block:callout]
-{
-  "type": "danger",
-  "title": "Don't Mess Up!",
-  "body": "During the Token Swap, you will be taken to a web page that is automatically filled in. **Do not edit the AMOUNT TO SEND field**. If you change this field, you'll end up sending your Aion to the Aion Contract, and you might lose everything forever."
-}
-[/block]
-Here's a high-level overview of what you're going to be doing during this token swap:
+The Token Swap has ended. We are now in the recovery period. Given the nature of decentralized technology, it is imperative you exercise **extreme caution** when transacting with cryptocurrency. You, and only you, have custody over your tokens and coins, so it is critical you securely store your private keys. We recommended that you **perform a test transaction of a small amount** to verify that you are using the correct address and have access to your account.
 
-1. Create an Aion Wallet that will receive your new `AION Coins`.
-2. Choose a method for proceeding with the swap **Bridge** or **Exchange**.
-3. Proceed with the step by step documentation for your chosen method.
+![Changelly is the only supported method to perform an Aion token swap.](images/changelly-logo.png)
 
-Now that you're _mentally prepped_ for what's coming up, follow all the steps in this guide to successfully transfer your `ERC-20` tokens to `AION Coin`!
-[block:api-header]
-{
-  "title": "How to Proceed"
-}
-[/block]
+## Support
 
-[block:image]
-{
-  "images": [
-    {
-      "image": []
-    }
-  ]
-}
-[/block]
-
-[block:parameters]
-{
-  "data": {
-    "h-0": "",
-    "h-1": "",
-    "0-0": "[![](https://files.readme.io/c6c5ca8-bridge.png)](/docs/using-the-bridge)",
-    "0-1": "[![](https://files.readme.io/27dc7ce-changelly-logo.png)](/docs/using-an-exchange)",
-    "1-0": "Use the official Aion Token Transfer Bridge to exchange your `AION ERC-20` for `AION Coins`.",
-    "1-1": "Use a third party exchange to transfer your coins.",
-    "2-1": "This is a **beginner friendly** route with a simple process. However you could be charged a small **transaction fee** by the exchanges, and could take up to **2-3 days** to process.",
-    "2-0": "This route is a slightly more **advanced process** and is only recommended for users who are experienced with token transactions. Using the Bridge you only pay for <a href=\"https://www.cryptocompare.com/coins/guides/what-is-the-gas-in-ethereum/\" target=\"_blank\">GAS</a> and everything is completed within **one hour**.",
-    "3-0": "Go to [Using the Bridge](/docs/using-the-bridge) .",
-    "3-1": "Go to [Using an Exchange](/docs/using-an-exchange)"
-  },
-  "cols": 2,
-  "rows": 4
-}
-[/block]
-
-[block:api-header]
-{
-  "title": "Video Walkthrough"
-}
-[/block]
-If you're more into watching video tutorials, take a look at the videos below.
-
-## Using **MyEtherWallet **
-[block:embed]
-{
-  "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FCYQc3LA-Wa0%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DCYQc3LA-Wa0&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FCYQc3LA-Wa0%2Fhqdefault.jpg&key=f2aa6fc3595946d0afc3d76cbbd25dc3&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-  "url": "https://www.youtube.com/watch?v=CYQc3LA-Wa0",
-  "title": "Bridge Swap using MyEtherWallet",
-  "favicon": "https://s.ytimg.com/yts/img/favicon-vfl8qSV2F.ico",
-  "image": "https://i.ytimg.com/vi/CYQc3LA-Wa0/hqdefault.jpg"
-}
-[/block]
-## Using **MyCrypto **
-[block:embed]
-{
-  "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FZMVPyEttnkI%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DZMVPyEttnkI&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FZMVPyEttnkI%2Fhqdefault.jpg&key=f2aa6fc3595946d0afc3d76cbbd25dc3&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-  "url": "https://www.youtube.com/watch?v=ZMVPyEttnkI",
-  "title": "Bridge Swap using MyCrypto",
-  "favicon": "https://s.ytimg.com/yts/img/favicon-vfl8qSV2F.ico",
-  "image": "https://i.ytimg.com/vi/ZMVPyEttnkI/hqdefault.jpg"
-}
-[/block]
-
-[block:api-header]
-{
-  "title": "Support"
-}
-[/block]
 If you encounter any issues during your swap process not covered in this guide, please reach out on any of our official channels below or [support@aion.network](mailto:support@aion.network).
 
 [Aion Forum](https://forum.aion.network/)
 [Telegram](https://t.me/aion_blockchain)
 [Twitter](https://twitter.com/aion_network?lang=en)
+
+If you encounter any issues during your swap process not covered in this guide, please reach out on any of our official channels below or [support@aion.network](mailto:support@aion.network).\n\n[Aion Forum](https://forum.aion.network/)\n[Telegram](https://t.me/aion_blockchain)\n[Twitter](https://twitter.com/aion_network?lang=en)
+
+## Install the Desktop Wallet
+
+At this time the Aion Desktop wallet and [Coinomi](https://coinomi.com/) are the only supported wallets for receiving your AION coins. [Ledger is also available](https://docs.aion.network/docs/ledger-hardware-wallet-guide). This guide walks you through using the Aion Desktop Wallet only.
+
+**Select Your Operating System**
+
+[![Linux Logo](images/linux-icon.png)](#linux)
+
+[![Apple Logo](images/apple-icon.png)](#macos)
+
+[![Windows Logo](images/windows-icon.png)](#windows)
+
+### Linux
+
+Although it is possible to install the Aion Desktop Wallet on any Linux distribution, only Ubuntu is officially supported.
+
+#### Updating from Version 1.0
+
+To properly install the new Desktop Wallet release make sure that you have exported your keystore or written down your seed phrase. Once you have confirmed, execute the following command to remove release 1.0:
+
+```bash
+rm -rf ~/.aion
+```
+
+You can now install the latest version:
+
+#### Standard Installation
+
+1. Download the `aion_ui.zip` file from the [Aion Wallet Repository](https://github.com/aionnetwork/Desktop-Wallet/releases/).
+2. Extract the folder to your root `~` directory.
+3. Open a terminal and run: `~/aion_ui/aion_ui.sh`.
+4. The Aion Desktop Wallet is now open on your desktop. Run the above command again if you want to re-open the wallet.
+
+#### One-line Installation
+
+<div class="nextSteps"><h2>What's Next?</h2><table><tbody><tr><td><a ui-sref="docs.show({'doc': 'interact-with-your-wallet'})" href="#section-setup-your-wallet"><i class="fa fa-chevron-right"></i>Setup Your Wallet</a></td></tr></tbody></table></div>
+
+### macOS
+
+1. Download the `AionWallet.dmg` application image from the [Aion Wallet Github repository](https://github.com/aionnetwork/Desktop-Wallet/releases/).
+2. Extract and open the installer. A window containing **AionWallet.app** should appear.
+3. Drag and drop **AionWallet.app** into the **Applications** folder.
+
+![Installing the Aion Wallet](images/open-dmg.gif)
+
+1. You can now search for **AionWallet** using the normal tools (`command` + `space` and typing `AionWallet`) or by navigating to the **Applications** folder and double-clicking on **AionWallet**.
+
+#### Encountering a Warning
+
+You may encounter a warning that you cannot run the application. If this happens:
+
+1. Open **Applications** > **System Preferences** > **Privacy & Settings**.
+2. At the lower half of the window, you will see a request for the **AionWallet App** to run on your Mac.
+3. Select to **Open Now**, and if prompted again confirm your choice by pressing **Open** again.
+
+<div class="nextSteps"><h2>What's Next?</h2><table><tbody><tr><td><a ui-sref="docs.show({'doc': 'interact-with-your-wallet'})" href="#section-setup-your-wallet"><i class="fa fa-chevron-right"></i>Setup Your Wallet</a></td></tr></tbody></table></div>
+
+### Windows
+
+The Aion Desktop Wallet is compatiable with Windows 7 and above.
+
+1. If you don't already have it, [download and install the latest stable Java release](https://java.com/en/download/manual.jsp).
+2. Download the `AionWalletSetup.exe` executable from the [Aion Wallet repository](https://github.com/aionnetwork/Desktop-Wallet/releases/).
+3. Run `AionWalletSetup.exe` on your computer. Accept any security warnings that pop up.
+4. Follow through the installation and restart your computer.
+5. You can now open the wallet through the **Start Menu**.
+
+#### Unsigned Executables
+
+The `AionWalletSetup.exe` currently isn't signed, which means you may run into some security warnings during the installation process. Just click **OK** through these warnings. We are in the processes of getting all the Aion executable signed and recognized by Microsoft.
+
+<div class="nextSteps"><h2>What's Next?</h2><table><tbody><tr><td><a ui-sref="docs.show({'doc': 'interact-with-your-wallet'})" href="#section-setup-your-wallet"><i class="fa fa-chevron-right"></i>Setup Your Wallet</a></td></tr></tbody></table></div>
+
+-------------------
+
+## Setup Your Wallet
+
+This tutorial assumes that you want to create a new account within your wallet. If you already have an account setup in your wallet but you have forgotten your password, you can recover it by following the [I've Forgotten My Password guide](https://docs.aion.network/v1.1/docs/troubleshooting#section-i-ve-forgotten-my-password).
+
+![The Aion Desktop Wallet](images/accounts.png)
+
+### Create an Account
+
+1. Open the Wallet.
+2. Click **Add account**.
+3. Enter an account name (this can be edited later).
+4. Enter a password.
+5. Confirm chosen password.
+6. Save and backup the seed mnemonic that appears. Please write down the mnemonic phrase on paper and store in a secure location. This phrase can be used to access your account without any additional passwords or verification. Handle with care!
+
+![Aion Wallet Showing an Account Mnemonic](images/mnemonic.png)
+
+#### Your Public Address
+
+In the wallet there is a field called **Public address**. This is your Aion wallet address, and can be used to receive your `AION` coins in the token swap.
+
+![Aion Wallet with a Public Address](images/overview.png)
+
+For additional information on using your Aion Desktop Wallet refer to the [Aion Wallet user guide](https://docs.aion.network/v1.1/docs/aion-desktop-wallet).
+
+Congrats! You now have an Aion wallet address to use for the Aion Token Swap
+
+<div class="nextSteps"><h2>What's Next?</h2><table><tbody><tr><td><a ui-sref="docs.show({'doc': 'interact-with-your-wallet'})" href="#section-currently-supported-exchanges"><i class="fa fa-chevron-right"></i>Check Token Compatibility</a></td></tr></tbody></table></div>
+
+-------------------
+
+## Currently Supported Exchanges
+
+Changelly is the **only** exchange available to do the token swap. Changelly will remain available **until 21st December 2018**. After that date you will not be able to perform the token swap.
+
+### [Changelly](https://changelly.com/)
+
+For an up-to-date and detailed breakdown of Changelly's swap process please refer to <a href="https://medium.com/@Changelly/wanna-swap-your-aion-erc20-tokens-to-aion-coin-do-it-with-changelly-e2d722ec8ab8" target="_blank">their guide</a>.
+
+![The Changelly Homepage](images/changelly-home.png)
+
+## Check Aion Wallet
+
+Once your transfer is complete, you can check your `Aion` coin balance using the [Aion Desktop Wallet](https://docs.aion.network/v1.1/docs/aion-desktop-wallet) or [Coinomi](https://www.coinomi.com/en/). Keep in mind that this whole process may take up to an hour to show up. We highly suggest attempting the swap using a small amount of `AION` before swapping your entire supply at once.
+
+**Congratulations! You have now completed the Aion Token Swap, and are now holding native `AION` coins.** :+1:
