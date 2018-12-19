@@ -138,10 +138,16 @@ java -jar avm.jar call 0f3b39f4e8b4bd60d55d8e803547365d44d169770795ca9192eec3e20
 
 ## Troubleshooting
 
-### `realpath: command not found`
+### Mac Compile Error
 
-This issue happens on some version of macOS. You can safely ignore the warning, it does not impact the outcome of the compilation.
+![Mac Compile Error](images/mac-compile-error.png)
 
-### `Exception in thread "main" java.lang.IllegalArgumentException: Unknown argument: sayHello`
+MacOS users may see `realpath: command not found` when compiling. You can safely ignore the warning, it does not impact the outcome of the compilation.
+
+### Can't Call Method
+
+![Method Call Error](images/method-call-error.png)
+
+`Exception in thread "main" java.lang.IllegalArgumentException: Unknown argument: sayHello`
 
 Make sure you give the `-m` argument when calling the `sayHello` function.
