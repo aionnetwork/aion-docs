@@ -70,3 +70,17 @@ A next generation wallet that simplifies investing, trading, and asset managemen
 #### [Magnum](https://magnumwallet.co/)
 
 Light universal web-based crypto wallet that supports Ledger wallet integration.
+
+## Exchanges
+
+These are the top 5 most popular exchanges that support `Aion`.
+
+[![Binance](images/binance.png)](https://www.binance.com/en)
+
+[![BCex](images/bcex.png)](https://www.bcex.ca/)
+
+[![BitFinex](images/bitfinex.png)](https://www.bitfinex.com/)
+
+[![Coinbene](images/coinbene.png)](https://www.coinbene.com/)
+
+[![BitForex](images/bitforex.png)](https://bitforex.com/)
