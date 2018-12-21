@@ -12,7 +12,7 @@ If you want to suggest any changes to the docs or edit the docs yourself, [raise
 
 By following these guidelines you're helping to keep the Aion docs sounding consistent.
 
-1. Address readers in second person by using _you_ to address them. Stay away from words like _I_, _we_, _our_, or _one_.
+1. Address readers in second person by using _you_. Stay away from words like _I_ or _one_.
 
     > **You** can install the virtual machine.
 
@@ -36,8 +36,7 @@ By following these guidelines you're helping to keep the Aion docs sounding cons
     > **T**his is a **P**ublic **S**ervice **A**nnouncement
 
 9. Avoid using specific version numbers whenever possible.
-
-10. If you absolutely have to use the acronym **dApp** (and we'd prefer you not to), then keep the _d_ lowercase, and the _a_ of _app_ uppercase. We had a vote in the Aion Community office and _d_**App** won.
+10. If you absolutely have to use the acronym **dApp** (and we'd prefer you not to), then keep the _d_ lowercase, and the _a_ of _app_ uppercase. We had a vote in the Aion Community office and _d_**App** won. Alternatives for _dApp_ are **blockchain application**, **application**, or just an **app**.
 
 ### Formatting
 
