@@ -4,8 +4,6 @@ weight: 5
 chapter: true
 ---
 
-### Aion Node
-
 # Kernel Overview
 
 ## Download
