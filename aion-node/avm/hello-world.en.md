@@ -28,7 +28,7 @@ In this guide, we're going to run through how to get a simple _Hello World_ cont
     > git version 2.17.1
     ```
 
-    ![Checking Product Version Numbers in Terminal](images/checking-versions-in-terminal.png)
+    ![Checking Product Version Numbers in Terminal](https://res.cloudinary.com/aiondocs/image/upload/v1546276229/aion-node/avm/images/checking-versions-in-terminal.png)
 
 2. Move to your home folder and clone the Aion Virtual Machine git repository.
 
@@ -37,7 +37,7 @@ In this guide, we're going to run through how to get a simple _Hello World_ cont
     git clone https://github.com/aionnetwork/avm.git
     ```
 
-    ![Cloning the Git Repository](images/git-clone.gif)
+    ![Cloning the Git Repository](https://res.cloudinary.com/aiondocs/image/upload/v1546276229/aion-node/avm/images/git-clone.gif)
 
 3. Move into the AVM folder and build the distribution.
 
@@ -58,7 +58,7 @@ In this guide, we're going to run through how to get a simple _Hello World_ cont
     > Total time: 7 seconds
     ```
 
-    ![Build using ANT](images/build-ant.gif)
+    ![Build using ANT](https://res.cloudinary.com/aiondocs/image/upload/v1546276229/aion-node/avm/images/build-ant.gif)
 
 4. Move into the `~/AVM/dist` folder and check that the AVM is working.
 
@@ -69,7 +69,7 @@ In this guide, we're going to run through how to get a simple _Hello World_ cont
     > Usage: AvmCLI [options] [command] [command options]
     ```
 
-    ![Check the AVM.jar is Working](images/check-avm-jar.gif)
+    ![Check the AVM.jar is Working](https://res.cloudinary.com/aiondocs/image/upload/v1546276229/aion-node/avm/images/check-avm-jar.gif)
 
 5. Compile the `HelloWorld.java` file from within the `~/AVM/dist/examples` directory. This step creates a file called `dapp.jar`.
 
@@ -84,7 +84,7 @@ In this guide, we're going to run through how to get a simple _Hello World_ cont
     > The jar has been generated at: /home/aion/AVM/dist/build/dapp.jar
     ```
 
-    ![Compiling the HelloWorld.java Example](images/compile-hello-world.gif)
+    ![Compiling the HelloWorld.java Example](https://res.cloudinary.com/aiondocs/image/upload/v1546276229/aion-node/avm/images/compile-hello-world.gif)
 
     If you are compiling on macOS, you may receive the error `./compile.sh: line 44: realpath: command not found`. You can safely ignore this error.
 
@@ -106,7 +106,7 @@ In this guide, we're going to run through how to get a simple _Hello World_ cont
     > Energy cost  : 10698240
     ```
 
-    ![Deploying the avm.jar File](images/deploy-jar.gif)
+    ![Deploying the avm.jar File](https://res.cloudinary.com/aiondocs/image/upload/v1546276229/aion-node/avm/images/deploy-jar.gif)
 
 7. Copy the **Dapp Address** field from the output.
 8. Call the `sayHello` method from the newly deployed application, using the **Dapp Address** copied from the previous step.
@@ -132,7 +132,7 @@ In this guide, we're going to run through how to get a simple _Hello World_ cont
     > Energy cost  : 62998
     ```
 
-    ![Copy and Paste in Address](images/call-say-hello.gif)
+    ![Copy and Paste in Address](https://res.cloudinary.com/aiondocs/image/upload/v1546276229/aion-node/avm/images/call-say-hello.gif)
 
 9. You're done!
 
@@ -140,13 +140,13 @@ In this guide, we're going to run through how to get a simple _Hello World_ cont
 
 ### Mac Compile Error
 
-![Mac Compile Error](images/mac-compile-error.png)
+![Mac Compile Error](https://res.cloudinary.com/aiondocs/image/upload/v1546276229/aion-node/avm/images/mac-compile-error.png)
 
 MacOS users may see `realpath: command not found` when compiling. You can safely ignore the warning, it does not impact the outcome of the compilation.
 
 ### Can't Call Method
 
-![Method Call Error](images/method-call-error.png)
+![Method Call Error](https://res.cloudinary.com/aiondocs/image/upload/v1546276229/aion-node/avm/images/method-call-error.png)
 
 `Exception in thread "main" java.lang.IllegalArgumentException: Unknown argument: sayHello`
 

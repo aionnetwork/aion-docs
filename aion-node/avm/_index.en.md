@@ -1,5 +1,6 @@
 ---
 title: Aion Virtual Machine
+weight: 1
 chapter: true
 ---
 
@@ -34,10 +35,9 @@ The core of the JVM is a very mature piece of software, changing little between 
 
 The Java-based AVM leverages the entire Java tooling ecosystem, making developer onboarding and experience extremely streamlined. You get the full developer package including the compiler and IDE straight out of the box! That said, the AVM taps into a well-established community that has claimed the top spot for the #1 language (Java) in the past few years.
 
-
 # How it Works
 
-![AVM Architecture](https://aion.network/media/AVM-How-it-Works.png)
+![AVM Architecture](https://res.cloudinary.com/aiondocs/image/upload/v1546276229/aion-node/avm/images/avm-how-it-works.png)
 
 This diagram shows the high-level connections between these components as they apply to the case of deploying a new DApp. The user’s code is written as standard Java, using the standard class library (JCL) and an API we provide for accessing blockchain-specific functionality.
 
@@ -49,7 +49,7 @@ Upon deployment, this code goes through our transformer (a pipeline of ASM-based
 
 This instrumented code is saved and is what is loaded and executed when transactions arrive, in the future.
 
-![Storage System](https://aion.network/media/AVM-Storage-System.png)
+![Storage System](https://res.cloudinary.com/aiondocs/image/upload/v1546277101/aion-node/avm/images/avm-storage-system.png)
 
 While most DApp environments expose storage as a key-value store (often with rigid key and value size requirements), the AVM exposes the data store as a generic object graph, derived directly from the objects alive in the user’s address space, as reachable from their static variables, when a transaction completes.
 
