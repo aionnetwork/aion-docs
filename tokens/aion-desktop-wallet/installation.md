@@ -7,17 +7,14 @@ weight: 1
 
 The Aion Desktop Wallet is a local application that is **stored and ran from your local machine**. It is not a cloud application. If you're looking for a wallet that you can access from your phone, tablet, or computer, take a look at [Coinomi](https://www.coinomi.com/en/).
 
-The Aion Desktop Wallet can be installed on the following operating systems:
+Follow the installation instructions for your operating system:
 
-![Linux Logo](/tokens/aion-desktop-wallet/images/linux-icon.png)
-
-![Apple Logo](/tokens/aion-desktop-wallet/images/apple-icon.png)
-
-![Windows Logo](/tokens/aion-desktop-wallet/images/windows-icon.png)
+| [Linux](#linux) | [macOS](#macos) | [Windows](#windows) |
+| --------------- | --------------- | ------------------- |
 
 ## Upgrading from a Previous Version
 
-If you are upgrading to the latest Aion Desktop Wallet from a previous version, make sure to follow the steps outlined in the [Upgrading the Wallet guide](https://docs.aion.network/docs/updating-the-wallet)
+If you are upgrading to the latest Aion Desktop Wallet from a previous version, make sure to follow the steps outlined in the [Upgrading the Wallet guide](https://docs.aion.network/docs/updating-the-wallet). If you are not upgrading, carry on following the instructions on this page.
 
 ## Linux
 
@@ -42,7 +39,7 @@ The Aion Desktop Wallet is now open on your desktop. In order to run the applica
 
 ---
 
-## Mac
+## macOS
 
 1. Download the `AionWallet.dmg` application image from the [Aion Wallet repository](https://github.com/aionnetwork/Desktop-Wallet/releases/).
 2. Open the `.dmg` file and `AionWallet.app` into your applications folder.
