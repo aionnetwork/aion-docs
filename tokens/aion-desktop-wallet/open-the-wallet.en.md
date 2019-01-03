@@ -1,5 +1,6 @@
 ---
 title: Open the Wallet
+weight: 30
 ---
 
 # Open your Wallet

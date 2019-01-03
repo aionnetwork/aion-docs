@@ -1,5 +1,6 @@
 ---
 title: Validating Your Download
+weight: 80
 ---
 
 # Validating Your Download

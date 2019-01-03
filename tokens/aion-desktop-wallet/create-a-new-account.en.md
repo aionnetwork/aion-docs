@@ -1,9 +1,7 @@
 ---
 title: Create a New Account
-
+weight: 40
 ---
-
-# Create a New Account
 
 # Create a New Account
 

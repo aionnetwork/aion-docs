@@ -1,5 +1,6 @@
 ---
 title: Additional Wallet Configuration
+weight: 90
 ---
 
 # Additional Wallet Configuration

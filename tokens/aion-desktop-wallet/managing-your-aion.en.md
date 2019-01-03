@@ -1,5 +1,6 @@
 ---
 Title: Managing your Aion
+weight: 60
 ---
 
 # Managing your `AION`

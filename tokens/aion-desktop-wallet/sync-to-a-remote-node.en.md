@@ -1,5 +1,6 @@
 ---
 title: Sync to a Remote Node
+weight: 70
 ---
 
 # Sync to a Remote Node

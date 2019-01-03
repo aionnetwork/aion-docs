@@ -1,5 +1,6 @@
 ---
 title: Upgrading the Wallet
+weight: 20
 ---
 
 # Upgrading the Wallet
