@@ -12,13 +12,12 @@ Here you'll find the API calls for querying the following information:
 - Account transaction count
 
 The final subsection contains code illustrating all of the above interactions.
-[block:api-header]
-{
-  "title": "Retrieve All Client Accounts"
-}
-[/block]
+
+## Retrieve All Client Account
+
 The examples below show how to query the APIs for the list of addresses owned by the client. The functionality is compatible with [`eth_accounts`](https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_accounts). In each code snippet, the addresses are retrieved from the API and printed to the standard output.
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -36,9 +35,11 @@ The examples below show how to query the APIs for the list of addresses owned by
     }
   ]
 }
-[/block]
+```
+
 Sample output:
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -53,15 +54,13 @@ Sample output:
     }
   ]
 }
-[/block]
+```
 
-[block:api-header]
-{
-  "title": "Retrieve Coinbase Account"
-}
-[/block]
+### Retrieve Coinbase Account
+
 The examples below show how to query the APIs for the address configured to receive the mining rewards. The functionality is compatible with [`eth_coinbase`](https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_coinbase). In each code snippet, the address is retrieved from the API and printed to the standard output.
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -74,9 +73,11 @@ The examples below show how to query the APIs for the address configured to rece
     }
   ]
 }
-[/block]
+```
+
 Sample output:
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -91,16 +92,14 @@ Sample output:
     }
   ]
 }
-[/block]
+```
 
-[block:api-header]
-{
-  "title": "Retrieve Account Balance"
-}
-[/block]
+### Retrieve Account Balance
+
 The examples below show how to query the APIs for the balance of a given address.
 The functionality is compatible with [`eth_getBalance`](https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_getbalance). In each code snippet, the balance is retrieved from the API and printed to the standard output.
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -113,9 +112,10 @@ The functionality is compatible with [`eth_getBalance`](https://github.com/ether
     }
   ]
 }
-[/block]
+
 Sample output:
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -130,15 +130,13 @@ Sample output:
     }
   ]
 }
-[/block]
+```
 
-[block:api-header]
-{
-  "title": "Retrieve Account Transaction Count"
-}
-[/block]
+### Retrieve Account Transaction Count
+
 The examples below show how to query the APIs for the number of transactions sent by a given address. The functionality is compatible with [`eth_getTransactionCount`](https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_gettransactioncount). In each code snippet, the transaction count is retrieved from the API and printed to the standard output.
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -151,9 +149,11 @@ The examples below show how to query the APIs for the number of transactions sen
     }
   ]
 }
-[/block]
+```
+
 Sample output:
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -168,21 +168,19 @@ Sample output:
     }
   ]
 }
-[/block]
+```
 
-[block:api-header]
-{
-  "title": "Complete Examples"
-}
-[/block]
+### Complete Examples
+
 Each code example below retrieves and prints to the standard output the following:
+
 1. all keystore addresses,
 2. the coinbase (miner) address,
 3. the balance for a given account,
 4. the number of transactions performed by a given account, and
 5. the balance and number of transactions performed by each account in the keystore.
 
-[block:code]
+```json
 {
   "codes": [
     {
@@ -195,9 +193,11 @@ Each code example below retrieves and prints to the standard output the followin
     }
   ]
 }
-[/block]
+```
+
 Sample output:
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -212,4 +212,4 @@ Sample output:
     }
   ]
 }
-[/block]
+```
