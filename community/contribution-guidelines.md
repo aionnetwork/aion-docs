@@ -36,7 +36,7 @@ By following these guidelines you're helping to keep the Aion docs sounding cons
     > **T**his is a **P**ublic **S**ervice **A**nnouncement
 
 9. Avoid using specific version numbers whenever possible.
-10. If you absolutely have to use the acronym **dApp** (and we'd prefer you not to), then keep the _d_ lowercase, and the _a_ of _app_ uppercase. We had a vote in the Aion Community office and _d_**App** won. Alternatives for _dApp_ are **blockchain application**, **application**, or just an **app**.
+10. If you absolutely have to use the acronym **dApp** (and we'd prefer you not to), then keep the _d_ lower-case, and the _a_ of _app_ upper-case. We had a vote in the Aion Community office and _d_**App** won. Alternatives for _dApp_ are **blockchain application**, **application**, or just an **app**.
 
 ### Formatting
 

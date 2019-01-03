@@ -13,7 +13,7 @@ If you want to compile your own package, follow these steps. You do not have to 
 - Oracle Java SE Development Kit 11
 - Apache Ant 1.10
 - 8GB RAM
-- CPU need to support SSE4.2
+- CPU with SSE4.2 support
 
 ## Build Process
 
@@ -46,7 +46,7 @@ cd aion
 ant pack_build
 ```
 
-5. Verify the build code:
+5. Verify that the build works:
 
 ```bash
 ant test

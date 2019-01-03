@@ -22,7 +22,7 @@ Building and running your own node gives you the most control over how to set th
 
 ## [Spin up a Fast VM](fast-vm)
 
-**Run a pre-compiled and pre-synced copy of an Aion node that can be spun-up on operating system.**
+**Run a pre-compiled and pre-synced copy of an Aion node that can be spun-up on any operating system.**
 
 This is perfect if you are developing on Aion and will likely have to _rebuild_ the node often. This type of node is pre-synced which shortens the build time compared to building your own. You still need to take into account the resources that the Fast VM uses. You can use this method on any operating system that has Docker installed.
 
@@ -30,4 +30,4 @@ This is perfect if you are developing on Aion and will likely have to _rebuild_ 
 
 **Connect to a node that is already running and synced up, hosted by a third-party company.**
 
-This is the fasted method to get up a running. All you need to do is sign up to one of the supported providers, and connect to the node. We recommend this method to developers who want to get up and running fast. This method needs a constant internet connection, with limited customizability for each node.
+This is the fasted method to get up and running. All you need to do is sign up to one of the supported providers, and connect to the node. We recommend this method to developers who want to get up and running fast. This method needs a constant internet connection, with limited customizability for each node.

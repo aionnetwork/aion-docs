@@ -11,7 +11,7 @@ We've partnered with a [Blockdaemon](http://blockdaemon.com/) and [Nodesmith](ht
 
 ## [Blockdaemon](http://blockdaemon.com/)
 
-Spin up your own private node incredibly quickly. Instead of having to deal with compiling your own package and hosting your own hardware, Blockdaemon allows you spin up a test net in minutes and validate your smart contract.
+Spin up your own private node incredibly quickly. Instead of having to deal with compiling your own package and hosting your own hardware, Blockdaemon allows you to spin up a test net in minutes and validate your smart contract.
 
 ![Nodesmith Logo](/aion-node/images/nodesmith-logo.png)
 

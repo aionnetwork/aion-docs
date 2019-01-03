@@ -7,17 +7,17 @@ weight: 3
 
 ![Docker Logo](/aion-node/fast-vm/images/docker-logo.png)
 
-This Docker image has been created by a member of the Aion community, and is supported by the Aion Foundation.
+This Docker image has been created by a member of the Aion community and is supported by the Aion Foundation.
 
-Docker allows you to run virtual machines using the underlying unix sub-system on your Linux or macOS computer. Windows works in a similar way, hosting a small virtual machine within Hyper-V, allowing for fewer components and has less moving parts than a standard virtual machine. We're really glossing over how Docker works right here, so if you'd like to know more you should checkout the [Docker website](https://www.docker.com/).
+Docker allows you to run virtual machines using the underlying Unix sub-system on your Linux or macOS computer. Windows works in a similar way, hosting a small virtual machine within Hyper-V, allowing for fewer components and has less moving parts than a standard virtual machine. We're really glossing over how Docker works right here, so if you'd like to know more you should check out the [Docker website](https://www.docker.com/).
 
-The benefit this Docker image has over install the FastVM directly onto Ubuntu is that there is very little setup required. Also, this method can be ran on any operating system with Docker installed.
+The benefit this Docker image has over install the FastVM directly onto Ubuntu is that there is very little setup required. Also, this method can run on any operating system with Docker installed.
 
 ## Prerequisites
 
-You must have [Docker](https://www.docker.com/) installed on you machine in order to run the Docker image. Docker runs on Linux, macOS, and Windows.
+You must have [Docker](https://www.docker.com/) installed on your machine in order to run the Docker image. Docker runs on Linux, macOS, and Windows.
 
-Docker for Windows has some very specific system requiments. Take a look at the [Docker documentation](https://docs.docker.com/docker-for-windows/install/) to find out what you'll need.
+Docker for Windows has some very specific system requirements. Take a look at the [Docker documentation](https://docs.docker.com/docker-for-windows/install/) to find out what you'll need.
 
 ## Install
 
