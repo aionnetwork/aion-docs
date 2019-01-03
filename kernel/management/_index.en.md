@@ -5,4 +5,4 @@ chapter: true
 
 # Kernel Management
 
-Lorem ipsum.
+Page under construction. Want to help out? [Check out the Github repo!](https://github.com/aionnetwork/docs)

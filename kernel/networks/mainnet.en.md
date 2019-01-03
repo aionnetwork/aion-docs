@@ -5,4 +5,4 @@ weight: 1
 
 # Mainnet
 
-Lorem Ipsum.
+Page under construction. Want to help out? [Check out the Github repo!](https://github.com/aionnetwork/docs)
