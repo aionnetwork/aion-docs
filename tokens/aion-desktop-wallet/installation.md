@@ -10,7 +10,7 @@ The Aion Desktop Wallet is a local application that is **stored and ran from you
 Follow the installation instructions for your operating system:
 
 | [Linux](#linux) | [macOS](#macos) | [Windows](#windows) |
-| --------------- | --------------- | ------------------- |
+| :-------------: | :-------------: | :-----------------: |
 
 ## Upgrading from a Previous Version
 
