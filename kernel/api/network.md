@@ -5,9 +5,10 @@ Title: Network
 # Network
 
 This page will take you through the API calls for querying the following information:
-* syncing status
-* current peer count
-* network listening status
+
+- Syncing status
+- Current peer count
+- Network listening status
 
 The APIs at present do not support querying for the network identifier similar to [`net_version`](https://github.com/ethereum/wiki/wiki/JSON-RPC#net_version).
 
@@ -144,9 +145,11 @@ Sample output:
 }
 [/block]
 Each code example below retrieves and prints to the standard output the following:
-1. the syncing status,
-2. the number of active peers, and
-3. if the client is listening for connections.
+
+1. The syncing status,
+2. The number of active peers, and
+3. If the client is listening for connections.
+
 [block:code]
 {
   "codes": [

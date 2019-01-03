@@ -6,16 +6,16 @@ Title: Transaction
 
 Next we illustrate the API calls for querying the following information:
 
-- transaction information given its hash
-- transaction information given its index and block hash
-- transaction information given its index and block number
-- transaction receipt given its hash
+- Transaction information given its hash
+- Transaction information given its index and block hash
+- Transaction information given its index and block number
+- Transaction receipt given its hash
 
 and performing the following actions:
 
-- send transaction
-- send transaction with raw data
-- perform signatures
+- Send transaction
+- Send transaction with raw data
+- Perform signatures
 
 The final subsection contains code illustrating all of the above interactions.
 [block:api-header]

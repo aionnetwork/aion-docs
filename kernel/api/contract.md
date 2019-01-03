@@ -5,17 +5,19 @@ Title: Contract
 # Contract
 
 This section will illustrate the API calls for querying the following information:
-* available compilers
-* current energy price
-* energy estimate
-* contract code
-* contract storage
+
+- Available compilers
+- Current energy price
+- Energy estimate
+- Contract code
+- Contract storage
 
 and performing the following actions:
-* compile Solidity code
-* deploy a contract
-* execute a contract function
-* call a contract function
+
+- Compile Solidity code
+- Deploy a contract
+- Execute a contract function
+- Call a contract function
 
 The final subsection contains code illustrating all of the above interactions.
 [block:api-header]
@@ -28,8 +30,10 @@ The functionality is compatible with [`eth_getCompilers`](https://github.com/eth
 Only the Solidity compiler is currently supported.
 
 The Aion blockchain currently does not support:
-* [`eth_compileLLL`](https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_compilelll)
-* [`eth_compileSerpent`](https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_compileserpent)
+
+- [`eth_compileLLL`](https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_compilelll)
+- [`eth_compileSerpent`](https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_compileserpent)
+
 [block:code]
 {
   "codes": [

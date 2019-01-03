@@ -5,11 +5,12 @@ Title: Block
 # Block
 
 Here you'll find the API calls for querying the following information:
-* recent block number
-* block information given its hash
-* block information given its number
-* number of transactions in block given its hash
-* number of transactions in block given its number
+
+- Recent block number
+- Block information given its hash
+- Block information given its number
+- Number of transactions in block given its hash
+- Number of transactions in block given its number
 
 The final subsection contains code illustrating all of the above interactions.
 [block:callout]

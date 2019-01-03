@@ -41,7 +41,7 @@ The latest release for **modAionApi-[version].jar** is available online in the [
   "title": "Use"
 }
 [/block]
-To use the Java API in an application, first the **IAionAPI** object must be initialized. Then a connection must be established to a kernel, as shown below:
+To use the Java API in an application, first, the **IAionAPI** object must be initialized. Then a connection must be established to a kernel, as shown below:
 [block:code]
 {
   "codes": [

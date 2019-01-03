@@ -5,10 +5,11 @@ Title: Account
 # Account
 
 Here you'll find the API calls for querying the following information:
-* all client accounts
-* coinbase account
-* account balance
-* account transaction count
+
+- All client accounts
+- Coinbase account
+- Account balance
+- Account transaction count
 
 The final subsection contains code illustrating all of the above interactions.
 [block:api-header]
