@@ -8,7 +8,7 @@ The Java API provides high throughput connection to the kernel and is ideal for 
 
 ## Setup
 
-The use of the Java API is enabled from the kernel configuration file **config.xml** (aion/config/config.xml). The active attribute must be set to "true" before starting the kernel to allow the API to interact with the Aion network through the local kernel.
+The use of the Java API is enabled from the kernel configuration file `config.xml` (`aion/config/config.xml`). The active attribute must be set to "true" before starting the kernel to allow the API to interact with the Aion network through the local kernel.
 
 ```json
 {
@@ -28,13 +28,13 @@ An application interacting with the Aion kernel through the Java API must includ
 - `modAionBase.jar`
 - `modAionApi-[version].jar`
 
-The modAionBase.jar contains the classes in [modAionBase](https://github.com/aionnetwork/aion/tree/master/modAionBase). The jar can be found in the **mod** folder delivered with every [kernel release](https://github.com/aionnetwork/aion/releases), or it can be compiled from the sources available online inside the module.
+The modAionBase.jar contains the classes in [modAionBase](https://github.com/aionnetwork/aion/tree/master/modAionBase). The `jar` file can be found in the `mod` folder delivered with every [kernel release](https://github.com/aionnetwork/aion/releases), or it can be compiled from the sources available online inside the module.
 
-The latest release for **modAionApi-[version].jar** is available online in the [aion_api](https://github.com/aionnetwork/aion_api/releases) project. Alternatively, the file can be created by compiling the source files.
+The latest release for `modAionApi-[version].jar` is available online in the [`aion_api`](https://github.com/aionnetwork/aion_api/releases) project. Alternatively, the file can be created by compiling the source files.
 
 ## Use
 
-To use the Java API in an application, first, the **IAionAPI** object must be initialized. Then a connection must be established to a kernel, as shown below:
+To use the Java API in an application, first, the `IAionAPI` object must be initialized. Then a connection must be established to a kernel, as shown below:
 
 ```json
 {
