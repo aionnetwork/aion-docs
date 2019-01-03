@@ -1,5 +1,6 @@
 ---
-Title: Get Test Coins
+title: Get Test Coins
+weight: 3
 ---
 
 # Get Test Coins
