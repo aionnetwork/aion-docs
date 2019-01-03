@@ -13,16 +13,14 @@ This page will take you through the API calls for querying the following informa
 The APIs at present do not support querying for the network identifier similar to [`net_version`](https://github.com/ethereum/wiki/wiki/JSON-RPC#net_version).
 
 The final subsection contains code illustrating all of the above interactions.
-[block:api-header]
-{
-  "title": "Retrieve Syncing Status"
-}
-[/block]
+
+## Retrieve Syncing Status
+
 The examples below show how to query the APIs for the kernel's sync status.
 The functionality is compatible with [`eth_syncing`](https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_syncing).
 In each code snippet, the sync status is retrieved from the API and printed to the standard output.
 
-[block:code]
+```json
 {
   "codes": [
     {
@@ -35,9 +33,11 @@ In each code snippet, the sync status is retrieved from the API and printed to t
     }
   ]
 }
-[/block]
+```
+
 Sample output:
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -52,17 +52,15 @@ Sample output:
     }
   ]
 }
-[/block]
+```
 
-[block:api-header]
-{
-  "title": "Retrieve Current Number of Peers"
-}
-[/block]
+## Retrieve Current Number of Peers
+
 The examples below show how to query the APIs for the number of active peers.
 The functionality is compatible with [`net_peerCount`](https://github.com/ethereum/wiki/wiki/JSON-RPC#net_peercount).
 In each code snippet, the number of active peers is retrieved from the API and printed to the standard output.
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -80,9 +78,11 @@ In each code snippet, the number of active peers is retrieved from the API and p
     }
   ]
 }
-[/block]
+```
+
 Sample output:
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -97,17 +97,15 @@ Sample output:
     }
   ]
 }
-[/block]
+```
 
-[block:api-header]
-{
-  "title": "Retrieve Network Listening Status"
-}
-[/block]
+## Retrieve Network Listening Status
+
 The examples below show how to query the APIs to determine if the kernel is actively listening for network connections.
 The functionality is compatible with [`net_listening`](https://github.com/ethereum/wiki/wiki/JSON-RPC#net_listening).
 In each code snippet, the listening status is retrieved from the API and printed to the standard output.
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -120,9 +118,11 @@ In each code snippet, the listening status is retrieved from the API and printed
     }
   ]
 }
-[/block]
+```
+
 Sample output:
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -137,20 +137,17 @@ Sample output:
     }
   ]
 }
-[/block]
+```
 
-[block:api-header]
-{
-  "title": "Complete Examples"
-}
-[/block]
+## Complete Examples
+
 Each code example below retrieves and prints to the standard output the following:
 
 1. The syncing status,
 2. The number of active peers, and
 3. If the client is listening for connections.
 
-[block:code]
+```json
 {
   "codes": [
     {
@@ -163,9 +160,11 @@ Each code example below retrieves and prints to the standard output the followin
     }
   ]
 }
-[/block]
+```
+
 Sample output:
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -180,4 +179,4 @@ Sample output:
     }
   ]
 }
-[/block]
+```
