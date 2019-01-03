@@ -18,13 +18,12 @@ and performing the following actions:
 - Perform signatures
 
 The final subsection contains code illustrating all of the above interactions.
-[block:api-header]
-{
-  "title": "Retrieve Transaction By Hash"
-}
-[/block]
+
+## Retrieve Transaction By Hash
+
 The examples below show how to query the APIs for the detailed information regarding a transaction given its hash. The functionality is compatible with [`eth_getTransactionByHash`](https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_gettransactionbyhash). In each code snippet, the transaction details are retrieved from the API and printed to the standard output.
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -37,9 +36,11 @@ The examples below show how to query the APIs for the detailed information regar
     }
   ]
 }
-[/block]
+```
+
 Sample output:
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -54,15 +55,13 @@ Sample output:
     }
   ]
 }
-[/block]
+```
 
-[block:api-header]
-{
-  "title": "Retrieve Transaction By Block Hash and Index"
-}
-[/block]
+## Retrieve Transaction By Block Hash and Index
+
 The examples below show how to query the APIs for the detailed information regarding a transaction given its index and the block hash where it occurred. The functionality is compatible with [`eth_getTransactionByBlockHashAndIndex`](https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_gettransactionbyblockhashandindex). In each code snippet, the transaction details are retrieved from the API and printed to the standard output.
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -75,9 +74,11 @@ The examples below show how to query the APIs for the detailed information regar
     }
   ]
 }
-[/block]
+```
+
 Sample output:
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -92,15 +93,13 @@ Sample output:
     }
   ]
 }
-[/block]
+```
 
-[block:api-header]
-{
-  "title": "Retrieve Transaction By Block Number and Index"
-}
-[/block]
+## Retrieve Transaction By Block Number and Index
+
 The examples below show how to query the APIs for the detailed information regarding a transaction given its index and the block number where it occurred. The functionality is compatible with [`eth_getTransactionByBlockNumberAndIndex`](https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_gettransactionbyblocknumberandindex). In each code snippet, the transaction details are retrieved from the API and printed to the standard output.
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -113,9 +112,11 @@ The examples below show how to query the APIs for the detailed information regar
     }
   ]
 }
-[/block]
+```
+
 Sample output:
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -130,16 +131,13 @@ Sample output:
     }
   ]
 }
-[/block]
+```
 
-[block:api-header]
-{
-  "title": "Retrieve Transaction Receipt"
-}
-[/block]
+## Retrieve Transaction Receipt
+
 The examples below show how to query the APIs for the receipt for a transaction given its hash. The functionality is compatible with [`eth_getTransactionReceipt`](https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_gettransactionreceipt). In each code snippet, the transaction receipt is retrieved from the API and printed to the standard output.
 
-[block:code]
+```json
 {
   "codes": [
     {
@@ -152,9 +150,11 @@ The examples below show how to query the APIs for the receipt for a transaction 
     }
   ]
 }
-[/block]
+```
+
 Sample output:
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -169,18 +169,15 @@ Sample output:
     }
   ]
 }
-[/block]
+```
 
-[block:api-header]
-{
-  "title": "Perform Transactions"
-}
-[/block]
+## Perform Transactions
+
 The examples below show how to use the APIs to send a transaction. The functionality is compatible with [`eth_sendTransaction`](https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_sendtransaction). In each code snippet, the transaction receipt is retrieved from the API and printed to the standard output. Other possible transaction parameters are energy price, energy limit, and data.
 
 Note that these examples only consider best case scenarios where the account can be unlocked, the transaction execution does not produce any errors and the transaction is eventually included in a block. A separate tutorial will be provided with the recommended sanity checks to ensure the sent transaction was included in the main chain.
 
-[block:code]
+```json
 {
   "codes": [
     {
@@ -193,9 +190,11 @@ Note that these examples only consider best case scenarios where the account can
     }
   ]
 }
-[/block]
+```
+
 Sample output:
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -210,17 +209,15 @@ Sample output:
     }
   ]
 }
-[/block]
+```
 
-[block:api-header]
-{
-  "title": "Perform Transaction with Raw Data"
-}
-[/block]
+## Perform Transaction with Raw Data
+
 The examples below show how to use the APIs to send a transaction. The functionality is compatible with [eth_sendTransaction](https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_sendtransaction). In each code snippet, the transaction receipt is retrieved from the API and printed to the standard output. Other possible transaction parameters are energy price, energy limit, and data.
 
 Note that these examples only consider best case scenarios where the account can be unlocked, the transaction execution does not produce any errors and the transaction is eventually included in a block. A separate tutorial will be provided with the recommended sanity checks to ensure the sent transaction was included in the main chain.
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -234,9 +231,9 @@ Note that these examples only consider best case scenarios where the account can
     }
   ]
 }
-[/block]
+```
 
-[block:code]
+```json
 {
   "codes": [
     {
@@ -251,17 +248,15 @@ Note that these examples only consider best case scenarios where the account can
     }
   ]
 }
-[/block]
+```
 
-[block:api-header]
-{
-  "title": "Perform Signatures"
-}
-[/block]
+## Perform Signatures
+
 The example below shows how to use the web3 API to sign the given data using a given account and to get the signature. The functionality is compatible with [eth_sign](https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_sign). In the code snippet below, the signature for the given data is retrieved from the API and printed to the standard output.
 
 Note that this example only considers best case scenarios where the account can be unlocked.
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -270,9 +265,9 @@ Note that this example only considers best case scenarios where the account can 
     }
   ]
 }
-[/block]
+```
 
-[block:code]
+```json
 {
   "codes": [
     {
@@ -282,21 +277,19 @@ Note that this example only considers best case scenarios where the account can 
     }
   ]
 }
-[/block]
+```
 
-[block:api-header]
-{
-  "title": "Complete Examples"
-}
-[/block]
+## Complete Examples
+
 Each code example below retrieves and prints to the standard output the following:
-1. the transaction details given its hash,
-2. the transaction details for a given block hash and transaction index,
-3. the transaction details for a given block number and transaction index,
-4. the receipt for a given transaction hash, and
-5. the transaction hash and receipt for a newly performed transaction.
 
-[block:code]
+1. The transaction details given its hash,
+2. The transaction details for a given block hash and transaction index,
+3. The transaction details for a given block number and transaction index,
+4. The receipt for a given transaction hash, and
+5. The transaction hash and receipt for a newly performed transaction.
+
+```json
 {
   "codes": [
     {
@@ -309,9 +302,11 @@ Each code example below retrieves and prints to the standard output the followin
     }
   ]
 }
-[/block]
+```
+
 Sample output:
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -326,4 +321,4 @@ Sample output:
     }
   ]
 }
-[/block]
+```
