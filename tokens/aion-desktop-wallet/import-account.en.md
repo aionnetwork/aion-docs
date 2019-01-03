@@ -6,11 +6,9 @@ weight: 45
 # Import Account
 
 There are three options to import an existing account:
-
-- [Import Account](#import-account)
-  - [Keystore File](#keystore-file)
-  - [Private Key](#private-key)
-  - [Ledger](#ledger)
+- [Keystore File](#keystore-file)
+- [Private Key](#private-key)
+- [Ledger](#ledger)
 
 There is a **Remember Me** option when importing accounts. Selecting this will display your imported accounts even if you re-launch your wallet. If this option is not selected, you will have to reimport these accounts if you re-launch the Aion Desktop Wallet.
 
