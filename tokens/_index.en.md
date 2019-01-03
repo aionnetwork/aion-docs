@@ -1,7 +1,7 @@
 ---
 Title: Tokens
 Chapter: true
-Weight: 3
+Weight: 2
 ---
 
 # Tokens
