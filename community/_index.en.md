@@ -6,7 +6,7 @@ Weight: 10
 
 # Community
 
-Community is everything in Blockchain. We're committed to creating the best one.
+The community is everything in Blockchain. We're committed to creating the best one.
 
 ## Connect
 
@@ -34,4 +34,4 @@ StackOverflow is becoming a great place for developers to get answers about Aion
 
 ### [Gitter](https://gitter.im/aionnetwork/Lobby)
 
-A fan favourite of the Github community, Gitter is a great place to get instant answers for kernel related questions. We've got quite a few channels, so join the ones that suit you!
+A fan favorite of the Github community, Gitter is a great place to get instant answers for kernel related questions. We've got quite a few channels, so join the ones that suit you!

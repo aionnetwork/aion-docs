@@ -6,7 +6,7 @@ Title: Tool List
 
 ## Integrated Development Environments
 
-IDEs help developer get up and running faster without having to install independent tools and plugins.
+IDEs help developers get up and running faster without having to install independent tools and plugins.
 
 ### [Titan Suite](https://titan-suite.com/)
 
@@ -14,7 +14,7 @@ Titan Suite is an online integrated development environment (IDE). It allows dev
 
 ## Node Services
 
-The following platform allow you to connect to pre-existing nodes without the need for you to sync to the next work manually.
+The following platform allows you to connect to pre-existing nodes without the need for you to sync to the next work manually.
 
 ### [Azure Node Service](https://azuremarketplace.microsoft.com/en-in/marketplace/apps/nuco-networks.aionnode?tab=Overview)
 
@@ -22,7 +22,7 @@ Spin up a fully functional Aion Node from within Azure's software as a service (
 
 ### [Blockdaemon](http://bit.ly/blockdaemon-aion-node)
 
-Launch your own Aion node on a public blockchain network, or join a private network in three clicks. Blockdaemon is super simple to setup, and comes with a free 2 month trail on all shared nodes.
+Launch your own Aion node on a public blockchain network, or join a private network in three clicks. Blockdaemon is easy to set up and comes with a free 2-month trial on all shared nodes.
 
 ### [Nodesmith](https://nodesmith.io/)
 
@@ -38,11 +38,11 @@ The Aion Blockchain Explorer service, hosted by the Aion Foundation.
 
 ### [Amberdata Dashboard](https://aion-kilimanjaro.amberdata.io/)
 
-SaaS platform for monitoring, searching, analyzing, and securing public and private blockchains. Amberdata enables operational intelligence for blockchain infrastructure, applications and transactions.
+SaaS platform for monitoring, searching, analyzing, and securing public and private blockchains. Amberdata enables operational intelligence for blockchain infrastructure, applications, and transactions.
 
 ## Wallets
 
-Wallets all you to store you native Aion tokens and other cryptocurrency locally on your machine, sometimes called _offline wallets_. Other wallets allow you to keep your tokens online, however these are generally seen as slightly less secure than locally stored wallets.
+Wallets allow you to store your native Aion tokens and other cryptocurrencies locally on your machine, sometimes called _offline wallets_. Other wallets allow you to keep your tokens online. However, these are generally seen as slightly less secure than locally stored wallets.
 
 ### Offline Wallets
 
@@ -69,7 +69,7 @@ A next generation wallet that simplifies investing, trading, and asset managemen
 
 #### [Magnum](https://magnumwallet.co/)
 
-Light universal web-based crypto wallet that supports Ledger wallet integration.
+A light universal web-based crypto wallet that supports Ledger wallet integration.
 
 ## Exchanges
 

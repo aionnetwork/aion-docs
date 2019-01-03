@@ -12,7 +12,7 @@ If you want to suggest any changes to the docs or edit the docs yourself, [raise
 
 By following these guidelines you're helping to keep the Aion docs sounding consistent.
 
-1. Address readers in second person by using _you_. Stay away from words like _I_ or _one_.
+1. Address readers in the second person by using _you_. Stay away from words like _I_ or _one_.
 
     > **You** can install the virtual machine.
 
