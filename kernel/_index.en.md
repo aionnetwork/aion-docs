@@ -1,6 +1,6 @@
 ---
-title: Kernel Overview
-weight: 5
+title: Kernel
+weight: 1
 chapter: true
 ---
 
