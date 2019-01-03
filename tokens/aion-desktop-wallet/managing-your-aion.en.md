@@ -17,13 +17,13 @@ You have the option to transact `AION` and send it to another wallet. The receiv
 4. Enter the **Amount to send** in `AION` coin. Your **Account balance** must be higher than value in the **Amount to send** field. Keep in mind that every transaction comes with an `Energy` payment. If you want to send the entire contents of an account to another account click **Send all**. The Aion Desktop Wallet will calculate how much `Energy` you need, and deduct it from your total.
 5. Click on **Generate transaction** to send the `AION`.
 
-![Sending Tokens from One Account to Another](images/mac-send-tokens.gif)
+![Sending Tokens from One Account to Another](/tokens/aion-desktop-wallet/images/mac-send-tokens.gif)
 
 ### Sending Transactions Using a Ledger
 
 When you send an Aion transaction using a Ledger, you need to accept the transaction on the Ledger itself.
 
-![Accept transaction on Ledger](images/ledger-accept-transaction.png)
+![Accept transaction on Ledger](/tokens/aion-desktop-wallet/images/ledger-accept-transaction.png)
 
 ### Handling Errors
 
@@ -33,13 +33,13 @@ Sometimes things get hung-up when sending a transaction, so the wallet tries to 
 
 If this message shows for more than a few seconds, make sure that your Aion node is fully synced. You transaction will not occur unless it is up to date.
 
-![Node not synced error.](images/error-node-not-synced.png)
+![Node not synced error.](/tokens/aion-desktop-wallet/images/error-node-not-synced.png)
 
 #### `You have transactions that require your attention!`
 
 This often means that the transaction failed. Click the notification to resubmit the transaction.
 
-![Failed to send error](images/error-failed-to-send.png)
+![Failed to send error](/tokens/aion-desktop-wallet/images/error-failed-to-send.png)
 
 ## Receive `AION`
 
@@ -48,4 +48,4 @@ Under the **Receive** tab of the desktop wallet, you can send your public wallet
 - Scanning the QR code to display the wallet address.
 - Sharing your **Account address**.
 
-![Aion Desktop Wallet send tab](images/mac-receive-token-screen.png)
+![Aion Desktop Wallet send tab](/tokens/aion-desktop-wallet/images/mac-receive-token-screen.png)

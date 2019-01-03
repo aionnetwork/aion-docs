@@ -40,7 +40,7 @@ After configuring the node you wish to connect to, you will need to change walle
 3. Select a name for the connection, and input the `URL`, `Port number`, and `access key`.
 4. Click **Save** to create the new connection, then **Apply** to make the changes.
 
-![Desktop Wallet Settings Tab](https://files.readme.io/bc04828-2.PNG)
+![Desktop Wallet Settings Tab](/tokens/aion-desktop-wallet/images/desktop-wallet-settings-tab.png)
 
 ## Delete or Switch Wallet
 

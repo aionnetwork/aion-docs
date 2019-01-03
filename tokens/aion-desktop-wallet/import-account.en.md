@@ -21,7 +21,7 @@ There is a **Remember Me** option when importing accounts. Selecting this will d
 4. Enter the associated **Password**.
 5. Click **Import**.
 
-![Importing a Keystore File](images/mac-import-keystore.gif)
+![Importing a Keystore File](/tokens/aion-desktop-wallet/images/mac-import-keystore.gif)
 
 ## Private Key
 
@@ -36,4 +36,4 @@ There is a **Remember Me** option when importing accounts. Selecting this will d
 2. Select **Ledger**.
 3. Click **Connect to Ledger**.
 
-![Importing a Ledger Account](images/mac-import-ledger-account.gif)
+![Importing a Ledger Account](/tokens/aion-desktop-wallet/images/mac-import-ledger-account.gif)

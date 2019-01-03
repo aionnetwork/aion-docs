@@ -44,17 +44,17 @@ The `log` file is stored at `~/.aion/logs`. You can copy the contents of the fol
 
 You can now email this file to [support@aion.network](mailto:support@aion.network) when requested.
 
-![Running the copy command and then viewing the contents of a file in a terminal.](images/terminal.gif)
+![Running the copy command and then viewing the contents of a file in a terminal.](/tokens/aion-desktop-wallet/images/terminal.gif)
 
 ### Windows
 
 To view the Aion Desktop Wallet logs in Windows, navigate to `c:\Users\Your_Username` replacing `Your_Username` with your Windows username.
 
-![Finding the Log file in Windows 10](images/windows-go-to-logs.gif)
+![Finding the Log file in Windows 10](/tokens/aion-desktop-wallet/images/windows-go-to-logs.gif)
 
 You may need to [enable viewing of hidden files and folders](//support.microsoft.com/en-ca/help/4028316/windows-view-hidden-files-and-folders-in-windows-10).
 
-![(Viewing hidden files and folders in Windows 10. [Copyright Microsoft](https://support.microsoft.com/en-ca/help/4028316/windows-view-hidden-files-and-folders-in-windows-10)](images/hidden_files_and_folders.gif)
+![(Viewing hidden files and folders in Windows 10. [Copyright Microsoft](https://support.microsoft.com/en-ca/help/4028316/windows-view-hidden-files-and-folders-in-windows-10)](/tokens/aion-desktop-wallet/images/hidden_files_and_folders.gif)
 
 You can now email this file to [support@aion.network](mailto:support@aion.network) when requested.
 

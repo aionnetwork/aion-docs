@@ -20,7 +20,7 @@ The only thing you need is an Aion account on the _Mastery_ testnet network. And
 5. Check the **I'm not a robot** checkbox.
 6. Click **Press to pour**.
 
-![Getting Test Coins from the BlockX Labs Faucet](images/get-test-coins.gif)
+![Getting Test Coins from the BlockX Labs Faucet](/tokens/images/get-test-coins.gif)
 
 ## Details
 

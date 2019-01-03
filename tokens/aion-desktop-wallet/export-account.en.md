@@ -14,4 +14,4 @@ You may wish to save your accounts created on the Aion Wallet elsewhere. In this
 5. Enter a **Password** for this file.
 6. Click **OK**.
 
-![Exporting a Keystore file from the Aion Desktop Wallet](https://files.readme.io/b1c5599-Export_Keystore.gif)
+![Exporting a Keystore file from the Aion Desktop Wallet](/tokens/aion-desktop-wallet/images/exporting-a-keystore-file-from-the-aion-desktop-wallet.gif)
