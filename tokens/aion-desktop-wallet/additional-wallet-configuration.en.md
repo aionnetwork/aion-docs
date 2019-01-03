@@ -2,7 +2,7 @@
 title: Additional Wallet Configuration
 ---
 
-# Additionaln Wallet Configuration
+# Additional Wallet Configuration
 
 ## Connect with a Remote Node
 

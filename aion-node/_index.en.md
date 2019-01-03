@@ -14,7 +14,7 @@ In order to interact with the Aion network, you need a node to run things throug
 
 If you're not sure where to start, start here. The Aion Virtual Machine (AVM) is a Turing complete execution engine built on top of Java's virtual machine.
 
-## [Build a Native Kernel](native-kernel)
+## [Build a Native Kernel](native-nodes)
 
 **Host an Aion Node on your own hardware in Ubuntu.**
 
@@ -26,7 +26,7 @@ Building and running your own node gives you the most control over how to set th
 
 This is perfect if you are developing on Aion and will likely have to _rebuild_ the node often. This type of node is pre-synced which shortens the build time compared to building your own. You still need to take into account the resources that the Fast VM uses. You can use this method on any operating system that has Docker installed.
 
-## [Connect to a Hosting Service](hosting-service)
+## [Connect to a Hosting Service](hosting-services)
 
 **Connect to a node that is already running and synced up, hosted by a third-party company.**
 
