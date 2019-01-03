@@ -1,5 +1,6 @@
 ---
 title: Mastery Testnet
+weight: 20
 ---
 
 # Mastery Testnet
