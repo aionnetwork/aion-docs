@@ -14,22 +14,15 @@ Here you'll find the API calls for querying the following information:
 
 The final subsection contains code illustrating all of the above interactions.
 
-[block:callout]
-{
-  "type": "warning",
-  "title": "Side Chain Blocks",
-  "body": "Uncles are not a supported feature in the Aion blockchain. Information about side chain blocks can be requested using the block hash, however the following functionality does not have a direct implementation:\n- [`eth_getUncleByBlockHashAndIndex`](https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_getunclebyblockhashandindex)\n- [`eth_getUncleByBlockNumberAndIndex`](https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_getunclebyblocknumberandindex)\n- [`eth_getUncleCountByBlockHash`](https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_getunclecountbyblockhash)\n- [`eth_getUncleCountByBlockNumber`](https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_getunclecountbyblocknumber)"
-}
-[/block]
+## Side Chain Blocks
 
-[block:api-header]
-{
-  "title": "Retrieve Recent Block Number"
-}
-[/block]
+Uncles are not a supported feature in the Aion blockchain. Information about side chain blocks can be requested using the block hash, however the following functionality does not have a direct implementation:\n- [`eth_getUncleByBlockHashAndIndex`](https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_getunclebyblockhashandindex)\n- [`eth_getUncleByBlockNumberAndIndex`](https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_getunclebyblocknumberandindex)\n- [`eth_getUncleCountByBlockHash`](https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_getunclecountbyblockhash)\n- [`eth_getUncleCountByBlockNumber`](https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_getunclecountbyblocknumber)
+
+## Retrieve Recent Block Number
+
 The examples below show how to query the APIs for the number of the most recent block. The functionality is compatible with [`eth_blockNumber`](https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_blocknumber). In each code snippet, the block number is retrieved from the API and printed to the standard output.
 
-[block:code]
+```json
 {
   "codes": [
     {
@@ -42,9 +35,11 @@ The examples below show how to query the APIs for the number of the most recent 
     }
   ]
 }
-[/block]
+```
+
 Sample output:
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -59,16 +54,13 @@ Sample output:
     }
   ]
 }
-[/block]
+```
 
-[block:api-header]
-{
-  "title": "Retrieve Block by Hash"
-}
-[/block]
+### Retrieve Block by Hash
+
 The examples below show how to query the APIs for information about a block given its hash. The functionality is compatible with [`eth_getBlockByHash`](https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_getblockbyhash) except for the information on uncles since uncles are not supported in the Aion blockchain. In each code snippet, the block information is retrieved from the API and printed to the standard output.
 
-[block:code]
+```json
 {
   "codes": [
     {
@@ -81,9 +73,11 @@ The examples below show how to query the APIs for information about a block give
     }
   ]
 }
-[/block]
+```
+
 Sample output:
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -98,15 +92,13 @@ Sample output:
     }
   ]
 }
-[/block]
+```
 
-[block:api-header]
-{
-  "title": "Retrieve Block by Number"
-}
-[/block]
+## Retrieve Block by Number
+
 The examples below show how to query the APIs for information about a block from the main chain given its number. The functionality is compatible with [`eth_getBlockByNumber`](https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_getblockbynumber) except for the information on uncles since uncles are not supported in the Aion blockchain. In each code snippet, the block information is retrieved from the API and printed to the standard output.
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -119,9 +111,11 @@ The examples below show how to query the APIs for information about a block from
     }
   ]
 }
-[/block]
+```
+
 Sample output:
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -136,15 +130,13 @@ Sample output:
     }
   ]
 }
-[/block]
+```
 
-[block:api-header]
-{
-  "title": "Retrieve Block Transaction Count by Hash"
-}
-[/block]
+## Retrieve Block Transaction Count by Hash
+
 The examples below show how to query the APIs for the number of transactions sealed in a block given the hash for the block of interest. The functionality is compatible with [`eth_getBlockTransactionCountByHash`](https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_getblocktransactioncountbyhash). In each code snippet, the transaction count is retrieved from the API and printed to the standard output.
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -157,9 +149,11 @@ The examples below show how to query the APIs for the number of transactions sea
     }
   ]
 }
-[/block]
+```
+
 Sample output:
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -174,16 +168,13 @@ Sample output:
     }
   ]
 }
-[/block]
+```
 
-[block:api-header]
-{
-  "title": "Retrieve Block Transaction Count by Number"
-}
-[/block]
+## Retrieve Block Transaction Count by Number
+
 The examples below show how to query the APIs for the number of transactions sealed in a main chain block given the number for the block of interest. The functionality is compatible with [`eth_getBlockTransactionCountByNumber`](https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_getblocktransactioncountbynumber). In each code snippet, the transaction count is retrieved from the API and printed to the standard output.
 
-[block:code]
+```json
 {
   "codes": [
     {
@@ -196,9 +187,11 @@ The examples below show how to query the APIs for the number of transactions sea
     }
   ]
 }
-[/block]
+```
+
 Sample output:
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -213,21 +206,19 @@ Sample output:
     }
   ]
 }
-[/block]
+```
 
-[block:api-header]
-{
-  "title": "Complete Examples"
-}
-[/block]
+## Complete Examples
+
 Each code example below retrieves and prints to the standard output the following:
+
 1. the recent block number,
 2. the block information given its hash,
 3. the block information given its number,
 4. the number of transactions in a block given its hash, and
 5. the number of transactions in a block given its number.
 
-[block:code]
+```json
 {
   "codes": [
     {
@@ -240,9 +231,11 @@ Each code example below retrieves and prints to the standard output the followin
     }
   ]
 }
-[/block]
+```
+
 Sample output:
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -257,4 +250,4 @@ Sample output:
     }
   ]
 }
-[/block]
+```
