@@ -1,3 +1,5 @@
+# Aion Docs
+
 ![Aion Logo](aion-docs-logo.png)
 
 The repository contains all the documentation found on [docs.aion.network](https://docs.aion.network). Changes are made here first, and then pulled in by [docs.aion.network](https://docs.aion.network). This repo **does not** maintain the Docs website itself. You'll find no `HTML` or `CSS` in these folders!
