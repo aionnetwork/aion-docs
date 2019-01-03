@@ -13,6 +13,7 @@ Here you'll find the API calls for querying the following information:
 - Number of transactions in block given its number
 
 The final subsection contains code illustrating all of the above interactions.
+
 [block:callout]
 {
   "type": "warning",
