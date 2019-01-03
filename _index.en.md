@@ -38,7 +38,7 @@ We want Aion to succeed, and we need decentralized app developers to do that. So
 
 ## First Steps
 
-![Different branches of Aion development.](https://files.readme.io/e548293-things-to-do-with-aion.png)
+![Different branches of Aion development.](/images/things-to-do-with-aion.png)
 
 Not sure where to go next? Why not check out [Aion University](https://learn.aion.network) where you can explore different technologies and learn new skills. Or jump straight in and tackle one of the [bounties currently on offer](http://aion.network/bounty/). Finally, you can [join the conversation](https://aion.network/community/) on any of our social platforms.
 

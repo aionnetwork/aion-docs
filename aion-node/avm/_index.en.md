@@ -36,7 +36,7 @@ The Java-based AVM leverages the entire Java tooling ecosystem, making developer
 
 ## How it Works
 
-![AVM Architecture](aion-node/avm/images/avm-how-it-works.png)
+![AVM Architecture](/aion-node/avm/images/avm-how-it-works.png)
 
 This diagram shows the high-level connections between these components as they apply to the case of deploying a new DApp. The user’s code is written as standard Java, using the standard class library (JCL) and an API we provide for accessing blockchain-specific functionality.
 
