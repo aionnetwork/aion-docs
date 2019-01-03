@@ -20,11 +20,9 @@ and performing the following actions:
 - Call a contract function
 
 The final subsection contains code illustrating all of the above interactions.
-[block:api-header]
-{
-  "title": "Retrieve Available Compilers"
-}
-[/block]
+
+## Retrieve Available Compilers
+
 The JavaScript example below shows how to query the APIs for the list of available code compilers.
 The functionality is compatible with [`eth_getCompilers`](https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_getcompilers).
 Only the Solidity compiler is currently supported.
@@ -34,7 +32,7 @@ The Aion blockchain currently does not support:
 - [`eth_compileLLL`](https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_compilelll)
 - [`eth_compileSerpent`](https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_compileserpent)
 
-[block:code]
+```json
 {
   "codes": [
     {
@@ -43,9 +41,11 @@ The Aion blockchain currently does not support:
     }
   ]
 }
-[/block]
+```
+
 Sample output:
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -54,18 +54,15 @@ Sample output:
     }
   ]
 }
-[/block]
+```
 
-[block:api-header]
-{
-  "title": "Compile Solidity Code"
-}
-[/block]
+## Compile Solidity Code
+
 The examples below show how to use the APIs to compile solidity code.
 The functionality is compatible with [`eth_compileSolidity`](https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_compilesolidity).
 In each code snippet, the given contract is compiled and the output is printed to the standard output.
 
-[block:code]
+```json
 {
   "codes": [
     {
@@ -78,9 +75,11 @@ In each code snippet, the given contract is compiled and the output is printed t
     }
   ]
 }
-[/block]
+```
+
 Sample output:
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -95,18 +94,15 @@ Sample output:
     }
   ]
 }
-[/block]
+```
 
-[block:api-header]
-{
-  "title": "Retrieve Energy Price"
-}
-[/block]
+## Retrieve Energy Price
+
 The examples below show how to query the APIs for the current price per NRG in [nAmp](https://github.com/aionnetwork/aion/wiki/Aion-Terminology).
 The functionality is compatible with [`eth_gasPrice`](https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_gasprice).
 In each code snippet, the NRG price is retrieved from the API and printed to the standard output.
 
-[block:code]
+```json
 {
   "codes": [
     {
@@ -119,9 +115,11 @@ In each code snippet, the NRG price is retrieved from the API and printed to the
     }
   ]
 }
-[/block]
+```
+
 Sample output:
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -136,18 +134,15 @@ Sample output:
     }
   ]
 }
-[/block]
+```
 
-[block:api-header]
-{
-  "title": "Estimate Energy Required"
-}
-[/block]
+## Estimate Energy Required
+
 The examples below show how to use the APIs to estimate the NRG required to allow the transaction to complete.
 The functionality is compatible with [`eth_estimateGas`](https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_estimategas).
 In each code snippet, the NRG estimate is retrieved from the API and printed to the standard output.
 
-[block:code]
+```json
 {
   "codes": [
     {
@@ -160,9 +155,11 @@ In each code snippet, the NRG estimate is retrieved from the API and printed to 
     }
   ]
 }
-[/block]
+```
+
 Sample output:
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -177,16 +174,14 @@ Sample output:
     }
   ]
 }
-[/block]
+```
 
-[block:api-header]
-{
-  "title": "Retrieve Contract Code"
-}
-[/block]
+## Retrieve Contract Code
+
 The examples below show how to use the APIs to retrieve the code for a contract.
 The functionality is compatible with [`eth_getCode`](https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_getcode). In each code snippet, the contract code is retrieved from the API and printed to the standard output.
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -199,9 +194,11 @@ The functionality is compatible with [`eth_getCode`](https://github.com/ethereum
     }
   ]
 }
-[/block]
+```
+
 Sample output:
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -216,19 +213,16 @@ Sample output:
     }
   ]
 }
-[/block]
+```
 
-[block:api-header]
-{
-  "title": "Retrieve Stored Value"
-}
-[/block]
+## Retrieve Stored Value
+
 The examples below show how to use the APIs to retrieve stored values from a contract.
 The functionality is compatible with [`eth_getStorageAt`](https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_getstorageat).
 In each code snippet, the stored values are retrieved from the API and printed to the standard output.
 The contract for which the values are retrieved is [personnel.sol](https://github.com/aionnetwork/aion_qa/blob/master/Web3/test/contracts/personnel.sol) which uses the first two values to store the owner address.
 
-[block:code]
+```json
 {
   "codes": [
     {
@@ -241,9 +235,11 @@ The contract for which the values are retrieved is [personnel.sol](https://githu
     }
   ]
 }
-[/block]
+```
+
 Sample output:
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -258,13 +254,9 @@ Sample output:
     }
   ]
 }
-[/block]
+```
 
-[block:api-header]
-{
-  "title": "Deploy Contract"
-}
-[/block]
+## Deploy Contract
 
 Take a look at our tutorial on how to [Deploy a Smart Contract](https://learn.aion.network/docs/deploy-a-smart-contract-using-web3), over at [learn.aion.network](https://learn.aion.network).
 
@@ -272,7 +264,8 @@ The examples below show how to use the APIs to deploy a contract.
 In each code snippet, after deploying the contract the resulting account address, transaction hash and receipt are printed to the standard output.
 
 Note that these examples only consider best case scenarios where the account can be unlocked, the transaction execution does not produce any errors and the transaction is eventually included in a block. A separate tutorial will be provided with the recommended sanity checks to ensure the deployed contract is included in the main chain.
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -290,9 +283,11 @@ Note that these examples only consider best case scenarios where the account can
     }
   ]
 }
-[/block]
+```
+
 Sample output:
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -307,15 +302,13 @@ Sample output:
     }
   ]
 }
-[/block]
+```
 
-[block:api-header]
-{
-  "title": "Execute Contract Function"
-}
-[/block]
+## Execute Contract Function
+
 The examples below show how to use the APIs to execute a contract function. In each code snippet, a function to add information to the contract is executed after which we use a get function to verify the value was added. The transaction hashes for both calls are printed to the standard output. Note that the get call does not create a transaction.
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -328,9 +321,11 @@ The examples below show how to use the APIs to execute a contract function. In e
     }
   ]
 }
-[/block]
+```
+
 Sample output:
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -345,20 +340,18 @@ Sample output:
     }
   ]
 }
-[/block]
+```
 
-[block:api-header]
-{
-  "title": "Call Contract Function"
-}
-[/block]
+## Call Contract Function
+
 The examples below show how to use the APIs to call a contract function.
 The functionality is compatible with [`eth_call`](https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_call).
 
 **Java**: The example in [Execute Contract Function](#ctr-execute) also applies where `ctr.newFunction("getUserAddress").setParam(ISString.copyFrom(keyToAdd)).build().execute()` defaults to a call (does not create a transaction).
 
 **JavaScript**: The same example as in [Execute Contract Function](#ctr-execute) applies where `ctr.getUserAddress(keyToAdd)` defaults to a call (does not create a transaction).
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -367,9 +360,11 @@ The functionality is compatible with [`eth_call`](https://github.com/ethereum/wi
     }
   ]
 }
-[/block]
+```
+
 Sample output:
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -379,24 +374,23 @@ Sample output:
     }
   ]
 }
-[/block]
+```
 
-[block:api-header]
-{
-  "title": "Complete Examples"
-}
-[/block]
+## Complete Examples
+
 Each code example below illustrates APIs interactions for the following use cases:
-1. get available compilers,
-2. compile solidity code,
-3. get current NRG price,
-4. estimate needed NRG,
-5. get contract code,
-6. get stored value,
-7. deploy a contract,
-8. execute a contract function, and
-9. call a contract function.
-[block:code]
+
+1. Get available compilers,
+2. Compile solidity code,
+3. Get current NRG price,
+4. Estimate needed NRG,
+5. Get contract code,
+6. Get stored value,
+7. Deploy a contract,
+8. Execute a contract function, and
+9. Call a contract function.
+
+```json
 {
   "codes": [
     {
@@ -409,9 +403,11 @@ Each code example below illustrates APIs interactions for the following use case
     }
   ]
 }
-[/block]
+```
+
 Sample output:
-[block:code]
+
+```json
 {
   "codes": [
     {
@@ -426,4 +422,4 @@ Sample output:
     }
   ]
 }
-[/block]
+```
