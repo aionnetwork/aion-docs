@@ -5,7 +5,7 @@ weight: 2
 
 # Ubuntu Method
 
-![Ubuntu Logo](https://res.cloudinary.com/aiondocs/image/upload/v1546276229/aion-node/fast-vm/images/ubuntu-logo.png)
+![Ubuntu Logo](/aion-node/fast-vm/images/ubuntu-logo.png)
 
 This virtual machine is a modified version of the Ethereum Virtual Machine (EVM). Certain parameters and built-in processes of the virtual machine have been edited or disabled in order for it to work well with the Aion network.
 

@@ -5,7 +5,7 @@ weight: 3
 
 # Docker Method
 
-![Docker Logo](https://res.cloudinary.com/aiondocs/image/upload/v1546276229/aion-node/fast-vm/images/docker-logo.png)
+![Docker Logo](/aion-node/fast-vm/images/docker-logo.png)
 
 This Docker image has been created by a member of the Aion community, and is supported by the Aion Foundation.
 
@@ -58,4 +58,4 @@ Docker for Windows has some very specific system requiments. Take a look at the 
 
     You need to make sure you are logged into Docker via the terminal. Run `docker login` and enter your credentials. If you are on macOS, you also need to login to the Docker application.
 
-    ![Docker Login Screen on macOS](https://res.cloudinary.com/aiondocs/image/upload/v1546276229/aion-node/fast-vm/images/docker-login-screen-on-macos.png)
+    ![Docker Login Screen on macOS](/aion-node/fast-vm/images/docker-login-screen-on-macos.png)

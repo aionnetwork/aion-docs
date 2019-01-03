@@ -75,12 +75,12 @@ Light universal web-based crypto wallet that supports Ledger wallet integration.
 
 These are the top 5 most popular exchanges that support `Aion`.
 
-[![Binance](images/binance.png)](https://www.binance.com/en)
+[![Binance](/community/images/binance.png)](https://www.binance.com/en)
 
-[![BCex](images/bcex.png)](https://www.bcex.ca/)
+[![BCex](/community/images/bcex.png)](https://www.bcex.ca/)
 
-[![BitFinex](images/bitfinex.png)](https://www.bitfinex.com/)
+[![BitFinex](/community/images/bitfinex.png)](https://www.bitfinex.com/)
 
-[![Coinbene](images/coinbene.png)](https://www.coinbene.com/)
+[![Coinbene](/community/images/coinbene.png)](https://www.coinbene.com/)
 
-[![BitForex](images/bitforex.png)](https://bitforex.com/)
+[![BitForex](/community/images/bitforex.png)](https://bitforex.com/)

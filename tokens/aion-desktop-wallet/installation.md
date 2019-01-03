@@ -5,13 +5,15 @@ weight: 1
 
 # Installation
 
-The Aion Desktop Wallet is a local application that is **stored and ran from your local machine**. It is not a cloud application.
+The Aion Desktop Wallet is a local application that is **stored and ran from your local machine**. It is not a cloud application. If you're looking for a wallet that you can access from your phone, tablet, or computer, take a look at [Coinomi](https://www.coinomi.com/en/).
 
-![Linux Logo](images/linux-icon.png)
+The Aion Desktop Wallet can be installed on the following operating systems:
 
-![Apple Logo](images/apple-icon.png)
+![Linux Logo](/tokens/aion-desktop-wallet/images/linux-icon.png)
 
-![Windows Logo](images/windows-icon.png)
+![Apple Logo](/tokens/aion-desktop-wallet/images/apple-icon.png)
+
+![Windows Logo](/tokens/aion-desktop-wallet/images/windows-icon.png)
 
 ## Upgrading from a Previous Version
 

@@ -6,6 +6,7 @@ weight: 45
 # Import Account
 
 There are three options to import an existing account:
+
 - [Keystore File](#keystore-file)
 - [Private Key](#private-key)
 - [Ledger](#ledger)
