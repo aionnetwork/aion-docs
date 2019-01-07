@@ -14,7 +14,7 @@ You have the option to transact `AION` and send it to another wallet. The receiv
 1. Click the **Lock** icon to unlock the account you wish to send `AION` coin from.
 2. Go to the **Send** tab.
 3. Under **New transaction** input the **Address** you are sending `AION` coin to.
-4. Enter the **Amount to send** in `AION` coin. Your **Account balance** must be higher than value in the **Amount to send** field. Keep in mind that every transaction comes with an `Energy` payment. If you want to send the entire contents of an account to another account click **Send all**. The Aion Desktop Wallet will calculate how much `Energy` you need, and deduct it from your total.
+4. Enter the **Amount to send** in `AION` coin. Your **Account balance** must be higher than the value in the **Amount to send** field. Keep in mind that every transaction comes with an `Energy` payment. If you want to send the entire contents of an account to another account click **Send all**. The Aion Desktop Wallet will calculate how much `Energy` you need, and deduct it from your total.
 5. Click on **Generate transaction** to send the `AION`.
 
 ![Sending Tokens from One Account to Another](/tokens/aion-desktop-wallet/images/mac-send-tokens.gif)
@@ -31,7 +31,7 @@ Sometimes things get hung-up when sending a transaction, so the wallet tries to 
 
 #### `Sending transaction...`
 
-If this message shows for more than a few seconds, make sure that your Aion node is fully synced. You transaction will not occur unless it is up to date.
+If this message shows for more than a few seconds, make sure that your Aion node is fully synced. Your transaction will not occur unless it is up to date.
 
 ![Node not synced error.](/tokens/aion-desktop-wallet/images/error-node-not-synced.png)
 

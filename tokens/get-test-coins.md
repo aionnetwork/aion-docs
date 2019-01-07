@@ -15,7 +15,7 @@ The only thing you need is an Aion account on the _Mastery_ testnet network. And
 
 1. Navigate to [faucets.blockxlabs.com](https://faucets.blockxlabs.com) in your browser.
 2. Select **Mastery** from the **Blockchain Network** dropdown.
-3. Enter you public address into **Wallet/Public Address**.
+3. Enter your public address into **Wallet/Public Address**.
 4. Check the **Terms of Service** and **Privacy Policy** checkbox.
 5. Check the **I'm not a robot** checkbox.
 6. Click **Press to pour**.

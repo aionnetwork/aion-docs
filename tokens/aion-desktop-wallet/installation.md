@@ -23,7 +23,7 @@ Although it is possible to install the Aion Desktop Wallet on any Linux distribu
 1. Download the `aion_ui.zip` file from the [Aion Wallet Repository](https://github.com/aionnetwork/Desktop-Wallet/releases/)
 2. Extract the folder to the desired directory and open a terminal.
 
-![Unzip and opne a terminal](/tokens/aion-desktop-wallet/images/ubuntu-unzip-and-open-terminal.gif)
+![Unzip and open a terminal](/tokens/aion-desktop-wallet/images/ubuntu-unzip-and-open-terminal.gif)
 
 3. Run the `.sh` file to start the wallet:
 

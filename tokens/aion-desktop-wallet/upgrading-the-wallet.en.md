@@ -23,7 +23,7 @@ cp -r ~/.aion ~/.aion-old
 ./aion_ui.sh
 ```
 
-5. You should be able to see you old accounts. If they are there, feel free to delete the backup you made in step 1.
+5. You should be able to see your old accounts. If they are there, feel free to delete the backup you made in step 1.
 
 ## Mac
 
@@ -41,7 +41,7 @@ cp -r ~/.aion ~/.aion-old
 ![Replace the Current Aion Wallet Application](/tokens/aion-desktop-wallet/images/mac-replace.png)
 
 6. Run your Aion Wallet from the `Applications` folder.
-7. You should be able to see you old accounts. If they are there, feel free to delete the backup you made in step 1.
+7. You should be able to see your old accounts. If they are there, feel free to delete the backup you made in step 1.
 
 ## Windows
 
@@ -49,4 +49,4 @@ cp -r ~/.aion ~/.aion-old
 2. Download the latest Aion Desktop Wallet build from [Github](https://github.com/aionnetwork/Desktop-Wallet/releases).
 3. Open the `.exe` file.
 4. The application will install.
-5. You should be able to see you old accounts. If they are there, feel free to delete the backup you made in step 1.
+5. You should be able to see your old accounts. If they are there, feel free to delete the backup you made in step 1.

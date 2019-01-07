@@ -5,7 +5,7 @@ weight: 80
 
 # Validating Your Download
 
-In order to validate that your download and lower your chances of being caught in a [man-in-the-middle attack](https://en.wikipedia.org/wiki/Man-in-the-middle_attack), follow the instructions for your operating system.
+In order to validate that your download and lower your chances of being caught in a [man-in-the-middle attack](https://en.wikipedia.org/wiki/Man-in-the-middle_attack) follow the instructions for your operating system.
 
 ## Linux
 
@@ -29,4 +29,4 @@ If the output is `AionWallet.dmg: OK` then the file successfully passed the chec
 
 ## Windows
 
-Since Windows does not come with a built in hash checking system, you need to install an application called [Microsoft File Checksum Integrity Verifier](https://www.microsoft.com/en-us/download/details.aspx?id=11533). This tool is not officially sported by Microsoft or Aion.
+Since Windows does not come with a built-in hash checking system, you need to install an application called [Microsoft File Checksum Integrity Verifier](https://www.microsoft.com/en-us/download/details.aspx?id=11533). This tool is not officially sported by Microsoft or Aion.

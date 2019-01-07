@@ -17,7 +17,7 @@ There is a **Remember Me** option when importing accounts. Selecting this will d
 
 1. Click **Import account**.
 2. Select **Keystore file**.
-3. Click **Keystore UTC File**, navigate to your keystore file, and click **Open**.
+3. Click **Keystore UTC File**, navigate to your keystore file and click **Open**.
 4. Enter the associated **Password**.
 5. Click **Import**.
 
