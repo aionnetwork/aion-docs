@@ -6,6 +6,8 @@ Weight: 4
 
 # Mining
 
+This is an update.
+
 ## Quickstart
 
 Run through the following sections to get set up quickly.
