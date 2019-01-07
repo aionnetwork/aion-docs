@@ -6,7 +6,7 @@ Title: Contribution Guidelines
 
 ## How to Contribute
 
-If you want to suggest any changes to the docs or edit the docs yourself, [raise an issue](https://github.com/mohnjatthews/aion-docs/issues) or [make a pull request](https://github.com/mohnjatthews/aion-docs/pulls) on the [aion-docs GitHub repository](https://github.com/aionnetwork/docs).
+If you want to suggest any changes to the docs or edit the docs yourself, [raise an issue](https://github.com/aionnetwork/docs/issues) or [make a pull request](https://github.com/aionnetwork/docs/pulls) on the [aion-docs GitHub repository](https://github.com/aionnetwork/docs).
 
 ### General Writing
 

@@ -161,7 +161,3 @@ web3.eth.personal.unlockAccount("0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe", "t
 .then(console.log('Account unlocked!'));
 > "Account unlocked!"
 ```
-
-<h1>Need Help?</h1>
-
-If you get stuck, head over to our [Gitter channels](https://gitter.im/aionnetwork/Lobby) or [StackOverflow](https://stackoverflow.com/search?q=aion) for answers to some common questions.

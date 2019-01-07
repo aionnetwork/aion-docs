@@ -81,6 +81,4 @@ These are the top 5 most popular exchanges that support `Aion`.
 
 [![BitFinex](/community/images/bitfinex.png)](https://www.bitfinex.com/)
 
-[![Coinbene](/community/images/coinbene.png)](https://www.coinbene.com/)
-
 [![BitForex](/community/images/bitforex.png)](https://bitforex.com/)

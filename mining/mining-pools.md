@@ -4,7 +4,7 @@ Title: Mining Pools
 
 # Mining Pools
 
-This section will take you through the installation of the [Aion solo mining pool](doc:solo-mining-pool), which should be used with the [external miner](doc:external-miner). During the initial Kilimanjaro (Aion Phase 1) launch, only the Aion solo miner was officially supported on the network. We have since released Aion pool mining software for individuals to run their own pools:
+This section will take you through the installation of the Aion solo mining pool, which should be used with the [external miner](/mining/external-miner). During the initial Kilimanjaro (Aion Phase 1) launch, only the Aion solo miner was officially supported on the network. We have since released Aion pool mining software for individuals to run their own pools:
 
 - [Blog Post](https://blog.aion.network/new-aion-pool-software-6e3232527fa) (overview and features)
 - [Github](https://github.com/aionnetwork/aion_pool2) (guide and installation)
@@ -21,7 +21,7 @@ You can find a list of public pools that mine Aion under [External Resources](ex
 
 In order to run the solo mining pool, you must already have:
 
-- Aion [node](doc:node-set-up) and [external miner](doc:external-miner)
+- Aion [node](/aion-node) and [external miner](/mining/external-miner)
 - Python v2.7*
 
 Python is included by default with Ubuntu desktop, but may need to be installed separately in Ubuntu server (see below):
@@ -89,7 +89,7 @@ The `configure.sh` script may take several minutes to complete, and should only 
 ./run_quickstart.sh
 ```
 
-5. Launch the Aion kernel in a **separate terminal**. Navigate to the **aion** directory and run: 
+5. Launch the Aion kernel in a **separate terminal**. Navigate to the **aion** directory and run:
 
 ```bash
 ./aion.sh

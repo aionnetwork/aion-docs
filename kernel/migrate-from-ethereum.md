@@ -23,7 +23,7 @@ There are several differences in type between Aion and Ethereum, all of which ar
 
 ### Hash Function (Signatures and Wallet)
 
-**Aion**: [Blake2b](https://en.wikipedia.org/wiki/BLAKE_(hash_function)
+**Aion**: [Blake2b](https://en.wikipedia.org/wiki/BLAKE_(hash_function))
 **Ethereum**: [Keccak-265](https://keccak.team/keccak_specs_summary.html)
 
 ### Inline Assembly

@@ -23,12 +23,9 @@ Title: External Resources
 - [aionpool.org](https://aionpool.org)
 - [blockwarepool.com](https://blockwarepool.com/)
 - [centrys.io](https://pool.centrys.io/)
-- [f2pool.com](https://www.f2pool.com/)
 - [itcomplet.cloud](http://aion1.itcomplet.cloud:5000/home)
 - [glorypool.io](https://glorypool.io/)
-- [hashpowerpool.com](https://hashpowerpool.com/)
 - [luxor.tech](http://mining.luxor.tech/aion)
-- [whitbbit.cn](https://pool.whibbit.cn/)
 - [sainapool.com](http://sainapool.com)
 - [x100orgtfo.science](https://aion.x100orgtfo.science/)
 
@@ -43,9 +40,7 @@ Title: External Resources
 - [BitForex](https://www.bitforex.com/
 - [Changelly](https://changelly.com/
 - [ChangeNow.IO](http://changenow.io/
-- [CoinBene](https://www.coinbene.com/
 - [Dragonex](https://dragonex.im/en-us/
 - [EasyRabbit](https://easyrabbit.net/
 - [Kucoin](http://kucoin.com/
-- [LAToken](https://latoken.com/
 - [VBTC](https://vbtc.exchange/

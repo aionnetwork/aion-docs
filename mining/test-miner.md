@@ -9,7 +9,7 @@ Title: Test Miner
 You will need:
 
 - [Ubuntu 16.04 or a later version](https://www.ubuntu.com/download/desktop)
-- [Aion node](doc:node-set-up)
+- [Aion node](/aion-node)
 
 Set-Up
 

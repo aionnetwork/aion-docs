@@ -8,81 +8,33 @@ Chapter: true
 Aion nodes only understand [bytecode](https://en.wikipedia.org/wiki/Bytecode) and have no idea what to do with Solidity, Python, or Java. Since bytecode isn't very nice to deal with, you can use the Web3 API.
 
 When you make a request to Web3.js it converts it into a [JSON RPC](https://www.jsonrpc.org/specification) process. This abstracts the interaction between your code and the blockchain.
-[block:callout]
-{
-  "type": "success",
-  "title": "Run through the Tutorial",
-  "body": "Want to get your hands dirty and build something straight away? Check out the new Web3 tutorial over at [Aion University](https://learn.aion.network/v1.0/docs/how-to-deploy-a-smart-contract)."
-}
-[/block]
+
+Want to get your hands dirty and build something straight away? Check out the new Web3 tutorial over at [Aion University](https://learn.aion.network/docs/smart-contracts).
 
 # Prerequisites
 
 Make sure the following software is installed locally on your machine before attempting to run Web3.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3279be3-git-logo.png",
-        "git-logo.png",
-        300,
-        150,
-        "#953e19"
-      ],
-      "caption": "[Git](https://git-scm.com/)"
-    }
-  ]
-}
-[/block]
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9bc1c9e-node-logo.png",
-        "node-logo.png",
-        300,
-        150,
-        "#41523d"
-      ],
-      "caption": "[Node.js](https://nodejs.org/en/)"
-    }
-  ]
-}
-[/block]
+![[Git](https://git-scm.com)](/kernel/web3-access/web3-js/images/git-logo.png)
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f1fe0a3-npm-logo.png",
-        "npm-logo.png",
-        300,
-        150,
-        "#e18b8a"
-      ],
-      "caption": "[Node Package Manager](https://www.npmjs.com/)"
-    }
-  ]
-}
-[/block]
+![[Node.js](https://nodejs.org/en/)](/kernel/web3-access/web3-js/images/nodejs-logo.png)
+
+![[NPM](https://www.npmjs.com/)](/kernel/web3-access/web3-js/images/npm-logo.png)
+
 ## Node Access
 
-In order for Web3.js to interact with the blockchain, it needs access to an Aion node. You can set up your own node on your [local machine](node-setup), or connect to a [hosting service](hosting-service).
+In order for Web3.js to interact with the blockchain, it needs access to an Aion node. You can set up your own node on your [local machine](aion-node/native-nodes), or connect to a [hosting service](aion-node/hosting-services).
 
 # Install
 
-The two main ways to install the Aion Web3.js framework are by [using NPM](#section-npm-install), or by [cloning the GitHub repository](#section-github-install).
-
+The two main ways to install the Aion Web3.js framework are by [using NPM](npm-install), or by [cloning the GitHub repository](github-install).
 
 ## NPM Install
 
-This is the simplest method of installing the Aion Web3.js framework. Just run:
+This is the simplest method of installing the Aion Web3.js framework. Change directory to your web3 project, and have NPM install the latest version of `aion-web3`:
 
 ```bash
+cd ~/your/web3/project
 npm install aion-web3
 ```
 
@@ -96,13 +48,14 @@ const web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
 ## GitHub Install
 
 This method of installation is a bit more hands-on but allows for more granularity and customization.
-[block:callout]
-{
-  "type": "info",
-  "title": "Super Quick Install",
-  "body": "Run this _one-liner_ if you're super busy and don't have time to read more than one line:\n\n```bash\ngit clone https://github.com/aionnetwork/aion_web3.git && cd aion_web3 && npm install && node console.js\n```If your terminal _hangs_ after running this one-liner and doesn't display anything, hit `RETURN` on your keyboard. Sometimes Node doesn't show the output of `console.js` automatically."
-}
-[/block]
+
+### Super Quick Install
+
+Run this _one-liner_ if you're super busy and don't have time to read more than one line:\n\n```bash git clone https://github.com/aionnetwork/aion_web3.git && cd aion_web3 && npm install && node console.js```. If your terminal _hangs_ after running this one-liner and doesn't display anything, hit `RETURN` on your keyboard. Sometimes Node doesn't show the output of `console.js` automatically.
+
+### Regular Install
+
+Follow these steps for the regular install method.
 
 1. Clone the `aion_web3` repository from Github.
 
@@ -203,5 +156,3 @@ Web3 {
 continued...
 
 ```
-
-Obviously, you can also just check out the Aion Web3.js documentation.

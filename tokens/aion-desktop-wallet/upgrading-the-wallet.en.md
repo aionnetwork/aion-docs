@@ -37,9 +37,6 @@ cp -r ~/.aion ~/.aion-old
 3. Open the `.dmg` file.
 4. Copy the `AionWallet.app` application into your `Applications` folder.
 5. Select **Replace** when asked what you want to do with the current Aion Wallet application.
-
-![Replace the Current Aion Wallet Application](/tokens/aion-desktop-wallet/images/mac-replace.png)
-
 6. Run your Aion Wallet from the `Applications` folder.
 7. You should be able to see your old accounts. If they are there, feel free to delete the backup you made in step 1.
 

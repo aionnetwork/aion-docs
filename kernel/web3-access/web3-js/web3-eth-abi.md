@@ -463,7 +463,3 @@ web3.eth.abi.decodeLog([{
     mySmallNumber: '16'
 }
 ```
-
-<h1>Need Help?</h1>
-
-If you get stuck, head over to our [Gitter channels](https://gitter.im/aionnetwork/Lobby) or [StackOverflow](https://stackoverflow.com/search?q=aion) for answers to some common questions.

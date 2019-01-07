@@ -12,7 +12,7 @@ Run through the following sections to get set up quickly.
 
 Create Aion Wallet:
 
-- [Ledger](/tokens/ledger-hardware-wallet-guide)
+- [Ledger](/tokens/ledger-hardware-wallet)
 - [Desktop Wallet](/tokens/aion-desktop-wallet)
 - [Coinomni](https://www.coinomi.com/)
 
@@ -33,7 +33,7 @@ This guide will take you through the set-up of various modules. There are two ty
 
 ## External Miner
 
-If you wish to mine native `AION` coins, you will want to set up an external mining rig. It will connect your kernel to the network, and mine `AION` coins on the mainnet. We have provided all the software needed to begin mining, and it will require you to follow two modules (while running the [Aion node](doc:node-set-up)):
+If you wish to mine native `AION` coins, you will want to set up an external mining rig. It will connect your kernel to the network, and mine `AION` coins on the mainnet. We have provided all the software needed to begin mining, and it will require you to follow two modules (while running the [Aion node](/aion-node)):
 
 - [External Miner](external-miner)
 - [Mining Pools](mining-pools)
@@ -46,4 +46,4 @@ Aion leverages an enhanced Equihash algorithm for its Proof of Work (PoW). Detai
 
 Test miner does not mine on the public network, but rather on your local kernel. It could be used to test and run your own chain, as it has a shorter set-up time and adequate functionality to mine for `AION` on the [Mastery Testnet](https://mastery.aion.network/#/dashboard). Mining tokens on the [testnet](https://mastery.aion.network/#/dashboard) are for development purposes only. `AION` awarded on the testnet is not worth anything.
 
-Test mining does not require you to download additional files, provided that you already have the [Aion node](doc:node-set-up). You can learn how to set up a testnet [here](doc:mastery-testnet).
+Test mining does not require you to download additional files, provided that you already have the [Aion node](/aion-node). You can learn how to set up a [testnet here](kernel/networks/mastery-testnet).
