@@ -6,7 +6,7 @@ Title: web3-eth-contract
 
 The `web3.eth.Contract` object makes it easy to interact with smart contracts on the Aion blockchain.
 
-When you create a new contract object you give it the json interface of the respective smart contract and web3 will auto convert all calls into low level ABI calls over RPC for you. This allows you to interact with smart contracts as if they were JavaScript objects.
+When you create a new contract object you give it the JSON interface of the respective smart contract and web3 will auto convert all calls into low-level ABI calls over RPC for you. This allows you to interact with smart contracts as if they were JavaScript objects.
 
 To use it standalone:
 
@@ -189,7 +189,7 @@ contract2.options.address = address2;
 myContract.deploy(options)
 ```
 
-Call this function to deploy the contract to the blockchain. After successful deployment the promise will resolve with a new contract instance.
+Call this function to deploy the contract to the blockchain. After a successful deployment, the promise will resolve with a new contract instance.
 
 <h3>Parameters</h3>
 
@@ -279,7 +279,7 @@ This allows calling functions with same name but different parameters from the J
 
 <h3>Parameters</h3>
 
-Parameters of any method depend on the smart contracts methods, defined in the `JSON interface`.
+Parameters of any method depend on the smart contract's methods, defined in the `JSON interface`.
 
 <h3>Returns</h3>
 
@@ -287,8 +287,8 @@ Parameters of any method depend on the smart contracts methods, defined in the `
     - `Array` - **arguments**: The arguments passed to the method before. They can be changed.
     - `Function` - **call**: Will call the _constant_ method and execute its smart contract method in the EVM without sending a transaction. It cannot alter the smart contract state.
     - `Function` - **send**: Will send a transaction to the smart contract and execute its method. It can alter the smart contract state.
-    - `Function` - **estimateGas**: Will estimate the gas used when the method would be executed on chain.
-    - `Function` - **encodeABI**: Encodes the ABI for this method. This can be send using a transaction, call the method or passing into another smart contracts method as argument.
+    - `Function` - **estimateGas**: Will estimate the gas used when the method would be executed on the chain.
+    - `Function` - **encodeABI**: Encodes the ABI for this method. This can be sent using a transaction, call the method or passing into another smart contracts method as an argument.
 
 <h3>Examples</h3>
 
@@ -326,7 +326,7 @@ myContract.methods.myMethod(123).send({from: '0xde0B295669a9FD93d5F28D9Ec85E40f4
 myContract.methods.myMethod([param1[, param2[, ...]]]).call(options[, callback])
 ```
 
-Will call a _constant_ method and execute its smart contract method in the Fast VM without sending any transaction. Note calling can not alter the smart contract state.
+Will call a _constant_ method and execute its smart contract method in the Fast VM without sending any transaction. Note calling cannot alter the smart contract state.
 
 <h3>Parameters</h3>
 
@@ -335,7 +335,7 @@ Will call a _constant_ method and execute its smart contract method in the Fast 
     - `gasPrice` - **String** (optional): The gas price in NRG to use for this call _transaction_.
     - `gas` - **Number** (optional): The maximum gas provided for this call _transaction_ (gas limit).
 
-2.  `callback` - `Function` (optional): This callback will be fired with the result of the smart contract method execution as the second argument, or with an error object as the first argument.
+2.  `callback` - `Function` (optional): This callback will be fired with the result of the smart contract method execution as the second argument or with an error object as the first argument.
 
 <h3>Returns</h3>
 
@@ -415,12 +415,12 @@ Will send a transaction to the smart contract and execute its method. Note this 
 
 The **callback** will return the 32 bytes transaction hash.
 
-`PromiEvent`: A `promise combined event emitter`. Will be resolved when the transaction *receipt* is available, OR if this `send()` is called from a `someContract.deploy()`, then the promise will resolve with the *new contract instance*. Additionally the following events are available:
+`PromiEvent`: A `promise combined event emitter`. Will be resolved when the transaction *receipt* is available, OR if this `send()` is called from a `someContract.deploy()`, then the promise will resolve with the *new contract instance*. Additionally, the following events are available:
 
 - `"transactionHash"` returns **String**: is fired right after the transaction is sent and a transaction hash is available.
 - `"receipt"` returns **Object**: is fired when the transaction *receipt* is available. Receipts from contracts will have no `logs` property, but instead an `events` property with event names as keys and events as properties. See `getPastEvents return values <contract-events-return>` for details about the returned event object.
 - `"confirmation"` returns **Number**, **Object**: is fired for every confirmation up to the 24th confirmation. Receives the confirmation number as the first and the receipt as the second argument. Fired from confirmation 1 on, which is the block where it\'s minded.
-- `"error"` returns `Error`: is fired if an error occurs during sending. If a out of gas error, the second parameter is the receipt.
+- `"error"` returns `Error`: is fired if an error occurs during sending. If an out of gas error, the second parameter is the receipt.
 
 <h3>Examples</h3>
 
@@ -541,7 +541,7 @@ none
 
 <h3>Returns</h3>
 
-**String**: The encoded ABI byte code to send via a transaction or call.
+**String**: The encoded ABI bytecode to send via a transaction or call.
 
 <h3>Examples</h3>
 
@@ -621,9 +621,9 @@ Subscribe to an event
 
 `EventEmitter`: The event emitter has the following events:
 
-- `"data"` returns **Object**: Fires on each incoming event with the event object as argument.
+- `"data"` returns **Object**: Fires on each incoming event with the event object as an argument.
 - `"changed"` returns **Object**: Fires on each event which was removed from the blockchain. The event will have the additional property `"removed: true"`.
-- `"error"` returns **Object**: Fires when an error in the subscription occours.
+- `"error"` returns **Object**: Fires when an error in the subscription occurs.
 
 The structure of the returned event **Object** looks as follows:
 

@@ -28,7 +28,7 @@ Property of Web3 class
 Web3.modules
 ```
 
-Will return an object with the classes of all major sub modules, to be
+Will return an object with the classes of all major sub-modules, to be
 able to instantiate them manually.
 
 ### Returns
@@ -42,10 +42,8 @@ able to instantiate them manually.
       - `Personal` - **Function**: the Personal module for interacting
         with the Aion accounts see web3.eth.personal \<personal\>
         for more.
-      - `Shh` - **Function**: the Shh module for interacting with the
-        whisper protocol see web3.shh \<shh\> for more.
-      - `Bzz` - **Function**: the Bzz module for interacting with the
-        swarm network see web3.bzz \<bzz\> for more.
+      - `Shh` - **Function**: the Shh module for interacting with the whisper protocol.
+      - `Bzz` - **Function**: the Bzz module for interacting with the swarm network.
 
 ### Example
 
@@ -86,7 +84,7 @@ var web3 = new Web3(Web3.givenProvider || 'ws://some.local-or-remote.node:8546')
 
 ## version
 
-Property of Web3 class and instance of Web3
+Property of Web3 class and the instance of Web3
 
 ```javascript
 Web3.version
@@ -110,11 +108,11 @@ web3.version;
 
 ## utils
 
-Property of Web3 class and instance of Web3
+Property of Web3 class and the instance of Web3
 
 ```javascript
 Web3.utils
 web3.utils
 ```
 
-Utility functions are also exposes on the `Web3` class object directly.
+Utility functions are also exposed on the `Web3` class object directly.

@@ -12,8 +12,7 @@ The `web3.eth.abi` functions let you decode and encode parameters to ABI (Applic
 web3.eth.abi.encodeFunctionSignature(functionName);
 ```
 
-Encodes the function name to its ABI signature, which are the first 4
-bytes of the sha3 hash of the function name including types.
+Encodes the function name to its ABI signature, which are the first 4 bytes of the sha3 hash of the function name including types.
 
 <h3>Parameters</h3>
 
@@ -54,7 +53,7 @@ web3.eth.abi.encodeFunctionSignature('myMethod(uint256,string)')
 web3.eth.abi.encodeEventSignature(eventName);
 ```
 
-Encodes the event name to its ABI signature, which are the sha3 hash of
+Encodes the event name to its ABI signature, which is the sha3 hash of
 the event name including input types.
 
 <h3>Parameters</h3>
@@ -262,7 +261,7 @@ Decodes an ABI encoded parameter to its JavaScript type.
     [solidity
     documentation](http://solidity.readthedocs.io/en/develop/types.html)
     for a list of types.
-2.  `hexString` - `String`: The ABI byte code to decode.
+2.  `hexString` - `String`: The ABI bytecode to decode.
 
 <h3>Returns</h3>
 
@@ -428,10 +427,10 @@ Decodes ABI encoded log data and indexed topic data.
     inputs array. See the [solidity
     documentation](http://solidity.readthedocs.io/en/develop/types.html)
     for a list of types.
-2.  `hexString` - `String`: The ABI byte code in the `data` field of a
+2.  `hexString` - `String`: The ABI bytecode in the `data` field of a
     log.
 3.  `topics` - `Array`: An array with the index parameter topics of the
-    log, without the topic\[0\] if its a non-anonymous event, otherwise
+    log, without the topic\[0\] if it's a non-anonymous event, otherwise
     with topic\[0\].
 
 <h3>Returns</h3>

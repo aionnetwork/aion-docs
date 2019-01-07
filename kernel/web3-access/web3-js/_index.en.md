@@ -5,7 +5,7 @@ Chapter: true
 
 # Aion Web3.js
 
-Aion nodes only understand [bytecode](https://en.wikipedia.org/wiki/Bytecode), and have no idea what to do with Solidity, Python, or Java. Since bytecode isn't very nice to deal with, you can use the Web3 API.
+Aion nodes only understand [bytecode](https://en.wikipedia.org/wiki/Bytecode) and have no idea what to do with Solidity, Python, or Java. Since bytecode isn't very nice to deal with, you can use the Web3 API.
 
 When you make a request to Web3.js it converts it into a [JSON RPC](https://www.jsonrpc.org/specification) process. This abstracts the interaction between your code and the blockchain.
 [block:callout]
@@ -71,7 +71,7 @@ Make sure the following software is installed locally on your machine before att
 [/block]
 ## Node Access
 
-In order for Web3.js to interact with the blockchain, it needs access to an Aion node. You can set up your own node on your [local machine](doc:node-set-up), or connect to a [hosting service](doc:hosting-service).
+In order for Web3.js to interact with the blockchain, it needs access to an Aion node. You can set up your own node on your [local machine](node-setup), or connect to a [hosting service](hosting-service).
 
 # Install
 
@@ -95,12 +95,12 @@ const web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
 
 ## GitHub Install
 
-This method of installation is a bit more hands on, but allows for more granularity and customization.
+This method of installation is a bit more hands-on but allows for more granularity and customization.
 [block:callout]
 {
   "type": "info",
   "title": "Super Quick Install",
-  "body": "Run this _one-liner_ if you're super busy and don't have time to read more than one line:\n\n```bash\ngit clone https://github.com/aionnetwork/aion_web3.git && cd aion_web3 && npm install && node console.js\n```If your terminal _hangs_ after running this one liner and doesn't display anything, hit `RETURN` on your keyboard. Sometimes Node doesn't show the output of `console.js` automatically."
+  "body": "Run this _one-liner_ if you're super busy and don't have time to read more than one line:\n\n```bash\ngit clone https://github.com/aionnetwork/aion_web3.git && cd aion_web3 && npm install && node console.js\n```If your terminal _hangs_ after running this one-liner and doesn't display anything, hit `RETURN` on your keyboard. Sometimes Node doesn't show the output of `console.js` automatically."
 }
 [/block]
 
@@ -152,7 +152,7 @@ The default value is `127.0.0.1:8545`.
 
 # Testing
 
-To make sure that everything is setup ok, run through the following steps to test your connection to the Aion blockchain:
+To make sure that everything is set up ok, run through the following steps to test your connection to the Aion blockchain:
 
 1. Open a terminal and run:
 

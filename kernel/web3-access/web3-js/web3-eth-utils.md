@@ -4,7 +4,7 @@ Title: web3-eth-utils
 
 # web3-eth-utils
 
-This package provides utility functions for Aion dapps and other web3.js packages.
+This package provides utility functions for Aion dApps and other web3.js packages.
 
 ## randomHex
 
@@ -19,7 +19,7 @@ byte size.
 <h3>Parameters</h3>
 
 1.  `size` - `Number`: The byte size for the HEX string, e.g. `32` will
-    result in a 32 bytes HEX string with 64 characters preficed with
+    result in a 32 bytes HEX string with 64 characters prefixed with
     "0x".
 
 <h3>Returns</h3>
@@ -194,7 +194,7 @@ Note
 
 </div>
 
-To mimic the sha3 behaviour of solidity use `soliditySha3
+To mimic the sha3 behavior of solidity use `soliditySha3
 <utils-soliditysha3>`
 
 </div>
@@ -205,7 +205,7 @@ To mimic the sha3 behaviour of solidity use `soliditySha3
 
 <h3>Returns</h3>
 
-`String`: the result hash.
+`String`: the resulting hash.
 
 <h3>Example</h3>
 
@@ -256,7 +256,7 @@ packed before being hashed.
 
 <h3>Returns</h3>
 
-`String`: the result hash.
+`String`: the resulting hash.
 
 <h3>Example</h3>
 
@@ -472,7 +472,7 @@ non-checksum addresses.
 <h3>Returns</h3>
 
 `Boolean`: `true` when the checksum of the address is valid, `false` if
-its not a checksum address, or the checksum is
+it is not a checksum address, or the checksum is
 invalid.
 
 <h3>Example</h3>
@@ -490,8 +490,7 @@ web3.utils.checkAddressChecksum('0xc1912fEE45d61C87Cc5EA59DaE31190FFFFf232d');
 web3.utils.toHex(mixed)
 ```
 
-Will auto convert any given value to HEX. Number strings will
-interpreted as numbers. Text strings will be interpreted as UTF-8
+Will auto convert any given value to HEX. Number strings will be interpreted as numbers. Text strings will be interpreted as UTF-8
 strings.
 
 <h3>Parameters</h3>
@@ -529,7 +528,7 @@ web3.utils.toHex('I have 100€');
 web3.utils.toBN(number)
 ```
 
-Will safly convert any given value (including
+Will safely convert any given value (including
 [BigNumber.js](http://mikemcl.github.io/bignumber.js/) instances) into a
 [BN.js](https://github.com/indutny/bn.js/) instance, for handling big
 numbers in JavaScript.
@@ -641,7 +640,7 @@ web3.utils.numberToHex(number)
 web3.utils.fromDecimal(number) // ALIAS, deprecated
 ```
 
-Returns the HEX representation of a given number value.
+Returns the HEX representation of a given numerical value.
 
 <h3>Parameters</h3>
 
@@ -699,7 +698,7 @@ Returns the ASCII string representation of a given HEX value.
 
 <h3>Parameters</h3>
 
-1.  `hex` - `String`: A HEX string to convert to a ASCII string.
+1.  `hex` - `String`: A HEX string to convert to an ASCII string.
 
 <h3>Returns</h3>
 
@@ -825,14 +824,13 @@ web3.utils.padLeft(string, characterAmount [, sign])
 web3.utils.leftPad(string, characterAmount [, sign]) // ALIAS
 ```
 
-Adds a padding on the left of a string, Useful for adding paddings to
+Adds padding on the left of a string, Useful for adding paddings to
 HEX strings.
 
 <h3>Parameters</h3>
 
 1.  `string` - `String`: The string to add padding on the left.
-2.  `characterAmount` - `Number`: The number of characters the total
-    string should have.
+2.  `characterAmount` - `Number`: The number of characters the total string should have.
 3.  `sign` - `String` (optional): The character sign to use, defaults to
     `"0"`.
 
@@ -860,14 +858,13 @@ web3.utils.padRight(string, characterAmount [, sign])
 web3.utils.rightPad(string, characterAmount [, sign]) // ALIAS
 ```
 
-Adds a padding on the right of a string, Useful for adding paddings to
+Adds padding on the right of a string, Useful for adding paddings to
 HEX strings.
 
 <h3>Parameters</h3>
 
 1.  `string` - `String`: The string to add padding on the right.
-2.  `characterAmount` - `Number`: The number of characters the total
-    string should have.
+2.  `characterAmount` - `Number`: The number of characters the total string should have.
 3.  `sign` - `String` (optional): The character sign to use, defaults to
     `"0"`.
 
@@ -894,7 +891,7 @@ web3.utils.padRight('Hello', 20, 'x');
 web3.utils.toTwosComplement(number)
 ```
 
-Converts a negative numer into a two's complement.
+Converts a negative number into a two's complement.
 
 <h3>Parameters</h3>
 
@@ -929,7 +926,7 @@ web3.utils.toTwosComplement('-0x1');
 web3.utils.toNAmp(number [, unit])
 ```
 
-Converts any `Aion` value value into `Amp`. `Amp` are the smallest Aion unit, and you should always make calculations in `Amp` and convert only for display reasons.
+Converts any `Aion` value into `Amp`. `Amp` is the smallest Aion unit, and you should always make calculations in `Amp` and convert only for display reasons.
 
 <h3>Parameters</h3>
 
@@ -947,7 +944,7 @@ Converts any `Aion` value value into `Amp`. `Amp` are the smallest Aion unit, an
 
 <h3>Returns</h3>
 
-`String`: If a number, or string is given it returns a number string.
+`String`: If a number or string is given it returns a number string.
 
 <h3>Example</h3>
 
@@ -968,7 +965,7 @@ web3.utils.toNAmp('1', 'namp')
 web3.utils.fromNAmp(number [, unit])
 ```
 
-Converts any `Amp` value into a `Aion` value. `Amp` are the smallest `Aion` unit, and you should always make calculations in `Amp` and convert only for display reasons.
+Converts any `Amp` value into an `Aion` value. `Amp` is the smallest `Aion` unit, and you should always make calculations in `Amp` and convert only for display reasons.
 
 <h3>Parameters</h3>
 
@@ -986,7 +983,7 @@ Converts any `Amp` value into a `Aion` value. `Amp` are the smallest `Aion` unit
 
 <h3>Returns</h3>
 
-`String`: If a number, or string is given it returns a number string.
+`String`: If a number or string is given it returns a number string.
 
 <h3>Example</h3>
 

@@ -21,7 +21,7 @@ var accounts = new Accounts();
 web3.eth.accounts.create([entropy]);
 ```
 
-Generates an account object with private key and public key.
+Generates an account object with a private key and public key.
 
 <h3>Parameters</h3>
 
@@ -261,7 +261,7 @@ Recovers the Aion address which was used to sign the given data.
     - `messageHash` - **String**: The hash of the given message already prefixed with `"\x19Aion Signed Message:\n" + message.length + message`.
     - `signature` - **String**: Signature of message
 
-2. `signature` - **String**: Signature of message; this param is ignored if message param is Object
+2. `signature` - **String**: Signature of the message; this param is ignored if message param is Object
 
 
 <h3>Returns</h3>
@@ -379,7 +379,7 @@ web3.eth.accounts.decrypt({
 web3.eth.accounts.wallet;
 ```
 
-Contains an in memory wallet with multiple accounts. These accounts can be used when using `web3.eth.sendTransaction()`.
+Contains an in-memory wallet with multiple accounts. These accounts can be used when using `web3.eth.sendTransaction()`.
 
 <h3>Examples</h3>
 
@@ -551,7 +551,7 @@ web3.eth.accounts.wallet.clear();
 web3.eth.accounts.wallet.encrypt(password);
 ```
 
-Encrypts all wallet accounts to and array of encrypted keystore v3
+Encrypts all wallet accounts to an array of encrypted keystore v3
 objects.
 
 <h3>Parameters</h3>
@@ -659,7 +659,7 @@ web3.eth.accounts.wallet.decrypt([
 web3.eth.accounts.wallet.save(password [, keyName]);
 ```
 
-Stores the wallet encrypted and as string in local storage. This function is _browser only_.
+Stores the wallet encrypted and as a string in local storage. This function is _browser only_.
 
 <h3>Parameters</h3>
 

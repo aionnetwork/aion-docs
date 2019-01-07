@@ -6,7 +6,7 @@ Title: web3-eth-personal
 
 The `web3-eth-personal` package allows you to interact with the Aion node accounts.
 
-Many of these functions send sensitive information, like `password`. Never call these functions over a unsecured Websocket or HTTP provider, as your password will be sent in plain text!
+Many of these functions send sensitive information, like `password`. Never call these functions over an unsecured WebSocket or HTTP provider, as your password will be sent in plain text!
 
 ```javascript
 var Personal = require('web3-eth-personal');
@@ -21,7 +21,7 @@ var personal = new Personal(Personal.givenProvider || 'ws://some.local-or-remote
 web3.eth.personal.newAccount(password, [callback])
 ```
 
-Creates a new account. **Never call this function over a unsecured Websocket or HTTP provider, as your password will be send in plain text!**
+Creates a new account. **Never call this function over an unsecured WebSocket or HTTP provider, as your password will be sent in plain text!**
 
 <h3>Parameters</h3>
 
@@ -45,7 +45,7 @@ web3.eth.personal.newAccount('!@superpassword')
 web3.eth.personal.sign(dataToSign, address, password [, callback])
 ```
 
-Signs data using a specific account. Keep in mind that sending your account password over an unsecured HTTP RPC connection is highly unsecure.
+Signs data using a specific account. Keep in mind that sending your account password over an unsecured HTTP RPC connection is highly insecure.
 
 <h3>Parameters</h3>
 
@@ -100,13 +100,13 @@ web3.eth.personal.ecRecover("Hello world", "0x30755ed65396facf86c53e6217c52b4dae
 web3.eth.personal.signTransaction(transaction, password [, callback])
 ```
 
-Signs a transaction. This account needs to be unlocked. Keep in mind that sending your account password over an unsecured HTTP RPC connection is highly unsecure.
+Signs a transaction. This account needs to be unlocked. Keep in mind that sending your account password over an unsecured HTTP RPC connection is highly insecure.
 
 <h3>Parameters</h3>
 
 1. **Object** - The transaction data to sign.
-2. **String** - The password of the from account, to sign the transaction with.
-3. **Function** - (optional) Optional callback, returns an error object as first parameter and the result as second.
+2. **String** - The password of the account, to sign the transaction with.
+3. **Function** - (optional) Optional callback, returns an error object as the first parameter and the result as second.
 
 <h3>Returns</h3>
 
@@ -146,7 +146,7 @@ web3.eth.signTransaction({
 web3.eth.personal.unlockAccount(address, password, unlockDuraction [, callback])
 ```
 
-Signs data using a specific account. Keep in mind that sending your account password over an unsecured HTTP RPC connection is highly unsecure.
+Signs data using a specific account. Keep in mind that sending your account password over an unsecured HTTP RPC connection is highly insecure.
 
 <h3>Parameters</h3>
 

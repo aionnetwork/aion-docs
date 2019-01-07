@@ -64,7 +64,7 @@ web3.eth.defaultAccount = '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe';
 web3.eth.defaultBlock
 ```
 
-The default block is used for certain methods. You can override it by passing in the defaultBlock as last parameter. The default value is "latest".
+The default block is used for certain methods. You can override it by passing in the defaultBlock as the last parameter. The default value is "latest".
 
 ### Property
 
@@ -75,7 +75,7 @@ Default block parameters can be one of the following:
 - `"latest"` - String: The latest block (current head of the blockchain)
 - `"pending"` - String: The currently mined block (including pending transactions)
 
-Default is `"latest"`
+The default is `"latest"`
 
 ### Example
 
@@ -112,14 +112,14 @@ web3.eth.getProtocolVersion()
 web3.eth.isSyncing([callback])
 ```
 
-Checks if the node is currently syncing and returns either a syncing object, or `false`.
+Checks if the node is currently syncing and returns either a syncing object or `false`.
 
 ### Returns
 
-`Promise` returns `Object|Boolean` - A sync object when the node is currently syncing or `false`:
+`Promise` returns `Object|Boolean` - Async object when the node is currently syncing or `false`:
 
 - `startingBlock` - `Number`: The block number where the sync started.
-- `currentBlock` - `Number`: The block number where at which block the node currently synced to already.
+- `currentBlock` - `Number`: The block number that the node is currently synced to.
 - `highestBlock` - `Number`: The estimated block number to sync to.
 - `knownStates` - `Number`: The estimated states to download
 - `pulledStates` - `Number`: The already downloaded states
@@ -253,7 +253,7 @@ Get the balance of an address at a given block.
 ### Parameters
 1. `String` - The address to get the balance of.
 2. `Number|String` - (optional) If you pass this parameter it will not use the default block set with `web3.eth.deafultBlock`(https://github.com/aionnetwork/aion_web3/blob/v1.0/docs/web3-eth.rst#id57).
-3. `Function` - (optional) Optional callback, returns an error object as first parameter and the result as second.
+3. `Function` - (optional) Optional callback, returns an error object as the first parameter and the result as second.
 
 ### Returns
 `Promise` returns `String` - The current balance for the given address in `NAmp`.
@@ -276,7 +276,7 @@ Get the storage at a specific position of an address.
 1. `String` - The address to get the storage from.
 2. `Number` - The index position of the storage.
 3. `Number|String` - (optional) If you pass this parameter it will not use the default block set with `web3.eth.deafultBlock`(https://github.com/aionnetwork/aion_web3/blob/v1.0/docs/web3-eth.rst#id66).
-4. Function - (optional) Optional callback, returns an error object as first parameter and the result as second.
+4. Function - (optional) Optional callback, returns an error object as the first parameter and the result as second.
 
 ### Returns
 `Promise` returns `String` - The value in storage at the given position.
@@ -298,7 +298,7 @@ Get the code at a specific address.
 ### Parameters
 1. `String` - The address to get the code from.
 2. `Number|String` - (optional) If you pass this parameter it will not use the default block set with `web3.eth.deafultBlock`(https://github.com/aionnetwork/aion_web3/blob/v1.0/docs/web3-eth.rst#id71).
-3. `Function` - (optional) Optional callback, returns an error object as first parameter and the result as second.
+3. `Function` - (optional) Optional callback, returns an error object as the first parameter and the result as second.
 
 ### Returns
 `Promise` returns `String` - The data at given address address.
@@ -321,8 +321,8 @@ Returns a block matching the block number or block hash.
 ### Parameters
 
 1. `String|Number` - The block number or block hash. Or the string `"genesis"`, `"latest"` or `"pending"` as in the `default block parameter`.
-2. `Boolean` - (optional, default `false`) If `true`, the returned block will contain all transactions as objects, if `false` it will only contains the transaction hashes.
-3. `Function` - (optional) Optional callback, returns an error object as first parameter and the result as second.
+2. `Boolean` - (optional, default `false`) If `true`, the returned block will contain all transactions as objects if `false` it will only contain the transaction hashes.
+3. `Function` - (optional) Optional callback, returns an error object as the first parameter and the result as second.
 
 ### Returns
 `Promise` returns `Object` - The block object:
@@ -331,7 +331,7 @@ Returns a block matching the block number or block hash.
 - `hash` 32 Bytes - `String`: Hash of the block. null when its pending block.
 - `parentHash` 32 Bytes - `String`: Hash of the parent block.
 - `nonce` 8 Bytes - `String`: Hash of the generated proof-of-work. null when its pending block.
-- `sha3Uncles` 32 Bytes - `String`: SHA3 of the uncles data in the block.
+- `sha3Uncles` 32 Bytes - `String`: SHA3 of the uncles' data in the block.
 - `logsBloom` 256 Bytes - `String`: The bloom filter for the logs of the block. null when its pending block.
 - `transactionsRoot` 32 Bytes - `String`: The root of the transaction trie of the block
 - `stateRoot` 32 Bytes - `String`: The root of the final state trie of the block.
@@ -342,7 +342,7 @@ Returns a block matching the block number or block hash.
 - `size` - `Number`: Integer the size of this block in bytes.
 - `gasLimit` - `Number`: The maximum gas allowed in this block.
 - `gasUsed` - `Number`: The total used gas by all transactions in this block.
-- `timestamp` - `Number`: The unix timestamp for when the block was collated.
+- `timestamp` - `Number`: The Unix timestamp for when the block was collated.
 - `transactions` - `Array`: Array of transaction objects, or 32 Bytes transaction hashes depending on the returnTransactionObjects parameter.
 - `uncles` - `Array`: Array of uncle hashes.
 
@@ -388,7 +388,7 @@ Returns the number of transaction in a given block.
 ### Parameters
 
 1. `String|Number` - The block number or hash. Or the string `"genesis"`, `"latest"` or `"pending"` as in the `default block parameter`.
-2. Function - (optional) Optional callback, returns an error object as first parameter and the result as second.
+2. Function - (optional) Optional callback, returns an error object as the first parameter and the result as second.
 
 ### Returns
 
@@ -412,7 +412,7 @@ Returns a transaction matching the given transaction hash.
 
 ### Parameters
 1. `String` - The transaction hash.
-2. `Function` - (optional) Optional callback, returns an error object as first parameter and the result as second.
+2. `Function` - (optional) Optional callback, returns an error object as the first parameter and the result as second.
 
 
 ### Returns
@@ -420,9 +420,9 @@ Returns a transaction matching the given transaction hash.
 
 - `hash` 32 Bytes - `String`: Hash of the transaction.
 - `nonce` - `Number`: The number of transactions made by the sender prior to this one.
-- `blockHash` 32 Bytes - `String`: Hash of the block where this transaction was in. `null` when its pending.
-- `blockNumber` - `Number`: Block number where this transaction was in. `null` when its pending.
-- `transactionIndex` - `Number`: Integer of the transactions index position in the block. `null` when its pending.
+- `blockHash` 32 Bytes - `String`: Hash of the block where this transaction was in. `null` when it is pending.
+- `blockNumber` - `Number`: Block number where this transaction was in. `null` when it is pending.
+- `transactionIndex` - `Number`: Integer of the transactions index position in the block. `null` when it is pending.
 - `from` - `String`: Address of the sender.
 - `to` - `String`: Address of the receiver. `null` when its a contract creation transaction.
 - `value` - `String`: Value transferred in `NAmp`.
@@ -461,7 +461,7 @@ Returns a transaction based on a block hash or number and the transactions index
 ## Parameters
 1. `String` - A block number or hash. Or the string `"genesis"`, `"latest"` or `"pending"` as in the `default block parameter`.
 2. `Number` - The transactions index position.
-3. `Function` - (optional) Optional callback, returns an error object as first parameter and the result as second.
+3. `Function` - (optional) Optional callback, returns an error object as the first parameter and the result as second.
 
 ### Returns
 `Promise` returns `Object` - A transaction object, see `web3.eth.getTransaction`.
@@ -486,7 +486,7 @@ The receipt is not available for pending transactions and returns `null`.
 
 ### Parameters
 1. `String` - The transaction hash.
-2. `Function` - (optional) Optional callback, returns an error object as first parameter and the result as second.
+2. `Function` - (optional) Optional callback, returns an error object as the first parameter and the result as second.
 
 ### Returns
 `Promise` returns `Object` - A transaction receipt object, or `null` when no receipt was found:
@@ -533,7 +533,7 @@ Get the numbers of transactions sent from this address.
 ### Parameters
 1. `String` - The address to get the numbers of transactions from.
 2. `Number|String` - (optional) If you pass this parameter it will not use the default block set with `web3.eth.deafultBlock`.
-3. `Function` - (optional) Optional callback, returns an error object as first parameter and the result as second.
+3. `Function` - (optional) Optional callback, returns an error object as the first parameter and the result as second.
 
 ### Returns
 `Promise` returns `Number` - The number of transactions sent from the given address.
@@ -569,12 +569,12 @@ The `from` property can also be an address or index from the `web3.eth.accounts.
 ### Returns
 The **callback** will return the 32 bytes transaction hash.
 
-`PromiEvent`: A `promise combined event emitter`. Will be resolved when the transaction `eth-gettransactionreceipt-return` is available. Additionally the following events are available:
+`PromiEvent`: A `promise combined event emitter`. Will be resolved when the transaction `eth-gettransactionreceipt-return` is available. Additionally, the following events are available:
 
 - `"transactionHash"` returns `String`: Is fired right after the transaction is sent and a transaction hash is available.
 - `"receipt"` returns `Object`: Is fired when the transaction receipt is available.
-- `"confirmation"` returns `Number`, `Object`: Is fired for every confirmation up to the 12th confirmation. Receives the confirmation number as the first and the `eth-gettransactionreceipt-return` as the second argument. Fired from confirmation 0 on, which is the block where its minded.
-- `"error"` returns `Error`: Is fired if an error occurs during sending. If a out of gas error, the second parameter is the receipt.
+- `"confirmation"` returns `Number`, `Object`: Is fired for every confirmation up to the 12th confirmation. Receives the confirmation number as the first and the `eth-gettransactionreceipt-return` as the second argument. Fired from confirmation 0 on, which is the block where it is minded.
+- `"error"` returns `Error`: Is fired if an error occurs during sending. If an out of gas error, the second parameter is the receipt.
 
 ### Example
 ```javascript
@@ -625,7 +625,7 @@ Sends an already signed transaction, generated for example using `web3.eth.accou
 
 ### Parameters
 1. `String` - Signed transaction data in HEX format
-2. `Function` - (optional) Optional callback, returns an error object as first parameter and the result as second.
+2. `Function` - (optional) Optional callback, returns an error object as the first parameter and the result as second.
 
 ### Returns
 `PromiEvent`: A `promise combined event emitter`. Will be resolved when the transaction `receipt` is available.
@@ -668,7 +668,7 @@ Signs data using a specific account. This account needs to be unlocked.
 ### Parameters
 1. `String` - Data to sign. If String it will be converted using `web3.utils.utf8ToHex`.
 2. `String|Number` - Address to sign data with. Or an address or index of a local wallet in `web3.eth.accounts.wallet`.
-3. `Function` - (optional) Optional callback, returns an error object as first parameter and the result as second.
+3. `Function` - (optional) Optional callback, returns an error object as the first parameter and the result as second.
 
 Note
 
@@ -739,9 +739,9 @@ web3.eth.call(callObject [, defaultBlock] [, callback])
 Executes a message call transaction, which is directly executed in the VM of the node, but never mined into the blockchain.
 
 ### Parameters
-1. `Object` - A transaction object see `web3.eth.sendTransaction`, with the difference that for calls the from property is optional as well.
+1. `Object` - A transaction object sees `web3.eth.sendTransaction`, with the difference that for calls the from the property is optional as well.
 2. `Number|String` - (optional) If you pass this parameter it will not use the default block set with `web3.eth.deafultBlock`(https://github.com/aionnetwork/aion_web3/blob/v1.0/docs/web3-eth.rst#id167).
-3. `Function` - (optional) Optional callback, returns an error object as first parameter and the result as second.
+3. `Function` - (optional) Optional callback, returns an error object as the first parameter and the result as second.
 
 ### Returns
 `Promise` returns `String`: The returned data of the call, e.g. a smart contract functions return value.
@@ -766,8 +766,8 @@ Executes a message call or transaction and returns the amount of the gas used.
 
 ### Parameters
 
-1. `Object` - A transaction object see `web3.eth.sendTransaction`, with the difference that for calls the `from` property is optional as well.
-2. `Function` - (optional) Optional callback, returns an error object as first parameter and the result as second.
+1. `Object` - A transaction object sees `web3.eth.sendTransaction`, with the difference that for calls the `from` property is optional as well.
+2. `Function` - (optional) Optional callback, returns an error object as the first parameter and the result as second.
 
 ### Returns
 
@@ -795,8 +795,8 @@ Gets past logs, matching the given options.
 1. `Object` - The filter options as follows:
   - `fromBlock` - `Number|String`: The number of the earliest block (`"latest"` may be given to mean the most recent and `"pending"` currently mining, block). By default `"latest"`.
   - `toBlock` - `Number|String`: The number of the latest block (`"latest"` may be given to mean the most recent and `"pending"` currently mining, block). By default `"latest"`.
-  - `address` - `String|Array`: An address or a list of addresses to only get logs from particular account(s).
-  - `topics` - `Array`: An array of values which must each appear in the log entries. The order is important, if you want to leave topics out use `null`, e.g. `[null, '0x12...']`. You can also pass an array for each topic with options for that topic e.g. `[null, ['option1', 'option2']]`
+  - `address` - `String|Array`: An address or a list of addresses to only get logs from the particular account(s).
+  - `topics` - `Array`: An array of values which must each appear in the log entries. The order is important if you want to leave topics out use `null`, e.g. `[null, '0x12...']`. You can also pass an array for each topic with options for that topic e.g. `[null, ['option1', 'option2']]`
 
 ### Returns
 `Promise` returns `Array` - `Array` of log objects.
@@ -809,7 +809,7 @@ The structure of the returned event `Object` in the `Array` looks as follows:
 - `logIndex` - `Number`: Integer of the event index position in the block.
 - `transactionIndex` - `Number`: Integer of the transaction's index position, the event was created in.
 - `transactionHash` 32 Bytes - `String`: Hash of the transaction this event was created in.
-- `blockHash` 32 Bytes - `String`: Hash of the block where this event was created in. null when its still pending.
+- `blockHash` 32 Bytes - `String`: Hash of the block where this event was created in. null when it is still pending.
 - `blockNumber` - `Number`: The block number where this log was created in. null when still pending.
 
 ### Example

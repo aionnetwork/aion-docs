@@ -11,7 +11,7 @@ You can now connect and sync to the _Mastery_ testnet using the same binary as t
 ./aion.sh -n mastery
 ```
 
-This will begin syncing your node from genesis. Note that any changes made to `config.xml` requires you to re-deploy the node. For more indepth instructions on how to install a local node on the _Mastery_ test nework, see [Native Node](/aion-node/node-setup/native_node).
+This will begin syncing your node from the genesis block. Note that any changes made to `config.xml` require you to re-deploy the node. For more in-depth instructions on how to install a local node on the _Mastery_ test network, see [Native Node](/aion-node/node-setup/native_node).
 
 ## Migrating from Conquest to Mastery
 
@@ -19,7 +19,7 @@ This section is only relevant if you are currently on Aion `v0.2.8`.
 
 Migrating from Conquest to Mastery requires resetting the database. If you want to maintain your data on the Conquest testnet, please **backup your database folder.**
 
-Before the migration, you should also backup the `keystore` and `config` folders from the aion kernel for the Conquest network.
+Before the migration, you should also back up the `keystore` and `config` folders from the aion kernel for the Conquest network.
 
 1. Download the release build for the Mastery testnet from the [releases page](https://github.com/aionnetwork/aion/releases/tag/v0.3.0.q)
 2. Extract the files to your desired location. This will also be where you will be running your testnet node
@@ -45,7 +45,7 @@ If your configuration settings are broken, or if you just want to start with a f
 
 This will create a new `config.xml` file with the default config settings. Alternatively, you can copy and paste the contents of [this file](https://github.com/aionnetwork/aion/blob/testnet_q3_mastery/modBoot/resource/`config.xml`).
 
-Make sure you have the seed nodes from the above linked file in your `config.xml` file before starting the kernel.
+Make sure you have the seed nodes from the above-linked file in your `config.xml` file before starting the kernel.
 
 ## Obtaining Test Currency
 
