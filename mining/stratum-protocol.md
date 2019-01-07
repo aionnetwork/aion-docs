@@ -78,7 +78,7 @@ Clients submit jobs by sending:
         “workerId”,
         “jobId”,
         “nTime”,
-        “extraNonce2”,
+        “extraNonce”,
         “solution”
     ]
 }
