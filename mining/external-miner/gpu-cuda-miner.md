@@ -1,5 +1,5 @@
 ---
-Title: GPUI CUDA Miner
+Title: GPU CUDA Miner
 ---
 
 This external miner assumes you will be mining with a Linux Ubuntu machine. Our community has developed other mining software compatible with both Windows and other Linux distributions. Links can be found in our [external resources section](https://docs.aion.network/docs/external-resources).
@@ -12,9 +12,9 @@ This external miner assumes you will be mining with a Linux Ubuntu machine. Our 
 
 ## Setup
 
-1. Download the the pre-built CPU miner binary `aionminer_CUDA.tar.bz2` from the [`aion_miner` release page](https://github.com/aionnetwork/aion_miner/releases).
+1. Download the pre-built CPU miner binary `aionminer_CUDA.tar.bz2` from the [`aion_miner` release page](https://github.com/aionnetwork/aion_miner/releases).
 2. Extract the folder to your desired location.
-3. Open terminal and run aionminer with the desired parameter values:
+3. Open the terminal and run `aionminer` with the desired parameter values:
 
 ```json
 {

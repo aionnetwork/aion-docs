@@ -11,9 +11,9 @@ The CPU miner is for **testing and developing** on the test network **only**. Do
 
 # Setup
 
-1. Download the the pre-built CPU miner binary `aionminer_CPU.tar.bz2` from the [`aion_miner` release page](https://github.com/aionnetwork/aion_miner/releases).
+1. Download the pre-built CPU miner binary `aionminer_CPU.tar.bz2` from the [`aion_miner` release page](https://github.com/aionnetwork/aion_miner/releases).
 2. Extract the folder to your desired location.
-3. Open terminal and run aionminer with the desired parameter values:
+3. Open a terminal and run `aionminer` with the desired parameter values:
 
 ```json
 {

@@ -9,11 +9,11 @@ The Aion proof of work (PoW) protocol is based on the Equihash algorithm: a memo
 Memory hard problems feature several properties which make them ASIC resistant:
 
 - Large memory usage (relative to CPU on-chip memory). This forces the algorithm to access system memory resulting in memory bandwidth acting as the upper bound on algorithm run time.
-- Ineffective CPU & memory trade off. Traditionally, CPU cycles and memory usage may be traded to offset one resource by another. Equihash is resistant to this type of trading by exponentially increasing CPU cycles when attempting to trade CPU cycles for memory usage.
+- Ineffective CPU & memory trade-off. Traditionally, CPU cycles and memory usage may be traded to offset one resource by another. Equihash is resistant to this type of trading by exponentially increasing CPU cycles when attempting to trade CPU cycles for memory usage.
 
 Aion uses a modified version of the Equihash solver developed by John Tromp. The original version may be found [here](https://github.com/tromp/equihash).
 
-The core challenge of Equihash is to find a complete binary tree of `2`<sup>`k`</sup> indices (`X` values) such that the `XOR` of the hashes of indices (along with block header and nonce) is equal to `0`. Additionally the following conditions must be met:
+The core challenge of Equihash is to find a complete binary tree of `2`<sup>`k`</sup> indices (`X` values) such that the `XOR` of the hashes of indices (along with block header and nonce) is equal to `0`. Additionally, the following conditions must be met:
 
 - For each height subtree, the `XOR` of its `2i` leaf hashes must start with `i*n 0` bits.
 - The leftmost leaf of any left subtree is less than the leftmost leaf of the corresponding subtree.
@@ -24,9 +24,9 @@ This document serves as a migration and development guide detailing changes requ
 
 The Equihash algorithm takes two integers `N` and `K`. `N` specifies the width in bits which must `XOR` to `0`. `K` specifies the number of steps in which the computation takes place.
 
-In addition to Equihash algorithm parameters a personalization parameter is added to [Blake2b](https://blake2.net/). The personalization parameters ensures the digests computed are unique to Aion. Given the same inputs to a non-Aion Blake2b algorithm, the digests produced are guaranteed to be different.
+In addition to Equihash algorithm parameters, a personalization parameter is added to [Blake2b](https://blake2.net/). The personalization parameters ensure the digests computed are unique to Aion. Given the same inputs to a non-Aion Blake2b algorithm, the digests produced are guaranteed to be different.
 
-The Aion implementation of the Equihash algorithm uses parameters `N = 210` and `K = 9`, increasing the computational difficulty of the Aion PoW as compared to popular existing Equihash implementations. One of the notable effects of changing to Equihash parameters is increased memory usage. At a minimum the amount of memory has been more than doubled from `144 MB` to `300 MB` based on some set of experimental parameters though the reference implementation uses over `500 MB`.
+The Aion implementation of the Equihash algorithm uses parameters `N = 210` and `K = 9`, increasing the computational difficulty of the Aion PoW as compared to popular existing Equihash implementations. One of the notable effects of changing to Equihash parameters is increased memory usage. At a minimum, the amount of memory has been more than doubled from `144 MB` to `300 MB` based on some set of experimental parameters, although the reference implementation uses over `500 MB`.
 
 The personalization parameter adds an additional layer of security by ensuring unrelated hash computations both within and outside of the Aion kernel may not be used in the PoW process.
 
@@ -34,7 +34,7 @@ The personalization used in the current implementation is `16 bytes` equal to `A
 
 ## Equihash Solution Generation
 
-The Tromp Equihash solver uses a two-stage bucket sort during its solution generation process. The number of bits to be processed in each sort are defined by two variables: `RESTBITS` and `BUCKBITS`. The values of `RESTBITS` and `BUCKBITS` must sum to `DIGITBITS` where ![equation](/mining/images/equation-digitbits.png). This document presents algorithm details where `BUCKBITS = 14` and `RESTBITS = 7`.
+The Tromp Equihash solver uses a two-stage bucket sort during its solution generation process. The number of bits to be processed in each sort is defined by two variables: `RESTBITS` and `BUCKBITS`. The values of `RESTBITS` and `BUCKBITS` must sum to `DIGITBITS` where ![equation](/mining/images/equation-digitbits.png). This document presents algorithm details where `BUCKBITS = 14` and `RESTBITS = 7`.
 
 Following the Tromp solver Equihash solver the Aion solver produces Equihash solutions by processing digests in `K+1` steps. These steps may be broken up into 3 primary groups referred to as `Digit X`.
 
@@ -50,13 +50,13 @@ Input to the Blake2b algorithm is as follows: `H(x) = H(BlockHeader) + nonce + X
 
 ### Digit `0`
 
-When generating hashes a `64` byte hash is generated by the Blake2b hashing algorithm. Next the hashes are split into `J` byte segments L bytes long where ![equation](/mining/images/equation-j.png)and ![equation](/mining/images/equation-l.png). Calculations are performed using integer division. In the case of `N=210` and `K=9`, generated `64 byte` hashes are split into `J=2` segments with each segment `L=27 bytes` long.
+When generating hashes a `64` byte hash is generated by the Blake2b hashing algorithm. Next, the hashes are split into `J` byte segments L bytes long where ![equation](/mining/images/equation-j.png)and ![equation](/mining/images/equation-l.png). Calculations are performed using integer division. In the case of `N=210` and `K=9`, generated `64 byte` hashes are split into `J=2` segments with each segment `L=27 bytes` long.
 
 Generated hashes are then sorted into buckets based on the first `BUCKBIT` bits. The actual number of bytes stored is determined by examining the number of bytes remaining to be processed. [Table 1](#section-table-1) shows the number of bytes to be stored at each step, subsequent sections explain how the tables values are calculated.
 
 ### Digits `1` through `8`
 
-Digits `1` through `8` perform largely the same function and are grouped together. Each step performs two functions. First all pairs of hashes in each bucket are `XOR`ed to calculate the next set of collisions over the next `RESTBITS`. Next, the hashes must be stored in buckets for the following step. In order to calculate the bucket in which to store the hash for the next step, each pair of hashes is `XOR`ed, the next bucket ID calculated based on the `XOR` of the next `BUCKBIT` bits.
+Digits `1` through `8` perform largely the same function and are grouped together. Each step performs two functions. First, all pairs of hashes in each bucket are `XOR`ed to calculate the next set of collisions over the next `RESTBITS`. Next, the hashes must be stored in buckets for the following step. In order to calculate the bucket in which to store the hash for the next step, each pair of hashes is `XOR`ed, the next bucket ID calculated based on the `XOR` of the next `BUCKBIT` bits.
 
 #### Digit `9`
 
@@ -66,11 +66,11 @@ One minor change to the validation procedure is in the final step of verifying b
 
 ## Hash Processing
 
-Each step must process of portion of the hash; `DIGITBITS` bits long. Due to the asymmetry in processing of the 210,9 parameters, the bits to process in each step must be calculated individually. Figure 1 shows the bits to be processed at each step. The `prevbo` parameter within the implementation tracks the starting byte to process at each step; thus following figure 1 the appropriate bitshift operations are applied to isolate and XOR `DIGITBITS` at each step.
+Each step must process a portion of the hash; `DIGITBITS` bits long. Due to the asymmetry in the processing of the 210,9 parameters, the bits to process in each step must be calculated individually. Figure 1 shows the bits to be processed at each step. The `prevbo` parameter within the implementation tracks the starting byte to process at each step; thus following figure 1 the appropriate bitshift operations are applied to isolate and XOR `DIGITBITS` at each step.
 
 ### Hash Size
 
-In order to reduce the total amount of memory used the Equihash solver attempts to minimise the number of bytes stored at each step, excluding bytes processed in previous steps. Stored hashes are reduced in chunks of `4 bytes`.
+In order to reduce the total amount of memory used the Equihash solver attempts to minimize the number of bytes stored at each step, excluding bytes processed in previous steps. Stored hashes are reduced in chunks of `4 bytes`.
 
 The number of bytes remaining to be processed is shown in [table 1](#section-table-1), the hash bytes values at may be calculated by subtracting the total number of bytes processed after that step from the total length of the hashed bytes.
 
@@ -91,7 +91,7 @@ The number of bytes remaining to be processed is shown in [table 1](#section-tab
 
 ## Solution Representation
 
-As with existing Equihash implementations the format of the solutions generated is an array of `2`<sup>`k`</sup> integers representing the indices of the solution hashes. Solutions are encoded using Integer to Bit String (I2BS) as with existing Equihash implementations however the increased size of the solution index also results in an increase in the encoded solution size. Existing implementations use `21 bits` (`2`<sup>`k+1`</sup> possible index values) when representing each solution index saving `11` bits at each encoded integer ultimately resulting in an encoded size of `1344 bytes`. The Aion implementation also uses the I2BS encoding, however `22 bits` must be used to represent each integer, saving `10 bits` per integer and resulting in an encoded solution size of `1408 bytes`. The actual conversion process follows the existing Equihash solution conversion process and is not covered in detail within this document.
+As with existing Equihash implementations, the format of the solutions generated is an array of `2`<sup>`k`</sup> integers representing the indices of the solution hashes. Solutions are encoded using Integer to Bit String (I2BS) as with existing Equihash implementations however the increased size of the solution index also results in an increase in the encoded solution size. Existing implementations use `21 bits` (`2`<sup>`k+1`</sup> possible index values) when representing each solution index saving `11` bits at each encoded integer ultimately resulting in an encoded size of `1344 bytes`. The Aion implementation also uses the I2BS encoding. However, `22 bits` must be used to represent each integer, saving `10 bits` per integer and resulting in an encoded solution size of `1408 bytes`. The actual conversion process follows the existing Equihash solution conversion process and is not covered in detail within this document.
 
 ### Summary of Values
 

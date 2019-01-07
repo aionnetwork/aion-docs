@@ -65,7 +65,7 @@ Parameters:
 
 1. Job ID in hex
 2. Clean job, may be set to false to allow miners currently mining this block to continue without interruption. If true, instructs miners to drop the current job and begin work on the new job.
-3. 64 character hex string target for the current job.
+3. A 64 character hex string target for the current job.
 4. Hash of the header, used as input to the Equi2109 algorithm as well as block identification in the Aion kernel.
 
 Clients submit jobs by sending:
