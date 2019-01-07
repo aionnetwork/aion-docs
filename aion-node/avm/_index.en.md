@@ -12,7 +12,7 @@ The Aion Virtual Machine (AVM) is a Turing complete execution engine that is cor
 
 ## AVM & JVM
 
-**AVM is not a modification or rewrite of the underlying JVM**, but a bytecode transformer and runtime library, which provides control over how developers are allowed to interact with the AVM. It isolates DApps from each other while restricting access to class libraries.
+**AVM is not a modification or rewrite of the underlying JVM**, but a bytecode transformer and runtime library, which provides control over how developers are allowed to interact with the AVM. It isolates dApps from each other while restricting access to class libraries.
 
 ## Storage
 
@@ -24,7 +24,7 @@ Additionally, the top-level execution engine speculatively **runs all transactio
 
 ### Performance
 
-The AVM uses the JIT compiler which optimizes the DApp code. It also features multi-threading, allowing increased throughput via concurrent transaction execution as opposed to most blockchain VMs.
+The AVM uses the JIT compiler which optimizes the dApp code. It also features multi-threading, allowing increased throughput via concurrent transaction execution as opposed to most blockchain VMs.
 
 ### Reliability & Maturity
 
@@ -32,13 +32,13 @@ The core of the JVM is a very mature piece of software, changing little between 
 
 ### Developer-friendly
 
-The Java-based AVM leverages the entire Java tooling ecosystem, making developer onboarding and experience extremely streamlined. You get the full developer package including the compiler and IDE straight out of the box! That said, the AVM taps into a well-established community that has claimed the top spot for the #1 language (Java) in the past few years.
+The Java-based AVM leverages the entire Java tooling ecosystem, making developer on-boarding and experience extremely streamlined. You get the full developer package including the compiler and IDE straight out of the box! That said, the AVM taps into a well-established community that has claimed the top spot for the #1 language (Java) in the past few years.
 
 ## How it Works
 
 ![AVM Architecture](/aion-node/avm/images/avm-how-it-works.png)
 
-This diagram shows the high-level connections between these components as they apply to the case of deploying a new DApp. The user’s code is written as standard Java, using the standard class library (JCL) and an API we provide for accessing blockchain-specific functionality.
+This diagram shows the high-level connections between these components as they apply to the case of deploying a new dApp. The user’s code is written as standard Java, using the standard class library (JCL) and an API we provide for accessing blockchain-specific functionality.
 
 Upon deployment, this code goes through our transformer (a pipeline of ASM-based bytecode modification classes):
 
@@ -50,7 +50,7 @@ This instrumented code is saved and is what is loaded and executed when transact
 
 ![Storage System](/aion-node/avm/images/avm-storage-system.png)
 
-While most DApp environments expose storage as a key-value store (often with rigid key and value size requirements), the AVM exposes the data store as a generic object graph, derived directly from the objects alive in the user’s address space, as reachable from their static variables, when a transaction completes.
+While most dApp environments expose storage as a key-value store (often with rigid key and value size requirements), the AVM exposes the data store as a generic object graph, derived directly from the objects alive in the user’s address space, as reachable from their static variables, when a transaction completes.
 
 Unreachable objects are cleaned up, for a refund, by a special GC transaction, which a node is allowed to run on any contract it wishes when it mines a block. This means that the storage is transparent to the user’s code, thus moving all such correctness concerns into the domain of the virtual machine.
 
@@ -101,7 +101,7 @@ java -jar avm.jar call 0f3b39f4e8b4bd60d55d8e803547365d44d169770795ca9192eec3e20
 # Should should show the "Hello World!" string in the console output.
 ```
 
-For more information on how to use the standalone AVM command-line interface, see the [User Guide](docs/USER_GUIDE.md).
+For more information on how to use the stand-alone AVM command-line interface, see the [User Guide](docs/USER_GUIDE.md).
 
 ## License
 

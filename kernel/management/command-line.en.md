@@ -97,13 +97,13 @@ If the parameters are not valid, the kernel will not execute.
 ./aion.sh -c [valid network]
 ```
 
-Generates new `config.xml` file, and places it in the coresponding network folder (`mainnet, conquest, mastery`).
+Generates a new `config.xml` file, and places it in the corresponding network folder (`mainnet, conquest, mastery`).
 
 ```bash
 /home/aion/config/[network]/config.xml
 ```
 
-If the parameters are not valid, the kernel will not execute. If the config folder does't exist, the config folder and config file will be generated at the project's root directory.
+If the parameters are not valid, the kernel will not execute. If the config folder doesn't exist, the config folder and config file will be generated at the project's root directory.
 
 ### Account Management
 

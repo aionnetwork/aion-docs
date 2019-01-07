@@ -31,7 +31,7 @@ As output, you will get the list of public keys for your accounts, for example:
 ./aion.sh -a export 0xa0abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdab
 ```
 
-Your private key will be displayed after your successfully enter your password.
+Your private key will be displayed after you successfully enter your password.
 
 ```bash
 Please enter your password:

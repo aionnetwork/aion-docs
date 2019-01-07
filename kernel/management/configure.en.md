@@ -66,13 +66,13 @@ After running the kernel once, your configuration file will be updated with a pe
 </aion>
 ```
 
-If instead of a permanent id your configuration has an `id` placeholder, you only need to start the kernel to be assigned a permanent `id`. You can share this `id` with peers that want to add your node to their configuration file. During kernel run time your peer list will expand to include other active nodes.
+If instead of a permanent id your configuration has an `id` placeholder, you only need to start the kernel to be assigned a permanent `id`. You can share this `id` with peers that want to add your node to their configuration file. During kernel runtime, your peer list will expand to include other active nodes.
 
 If you accidentally delete the seed nodes from your configuration, you can find them on the [seed nodes page](/aion-node/kernel/seed-nodes). Make sure to add the seed nodes for the network you want to connect to.
 
 ## Log System Settings
 
-The log section in `config.xml` allows one to selectively set log-levels for each of the kernel modules. Available log-levels, from highest (most verbose) to lowest (least verbose), are:
+The log section in `config.xml` allows you to selectively set log-levels for each of the kernel modules. Available log-levels, from highest (most verbose) to lowest (least verbose), are:
 
 - `TRACE`
 - `DEBUG`
@@ -81,19 +81,19 @@ The log section in `config.xml` allows one to selectively set log-levels for eac
 - `ERROR`
 - `OFF`
 
-These log levels maps directly to logback's log levels. `OFF` turns off all the logging for a particular module, and `TRACE` prints out all available logging information.
+These log levels map directly to logback's log levels. `OFF` turns off all the logging for a particular module, and `TRACE` prints out all available logging information.
 
 Note that the `ROOT` logger maps to the logback root logger, and captures all logs not emitted directly by any of the modules.
 
 ### Absolute Paths
 
-The logs now allow for absolute paths. Absolute paths refer to a very specific location on the your computer, and do not use aliases such as `~`.
+The logs now allow for absolute paths. Absolute paths refer to a very specific location on your computer and do not use aliases such as `~`.
 
 ### Rolling Persistent Logs
 
 The kernel's logger is configured to persist all generated log data into the log folder by default. The logs roll-over every data at midnight, and every time a log file gets larger than `100MB`.
 
-To control the directory where the logs are stored to disk, you can change the `<log-path>` property to your directory of choice. To disable persistance to file entirely, set the `<log-file>` property to `false`.
+To control the directory where the logs are stored to disk, you can change the `<log-path>` property to your directory of choice. To disable persistence to the file entirely, set the `<log-file>` property to `false`.
 
 ```xml
 <log>

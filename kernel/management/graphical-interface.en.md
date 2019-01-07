@@ -32,7 +32,7 @@ Recently sent transactions sometimes are slow to appear.
 
 #### Resolution
 
-The transaction will show up given some time. A refresh can be fored:
+The transaction will show up given some time. A refresh can be forced:
 
 1. Exit the GUI.
 2. Re-open the GUI.
@@ -81,13 +81,13 @@ The GUI can be used to launch an instance of the kernel by clicking **Launch Ker
 
 - `CONNECTED`: Kernel is running and GUI is connected to it.
 
-- `DISCONNECTED`: Kernel is running but the GUI is not connected to it. This is the state when kernel termination is in progress, but kernel has not yet exited.
+- `DISCONNECTED`: Kernel is running but the GUI is not connected to it. This is the state when the kernel termination is in progress, but the kernel has not yet exited.
 
 **Note: Upon kernel launch, it must run an integrity check for its database. During this time, the GUI will be in `CONNECTING` state. For large databases, this can take some time.**
 
 The GUI can only terminate a kernel instance that it launched. Furthermore, it is expected that a system runs only one instance of the kernel at one time. You must ensure no other instance of the kernel is running before launching one from the GUI.
 
-When the GUI exits, the kernel does not automatically exit. In this case, upon re-launching the GUI, it will remember the instance that it had previously launched.
+When closing the GUI, the kernel does not automatically exit. In this case, upon re-launching the GUI, it will remember the instance that it had previously launched.
 
 ![https://github.com/aionnetwork/aion/wiki/images/gui/dashboard-kernel-launched.png](media/image2.png)
 
@@ -103,7 +103,7 @@ If undesirable changes were made in the text editor, the original saved state of
 
 ## Account Management
 
-Account management is performed in the **Accounts** screen of the GUI. Upon first usage, the wallet will not have any accounts and will look like this:
+Account management is performed in the **Accounts** screen of the GUI. Upon the first usage, the wallet will not have any accounts and will look like this:
 
 ![https://github.com/aionnetwork/aion/wiki/images/gui/accounts-no-master-acct.png](media/image4.png)
 
@@ -131,7 +131,7 @@ There are two options to initialize your wallet by adding an account:
 1. Click **Add Account** from the Accounts screen
 2. Under **Create account** input an account name. This can be changed later.
 3. Input a password.
-4. Confirm chosen password.
+4. Confirm your password.
 5. Save and backup the seed mnemonic that appears. You will need this if you wish to recover your wallet later.
 
 Clicking on **Add account** after creating the first account will automatically generate an account in your wallet. These accounts cannot be removed from the wallet.
@@ -173,7 +173,7 @@ You may wish to save your accounts created on the Aion Wallet elsewhere. In this
 
 ### Send `AION`
 
-You have the option to transact `AION` and send it to another wallet. The receiving wallet wallet must accept native `AION` coins.
+You have the option to transact `AION` and send it to another wallet. The receiving wallet must accept native `AION` coins.
 
 1. Make sure the account you wish to send `AION` from is unlocked under the **Accounts** listing. Click on the lock icon to unlock an account.
 2. Navigate to the **Send** option in the GUI and verify your account information on the left.

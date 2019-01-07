@@ -4,7 +4,7 @@ title: Secure Java Connection
 
 # Secure Java Connection
 
-Securing traffic between client application and Kernel is common security case. AION provides a conventional mechanism to enable secure connection for Java API client. Please refer to steps below.
+Securing traffic between client application and Kernel is common security case. AION provides a convenient mechanism to enable a secure connection for Java API client. Please refer to steps below.
 
 ## Requirements
 
@@ -25,7 +25,7 @@ To turn on the Java API service with a secure connection. The first step is goin
 </api>
 ```
 
-Once config enable the api secure connection, the kernel will automatically generate the curve keypair, you can find the key pair files in the `zmq_keystore` folder.
+Once you have enabled the API secure connection, the kernel will automatically generate the curve key pair. You can find the key pair files in the `zmq_keystore` folder.
 
 ```bash
 drwxr-xr-x 10 jay jay 4096 Nov 23 15:27 ./
@@ -57,6 +57,7 @@ UTC--18-11-23T20-27-45Z--zmqCurvePubkey\*
 UTC--18-11-23T20-27-45Z--zmqCurveSeckey\*
 
 jay@jay-GL63-8RC:\~/workspace/aion/pack/aion/zmq\_keystore$
+```
 
 Create a folder "zmq\_keystore" under the client API executing path and
 copy the public key (\*\*\*\*\*\*--zmqCurvePubkey) to the folder.
@@ -66,39 +67,28 @@ copy the public key (\*\*\*\*\*\*--zmqCurvePubkey) to the folder.
 When you execute the client API, it will generate a default config into
 the config folder under the API client executing path.
 
+```bash
 aion@aion-1234567:\~/workspace/aion/aion\_api/pack$ cd config/
 
-aion@aion-1234567:\~/workspace/aion/aion\_api/pack/config$ nano
-apiconfig.xml
+aion@aion-1234567:\~/workspace/aion/aion\_api/pack/config$ nano apiconfig.xml
+```
 
 Inside the config file, set the secure-connect to "true"
 
-\<?xml version="1.0" encoding="utf-8"?\>
-
-\<aion\_api\>
-
-\<secure-connect\>true\</secure-connect\>
-
-\<log\>
-
-\<SOL\>INFO\</SOL\>
-
-\<EXE\>INFO\</EXE\>
-
-\<BSE\>INFO\</BSE\>
-
-\<CHN\>INFO\</CHN\>
-
-\<CNT\>INFO\</CNT\>
-
-\<ADM\>INFO\</ADM\>
-
-\<TRX\>INFO\</TRX\>
-
-\<NET\>INFO\</NET\>
-
-\<WLT\>INFO\</WLT\>
-
-\</log\>
-
-\</aion\_api\>
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<aion_api>
+    <secure-connect>true</secure-connect>
+    <log>
+        <SOL>INFO</SOL>
+        <EXE>INFO</EXE>
+        <BSE>INFO</BSE>
+        <CHN>INFO</CHN>
+        <CNT>INFO</CNT>
+        <ADM>INFO</ADM>
+        <TRX>INFO</TRX>
+        <NET>INFO</NET>
+        <WLT>INFO</WLT>
+    </log>
+</aion_api>
+```

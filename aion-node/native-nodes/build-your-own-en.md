@@ -54,4 +54,4 @@ ant test
 
 6. Once the build has finished, you should be able to see a file like `aion-v<KERNEL VERSION>.<GIT REVISION>-<BUILD DATE>.tar.bz2` within the `pack` directory. This is your kernel build.
 
-You can use the [precompiled package instructions](#section-precompiled-packages) to install your Aion kernel. You do not have to install the kernel on the same machine you used to build the package.
+You can use the [pre-compiled package instructions](#section-precompiled-packages) to install your Aion kernel. You do not have to install the kernel on the same machine you used to build the package.

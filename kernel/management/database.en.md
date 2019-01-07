@@ -32,7 +32,7 @@ The current default database configuration is:
 
 The `path` tag is used for setting the physical location on disk where data will be stored. The path is relative with respect to the current folder.
 
-For example if you set the path to `<path>database</path>`, it will create a new folder called `database` where it will store the data. If the path is set to \<path\>database/db1\</path\>, it will create two new folders called `database` inside the current folder and `db1` inside the `database` folder. The data will be stored in `db1`.
+For example, if you set the path to `<path>database</path>`, it will create a new folder called `database` where it will store the data. If the path is set to \<path\>database/db1\</path\>, it will create two new folders called `database` inside the current folder and `db1` inside the `database` folder. The data will be stored in `db1`.
 
 When setting the path for the database please make sure that:
 
@@ -47,7 +47,7 @@ The `vendor` tag is used for choosing the database driver/implementation. The cu
  - `h2`
  - `rocksdb`
 
-If you are changing vendors, you must either delete / move the previous database folder, or change the path of the database to a new valid location.
+If you are changing vendors, you must either delete/move the previous database folder, or change the path of the database to a new valid location.
 
 ### Data compression
 
@@ -99,7 +99,7 @@ To check that data was correctly written to the database stop the program (`Ctrl
 
 Aion already has some built-in methods for attempting to recover from corrupted data inside the database. If the logs show that database recovery is in progress, please allow the program to complete the recovery process.
 
-If the recovery process failed, or you prefer to restart from genesis, do the following:
+If the recovery process failed, or you prefer to restart from the genesis block, do the following:
 
 1. Delete the database folder.
 2. Restart the program. It will automatically sync with the network and populate the database.

@@ -108,8 +108,8 @@ In this guide, we're going to run through how to get a simple _Hello World_ cont
 
     ![Deploying the avm.jar File](/aion-node/avm/images/deploy-jar.gif)
 
-7. Copy the **Dapp Address** field from the output.
-8. Call the `sayHello` method from the newly deployed application, using the **Dapp Address** copied from the previous step.
+7. Copy the **dApp Address** field from the output.
+8. Call the `sayHello` method from the newly deployed application, using the **dApp Address** copied from the previous step.
 
     ```bash
     java -jar avm.jar call 0f3b39f4e8b4bd60d55d8e803547365d44d169770795ca9192eec3e20163e111 -m "sayHello"

@@ -19,5 +19,5 @@ Reboot your machine, or refresh your environment variables some other way.
 If you are still running into problems with your kernel, it may be that your JDK 11 installation is not properly sym-linked. Run the following to fix this issue:
 
 ```bash
-ln -s [your jdk install folder] /usr/lib/jvm/jdk-11.0.1
+ln -s [your JDK install folder] /usr/lib/jvm/jdk-11.0.1
 ```

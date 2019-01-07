@@ -20,11 +20,11 @@ This field indicates the address of the account that successfully sealed the blo
 
 ### `difficulty`
 
-The difficulty field allows the network to determine the block rate. It is initialized with a low value 0x64 so that the test network can find its natural difficulty level.
+The difficulty field allows the network to determine the block rate. It is initialized with a low-value 0x64 so that the test network can find its natural difficulty level.
 
 ### `energyLimit`
 
-Each transaction in each block requires a dynamic amount of energy. energyLimit is the upper bound that limits the number of transactions included in a block.
+Each transaction in each block requires a dynamic amount of energy. `energyLimit` is the upper bound that limits the number of transactions included in a block.
 
 ### `extraData`
 
@@ -48,7 +48,7 @@ The timestamp field is an arbitrarily set field. In our case, this timestamp cor
 
 ## Mainnet
 
-Ths following code is the genesis for the current mainnet:
+The following code is the genesis for the current mainnet:
 
 ```json
 {
@@ -74,7 +74,7 @@ Ths following code is the genesis for the current mainnet:
 
 ## Testnet
 
-This following code is the genesis file for the now depricated conquest testnet:
+This following code is the genesis file for the now deprecated conquest testnet:
 
 ```json
 {

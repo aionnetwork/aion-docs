@@ -16,7 +16,7 @@ Aion has lots of different aspects and products, and everything can get a bit co
 
 Things like the FastVM, local nodes, and third party hosting services all use a copy of the Aion kernel. They are just different methods of hosting the same thing. The [Aion White Papers](https://aion.network/developers/#whitepapers) provide a deeper look into what the kernel is and how it works.
 
-This section of the docs goes over how to configure and interact with the kernel directly. If you're looking to develop the Aion kernel itself, or mine on Aion, then this section is for you! If you're just looking to create some Dapps, then you can leave this section for now.
+This section of the docs goes over how to configure and interact with the kernel directly. If you're looking to develop the Aion kernel itself, or mine on Aion, then this section is for you! If you're just looking to create some dApps, then you can leave this section for now.
 
 ## Aion Kernel Development
 
