@@ -15,19 +15,19 @@ Want to get your hands dirty and build something straight away? Check out the ne
 
 Make sure the following software is installed locally on your machine before attempting to run Web3.
 
-![[Git](https://git-scm.com)](/kernel/web3-access/web3-js/images/git-logo.png)
+[![Git](/kernel/web3-access/web3-js/images/git-logo.png)](https://git-scm.com)
 
-![[Node.js](https://nodejs.org/en/)](/kernel/web3-access/web3-js/images/nodejs-logo.png)
+[![Node.js](/kernel/web3-access/web3-js/images/node-logo.png)](https://nodejs.org/en/)
 
-![[NPM](https://www.npmjs.com/)](/kernel/web3-access/web3-js/images/npm-logo.png)
+[![NPM](/kernel/web3-access/web3-js/images/npm-logo.png)](https://www.npmjs.com/)
 
 ## Node Access
 
-In order for Web3.js to interact with the blockchain, it needs access to an Aion node. You can set up your own node on your [local machine](aion-node/native-nodes), or connect to a [hosting service](aion-node/hosting-services).
+In order for Web3.js to interact with the blockchain, it needs access to an Aion node. You can set up your own node on your [local machine](/en/aion-node/native-nodes), or connect to a [hosting service](/en/aion-node/hosting-services).
 
 # Install
 
-The two main ways to install the Aion Web3.js framework are by [using NPM](npm-install), or by [cloning the GitHub repository](github-install).
+The two main ways to install the Aion Web3.js framework are by [using NPM](#npm-install), or by [cloning the GitHub repository](#github-install).
 
 ## NPM Install
 

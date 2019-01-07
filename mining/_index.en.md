@@ -12,8 +12,8 @@ Run through the following sections to get set up quickly.
 
 Create Aion Wallet:
 
-- [Ledger](/tokens/ledger-hardware-wallet)
-- [Desktop Wallet](/tokens/aion-desktop-wallet)
+- [Ledger](/en/tokens/ledger-hardware-wallet)
+- [Desktop Wallet](/en//tokens/aion-desktop-wallet)
 - [Coinomni](https://www.coinomi.com/)
 
 Download Mining Solver:
@@ -46,4 +46,4 @@ Aion leverages an enhanced Equihash algorithm for its Proof of Work (PoW). Detai
 
 Test miner does not mine on the public network, but rather on your local kernel. It could be used to test and run your own chain, as it has a shorter set-up time and adequate functionality to mine for `AION` on the [Mastery Testnet](https://mastery.aion.network/#/dashboard). Mining tokens on the [testnet](https://mastery.aion.network/#/dashboard) are for development purposes only. `AION` awarded on the testnet is not worth anything.
 
-Test mining does not require you to download additional files, provided that you already have the [Aion node](/aion-node). You can learn how to set up a [testnet here](kernel/networks/mastery-testnet).
+Test mining does not require you to download additional files, provided that you already have the [Aion node](/en/aion-node). You can learn how to set up a [testnet here](/en/kernel/networks/mastery-testnet).

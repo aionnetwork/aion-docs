@@ -160,4 +160,4 @@ If you want to perform a migration for the testnet (mastery) or a custom network
     ~/aion-0.3.2/aion/aion.sh -n mastery
     ```
 
-For more information on selecting networks, take a look at the [Aion kernel command line documentation](/kernel/management/command-line).
+For more information on selecting networks, take a look at the [Aion kernel command line documentation](/en/kernel/management/command-line).

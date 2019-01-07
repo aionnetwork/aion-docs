@@ -6,7 +6,7 @@ title: Graphical Interface
 
 The Aion Kernel _Core_ includes a graphical user interface (GUI) which facilitates kernel management and provides basic wallet functionality. There are some [known issues and limitations](https://github.com/aionnetwork/aion/wiki/Graphical-Interface#known-issues--limitations).
 
-To run the GUI, first download and [extract the Aion kernel](/aion-node/native-nodes/). Then, from the `aion` folder, run the following command:
+To run the GUI, first download and [extract the Aion kernel](/en/aion-node/native-nodes/). Then, from the `aion` folder, run the following command:
 
 ```bash
 ./aion\_gui.sh
@@ -180,7 +180,7 @@ You have the option to transact `AION` and send it to another wallet. The receiv
 3. On the right panel, input the address you are sending to and the amount of `AION` you want to send.
 4. Click on **Generate Transaction** to send the `AION`. You will be notified when the transaction finishes.
 
-![Send Aion](/kernel/management/images/send-aion.png)
+![Send Aion](/en/kernel/management/images/send-aion.png)
 
 ### Receive `AION`
 

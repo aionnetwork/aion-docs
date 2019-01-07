@@ -77,7 +77,7 @@ ant test
 
 ## Quickstart (HelloWorld)
 
-To quickly get built and deploy a HelloWorld contract ([as described here](https://blog.aion.network/hello-world-from-the-aion-virtual-machine-25038ac62f17)):
+To quickly get built and deploy a HelloWorld contract ([as described here](//blog.aion.network/hello-world-from-the-aion-virtual-machine-25038ac62f17)):
 
 ```bash
 # Build the distribution.

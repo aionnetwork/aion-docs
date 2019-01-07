@@ -15,7 +15,7 @@ Make sure you have done the following before you begin transacting Aion coins th
 
 - [Initialize](https://support.ledgerwallet.com/hc/en-us/articles/360000613793) your Ledger device 
 - [Update](https://support.ledgerwallet.com/hc/en-us/articles/360002731113) your Ledger device to the latest firmware.
-- [Download](https://github.com/aionnetwork/Desktop-Wallet/releases/tag/1.1.0) and install the latest Aion Desktop Wallet release installation [guide](/tokens/aion-desktop-wallet/create-a-new-account)
+- [Download](https://github.com/aionnetwork/Desktop-Wallet/releases/tag/1.1.0) and install the latest Aion Desktop Wallet release installation [guide](/en/tokens/aion-desktop-wallet/create-a-new-account)
 - Ledger Live is [ready to use](https://support.ledgerwallet.com/hc/en-us/articles/360006395233).
 
 ## Connection Issues
@@ -56,7 +56,7 @@ If you are running Windows or Linux, you may encounter connection issues. In thi
 
 If you are having issues with connecting your Ledger device with the Aion Desktop Wallet, feel free to reach out to us!
 
-- [Aion Forum](https://forum.aion.network/)
+- [Aion Forum](//forum.aion.network)
 - [Reddit](https://www.reddit.com/r/AionNetwork/)
 - [support@aion.network](mailto:support@aion.network)
 

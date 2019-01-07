@@ -66,7 +66,7 @@ If you're having problems connecting your Ledger wallet to your Aion wallet, tak
 2. You need to have the Aion app **open** on your Ledger wallet when you connect. Open the Aion app on the Ledger and _then_ try to connect.
 3. Make sure that the **contract data** is set to **on** within the Aion app on your Ledger.
 
-If you're still having issues after following these steps, please reach out to us at [support@aion.network](mailto:support@aion.network) or through any of [our community groups](http://aion.network/community/). We have encountered a decent amount of issues with Ledger in the latest Aion Desktop Wallet build, are we're currently trying to find a solution.
+If you're still having issues after following these steps, please reach out to us at [support@aion.network](mailto:support@aion.network) or through any of [our community groups](//aion.network/community). We have encountered a decent amount of issues with Ledger in the latest Aion Desktop Wallet build, are we're currently trying to find a solution.
 
 ## Windows and Antivirus Software
 
