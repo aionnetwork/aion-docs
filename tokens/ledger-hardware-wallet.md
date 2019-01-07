@@ -56,7 +56,7 @@ If you are running Windows or Linux, you may encounter connection issues. In thi
 
 If you are having issues with connecting your Ledger device with the Aion Desktop Wallet, feel free to reach out to us!
 
-- [Aion Forum](//forum.aion.network)
+- [Aion Forum](http://forum.aion.network)
 - [Reddit](https://www.reddit.com/r/AionNetwork/)
 - [support@aion.network](mailto:support@aion.network)
 

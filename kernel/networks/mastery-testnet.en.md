@@ -11,7 +11,7 @@ You can now connect and sync to the _Mastery_ testnet using the same binary as t
 ./aion.sh -n mastery
 ```
 
-This will begin syncing your node from the genesis block. Note that any changes made to `config.xml` require you to re-deploy the node. For more in-depth instructions on how to install a local node on the _Mastery_ test network, see [Native Node](/aion-node/native-node).
+This will begin syncing your node from the genesis block. Note that any changes made to `config.xml` require you to re-deploy the node. For more in-depth instructions on how to install a local node on the _Mastery_ test network, see [Native Node](/en//aion-node/native-node).
 
 ## Migrating from Conquest to Mastery
 

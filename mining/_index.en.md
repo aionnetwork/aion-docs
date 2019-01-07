@@ -40,7 +40,7 @@ If you wish to mine native `AION` coins, you will want to set up an external min
 
 Each of the above modules will need to be run simultaneously.
 
-Aion leverages an enhanced Equihash algorithm for its Proof of Work (PoW). Details regarding changes to the algorithm may be found in the in [wiki](https://github.com/aionnetwork/aion_miner/wiki/Aion-equihash_210_9--specification-and-migration-guide).
+Aion leverages an enhanced Equihash algorithm for its Proof of Work (PoW). Details regarding changes to the algorithm may be found in the in [wiki](https://github.com/aionnetwork/aion_miner/wiki/Aion-equihash_210_9--specification-and-migration-guide.).
 
 ## Test Miner
 

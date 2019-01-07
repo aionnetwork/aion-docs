@@ -180,7 +180,7 @@ You have the option to transact `AION` and send it to another wallet. The receiv
 3. On the right panel, input the address you are sending to and the amount of `AION` you want to send.
 4. Click on **Generate Transaction** to send the `AION`. You will be notified when the transaction finishes.
 
-![Send Aion](/en/kernel/management/images/send-aion.png)
+![Send Aion](/kernel/management/images/send-aion.png)
 
 ### Receive `AION`
 
