@@ -6,7 +6,7 @@ title: Graphical Interface
 
 The Aion Kernel _Core_ includes a graphical user interface (GUI) which facilitates kernel management and provides basic wallet functionality. There are some [known issues and limitations](https://github.com/aionnetwork/aion/wiki/Graphical-Interface#known-issues--limitations).
 
-To run the GUI, first download and [extract the Aion kernel](/en/aion-node/node-setup/native-node/). Then, from the `aion` folder, run the following command:
+To run the GUI, first download and [extract the Aion kernel](/aion-node/native-nodes/). Then, from the `aion` folder, run the following command:
 
 ```bash
 ./aion\_gui.sh
@@ -67,7 +67,7 @@ To launch the GUI, run the following command from the `aion` directory:
 
 This window should open shortly:
 
-![https://github.com/aionnetwork/aion/wiki/images/gui/dashboard1.png](media/image1.png)
+![GUI Dashboard](/kernel/management/images/dashboard1.png)
 
 ## Kernel Control
 
@@ -89,13 +89,13 @@ The GUI can only terminate a kernel instance that it launched. Furthermore, it i
 
 When closing the GUI, the kernel does not automatically exit. In this case, upon re-launching the GUI, it will remember the instance that it had previously launched.
 
-![https://github.com/aionnetwork/aion/wiki/images/gui/dashboard-kernel-launched.png](media/image2.png)
+![Dashboard Kernel Launched](/kernel/management/images/dashboard-kernel-launched.png)
 
 ### Kernel Configuration
 
 In the **Settings** screen, the GUI provides a built-in text editor for modifying the `config.xml` configuration file of the kernel. The configuration can only be saved if the kernel is not currently running.
 
-![https://github.com/aionnetwork/aion/wiki/images/gui/settings1.png](media/image3.png)
+![Settings Tab](/kernel/management/images/settings1.png)
 
 Changes in the text editor are not saved until **Apply & Save** is clicked. This performs a basic XML validation before saving.
 
@@ -105,19 +105,19 @@ If undesirable changes were made in the text editor, the original saved state of
 
 Account management is performed in the **Accounts** screen of the GUI. Upon the first usage, the wallet will not have any accounts and will look like this:
 
-![https://github.com/aionnetwork/aion/wiki/images/gui/accounts-no-master-acct.png](media/image4.png)
+![Accounts Overview](/kernel/management/images/accounts-overview.png)
 
 Once a master account is created the Accounts screen has an unlock button. Click **Unlock** to unlock wallet. After one minute of inactivity, the wallet automatically locks.
 
-![https://github.com/aionnetwork/aion/wiki/images/gui/accounts-with-master-acct.png](media/image5.png)
+![Master Account](/kernel/management/images/master-account.png)
 
 ### Add a New Account
 
 There are two options to initialize your wallet by adding an account:
 
-- [Recover a Previous Wallet](#section-recover-wallet). If you have an existing wallet from the Aion GUI with the corresponding mnemonic and password, use this option.
+- [Recover a Previous Wallet](#recover-wallet). If you have an existing wallet from the Aion GUI with the corresponding mnemonic and password, use this option.
 
-- [Create New Account](#section-create-new-account) - Create a new Aion GUI user.
+- [Create New Account](#create-new-account) - Create a new Aion GUI user.
 
 #### Recover wallet
 
@@ -136,7 +136,7 @@ There are two options to initialize your wallet by adding an account:
 
 Clicking on **Add account** after creating the first account will automatically generate an account in your wallet. These accounts cannot be removed from the wallet.
 
-![https://github.com/aionnetwork/aion/wiki/images/gui/accounts-mnemonic-popup.png](media/image6.png)
+![Mnemomic Popup](/kernel/management/images/mnemonic-popup.png)
 
 ### Import account
 
@@ -150,14 +150,14 @@ There are two options to import an existing account:
 1. Click on the keystore space, and navigate to select your desired `keystore UTC` file.
 2. Input corresponding keystore password.
 
-![https://github.com/aionnetwork/aion/wiki/images/gui/accounts-import-keystore.png](media/image7.png)
+![Import Keystore](/kernel/management/images/import-keystore.png)
 
 #### Import with Private Key
 
 1. Input your private key.
 2. Create a password to use to unlock the account. There is no way to change this password.
 
-![https://github.com/aionnetwork/aion/wiki/images/gui/accounts-import-privkey.png](media/image8.png)
+![Import Private Key](/kernel/management/images/import-private-key.png)
 
 #### Remember Me
 
@@ -167,7 +167,7 @@ There is a **Remember Me** option when importing accounts. Selecting this will d
 
 You may wish to save your accounts created on the Aion Wallet elsewhere. In this case, you will need to export the wallet (using the icon right of the accounts listing) and save the keystore file in your desired location. Note that the password you input here will be the new password to access the keystore file:
 
-![https://github.com/aionnetwork/aion/wiki/images/gui/accounts-export.png](media/image9.png)
+![Save Keystore](/kernel/management/images/save-keystore.png)
 
 ## Transactions
 
@@ -180,10 +180,10 @@ You have the option to transact `AION` and send it to another wallet. The receiv
 3. On the right panel, input the address you are sending to and the amount of `AION` you want to send.
 4. Click on **Generate Transaction** to send the `AION`. You will be notified when the transaction finishes.
 
-![https://github.com/aionnetwork/aion/wiki/images/gui/send1.png](media/image10.png)
+![Send Aion](/kernel/management/images/send-aion.png)
 
 ### Receive `AION`
 
 Under the **Receive** tab of the GUI, you can send your public wallet address by scanning the QR code to display the wallet address, or by copying the address to your desktop clipboard.
 
-![https://github.com/aionnetwork/aion/wiki/images/gui/receive1.png](media/image11.png)
+![Receive Aion](/kernel/management/images/receive-aion.png)

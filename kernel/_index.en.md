@@ -8,7 +8,7 @@ chapter: true
 
 ## Download
 
-If you're looking to download the kernel and get started right away, head on over to our Github where you can [download the latest release](https://github.com/aionnetwork/aion/releases). Also, take a look at the [Node Setup](https://docs.aion.network/docs/node-setup) docs to get a handle on what goes where.
+If you're looking to download the kernel and get started right away, head on over to our Github where you can [download the latest release](https://github.com/aionnetwork/aion/releases). Also, take a look at the [Node Setup](/aion-node/node-setup) docs to get a handle on what goes where.
 
 ## Super Brief Overview
 
@@ -22,10 +22,9 @@ This section of the docs goes over how to configure and interact with the kernel
 
 If you're interested in application development on Aion or make improvements to the Java Implementation of Aion:
 
-- Refer to the details in the [Build Your Aion Network](/aion-node/networks/local-blockchain) wiki to determine how to start setting up and building your Aion Network.
 - Refer to the [Installation](https://github.com/aionnetwork/aion/wiki/Installation) wiki for a guide on installing and configuring the kernel.
 - The [Owner's Manual](https://github.com/aionnetwork/aion/wiki/Aion-Owner's-Manual) wiki will include further instructions and details on working with the kernel.
 
 ## Miners
 
-If you're interested in mining on the Aion networks, refer to our [Aion Mining Docs](/docs/aion-mining-overview)
+If you're interested in mining on the Aion networks, refer to our [Aion Mining Docs](/mining/)/

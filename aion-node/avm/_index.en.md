@@ -101,8 +101,4 @@ java -jar avm.jar call 0f3b39f4e8b4bd60d55d8e803547365d44d169770795ca9192eec3e20
 # Should should show the "Hello World!" string in the console output.
 ```
 
-For more information on how to use the stand-alone AVM command-line interface, see the [User Guide](docs/USER_GUIDE.md).
-
-## License
-
-This project is licensed under the [MIT License](./LICENSE.txt).
+For more information on how to use the stand-alone AVM command-line interface, see the [User Guide](https://github.com/aionnetwork/AVM/blob/master/docs/USER_GUIDE.md).

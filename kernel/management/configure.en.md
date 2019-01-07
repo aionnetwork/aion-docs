@@ -36,8 +36,6 @@ To receive tokens for mining blocks, you first need to create an account using:
 
 The [mining section](/mining) illustrates how to set this account to be able to receive tokens for mining.
 
-To import accounts created using a different binary on the same network follow the guide on [exporting and importing accounts](/aion-node/kernel/import-accounts).
-
 ## Adding Known Peers
 
 The default configuration from the release contains the seed nodes by default. Do not remove these nodes from the configuration. To include additional peers update the `config.xml` file by adding nodes using the permanent peer id, IP, and port of the computers you wish to connect to:
@@ -67,8 +65,6 @@ After running the kernel once, your configuration file will be updated with a pe
 ```
 
 If instead of a permanent id your configuration has an `id` placeholder, you only need to start the kernel to be assigned a permanent `id`. You can share this `id` with peers that want to add your node to their configuration file. During kernel runtime, your peer list will expand to include other active nodes.
-
-If you accidentally delete the seed nodes from your configuration, you can find them on the [seed nodes page](/aion-node/kernel/seed-nodes). Make sure to add the seed nodes for the network you want to connect to.
 
 ## Log System Settings
 

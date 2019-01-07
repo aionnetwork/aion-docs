@@ -11,7 +11,7 @@ You can now connect and sync to the _Mastery_ testnet using the same binary as t
 ./aion.sh -n mastery
 ```
 
-This will begin syncing your node from the genesis block. Note that any changes made to `config.xml` require you to re-deploy the node. For more in-depth instructions on how to install a local node on the _Mastery_ test network, see [Native Node](/aion-node/node-setup/native_node).
+This will begin syncing your node from the genesis block. Note that any changes made to `config.xml` require you to re-deploy the node. For more in-depth instructions on how to install a local node on the _Mastery_ test network, see [Native Node](/aion-node/native_node).
 
 ## Migrating from Conquest to Mastery
 
@@ -43,10 +43,8 @@ If your configuration settings are broken, or if you just want to start with a f
 ./aion.sh -n mastery
 ```
 
-This will create a new `config.xml` file with the default config settings. Alternatively, you can copy and paste the contents of [this file](https://github.com/aionnetwork/aion/blob/testnet_q3_mastery/modBoot/resource/`config.xml`).
-
-Make sure you have the seed nodes from the above-linked file in your `config.xml` file before starting the kernel.
+This will create a new `config.xml` file with the default config settings. Make sure you have the seed nodes from the above-linked file in your `config.xml` file before starting the kernel.
 
 ## Obtaining Test Currency
 
-To interact with the testnet, you will require currency. Follow the [Test Faucet guide](dapp-development/test-coin-faucet) to learn how to get test coins.
+To interact with the testnet, you will require currency. Follow the [Test Faucet guide](/tokens/get-test-coins) to learn how to get test coins.
