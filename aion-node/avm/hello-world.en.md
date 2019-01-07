@@ -28,8 +28,6 @@ In this guide, we're going to run through how to get a simple _Hello World_ cont
     > git version 2.17.1
     ```
 
-    ![Checking Product Version Numbers in Terminal](/aion-node/avm/images/checking-versions-in-terminal.png)
-
 2. Move to your home folder and clone the Aion Virtual Machine git repository.
 
     ```bash
