@@ -85,7 +85,7 @@ Before deploying the smart contract, we’re going to need to compile our solidi
   "title": "3. Deploying the Smart Contract"
 }
 [/block]
-To deploy the smart contract, you will need the contract ABI and bytecode as mentioned above, and an unlocked account with balance.
+To deploy the smart contract, you will need the contract ABI and bytecode as mentioned above, and an unlocked account with some `AION`.
 
 ### **Running a script to deploy the smart contract**
 
@@ -103,7 +103,7 @@ This script deploys the Counter.sol contract and outputs the **contract address*
 {
   "type": "warning",
   "title": "Unlock Accounts",
-  "body": "The provided repository for the demo app automatically unlocks your account. However, in practice you will not be able to deploy your smart contract without having unlocked your account either manually or in code. Steps to manually unlock your account can be found [here](https://docs.aion.network/docs/using-aion-web3-console#section-unlock-account)."
+  "body": "The provided repository for the demo app automatically unlocks your account. However, in practice, you will not be able to deploy your smart contract without having unlocked your account either manually or in code. Steps to manually unlock your account can be found [here](https://docs.aion.network/docs/using-aion-web3-console#section-unlock-account)."
 }
 [/block]
 
@@ -117,7 +117,7 @@ Once deployed, you will want to make function calls to the smart contract. We'll
 ### **Enabling interaction and function calls**
 
 1. Navigate to DemoDApp/src/ and open the **interact_counter.js** file
-2. Make the same changes as in the deploy_counter.js script, modifing web3 directory, account, and password:
+2. Make the same changes as in the deploy_counter.js script, modifying web3 directory, account, and password:
   - line 10: edit directory path to where your aion/web3 is located (from home, or check the directory using the ```pwd``` command)
   - line 28: edit a0 to the index number your address is in (listed under *alloc* when you open the new config/genesis.json file) 
 Note: Lists are indexed starting at 0
@@ -128,7 +128,7 @@ Note: Lists are indexed starting at 0
 ```
 node interact_counter.js {contractAddress}
 ```
-5. Now you can interact and test your DApp through the console! Use the following commands: (Remember that that blocks get sealed by default around every 10 seconds, so your transactions will not show up immediately)
+5. Now you can interact and test your DApp through the console! Use the following commands: (Remember that those blocks get sealed by default around every 10 seconds, so your transactions will not show up immediately)
 [block:parameters]
 {
   "data": {
@@ -151,7 +151,7 @@ node interact_counter.js {contractAddress}
 [/block]
 This section will cover common issues one may face during the compilation, deployment, and interaction with their smart contract.
 
-You can configure the **config.xml** file to show debug/error issues pertaining ot API, VM, transactions, etc. if you wish to [understand more about the kernel log](https://docs.aion.network/docs/log-system-settings).
+You can configure the **config.xml** file to show debug/error issues pertaining to API, VM, transactions, etc. if you wish to [understand more about the kernel log](https://docs.aion.network/docs/log-system-settings).
 
 [block:parameters]
 {
