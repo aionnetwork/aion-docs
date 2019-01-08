@@ -29,4 +29,4 @@ If the output is `AionWallet.dmg: OK` then the file successfully passed the chec
 
 ## Windows
 
-Since Windows does not come with a built-in hash checking system, you need to install an application called [Microsoft File Checksum Integrity Verifier](https://www.microsoft.com/en-us/download/confirmation.aspx?id=11533). This tool is not officially sported by Microsoft or Aion.
+Since Windows does not come with a built-in hash checking system, you need to install an application called [Microsoft File Checksum Integrity Verifier](https://support.microsoft.com/en-us/help/841290/availability-and-description-of-the-file-checksum-integrity-verifier-u). This tool is not officially sported by Microsoft or Aion.

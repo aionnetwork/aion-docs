@@ -8,7 +8,7 @@ chapter: true
 
 ## Download
 
-If you're looking to download the kernel and get started right away, head on over to our Github where you can [download the latest release](https://github.com/aionnetwork/aion/releases). Also, take a look at the [Node Setup](/en/aion-node/node-setup) docs to get a handle on what goes where.
+If you're looking to download the kernel and get started right away, head on over to our Github where you can [download the latest release](https://github.com/aionnetwork/aion/releases). Also, take a look at the [Aion Node](/en/aion-node) section to get a handle on what goes where.
 
 ## Super Brief Overview
 
