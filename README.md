@@ -10,4 +10,4 @@ If you want to contribute (and we really want you to), take a look at our [Contr
 
 If you want to make a suggestion to an article, create an [Issue](https://github.com/aionnetwork/docs/issues). If you want to create a completely new article, make a [Pull Request](https://github.com/aionnetwork/docs/pulls)! If you just want to show us some love, click the [star :star:](https://github.com/aionnetwork/aion_docs/stargazers) button!
 
-#### This repo is made with ❤️ by the [Aion](http://aion.network) :fire: Dev Success :100: team!
+#### This repo is maintained with ❤️ by the [Aion](http://aion.network) :fire: Dev Success :100: team!
