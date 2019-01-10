@@ -5,4 +5,5 @@ weight: 1
 
 # Mainnet
 
-Page under construction. Want to help out? [Check out the Github repo!](https://github.com/aionnetwork/docs)
+The mainnet is the _production_ network for Aion. This is where all real-world transactions happen, and `AION` used on this network has real-world value.
+
