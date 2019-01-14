@@ -1,13 +1,15 @@
 ---
-title: Upgrading the Wallet
+title: Updating the Wallet
 weight: 20
 ---
 
-# Upgrading the Wallet
+# Updating the Wallet
 
-A new update for the Aion Desktop Wallet is available. In order to keep your `AION` safe, follow this procedure when updating.
+When updating your Aion Desktop Wallet, the process is different depending on your operating system adn which version you are updating from.
 
 ## Linux
+
+The update process for Linux does not change depending on your current version number.
 
 1. First off, open a terminal and make a copy of your Aion data:
 
@@ -24,6 +26,7 @@ cp -r ~/.aion ~/.aion-old
 ```
 
 5. You should be able to see your old accounts. If they are there, feel free to delete the backup you made in step 1.
+6. Delete your _old_ `aion_ui.sh` file.
 
 ## Mac
 
