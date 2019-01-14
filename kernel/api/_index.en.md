@@ -1,5 +1,7 @@
 ---
-Title: Java API
+title: API
+chapter: true
+weight: 20
 ---
 
 # Java API

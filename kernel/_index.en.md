@@ -27,4 +27,4 @@ If you're interested in application development on Aion or make improvements to 
 
 ## Miners
 
-If you're interested in mining on the Aion networks, refer to our [Aion Mining Docs](/mining/)/
+If you're interested in mining on the Aion networks, refer to our [Aion Mining Docs](/en/mining)

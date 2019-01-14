@@ -1,8 +1,7 @@
 ---
 title: Management
 chapter: true
+weight: 1
 ---
 
-# Management
-
-Page under construction. Want to help out? [Check out the Github repo!](https://github.com/aionnetwork/docs)
+This section contains information about the Aion kernel, as well as instructions on how to manage it. If you are looking for how to install the kernel or connect to a node, take a look at [Aion Node](/en/aion-node) section.

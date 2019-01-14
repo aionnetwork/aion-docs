@@ -1,6 +1,6 @@
 ---
 title: Networks
-weight: 10
+weight: 30
 chapter: true
 ---
 

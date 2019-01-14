@@ -9,7 +9,7 @@ The Aion Kernel _Core_ includes a graphical user interface (GUI) which facilitat
 To run the GUI, first download and [extract the Aion kernel](/en/aion-node/native-nodes/). Then, from the `aion` folder, run the following command:
 
 ```bash
-./aion\_gui.sh
+./aion_gui.sh
 ```
 
 ## Known issues and Limitations
