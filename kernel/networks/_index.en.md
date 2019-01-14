@@ -6,11 +6,13 @@ chapter: true
 
 # Networks
 
-There are three options for connecting to an Aion network.
+There are two options for connecting to an Aion network.
 
 ## [Mainnet](mainnet)
 
 This is the live network, where real transactions are processed. `AION` has real-world value here, and transactions are processed by real-world miners.
+
+You can view metrics and information about this network on the [Aion Mainnet Dashboard](https://mainnet.aion.network/#/dashboard).
 
 ## [Testnet (_Mastery_)](mastery-testnet)
 

@@ -36,14 +36,14 @@ Before the migration, you should also back up the `keystore` and `config` folder
 
 If your configuration settings are broken, or if you just want to start with a fresh configuration file with the default settings, you can reset the file:
 
-1. Remove the `config.xml` file
+1. Delete the `aion/mastery/config/config.xml` file
 2. Launch the kernel by running:
 
 ```bash
 ./aion.sh -n mastery
 ```
 
-This will create a new `config.xml` file with the default config settings. Make sure you have the seed nodes from the above-linked file in your `config.xml` file before starting the kernel.
+This will create a new `config.xml` file with the default config settings.
 
 ## Obtaining Test Currency
 
