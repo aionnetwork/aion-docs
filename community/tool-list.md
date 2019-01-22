@@ -4,6 +4,12 @@ Title: Tool List
 
 # Tool List
 
+## Browser Integration
+
+### [AIWA](https://getaiwa.com/)
+
+A wallet and dApp interaction tool for Aion.
+
 ## Integrated Development Environments
 
 IDEs help developers get up and running faster without having to install independent tools and plugins.
@@ -58,6 +64,10 @@ Protect your crypto assets with the most popular hardware wallet in the market.
 The WandX desktop app is a decentralized token trading platform on Ethereum and NEO blockchains for ERC20 and NEP5 tokens respectively, all with a wallet built in.
 
 ### Online Wallets
+
+#### [AIWA](https://getaiwa.com/)
+
+A wallet and dApp interaction tool for Aion.
 
 #### [Coinomi](https://www.coinomi.com/)
 
