@@ -6,6 +6,8 @@ Title: Tool List
 
 ## Browser Integration
 
+These integrations inject Web3 into a browser session, allowing users to access the Aion network from a website.
+
 ### [AIWA](https://getaiwa.com/)
 
 A wallet and dApp interaction tool for Aion.
