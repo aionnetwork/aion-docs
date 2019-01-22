@@ -10,7 +10,7 @@ IDEs help developers get up and running faster without having to install indepen
 
 ### [Titan Suite](https://titan-suite.com/)
 
-Titan Suite is an online integrated development environment (IDE). It allows developers to create and test DApp online without having to install anything.
+Titan Suite is an online integrated development environment (IDE). It allows developers to create and test dApp online without having to install anything.
 
 ## Node Services
 
@@ -30,7 +30,7 @@ Quickly spin up and connect to an Aion node with web3 built in. All nodes are fr
 
 ## Explorers and Blockchain Statistics
 
-These tools help you to monitor the Aion network as you develop your DApps.
+These tools help you to monitor the Aion network as you develop your dApps.
 
 ### [Aion Explorer](https://mainnet.aion.network/#/dashboard)
 

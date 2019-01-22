@@ -93,12 +93,12 @@ In this guide, we're going to run through how to get a simple _Hello World_ cont
 
     > Running block with 1 transactions
     > **********************************
-    > DApp deployment request
+    > dApp deployment request
     > Storage      : ./storage
     > Dapp Jar     : build/dapp.jar
     > Sender       : a025f4fd54064e869f158c1b4eb0ed34820f67e60ee80a53b469f725efc06378
     > **********************************
-    > DApp deployment status
+    > dApp deployment status
     > Result status: SUCCESS
     > Dapp Address : 0f3b39f4e8b4bd60d55d8e803547365d44d169770795ca9192eec3e20163e111
     > Energy cost  : 10698240
@@ -114,7 +114,7 @@ In this guide, we're going to run through how to get a simple _Hello World_ cont
 
     > Running block with 1 transactions
     > **********************************
-    > DApp call request
+    > dApp call request
     > Storage      : ./storage
     > Dapp Address : 0f3b39f4e8b4bd60d55d8e803547365d44d169770795ca9192eec3e20163e111
     > Sender       : a025f4fd54064e869f158c1b4eb0ed34820f67e60ee80a53b469f725efc06378
@@ -124,7 +124,7 @@ In this guide, we're going to run through how to get a simple _Hello World_ cont
     > Hello World!
     >
     > **********************************
-    > DApp call result
+    > dApp call result
     > Result status: SUCCESS
     > Return value : void
     > Energy cost  : 62998
