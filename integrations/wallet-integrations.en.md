@@ -1,20 +1,14 @@
 # Wallet Integrations
 
-This guide is intended to help ease the process for integrating the native `AION` coin with an external wallet provider.
+This guide will walk you through integrating the native `AION` coin with a third-party wallet provider.
 
 ## Infrastructure
 
-To set up a node please refer to [Aion Node Setup Guide](aion-node)
-
-For more options:
-
-1. [Blockdaemon](https://app.blockdaemon.com/dashboard) one of our partners for node hosting(often used for testing)
-2. We have other [partners](https://nodesmith.io/) who work on hosting Aion nodes that we can get you alpha access
-3. There's an [Aion node on Azure](https://azuremarketplace.microsoft.com/en-in/marketplace/apps/nuco-networks.aionnode?tab=Overview)
+You need to have an Aion node setup. You can [spin up your own node](aion-node/native-nodes), or use a [third-party hosting service](aion-node/hosting-services) to get up and running faster.
 
 ## Accounts and Keys
 
-Generating a random Seed Key (12 word mnemonic) for a user
+Generating a random Seed Key (12-word mnemonic) for a user
 
 ```json
 {
@@ -30,17 +24,17 @@ Generating a random Seed Key (12 word mnemonic) for a user
 
 ### Aion Derivation Path: 44'/425'
 
-BIP44 standard describe this derivation path as `m / purpose' / coin_type' / account' / change' / address_index'`. One can generate multiple accounts by varying these derivation paths such as 44'/425'/0'/0'/0' , 44'/425'/0'/0'/1' and so on.
+The `BIP44` standard describes this derivation path as `m / purpose' / coin_type' / account' / change' / address_index'`. One can generate multiple accounts by varying these derivation paths such as 44'/425'/0'/0'/0' , 44'/425'/0'/0'/1' and so on.
 
 ### Generate Key Pair From Mnemonic and Aion Derivation Path
 
-You will get the same key pair every time from same mnemonic & derivation path combination.
+You will get the same key pair every time from the same mnemonic & derivation path combination.
 
 Following code generates a key pair from
 Derivation path: 44'/425'/0'/0'/0'
 Mnemonic: "monitor identify enter shield fog melt dance fine zone siren swamp dizzy"
 
-Derivation path for 3rd-party wallets might vary depending on their implementation. In that case only the root account (first account) will be the same, every next account after that will depend on the last 3 digit sections in the derivation path (0'/0'/0').
+Derivation path for 3rd-party wallets might vary depending on their implementation. In that case, only the root account (first account) will be the same, every next account after that will depend on the last 3 digit sections in the derivation path (0'/0'/0').
 
 ```json
 {
@@ -64,7 +58,7 @@ Private Key => 0ae3f0696a4e4912771a34f0b22e9a2a36192c9a2ca57f23e6e8c6fa8b653a229
 
 ### Generating Aion Account Address From Key Pair
 
-Aion account is generated from 32 byte blake2b hash of the public key and then substituting first byte of the hash with 'a0'.
+An Aion account is generated from a `32 byte` blake2b hash of the public key and then substituting the first byte of the hash with 'a0'.
 
 ```json
 {
@@ -89,7 +83,7 @@ Account => 0xa028d16f0e006e182b2744a9359cc17115c26b7ac7f10e1a8e65170fe7828c12
 Aion Keystore files can be imported or exported using [aion-keystore npm package](https://www.npmjs.com/package/aion-keystore)
 Keystore import/export sample code is suggested [here](https://github.com/qoire/aion-keystore/blob/master/test/test_account.js)
 
-If you will be creating a large amount key pairs, you can utilize our [Java Offline Tool ](https://github.com/AionJayT/offlineTxTool/releases )to generate bulk key pairs quickly. There are also [Test Cases](https://github.com/AionJayT/offlineTxTool/tree/master/test/org/aion/tool) available.
+If you will be creating lots of key pairs, you can utilize our [Java Offline Tool ](https://github.com/AionJayT/offlineTxTool/releases )to generate bulk key pairs quickly. There are also [Test Cases](https://github.com/AionJayT/offlineTxTool/tree/master/test/org/aion/tool) available.
 [block:api-header]
 {
   "title": "Transactions"
@@ -214,7 +208,7 @@ Expected output
 
 ## Mastery Testnet & Faucet
 
-This testnet environment was released with the latest v0.3.0 Moldoveanu Peak mainnet. You may wish to to configure your Aion node here to deploy and test out smart contracts.
+This testnet environment was released with the latest v0.3.0 Moldoveanu Peak mainnet. You may wish to configure your Aion node here to deploy and test out smart contracts.
 
 ### [Mastery Testnet Guide](https://docs.aion.network/docs/mastery-testnet)
 
@@ -228,7 +222,7 @@ This feature takes HD derivation path as an input and returns 64-byte hex String
 
 1st Byte: Beginning of the message (‘0xeo’ for Aion)
 2nd Byte: Signifies the message intention (02 for getting public key and account address)
-3rd Byte: For future use (if address needs to be confirmed or just returned)
+3rd Byte: For future use (if the address needs to be confirmed or just returned)
 4th Byte: For future use (00 chain code)
 5th Byte: Length of derivation path + 1
 6th Byte: Length of derivation path / 4
@@ -259,13 +253,13 @@ Windows Driver Usage Example: `npm run get:aion-hid e002010015058000002c800001a9
 
 This feature takes derivation path and RLP encoded transaction as an input and returns 64-byte signature as an output. Input is strictly in this sequence:
 
-1st Byte :  Beginning of the message (‘0xeo’ for Aion)
+1st Byte: Beginning of the message (‘0xeo’ for Aion)
 2nd Byte: Signifies the message intention (04 for signing transaction)
 3rd Byte: For future use (Identify the beginning but not required now as max Tx size is 230 bytes)
 4th Byte: For future use (00 chain code)
 5th Byte:  Length of derivation path + 1+ encoded transaction
 6th Byte: Length of derivation path / 4
-7th Byte till end of dongle path: Dongle path bytes
+7th Byte until the end of dongle path: Dongle path bytes
 End: RLP encoded transaction bytes
 
 #### Example
@@ -284,7 +278,7 @@ Input: For 44’/425’/0’/0’/0’
 }
 ```
 
-Output: 64 byte signature
+Output: 64-byte signature
 
 ```json
 {
