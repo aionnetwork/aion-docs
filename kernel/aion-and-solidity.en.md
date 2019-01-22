@@ -1,20 +1,19 @@
 ---
-Title: Migrating from Ethereum
+Title: Aion and Solidity
 ---
 
-# Migrating from Ethereum
+# Aion and Solidity
 
-There are several differences in type between Aion and Ethereum, all of which are listed below:
+The [Aion FastVM](/aion-node/fast-vm) currently supports a Solidity version `0.4.15`.
+
+## Migrating from Ethereum
+
+There are several variable type differences between Aion and Ethereum, listed below.
 
 ### Address
 
 **Aion**: `32 bytes`
 **Ethereum**: `20 bytes`
-
-### Compilers
-
-**Aion**: Solidity
-**Ethereum**: Solidity, LLL, Serpent
 
 ### Data Word
 
