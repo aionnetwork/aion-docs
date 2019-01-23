@@ -172,7 +172,7 @@ When running commands against the kernel, use the `--config` or `--chain` option
 
 These scripts can take in arguments, just like `./aion` can.
 
-### Import Account
+### Create Account
 
 1. Move into the Aion package directory:
 
@@ -231,8 +231,6 @@ You can also supply the pre-built startup scripts with arguments:
 ```bash
 ./custom.sh account import-by-key <private key>
 ```
-
-Checkout the [Importing Accounts](https://github.com/aionnetwork/aionr/wiki/Importing-Accounts) section for more information regarding accounts.
 
 ## Launch the Rust Kernel
 
