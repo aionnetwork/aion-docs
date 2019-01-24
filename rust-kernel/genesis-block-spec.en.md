@@ -1,245 +1,253 @@
-## Spec
+---
+title: Genesis Block Specification
+---
 
-### name
+# Genesis Block Specification
 
-　　type: *String*  
+The specification for the genesis block on the Aion Rust kernel.
+
+## Specification
+
+### `name`
+
+　　type: **String**  
 　　Name of a chain.  
-　　It will be showed in log when you start aion kernal.
+　　It will be showed in log when you start aion kernel.
 
-### dataDir
+### `dataDir`
 
-　　type: *Option\<String\>*  
+　　type: **Option**/**String**
 　　Name of dir to distinguish data from different chains.  
-　　For example: data\_dir is mainnet which means db path of this chain
+　　For example: data_dir is mainnet which means db path of this chain
 is \~/.aion/chains/mainnet/db...
 
-### engine
+### `engine`
 
-　　type:Engine  
+　　type: **Engine**
 　　Engine is an enum with three
 elements POWEquihashEngine(POWEquihashEngine), Null(NullEngine) and InstantSeal.  
 　　Set kind of engine and its parameters.
 
-#### POWEquihashEngine
+#### `POWEquihashEngine`
 
-#### params
+#### `params`
 
-##### rampupUpperBound
+##### `rampupUpperBound`
 
-　　type: *Option\<Uint\>*  
+　　type: **Option**/**UInt**  
 　　Upper bound of block number for block reward floating.
 
-##### rampupLowerBound
+##### `rampupLowerBound`
 
-　　type: *Option\<Uint\>*  
+　　type: **Option**/**UInt**  
 　　Lower bound of block number for block reward floating.
 
-##### rampupStartValue
+##### `rampupStartValue`
 
-　　type: *Option\<Uint\>*  
+　　type: **Option**/**UInt**  
 　　Block reward minimum.
 
-##### rampupEndValue
+##### `rampupEndValue`
 
-　　type: *Option\<Uint\>*  
+　　type: **Option**/**UInt**  
 　　Block reward maximum.
 
-##### lowerBlockReward
+##### `lowerBlockReward`
 
-　　type: *Option\<Uint\>*  
+　　type: **Option**/**UInt**  
 　　Block reward for block which number is less than rampupLowerBound.
 
-##### upperBlockReward
+##### `upperBlockReward`
 
-　　type: *Option\<Uint\>*  
+　　type: **Option**/**UInt**  
 　　Block reward for block which number is larger than rampupUpperBound.
 
-##### difficultyBoundDivisor
+##### `difficultyBoundDivisor`
 
-　　type: *Option\<Uint\>*  
+　　type: **Option**/**UInt**  
 　　Participate in the calculation of the difficulty unit of change.
 
-##### blockTimeLowerBound
+##### `blockTimeLowerBound`
 
-　　type: *Option\<u64\>*  
+　　type: **Option**/**u64**
 　　Lower bound of blocks interval.
 
-##### blockTimeUpperBound
+##### `blockTimeUpperBound`
 
-　　type: *Option\<u64\>*  
+　　type: **Option**/**u64**
 　　Upper bound of blocks interval.
 
-##### minimumDifficulty
+##### `minimumDifficulty`
 
-　　type: *Option\<Uint\>*
+　　type: **Option**/**UInt**
 
-#### NullEngine
-
-　　Temporarily reserved
-
-#### params
-
-##### blockReward
-
-　　type: *Option\<Uint\>*
-
-#### InstantSeal
+#### `NullEngine`
 
 　　Temporarily reserved
 
-### params
+#### `params`
 
-#### maximumExtraDataSize
+##### `blockReward`
 
-　　type: *Uint*  
+　　type: **Option**/**UInt**
+
+#### `InstantSeal`
+
+　　Temporarily reserved
+
+### `params`
+
+#### `maximumExtraDataSize`
+
+　　type: **Uint**  
 　　Maximum size of extra data.
 
-#### minGasLimit
+#### `minGasLimit`
 
-　　type: *Uint*  
+　　type: **Unit**
 　　Minimum gas limit.
 
-#### gasLimitBoundDivisor
+#### `gasLimitBoundDivisor`
 
-　　**non\_zero**  
-　　type: *Uint*  
+　　**non_zero**  
+　　type: **Unit**
 　　Gas limit bound divisor (how much gas limit can change per block)
 
-#### registrar
+#### `registrar`
 
-　　type: *Option\<Address\>*  
+　　type: **Option**/**Address**
 　　Registrar contract address.
 
-#### transactionPermissionContract
+#### `transactionPermissionContract`
 
-　　type: *Option\<Address\>*  
+　　type: **Option**/**Address**
 　　Transaction permission contract address.
 
-### genesis
+### `genesis`
 
-#### seal
+#### `seal`
 
-　　type: *Seal*  
-　　Seal is an enum with three
-elements POWEquihash(POWEquihash), Ethereum(Ethereum) and Generic(Bytes).
+　　type: **Seal**  
+　　Seal is an enum with three elements `POWEquihash(POWEquihash)`, `Ethereum(Ethereum)` and `Generic(Bytes)`.
 
-##### POWEquihash
+##### `POWEquihash`
 
-###### nonce
+###### `nonce`
 
-　　type: *H256*
+　　type: **H256**
 
-###### solution
+###### `solution`
 
 　　type: *Bytes*
 
-##### Ethereum
+##### `Ethereum`
 
-###### nonce
+###### `nonce`
 
-　　type: *H64*
+　　type: **H64**
 
-###### mixHash
+###### `mixHash`
 
-　　type: *H256*
+　　type: **H256**
 
-##### Generic
+##### `Generic`
 
-#### difficulty
+#### `difficulty`
 
-　　type: *Uint*
+　　type: **Uint**
 
-#### author
+#### `author`
 
-　　type: *Option\<Address\>*  
+　　type: **Option**/**Address**
 　　defaults to 0
 
-#### timestamp
+#### `timestamp`
 
-　　type: *Option\<Uint\>*  
+　　type: **Option**/**UInt**  
 　　defaults to 0
 
-#### parentHash
+#### `parentHash`
 
-　　type: *Option\<H256\>*  
+　　type: **Option**/**H256**  
+　　type: **Option**/**H256**
 　　defaults to 0
 
-#### gasLimit
+#### `gasLimit`
 
-　　type: *Uint*
+　　type: **Uint**
 
-#### transactionsRoot
+#### `transactionsRoot`
 
-　　type: *Option\<H256\>*
+　　type: **Option**/**H256**
 
-#### receiptsRoot
+#### `receiptsRoot`
 
-　　type: *Option\<H256\>*
+　　type: **Option**/**H256**
 
-#### stateRoot
+#### `stateRoot`
 
-　　type: *Option\<H256\>*
+　　type: **Option**/**H256**
 
-#### gasUsed
+#### `gasUsed`
 
-　　type: *Option\<Uint\>*
+　　type: **Option**/**UInt**
 
-#### extraData
+#### `extraData`
 
-　　type: *Option\<Bytes\>*
+　　type: **Option**/**Bytes**
 
-### accounts
+### `accounts`
 
-#### builtin
+#### `builtin`
 
-　　type: *Option\<Builtin\>*  
+　　type: **Option**\**Builtin**  
 　　Builtin contract
 
-##### name
+##### `name`
 
-　　type: *String*  
+　　type: **String**  
 　　Builtin name.
 
-##### activate\_at
+##### `activate_at`
 
-　　type: *Option\<Uint\>*  
+　　type: **Option**/**UInt**  
 　　Activation block.
 
-##### deactivate\_at
+##### `deactivate_at`
 
-　　type: *Option\<Uint\>*  
+　　type: **Option**/**UInt**  
 　　Deactivation block.
 
-##### owner\_address
+##### `owner_address`
 
-　　type: *Option\<Address\>*  
+　　type: **Option**/**Address**
 　　Owner address.
 
-##### address
+##### `address`
 
-　　type: *Option\<Address\>*  
+　　type: **Option**/**Address**
 　　contract address. if not specified, it's the same with builtin's key.
 
-#### balance
+#### `balance`
 
-　　type: *Option\<Uint\>*
+　　type: **Option**/**UInt**
 
-#### nonce
+#### `nonce`
 
-　　type: *Option\<Uint\>*
+　　type: **Option**/**UInt**
 
-#### code
+#### `code`
 
-　　type: *Option\<Bytes\>*
+　　type: **Option**/**Bytes**
 
-#### storage
+#### `storage`
 
-　　type: *Option\<BTreeMap\<Uint, Uint\>\>*
+　　type: **Option**/**BTreeMap**/**UInt, Uint**
 
-#### storage\_dword
+#### `storage_dword`
 
-　　type: *Option\<BTreeMap\<Uint, Uint\>\>*
+   type: **Option**/**BTreeMap**/**UInt, UInt**
 
-#### constructor
+#### `constructor`
 
-　　type: *Option\<Bytes\>*
+　　type: **Option**/**Bytes**

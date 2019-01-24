@@ -9,11 +9,10 @@ This documentation relates to the rust kernel implementation and releases for th
 ## System Requirements
 
 - [Ubuntu 16.04](http://releases.ubuntu.com/16.04/) or [Ubuntu 18.04](http://releases.ubuntu.com/18.04/)
-- 16GB RAM
-- ~40GB Hard Drive Space
-  - ~24GB for Testnet
-  - ~12GB for Mainnet
-  - ~6GB reserved for redundancy
+- `4GB` RAM
+- `~40GB` Hard Drive Space
+  - `~25GB` for Testnet
+  - `~15GB` for Mainnet
 
 ## Library Dependencies
 
