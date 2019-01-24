@@ -1,8 +1,8 @@
 ---
-title: Migrating from the Java Kernel
+title: Switch to Rust from Java
 ---
 
-# Migrating from the Java Kernel
+# Switch to Rust from Java
 
 ## RPC APIs and Providers
 
@@ -52,7 +52,7 @@ You can also supply the pre-built startup scripts with arguments:
     cd aion
     ```
 
-2. ad.
+2. Import an account using the account's private key:
 
     ```bash
     ./aion account import-by-key 119d1575a893df1ae02bf11111...
