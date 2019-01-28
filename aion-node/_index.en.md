@@ -1,7 +1,8 @@
 ---
-title: Aion Node
-weight: 1
-chapter: true
+title: "Aion Node"
+icon: "ti-desktop"
+description: "Spin up an Aion Node within minutes, or build your own!"
+type : "pages"
 ---
 
 # Node Setup
