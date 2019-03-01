@@ -1,8 +1,28 @@
 # Docker Images
 
+1. [Java](#java)
+2. [Rust](#rust)
+
 There are currently docker images for both the Java and Rust kernels. In order to spin up one of these nodes, you need to be using an operating system capable of installing Docker. See the [Docker documentation](https://docs.docker.com/install/) for a comprehensive list of supported operating systems.
 
 ## Java
+
+This section covers how to configure and run the Java kernel Docker container.
+
+### Quickstart
+
+Follow these steps to get started quickly, or skip this section if you want to learn how to run the container in more detail.
+
+```bash
+# Pull the Rust kernel image.
+docker pull aionnetwork/aion:0.3.3
+
+# Create some local storage for the container:
+docker volume create aion-mainnet
+
+# Run the container:
+docker run -it -p 8545:8545 -p 8547:8547 -p 30303:30303 --mount source=aion-mainnet,destination=/aion/mainnet aionnetwork/aion:0.3.3
+```
 
 ### Java Prerequisites
 
@@ -11,8 +31,11 @@ To use this Docker image your system must meet the following requirements:
 - `8GB` RAM (`16GB` recommended)
 - 2 CPU cores
 - 1GB HDD space
+- Docker `v18.0.0`
 
-The HDD space required only takes the Docker image into account. You will need significant space for storing the blockchain itself. The current ledger is around `20GB` in size.
+<!-- Find link for database pruning. -->
+
+The HDD space required only takes the Docker image into account. You will need significant space for storing the blockchain itself. The database is currently around `22GB` in size, although this can be [pruned](#).
 
 ### Install the Java Image
 
@@ -54,10 +77,34 @@ The HDD space required only takes the Docker image into account. You will need s
     See the [Running the Java Container](#running-the-java-container) section for more information on what arguments to supply with the `docker run` command.
 
 4. Start making something cool.
+5. 5. Press `CTRL` + `c` to shutdown and exit the container.
+
+    <!-- TODO: find out what happens when you exit the Java kernel -->
+
+    ```bash
+    asd
+    ```
 
 ### Running the Java Container
 
 ## Rust
+
+This section covers how to configure and run the Rust Docker container.
+
+### Rust Quickstart
+
+Follow these steps to get started quickly, or skip this section if you want to learn how to run the container in more detail.
+
+```bash
+# Pull the Rust kernel image.
+docker pull aionnetwork/aionr:0.1.1
+
+# Create some local storage for the container:
+docker volume create aionr-mainnet
+
+# Run the container:
+docker run -it -p 8545:8545 -p 8547:8547 -p 30303:30303 --mount source=aionr-mainnet,destination=/aion/mainnet aionnetwork/aionr:0.1.1
+```
 
 ### Rust Prerequisites
 
@@ -66,8 +113,11 @@ To use this Docker image your system must meet the following requirements:
 - `4GB` RAM (`8GB` recommended)
 - 2 CPU cores
 - 1GB HDD space
+- Docker `v18.0.0`
 
-The HDD space required only takes the Docker image into account. You will need significant space for storing the blockchain itself. The current ledger is around `20GB` in size.
+<!-- Find the link for database pruning. -->
+
+The HDD space required only takes the Docker image into account. You will need significant space for storing the blockchain itself. The database is currently around `22GB` in size, although this can be [pruned](#).
 
 ### Install the Rust Image
 
@@ -111,5 +161,62 @@ The HDD space required only takes the Docker image into account. You will need s
     See the [Running the Java Container](#running-the-java-container) section for more information on what arguments to supply with the `docker run` command.
 
 4. Start making something cool.
+5. Press `CTRL` + `c` to shutdown and exit the container.
 
-### Running the Rust Container
+### Rust Arguments and Configuration
+
+There are several arguments that you can supply with the `docker run` command.
+
+#### Configure Kernel
+
+Once the kernel is running you can configure it by running the `docker exec` command in a seperate terminal window:
+
+```bash
+docker exec -it <CONTAINER_NAME or CONTAINER_HASH> /bin/bash
+```
+
+<!-- TODO, review this section. Not sure if it makes any sense. -->
+
+Then you can edit the `.toml` file associated with the network you are running. For example, if you are running the Rust kernel on Mainnet, then you should edit the `mainnet/mainnet.toml` file. If you are running the Rust kernel on the Testnet (Mastery), then you should edit the `mastery/mastery.toml` file.
+
+#### Networks
+
+The Rust kernel will connect to the Mainnet network by default. You can supply `./mastery.sh` as an argument to connect to the Testnet (Mastery) network.
+
+```bash
+docker run aionnetworkdocker/aionr:0.1.1 ./mastery.sh
+```
+
+This argument tells Docker to call the `mastery.sh` script located within the container once everything has booted.
+
+To connect to a custom network, supply `./custom.sh` as an argument.
+
+```bash
+docker run aionnetworkdocker/aionr:0.1.1 ./custom.sh
+```
+
+#### Ports
+
+You can map ports from your local machine to the docker container. This is necessary as certain aspects of the Rust kernel are only enabled if certain ports are available. The following ports are required for the Rust kernel:
+
+<!-- TODO: find out what each of these ports do. -->
+
+- `30303` is for P2P connections
+- `8545` is for JSON-RPC connections
+- `8546` is for WebSocket connections
+- `8547` is for the Java API
+- `8008` is for Stratum connections
+
+#### Storage
+
+It is essential that you specify persistent storage when running the `docker run` command. If you do not, the entire blockchain database will be lost when you exit or shutdown the container.
+
+First you need to create the volume, and then attach it to the container.
+
+```bash
+# Create the storage
+docker create volume aionrdata
+
+# Run the container with the storage attached
+docker run --mount type=volume,src=aionrdata,dst=/root/.aion aionnetworkdocker/aionr:0.1.1
+```
