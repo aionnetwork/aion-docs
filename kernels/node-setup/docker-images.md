@@ -80,7 +80,11 @@ The HDD space required only takes the Docker image into account. You will need s
     <!-- TODO: find out what happens when you exit the Java kernel -->
 
     ```bash
-    asd
+    19-03-04 10:59:01.821 INFO  GEN  [shutdown]: Starting shutdown process...
+    ...
+    19-03-04 10:59:05.887 INFO  GEN  [shutdown]: ---------------------------------------------
+    19-03-04 10:59:05.888 INFO  GEN  [shutdown]: | Aion kernel graceful shutdown successful! |
+    19-03-04 10:59:05.888 INFO  GEN  [shutdown]: ---------------------------------------------
     ```
 
 ### Running the Java Container
