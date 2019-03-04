@@ -33,13 +33,11 @@ To use this Docker image your system must meet the following requirements:
 - 1GB HDD space
 - Docker `v18.0.0`
 
-<!-- Find link for database pruning. -->
-
-The HDD space required only takes the Docker image into account. You will need significant space for storing the blockchain itself. The database is currently around `22GB` in size, although this can be [pruned](#).
+The HDD space required only takes the Docker image into account. You will need significant space for storing the blockchain itself. The database is currently around `22GB` in size, although this can be [pruned](https://docs.aion.network/docs/database#section-state-database-pruning).
 
 ### Install the Java Image
 
-1. Pull down Aion Docker image.
+1. Pull down the latest Java Docker image.
 
     ```bash
     docker pull aionnetwork/aion:0.3.3
@@ -115,9 +113,7 @@ To use this Docker image your system must meet the following requirements:
 - 1GB HDD space
 - Docker `v18.0.0`
 
-<!-- Find the link for database pruning. -->
-
-The HDD space required only takes the Docker image into account. You will need significant space for storing the blockchain itself. The database is currently around `22GB` in size, although this can be [pruned](#).
+The HDD space required only takes the Docker image into account. You will need significant space for storing the blockchain itself. The database is currently around `22GB` in size, although this can be [pruned](https://github.com/aionnetwork/aionr/wiki/CMD-&-Config#pruning).
 
 ### Install the Rust Image
 
@@ -175,7 +171,7 @@ Once the kernel is running you can configure it by running the `docker exec` com
 docker exec -it <CONTAINER_NAME or CONTAINER_HASH> /bin/bash
 ```
 
-<!-- TODO, review this section. Not sure if it makes any sense. -->
+This starts a standard terminal session within the container, meaning you can write and edit files.
 
 Then you can edit the `.toml` file associated with the network you are running. For example, if you are running the Rust kernel on Mainnet, then you should edit the `mainnet/mainnet.toml` file. If you are running the Rust kernel on the Testnet (Mastery), then you should edit the `mastery/mastery.toml` file.
 
@@ -198,8 +194,6 @@ docker run aionnetworkdocker/aionr:0.1.1 ./custom.sh
 #### Ports
 
 You can map ports from your local machine to the docker container. This is necessary as certain aspects of the Rust kernel are only enabled if certain ports are available. The following ports are required for the Rust kernel:
-
-<!-- TODO: find out what each of these ports do. -->
 
 - `30303` is for P2P connections
 - `8545` is for JSON-RPC connections
