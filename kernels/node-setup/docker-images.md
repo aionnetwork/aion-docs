@@ -110,9 +110,41 @@ Then you can edit the `config.xml` file associated with the network you are runn
 
 #### Java Networks
 
+By default, running the image will start a node on the mainnet. To specify a network; for instance, the mastery testnet, use:
+
+```bash
+docker run aionnetworkdocker/aion:0.3.3 /aion/aion.sh -n mastery
+```
+
 #### Java Ports
 
+The Aion Docker image is configured to run its Java API and RPC servers, as well as allow connections from other Aion nodes. When running the Docker container, it is necessary to publish those ports if you use to wish these functionalities.
+
+| Port | Connection Type |
+| ---- | ------- |
+| `30303` | P2P |
+| `8545` | JSON-RPC |
+| `8547` | Java API |
+
 #### Java Storage
+
+In most cases, storage should be attached so that configuration and blockchain sync state can be persisted between each time the kernel is launched. You will need a separate Docker volume for each Aion Network, so it is recommended to include the network name in the volume name. To create a volume:
+
+```bash
+docker volume create VOLUME-NAME
+```
+
+To start the Docker image with the volume, where VOLUME-NAME is the volume name and NETWORK is the Aion network name:
+
+```bash
+docker run -it --mount source=VOLUME-NAME,destination=/aion/NETWORK aionnetworkdocker/aion:0.3.3
+```
+
+For the list of network names, see:
+
+```bash
+docker run -it aionnetworkdocker/aion:0.3.3 /aion/aion.sh -h
+```
 
 ## Rust
 
@@ -223,11 +255,13 @@ docker run aionnetworkdocker/aionr:0.1.1 ./custom.sh
 
 You can map ports from your local machine to the docker container. This is necessary as certain aspects of the Rust kernel are only enabled if certain ports are available. The following ports are required for the Rust kernel:
 
-- `30303` is for P2P connections
-- `8545` is for JSON-RPC connections
-- `8546` is for WebSocket connections
-- `8547` is for the Java API
-- `8008` is for Stratum connections
+| Port | Connection Type |
+| ---- | ------- |
+| `30303` | P2P |
+| `8545` | JSON-RPC |
+| `8546` | WebSocket |
+| `8547` | Java API |
+| `8008` | Stratum Protocol |
 
 #### Rust Storage
 
