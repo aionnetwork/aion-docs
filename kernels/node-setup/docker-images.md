@@ -90,6 +90,24 @@ There are several arguments that you can supply with the `docker run` command.
 
 #### Configure the Java Kernel
 
+Once the kernel is running you can configure it by running the `docker exec` command in a seperate terminal window:
+
+```bash
+docker exec -it <CONTAINER_NAME or CONTAINER_HASH> /bin/bash
+```
+
+This starts a standard terminal session within the container. You will need to install a text editor before you can edit any files, as the container doesn't come with one pre-installed:
+
+```bash
+sudo apt install nano
+
+OR
+
+sudo apt install vim
+```
+
+Then you can edit the `config.xml` file associated with the network you are running. For example, if you are running the Java kernel on Mainnet, then you should edit the `mainnet/config.xml` file. If you are running the Rust kernel on the Testnet (Mastery), then you should edit the `mastery/config.xml` file.
+
 #### Java Networks
 
 #### Java Ports
