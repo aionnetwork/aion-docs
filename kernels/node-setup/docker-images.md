@@ -113,7 +113,7 @@ Then you can edit the `config.xml` file associated with the network you are runn
 By default, running the image will start a node on the mainnet. To specify a network; for instance, the mastery testnet, use:
 
 ```bash
-docker run aionnetworkdocker/aion:0.3.3 /aion/aion.sh -n mastery
+docker run aionnetwork/aion:0.3.3 /aion/aion.sh -n mastery
 ```
 
 #### Java Ports
@@ -137,13 +137,13 @@ docker volume create VOLUME-NAME
 To start the Docker image with the volume, where VOLUME-NAME is the volume name and NETWORK is the Aion network name:
 
 ```bash
-docker run -it --mount source=VOLUME-NAME,destination=/aion/NETWORK aionnetworkdocker/aion:0.3.3
+docker run -it --mount source=VOLUME-NAME,destination=/aion/NETWORK aionnetwork/aion:0.3.3
 ```
 
 For the list of network names, see:
 
 ```bash
-docker run -it aionnetworkdocker/aion:0.3.3 /aion/aion.sh -h
+docker run -it aionnetwork/aion:0.3.3 /aion/aion.sh -h
 ```
 
 ## Rust
@@ -240,7 +240,7 @@ Then you can edit the `.toml` file associated with the network you are running. 
 The Rust kernel will connect to the Mainnet network by default. You can supply `./mastery.sh` as an argument to connect to the Testnet (Mastery) network.
 
 ```bash
-docker run aionnetworkdocker/aionr:0.1.1 ./mastery.sh
+docker run aionnetwork/aionr:0.1.1 ./mastery.sh
 ```
 
 This argument tells Docker to call the `mastery.sh` script located within the container once everything has booted.
@@ -248,7 +248,7 @@ This argument tells Docker to call the `mastery.sh` script located within the co
 To connect to a custom network, supply `./custom.sh` as an argument.
 
 ```bash
-docker run aionnetworkdocker/aionr:0.1.1 ./custom.sh
+docker run aionnetwork/aionr:0.1.1 ./custom.sh
 ```
 
 #### Rust Ports
@@ -274,5 +274,5 @@ First you need to create the volume, and then attach it to the container.
 docker create volume aionrdata
 
 # Run the container with the storage attached
-docker run --mount type=volume,src=aionrdata,dst=/root/.aion aionnetworkdocker/aionr:0.1.1
+docker run --mount type=volume,src=aionrdata,dst=/root/.aion aionnetwork/aionr:0.1.1
 ```
