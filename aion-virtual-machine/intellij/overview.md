@@ -6,10 +6,10 @@ IntelliJ by Jetbrains is one of the most popular Java IDEs avaiable. It comes wi
 
 The Aion plugin for IntelliJ is packed with features that can help speed up your contract development.
 
-## Requirement
+## Requirements
 
-IntelliJ Community/Ultimate edition 2018.3 and above
-Java 10 and above 
+- IntelliJ `2018.30` and above
+- Java 10 and above 
 
 ### Embedded AVM
 
