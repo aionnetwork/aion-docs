@@ -11,6 +11,8 @@ The installation process for the Aion IntelliJ plugin is incredibly simple, than
 5. Click **Restart IDE** > **Restart**.
 6. The plugin is now installed.
 
+![Installing the Aion IntelliJ Plugin](images/standard-install.gif)
+
 ## Bleeding Edge
 
 Follow these steps if you want to experience and test the very latest build of the plugin. **This method is not stable**, and is not recommended for new users. Only do this if you want to test the latest build. You will need to uninstall any other version of the plugin before attempting to install another version. You can only have one version of the plugin installed at any one time.
@@ -24,3 +26,5 @@ Follow these steps if you want to experience and test the very latest build of t
 7. Select the `zip` file and click **Open**.
 8. Click **Restart IDE** > **Restart**.
 9. The plugin is now installed.
+
+![Installing the Aion IntelliJ Plugin](images/bleeding-edge-install.gif)
