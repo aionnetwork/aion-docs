@@ -12,9 +12,21 @@ A wallet and dApp interaction tool for Aion. You can find a guide for AIWA over 
 
 IDEs help developers get up and running faster without having to install independent tools and plugins.
 
+### [IntelliJ](https://github.com/satran004/aion4j-idea-plugin)
+
+IntelliJ is the most popular IDE for Java development. To help speed up the process of developing Java smart contracts with Aion, use this plugin directly within IntelliJ. The plugin is currently in beta at the moment. You can download IntelliJ for free from the [Jetbrains website](https://www.jetbrains.com/idea/download/).
+
 ### [Titan Suite](https://titan-suite.com/)
 
-Titan Suite is an online integrated development environment (IDE). It allows developers to create and test dApp online without having to install anything. You can find a guide for Titan Suite over at [Aion University](https://learn.aion.network/docs/titan-suite).
+Titan Suite is an online integrated development environment (IDE) for developing Solidty contracts with Aion. It allows developers to create and test dApp online without having to install anything. You can find a guide for Titan Suite over at [Aion University](https://learn.aion.network/docs/titan-suite).
+
+## Development Tools
+
+The following tools can help speed up your contract development, and even run a tiny blockchain on your local machine for rapid development!
+
+### [Maven](https://github.com/satran004/aion4j-maven-plugin)
+
+The Aion4j Maven plugin provides build and deployment support for AVM based smart contracts. It also allows you to create, test, and deploy contracts locally on your machine without having to connect to a remote node! Take a look at the [Aion4j documentation](https://docs.aion.network/docs/maven-and-aion4j) for more information.
 
 ## Node Services
 
