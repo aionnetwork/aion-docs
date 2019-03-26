@@ -27,16 +27,33 @@ These options manage NRG prices for deploying and interacting with contracts on 
 
 | Configuration Option | Description | Default | Example |
 | --- | --- | --- | --- |
-| NRG (Deploy) | asd | asd | asd |
-| NRG Price (Deploy) | asd | asd | asd |
-| NRG (Contract Transaction) | asd | asd | asd |
-| NRG Price (Contract Transaction) | asd | asd | asd |
-| Maven Profile for Remote Deployment | Tells Maven which profile you wish to use, as specified in your `pom.xml` file. See | asd | asd |
-| Get Receipt | asd | asd | asd |
+| NRG (Deploy) | |  |  |
+| NRG Price (Deploy) |  |  |  |
+| NRG (Contract Transaction) |  |  |  |
+| NRG Price (Contract Transaction) |  |  |  |
+| Maven Profile for Remote Deployment | Tells Maven which profile you wish to use, as specified in your `pom.xml` file. [See Chaning Class Name](#changing-class-name) for more information. | | `alt-profile`, `production`, `dev` |
+| Get Receipt | Specify whether you want the plugin to return transaction receipts from the node. | Yes | |
 
 ### Embedded AVM
 
+The Embedded AVM tab represents customizations available to the embedded AVM as local functions. These customizations do not effect the way the plugin interacts with remote nodes.
+
+| Configuration Option | Description | Default | Example |
+| --- | --- | --- | --- |
+| Preserver Debug Mode | |  |  |
+| Verbose Contract Error |  |  |  |
+| Verbose Concurrent Executor |  |  |  |
+| AVM Storage Path |  |  |  |
+| Default Deployer / Caller Account | Set the address that you would like to deploy / call contracts from. | Taken from the `localDefaultAccount` field in the `pom.xml` file. | `0xa001e2afd2cf8eca0be0858326a50f68df006ea1e1db366d20ca52a1bba0ef13` |
+| Ask Deployer / Caller Account every time. | Checking this box will force the plugin to ask you for an address every time a contract is deployed / called. | No | |
+
 ### Common
+
+The common tab represents customizations that effect both local and remote functions.
+
+| Configuration Option | Description | Default | Example |
+| --- | --- | --- | --- |
+| Deployment Arguments | Since the plugin is essentially a wrapper around Maven, you can ask the plugin to run Maven commands. These arguments are applicable for both remote and embedded mode. See the [Maven](/aion-virtual-machine/maven-and-aion4j) section for a list of available commands. |  | `'-T Alice -I 30 -A 0xa001e2afd2cf...', '-<type> <value> -<type> <value> ...'` |
 
 ## Pom File
 
