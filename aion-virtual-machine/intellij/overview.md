@@ -6,6 +6,11 @@ IntelliJ by Jetbrains is one of the most popular Java IDEs avaiable. It comes wi
 
 The Aion plugin for IntelliJ is packed with features that can help speed up your contract development.
 
+## Requirements
+
+- IntelliJ `2018.30` and above
+- Java 10 and above 
+
 ### Embedded AVM
 
 The plugin contains an embedded version of the Aion virtual machine. This means you can compile and deploy your contract locally on any machine, all without having to connect to a remote node. The embedded AVM is incredibly light-weight, as it's not actually running a full node on your machine.
