@@ -1,8 +1,10 @@
 # Configure the Plugin
 
-Fill in the configuration options available to help speed up your contract development.
+There are lots of configuration options available to help speed up your contract development.
 
 ## Configuration Menu
+
+This menu allows you to select which node to connect to, how much NRG you are willing to pay, and other configuration options.
 
 To open the confirguation menu, right click anywhere within your project and select **Aion Virtual Machine** > **Configuration**. The confirguation menu is split into four sections: **Remote Kernel**, **Remote - Details**, **Embedded AVM**, and **Common**.
 
@@ -73,3 +75,9 @@ If you change either the package or class names within your contract, you need t
 ### Maven Profiles
 
 The `pom.xml` file contains a `profiles` section where you can define custom profiles for your project. This isn't required for Aion contract development. See the [Apache Maven documentation](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) for more details.
+
+## IntelliJ Keyboard Shortcuts
+
+IntelliJ allows users to assign keyboard shortcuts to individual plugins. To access this menu go to **Preferences** > **Keymap** > **Plug-ins** > **Aion4j AVM Integration**. Here you can set any keyboard shortcuts you want to. Depending on your IntelliJ installation, some default Aion plugin shortcuts may be overridden by other IntelliJ functions.
+
+![IntelliJ Keymaps](/aion-virtual-machine/intellij/images/intellij-keymap.png)
