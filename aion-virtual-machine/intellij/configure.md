@@ -23,6 +23,53 @@ This tab manages the options for when you are deploying to and calling from a re
 
 These options manage NRG prices for deploying and interacting with contracts on the Testnet (Mastery). These options do not effect embedded AVM features. We recommend that you do not change the values, unless you have a very specific need to do so.
 
+| Configuration Option | Description | Default | Example |
+| --- | --- | --- | --- |
+| NRG (Deploy) | asd | asd | asd |
+| NRG Price (Deploy) | asd | asd | asd |
+| NRG (Contract Transaction) | asd | asd | asd |
+| NRG Price (Contract Transaction) | asd | asd | asd |
+| Maven Profile for Remote Deployment | Tells Maven which profile you wish to use, as specified in your `pom.xml` file. See | asd | asd |
+| Get Receipt | asd | asd | asd |
+
 ### Embedded AVM
 
 ### Common
+
+## Pom File
+
+The `pom.xml` file controls how Maven interacts with your project. In most cases you won't have to edit this file, however there are some situations where you may need to modify some of it's options.
+
+### Changing Class Name
+
+When you first create a project using the Aion plugin, the default class used by the `pom.xml` file is `HelloAvm` preceded by the package name you chose for your project:
+
+```xml
+    <properties>
+
+        ...
+
+        <contract.main.class>example.HelloAvm</contract.main.class>
+    </properties>
+```
+
+This coresponds to the class of your contract `HelloAvm.java` file:
+
+```java
+package example;
+
+...
+
+public class HelloAvm
+{
+
+    ...
+
+}
+```
+
+If you change either the package or class names within your contract, you need to change the `contract.main.class` field in your `pom.xml` file.
+
+### Maven Profiles
+
+The `pom.xml` file contains a `profiles` section where you can define custom profiles for your project. This isn't required for Aion contract development. See the [Apache Maven documentation](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) for more details.
