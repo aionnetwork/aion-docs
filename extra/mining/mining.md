@@ -15,6 +15,8 @@ This section contains information about mining on the Aion network. Get get star
    - [Solo Miner](doc:solo-mining-pool)
    - [Pool Miner](doc:external-resources#section-public-pools)
 
+4. [Loyalty Program for Aion Miners](/extra/mining/cranberry-rewards)
+
 ## About Mining
 
 A miner runs your system to solve a difficult mathematical problem by guessing the input value of a hash function. The difficulty of the problem is determined by network difficulty, which adjusts itself based on the network hash rate. Miners that correctly solve these problems are rewarded with `AION`. On average, someone is awarded once every 10 seconds.
@@ -245,3 +247,6 @@ Parameters:
 3. Submit timestamp
 4. Client generated extraNonce value
 5. Calculated Equihash solution
+
+---
+
