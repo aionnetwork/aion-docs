@@ -50,7 +50,7 @@ Create an account with a specified amount of `AION`.
 
 Run this command by right clicking anywhere in a contract and selecting **Aion Virtual Machine** > **Embedded** > **Create Account**. Then enter the address you want to create, and the amount of `AION` you want to be added into it. The address you enter must be a valid `AION` address.
 
-Here's ten valid addresses that you can use to create accounts on the embedded AVM:
+Here's ten sample addresses that you can use to create accounts on the embedded AVM (you are not limited to using just these addresses):
 
 ```text
 0xa001e2afd2cf8eca0be0858326a50f68df006ea1e1db366d20ca52a1bba0ef13
