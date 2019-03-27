@@ -6,7 +6,7 @@ Compile, deploy, and call your contracts on your local machine, without having t
 
 Compile and deploy the contract.
 
-Activate this command by right clicking anywhere on the contract and selecting **Aion Virtual Machine** > **Embedded** > **Deploy**.
+Run this command by right clicking anywhere on the contract and selecting **Aion Virtual Machine** > **Embedded** > **Deploy**.
 
 ![Deploy to Embedded AVM](/aion-virtual-machine/intellij/images/deploy-to-embedded.gif)
 
