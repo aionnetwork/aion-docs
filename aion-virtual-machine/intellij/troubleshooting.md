@@ -19,3 +19,7 @@ java --version
 > Java(TM) SE Runtime Environment 18.9 (build 11+28)
 > Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11+28, mixed mode)
 ```
+
+## Println not Working on Remote Node
+
+`BlockchainRuntime.println` will not return anything from a remote node. This is because `BlockchainRuntime.println` prints to the local console only. So when you try to run it on a remote node, the node itself will print it to it's own console, but the kernel will not return anything to you. `BlockchainRuntime.println` returns data when ran on an local kernel (embedded AVM).
