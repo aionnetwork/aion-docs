@@ -20,6 +20,14 @@ java --version
 > Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11+28, mixed mode)
 ```
 
+## Cannot get the newest Aion4j Plugin
+If the version of aion4j plugin in your pom.xml is the same as here https://github.com/satran004/aion4j-maven-plugin#current-release-version-050 and you get following error messgae when you try to initialize your project
+```bash
+Failure to find org.aion4j:aion4j-maven-plugin:jar:0.5.0 in https://repo.maven.apache.org/maven2 
+```
+
+delete your $homedir/.m2/repository/org/aion4j folder to cleanup the cache and try again.
+
 ## Println not Working on Remote Node
 
 `BlockchainRuntime.println` will not return anything from a remote node. This is because `BlockchainRuntime.println` prints to the local console only. So when you try to run it on a remote node, the node itself will print it to it's own console, but the kernel will not return anything to you. `BlockchainRuntime.println` returns data when ran on an local kernel (embedded AVM).
