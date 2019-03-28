@@ -6,7 +6,7 @@
 4. [Deploy and Call](#deploy-and-call)
 5. [Troubleshooting](#troubleshooting)
 
-In this guide, we're going to run through how to get a simple _Hello World_ contract running on the Aion Virtual Machine (AVM). This method does not require any other software or frameworks. For a more thorough introduction including interaction examples, take a look at the [Maven section](https://docs.aion.network/docs/maven-and-aion4j).
+In this guide, we're going to run through how to get a simple _Hello World_ contract running on the Aion Virtual Machine (AVM). This method does not require any other software or frameworks. For a more thorough introduction including interaction examples, take a look at the [Maven section](https://docs.aion.network/docs/maven).
 
 ## Setup
 

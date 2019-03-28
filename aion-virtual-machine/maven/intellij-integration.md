@@ -31,7 +31,7 @@ Now that the archetype has been added into IntelliJ you can create a new project
 
 Maven will start building your project. You should be able to see this in the console window within IntelliJ. This process takes a few seconds. Once it's finished you should be able to see the following hierarchy in the explorer pane.
 
-![Explorer Pane](/aion-virtual-machine/maven-and-aion4j/images/explorer-pane.jpg)
+![Explorer Pane](/aion-virtual-machine/maven/images/explorer-pane.jpg)
 
 ## Using the Plugin
 

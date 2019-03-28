@@ -7,7 +7,7 @@
 
 Compiling your code and deploying it to the embedded AVM is incredibly simple, and it just a case of running a few commands. Once that's done you can call the methods in your contract from the embedded AVM.
 
-Take a look at the [Remote](https://docs.aion.network/docs/maven-and-aion4j-remote-avm) section for information on how to deploy and call remote contracts on the AVM testnet.
+Take a look at the [Remote](https://docs.aion.network/docs/maven/remote-avm) section for information on how to deploy and call remote contracts on the AVM testnet.
 
 ## Compile
 

@@ -26,7 +26,7 @@ The following tools can help speed up your contract development, and even run a 
 
 ### [Maven](https://github.com/satran004/aion4j-maven-plugin)
 
-The Aion4j Maven plugin provides build and deployment support for AVM based smart contracts. It also allows you to create, test, and deploy contracts locally on your machine without having to connect to a remote node! Take a look at the [Aion4j documentation](https://docs.aion.network/docs/maven-and-aion4j) for more information.
+The Maven archetype provides build and deployment support for AVM based smart contracts. It also allows you to create, deploy, and call contracts locally on your machine without having to connect to a remote node! Take a look at the [Maven documentation](/aion-virtual-machine/maven/embedded-avm) for more information.
 
 ## Node Services
 

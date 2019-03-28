@@ -14,11 +14,11 @@ Dealing with a remote AVM node using Maven is similar to dealing with the embedd
 
 There is no way to compile your contract using a remote node. This shouldn't be a problem however since you can compile the contract locally and deploy the contract to a remote node.
 
-See [Embedded AVM Compiling](https://docs.aion.network/docs/maven-and-aion4j-embedded-avm#section-compile) for information on how to compile your contract.
+See [Embedded AVM Compiling](/aion-virtual-machine/maven/embedded-avm) for information on how to compile your contract.
 
 ## Deploy
 
-To deploy your contract to a remote node, you will need to have compiled it first. Take a look at [Embedded AVM Compiling](https://docs.aion.network/docs/maven-and-aion4j-embedded-avm#section-compile). After running `mvn clean install` within your project folder, you will have a `.jar` file in the `targets` directory.
+To deploy your contract to a remote node, you will need to have compiled it first. Take a look at [Embedded AVM Compiling](/aion-virtual-machine/maven/embedded-avm). After running `mvn clean install` within your project folder, you will have a `.jar` file in the `targets` directory.
 
 ```text
 hello-world/

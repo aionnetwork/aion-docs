@@ -23,3 +23,7 @@ java --version
 ## Println not Working on Remote Node
 
 `BlockchainRuntime.println` will not return anything from a remote node. This is because `BlockchainRuntime.println` prints to the local console only. So when you try to run it on a remote node, the node itself will print it to it's own console, but the kernel will not return anything to you. `BlockchainRuntime.println` returns data when ran on an local kernel (embedded AVM).
+
+## Using Constructor Arguments
+
+To send arguments to a constructor method when deploying a contract, open the **Configuration** window (**right click** > **Aion Virtual Machine** > **Configuration**) and go to the **Common** tab. Enter your constructor arguments into the **Deployment Arguments** section. Remember to specify variable types.

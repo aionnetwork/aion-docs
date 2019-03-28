@@ -59,7 +59,7 @@ There's still a little bit of configuration left to do before you can deploy you
 1. Open the `pom.xml` file in a text editor.
 2. Find the line that beings with `aion4j.plugin.version` and change the value to the [latest release listed on the Github page](https://github.com/satran004/aion4j-maven-plugin):
 
-![Github Package Version](/aion-virtual-machine/maven-and-aion4j/images/github-package-version.jpg)
+![Github Package Version](/aion-virtual-machine/maven/images/github-package-version.jpg)
 
 ```xml
 <properties>

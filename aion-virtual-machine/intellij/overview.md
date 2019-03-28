@@ -9,7 +9,7 @@ The Aion plugin for IntelliJ is packed with features that can help speed up your
 ## Requirements
 
 - IntelliJ `2018.30` and above
-- Java 10 and above 
+- Java 10 and above
 
 ### Embedded AVM
 

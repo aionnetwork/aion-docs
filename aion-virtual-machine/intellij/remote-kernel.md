@@ -36,8 +36,18 @@ By default the **Call** command will call the last deployed contract. However if
 
 ## Get Balance
 
+Return the balance of the account listed in the configuration window.
+
 ### Specify Account
+
+Return the balance of a specific contract.
 
 ## Transfer
 
+Transfer funds from one account to another.
+
 ## Unlock Account
+
+Unlocks the account on the remote node.
+
+This allows you to use the specified account to deploy, call, and interact with contracts.
