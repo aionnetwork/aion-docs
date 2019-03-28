@@ -79,16 +79,16 @@ The `-Dargs` argument controls variables we want to supply to the method. If not
 
 | Type | Argument |
 | ---- | -------- |
-| Address | `-A` |
-| Boolean | `-Z` |
-| Byte | `-B` |
-| Character | `-C` |
-| Double | `-D` |
-| Float | `-F` |
-| Integer | `-I` |
-| Long | `-J` |
-| Short | `-S` |
-| String | `-T` |
+| Address | `-a` |
+| Boolean | `-z` |
+| Byte | `-b` |
+| Character | `-c` |
+| Double | `-d` |
+| Float | `-f` |
+| Integer | `-i` |
+| Long | `-j` |
+| Short | `-s` |
+| String | `-t` |
 
 You can find out more about the different Java types from the [Oracle documentation](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html).
 
