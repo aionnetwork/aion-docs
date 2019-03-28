@@ -27,10 +27,10 @@ These options manage NRG prices for deploying and interacting with contracts on 
 
 | Configuration Option | Description | Default | Example |
 | --- | --- | --- | --- |
-| NRG (Deploy) | |  |  |
-| NRG Price (Deploy) |  |  |  |
-| NRG (Contract Transaction) |  |  |  |
-| NRG Price (Contract Transaction) |  |  |  |
+| NRG (Deploy) | The maximum amount of NRG for transaction execution the sender is willing to pay for the transaction. | `5000000` |  |
+| NRG Price (Deploy) | Fee charged per NRG transaction. | `100000000000` |  |
+| NRG (Contract Transaction) | The maximum amount of NRG the sender is willing to pay for the transaction. | `2000000` |  |
+| NRG Price (Contract Transaction) | Free charged per NRG transaction. | `100000000000` |  |
 | Maven Profile for Remote Deployment | Tells Maven which profile you wish to use, as specified in your `pom.xml` file. [See Chaning Class Name](#changing-class-name) for more information. | | `alt-profile`, `production`, `dev` |
 | Get Receipt | Specify whether you want the plugin to return transaction receipts from the node. | Yes | |
 
@@ -40,10 +40,10 @@ The Embedded AVM tab represents customizations available to the embedded AVM as 
 
 | Configuration Option | Description | Default | Example |
 | --- | --- | --- | --- |
-| Preserver Debug Mode | |  |  |
-| Verbose Contract Error |  |  |  |
-| Verbose Concurrent Executor |  |  |  |
-| AVM Storage Path |  |  |  |
+| Preserver Debug Mode | When this is enabled, any breakpoints that are within IntelliJ will cause the compiled contract to stop. This is for debugging | No |  |
+| Verbose Contract Error | Provides more details error messages from the Aion virtual machine. | No |  |
+| Verbose Concurrent Executor | Provides details error messages from the Java virtual machine. | No |  |
+| AVM Storage Path | External storage location for the AVM. Only provide this information if you want to share your AVM instance across multiple projects. |  | `~/avm`, `C:/AVM`, `/Users/john/home/avm` |
 | Default Deployer / Caller Account | Set the address that you would like to deploy / call contracts from. | Taken from the `localDefaultAccount` field in the `pom.xml` file. | `0xa001e2afd2cf8eca0be0858326a50f68df006ea1e1db366d20ca52a1bba0ef13` |
 | Ask Deployer / Caller Account every time. | Checking this box will force the plugin to ask you for an address every time a contract is deployed / called. | No | |
 
