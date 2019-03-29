@@ -4,13 +4,13 @@ For the most part, variables and types work in the same way as they do in regula
 
 ## Overview
 
-Here's a quick overview of the types available, as well as their Maven and Aion IntelliJ Plugin type arguments.
+Here's a quick overview of the types available, as well as their Maven and Aion IntelliJ Plugin type selectors.
 
-| Type | Selector | Example |
+| Type | Inline Selector | Inline Example |
 | ---- | -------- | ------- |
 | Address | `-a` | `-a 0xa04462684b510796c186d19abfa6929742f79394583d6efb1243bbb473f21d9f` |
 | Boolean | `-z` | `-z true` |
-| Byte | `-b` | `-b a` |
+| Byte | `-b` | `-b a0` |
 | Character | `-c` | `-c C` |
 | Double | `-d` | `-d 3.141592654` |
 | Float | `-f` | `-f 3.141` |
@@ -19,22 +19,26 @@ Here's a quick overview of the types available, as well as their Maven and Aion 
 | Short | `-s` | `-s 32767` |
 | String | `-T` | `-T Don't panic.` |
 
-## Address
+## Arrays
 
-## Boolean
+Using arrays for inline arguments is pretty simple. They are structured by adding the same variable type within the same deployment call. A array of string would look like this:
 
-## Byte
+```text
+-T 'Time is an illusion. Lunchtime doubly so.' 'Don\'t Panic.' 'The ships hung in the sky in much the same way that bricks don\'t.'
+```
 
-## Character
+An array of integers would look like this:
 
-## Double
+```text
+-i 3141 592653 589 7932 3846
+```
 
-## Float
+Entering them into your constructor class when deploying your contract is pretty straight forward: For example if you wanted to supply an array of three addresses, you could add them in like this:
 
-## Integer
+```bash
+mvn aion4j:deploy -Dargs="-a 0xa04462684b510796c186d19abfa6929742f79394583d6efb1243bbb473f21d9f 0xa0f1002373877bd6987f23af0daa97f5d886d591cf308408cb396eda44f3456e 0xa08ff81385e37fa8a7a3ab045ac0d25187fdfbae58ae54cc5ab44d90cdac6648"
+```
 
-## Long
+If you are using IntelliJ, add the `-Dargs` into the **Deployment Arguments** section, under the **Common** configurations tab.
 
-## Short
-
-## String
+![Array Deployment Arguments](/aion-virtual-machine/images/array-deployment-arguments.png)
