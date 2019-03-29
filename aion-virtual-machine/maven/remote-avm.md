@@ -165,6 +165,33 @@ mvn aion4j:get-receipt -DtxHash=0x6007cb6662418923ab966d443b23abb8e7a03043279d77
 
 This function returns a large amount of JSON data. The contract address of the contract you deployed is in the field `contractAddress`.
 
+### Cleaner Responses
+
+When requesting a transaction receipt, you can include `-Dtail` and `-Dsilent` to get back a cleaner response from the kernel.
+
+| Argument | Description |
+| -------- | ----------- |
+| `-Dtail` | Keep requesting the receipt every 10 seconds until it is received. |
+| `-Dsilent` | Removes unimportant logs. |
+
+For example:
+
+```bash
+mvn aion4j:get-receipt -DtxHash=0x014aa6362f512079163d15c4e7e6111244c48b060f0d3e3ee7140036f136cf6a -Dweb3rpc.url=https://api.nodesmith.io/v1/aion/avmtestnet/jsonrpc?apiKey=12343567890abcdef...  -Dtail -Dsilent -Premote
+
+> [INFO] Scanning for projects...
+> ...
+> [INFO] web3rpc.url is set to https://api.nodesmith.io/v1/aion/avmtestnet/jsonrpc?apiKey=12343567890abcdef...
+> [INFO] Waiting for transaction to mine ...Trying (1 of 15 times)
+> [INFO] Waiting for transaction to mine ...Trying (2 of 15 times)
+> ...
+> [INFO] BUILD SUCCESS
+> [INFO] ------------------------------------------------------------------------
+> [INFO] Total time:  02:18 min
+> [INFO] Finished at: 2019-03-29T11:58:10-04:00
+> [INFO] ------------------------------------------------------------------------
+```
+
 ## Transfer
 
 Send `AION` from one account to another on the AVM testnet. You can also send `AION` to and from contracts.
