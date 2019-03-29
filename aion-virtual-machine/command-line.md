@@ -43,7 +43,7 @@ java -jar avm.jar deploy [PATH_TO_THE_JAR]
 For example:
 
 ```bash
-java -jar avm.jar deploy build/dapp.jar 
+java -jar avm.jar deploy build/dapp.jar
 
 > Running block with 1 transactions
 > *******************************************************************************************
