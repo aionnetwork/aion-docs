@@ -75,22 +75,7 @@ There are some things to note here:
 
 The `-Dmethod` argument controls which function is called within the `HelloWorld.java` contract. In this case, we called the `greet` function.
 
-The `-Dargs` argument controls variables we want to supply to the method. If not variables are required by the function, then you do not need to include this argument. Multiple variables can be supplied between double quotes `"`. In this case, we have supplied the string `Bob`. Each variable type is defined by a letter:
-
-| Type | Argument |
-| ---- | -------- |
-| Address | `-a` |
-| Boolean | `-z` |
-| Byte | `-b` |
-| Character | `-c` |
-| Double | `-d` |
-| Float | `-f` |
-| Integer | `-i` |
-| Long | `-j` |
-| Short | `-s` |
-| String | `-t` |
-
-You can find out more about the different Java types from the [Oracle documentation](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html).
+The `-Dargs` argument controls variables we want to supply to the method. If no variables are required by the function, then you do not need to include this argument. Multiple variables can be supplied between double quotes `"`. In this case, we have supplied the string `Bob`. Checkout the [Variable Types](/aion-virual-machine/variable-types) page for more info on what you can use here.
 
 `[INFO] Data` shows the data that was returned by the contract.
 
