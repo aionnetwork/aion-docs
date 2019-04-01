@@ -13,7 +13,7 @@ The Aion plugin for IntelliJ is packed with features that can help speed up your
 
 ### Embedded AVM
 
-The plugin contains an embedded version of the Aion virtual machine. This means you can compile and deploy your contract locally on any machine, all without having to connect to a remote node. The embedded AVM is incredibly light-weight, as it's not actually running a full node on your machine.
+The plugin contains an embedded version of the Aion virtual machine. This means you can compile and deploy your contract locally on any machine, all without having to connect to a actual node in the network. The embedded AVM is incredibly light-weight, as it's not actually running a full node on your machine.
 
 ### Remote AVM Connections
 
@@ -21,4 +21,4 @@ Once you get to the point where you want to share your contract, you can deploy 
 
 ### Easy to Use
 
-Instead of having to memorize terminal commands and calls, you can control the entire plugin using the IntelliJ user interface. There's no need to leave IntelliJ at all to perform any actions with the AVM. Everything from deploying a contract to calling it on the testnet is possible in a few clicks.
+Instead of having to memorize terminal commands and calls, you can control the entire plugin using the IntelliJ user interface. There's no need to leave IntelliJ at all to perform any actions with the AVM. Everything from deploying a contract to calling it on the network is possible in a few clicks.
