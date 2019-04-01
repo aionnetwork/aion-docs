@@ -32,7 +32,7 @@ Run this command by right clicking anywhere in a contract and selecting **Aion V
 
 ![Get Default Balance Embedded](/aion-virtual-machine/intellij/images/get-balance-default-embedded.gif)
 
-This balance is reset back to ~99999997205856 `AION` every time you compile a contract.
+This balance is reset back to ~99999997205856*10^-18 `AION` every time you compile a contract.
 
 ## Get Balance
 
