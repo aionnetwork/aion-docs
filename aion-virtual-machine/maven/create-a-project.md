@@ -8,9 +8,9 @@
 Now that you've got Maven installed you can get started with your project. Run the following command wherever you want:
 
 ```bash
-mvn archetype:generate -DarchetypeGroupId=org.aion4j -DarchetypeArtifactId=avm-archetype -DarchetypeVersion=0.5
+mvn archetype:generate -DarchetypeGroupId=org.aion4j -DarchetypeArtifactId=avm-archetype -DarchetypeVersion=0.6
 ```
-
+You can find the latest archetype version here: https://github.com/satran004/avm-archetype.
 ## GroupId, ArtifactId, Version, and Package
 
 The archetype generator will ask you for a `groupId`, `artifactid`, `version`, and `package`. You can put whatever you want in these fields, but it will help you further down the line if you follow these guidelines.
