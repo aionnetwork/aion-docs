@@ -1,6 +1,6 @@
 # JCL Whitelist
 
-The Java Class List (JCL) is a list of classes that are available to your Java contracts.
+The Java Class List (JCL) whitelist is a list of classes that are available to your Java contracts.
 
 ## Available Classes
 
@@ -55,4 +55,4 @@ interface java.util.Set
 
 ## Disabled Classes
 
-The following classes have been disabled within the blockchain run time due to restrictions and security concerns. While some of these classes are perfectly safe to use in regular Java applications, due to the nature and immutability of contracts, they can pose a signification threat to the network.
+Classes that are not deterministic have been disabled within AVM due to restrictions and security concerns. While some of these classes are perfectly safe to use in regular Java applications, due to the nature and immutability of smart contracts, they can pose a signification threat to the blockchain network.
