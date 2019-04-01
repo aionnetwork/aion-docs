@@ -6,7 +6,7 @@ Before you can perform any remote actions, you need to have completed the [Remot
 
 ## Deploy
 
-Deploy your contract to the Testnet (Mastery).
+Deploy your contract to the Aion network.
 
 Run this command by right clicking anywhere on the contract and selecting **Aion Virtual Machine** > **Remote** > **Deploy**. You will be prompted to enter a [node URL](/aion-virtual-machine/intellij/configure#remote-kernel) and [deployer address](/aion-virtual-machine/intellij/configure#remote-kernel) if you haven't filled them in already.
 
@@ -14,13 +14,13 @@ This command will compile your contract before attempting to deploy, unless you 
 
 ## Get Receipts
 
-Return the transaction receipt for the most recent deployment / call.
+Keep pulling the transaction receipt for the most recent deployment / call every 10 seconds until the transaction is sealed in a block.
 
 Run this command by right clicking anywhere on the contract and selecting **Aion Virtual Machine** > **Remote** > **Get Receipts (Recent)**.
 
 ### Specify Receipt
 
-Return the transaction receipt for a specific transaction.
+Return the transaction receipt for a specific transaction by providing transaction hash.
 
 Run this command by right clicking anywhere on the contract and selecting **Aion Virtual Machine** > **Remote** > **Get Receipts (Recent)**. Then enter the hash of the transaction you wish to see. 
 
