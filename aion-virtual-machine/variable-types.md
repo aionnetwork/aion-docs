@@ -8,15 +8,15 @@ Here's a quick overview of the types available, as well as their Maven and Aion 
 
 | Type | Inline Selector | Inline Example |
 | ---- | -------- | ------- |
-| Address | `-a` | `-a 0xa04462684b510796c186d19abfa6929742f79394583d6efb1243bbb473f21d9f` |
-| Boolean | `-z` | `-z true` |
-| Byte | `-b` | `-b a0` |
-| Character | `-c` | `-c C` |
-| Double | `-d` | `-d 3.141592654` |
-| Float | `-f` | `-f 3.141` |
-| Integer | `-i` | `-i 42` |
-| Long | `-l` | `-l 12345678910111213141516171819` |
-| Short | `-s` | `-s 32767` |
+| Address | `-A` | `-A 0xa04462684b510796c186d19abfa6929742f79394583d6efb1243bbb473f21d9f` |
+| Boolean | `-Z` | `-Z true` |
+| Byte | `-B` | `-B a0` |
+| Character | `-C` | `-C C` |
+| Double | `-D` | `-D 3.141592654` |
+| Float | `-F` | `-F 3.141` |
+| Integer | `-I` | `-I 42` |
+| Long | `-L` | `-L 12345678910111213141516171819` |
+| Short | `-S` | `-S 32767` |
 | String | `-T` | `-T "Don't panic."` |
 
 ## Arrays
