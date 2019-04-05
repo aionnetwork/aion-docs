@@ -37,6 +37,7 @@ To create an array with only a single item, you must include square brackets `[]
 
 ```text
 -i[] 3141
+-T[] "Don't panic."
 ```
 
 Entering them into your constructor class when deploying your contract is pretty straight forward: For example if you wanted to supply an array of three addresses, you could add them in like this:
