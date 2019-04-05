@@ -17,7 +17,7 @@ Here's a quick overview of the types available, as well as their Maven and Aion 
 | Integer | `-i` | `-i 42` |
 | Long | `-l` | `-l 12345678910111213141516171819` |
 | Short | `-s` | `-s 32767` |
-| String | `-T` | `-T Don't panic.` |
+| String | `-T` | `-T "Don't panic."` |
 
 ## Arrays
 
