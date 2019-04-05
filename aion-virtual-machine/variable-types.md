@@ -33,6 +33,12 @@ An array of integers would look like this:
 -i 3141 592653 589 7932 3846
 ```
 
+To create an array with only a single item, you must include square brackets `[]` after declaring the variable type:
+
+```text
+-i[] 3141
+```
+
 Entering them into your constructor class when deploying your contract is pretty straight forward: For example if you wanted to supply an array of three addresses, you could add them in like this:
 
 ```bash
