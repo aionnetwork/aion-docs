@@ -1,25 +1,4 @@
-# Variable & Types
-
-For the most part, variables and types work in the same way as they do in regular Java applications. However, there are a few caveats you should know about.
-
-## Overview
-
-Here's a quick overview of the types available, as well as their Maven and Aion IntelliJ Plugin type selectors. Also note that the `Address` and `String` types cannot be using in two dimensional arrays.
-
-| Type | Inline Selector | Inline Maven / IntelliJ Example | Two Dimension Array Available? |
-| ---- | -------- | ------- | ----- |
-| Address | `-A` | `-A 0xa04462684b510796c186d19abfa6929742f79394583d6efb1243bbb473f21d9f` | `False` |
-| Boolean | `-Z` | `-Z true` | `True` |
-| Byte | `-B` | `-B a0` | `True` |
-| Character | `-C` | `-C C` | `True` |
-| Double | `-D` | `-D 3.141592654` | `True` |
-| Float | `-F` | `-F 3.141` | `True` |
-| Integer | `-I` | `-I 42` | `True` |
-| Long | `-L` | `-L 12345678910111213141516171819` | `True` |
-| Short | `-S` | `-S 32767` | `True` |
-| String | `-T` | `-T "Don't panic."` | `False` |
-
-## Arrays
+# Arrays
 
 Using arrays for inline arguments is pretty simple. They are structured by adding the same variable type within the same deployment call.
 
@@ -52,9 +31,9 @@ If you are using IntelliJ, add the `-Dargs` into the **Deployment Arguments** se
 
 ![Array Deployment Arguments](/aion-virtual-machine/images/array-deployment-arguments.png)
 
-### Two Dimensional Arrays
+## Two Dimensional Arrays
 
-To create a two-dimensional array, supply two empty square bracket `[]` blocks, followed by the data you want to input in the array. Sub-array of data should be separated by a single space. `Strings` and `Addresses` are not allowed. A two-dimensional integer array would look like this:
+To create a two-dimensional array (2D array), supply two empty square bracket `[]` blocks, followed by the data you want to input in the array. Sub-array of data should be separated by a single space. A 2D integer array would look like this:
 
 ```java
 -I[][] '1 2 3' '4 5 6'
@@ -65,3 +44,5 @@ You can also enter integers without quotes like this:
 ```java
 -I[][] 1,2,3 4,5,6
 ```
+
+`Strings` and `Addresses` are not available as 2D arrays.
