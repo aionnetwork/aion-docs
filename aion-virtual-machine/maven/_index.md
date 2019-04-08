@@ -16,19 +16,6 @@ _"[an] archetype is a Maven project templating toolkit. An archetype is defined 
 
 More information on Maven archetypes specifically can be found on the [Apache Maven website](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html).
 
-### Archetype Goals
-
-Each Maven archetype has goals assigned to it. These are functions that the archetype can run.
-
-- `aion4j:clean`: Default phase for this goal is _clean_. To clean storage folder in case of embedded AVM deployment.
-- `aion4j:deploy`: Deploy the contract / `dapp.jar` to an embedded AVM. This goal needs to invoked explicitly from the command line.
-- `aion4j:call`: Call contract method. Uses `eth_call` method during remote kernel call.
-- `aion4j:contract-txn`: Used to send a transaction while using a testnet kernel or remote kernel. It uses `eth_sendTransaction` API internally
-- `aion4j:init`: Default phase for this goal is _initialize_. It initializes the project with required AVM dependencies. Currently it copies all required AVM `.jar`s to a `lib` folder under project's folder. You can also manually create this `lib` folder or point to an existing AVM `lib` folder through the plugin's configuration parameter.
-- `aion4j:prepack`: Default phase _prepare-package_. Copy `org-aion-avm-userlib.jar` classes to target folder for packaging with the application's jar.
-- `aion4j:class-verifier`: To verify the Java Class List whitelist classes in the contract.
-- `aion4j:deploy`: Extend the deploy goal for remote deployment.
-
 ### Development Repository
 
 The code for the Aion4j archetype can be found on [Github](https://github.com/satran004/aion4j-maven-plugin). This repository has been completed by a third party developer who was awarded a bounty through the [Aion Bounty Program](https://aion.network/bounty/).
