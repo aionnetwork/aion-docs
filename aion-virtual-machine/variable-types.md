@@ -54,7 +54,7 @@ If you are using IntelliJ, add the `-Dargs` into the **Deployment Arguments** se
 
 ### Two Dimensional Arrays
 
-To create a two-dimensional array, supply two empty square bracket `[]` blocks, followed by the data you want to input in the array. Sub-array of data should be separated by a single space ` `. A two-dimensional integer array would look like this:
+To create a two-dimensional array, supply two empty square bracket `[]` blocks, followed by the data you want to input in the array. Sub-array of data should be separated by a single space. A two-dimensional integer array would look like this:
 
 ```java
 -I[][] '1 2 3' '4 5 6'
