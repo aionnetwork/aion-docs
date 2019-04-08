@@ -17,7 +17,7 @@ Here's a quick overview of the types available, as well as their Maven and Aion 
 | Integer | `-I` | `-I 42` |
 | Long | `-L` | `-L 12345678910111213141516171819` |
 | Short | `-S` | `-S 32767` |
-| String | `-T` | `-T "Don't panic."` |
+| String | `-T` | `-T 'Don't panic.'` |
 
 ## Arrays
 
@@ -37,7 +37,7 @@ To create an array with only a single item, you must include square brackets `[]
 
 ```text
 -i[] 3141
--T[] "Don't panic."
+-T[] 'Don't panic.'
 ```
 
 Entering them into your constructor class when deploying your contract is pretty straight forward: For example if you wanted to supply an array of three addresses, you could add them in like this:
