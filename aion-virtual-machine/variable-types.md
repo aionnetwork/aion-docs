@@ -84,6 +84,6 @@ The example below explains this structure a bit clearer:
     "
         'If there\'s anything more important than my ego around, I want it caught and shot now.',
         'For a moment, nothing happened. Then, after a second or so, nothing continued to happen.',
-        'Ford... you're turning into a penguin. Stop it.'
+        'Ford... you\'re turning into a penguin. Stop it.'
     "
 ```
