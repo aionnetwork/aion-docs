@@ -21,22 +21,24 @@ Here's a quick overview of the types available, as well as their Maven and Aion 
 
 ## Arrays
 
-Using arrays for inline arguments is pretty simple. They are structured by adding the same variable type within the same deployment call. A array of string would look like this:
+Using arrays for inline arguments is pretty simple. They are structured by adding the same variable type within the same deployment call.
 
-```text
+An array of string would look like this:
+
+```java
 -T 'Time is an illusion. Lunchtime doubly so.' 'Don\'t Panic.' 'The ships hung in the sky in much the same way that bricks don\'t.'
 ```
 
 An array of integers would look like this:
 
-```text
--i 3141 592653 589 7932 3846
+```java
+-I 3141 592653 589 7932 3846
 ```
 
 To create an array with only a single item, you must include square brackets `[]` after declaring the variable type:
 
-```text
--i[] 3141
+```java
+-I[] 3141
 -T[] "Don't panic."
 ```
 
@@ -49,3 +51,37 @@ mvn aion4j:deploy -Dargs="-a 0xa04462684b510796c186d19abfa6929742f79394583d6efb1
 If you are using IntelliJ, add the `-Dargs` into the **Deployment Arguments** section, under the **Common** configurations tab.
 
 ![Array Deployment Arguments](/aion-virtual-machine/images/array-deployment-arguments.png)
+
+### Two Dimensional Arrays
+
+To create a two-dimensional array, supply two empty square bracket `[]` blocks, followed by the data you want to input in the array. Sub-array of data should be seperated by a single space ` `. A two-dimensional integer array would look like this:
+
+```java
+-I[][] '1 2 3' '4 5 6'
+```
+
+You can also enter integers without quotes like this:
+
+```java
+-I[][] 1,2,3 4,5,6
+```
+
+A two-dimensional array of strings would look like this:
+
+```java
+-T[][] "'Time is an illusion. Lunchtime doubly so.', 'Don\'t Panic.', 'The ships hung in the sky in much the same way that bricks don\'t.'" "'If there\'s anything more important than my ego around, I want it caught and shot now.', 'For a moment, nothing happened. Then, after a second or so, nothing continued to happen.', 'Ford... you're turning into a penguin. Stop it.'"
+```
+
+```java
+-T[][]
+    "
+        'Time is an illusion. Lunchtime doubly so.',
+        'Don\'t Panic.',
+        'The ships hung in the sky in much the same way that bricks don\'t.'
+    "
+    "
+        'If there\'s anything more important than my ego around, I want it caught and shot now.',
+        'For a moment, nothing happened. Then, after a second or so, nothing continued to happen.',
+        'Ford... you're turning into a penguin. Stop it.'
+    "
+```
