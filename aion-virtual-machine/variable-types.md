@@ -54,7 +54,7 @@ If you are using IntelliJ, add the `-Dargs` into the **Deployment Arguments** se
 
 ### Two Dimensional Arrays
 
-To create a two-dimensional array, supply two empty square bracket `[]` blocks, followed by the data you want to input in the array. Sub-array of data should be separated by a single space. A two-dimensional integer array would look like this:
+To create a two-dimensional array, supply two empty square bracket `[]` blocks, followed by the data you want to input in the array. Sub-array of data should be separated by a single space. `Strings` and `Addresses` are not allowed. A two-dimensional integer array would look like this:
 
 ```java
 -I[][] '1 2 3' '4 5 6'
@@ -64,26 +64,4 @@ You can also enter integers without quotes like this:
 
 ```java
 -I[][] 1,2,3 4,5,6
-```
-
-A two-dimensional array of strings would look like this:
-
-```java
--T[][] "'Time is an illusion. Lunchtime doubly so.', 'Don\'t Panic.', 'The ships hung in the sky in much the same way that bricks don\'t.'" "'If there\'s anything more important than my ego around, I want it caught and shot now.', 'For a moment, nothing happened. Then, after a second or so, nothing continued to happen.', 'Ford... you're turning into a penguin. Stop it.'"
-```
-
-The example below explains this structure a bit clearer:
-
-```java
--T[][]
-    "
-        'Time is an illusion. Lunchtime doubly so.',
-        'Don\'t Panic.',
-        'The ships hung in the sky in much the same way that bricks don\'t.'
-    "
-    "
-        'If there\'s anything more important than my ego around, I want it caught and shot now.',
-        'For a moment, nothing happened. Then, after a second or so, nothing continued to happen.',
-        'Ford... you\'re turning into a penguin. Stop it.'
-    "
 ```
