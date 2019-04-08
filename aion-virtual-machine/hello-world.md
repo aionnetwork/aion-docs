@@ -4,7 +4,6 @@
 2. [Build](#build)
 3. [Compile](#compile)
 4. [Deploy and Call](#deploy-and-call)
-5. [Troubleshooting](#troubleshooting)
 
 In this guide, we're going to run through how to get a simple _Hello World_ contract running on the Aion Virtual Machine (AVM). This method does not require any other software or frameworks. For a more thorough introduction including interaction examples, take a look at the [Maven section](https://docs.aion.network/docs/maven).
 
@@ -125,13 +124,3 @@ java -jar avm.jar call 0f3b39f4e8b4bd60d55d8e803547365d44d169770795ca9192eec3e20
 ```
 
 4. You're done!
-
-## Troubleshooting
-
-<h3>`realpath: command not found`</h3>
-
-This issue happens on some version of macOS. You can safely ignore the warning, it does not impact the outcome of the compilation.
-
-<h3>`Exception in thread "main" java.lang.IllegalArgumentException: Unknown argument: sayHello`</h3>
-
-Make sure you give the `-m` argument when calling the `sayHello` function.

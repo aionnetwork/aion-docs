@@ -21,9 +21,11 @@ java --version
 ```
 
 ## Cannot get the newest Aion4j Plugin
-If the version of aion4j plugin in your pom.xml is the same as here https://github.com/satran004/aion4j-maven-plugin#current-release-version-050 and you get following error messgae when you try to initialize your project
+
+If the version of aion4j plugin in your `pom.xml` is the same as here https://github.com/satran004/aion4j-maven-plugin#current-release-version-050 and you get following error messgae when you try to initialize your project
+
 ```bash
-Failure to find org.aion4j:aion4j-maven-plugin:jar:0.5.0 in https://repo.maven.apache.org/maven2 
+Failure to find org.aion4j:aion4j-maven-plugin:jar:0.5.0 in https://repo.maven.apache.org/maven2
 ```
 
 delete your $homedir/.m2/repository/org/aion4j folder to cleanup the cache and try again.
@@ -35,10 +37,6 @@ delete your $homedir/.m2/repository/org/aion4j folder to cleanup the cache and t
 ## Using Constructor Arguments
 
 To send arguments to a constructor method when deploying a contract, open the **Configuration** window (**right click** > **Aion Virtual Machine** > **Configuration**) and go to the **Common** tab. Enter your constructor arguments into the **Deployment Arguments** section. Remember to specify variable types.
-
-1. [AVM.jar is not found](#avmjar-is-not-found)
-
-We've collected a few common errors and problems that you might run into when using Maven and Aion4j.
 
 ## AVM.jar is not found
 
@@ -53,3 +51,15 @@ Adding the `-Premote` argument to the end of the command should fix the problem.
 ```bash
 mvn aion4j:get-balance -Dweb3rpc.url=https://api.nodesmith.io/v1/aion/avmtestnet/jsonrpc?apiKey=AABBCCDDEEFF112233445566 -Daccount=0xaabbccddeeff112233445566a1b2c3d4e5f6 -Premote
 ```
+
+### realpath: command not found
+
+This issue happens on some version of macOS when running the AVM directly (not using Maven) from the terminal. You can safely ignore the warning, it does not impact the outcome of the compilation.
+
+### java.lang.IllegalArgumentException: Unknown argument: sayHello
+
+This is an issue when running the AVM directly (not using Maven) through the terminal. Make sure you give the `-m` argument when calling the `sayHello` function.
+
+### InvocationTargetException: Method argument parsing error: NullPointerException
+
+You need to include a variable type for your argument. See the [Variable Types page](/aion-virtual-machine/troubleshooting).
