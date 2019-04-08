@@ -46,6 +46,8 @@ mvn aion4j:deploy
 > ...
 ```
 
+See the [Deployment Arguments](/aion-virtual-machine/contract-fundamentals/deployment-arguments) section to find out how to supply arguments into your contract when deploying.
+
 ## Call
 
 To call a function from a deployed contract on the embedded AVM, run the following command:
@@ -76,8 +78,6 @@ There are some things to note here:
 The `-Dmethod` argument controls which function is called within the `HelloWorld.java` contract. In this case, we called the `greet` function.
 
 The `-Dargs` argument controls variables we want to supply to the method. If no variables are required by the function, then you do not need to include this argument. Multiple variables can be supplied between double quotes `"`. In this case, we have supplied the string `Bob`. Checkout the [Variable Types](/aion-virual-machine/variable-types) page for more info on what you can use here.
-
-`[INFO] Data` shows the data that was returned by the contract.
 
 ## Accounts
 
