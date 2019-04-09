@@ -39,4 +39,33 @@ myTwoDIntArray = decoder.decodeOne2DIntegerArray();
 
 The following functions are available within the `ABIDecoder` object:
 
-<!-- TODO: find out what is contained within the decoder object. -->
+| java.lang.String     | decodeMethodName()            | Decode a method name from the data field.        |
+|----------------------|-------------------------------|--------------------------------------------------|
+| `boolean[][]`        | `decodeOne2DBooleanArray()`   | Decode a 2D boolean array from the data field.   |
+| `byte[][]`           | `decodeOne2DByteArray()`      | Decode a 2D byte array from the data field.      |
+| `char[][]`           | `decodeOne2DCharacterArray()` | Decode a 2D character array from the data field. |
+| `double[][]`         | `decodeOne2DDoubleArray()`    | Decode a 2D double array from the data field.    |
+| `float[][]`          | `decodeOne2DFloatArray()`     | Decode a 2D float array from the data field.     |
+| `int[][]`            | `decodeOne2DIntegerArray()`   | Decode a 2D integer array from the data field.   |
+| `long[][]`           | `decodeOne2DLongArray()`      | Decode a 2D long array from the data field.      |
+| `short[][]`          | `decodeOne2DShortArray()`     | Decode a 2D short array from the data field.     |
+| `Address`            | `decodeOneAddress()`          | Decode an address from the data field.           |
+| `Address[]`          | `decodeOneAddressArray()`     | Decode an address array from the data field.     |
+| `boolean`            | `decodeOneBoolean()`          | Decode a boolean from the data field.            |
+| `boolean[]`          | `decodeOneBooleanArray()`     | Decode a boolean array from the data field.      |
+| `byte`               | `decodeOneByte()`             | Decode a byte from the data field.               |
+| `byte[]`             | `decodeOneByteArray()`        | Decode a byte array from the data field.         |
+| `char`               | `decodeOneCharacter()`        | Decode a char from the data field.               |
+| `char[]`             | `decodeOneCharacterArray()`   | Decode a character array from the data field.    |
+| `double`             | `decodeOneDouble()`           | Decode a double from the data field.             |
+| `double[]`           | `decodeOneDoubleArray()`      | Decode a double array from the data field.       |
+| `float`              | `decodeOneFloat()`            | Decode a float from the data field.              |
+| `float[]`            | `decodeOneFloatArray()`       | Decode a float array from the data field.        |
+| `int`                | `decodeOneInteger()`          | Decode an integer from the data field.           |
+| `int[]`              | `decodeOneIntegerArray()`     | Decode an integer array from the data field.     |
+| `long`               | `decodeOneLong()`             | Decode a long from the data field.               |
+| `long[]`             | `decodeOneLongArray()`        | Decode a long array from the data field.         |
+| `short`              | `decodeOneShort()`            | Decode a short from the data field.              |
+| `short[]`            | `decodeOneShortArray()`       | Decode a short array from the data field.        |
+| `java.lang.String`   | `decodeOneString()`           | Decode a string from the data field.             |
+| `java.lang.String[]` | `decodeOneStringArray()`      | Decode a string array from the data field.       |
