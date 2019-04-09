@@ -63,3 +63,7 @@ This is an issue when running the AVM directly (not using Maven) through the ter
 ### InvocationTargetException: Method argument parsing error: NullPointerException
 
 You need to include a variable type for your argument. See the [Variable Types page](/aion-virtual-machine/troubleshooting).
+
+### InvocationTargetException: Dapp call failed. Code: FAILED_REVERT
+
+You need to supply the `@Callable` annotation on any functions or methods you wish to call from _outside_ the contract. This can be either a user calling the contract, or another contract. See the [Callable Functions](/aion-virtual-machine/contract-fundamentals/callable-functions) section for more details.
