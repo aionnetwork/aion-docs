@@ -1,5 +1,7 @@
 # web3-eth-abi
 
+The `web3.eth.abi` object makes it easy to interact with Solidity based ABIs on the Aion blockchain.
+
 The `web3.eth.abi` functions let you decode and encode parameters to ABI (Application Binary Interface) for function calls to the FastVM.
 
 ## encodeFunctionSignature

@@ -1,6 +1,6 @@
 # web3-eth-contract
 
-The `web3.eth.Contract` object makes it easy to interact with smart contracts on the Aion blockchain.
+The `web3.eth.Contract` object makes it easy to interact with Solidity smart contracts on the Aion blockchain.
 
 When you create a new contract object you give it the json interface of the respective smart contract and web3 will auto convert all calls into low level ABI calls over RPC for you. This allows you to interact with smart contracts as if they were JavaScript objects.
 
