@@ -22,7 +22,7 @@ java --version
 
 ## Cannot get the newest Aion4j Plugin
 
-If the version of aion4j plugin in your `pom.xml` is the same as here https://github.com/satran004/aion4j-maven-plugin#current-release-version-050 and you get following error messgae when you try to initialize your project
+If the version of aion4j plugin in your `pom.xml` is the same as here https://github.com/bloxbean/aion4j-maven-plugin and you get following error messgae when you try to initialize your project
 
 ```bash
 Failure to find org.aion4j:aion4j-maven-plugin:jar:0.5.0 in https://repo.maven.apache.org/maven2
