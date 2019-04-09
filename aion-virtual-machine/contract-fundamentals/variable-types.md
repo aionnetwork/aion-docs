@@ -2,7 +2,7 @@
 
 For the most part, variables and types work in the same way as they do in regular Java applications. However, there are a few caveats you should know about.
 
-Here's a quick overview of the types available, as well as their Maven and Aion IntelliJ Plugin type selectors. Also note that the `Address` and `String` types cannot be using in two dimensional arrays.
+Here's a quick overview of the types available, as well as their Maven and Aion IntelliJ Plugin type selectors. Also, note that the `Address` and `String` types cannot be used in two-dimensional arrays.
 
 | Type | Inline Selector | Inline Maven / IntelliJ Example | Two Dimension Array Available? |
 | ---- | -------- | ------- | ----- |
