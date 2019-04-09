@@ -13,6 +13,9 @@ static {
 Once this has been created you can collect your deployment arguments by declaring variables using the `ABIDecoder` object.
 
 ```java
+    private static String myStr;
+    private static int[] int1DArray;
+    private static int[][] int2DArray;
 static {
     ABIDecoder decoder = new ABIDecoder(Blockchain.getData());
     myStr = decoder.decodeOneString();
