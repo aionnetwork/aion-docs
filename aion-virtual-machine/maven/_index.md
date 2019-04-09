@@ -18,4 +18,4 @@ More information on Maven archetypes specifically can be found on the [Apache Ma
 
 ### Development Repository
 
-The code for the Aion4j archetype can be found on [Github](https://github.com/satran004/aion4j-maven-plugin). This repository has been completed by a third party developer who was awarded a bounty through the [Aion Bounty Program](https://aion.network/bounty/).
+The code for the Aion4j archetype can be found on [Github](https://github.com/bloxbean/avm-archetype). This repository has been completed by a third party developer who was awarded a bounty through the [Aion Bounty Program](https://aion.network/bounty/).
