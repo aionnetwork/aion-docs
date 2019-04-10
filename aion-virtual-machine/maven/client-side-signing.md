@@ -5,9 +5,9 @@
 
 This feature allows you to deploy a smart contract on the AVM testnet _without_ having to access the account management features on the node you are connected to. Certain hosting providers like Nodesmith and Blockdaemon block access to account management features on their nodes for security reasons. This allows you to ignore that restriction as all transactions can be signed locally before being made public on the network.
 
-This should be the preferred way to interact with a public network, as your private key never leaves your local machine.
+This is the preferred way to interact with a public network, as your private key never leaves your local machine.
 
-Transaction signing using your private key is supported for the following goals:
+Transaction signing using your private key is supported for the following Maven function:
 
 - `aion4j:deploy`
 - `aion4j:contract-txn`
@@ -15,11 +15,13 @@ Transaction signing using your private key is supported for the following goals:
 
 ## Use your Private Key
 
-There are two ways to store and use your private key. The first method requires creating an environment variable and setting your private key to it. This is the recommended way. Alternatively, you can include your private key as an inline argument for each Maven command. This method will leave your private key exposed within your terminal history.
+There are two ways to store and use your private key. The first method requires creating an environment variable and setting your private key to it. This is the recommended way since it's safer, and much easier to use.
+
+Alternatively, you can include your private key as an inline argument for each Maven command. This method will leave your private key exposed within your terminal history. You'll also have to manually include your private key for every transaction.
 
 ### Environment Variable
 
-Storing your private key as an environment variable allows you to abstract away some of the processes involved with signing transactions. It is also marginally more secure that including your private key through inline arguments. However, this method does still require you to store your private key as plain text.
+Storing your private key as an environment variable allows you to abstract away some of the processes involved with signing transactions. It is also marginally more secure than including your private key through inline arguments. However, this method does still require you to store your private key as plain text.
 
 #### Linux and macOS
 

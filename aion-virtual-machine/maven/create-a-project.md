@@ -5,13 +5,15 @@
 3. [Configure POM](#configure-pom)
 4. [Initialize](#initialize)
 
-Now that you've got Maven installed you can get started with your project. Run the following command wherever you want:
+Now that you've got Maven installed you can get started with your project. Run the following command in the directory where you want your code to be stored:
 
 ```bash
-mvn archetype:generate -DarchetypeGroupId=org.aion4j -DarchetypeArtifactId=avm-archetype -DarchetypeVersion=0.11
+mvn archetype:generate -DarchetypeGroupId=org.aion4j -DarchetypeArtifactId=avm-archetype -DarchetypeVersion=0.14
 ```
 
 You can find the [latest archetype version on Github](https://github.com/bloxbean/avm-archetype).
+
+![Archetype Version Screenshot](/aion-virtual-machine/maven/images/bloxbean-archetype-version.png)
 
 ## GroupId, ArtifactId, Version, and Package
 
@@ -56,19 +58,21 @@ hello-world/
 
 ## Configure POM
 
-There's still a little bit of configuration left to do before you can deploy your contract. You need to change the Aion4j version number selected in the `pom.xml` file.
+In the latest version of the Maven Aion4J plugin, you don't have to do any further configuration to the `pom.xml` file after creating the project. If you are using archetype version `0.10` or higher, **you don't need to follow this section**. [Head straight to Initialize](#initialize).
+
+However, if you are using archetype version `0.9` or lower, then there's still a little bit of configuration left to do before you can deploy your contract. You need to change the Aion4j version number selected in the `pom.xml` file.
 
 1. Open the `pom.xml` file in a text editor.
-2. Find the line that beings with `aion4j.plugin.version` and change the value to the [latest release listed on the Github page](https://github.com/satran004/aion4j-maven-plugin):
+2. Find the line that beings with `aion4j.plugin.version` and change the value to the [latest release listed on the Github page](https://github.com/bloxbean/aion4j-maven-plugin):
 
-![Github Package Version](/aion-virtual-machine/maven/images/github-package-version.jpg)
+![Github Package Version](/aion-virtual-machine/maven/images/github-package-version.png)
 
 ```xml
 <properties>
 
 ...
 
-    <aion4j.plugin.version>0.4.4</aion4j.plugin.version>
+    <aion4j.plugin.version>0.5.1</aion4j.plugin.version>
 
 ...
 
@@ -91,6 +95,12 @@ mvn initialize
 [INFO] Total time:  0.476 s
 
 ...
+```
+
+You can also call the initialize with the following command:
+
+```bash
+mvn aion4j:init
 ```
 
 That's it! Your project has been initialized and everything ready for you to start developing your application.

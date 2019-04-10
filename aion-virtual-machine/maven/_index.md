@@ -4,7 +4,7 @@
 
 Maven is a Java development toolkit that allows you to manage a project's build, reporting, and documentation more easily. It does this by using a `pom.xml` file in the root of your project directory. More information about Maven specifically can be found on the [Apache Maven website](https://maven.apache.org/).
 
-An Aion archetype for Maven is available. This allows you to quickly start a project and interact with the AVM from your local computer. This archetype also allows your easily deploy your contract to the AVM testnet, as well as interact with contracts already on the network.
+An Aion archetype for Maven is available. This allows you to quickly start a project and interact with the Aion Virtual Machine (AVM) from your local computer. This archetype also allows your easily deploy your contract to the AVM testnet, as well as interact with contracts already on the network.
 
 ## Aion4j
 

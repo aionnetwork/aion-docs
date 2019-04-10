@@ -1,13 +1,13 @@
-# Embedded AVM
+# Local Node
 
 1. [Compile](#compile)
 2. [Deploy](#deploy)
 3. [Call](#call)
 4. [Accounts](#accounts)
 
-Compiling your code and deploying it to the embedded AVM is incredibly simple, and it just a case of running a few commands. Once that's done you can call the methods in your contract from the embedded AVM.
+Also called the _Embedded AVM_, compiling your code and deploying it to the local node is incredibly simple, and it just a case of running a few commands. Once that's done you can call the methods in your contract from the local kernel.
 
-Take a look at the [Remote](https://docs.aion.network/docs/maven/remote-avm) section for information on how to deploy and call remote contracts on the AVM testnet.
+Take a look at the [Remote](https://docs.aion.network/docs/maven/remote-node) section for information on how to .
 
 ## Compile
 

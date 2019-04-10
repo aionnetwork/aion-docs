@@ -12,7 +12,7 @@ A wallet and dApp interaction tool for Aion. You can find a guide for AIWA over 
 
 IDEs help developers get up and running faster without having to install independent tools and plugins.
 
-### [IntelliJ](https://github.com/satran004/aion4j-idea-plugin)
+### [IntelliJ](https://github.com/bloxbean/aion4j-idea-plugin)
 
 IntelliJ is the most popular IDE for Java development. To help speed up the process of developing Java smart contracts with Aion, use this plugin directly within IntelliJ. The plugin is currently in beta at the moment. You can download IntelliJ for free from the [Jetbrains website](https://www.jetbrains.com/idea/download/).
 
@@ -24,9 +24,9 @@ Titan Suite is an online integrated development environment (IDE) for developing
 
 The following tools can help speed up your contract development, and even run a tiny blockchain on your local machine for rapid development!
 
-### [Maven](https://github.com/satran004/aion4j-maven-plugin)
+### [Maven](https://github.com/bloxbean/aion4j-maven-plugin)
 
-The Maven archetype provides build and deployment support for AVM based smart contracts. It also allows you to create, deploy, and call contracts locally on your machine without having to connect to a remote node! Take a look at the [Maven documentation](/aion-virtual-machine/maven/embedded-avm) for more information.
+The Maven archetype provides build and deployment support for AVM based smart contracts. It also allows you to create, deploy, and call contracts locally on your machine without having to connect to a remote node! Take a look at the [Maven documentation](/aion-virtual-machine/maven/local-node) for more information.
 
 ## Node Services
 
