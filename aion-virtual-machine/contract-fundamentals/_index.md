@@ -12,7 +12,7 @@ In order to call a function within a contract, it must have the `@Callable` anno
 
 ## [Deployment Arguments](deployment-arguments)
 
-You can supply arguments to your contract during deployment. This can have massive effects on your contract as a whole, since calculations can happen at runtime. [Read more](deployment-arguments).
+You can supply arguments to your contract during deployment. This can have massive effects on your contract as a whole since calculations can happen at runtime. [Read more](deployment-arguments).
 
 ## [Variable Types](variable-types)
 
