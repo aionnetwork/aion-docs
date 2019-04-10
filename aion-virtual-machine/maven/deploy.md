@@ -1,6 +1,8 @@
 # Deploy
 
-Deploy your contract on a blockchain network. Before you deploy your contract, make sure you have [compiled it](compile).
+Deploy your contract on a blockchain network: `mvn aion4j:deploy`
+
+Before you deploy your contract, make sure you have [compiled it](compile).
 
 ## Local
 

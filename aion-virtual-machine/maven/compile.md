@@ -1,6 +1,8 @@
 # Compile
 
-Attempt to compile your contract. This command is the same for both local and remote deployment. Regardless of where your contract is going to end up, you must compile it on your local machine first. There is no way to compile your contract using a remote node.
+Compile your contract: `mvn clean install`
+
+This command is the same for both local and remote deployment. Regardless of where your contract is going to end up, you must compile it on your local machine first. There is no way to compile your contract using a remote node.
 
 To compile your contract, run the following command from the same location as your `pom.xml` file:
 

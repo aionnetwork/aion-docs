@@ -1,6 +1,6 @@
 # Call
 
-Interact with a deployed contract.
+Interact with a deployed contract: `mvn aion4j:call`
 
 ## Local
 

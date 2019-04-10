@@ -1,5 +1,7 @@
 # Unlock Account
 
+Unlock an account: `mvn aion4j:unlock-account`
+
 Instead of unlocking your account, we suggest [signing your transactions on your local machine](/aion-virtual-machine/maven/client-side-signing) as it is a much safer method. Also, some node hosting services do not allow you to unlock accounts on their nodes.
 
 To unlock an account on a remote AVM node, you need to know the `address` and `password` of the account you wish to unlock, as well as the `host` and `port` of the node that you want to connect to.
