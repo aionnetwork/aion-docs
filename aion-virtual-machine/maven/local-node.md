@@ -104,7 +104,7 @@ mvn aion4j:get-balance
 To create another account using the embedded AVM run the following command:
 
 ```bash
-mvn aion4j:create-account  -Dbalance=<value>
+mvn aion4j:create-account -Daddress=<ADDRESS>  -Dbalance=<BALANCE>
 ```
 
 ### Specify Account
