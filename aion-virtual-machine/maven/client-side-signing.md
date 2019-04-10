@@ -3,7 +3,7 @@
 1. [Use your Private Key](#use-your-private-key)
 2. [Autofill and Caching](#autofill-and-caching)
 
-This feature allows you to deploy a smart contract on the AVM testnet _without_ having to access the account management features on the node you are connected to. Certain hosting providers like Nodesmith and Blockdaemon block access to account management features on their nodes for security reasons. This allows you to ignore that restriction as all transactions can be signed locally before being made public on the network.
+This feature allows you to deploy a smart contract _without_ having to access the account management features on the node you are connected to. Certain hosting providers like Nodesmith and Blockdaemon block access to account management features on their nodes for security reasons. This allows you to ignore that restriction as all transactions can be signed locally before being made public on the network.
 
 This is the preferred way to interact with a public network, as your private key never leaves your local machine.
 

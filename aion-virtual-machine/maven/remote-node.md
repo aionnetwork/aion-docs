@@ -119,7 +119,9 @@ mvn aion4j:create-account -Dweb3rpc.url=http://10.0.3.33:8545 -Dpassword="abcd12
 
 ### Unlock Account
 
-Instead of unlocking your account, we suggest [signing your transactions on your local machine](/aion-virtual-machine/maven/client-side-signing). To unlock an account on a remote AVM node, you need to know the `address` and `password` of the account you wish to unlock, as well as the `host` and `port` of the node that you want to connect to.
+Instead of unlocking your account, we suggest [signing your transactions on your local machine](/aion-virtual-machine/maven/client-side-signing) as it is a much safer method. Also, some node hosting services do not allow you to unlock accounts on their nodes.
+
+To unlock an account on a remote AVM node, you need to know the `address` and `password` of the account you wish to unlock, as well as the `host` and `port` of the node that you want to connect to.
 
 ```bash
 mvn aion4j:unlock -Dweb3rpc.url=http://<HOST>:<PORT> -Daddress=<ADDRESS> -Dpassword=<PASSWORD> -Premote
