@@ -84,14 +84,8 @@ mvn aion4j:call -Dweb3rpc.url=http://138.91.123.106:8545 -Daddress=0xa02631d5d3e
 
 You do not have to supply a contract address because the Aion4j plugin caches the last deployed contract address. However, if you want to call a specific contract then you can supply the contract `address` using the `-Daddress` tag:
 
-### Local Contract Call
-
 ```bash
 mvn aion4j:call -Dcontract=0xa02631d5d3eacf4d6e9b4c4c79dd7f797920f1b24a67ba5b81c9a477254917c8
 ```
 
-### Remote Contract Call
-
-```bash
-mvn aion4j:call -Dcontract=0xa02631d5d3eacf4d6e9b4c4c79dd7f797920f1b24a67ba5b81c9a477254917c8 -Premote
-```
+Make sure to add `-Premote` to the command when calling a remote node.
