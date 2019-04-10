@@ -67,5 +67,5 @@ The following functions are available within the `ABIDecoder` object:
 | `long[]`             | `decodeOneLongArray()`        | Decode a long array from the data field.         |
 | `short`              | `decodeOneShort()`            | Decode a short from the data field.              |
 | `short[]`            | `decodeOneShortArray()`       | Decode a short array from the data field.        |
-| `java.lang.String`   | `decodeOneString()`           | Decode a string from the data field.             |
-| `java.lang.String[]` | `decodeOneStringArray()`      | Decode a string array from the data field.       |
+| `String`             | `decodeOneString()`           | Decode a string from the data field.             |
+| `String[]`           | `decodeOneStringArray()`      | Decode a string array from the data field.       |
