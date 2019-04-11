@@ -7,67 +7,75 @@ When calling or deploying a contract with arguments, you must specify the type o
 
 ## Call & Deploy Types
 
-Here are the types available to call and deploy your contract with. Any variable type _not_ in this list can still be used within a contract, but cannot be used to call functions or other contracts, and they cannot be used to deploy contracts.
+Here are the types available to call and deploy your contract with. Any variable type _not_ in this list can still be used within a contract, but cannot be used to call functions, call other contracts, or to deploy contracts.
 
-### Address
+### Available Types
+
+#### Address
 
 - Inline selector: `-A`
 - Available within 2D Arrays: `false`
 - Maven Example: `mvn aion4j:deploy -Dargs='-A 0xa04462684b510796c186d19abfa6929742f79394583d6efb1243bbb473f21d9f'`
 
-### Boolean
+#### Boolean
 
 - Inline selector: `-Z`
 - Available within 2D Arrays: `true`
 - Maven Example: `mvn aion4j:deploy -Dargs='-Z true'`
 
-### Byte
+#### Byte
 
 - Inline selector: `-B`
 - Available within 2D Arrays: `true`
 - Maven Example: `mvn aion4j:deploy -Dargs='-B a0'`
 
-### Character
+#### Character
 
 - Inline selector: `-C`
 - Available within 2D Arrays: `true`
 - Maven Example: `mvn aion4j:deploy -Dargs='-C A'`
 
-### Double
+#### Double
 
 - Inline selector: `-D`
 - Available within 2D Arrays: `true`
 - Maven Example: `mvn aion4j:deploy -Dargs='-D 3.141592654'`
 
-### Float
+#### Float
 
 - Inline selector: `-F`
 - Available within 2D Arrays: `true`
 - Maven Example: `mvn aion4j:deploy -Dargs='-F 3.141'`
 
-### Integer
+#### Integer
 
 - Inline selector: `-I`
 - Available within 2D Arrays: `true`
 - Maven Example: `mvn aion4j:deploy -Dargs='-I 42'`
 
-### Long
+#### Long
 
 - Inline selector: `-L`
 - Available within 2D Arrays: `true`
 - Maven Example: `mvn aion4j:deploy -Dargs='-L 3141592653589793238462643383279502884197169'`
 
-### Short
+#### Short
 
 - Inline selector: `-S`
 - Available within 2D Arrays: `true`
 - Maven Example: `mvn aion4j:deploy -Dargs='-S 314159'`
 
-### String
+#### String
 
 - Inline selector: `-T`
 - Available within 2D Arrays: `false`
 - Maven Example: `mvn aion4j:deploy -Dargs='-T "Don't panic."'`
+
+### Unavailable Types
+
+Any type not listed above is unavailable.
+
+
 
 ## Arrays
 
@@ -102,7 +110,7 @@ If you are using IntelliJ, add the `-Dargs` into the **Deployment Arguments** se
 
 ![Array Deployment Arguments](/aion-virtual-machine/images/array-deployment-arguments.png)
 
-### Two Dimensional Arrays
+#### Two Dimensional Arrays
 
 To create a two-dimensional array (2D array), supply two empty square bracket `[]` blocks, followed by the data you want to input in the array. Sub-array of data should be separated by a single space. A 2D integer array would look like this:
 

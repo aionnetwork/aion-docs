@@ -11,6 +11,8 @@ public static String greet(String name) {
 }
 ```
 
+The [Aion IntelliJ plugin](/aion-virtual-machine/intellij) automatically warns you if you try to use a invalid type. See the [ABI Type Check](/aion-virtual-machine/intellij/abi-type-check) section for more details.
+
 ## Within the Contract
 
 If you are calling a function from another place within the contract, you do not have to assign the `@Callable` annotation to the function you want to call.
