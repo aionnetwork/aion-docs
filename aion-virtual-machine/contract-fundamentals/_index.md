@@ -8,7 +8,7 @@ Arrays in smart contracts have some changes to regular usage, and certain functi
 
 ## [Callable Functions](callable-functions)
 
-In order to call a function within a contract, it must have the `@Callable` annotation attached. If not, this function will not be picked up by the ABI and will not be available to call from _outside_ the contract. [Read more](callable-functions).
+Public functions can be called from anywhere. For Java smart contracts, it must have the `@Callable` annotation attached. If not, this function will not be available to call from _outside_ the contract. [Read more](callable-functions).
 
 ## [Deployment Arguments](deployment-arguments)
 
