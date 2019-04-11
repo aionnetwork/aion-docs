@@ -5,13 +5,13 @@ Using arrays for inline arguments is pretty simple. They are structured by addin
 An array of string would look like this:
 
 ```java
--T 'Time is an illusion. Lunchtime doubly so.' 'Don\'t Panic.' 'The ships hung in the sky in much the same way that bricks don\'t.'
+-T[] 'Time is an illusion. Lunchtime doubly so.' 'Don\'t Panic.' 'The ships hung in the sky in much the same way that bricks don\'t.'
 ```
 
 An array of integers would look like this:
 
 ```java
--I 3141 592653 589 7932 3846
+-I[] 3141 592653 589 7932 3846
 ```
 
 To create an array with only a single item, you must include square brackets `[]` after declaring the variable type:
