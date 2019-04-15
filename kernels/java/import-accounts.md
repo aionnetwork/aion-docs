@@ -1,5 +1,7 @@
 # Import Accounts
 
+<!-- TODO: Put this in Kernel Updates -->
+
 When switching to a new code binary, you may need to import your accounts from the old binary. In the following, we will describe the process of exporting accounts from a previous build and importing them to the latest release.
 
 For the purpose of this tutorial we denote:
