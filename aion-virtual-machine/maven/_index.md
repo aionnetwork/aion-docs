@@ -1,6 +1,7 @@
 # Maven and Aion4J
 
 1. [Aion4j](#aion4j)
+2. [Development Repository](#development-repository)
 
 Maven is a Java development toolkit that allows you to manage a project's build, reporting, and documentation more easily. It does this by using a `pom.xml` file in the root of your project directory. More information about Maven specifically can be found on the [Apache Maven website](https://maven.apache.org/).
 
@@ -16,6 +17,6 @@ _"[an] archetype is a Maven project templating toolkit. An archetype is defined 
 
 More information on Maven archetypes specifically can be found on the [Apache Maven website](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html).
 
-### Development Repository
+## Development Repository
 
 The code for the Aion4j archetype can be found on [Github](https://github.com/bloxbean/avm-archetype). This repository has been completed by a third party developer who was awarded a bounty through the [Aion Bounty Program](https://aion.network/bounty/).

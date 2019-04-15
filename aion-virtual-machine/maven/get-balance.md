@@ -1,5 +1,8 @@
 # Get Balance
 
+1. [Local](#local)
+2. [Remote](#remote)
+
 Return the balance from an account: `mvn aion4j:get-balance`
 
 ## Local

@@ -1,5 +1,10 @@
 # Call
 
+1. [Local](#local)
+2. [Remote](#remote)
+3. [Supplying Arguments](#supplying-arguments)
+4. [Calling a Specific Contract](#calling-a-specific-contract)
+
 Interact with a deployed contract: `mvn aion4j:call`
 
 ## Local

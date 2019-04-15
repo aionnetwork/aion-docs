@@ -1,5 +1,8 @@
 # Create Account
 
+1. [Local](#local)
+2. [Remote](#remote)
+
 Create an account on the network: `mvn aion4j:create-account`
 
 ## Local

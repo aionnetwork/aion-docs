@@ -1,5 +1,8 @@
 # Deploy
 
+1. [Local](#local)
+2. [Remote](#remote)
+
 Deploy your contract on a blockchain network: `mvn aion4j:deploy`
 
 Before you deploy your contract, make sure you have [compiled it](compile).
