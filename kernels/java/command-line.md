@@ -1,6 +1,6 @@
 # Command Line
 
-From a terminal, you can interact with Aion though the command line interface by running `./aion.sh`. The following options are **completely optional**, and are not required for the kernel to execute:
+From a terminal, you can interact with Aion though the command line interface by running `./aion.sh`. The following options are completely optional, and are not required for the kernel to execute:
 
 ```bash
 Usage: ./aion.sh [OPTIONS] [ARGUMENTS]
@@ -44,18 +44,18 @@ Usage: ./aion.sh [OPTIONS] [ARGUMENTS]
         revert database state to given block number
 
     -n, --network <network>
-        execute kernel with selected network
+        execute kernel on the selected network
             options: mainnet, conquest, mastery
 
     -d, --datadir <directory>
-        execute kernel with selected database directory
+        execute kernel with the selected database directory
 
     ps, --state <prune_mode>
         reorganize the state storage
             options: FULL, TOP, SPREAD
 
     --dump-blocks [<block_count>]
-        print top blocks from database
+        print top blocks from the database
 
     --dump-state-size [<block_count>]
         retrieves the state size (node count) for the top blocks
@@ -89,21 +89,25 @@ If the parameters are not valid, the kernel will not execute.
 
 ### Generating new config file `(-c)`
 
+Generate a new `config.xml` file, and place it in the corresponding network folder (`mainnet, conquest, mastery`).
+
 ```bash
 ./aion.sh -c [valid network]
 ```
 
-Generates new `config.xml` file, and places it in the coresponding network folder (`mainnet, conquest, mastery`).
+For example, running:
 
 ```bash
-/home/aion/config/[network]/config.xml
+./aion.sh -c mastery
 ```
 
-If the parameters are not valid, the kernel will not execute. If the config folder does't exist, the config folder and config file will be generated at the project's root directory.
+Will create a `config.xml` file at `/home/aion/config/mastery/config.xml`.
+
+If the parameters are not valid, the kernel will not execute. If the config folder does not exist, the config folder and config file will be generated at the project's root directory.
 
 ### Account Management
 
-Here are some examples use-cases for account management:
+Here are some examples use cases for account management:
 
 ```bash
 ./aion.sh -a create -n [valid network] -d [valid datadir]
@@ -112,14 +116,4 @@ Here are some examples use-cases for account management:
 ./aion.sh -a import [private key] -n [valid network] -d [valid datadir]
 ```
 
-The options can be given in any order, for example:
-
-```bash
-./aion.sh -a list -n [valid network] -d [valid datadir]
-```
-
-has the same effect as
-
-```bash
-./aion.sh -n [valid network] -a list -d [valid datadir]
-```
+The options can be given in any order. `./aion.sh -a list -n [valid network] -d [valid datadir]` and `./aion.sh -n [valid network] -a list -d [valid datadir]` have the same outcome.
