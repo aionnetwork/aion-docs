@@ -47,12 +47,12 @@ java -jar avm.jar deploy build/dapp.jar
 
 > Running block with 1 transactions
 > *******************************************************************************************
-> DApp deployment request
+> Dapp deployment request
 > Storage      : ./storage
 > Dapp Jar     : build/dapp.jar
 > Sender       : a025f4fd54064e869f158c1b4eb0ed34820f67e60ee80a53b469f725efc06378
 > *******************************************************************************************
-> DApp deployment status
+> Dapp deployment status
 > Result status: SUCCESS
 > Dapp Address : 0f3b39f4e8b4bd60d55d8e803547365d44d169770795ca9192eec3e20163e111
 > Energy cost  : 2671773
@@ -73,7 +73,7 @@ java -jar avm.jar call 0f3b39f4e8b4bd60d55d8e803547365d44d169770795ca9192eec3e20
 
 > Running block with 1 transactions
 > *******************************************************************************************
-> DApp call request
+> Dapp call request
 > Storage      : ./storage
 > Dapp Address : 0f3b39f4e8b4bd60d55d8e803547365d44d169770795ca9192eec3e20163e111
 > Sender       : a025f4fd54064e869f158c1b4eb0ed34820f67e60ee80a53b469f725efc06378
@@ -83,7 +83,7 @@ java -jar avm.jar call 0f3b39f4e8b4bd60d55d8e803547365d44d169770795ca9192eec3e20
 > Hello World!
 > 
 > *******************************************************************************************
-> DApp call result
+> Dapp call result
 > Result status: SUCCESS
 > Return value : void
 > Energy cost  : 63602

@@ -6,7 +6,7 @@ These integrations inject Web3 into a browser session, allowing users to access 
 
 ### [AIWA](https://getaiwa.com/)
 
-A wallet and dApp interaction tool for Aion. You can find a guide for AIWA over at [Aion University](https://learn.aion.network/docs/aiwa)
+A wallet and Dapp interaction tool for Aion. You can find a guide for AIWA over at [Aion University](https://learn.aion.network/docs/aiwa)
 
 ## Integrated Development Environments
 
@@ -18,7 +18,7 @@ IntelliJ is the most popular IDE for Java development. To help speed up the proc
 
 ### [Titan Suite](https://titan-suite.com/)
 
-Titan Suite is an online integrated development environment (IDE) for developing Solidty contracts with Aion. It allows developers to create and test dApp online without having to install anything. You can find a guide for Titan Suite over at [Aion University](https://learn.aion.network/docs/titan-suite).
+Titan Suite is an online integrated development environment (IDE) for developing Solidty contracts with Aion. It allows developers to create and test Dapp online without having to install anything. You can find a guide for Titan Suite over at [Aion University](https://learn.aion.network/docs/titan-suite).
 
 ## Development Tools
 
@@ -46,7 +46,7 @@ Quickly spin up and connect to an Aion node with web3 built in. All nodes are fr
 
 ## Explorers and Blockchain Statistics
 
-These tools help you to monitor the Aion network as you develop your dApps.
+These tools help you to monitor the Aion network as you develop your Dapps.
 
 ### [Aion Explorer](https://mainnet.aion.network/#/dashboard)
 
@@ -77,7 +77,7 @@ The WandX desktop app is a decentralized token trading platform on Ethereum and 
 
 #### [AIWA](https://getaiwa.com/)
 
-A wallet and dApp interaction tool for Aion.
+A wallet and Dapp interaction tool for Aion.
 
 #### [Coinomi](https://www.coinomi.com/)
 

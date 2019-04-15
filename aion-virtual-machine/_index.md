@@ -8,7 +8,7 @@ The Aion Virtual Machine (AVM) is a Turing complete execution engine that is cor
 
 ### AVM & JVM
 
-**AVM is not a modification or rewrite of the underlying JVM**, but a bytecode transformer and runtime library, which provides control over how developers are allowed to interact with the AVM. It isolates DApps from each other while restricting access to class libraries.
+**AVM is not a modification or rewrite of the underlying JVM**, but a bytecode transformer and runtime library, which provides control over how developers are allowed to interact with the AVM. It isolates Dapps from each other while restricting access to class libraries.
 
 ### Testnet Only
 
@@ -22,7 +22,7 @@ Additionally, the top-level execution engine speculatively **runs all transactio
 
 ### Performance
 
-The AVM uses the JIT compiler which optimizes the DApp code. It also features multi-threading, allowing increased throughput via concurrent transaction execution as opposed to most blockchain VMs.
+The AVM uses the JIT compiler which optimizes the Dapp code. It also features multi-threading, allowing increased throughput via concurrent transaction execution as opposed to most blockchain VMs.
 
 ### Reliability & Maturity
 
