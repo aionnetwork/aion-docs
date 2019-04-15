@@ -6,7 +6,11 @@ We have used the latest build as an example on this page. If you want to use a d
 
 ## Prerequisites
 
-The Java kernel must be ran on Ubuntu 16.04 or higher.
+- [Ubuntu 16.04 or later](http://releases.ubuntu.com/16.04/)
+- [Open JDK 11](https://download.java.net/java/GA/jdk11/13/GPL/openjdk-11.0.1_linux-x64_bin.tar.gz)
+- [Apache Ant 1.10](http://ant.apache.org/bindownload.cgi)
+- `8GB` RAM
+- CPU with `SSE4.2` support
 
 ## Install the Kernel
 
