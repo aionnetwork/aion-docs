@@ -73,9 +73,7 @@ Here are the types available to call and deploy your contract with. Any variable
 
 ### Unavailable Types
 
-Any type not listed above is unavailable.
-
-
+Any type not listed above is unavailable for calling functions or deploying contracts. You can still use other types within a contract.
 
 ## Arrays
 
@@ -108,9 +106,9 @@ mvn aion4j:deploy -Dargs="-a 0xa04462684b510796c186d19abfa6929742f79394583d6efb1
 
 If you are using IntelliJ, add the `-Dargs` into the **Deployment Arguments** section, under the **Common** configurations tab.
 
-![Array Deployment Arguments](/aion-virtual-machine/images/array-deployment-arguments.png)
+![Array Deployment Arguments](/aion-virtual-machine/contract-fundamentals/images/array-deployment-arguments.png)
 
-#### Two Dimensional Arrays
+### Two Dimensional Arrays
 
 To create a two-dimensional array (2D array), supply two empty square bracket `[]` blocks, followed by the data you want to input in the array. Sub-array of data should be separated by a single space. A 2D integer array would look like this:
 
