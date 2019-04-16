@@ -110,7 +110,7 @@ The logs now allow for absolute paths. Absolute paths refer to a very specific l
 
 The kernel's logger is configured to persist all generated log data into the log folder by default. The logs roll-over every data at midnight, and every time a log file gets larger than `100MB`.
 
-To control the directory where the logs are stored to disk, you can change the `<log-path>` property to your directory of choice. To disable persistance to file entirely, set the `<log-file>` property to `false`.
+To control the directory where the logs are stored to disk, you can change the `<log-path>` property to your directory of choice. To disable persistence to file entirely, set the `<log-file>` property to `false`.
 
 ```xml
 <log>
