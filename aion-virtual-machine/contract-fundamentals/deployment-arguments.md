@@ -29,7 +29,7 @@ Each variable must be supplied and collected in order. If you deploy your contra
 mvn aion4j:deploy -Dargs="-T David -I[] 3141 592653 589 7932 3846 -I[][] 1,2,3 4,5,6"
 ```
 
-Then you must declare those varibles within the `static` function as the following:
+Then you must declare those variables within the `static` function as the following:
 
 ```bash
 myStr = decoder.decodeOneString();
