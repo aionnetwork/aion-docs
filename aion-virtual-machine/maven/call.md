@@ -34,7 +34,7 @@ mvn aion4j:call -Dmethod=sayHello
 
 The `-Dmethod` argument controls which function is called within the `HelloWorld.java` contract. In this case, we called the `greet` function.
 
-The `-Dargs` argument controls variables we want to supply to the method. If no variables are required by the function, then you do not need to include this argument. Multiple variables can be supplied between double quotes `"`. In this case, we have supplied the string `Bob`. Checkout the [Variable Types](/aion-virual-machine/variable-types) page for more information.
+The `-Dargs` argument controls variables we want to supply to the method. If no variables are required by the function, then you do not need to include this argument. Multiple variables can be supplied between double quotes `"`. In this case, we have supplied the string `Bob`. Check out the [Variable Types](/aion-virtual-machine/variable-types) page for more information.
 
 ## Remote
 

@@ -15,7 +15,7 @@ Transaction signing using your private key is supported for the following Maven 
 
 ## Use your Private Key
 
-There are two ways to store and use your private key. The first method requires creating an environment variable and setting your private key to it. This is the recommended way since it's safer, and much easier to use.
+There are two ways to store and use your private key. The first method requires creating an environment variable and setting your private key to it. This is the recommended way since it's safer and much easier to use.
 
 Alternatively, you can include your private key as an inline argument for each Maven command. This method will leave your private key exposed within your terminal history. You'll also have to manually include your private key for every transaction.
 

@@ -1,6 +1,6 @@
-# Build the Kernel
+# Build from Source
 
-Follow this guide to build and install the Aion Rust kernel on your system.
+Follow this guide to build Aion Rust kernel from source.
 
 ## System Requirements
 
