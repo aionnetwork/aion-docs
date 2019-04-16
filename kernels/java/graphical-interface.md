@@ -4,7 +4,7 @@ The Aion Kernel _Core_ includes a graphical user interface (GUI) which facilitat
 
 ## Run the Interface
 
-To run the GUI, first, download and extract the Aion kernel as per the [Getting the Kernel] in the [Kernel section of the Aion Owner's Manual](https://github.com/aionnetwork/aion/wiki/Aion-Owner's-Manual#kernel). Then, from the `aion` folder, run the following command:
+To run the GUI, first, download and install the Aion Java kernel. See the [Install the Java Kernel](install-the-kernel) section for more details. Then run:
 
 ```bash
 ./aion_gui.sh

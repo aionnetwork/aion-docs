@@ -49,7 +49,7 @@ The `state-storage` tag allows setting the pruning mode for the state database. 
 The database can also be updated offline to the desired mode by running the command:
 
 ```bash
-./aion.sh --state CHOSEN\_MODE
+./aion.sh --state CHOSEN_MODE
 ```
 
 ### Database Type
