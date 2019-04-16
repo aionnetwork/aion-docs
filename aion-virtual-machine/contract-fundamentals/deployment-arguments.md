@@ -1,5 +1,7 @@
 # Deployment Arguments
 
+Deploy your contract and supply arguments at the same time.
+
 When deploying your contract, you can call a `static` function that will run whenever the contract is deployed. Once the deployment has finished, this function will never run again. This is handy for when you need to supply arguments into your contract at the time of deployment.
 
 To capture deployment arguments you must create an `ABIDecoder` object that uses the `Blockchain.getData()` function:

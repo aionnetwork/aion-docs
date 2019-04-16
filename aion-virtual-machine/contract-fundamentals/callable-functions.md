@@ -1,5 +1,7 @@
 # Callable Functions
 
+Mark a function as callable from outside of the contract.
+
 In order for a function or method to be called from outside the contract (by a user on the blockchain, or from another contract) it needs to be annotated as `@Callable`.
 
 The code below is taken from the sample `HelloAvm` contract that is packaged with the [Maven toolkit](/aion-virtual-machine/maven) and the [IntelliJ plugin](/aion-virtual-machine/intellij).
