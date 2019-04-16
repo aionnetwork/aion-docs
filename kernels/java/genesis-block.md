@@ -1,50 +1,12 @@
 # Genesis Block
 
-## Genesis Parameters
+The genesis file provided as part of the Aion kernel installation bundle has been modified specifically for the test network. The complete file can be found in the `aion_folder/config/[network]/genesis.json`.
 
-The genesis file provided as part of the Aion kernel installation bundle was modified specifically for the test network. The complete file can be found in the `aion_folder/config/[network]/genesis.json`.
-
-An abbreviated version of the genesis file is shown below, followed by details regarding each parameter and its meaning.
-
-### `alloc`
-
-The first parameter describes account allocation. These are accounts that are pre-allocated with balances. For the purposes of the test network, 10 accounts have been pre-allocated with a balance of 314159 AION each.
-
-### `coinbase`
-
-This field indicates the address of the account that successfully sealed the block. It is arbitrarily set to the 0th address here.
-
-### `difficulty`
-
-The difficulty field allows the network to determine the block rate. It is initialized with a low value 0x64 so that the test network can find its natural difficulty level.
-
-### `energyLimit`
-
-Each transaction in each block requires a dynamic amount of energy. energyLimit is the upper bound that limits the number of transactions included in a block.
-
-### `extraData`
-
-An arbitrary field that may be used to set messages. Typically this ends up being the signature of some participating mining pool. With respect to the test network, this field is set to be the hash of a special message.
-
-### `networkBalanceAlloc`
-
-This field is intended to be used to record the total balances for multiple networks. The value can then be dynamically updated and used to calculate rewards. Currently, this value is unused.
-
-### `nonce`
-
-This field indicates the value in which the PoW algorithm yields a valid solution. It is set arbitrarily to 0x00 for the genesis block.
-
-### `parentHash`
-
-This field indicates the hash of the parent (preceding) block that this block is referencing. For the purposes of the genesis, it is arbitrarily set to an all-zero hash.
-
-### `timestamp`
-
-The timestamp field is an arbitrarily set field. In our case, this timestamp corresponds to the first timestamp of the first commit in the Aion whitepaper repository.
+An abbreviated version of the genesis file is shown below.
 
 ## Mainnet
 
-Ths following code is the genesis for the current mainnet:
+The following code is the genesis for the current mainnet:
 
 ```json
 {
@@ -70,7 +32,7 @@ Ths following code is the genesis for the current mainnet:
 
 ## Testnet
 
-This following code is the genesis file for the now depricated conquest testnet:
+This following code is the genesis file for the now deprecated conquest testnet:
 
 ```json
 {
@@ -123,3 +85,43 @@ This following code is the genesis file for the now depricated conquest testnet:
   "chainId": "128"
 }
 ```
+
+## Genesis Parameters
+
+The following are descriptions of each parameter in the genesis file.
+
+### `alloc`
+
+The first parameter describes account allocation. These are accounts that are pre-allocated with balances. For the purposes of the test network, 10 accounts have been pre-allocated with a balance of 314159 AION each.
+
+### `coinbase`
+
+This field indicates the address of the account that successfully sealed the block. It is arbitrarily set to the 0th address here.
+
+### `difficulty`
+
+The difficulty field allows the network to determine the block rate. It is initialized with a low-value `0x64` so that the test network can find its natural difficulty level.
+
+### `energyLimit`
+
+Each transaction in each block requires a dynamic amount of energy. `energyLimit` is the upper bound that limits the number of transactions included in a block.
+
+### `extraData`
+
+An arbitrary field that may be used to set messages. Typically this ends up being the signature of some participating mining pool. With respect to the test network, this field is set to be the hash of a special message.
+
+### `networkBalanceAlloc`
+
+This field is intended to be used to record the total balances for multiple networks. The value can then be dynamically updated and used to calculate rewards. Currently, this value is unused.
+
+### `nonce`
+
+This field indicates the value in which the PoW algorithm yields a valid solution. It is set arbitrarily to 0x00 for the genesis block.
+
+### `parentHash`
+
+This field indicates the hash of the parent (preceding) block that this block is referencing. For the purposes of the genesis, it is arbitrarily set to an all-zero hash.
+
+### `timestamp`
+
+The timestamp field is an arbitrarily set field. In our case, this timestamp corresponds to the first timestamp of the first commit in the Aion whitepaper repository.
