@@ -15,29 +15,35 @@ We have used the latest build as an example on this page. If you want to use a d
 ## Run the Installation
 
 1. Connect to your machine via SSH or open a terminal if you are working on a local installation.
-2. Change to your root `~` directory and update your system:
+1. Change to your root `~` directory and update your system:
 
     ```bash
     cd ~
     sudo apt update -y && sudo apt upgrade -y
     ```
 
-3. Unzip the package and move the `aion` directory to your home `~` directory:
+1. Download the latest [Aion Java kernel package](https://github.com/aionnetwork/aion/releases) to your computer if you haven't already. You can also use `wget` if you'd prefer:
+
+    ```bash
+    wget https://github.com/aionnetwork/aion/releases/download/v0.3.3/aion-v0.3.3.22362091d-2019-03-07.tar.bz2
+    ```
+
+1. Unzip the package and move the `aion` directory to your home `~` directory:
 
     ```bash
     tar xvjf aion-v0.3.3.22362091d-2019-03-07.tar.bz2
     mv aion ~/
     ```
 
-4. Move to your `aion` directory and create an address & keystore:
+3. Move to your `aion` directory and create an address & keystore:
 
     ```bash
     cd ~/
     ~/aion/aion.sh -a create
     ```
 
-5. Enter a password and write it down, you'll need it later.
-6. The terminal shows an account address. Write it down somewhere, you'll need this later.
+4. Enter a password and write it down, you'll need it later.
+5. The terminal shows an account address. Write it down somewhere, you'll need this later.
 
     ```bash
     ~/.aion/aion.sh -a create
@@ -47,7 +53,7 @@ We have used the latest build as an example on this page. If you want to use a d
     > A new account has been created: 0xa09...
     ```
 
-7. The build script creates a keystore file in `aion/keystore`. Create a backup of the file:
+6. The build script creates a keystore file in `aion/keystore`. Create a backup of the file:
 
     **On a Local Machine**:
 
@@ -55,7 +61,7 @@ We have used the latest build as an example on this page. If you want to use a d
     cp ~/aion/mainnet/keystore/* ~/Documents/aion-keystore
     ```
 
-    Make a copy of this `keystore` file and store it somewhere other than the computer you are installing the Java kernel on. Move onto Step 8.
+    Make a copy of this `keystore` file and store it somewhere other than the computer you are installing the Java kernel on. Move onto the last step.
 
     **On a Remote Machine over SSH**
 
@@ -73,9 +79,9 @@ We have used the latest build as an example on this page. If you want to use a d
     ssh user@remote-node-ip
     ```
 
-    Move onto Step 8.
+    Move onto the last step.
 
-8. Run the Aion Java kernel:
+7. Run the Aion Java kernel:
 
     ```bash
     ~/aion/aion.sh

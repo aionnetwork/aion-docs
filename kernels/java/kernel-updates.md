@@ -68,7 +68,7 @@ Next up is making some changes to your configuration files.
 
 ## Configuration Files
 
-There may be some chanegs you need to make to your configuration files, depending on which version you are updating from and to.
+There may be some changes you need to make to your configuration files, depending on which version you are updating from and to.
 
 ### 0.3.2 to 0.3.3
 
