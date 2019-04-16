@@ -83,4 +83,4 @@ We have used the latest build as an example on this page. If you want to use a d
 
     The kernel will now begin to _sync_ with the other nodes on the network. This process can take up to 72 hours depending on the speed of your network and the size of the database you are syncing.
 
-Everything is now complete. You have successfully install the Aion Java kernel on your system.
+Everything is now complete. You have successfully installed the Aion Java kernel on your system.

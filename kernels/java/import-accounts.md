@@ -1,7 +1,5 @@
 # Import Accounts
 
-<!-- TODO: Put this in Kernel Updates -->
-
 When switching to a new code binary, you may need to import your accounts from the old binary. In the following, we will describe the process of exporting accounts from a previous build and importing them to the latest release.
 
 For the purpose of this tutorial we denote:
@@ -29,7 +27,7 @@ As output, you will get the list of public keys for your accounts, for example:
 ./aion.sh -a export 0xa0abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdab
 ```
 
-Your private key will be displayed after your successfully enter your password.
+Your private key will be displayed after you successfully enter your password.
 
 ```bash
 Please enter your password:
