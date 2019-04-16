@@ -1,57 +1,42 @@
 # Database
 
+Manage the database configuration for a Java kernel.
+
 ## Configuration
 
-The database configuration can be set from the `config` folder by editing the `config.xml` file.
+Each configuration file is located in the folder that corresponds to the network you are editing. See the [Configuration File](kernels/java/configuration-file) section for more information.
 
-If you do not have a configuration file, first open a terminal and execute:
-
-```bash
-./aion.sh -c
-```
-
-Note that you may need to add the [seed nodes](https://github.com/aionnetwork/aion/wiki/Aion-Seed-nodes) to the file before starting the kernel.
-
-The current default database configuration is:
+The current default database configuration is below, with the comments removed:
 
 ```xml
 <db>
     <path>database</path>
+    <check_integrity>false</check_integrity>
+    <state-storage>FULL</state-storage>
     <vendor>leveldb</vendor>
     <enable_db_compression>false</enable_db_compression>
-    <check_integrity>true</check_integrity> <!--version 0.2.6 and after-->
-    <state-storage>FULL</state-storage> <!--version 0.2.8 and after-->
 </db>
 ```
 
 ### Database location
 
-The `path` tag is used for setting the physical location on disk where data will be stored. The path is relative with respect to the current folder.
+The `path` tag is used for setting the physical location on the disk where data will be stored. The path is relative with respect to the current folder.
 
-For example if you set the path to `<path>database</path>`, it will create a new folder called `database` where it will store the data. If the path is set to \<path\>database/db1\</path\>, it will create two new folders called `database` inside the current folder and `db1` inside the `database` folder. The data will be stored in `db1`.
+For example, if you set the path to `<path>database</path>`, it will create a new folder called `database` where it will store the data. If the path is set to \<path\>database/db1\</path\>, it will create two new folders called `database` inside the current folder and `db1` inside the `database` folder. The data will be stored in `db1`.
 
 When setting the path for the database please make sure that:
 
 - Your application has writing privileges on that path.
 - There is no other database (using a different vendor) already using the path.
 
-### Database type
-
-The `vendor` tag is used for choosing the database driver/implementation. The current vendor options are:
-
- - `leveldb`
- - `h2`
- - `rocksdb`
-
-If you are changing vendors, you must either delete / move the previous database folder, or change the path of the database to a new valid location.
-
-### Data compression
-
-The `enable\_db\_compression` tag customizes the behavior of the database to turn on or off its internal compression implementation. Enabling compression will reduce the storage space required, but may increase execution times for the different operations reading and writing to the database.
-
 ### Data Integrity
 
-The `check\_integrity` tag allows enabling and disabling the data integrity checks at the kernel startup.
+The `check_integrity` tag allows enabling and disabling the data integrity checks at the kernel startup. The options are:
+
+- `true`
+- `false`
+
+You can set this to `false` to decrease the time it takes for the kernel to boot. However, disabling the integrity check increases the chance of corrupting the database.
 
 ### State Database Pruning
 
@@ -67,7 +52,24 @@ The database can also be updated offline to the desired mode by running the comm
 ./aion.sh --state CHOSEN\_MODE
 ```
 
-## Contents
+### Database Type
+
+The `vendor` tag is used for choosing the database driver/implementation. The current vendor options are:
+
+- `leveldb`
+- `h2`
+- `rocksdb`
+
+If you are changing vendors, you must either delete/move the previous database folder, or change the path of the database to a new valid location.
+
+### Data compression
+
+The `enable_db_compression` tag customizes the behavior of the database to turn on or off its internal compression implementation. Enabling compression will reduce the storage space required, but may increase execution times for the different operations reading and writing to the database. The options are:
+
+- `true`
+- `false`
+
+## Database Contents
 
 The Aion blockchain data is stored in several folders each representing a key-value database:
 
