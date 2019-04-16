@@ -1,11 +1,13 @@
 # Graphical Interface
 
-The Aion Kernel _Core_ includes a graphical user interface (GUI) which facilitates kernel management and provides basic wallet functionality. There are some [known issues and limitations](https://github.com/aionnetwork/aion/wiki/Graphical-Interface#known-issues--limitations).
+The Aion Kernel _Core_ includes a graphical user interface (GUI) which facilitates kernel management and provides basic wallet functionality.
 
-To run the GUI, first download and extract the Aion kernel as per the [Getting the Kernel] in the [Kernel section of the Aion Owner's Manual](https://github.com/aionnetwork/aion/wiki/Aion-Owner's-Manual#kernel). Then, from the `aion` folder, run the following command:
+## Run the Interface
+
+To run the GUI, first, download and extract the Aion kernel as per the [Getting the Kernel] in the [Kernel section of the Aion Owner's Manual](https://github.com/aionnetwork/aion/wiki/Aion-Owner's-Manual#kernel). Then, from the `aion` folder, run the following command:
 
 ```bash
-./aion\_gui.sh
+./aion_gui.sh
 ```
 
 ## Known issues and Limitations
@@ -16,19 +18,15 @@ The following are some known issues and limitation within the current kernel bui
 
 If a kernel process is launched by the GUI and then terminated by some mechanism other than the GUI, the GUI may not notice this termination and enter an inconsistent state.
 
-**Resolution**:
+To fix this:
 
-1. Exit GUI.
-2. Delete `$HOME/.aion/kernel-pid` file.
-3. Re-launch GUI.
+1. Exit the kernel GUI.
+2. Delete the `~/.aion/kernel-pid` file.
+3. Re-launch the kernel GUI.
 
 ### Slow Transaction History Update
 
-Recently sent transactions sometimes are slow to appear.
-
-**Resolution**:
-
-The transaction will show up given some time. A refresh can be fored:
+Recently sent transactions sometimes are slow to appear. The transaction will show up given some time. A refresh can be forced by following these steps:
 
 1. Exit the GUI.
 2. Re-open the GUI.
@@ -38,9 +36,7 @@ The transaction will show up given some time. A refresh can be fored:
 
 Upon launching the kernel process, it will run an integrity check to verify the blocks in its database. During this time, the kernel is running, but the GUI cannot yet connect to it. Therefore, with a large database, it will stay in the `CONNECTING...` state for some time with no feedback until this check is complete.
 
-**Resolution**:
-
-Wait for the integrity check to complete, the progress of which can be monitored from the kernel log file.
+Just wait for the integrity check to complete, the progress of which can be monitored from the kernel log file.
 
 ## Setup and Launch
 
@@ -58,7 +54,7 @@ If you have an already-configured copy of Aion version `0.3.0+`, verify that the
 To launch the GUI, run the following command from the `aion` directory:
 
 ```bash
-./aion.sh
+./aion-gui.sh
 ```
 
-This window should open shortly:
+This window should open shortly.
