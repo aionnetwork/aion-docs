@@ -45,7 +45,7 @@ mvn aion4j:get-balance
 For example:
 
 ```bash
-mvn aion4j:get-balance -Dpassword="yoloswag" -Dweb3rpc.url=https://aion.api.nodesmith.io/v1/avmtestnet/jsonrpc?apiKey=ab40c8f567874400a69c1e80a1399350 -Premote
+mvn aion4j:get-balance -Daddress=0xa0f1002373877bd6987f23af0daa97f5d886d591cf308408cb396eda44f3456e -Dweb3rpc.url=https://aion.api.nodesmith.io/v1/avmtestnet/jsonrpc?apiKey=ab40c8f567874400a69c1e80a1399350 -Premote
 
 > ...
 > [INFO] Address   :  0xa0f1002373877bd6987f23af0daa97f5d886d591cf308408cb396eda44f3456e
