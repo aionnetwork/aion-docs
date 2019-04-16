@@ -4,7 +4,9 @@ The Java implementation of the Aion kernel is the original implementation. Learn
 
 ## Quickstart
 
-If you want to get up and running quickly, download the latest [Aion Java kernel `.tar.bz2` file from Github](https://github.com/aionnetwork/aion/releases) and follow the [Install the Kernel](install-the-kernel) section.
+If you want to get up and running quickly, check out the [Docker Images](docker-images) section. These images allow you to spin up an Aion Java kernel on any operating system with Docker installed.
+
+Alternatively, download the latest [Aion Java kernel `.tar.bz2` file from Github](https://github.com/aionnetwork/aion/releases) and follow the [Install the Kernel](install-the-kernel) section.
 
 ## Brief Overview
 
