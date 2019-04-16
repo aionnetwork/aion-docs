@@ -1,6 +1,6 @@
 # Seed Nodes
 
-Aion _seed nodes_ are node that run 24/7. They help keep the network up to date, and hold the most reliable chain. Use these nodes when running an initial sync of your node.
+Aion _seed nodes_ are nodes that run 24/7. They help keep the network up-to-date and hold the most reliable chain. Use these nodes when running an initial sync of your node.
 
 ## Deployment Details
 
