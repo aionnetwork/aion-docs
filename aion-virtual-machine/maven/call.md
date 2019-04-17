@@ -7,7 +7,7 @@ Interact with a deployed contract: `mvn aion4j:call`
 3. [Supplying Arguments](#supplying-arguments)
 4. [Calling a Specific Contract](#calling-a-specific-contract)
 
-Calls to a contract can either be simple calls, or [contract transactions](contract-transaction). Calls do not necessarily incur a cost, but contract transactions always incur a cost. More information about this difference can be found in the [Contract Transaction](contract-transaction) section.
+Calls to a contract can either be simple calls, or [contract transactions](contract-transaction). Calls do not necessarily incur a cost, but contract transactions always incur a cost. Calls to a contract will always return something. More information about this difference can be found in the [Contract Transaction](contract-transaction) section.
 
 ## Local
 
