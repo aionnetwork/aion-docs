@@ -18,7 +18,7 @@ This section of the docs goes over how to configure and interact with the kernel
 
 ## Aion Kernel Development
 
-If you want to get involved with the Aion Java kernel development, take a look at the [Githut repository](https://github.com/aionnetwork/aion/).
+If you want to get involved with the Aion Java kernel development, take a look at the [Github repository](https://github.com/aionnetwork/aion/).
 
 ## Miners
 
