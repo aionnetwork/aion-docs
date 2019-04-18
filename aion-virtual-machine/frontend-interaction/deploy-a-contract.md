@@ -1,5 +1,7 @@
 # Deploy a Contract
 
+Deploy a contract using Web3.js.
+
 If you need to deploy a contract without using either the IntelliJ or Maven plugins, then you can use Web3.js.
 
 ## Example Script
