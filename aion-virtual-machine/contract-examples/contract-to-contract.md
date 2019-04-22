@@ -8,6 +8,8 @@ You can use these contracts as templates. The `Caller` contract makes a call to 
 
 ### Returner
 
+This is the contract that will be called by the `Caller` contract. If you want to test these contracts out, deploy this one first to get the contract address.
+
 ```java
 package aion;
 
