@@ -14,7 +14,7 @@ import org.aion.avm.userlib.AionMap;
 
 import java.util.Set;
 
-public class HelloAvm
+public class MapExample
 {
     // Create custom car class.
     private static class car{
