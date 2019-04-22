@@ -2,7 +2,9 @@
 
 Here is an example of how to use the `AionMap` object.
 
-## Example
+## Example Contract
+
+You can use this contract as a template.
 
 ```java
 package aion;
