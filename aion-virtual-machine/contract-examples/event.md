@@ -1,6 +1,6 @@
-# Event
+# Event Log
 
-An event in Java is an object that is created when something changes.
+A log logs an event that contains actions and information as desired to the blockchain. 
 
 ## Example Contract
 
