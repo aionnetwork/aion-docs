@@ -9,7 +9,7 @@ Add `aion-web3` into your website to allow it to access the Aion Virtual Machine
 3. Pull down the latest version of the `aion-web3` package into your project:
 
     ```bash
-    npm install aion-web3
+    npm install aion_web3@1.2.5-beta.2
     ```
 
 4. Create a JavaScript file and `require` the package at the top of the file:
@@ -22,14 +22,14 @@ Add `aion-web3` into your website to allow it to access the Aion Virtual Machine
 
 ## Boilerplate Script
 
-```javascript
-const Web3 = require("aion-web3");
+    ```javascript
+    const Web3 = require("aion-web3");
 
-async function callContract() {
-    // Put logic here.
-}
+    async function callContract() {
+        // Put logic here.
+    }
 
-function main() {
-    callContract();
-}
-```
+    function main() {
+        callContract();
+    }
+    ```

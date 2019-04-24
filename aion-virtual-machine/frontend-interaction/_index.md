@@ -5,3 +5,46 @@ In order for users to interact with your blockchain application, they will need 
 ## Web3.js
 
 Web3.js is a JavaScript framework that was originally created by the Ethereum Foundation for the Ethereum network. It was released on GitHub as open-source software. Aion took this framework and modified it to fix the Aion Virtual Machine. Because of this, there are some differences between how Ethereum developers deal with Web3.js and how Aion developers should deal with Web3.js.
+
+## Examples in this Section
+
+The examples in this section reference a contract that has been deployed on the AVM testnet. The contract is below:
+
+```java
+import avm.Address;
+import avm.Blockchain;
+import org.aion.avm.tooling.abi.Callable;
+import org.aion.avm.userlib.abi.ABIDecoder;
+
+import java.math.BigInteger;
+
+public class Counter
+{
+    private static Address owner;
+    private static int count;
+
+    static {
+        ABIDecoder decoder = new ABIDecoder(Blockchain.getData());
+        count = decoder.decodeOneInteger();
+        owner = Blockchain.getCaller();
+    }
+
+    @Callable
+    public static void incrementCounter(int increment){
+
+        count += increment;
+        Blockchain.log("CounterIncreased".getBytes(), BigInteger.valueOf(increment).toByteArray());
+    }
+
+    @Callable
+    public static void decrementCounter(int decrement){
+        count -= decrement;
+        Blockchain.log("CounterDecreased".getBytes(), BigInteger.valueOf(decrement).toByteArray());
+    }
+
+    @Callable
+    public static int getCount(){
+        return count;
+    }
+}
+```
