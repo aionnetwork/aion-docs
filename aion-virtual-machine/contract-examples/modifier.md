@@ -23,12 +23,12 @@ public class ModifierExample {
         owner = Blockchain.getCaller();
     }
 
-    // Check is the current caller of a function matches the owner address.
+    // Check if the current caller of a function matches the owner address.
     private static void onlyOwner() {
         Blockchain.require(Blockchain.getCaller().equals(owner));
     }
 
-    // If the address calling this function matches the owner address, return true.
+    // If the address calling this function matches the owner address, return true. Otherwise, throw an exception.
     @Callable
     public static boolean isOwnerCalling() {
         onlyOwner();
