@@ -1,4 +1,6 @@
-# Aion Map
+# Clinit
+
+Run functions and initialize variables when deploying your contract.
 
 The `Clinit` blocks initialize arguments into your contract when it gets deployed. Everything within the `static` section is ran when the contract is deployed. Once the contract has been deployed, the `static` function is never ran again.
 
