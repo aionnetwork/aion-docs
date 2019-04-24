@@ -34,7 +34,7 @@ web3.avm.contract.method("setString").inputs(["String"], ["Hello AVM"]).encode()
 
 <h3>Notes</h3>
 
-1. For Java Contract Deployment, the type must be `0x2`. The transaction object used in any transaction or call must be of type `0x1`.
+1. When deploying a Java contract, the `type` must be `0x2`. For any other type of transaction the `type` must be `0x1`.
 2. The `to` field of a transaction object should always hold the contract address of the AVM Contract whose method you wish to use. This is the same with FastVM contracts.
 3. It is important to note that because there are different types of use cases, the data generated from `web3.avm.contract.method` may be either used to send a transaction (`web3.eth.sendTransaction`) or read the state of the blockchain (`web3.eth.call`). Methods which are mutator methods ("set-functions") that alter the state of a variable are typically those which will require a transaction to be sent. This also accounts for those which might print some message to the blockchain itself.
 
