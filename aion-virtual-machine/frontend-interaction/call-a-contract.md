@@ -94,6 +94,24 @@ A transaction object must be created before sending the transaction to the netwo
 
 First, define the `data` variable. This is an object that is wrapped within the transasction object. It tells the network what actions you want to perform, and on which contract.
 
+To supply variables in your call, add `.inputs` followed by an array containing the type you want to call, and the value itself:
+
+```javascript
+.inputs(['type'],[value])
+```
+
+For example:
+
+```javascript
+.inputs(['int'],[3])
+```
+
+If you want to supply more than one argument, add both the type and values to the arrays:
+
+```javascript
+.inputs(['int', 'string', 'int[]'],[3, 'Douglas Adams', [1, 2, 3]])
+```
+
 Next, create the transaction object itself. The transaction object **must** contain the following information:
 
 | Object Key | Description |
