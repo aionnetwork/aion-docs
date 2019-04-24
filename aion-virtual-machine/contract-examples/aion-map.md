@@ -1,6 +1,8 @@
 # Aion Map
 
-Here is an example of how to use the `AionMap` object.
+The Aion specific implementation of the Java Map interface.
+
+An object that maps keys to values. A map cannot contain duplicate keys; each key can map to at most one value.
 
 ## Example Contract
 
