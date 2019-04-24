@@ -56,9 +56,9 @@ public class CallerExample {
         calleeContractAddress = decoder.decodeOneAddress();
     }
 
-    // Get an integer from another contract.
+    // Get an String from another contract.
     @Callable
-    public static int getInteger(int index) {
+    public static String getString(int index) {
         // Define the function to call, and encode it.
         byte[] methodName = ABIEncoder.encodeOneString("getString");
 
@@ -69,18 +69,18 @@ public class CallerExample {
         byte[] data = concatenateArrays(methodName, argIndex);
 
         // Call the remote contract.
-        Result getInt = Blockchain.call(receiverContractAddress, BigInteger.valueOf(0), data,
+        Result getString = Blockchain.call(receiverContractAddress, BigInteger.valueOf(0), data,
                 Blockchain.getRemainingEnergy());
 
         // Decode the response.
-        ABIDecoder decoder = new ABIDecoder(getInt.getReturnData());
+        ABIDecoder decoder = new ABIDecoder(getString.getReturnData());
 
-        // Set myInt as the first variable returned from the remote contract.
-        int myInt = decoder.decodeOneInteger();
-        return myInt;
+        // Set myString as the first variable returned from the remote contract.
+        String myInt = decoder.decodeOneInteger();
+        return myString;
     }
 
-    // Combine two byte arrays together. This is helpful when creating a data variable to send to another contract.
+    // Combine multiple byte arrays together. This is helpful when creating the data byte array to send to another contract.
     private static byte[] concatenateArrays(byte[]... arrays) {
         int length = 0;
         for (byte[] array : arrays) {

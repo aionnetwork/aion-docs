@@ -1,6 +1,6 @@
 # Transfer AION
 
-Transfer `AION` between two addresses.
+Transfer `AION` from the contract to another account or contract.
 
 ## Example Contract
 
@@ -24,7 +24,7 @@ public class TransferAionExample {
         owner = Blockchain.getCaller();
     }
 
-    // Transfer AION from the contract address to the address listed in the "to" variable.
+    // Transfer AION from the contract to the address listed in the "to" variable.
     @Callable
     public static boolean transferAion(Address to, long value) {
         onlyOwner();
