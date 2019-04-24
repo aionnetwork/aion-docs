@@ -42,7 +42,7 @@ The transaction will output:
 [INFO] *********************************************************
 ```
 
-It is possible to have functions that do not have the `@Callable` annotation, and your contract will compile just fine. For example, the `getName()` function above does not have a `@Callable` annotation assigned to it, but it returns the string `Bob` to the `greet()` function. Howeverm, any attempt to call `getName()` directly will result in a `Method call failed: InvocationTargetException: Dapp call failed. Code: FAILED_REVERT` error.
+It is possible to have functions that do not have the `@Callable` annotation, and your contract will compile just fine. For example, the `getName()` function above does not have a `@Callable` annotation assigned to it, but it returns the string `Bob` to the `greet()` function. However, any attempt to call `getName()` directly will result in a `Method call failed: InvocationTargetException: Dapp call failed. Code: FAILED_REVERT` error.
 
 ```bash
 [ERROR] Failed to execute goal org.aion4j:aion4j-maven-plugin:0.5.0:call (default-cli) on project example: Method call failed: InvocationTargetException: Dapp call failed. Code: FAILED_REVERT, Reason: null -> [Help 1]
