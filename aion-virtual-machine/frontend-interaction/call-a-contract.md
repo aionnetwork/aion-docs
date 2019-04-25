@@ -34,7 +34,7 @@ async function contractCall() {
 
     // Query the Blockchain
     let initialResponse = await web3.eth.call(transactionObject);
-    let avmResponse = await web3.avm.contract.decode("int", response);
+    let avmResponse = await web3.avm.contract.decode("int", initialResponse);
     return avmResponse;
 }
 
