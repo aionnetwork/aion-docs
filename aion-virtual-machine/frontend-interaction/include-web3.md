@@ -9,7 +9,7 @@ There are two methods for including web3.js into your project:
 
 ## Minified JavaScript File
 
-Download the `web3.min.js` file from here and include it in your HTML:
+[Download the `web3.min.js`](avm.aion.network/web3.min.js). Include it in your HTML:
 
 ```html
 <script src="web3.min.js"></script>
