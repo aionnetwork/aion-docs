@@ -23,13 +23,13 @@ static {
 }
 ```
 
-Each variable must be supplied and collected in order. If you deploy your contract with your variables in a particular order, you must declare those variables in the exact same order within your `static` function. For example, if you deploy your contract using Maven as the following:
+Each variable must be supplied and collected in order. If you deploy your contract with your variables in a particular order, you must decode those variables in the exact same order within your `static` function. For example, if you deploy your contract using Maven as the following:
 
 ```bash
 mvn aion4j:deploy -Dargs="-T David -I[] 3141 592653 589 7932 3846 -I[][] 1,2,3 4,5,6"
 ```
 
-Then you must declare those variables within the `static` function as the following:
+Then you must decode those variables within the `static` function as the following:
 
 ```bash
 myStr = decoder.decodeOneString();

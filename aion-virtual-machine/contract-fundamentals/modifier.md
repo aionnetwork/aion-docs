@@ -37,4 +37,4 @@ public class ModifierExample {
 }
 ```
 
-In the above example, the `isOwnerCalling` function will fail if the address that calls the function is the owner.
+In the above example, the `isOwnerCalling` function will fail if the address that calls the function is not the owner.

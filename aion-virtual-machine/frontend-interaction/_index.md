@@ -4,7 +4,7 @@ In order for users to interact with your blockchain application, they will need 
 
 ## Web3.js
 
-Web3.js is a JavaScript framework that was originally created by the Ethereum Foundation for the Ethereum network. It was released on GitHub as open-source software. Aion took this framework and modified it to fix the Aion Virtual Machine. Because of this, there are some differences between how Ethereum developers deal with Web3.js and how Aion developers should deal with Web3.js.
+Web3.js is a JavaScript framework that was originally created by the Ethereum Foundation for the Ethereum network. It was released on GitHub as open-source software. Aion took this framework and modified it to fit the Aion Virtual Machine. Because of this, there are some differences between Ethereum and Aion development.
 
 ## Examples in this Section
 
