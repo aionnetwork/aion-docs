@@ -36,7 +36,7 @@ async function sendTransactionToContract() {
     // Sign the Transaction
     const signedTransaction = await web3.eth.accounts.signTransaction(
         transaction, account.privateKey
-    ).then((res) => signedCall = transactionResponse);
+    ).then((transactionResponse) => signedCall = transactionResponse);
 
     // Send the Transaction
     const transactionReceipt = await web3.eth.sendSignedTransaction( 
@@ -129,7 +129,7 @@ The `signTransaction` creates the `signedTransaction` object.
 ```javascript
 const signedTransaction = await web3.eth.accounts.signTransaction(
     Tx, account.privateKey
-).then((res) => signedCall = res);
+).then((transactionResponse) => signedCall = transactionResponse);
 ```
 
 ### Send the Transaction
