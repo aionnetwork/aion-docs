@@ -83,7 +83,7 @@ There are several arguments that you can supply with the `docker run` command.
 
 ### Configure the Java Kernel
 
-Once the kernel is running you can configure it by running the `docker exec` command in a separate terminal window:
+Once the kernel Docker image is pulled you can configure it by running the `docker exec` command in a separate terminal window:
 
 ```bash
 docker exec -it <CONTAINER_NAME or CONTAINER_HASH> /bin/bash
