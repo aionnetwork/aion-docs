@@ -52,18 +52,18 @@ Adding the `-Premote` argument to the end of the command should fix the problem.
 mvn aion4j:get-balance -Dweb3rpc.url=https://api.nodesmith.io/v1/aion/avmtestnet/jsonrpc?apiKey=AABBCCDDEEFF112233445566 -Daccount=0xaabbccddeeff112233445566a1b2c3d4e5f6 -Premote
 ```
 
-### realpath: command not found
+## realpath: command not found
 
 This issue happens on some version of macOS when running the AVM directly (not using Maven) from the terminal. You can safely ignore the warning, it does not impact the outcome of the compilation.
 
-### java.lang.IllegalArgumentException: Unknown argument: sayHello
+## java.lang.IllegalArgumentException: Unknown argument: sayHello
 
 This is an issue when running the AVM directly (not using Maven) through the terminal. Make sure you give the `-m` argument when calling the `sayHello` function.
 
-### InvocationTargetException: Method argument parsing error: NullPointerException
+## InvocationTargetException: Method argument parsing error: NullPointerException
 
 You need to include a variable type for your argument. See the [Variable Types page](/aion-virtual-machine/troubleshooting).
 
-### InvocationTargetException: Dapp call failed. Code: FAILED_REVERT
+## InvocationTargetException: Dapp call failed. Code: FAILED_REVERT
 
 You need to supply the `@Callable` annotation on any functions or methods you wish to call from _outside_ the contract. This can be either a user calling the contract, or another contract. See the [Callable Functions](/aion-virtual-machine/contract-fundamentals/callable-functions) section for more details.
