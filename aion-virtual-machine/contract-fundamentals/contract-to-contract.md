@@ -35,64 +35,44 @@ Make sure to supply the address of the contract you want to call as a deployment
 
 ```java
 package aion;
-
+import avm.Address;
 import avm.Blockchain;
 import avm.Result;
-import avm.Address;
 import org.aion.avm.tooling.abi.Callable;
 import org.aion.avm.userlib.abi.ABIDecoder;
 import org.aion.avm.userlib.abi.ABIEncoder;
+import org.aion.avm.userlib.abi.ABIStreamingEncoder;
 
 import java.math.BigInteger;
 
-public class CallerExample {
+public class ContractInteractionCaller {
 
-    // Create an empty Address variable.
     private static Address calleeContractAddress;
+    private static String secretMessage;
 
-    // Get the address from a deployment variable.
     static {
         ABIDecoder decoder = new ABIDecoder(Blockchain.getData());
         calleeContractAddress = decoder.decodeOneAddress();
+        secretMessage = decoder.decodeOneString();  //for showing the debugging
     }
 
-    // Get an String from another contract.
     @Callable
-    public static String getString(int index) {
-        // Define the function to call, and encode it.
-        byte[] methodName = ABIEncoder.encodeOneString("getString");
+    public static Address getCalleeContractAddress() {
+        return calleeContractAddress;
+    }
 
-        // Encode any variables that the receiving function needs.
-        byte[] argIndex = ABIEncoder.encodeOneInteger(1);
-
-        // Add both arrays together into a data variable.
-        byte[] data = concatenateArrays(methodName, argIndex);
-
-        // Call the remote contract.
-        Result getString = Blockchain.call(receiverContractAddress, BigInteger.valueOf(0), data,
-                Blockchain.getRemainingEnergy());
-
-        // Decode the response.
+    @Callable
+    public static String getStringInAnotherContract(int index) {
+        ABIStreamingEncoder encoder = new ABIStreamingEncoder();
+        byte[] data = encoder.encodeOneString("getString")
+                .encodeOneInteger(index)
+                .toBytes();
+        Result getString = Blockchain.call(calleeContractAddress, BigInteger.valueOf(0), data, Blockchain.getRemainingEnergy());
         ABIDecoder decoder = new ABIDecoder(getString.getReturnData());
-
-        // Set myString as the first variable returned from the remote contract.
-        String myInt = decoder.decodeOneInteger();
+        String myString = decoder.decodeOneString();
         return myString;
     }
 
-    // Combine multiple byte arrays together. This is helpful when creating the data byte array to send to another contract.
-    private static byte[] concatenateArrays(byte[]... arrays) {
-        int length = 0;
-        for (byte[] array : arrays) {
-            length += array.length;
-        }
-        byte[] result = new byte[length];
-        int writtenSoFar = 0;
-        for (byte[] array : arrays) {
-            System.arraycopy(array, 0, result, writtenSoFar, array.length);
-            writtenSoFar += array.length;
-        }
-        return result;
-    }
 }
+
 ```
