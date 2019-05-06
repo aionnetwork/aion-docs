@@ -28,11 +28,11 @@ If the version of aion4j plugin in your `pom.xml` is the same as here https://gi
 Failure to find org.aion4j:aion4j-maven-plugin:jar:0.5.0 in https://repo.maven.apache.org/maven2
 ```
 
-delete your $homedir/.m2/repository/org/aion4j folder to cleanup the cache and try again.
+Delete your $homedir/.m2/repository/org/aion4j folder to cleanup the cache and try again.
 
 ## Println not Working on Remote Node
 
-`BlockchainRuntime.println` will not return anything from a remote node. This is because `BlockchainRuntime.println` prints to the local console only. So when you try to run it on a remote node, the node itself will print it to its own console, but the kernel will not return anything to you. `BlockchainRuntime.println` returns data when running on a local kernel (embedded AVM).
+`Blockchain.println` will not return anything from a remote node. This is because `Blockchain.println` prints to the local console only. So when you try to run it on a remote node, the node itself will print it to its own console, but the kernel will not return anything to you. `Blockchain.println` returns data when running on a local kernel (embedded AVM).
 
 ## Using Constructor Arguments
 
