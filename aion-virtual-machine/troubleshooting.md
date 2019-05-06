@@ -22,17 +22,17 @@ java --version
 
 ## Cannot get the newest Aion4j Plugin
 
-If the version of aion4j plugin in your `pom.xml` is the same as here https://github.com/bloxbean/aion4j-maven-plugin and you get following error messgae when you try to initialize your project
+If the version of aion4j plugin in your `pom.xml` is the same as here https://github.com/bloxbean/aion4j-maven-plugin and you get following error message when you try to initialize your project
 
 ```bash
 Failure to find org.aion4j:aion4j-maven-plugin:jar:0.5.0 in https://repo.maven.apache.org/maven2
 ```
 
-delete your $homedir/.m2/repository/org/aion4j folder to cleanup the cache and try again.
+Delete your $homedir/.m2/repository/org/aion4j folder to cleanup the cache and try again.
 
 ## Println not Working on Remote Node
 
-`BlockchainRuntime.println` will not return anything from a remote node. This is because `BlockchainRuntime.println` prints to the local console only. So when you try to run it on a remote node, the node itself will print it to its own console, but the kernel will not return anything to you. `BlockchainRuntime.println` returns data when running on a local kernel (embedded AVM).
+`Blockchain.println` will not return anything from a remote node. This is because `Blockchain.println` prints to the local console only. So when you try to run it on a remote node, the node itself will print it to its own console, but the kernel will not return anything to you. `Blockchain.println` returns data when running on a local kernel (embedded AVM).
 
 ## Using Constructor Arguments
 
@@ -52,18 +52,18 @@ Adding the `-Premote` argument to the end of the command should fix the problem.
 mvn aion4j:get-balance -Dweb3rpc.url=https://api.nodesmith.io/v1/aion/avmtestnet/jsonrpc?apiKey=AABBCCDDEEFF112233445566 -Daccount=0xaabbccddeeff112233445566a1b2c3d4e5f6 -Premote
 ```
 
-### realpath: command not found
+## realpath: command not found
 
 This issue happens on some version of macOS when running the AVM directly (not using Maven) from the terminal. You can safely ignore the warning, it does not impact the outcome of the compilation.
 
-### java.lang.IllegalArgumentException: Unknown argument: sayHello
+## java.lang.IllegalArgumentException: Unknown argument: sayHello
 
 This is an issue when running the AVM directly (not using Maven) through the terminal. Make sure you give the `-m` argument when calling the `sayHello` function.
 
-### InvocationTargetException: Method argument parsing error: NullPointerException
+## InvocationTargetException: Method argument parsing error: NullPointerException
 
 You need to include a variable type for your argument. See the [Variable Types page](/aion-virtual-machine/troubleshooting).
 
-### InvocationTargetException: Dapp call failed. Code: FAILED_REVERT
+## InvocationTargetException: Dapp call failed. Code: FAILED_REVERT
 
-You need to supply the `@Callable` annotation on any functions or methods you wish to call from _outside_ the contract. This can be either a user calling the contract, or another contract. See the [Callable Functions](/aion-virtual-machine/contract-fundamentals/callable-functions) section for more details.
+You need to supply the `@Callable` annotation on any functions or methods you wish to call from _outside_ the contract. This can be either a user calling the contract or another contract. See the [Callable Functions](/aion-virtual-machine/contract-fundamentals/callable-functions) section for more details.
