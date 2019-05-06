@@ -22,7 +22,7 @@ java --version
 
 ## Cannot get the newest Aion4j Plugin
 
-If the version of aion4j plugin in your `pom.xml` is the same as here https://github.com/bloxbean/aion4j-maven-plugin and you get following error messgae when you try to initialize your project
+If the version of aion4j plugin in your `pom.xml` is the same as here https://github.com/bloxbean/aion4j-maven-plugin and you get following error message when you try to initialize your project
 
 ```bash
 Failure to find org.aion4j:aion4j-maven-plugin:jar:0.5.0 in https://repo.maven.apache.org/maven2
@@ -66,4 +66,4 @@ You need to include a variable type for your argument. See the [Variable Types p
 
 ## InvocationTargetException: Dapp call failed. Code: FAILED_REVERT
 
-You need to supply the `@Callable` annotation on any functions or methods you wish to call from _outside_ the contract. This can be either a user calling the contract, or another contract. See the [Callable Functions](/aion-virtual-machine/contract-fundamentals/callable-functions) section for more details.
+You need to supply the `@Callable` annotation on any functions or methods you wish to call from _outside_ the contract. This can be either a user calling the contract or another contract. See the [Callable Functions](/aion-virtual-machine/contract-fundamentals/callable-functions) section for more details.
