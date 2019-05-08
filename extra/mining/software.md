@@ -142,4 +142,4 @@ An example configuration for the consensus section:
 }
 ```
 
-**Configure File**: More information on the sections of the `config.xml` file can be found on the [GitHub repository](https://github.com/aionnetwork/aion/blob/e22231526367328e84ee9b342288eeb7bc0e9ed3/modBoot/resource/config.xml).
+**Configure File**: More information on the sections of the `config.xml` file can be found on the [GitHub repository](https://github.com/aionnetwork/aion).

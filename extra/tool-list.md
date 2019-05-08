@@ -62,7 +62,7 @@ Wallets allow you to store your native Aion tokens and other cryptocurrencies lo
 
 ### Offline Wallets
 
-#### [Aion Desktop Wallet](https://github.com/aionnetwork/aion_ui/releases/tag/v1.0.0)
+#### [Aion Desktop Wallet](https://github.com/aionnetwork/aion_ui/releases/)
 
 The Aion wallet is a software program that allows users to manage their Aion coin accounts. The wallet facilitates sending and receiving Aion and gives ownership of the balance to the user.
 
