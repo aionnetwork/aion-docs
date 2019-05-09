@@ -16,25 +16,30 @@ import java.math.BigInteger;
 
 public class TransferAionExample {
 
-    // Create an empty address for the owner.
-    private static Address owner;
+       // Create an empty address for the owner.
+        private static Address owner;
 
-    static {
-        // Set the owner as the address that deployed the contract.
-        owner = Blockchain.getCaller();
-    }
+        static {
+            // Set the owner as the address that deployed the contract.
+            owner = Blockchain.getCaller();
+        }
 
-    // Transfer AION from the contract to the address listed in the "to" variable.
-    @Callable
-    public static boolean transferAion(Address to, long value) {
-        onlyOwner();
-        Result result = Blockchain.call(to, BigInteger.valueOf(value), new byte[0], Blockchain.getRemainingEnergy());
-        return result.isSuccess();
-    }
 
-    // Only Owner modifier.
-    private static void onlyOwner() {
-        Blockchain.require(Blockchain.getCaller().equals(owner));
-    }
-}
+        // Transfer AION from the contract address to the address listed in the "to" variable.
+        @Callable
+        public static void transferAion(Address to, long value) {
+            onlyOwner();
+            //check if there is sufficient balance in the contract
+            Boolean enoughBalance;
+            if (Blockchain.getBalanceOfThisContract().compareTo(BigInteger.valueOf(value)) == 1) enoughBalance=true;
+            else enoughBalance = false;
+            Blockchain.require(enoughBalance);
+            Blockchain.call(to, BigInteger.valueOf(value), new byte[0], Blockchain.getRemainingEnergy());
+        }
+
+        // Only Owner modifier.
+        private static void onlyOwner() {
+            Blockchain.require(Blockchain.getCaller().equals(owner));
+        }
+
 ```
