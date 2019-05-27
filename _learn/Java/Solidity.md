@@ -1,4 +1,0 @@
----
-title: "Solidity"
-excerpt: ""
----
