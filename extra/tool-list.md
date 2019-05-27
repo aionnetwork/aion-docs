@@ -6,27 +6,27 @@ These integrations inject Web3 into a browser session, allowing users to access 
 
 ### [AIWA](https://getaiwa.com/)
 
-A wallet and Dapp interaction tool for Aion. You can find a guide for AIWA over at [Aion University](https://learn.aion.network/docs/aiwa)
+A wallet and dApp interaction tool for Aion.
 
 ## Integrated Development Environments
 
 IDEs help developers get up and running faster without having to install independent tools and plugins.
 
-### [IntelliJ](https://github.com/bloxbean/aion4j-idea-plugin)
+### [IntelliJ](https://github.com/satran004/aion4j-idea-plugin)
 
 IntelliJ is the most popular IDE for Java development. To help speed up the process of developing Java smart contracts with Aion, use this plugin directly within IntelliJ. The plugin is currently in beta at the moment. You can download IntelliJ for free from the [Jetbrains website](https://www.jetbrains.com/idea/download/).
 
 ### [Titan Suite](https://titan-suite.com/)
 
-Titan Suite is an online integrated development environment (IDE) for developing Solidty contracts with Aion. It allows developers to create and test Dapp online without having to install anything. You can find a guide for Titan Suite over at [Aion University](https://learn.aion.network/docs/titan-suite).
+Titan Suite is an online integrated development environment (IDE) for developing Solidty contracts with Aion. It allows developers to create and test dApp online without having to install anything. You can find a guide for Titan Suite over at [Aion University](https://learn.aion.network/docs/titan-suite).
 
 ## Development Tools
 
 The following tools can help speed up your contract development, and even run a tiny blockchain on your local machine for rapid development!
 
-### [Maven](https://github.com/bloxbean/aion4j-maven-plugin)
+### [Maven Plugin](https://github.com/satran004/aion4j-maven-plugin)
 
-The Maven archetype provides build and deployment support for AVM based smart contracts. It also allows you to create, deploy, and call contracts locally on your machine without having to connect to a remote node! Take a look at the [Maven documentation](/aion-virtual-machine/maven/local-node) for more information.
+The Maven archetype provides build and deployment support for AVM based smart contracts. It also allows you to create, deploy, and call contracts locally on your machine without having to connect to a remote node! Take a look at the [Maven documentation](/aion-virtual-machine/maven/embedded-avm) for more information.
 
 ## Node Services
 
@@ -46,7 +46,7 @@ Quickly spin up and connect to an Aion node with web3 built in. All nodes are fr
 
 ## Explorers and Blockchain Statistics
 
-These tools help you to monitor the Aion network as you develop your Dapps.
+These tools help you to monitor the Aion network as you develop your dApps.
 
 ### [Aion Explorer](https://mainnet.aion.network/#/dashboard)
 
@@ -58,11 +58,19 @@ SaaS platform for monitoring, searching, analyzing, and securing public and priv
 
 ## Wallets
 
-Wallets allow you to store your native Aion tokens and other cryptocurrencies locally on your machine, sometimes called _offline wallets_. Other wallets allow you to keep your tokens online. However, these are generally seen as slightly less secure than locally stored wallets.
+Wallets allow you to store your native Aion tokens and other cryptocurrencies locally on your machine, sometimes called _offline wallets_. Other wallets allow you to keep your tokens online and are _always accessible_. However, these are generally seen as slightly less secure than locally stored wallets. Finally, there are mobile wallets that help bridge the gap between security and usability.
+
+### Mobile Wallets
+
+Having your wallet stored on your phone is the perfect balance between security and ease-of-use.
+
+#### [Trust Wallet](https://blog.aion.network/trust-wallet-adds-support-for-aion-c063e450652c)
+
+Trust Wallet is secure, multi-currency, anonymous, and tied to some advance web3 functionality you can’t get elsewhere like a Dapp browser and decentralized exchange.
 
 ### Offline Wallets
 
-#### [Aion Desktop Wallet](https://github.com/aionnetwork/aion_ui/releases/)
+#### [Aion Desktop Wallet](https://github.com/aionnetwork/aion_ui/releases/tag/v1.0.0)
 
 The Aion wallet is a software program that allows users to manage their Aion coin accounts. The wallet facilitates sending and receiving Aion and gives ownership of the balance to the user.
 
@@ -77,7 +85,7 @@ The WandX desktop app is a decentralized token trading platform on Ethereum and 
 
 #### [AIWA](https://getaiwa.com/)
 
-A wallet and Dapp interaction tool for Aion.
+A wallet and dApp interaction tool for Aion.
 
 #### [Coinomi](https://www.coinomi.com/)
 
@@ -93,7 +101,7 @@ A light universal web-based crypto wallet that supports Ledger wallet integratio
 
 ## Exchanges
 
-These are the top 5 most popular exchanges that support `Aion`.
+These are the top 5 most popular exchanges that support `AION`.
 
 - [Binance](https://www.binance.com/en)
 - [BCex](https://www.bcex.ca/)
