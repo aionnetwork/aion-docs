@@ -1,5 +1,5 @@
 ---
-title: Faucets
+title: Faucet
 description: "Use the Mastery Faucet and get `AION` coins to test with."
 ---
 
@@ -7,7 +7,7 @@ description: "Use the Mastery Faucet and get `AION` coins to test with."
 2. [Steps](#steps)
 3. [Details](#details)
 
-Test faucets are a way for developers to get some `AION` coin to test on the Testnet (Mastery) with.
+Test faucets are a way for developers to get some `AION` coin to test on the Testnet (Mastery) with. They're quite handy.
 
 ## Prerequisites
 
@@ -15,14 +15,14 @@ The only thing you need is an Aion account on the Testnet (Mastery) network.
 
 ## Steps
 
-1. Navigate to [faucets.blockxlabs.com](https://faucets.blockxlabs.com) in your browser.
+1. Navigate to [faucets.blockxlabs.com/aion](https://faucets.blockxlabs.com/aion) in your browser.
 2. Select **Mastery** from the **Blockchain Network** dropdown.
 3. Enter you public address into **Wallet/Public Address**.
 4. Check the **Terms of Service** and **Privacy Policy** checkbox.
 5. Check the **I'm not a robot** checkbox.
 6. Click **Press to pour**.
 
-![Getting Test Coins from the BlockX Labs Faucet](get-test-coins.gif)
+{{< youtube qhkAHsg5EeU >}}
 
 ## Details
 
