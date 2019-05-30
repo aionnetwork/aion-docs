@@ -3,20 +3,6 @@ title: IntelliJ
 description: The Aion4j plugin for IntelliJ is packed with features that can help speed up your contract development. You can compile, deploy, and call your contract to a local or remote node, all from within the IntelliJ IDE.
 ---
 
-1. [Intellj Plugin Overview](#intellj-plugin-overview)
-2. [ABI Type Check](#abi-type-check)
-3. [Call](#call)
-4. [Configure the Plugin](#configure-the-plugin)
-5. [Contract Transaction](#contract-transaction)
-6. [Create Account](#create-account)
-7. [Deploy](#deploy)
-8. [Get Balance](#get-balance)
-9. [Get Receipts](#get-receipts)
-10. [Install the Plugin](#install-the-plugin)
-11. [Setup your Project](#setup-your-project)
-12. [Transfer](#transfer)
-13. [Unlock Account](#unlock-account)
-
 ## Intellj Plugin Overview
 
 IntelliJ by Jetbrains is one of the most popular Java IDEs avaiable. It comes with a lot of built-in tool and debuggers to help you developer Java applications. [It's also free](https://www.jetbrains.com/idea/). To compliment IntelliJ, a plugin has been developed to enable contract developers to create Java contracts using IntelliJ and the Aion virtual machine.
