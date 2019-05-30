@@ -1,13 +1,13 @@
 ---
 title: Hosting Services
-description: Get up and running quickly by using an Aion node provided by a hosting service. There are two services currently offering free nodes for you to use, Nodesmith and Blockdaemon.
+description: Get up and running quickly by using an Aion node provided by a hosting service. There's no need to install anything or set up any software. Just grab a URL and you're good to go. There are two services currently offering free nodes for you to use, Blockdaemon and Nodesmith.
 ---
 
-Don't want to spin up or build your own node? Hosting services are available to do the legwork for you.
+Don't want to spin up or build your own node? Hosting services are available to do the legwork for you so you can get your Dapp up and running quickly.
 
 ## Services
 
-We've partnered with a Blockdaemon and Nodesmith to help you get on the Aion network as fast as possible! Take a look at both options and pick the best one for your needs.
+We've partnered with Blockdaemon and Nodesmith to help you get on the Aion network as fast as possible! Take a look at both options and pick the best one for your needs.
 
 ### Nodesmith
 
@@ -25,4 +25,6 @@ Spin up your own private node incredibly quickly. Instead of having to deal with
 
 There are some limitations with most node hosting providers. The main one being that they do not mine transactions. They just hold a complete copy of the ledger. Because of this, node hosting services do not contribute to the hash power of the Aion network.
 
-Another limitation is that hosting providers often place soft limits on the amount of calls you can place to each node. This is to prevent spam and DDoS attacks on the hosting providers.
+Another limitation is that hosting providers often place soft limits on the number of calls you can place to each node. This is to prevent spam and DDoS attacks on the hosting providers.
+
+Make sure to check with each hosting provider to see what the specific limitations of each platform are. Different hosting providers have different limitations.

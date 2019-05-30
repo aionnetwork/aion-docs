@@ -1,17 +1,9 @@
 ---
 title: Java
-description: The Java implementation of the Aion kernel is the original implementation.
+description: The Java implementation of the Aion kernel. You can interact with this kernel directly through the JSON RPC or Protobuff API layers. Further documentation regarding the kernel can be found on the Aion Java Kernel Github repository at https://github.com/aionnetwork/aion
 ---
 
-1. [Installation](#installation)
-2. [Further Documentation](#further-documentation)
-3. [Get Involved](#get-involved)
-
-Aion has lots of different aspects and products, and everything can get a bit confusing. If you think of the Aion network like a train, the kernel is the engine. It's the thing that does all the hard work, computing all the processes, and pulling the rest of the network along.
-
-Things like the Aion Virtual Machine, local nodes, and third-party hosting services all use the Aion kernel. They are just different methods of hosting the same thing. The [Aion White Papers](https://aion.network/developers/#whitepapers) provide a deeper look into what the kernel is and how it works.
-
-This section of the docs goes over how to configure and interact with the kernel directly. If you're looking to develop the Aion kernel itself, or mine on Aion, then this section is for you! If you're just looking to create some Dapps, then you can leave this section for now.
+This section of the docs goes over how to configure and interact with the Java kernel directly. If you're looking to develop the Aion kernel itself, or how to setup and Aion node, then this section is for you! If you're just looking to create some Dapps, then you can leave this section for now and head on over to the [fundamentals section](/developers/fundamentals).
 
 ## Installation
 
@@ -22,7 +14,7 @@ There are two methods for installing the Java kernel on your machine:
 
 ### Native Ubuntu Install
 
-This section walks you through installing the kernel from a package. You can either generate your own package by [building the kernel from source](build-from-source), or you can download a [pre-built package from Github](https://github.com/aionnetwork/aion/releases).
+This section walks you through installing the kernel from a package. You can either generate your own package by building the kernel from source, or you can download a [pre-built package from Github](https://github.com/aionnetwork/aion/releases).
 
 We have used the latest build as an example on this page. If you want to use a different version of the Aion kernel you will need to change the commands to fit the version you are using. We do not recommend always using the latest Aion kernel version.
 

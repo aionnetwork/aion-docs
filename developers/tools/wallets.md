@@ -1,6 +1,6 @@
 ---
 title: Wallets
-description: Lorem ipsum dolor amet swag flexitarian franzen ugh. Health goth everyday carry whatever yr authentic ramps messenger bag master cleanse fashion axe scenester post-ironic.
+description: Store and manage your coins and tokens with a wallet. There are plenty of options to choose from, each with their own set of useful features.
 ---
 
 1. [Mobile Wallets](#mobile-wallets)
