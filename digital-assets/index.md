@@ -31,7 +31,7 @@ An example of a token that is used for economic purposes is Bitcoin. Bitcoin is 
 
 The opposite of an economically based digital asset is one that is rights-based, giving the holder particular rights to either access or interact with something. Passports and driver's licenses are real-world examples of this, they give you the right to enter a country, or the right to drive a vehicle. Something to keep in mind is that not all of these assets may not be created equal. Your driver's license may allow you to drive trucks, cars, and motorbikes, whereas mine only lets me drive a car.
 
-## Pick Two
+### Pick Two
 
 These four options from the basis of every single digital asset:
 
@@ -46,24 +46,15 @@ You must decide, based on the needs of your application, what kind of token you 
 
 While the above four options form the basis of any digital asset, there are further design considerations you need to consider.
 
-### Supply
-
-How many tokens are you going to create? Is the supply going to be limited like the US dollar, or are you going to constantly produce new tokens?
-
-### Expiry
-
-Are the tokens going to _live_ forever, or will the be destroyed at a certain point? In many countries, gift certificates and coupons have an expiry date attached to them. Currency generally doesn't have an expiry date.
-
-### Transferabililty
-
-Can users transfer and trade their tokens? Or is each token assigned to only one user?
-
-### Rights
-
-What kind of rights are associated with this token? The right to drive a car, or enter a country, or vote?
+| Feature | Description |
+| --- | --- |
+| Supply | How many tokens are you going to create? Is the supply going to be limited like the US dollar, or are you going to constantly produce new tokens? |
+| Expiry | Are the tokens going to _live_ forever, or will the be destroyed at a certain point? In many countries, gift certificates and coupons have an expiry date attached to them. Currency generally doesn't have an expiry date. |
+| Transferability | Can users transfer and trade their tokens? Or is each token assigned to only one user? |
+| Rights | What kind of rights are associated with this token? The right to drive a car, or enter a country, or vote? |
 
 ## Create Your Digital Assets
 
 You should now have an idea of the kind of asset you need to create. Use the form below to create a template to launch your asset with:
 
-{{ shortcode "digital-asset-creator" }}
+{{< digital-asset-creator >}}
