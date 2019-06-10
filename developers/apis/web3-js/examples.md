@@ -34,38 +34,38 @@ Once you're connected to a node, you can run something like `console.log(web3)` 
 You can return a variable held within a contract using Aion Web3.js. Here is the code we will be using for this example:
 
 ```javascript
-    const web3 = new Web3(new Web3.providers.HttpProvider("NODE_URL"));
-    const account = web3.eth.accounts.privateKeyToAccount("PRIVATE_KEY");
-    const contractAddress = "CONTRACT_ADDRESS";
-    const methodName = "METHOD_NAME";
+const web3 = new Web3(new Web3.providers.HttpProvider("NODE_URL"));
+const account = web3.eth.accounts.privateKeyToAccount("PRIVATE_KEY");
+const contractAddress = "CONTRACT_ADDRESS";
+const methodName = "METHOD_NAME";
 
-    async function methodCall() {
+async function methodCall() {
 
-        // Create the data object.
-        let data = web3.avm.contract
-            .method(methodName)
-            .inputs(["int"], [13])
-            .encode();
+    // Create the data object.
+    let data = web3.avm.contract
+        .method(methodName)
+        .inputs(["int"], [13])
+        .encode();
 
-        // Create the transaction object.
-        const transactionObject = {
-            from: account.address,
-            to: contractAddress,
-            data: data,
-            gasPrice: 10000000000,
-            gas: 2000000,
-            type: "0x1"
-        };
+    // Create the transaction object.
+    const transactionObject = {
+        from: account.address,
+        to: contractAddress,
+        data: data,
+        gasPrice: 10000000000,
+        gas: 2000000,
+        type: "0x1"
+    };
 
-        // Send the transaction object to the network and wait for a response.
-        let initialResponse = await web3.eth.call(transactionObject);
+    // Send the transaction object to the network and wait for a response.
+    let initialResponse = await web3.eth.call(transactionObject);
 
-        // Decode the reponse.
-        let avmResponse = await web3.avm.contract.decode("string", initialResponse);
+    // Decode the reponse.
+    let avmResponse = await web3.avm.contract.decode("string", initialResponse);
 
-        // Print the response to the console.
-        console.log(avmResponse);
-    }
+    // Print the response to the console.
+    console.log(avmResponse);
+}
 ```
 
 To run this code you need to enter these 4 things on the top 4 lines:
