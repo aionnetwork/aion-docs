@@ -1,5 +1,5 @@
 ---
-title: Ethers.js
+title: JSON RPC
 ---
 
 ## About
