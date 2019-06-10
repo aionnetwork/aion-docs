@@ -7,7 +7,7 @@ The Aion specific framework can be [found on Github](https://github.com/aionnetw
 
 ## How Web3.js Works
 
-As previously mentioned, nodes on the Aion network can only be interacted with through JSON RPC. While this protocol is increadibly sturdy and robust, it can be a bit cumbersome to work with, espeically when you're making repetative calls. To abstract away from this issue, developers can use Web3.js to make those calls for them, while using a nice wrapper around the JSON RPC calls. This works through the use of a `Web3` object.
+As previously mentioned, nodes on the Aion network can only be interacted with through JSON RPC. While this protocol is incredibly sturdy and robust, it can be a bit cumbersome to work with, especially when you're making repetitive calls. To abstract away from this issue, developers can use Web3.js to make those calls for them, while using a nice wrapper around the JSON RPC calls. This works through the use of a `Web3` object.
 
 Take this structure as an example:
 
@@ -24,4 +24,4 @@ Both the `web3.min.js` file and the `script.js` file are included at the bottom 
 
 ## API Documentation
 
-The API documentation is hosted on the [`aion_web3` Github Wiki pages](https://github.com/aionnetwork/aion_web3/wiki).
+The API documentation is hosted on the [`aion_web3` Github Wiki pages](https://github.com/aionnetwork/aion_web3/wiki). Checkout the [Examples section](/developers/apis/web3-js/examples) to find out how to interact with the Aion Web3 API.
