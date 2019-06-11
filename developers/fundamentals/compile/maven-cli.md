@@ -2,23 +2,24 @@
 title: Maven CLI
 ---
 
-Compile your contract: `mvn clean install`
+## Define contract entry point 
+Define the contract entry point by setting the contract main class in the `pom.xml`.  For example:
+```text
+...
+<contract.main.class>aion.HelloAVM</contract.main.class>
+...
+```
+Here, `aion` is the package name and `HelloAVM` is the contract main class name.
 
-This command is the same for both local and remote deployment. Regardless of where your contract is going to end up, you must compile it on your local machine first. There is no way to compile your contract using a remote node.
+## Build and compile the contract
 
-To compile your contract, run the following command from the same location as your `pom.xml` file:
-
-```bash
+Run the following in the terminal to build and compile the contract:
+```sh
 mvn clean install
-
-> [INFO] Scanning for projects...
->
-> ...
->
-> [INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ hello-world ---
-> [INFO] Building jar: /Users/aion/code/hello-world/target/hello-world-1.0-SNAPSHOT.jar
->
-> ...
 ```
 
-This command is actually two standard Maven commands: `clean` and `install`. Once the process has finished, you will have a `.jar` application in the `targets` folder.
+If **build success**, you will find three files under project's target folder:
+* `original-*.jar`: .jar after build. In the build process, it verifies all the classes used in the contract are **JCL Whiltelisted** and all the JUnit tests pass.
+* `*.jar`: Post-processed jar after build. Post processes include: processing *@Initializable* anootated variables and *@Callable* annotated function through ABI Compiler; optimizing original .jar content. 
+* `*.abi`: Contract ABI information, defines how you call functions in a contract for the AVM and get data from the blockchain. 
+
