@@ -2,21 +2,21 @@
 title: Maven CLI
 ---
 
-## Define contract entry point 
-Define the contract entry point by setting the contract main class in the `pom.xml`.  For example:
-```text
-...
-<contract.main.class>aion.HelloAVM</contract.main.class>
-...
-```
-Here, `aion` is the package name and `HelloAVM` is the contract main class name.
+It  takes two steps for you to build and compile your Java smart contract:
 
-## Build and compile the contract
+1. Define the contract entry point by setting the contract main class in the `pom.xml`.  
+    For example:
+    ```text
+    ...
+    <contract.main.class>aion.HelloAVM</contract.main.class>
+    ...
+    ```
+    Here, `aion` is the package name and `HelloAVM` is the contract main class name.
 
-Run the following in the terminal to build and compile the contract:
-```sh
-mvn clean install
-```
+2. Run the following command in the terminal to build and compile the contract:
+    ```sh
+    mvn clean install
+    ```
 
 If **build success**, you will find three files under project's target folder:
 * `original-*.jar`: .jar after build. In the build process, it verifies all the classes used in the contract are **JCL Whiltelisted** and all the JUnit tests pass.
