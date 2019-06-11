@@ -12,7 +12,7 @@ You can setup your account and rpc endpoint as environment variables, or you can
 1. The aion4j plugin needs the url of rpc endpoint to talk an Aion network.
     * **Option 1**: Setup RPC Endpoint in `pom.xml`
         * Use a node
-            ```sh
+            ```xml
             ...
             <profile>
             <id>remote</id>
@@ -23,7 +23,7 @@ You can setup your account and rpc endpoint as environment variables, or you can
             ...
             ```
         * Use NodeSmith(node hosting service) API endpoint
-            ```sh
+            ```xml
             ...
             <profile>
             <id>remote</id>
