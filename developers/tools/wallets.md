@@ -3,10 +3,6 @@ title: Wallets
 description: Store and manage your coins and tokens with a wallet. There are plenty of options to choose from, each with their own set of useful features.
 ---
 
-1. [Mobile Wallets](#mobile-wallets)
-2. [Offline Wallets](#offline-wallets)
-3. [Online Wallets](#online-wallets)
-
 Wallets allow you to store your native Aion tokens and other cryptocurrencies locally on your computer, and are sometimes called offline wallets. Other wallets allow you to keep your tokens online and are always accessible. However, these are generally seen as slightly less secure than locally stored wallets. Finally, there are mobile wallets that help bridge the gap between security and usability.
 
 ## Mobile Wallets
