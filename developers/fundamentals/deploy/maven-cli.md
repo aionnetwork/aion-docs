@@ -109,3 +109,13 @@ You should get a transaction hash as an output like:
 ```
 where `0x534ddf6e76699b74c0de650b1aae05c963aa5a850f58d4c68d0ab241ffcfecf2` is your transaction hash.
 
+## Get Contract Address
+
+Get the `contract address` of the contract you just deployed by getting the receipt of your `transaction hash`. Aion4j maven plugin can auto-fill result cache for remote kernel, which means it will stores the transaction hash of the last transaction. [Read more here.](https://github.com/bloxbean/aion4j-maven-plugin/wiki/Client-side-signing-with-private-key-&-property-auto-fill-with-result-cache#2-property-auto-fill-with-result-cache-for-remote-kernel)
+
+Run the following to get the receipt of the most recent transaction:
+
+```sh
+mvn aion4j:get-receipt -Premote
+```
+
