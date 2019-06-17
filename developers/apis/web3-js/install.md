@@ -1,12 +1,8 @@
 ---
 title: Web3.js
 description: There are two ways to install the Aion version of Web3.js. Using the minified JavaScript file from the Aion Web3.js repository is the fastest and easiest way to get up and running with Web3.js. This method is also the easiest way to link up a website frontend. However, if you want to deal with the blockchain in a more backend-way, then you should look at using the Node JS console section.
+toc: true
 ---
-
-There are two ways to install the Web3.js library into your project:
-
-1. [Minified JavaScript File](#minified-javascript-file)
-2. [Node JS Console](#node-js-console)
 
 ## Minified JavaScript File
 
