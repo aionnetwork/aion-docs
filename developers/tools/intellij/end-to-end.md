@@ -4,8 +4,6 @@ description: The Aion4j plugin for IntelliJ is packed with features that can hel
 toc: true
 ---
 
-We're going to be running through how to write, test, deploy, and call a Java contract using IntelliJ and the Aion plugin.
-
 ## Prerequisites
 
 First up, you need [IntelliJ](https://www.jetbrains.com/idea/) and the [Aion4j](/developers/tools/intellij/install-the-plugin) plugin installed. Take a look at those sections for steps on how to get them installed. You'll also need a node to connect to if you want to deploy your contract to the testnet, but we'll walk you through that bit.
