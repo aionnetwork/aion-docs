@@ -1,5 +1,6 @@
 ---
 title: Maven CLI
+toc: true
 ---
 
 It  takes two steps for you to build and compile your Java smart contract:

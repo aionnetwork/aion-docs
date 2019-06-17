@@ -1,21 +1,24 @@
 ---
 title: Intellij
+toc: true
 ---
+It  takes two steps for you to build and compile your Java smart contract in IntelliJ:
 
-In the Aion4j plugin for IntelliJ, compilation and deployment happen at the same time.
+1. Define the contract entry point by setting the contract main class in the `pom.xml`.  
+ ![Define the entry point](/developers/fundamentals/compile/images/contract-entry-point.png)
+Here, `com.aion` is the package name and `HelloAVM` is the contract main class name.
 
-## Local
+2. Run the following command in the terminal to build and compile the contract:
 
-Run this command by right clicking anywhere on the contract and selecting **Aion Virtual Machine** > **Embedded** > **Deploy**.
+    ```sh
+    mvn clean install
+    ```
 
-![Deploy to Embedded AVM](/developers/fundamentals/compile/images/deploy-to-embedded.gif)
+    ![compile the contract](/developers/fundamentals/compile/images/intellij-compile.gif)
 
-You should see a notice when the contract has successfully deployed:
-
-![Successful Deployment Notice](/developers/fundamentals/compile/images/successful-deployment-notice.png)
-
-## Remote
-
-Run this command by right clicking anywhere on the contract and selecting **Aion Virtual Machine** > **Remote** > **Deploy**. You will be prompted to enter a [node URL](configure#remote-kernel) and [deployer address](configure#remote-kernel) if you haven't filled them in already.
-
-This command will compile your contract before attempting to deploy, unless you have specified that you do not want this to happen in the [configuration options](configure#remote-kernel).
+    If **build success**, you will find three files under project's target folder:
+    * `original-*.jar`: .jar after build. In the build process, it verifies all the classes used in the contract are **JCL Whiltelisted** and all the JUnit tests pass.
+    * `*.jar`: Post-processed jar after build. Post processes include: processing *@Initializable* anootated variables and *@Callable* annotated function through ABI Compiler; optimizing original .jar content.
+    * `*.abi`: Contract ABI information, defines how you call functions in a contract for the AVM and get data from the blockchain.
+  
+    ![result](/developers/fundamentals/compile/images/jars-and-abi.png)

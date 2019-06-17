@@ -1,8 +1,9 @@
 ---
 title: Maven CLI
+toc: true
 ---
 
-### Prerequisites
+## Prerequisites
 * Private key to an Aion account. (Check how to create a new account here.)
 * Enough Balance. (Get Aion test tokens here.)
 * A rpc endpoint. (Set up your own node or using Aion's node hosting serives.)
@@ -53,7 +54,7 @@ You can setup your account and rpc endpoint as environment variables, or you can
         set pk=0xa01234567890abcdefghijk...
         ```
  
-### Deploy
+## Deploy
 *Note: You can deploy your contract to the *embedded AVM* and test it before you deploy the contract to the real network. [Read more](#).
 
 We will deploy the following contract as an example.
