@@ -3,8 +3,6 @@ title: Ethers.js
 description: Aion nodes only understand JSON RPC, and have no idea what to do with high-level languages like Java, Python, on Solidity. Since JSON RPC can be a bit cumbersome to work with, developers can use the Ethers.js framework to deal with blockchain interactions. Ethers.js was originally created for use on Ethereum-based blockchains. The creator of Ether.js has since expanded the framework to include the Aion network.
 ---
 
-The ethers.js library aims to be a complete and compact library for interacting with blockchain ecosystems. It was originally designed for use with ethers.io and the Ethereum blockchain. It has since expanded into a much more general-purpose library.
-
 Some of the features of Ethers.js include:
 
 - Keep your private keys in your client, safe and sound.
@@ -13,7 +11,7 @@ Some of the features of Ethers.js include:
 - Meta-classes create JavaScript objects from any contract ABI, including ABIv2 and Human-Readable ABI.
 - Connect to Aion nodes through `JSON-RPC`.
 - Tiny (~`88kb` compressed; `284kb` uncompressed).
-- Large collection of test cases which are maintained and added to.
+- A large collection of test cases which are maintained and added to.
 - Fully TypeScript ready, with definition files and full TypeScript source.
 - MIT License (including all dependencies), making it completely open source to do with as you please.
 
@@ -36,4 +34,4 @@ Both the `ethers.min.js` file and the `script.js` file are included at the botto
 
 ## API Documentation
 
-Since Ether.js has been developers by a community member, the [documentation is contained on their third-party site](https://docs.ethers.io/ethers.js/html/). Checkout the [examples section](/developers/apis/ethers-js/examples) for more details information on how to use Ethers.js with Aion.
+Since Ether.js has been developers by a community member, the [documentation is contained on their third-party site](https://docs.ethers.io/ethers.js/html/). Check out the [examples section](/developers/apis/ethers-js/examples) for more details information on how to use Ethers.js with Aion.
