@@ -5,10 +5,10 @@ toc: true
 It  takes two steps for you to build and compile your Java smart contract in IntelliJ:
 
 1. Define the contract entry point by setting the contract main class in the `pom.xml`.  
- ![Define the entry point](/developers/fundamentals/compile/images/contract-entry-point.png)
+ ![Define the entry point](/developers/fundamentals/compile/images/entry-point.png)
 Here, `com.aion` is the package name and `HelloAVM` is the contract main class name.
 
-2. Run the following command in the terminal to build and compile the contract:
+1. Run the following command in the terminal to build and compile the contract:
 
     ```sh
     mvn clean install
