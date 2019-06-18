@@ -7,15 +7,23 @@ description: This space is for developers to get their hand dirty working on the
 
 Blockchain applications follow a 5 step process: `write`, `test`, `compile`, `deploy`, `call`.
 
+---
+
 ### Write
 
 First up is to write your contract. This is the most creative and individual part of the _blockchain development_ process. Since Java is already a widely used programming language, most text editors have syntax support built in. Editors like VSCode, Sublime, and Atom all have great Java linters that help you notice where there might be errors in your code. There's also a bunch of great IDEs available: IntelliJ, Eclipse, and NetBeans are the top three.
 
 {{< developers-quickstart/write >}}
 
+---
+
 ### Test
 
 Next up is testing. Because of the nature, speed, and permanency of blockchains, making changes to an application after deployment is either incredibly difficult or impossible. So you want to make sure that the application you're creating is going to work, and won't fail at some point in the future. The Aion ecosystem comes with a suite of tests straight out of the box. Take a look at the [Test and Debug](/developers/test-and-debug) section for more details.
+
+{{< developers-quickstart/test >}}
+
+---
 
 ### Compile
 
