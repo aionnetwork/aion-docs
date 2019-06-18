@@ -5,16 +5,21 @@ toc: true
 
 It  takes two steps for you to build and compile your Java smart contract:
 
-1. Define the contract entry point by setting the contract main class in the `pom.xml`.  
-    For example:
+## Define Main Class
+
+You need to define the contract entry point by setting the contract main class in the `pom.xml`.  
+
+For example:
     ```text
     ...
     <contract.main.class>aion.HelloAVM</contract.main.class>
     ...
     ```
-    Here, `aion` is the package name and `HelloAVM` is the contract main class name.
+Here, `aion` is the package name and `HelloAVM` is the contract main class name.
 
-2. Run the following command in the terminal to build and compile the contract:
+
+## Build and Compile
+Run the following command in the terminal to build and compile the contract:
     ```sh
     mvn clean install
     ```

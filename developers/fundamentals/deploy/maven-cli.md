@@ -4,10 +4,11 @@ toc: true
 ---
 
 ## Prerequisites
-* Private key to an Aion account. (Check how to create a new account here.)
-* Enough Balance. (Get Aion test tokens here.)
-* A rpc endpoint. (Set up your own node or using Aion's node hosting serives.)
-* AVM maven project and compiled contract *.jar*.
+
+- Private key to an Aion account. (Check how to create a new account here.)
+- Enough Balance. (Get Aion test tokens here.)
+- A rpc endpoint. (Set up your own node or using Aion's node hosting serives.)
+- AVM maven project and compiled contract *.jar*.
 
 You can setup your account and rpc endpoint as environment variables, or you can jump to [Deploy](#deploy) section and setup variables upon deployment.
 1. The aion4j plugin needs the url of rpc endpoint to talk an Aion network.
