@@ -8,5 +8,3 @@ homepage_content:
         text: Start Rebuilding
         link: quickstart
 ---
-
-Mixtape vexillologist air plant irony, woke lo-fi ennui master cleanse knausgaard put a bird on it sustainable. Man bun yr hoodie, hashtag whatever cred migas gochujang. Chambray echo park migas cornhole ugh air plant shoreditch tacos. Narwhal glossier affogato before they sold out, poke taiyaki locavore butcher vaporware seitan. Schlitz iPhone 8-bit whatever. Bicycle rights pour-over umami tumblr, banjo paleo tousled green juice next level ugh. Poke la croix palo santo, vaporware pinterest lyft williamsburg snackwave photo booth banjo tousled. 
