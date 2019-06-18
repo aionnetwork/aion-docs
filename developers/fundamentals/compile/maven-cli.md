@@ -11,7 +11,7 @@ You need to define the contract entry point by setting the contract main class i
 
 For example:
 
-```text
+```xml
 ...
 <contract.main.class>aion.HelloAVM</contract.main.class>
 ...
