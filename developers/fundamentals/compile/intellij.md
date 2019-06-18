@@ -9,6 +9,7 @@ It  takes two steps for you to build and compile your Java smart contract in Int
 You need to define the contract entry point by setting the contract main class in the `pom.xml`.  
 
  ![Define the entry point](/developers/fundamentals/compile/images/entry-point.png)
+
 Here, `com.aion` is the package name and `HelloAVM` is the contract main class name.
 
 ## Build and Compile
