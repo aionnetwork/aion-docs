@@ -57,4 +57,4 @@ While the above four options form the basis of any digital asset, there are furt
 
 You should now have an idea of the kind of asset you need to create. Use the form below to create a template to launch your asset with:
 
-{{< digital-asset-creator >}}
+{{< digital-assets/ats-creator >}}
