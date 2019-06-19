@@ -148,14 +148,16 @@ You can get the `contract address` of the contract by getting the receipt of you
 Run the following to get the receipt of the most recent transaction:
 
 ```sh
-mvn aion4j:get-receipt -Premote
+mvn aion4j:get-receipt -Dtail -Dsilent -Premote
 ```
 
 Or get the receipt of a specific transaction hash:
 
 ```sh
-mvn aion4j:get-receipt -DtxHash=0x534ddf6e76699b74c0de650b1aae05c963aa5a850f58d4c68d0ab241ffcfecf2 -Premote
+mvn aion4j:get-receipt -DtxHash=0x534ddf6e76699b74c0de650b1aae05c963aa5a850f58d4c68d0ab241ffcfecf2 -Dtail -Dsilent -Premote
 ```
+
+By including `-Dtail -Dsilent`, it will pull the receipt every 10s until the transaction is mined, and only necessary log messages will be shown.
 
 The receipt looks like:
 
@@ -182,4 +184,4 @@ The receipt looks like:
 }
 ```
 
-where `0xa0ceaa5b83fe4a8911928072b7e63ee32d880bef82fcbf91747721cfdd528db2` is your contract address.
+where `status: 0x1` means the contracts is deployed successfully and `0xa0ceaa5b83fe4a8911928072b7e63ee32d880bef82fcbf91747721cfdd528db2` is the contract address here.
