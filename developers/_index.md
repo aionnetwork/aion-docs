@@ -1,6 +1,6 @@
 ---
 title: Developer Quickstart
-description: New to Blockchain Development and don't know where to start? Follow this quickstart through understand the general workflow of blockchain development.
+description: New to Blockchain Development and don't know where to start? Follow this quickstart through to get a general understanding of the blockchain development workflow.
 ---
 
 ## Write & Compile
@@ -15,7 +15,7 @@ First up is writing and compiling your contract. Compiling your software before 
 
 ## Test
 
-Next up is testing. Because of the nature, speed, and permanency of blockchains, making changes to an application after deployment is either incredibly difficult or impossible. So you want to make sure that the application you're creating is going to work, and won't fail at some point in the future. The Aion ecosystem comes with a suite of tests straight out of the box. Take a look at the [Test and Debug](/developers/test-and-debug) section for more details.
+Next up is testing. Because of the nature, speed, and permanency of blockchains, making changes to an application after deployment is either incredibly difficult or impossible. So you want to make sure that the application you're creating is doing what you want it to do. The Aion ecosystem comes with a suite of tests straight out of the box. Take a look at the [Test and Debug](/developers/test-and-debug) section for more details.
 
 > The test below checks whether the `getString()` method in our code above actually works. Hit the **Run Test** button below to see the results of the test.
 
@@ -25,21 +25,17 @@ Next up is testing. Because of the nature, speed, and permanency of blockchains,
 
 ## Deploy
 
-This section comes in two phases:
-
-- Loading an account with test coins.
-- Deploying the application.
+This section comes in two phases: loading an account with some test coins, and actually deploying the application. All deployments and transactions on the Aion network require coins or tokens in order to process. Luckily, because we're on a test network, these tokens don't hold any actual value, so we can get some for free!
 
 ### Load an Account
 
-To deploy an application to a blockchain, you need to pay the network. So you need to create an account, add funds into it, and then you can use that account to deploy your application. The easiest way to create an account is to use an online browser wallet like [AIWA](/developers/tools/wallets) and [Syna](/developers/tools/wallets). Once you've got your account you can add funds to it. If you're just testing your application, you can use a test network like Mastery. Since these
-test networks don't have any real value, you can get free _test tokens_ from _faucets_.
+> Click the **Create Account** button below to generate a brand new account! If you'd like to see more information about the account (such a `nonce` or `private-key`), take a look in the browser console. Once you've got an account, click **Get Funds** to grab some free _test tokens_ from the network.
 
 {{< developers-quickstart/load-an-account >}}
 
 ### Deploy the Application
 
-Once you've got funds in your account you can deploy your application. The most popular methods are through the Aion IntelliJ plugin, through the Maven CLI tool, or through a JavaScript framework like Web3.js or Ethers.js.
+> Once you’ve got funds in your account you can deploy your application! Click the **Deploy** button to send your application to the network.
 
 {{< developers-quickstart/deploy >}}
 
@@ -47,14 +43,16 @@ Once you've got funds in your account you can deploy your application. The most 
 
 ## Call
 
-Now that your application is on the blockchain you can call it! The easiest way is either through IntelliJ or the Maven CLI tool. If you want to link up your blockchain application to a frontend, you can use a JavaScript framework like Ethers.js or Web3.js. These frameworks act as the middle man between your frontend and the blockchain.
+Now that everything's stored on the network, we can ask the blockchain what the value of the `myStr` variable is. If everything went correctly, it should be the value that you set back in the [Write & Compile step](#write-and-compile).
+
+> Now that your application is on the blockchain you can call it! Click the call button to see the response from the network.
 
 {{< developers-quickstart/call >}}
 
 ---
 
-## That's It
+## Next Steps
 
-That's pretty much the whole process! Depending on which tools you use, and where you want to deploy your application to, there may be some changes. For example, if you're deploying an application to the main Aion network, then you'll need to get actual `AION` coin from an exchange.
+That's pretty much the whole process! Next up is to try your hand at doing all this manually. Checkout the [IntelliJ](/developers/tools/intellij/end-to-end) or [Maven CLI](/developers/tools/maven-cli/end-to-end) end-to-end guides to get a full run-down on how to use those tools.
 
 {{< developers-quickstart/scripts >}}
