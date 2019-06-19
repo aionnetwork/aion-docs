@@ -5,10 +5,10 @@ toc: true
 
 ## Prerequisites
 
-- Private key to an Aion account. (Check how to create a new account here.)
-- Enough Balance. (Get Aion test tokens here.)
-- A rpc endpoint. (Set up your own node or using Aion's node hosting serives.)
-- AVM maven project and compiled contract *.jar*.
+- [Aion4j AVM IntelliJ Plugin](/developers/tools/intellij/install-the-plugin/)
+- Private key to an Aion account that has sufficient balance.
+- A rpc endpoint.
+- AVM maven project and [compiled](/developers/fundamentals/compile/intellij/) contract *.jar*.
 
 ## Setup Node URL and Account
 
@@ -111,6 +111,7 @@ public class HelloAVM
 
 We need to pass in two arguments into the contract, *myStr* and *adminAddress*,  upon deployment. Learn about [deployment initialization](/developers/fundamentals/contracts/initialization/) if you are not familiar with it.
 
+Run following command in the directory where your `pom.xml` is.
 - If you **have** setup your *rpc endpoint* and *private key* as environment variables already, run:
 
     ```sh
