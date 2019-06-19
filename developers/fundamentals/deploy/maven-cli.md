@@ -184,4 +184,4 @@ The receipt looks like:
 }
 ```
 
-where `status `0xa0ceaa5b83fe4a8911928072b7e63ee32d880bef82fcbf91747721cfdd528db2` is the contract address here.
+where `status: 0x1` means the contracts is deployed successfully and `0xa0ceaa5b83fe4a8911928072b7e63ee32d880bef82fcbf91747721cfdd528db2` is the contract address here.
