@@ -135,6 +135,6 @@ where:
 
 - Check the `status` in your receipt, where `0x1` means successfully deployed, and then you can find your contract address in the receipt.
   
-    ```sh
-    "contractAddress": "0xa0a907bee91602f464fd656a69489e73239614ba07bfb153e8857147eb9cef3c"
-    ```
+        ```sh
+        "contractAddress": "0xa0a907bee91602f464fd656a69489e73239614ba07bfb153e8857147eb9cef3c"
+        ```
