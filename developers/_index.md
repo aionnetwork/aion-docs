@@ -25,7 +25,7 @@ Next up is testing. Because of the nature, speed, and permanency of blockchains,
 
 ---
 
-### Compile
+### Deploy
 
 This section comes in two phases:
 
@@ -37,13 +37,19 @@ This section comes in two phases:
 To deploy an application to a blockchain, you need to pay the network. So you need to create an account, add funds into it, and then you can use that account to deploy your application. The easiest way to create an account is to use an online browser wallet like [AIWA](/developers/tools/wallets) and [Syna](/developers/tools/wallets). Once you've got your account you can add funds to it. If you're just testing your application, you can use a test network like Mastery. Since these
 test networks don't have any real value, you can get free _test tokens_ from _faucets_.
 
+{{< developers-quickstart/load-an-account >}}
+
 #### Deploy the Application
 
 Once you've got funds in your account you can deploy your application. The most popular methods are through the Aion IntelliJ plugin, through the Maven CLI tool, or through a JavaScript framework like Web3.js or Ethers.js.
 
+{{< developers-quickstart/deploy >}}
+
 ### Call
 
 Now that your application is on the blockchain you can call it! The easiest way is either through IntelliJ or the Maven CLI tool. If you want to link up your blockchain application to a frontend, you can use a JavaScript framework like Ethers.js or Web3.js. These frameworks act as the middle man between your frontend and the blockchain.
+
+{{< developers-quickstart/call >}}
 
 ### That's It
 
