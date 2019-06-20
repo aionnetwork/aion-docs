@@ -2,7 +2,7 @@
 title: Require
 ---
 
-Use[ Blockchain.require()](https://avm-api.aion.network/avm/blockchain#require(boolean%29) to add requirements or restrictions for an action to be executed. It checks the provided condition is true or not. If it is false, it triggers a[ revert](https://avm-api.aion.network/avm/blockchain#revert%28%29).
+Use [Blockchain.require()](https://avm-api.aion.network/avm/blockchain#require(boolean%29) to add requirements or restrictions for an action to be executed. It checks the provided condition is true or not. If it is false, it triggers a [revert](https://avm-api.aion.network/avm/blockchain#revert%28%29). This is sometimes called a `modifier`.
 
 ## Example Contract
 
