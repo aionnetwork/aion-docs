@@ -1,15 +1,9 @@
 ---
 title: ABI Types
-description: While AVM applications don't need to use the ABI, it is provided as a convenience for invoking methods within a specific DApp instance in a type-safe way.
+description: While Java blockchain appliactions don't need to use an ABI, they are handy if you're sharing a contract with other developers. If they don't have access to the original Java classes, developers can use the ABI to learn what methods and variables are available.
 ---
 
-The ABI(Application Binary Interface) allows the consumer to interface with the functionality in a pre-defined, strongly-typed, binary-level format. In our case, the DApp provides this functionality. Another account or Java smart contract can call this, with the arguments supplied within the transaction. The transaction data **contains** the information on which method to call, and the required arguments values.
-
-## Supported Data types
-
-The ABI describes how method names and data types (as either **method arguments** or ** return values**) are encoded.
-
-The ABI supports the following data types:
+The following ABI types are available when calling or interacting with a Java contract, form outside of the contract. No other types can be used. Each type can be used in an array, however only primative types can be used within two-dimensional arrays.
 
 | Type | Array Dimensions |
 | ---- | ---------------- |

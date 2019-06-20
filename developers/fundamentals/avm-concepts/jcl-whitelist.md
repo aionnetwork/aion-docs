@@ -1,17 +1,15 @@
 ---
 title: JCL Whitelist
+description: The Java Class List (JCL) whitelist is a list of classes that are available to your Java contract.
 ---
 
-The Java Class List (JCL) whitelist is a list of classes that are available to your Java contracts.
-
-Java classes that are not deterministic have been disabled within AVM due to restrictions and security concerns. While some of these classes are perfectly safe to use in regular Java applications, due to the nature and immutability of smart contracts, they can pose a signification threat to the blockchain network.
+Java classes that are not deterministic have been disabled within AVM due to restrictions and security concerns. While some of these classes are perfectly safe to use in regular Java applications, due to he nature and immutability of smart contracts, they can pose a signification threat to the blockchain network.
 
 Any usage of Java classes that is not listed in the following table will cause a deployment failure.
 
 ## Whitelisted Classes
 
 The following classes are available for use in your Java contracts.
-
 | Class | Method | Params | Static |
 | --- | --- | --- | --- |
 | `java.lang.IllegalAccessError` | `<init>` | `class java.lang.Throwable` | `false` |

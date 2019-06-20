@@ -1,15 +1,15 @@
 ---
 title: Initializable Fields
-description: The @Initializable annotation can be added onto field to indicate that the field is initialized as deployment arguments at the time of the contract deployment.
+description: The @Initializable annotation can be added onto a field to indicate that the field is initialized as deployment arguments at the time of the contract deployment.
 ---
 
 Initializable fields must follow these rules:
 
 - An `@Initializable` field must be static.
 - The type of an `@Initializable` field must be a supported [AVM ABI type](https://docs.aion.network/docs/abi).
-- Data supplied in the data field MUST be supplied as the **exact same order** as  `@Initializable` field are define. If not, an *ABIException* will be throw.
+- Data supplied in the data field must be supplied in the exact same order as the  `@Initializable` field are defined. If not, an _ABIException_ will be thrown.
 
-During deployment, the `static{}` (also called [<clinit> function](https://docs.oracle.com/javase/specs/jvms/se7/html/jvms-2.html#jvms-2.9)) will first try to decode the `data` field that is passed into the contract to set the values of the `@Initializable` fields.
+During deployment, the `static{}` (also called [`<clinit>`](https://docs.oracle.com/javase/specs/jvms/se7/html/jvms-2.html#jvms-2.9)) will first try to decode the `data` field that is passed into the contract to set the values of the `@Initializable` fields.
 
 It decodes the values in the **same order** as the fields marked `@Initializable` in the contract using an ABIDecoder ([Read More](https://docs.aion.network/docs/avm-abidecoder)).
 
@@ -23,7 +23,7 @@ private static int myInt;
 private static String myString;
 ```
 
-The `static{}` for class would look something like:
+The `static{}` for this class would look something like:
 
 ```java
 static {
