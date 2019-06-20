@@ -143,7 +143,7 @@ where `0x534ddf6e76699b74c0de650b1aae05c963aa5a850f58d4c68d0ab241ffcfecf2` is yo
 
 ## Get Contract Address
 
-You can get the `contract address` of the contract by getting the receipt of your `transaction hash`. Aion4j maven plugin can [auto-fill result cache](https://github.com/bloxbean/aion4j-maven-plugin/wiki/Client-side-signing-with-private-key-&-property-auto-fill-with-result-cache#2-property-auto-fill-with-result-cache-for-remote-kernel) for remote kernel, which means it will stores the transaction hash of the last transaction.
+You can get the `contract address` of the contract by getting the receipt of your `transaction hash`. Aion4j maven plugin can [auto-fill result cache](https://github.com/bloxbean/aion4j-maven-plugin/wiki/Client-side-signing-with-private-key-&-property-auto-fill-with-result-cache#2-property-auto-fill-with-result-cache-for-remote-kernel) for remote kernel, which means it stores the transaction hash of the last transaction.
 
 Run the following to get the receipt of the most recent transaction:
 

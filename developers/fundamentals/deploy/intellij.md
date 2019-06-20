@@ -106,7 +106,7 @@ A sample output of a successful deployment is:
 
 where:
 
-- `Transaction # :0x67cd924022968d58643568d10baa382551651bac18ce53e9a91b2e004f5a3cc7` is your transaction hash.
+- `Transaction # :0x67cd924022968d58643568d10baa382551651bac18ce53e9a91b2e004f5a3cc7` is the transaction hash.
 
 - Then it calls [`aion4j:get-receipt -Dtail -Dsilent`](/developers/tools/maven-cli/get-receipt/#cleaner-responses) automatically. And you will get the receipt when the transaction is mined:
   
@@ -135,6 +135,6 @@ where:
 
 - Check the `status` in your receipt, where `0x1` means successfully deployed, and then you can find your contract address in the receipt.
   
-        ```sh
-        "contractAddress": "0xa0a907bee91602f464fd656a69489e73239614ba07bfb153e8857147eb9cef3c"
-        ```
+  ```sh
+  "contractAddress": "0xa0a907bee91602f464fd656a69489e73239614ba07bfb153e8857147eb9cef3c"
+  ```
