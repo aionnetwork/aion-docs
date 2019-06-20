@@ -87,7 +87,7 @@ Right click on the method you want to send the transaction to, and select `Remot
 
  ![IntelliJ-txn](/developers/fundamentals/interact/images/intellij-contract-txn.gif)
 
- A sample output of a successful deployment is:
+ A sample output of a successful transaction is:
 
 ```sh
 ...
