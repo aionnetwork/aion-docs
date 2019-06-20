@@ -1,8 +1,7 @@
 ---
 title: Callable Functions
+description: Mark a function as callable from outside of the contract.
 ---
-
-Mark a function as callable from outside of the contract.
 
 In order for a function or method to be called from **outside** the contract (by a user on the blockchain, or from another contract) it needs to be annotated as `@Callable`.
 
