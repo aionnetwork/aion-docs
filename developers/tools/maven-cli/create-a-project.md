@@ -5,7 +5,7 @@ title: Create a Project
 Now that you've got Maven installed you can get started with your project. Run the following command in the directory where you want your code to be stored:
 
 ```bash
-mvn archetype:generate -DarchetypeGroupId=org.aion4j -DarchetypeArtifactId=avm-archetype -DarchetypeVersion=0.17
+mvn archetype:generate -DarchetypeGroupId=org.aion4j -DarchetypeArtifactId=avm-archetype -DarchetypeVersion=0.20
 ```
 
 You can find the [latest archetype version on Github](https://github.com/bloxbean/avm-archetype).
