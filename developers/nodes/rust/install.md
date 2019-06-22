@@ -1,6 +1,6 @@
 ---
 title: Rust
-description: The Rust implementation of the Aion kernel. You can interact with this kernel directly through the JSON RPC layer. Further documentation regarding the kernel can be found on the Aion Rust Kernel Github repository at https://github.com/aionnetwork/aionr
+description: The Rust implementation of the Aion kernel. You can interact with this kernel directly through the JSON RPC layer. Further documentation regarding the kernel can be found on the Aion Rust Kernel GitHub repository at https://github.com/aionnetwork/aionr
 ---
 
 There are two methods for installing the Rust kernel on your machine:
@@ -12,7 +12,7 @@ There are two methods for installing the Rust kernel on your machine:
 
 {{< youtube IsAdOz5vPhk >}}
 
-This section walks you through installing the kernel from a package. You can either generate your own package by building the kernel from source, or you can download a [pre-built package from Github](https://github.com/aionnetwork/aionr/releases).
+This section walks you through installing the kernel from a package. You can either generate your own package by building the kernel from source, or you can download a [pre-built package from GitHub](https://github.com/aionnetwork/aionr/releases).
 
 #### System Requirements
 

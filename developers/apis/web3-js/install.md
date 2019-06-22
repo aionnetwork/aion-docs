@@ -8,7 +8,7 @@ toc: true
 
 This is the easiest option since it doesn't require you to have NPM install.
 
-1\. Go to the `aion_web3` Github repository [releases page](https://github.com/aionnetwork/aion_web3/releases).
+1\. Go to the `aion_web3` GitHub repository [releases page](https://github.com/aionnetwork/aion_web3/releases).
 
 2\. Find the latest release and download the `web3.min.js` file.
 
@@ -59,7 +59,7 @@ hash_output.textContent = hashed_message;
 
 Follow this process if you want to add Web3.js into a node project, or you want to use the Web3.js console.
 
-1\. Clone the `aion_web3` Github repository:
+1\. Clone the `aion_web3` GitHub repository:
 
 ```bash
 git clone https://github.com/aionnetwork/aion_web3
