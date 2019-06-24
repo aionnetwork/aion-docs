@@ -1,7 +1,6 @@
 ---
 title: Examples
 description: Outlined on this page are some examples on how to use Ethers.js on the Aion network. These examples have been designed to be copy-and-pasteable into your existing code. If you have some suggestion for further examples to include here, click on the GitHub icon at the bottom left of the screen to be take to this page in the AionNetwork/Docs repository.
-toc: true
 ---
 
 ## Base Contract
@@ -35,7 +34,8 @@ public class HelloAvm
 
 ## Contract Call
 
-Get data from blockchain by performing a contract method call.
+Get data from the blockchain  by performing a contract method call.
+
 
 ```javascript
 "use strict"
