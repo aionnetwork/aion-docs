@@ -8,7 +8,7 @@ Now that you've got Maven installed you can get started with your project. Run t
 mvn archetype:generate -DarchetypeGroupId=org.aion4j -DarchetypeArtifactId=avm-archetype -DarchetypeVersion=0.20
 ```
 
-You can find the [latest archetype version on Github](https://github.com/bloxbean/avm-archetype).
+You can find the [latest archetype version on GitHub](https://github.com/bloxbean/avm-archetype).
 
 ![Archetype Version Screenshot](images/bloxbean-archetype-version.png)
 
@@ -60,9 +60,9 @@ In the latest version of the Maven Aion4J plugin, you don't have to do any furth
 However, if you are using archetype version `0.9` or lower, then there's still a little bit of configuration left to do before you can deploy your contract. You need to change the Aion4j version number selected in the `pom.xml` file.
 
 1. Open the `pom.xml` file in a text editor.
-2. Find the line that beings with `aion4j.plugin.version` and change the value to the [latest release listed on the Github page](https://github.com/bloxbean/aion4j-maven-plugin):
+2. Find the line that beings with `aion4j.plugin.version` and change the value to the [latest release listed on the GitHub page](https://github.com/bloxbean/aion4j-maven-plugin):
 
-![Github Package Version](images/github-package-version.png)
+![GitHub Package Version](images/github-package-version.png)
 
 ```xml
 <properties>

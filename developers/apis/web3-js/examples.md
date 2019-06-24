@@ -11,7 +11,7 @@ We've put together a _boilerplate_ project that you can use to quickly start pla
 4. Run `serve` to start a local mini-server.
 5. Go to [localhost:5000](//localhost:5000) to view the site.
 
-The only package that is installed by NPM is the `serve` package. It sets up a local mini-server that allows you to interact with Aion Web3.js properly without having to spin up an entire server or virtual machine on your computer. You can find out more about Serve on Zeit's [Github repository](https://github.com/zeit/serve).
+The only package that is installed by NPM is the `serve` package. It sets up a local mini-server that allows you to interact with Aion Web3.js properly without having to spin up an entire server or virtual machine on your computer. You can find out more about Serve on Zeit's [GitHub repository](https://github.com/zeit/serve).
 
 The code examples below only make changes to `index.html` and `script.js`. There is no need to change any of the other files. You should never make any changes to `web3.min.js` as doing so will likely break the framework library.
 
