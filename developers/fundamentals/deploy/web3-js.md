@@ -10,7 +10,7 @@ toc: true
 - A node to talk to Aion network.
 - A compiled contract *.jar*.
 
-*Note: We will use Node.js for this example, see the tutorial [here](https://www.w3schools.com/nodejs/) first if you are not familiar with it. You can also flowing the [API use instruction](https://github.com/aionnetwork/aion_web3#api-use) to use it in your web project(html).
+*Note: We will use Node.js for this example, see the tutorial [here](https://www.w3schools.com/nodejs/) first if you are not familiar with it. If you want to embed web3.js directely in your `html` page, you can follow the [import minified web3.js instruction](https://github.com/aionnetwork/aion_web3/wiki/GUIDE:-Install#minifed-javascript-file).
 
 We will deploy the following contract as an example:
 
