@@ -46,7 +46,7 @@ This contract is deployed on [Aion Mastery](https://mastery.aion.network/#/contr
 
 ## Install aion-web3
 
-To pull down the latest version of the `aion-web3` packages into your project by running the following command:
+Pull down the latest version of the `aion-web3` packages into your project by running the following command:
 
 ```sh
 npm install aion-web3
@@ -220,25 +220,26 @@ This fallback function will return the transaction hash and the receipt when the
 
 ```sh
 Receipt received!
-transactionHash = 0xb5190f6cb6e0732bf6ff212edf6b0d18cae06642dd5c98095a5799bb30e59062
-{ blockHash: '0xa9ef7d2bcb439a177218f7c6da31149b273f7f8740383ba1e7b51fa9a31206cb',
+txHash = 0x497e5b8b9c149f4e52a41bab93f5ca9864840a292c6b349e32d6e4677b599c27
+{ blockHash: '0x922a25648801504b78dcba17a4a8bf2abc6b979aa4f5160301f5c74c085ad466',
   nrgPrice: '0x02540be400',
   logsBloom: '00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000',
-  nrgUsed: '0x00bdab',
-  contractAddress: null,
+  nrgUsed: '0x0a7c2b',
+  contractAddress: '0xa028Ddf555b934C76338F4417276d84753b5ea13B856B84217fA96eC5F76e000',
   transactionIndex: 0,
-  transactionHash: '0xb5190f6cb6e0732bf6ff212edf6b0d18cae06642dd5c98095a5799bb30e59062',
-  gasLimit: '0x1e8480',
-  cumulativeNrgUsed: '0xbdab',
-  gasUsed: 48555,
-  blockNumber: 2718848,
-  root: 'd811974eed0fe7529b4a3fa08bc49ce26b0ef944c3872508462e8e11c785df70',
-  cumulativeGasUsed: 48555,
+  transactionHash: '0x497e5b8b9c149f4e52a41bab93f5ca9864840a292c6b349e32d6e4677b599c27',
+  gasLimit: '0x4c4b40',
+  cumulativeNrgUsed: '0xa7c2b',
+  gasUsed: 687147,
+  blockNumber: 2719528,
+  root: '098723274becd0fb12019cde13a5a0728d91f259b18759940f6362ddfd1b1aa3',
+  cumulativeGasUsed: 687147,
   from: '0xa048630fff033d214b36879e62231cc77d81f45d348f6590d268b9b8cabb88a9',
-  to: '0xa0ceaa5b83fe4a8911928072b7e63ee32d880bef82fcbf91747721cfdd528db2',
+  to: null,
   logs: [],
   gasPrice: '0x02540be400',
   status: true }
+Contract Address: 0xa028Ddf555b934C76338F4417276d84753b5ea13B856B84217fA96eC5F76e000
 ```
 
-where `status: true` means the transaction has been successfully sent.
+where `status: true` means the contract has been successfully deployed.
