@@ -1,6 +1,6 @@
 ---
 title: Install
-description: The Java implementation of the Aion kernel. You can interact with this kernel directly through the JSON RPC or Protobuff API layers. Further documentation regarding the kernel can be found on the Aion Java Kernel Github repository at https://github.com/aionnetwork/aion
+description: The Java implementation of the Aion kernel. You can interact with this kernel directly through the JSON RPC or Protobuff API layers. Further documentation regarding the kernel can be found on the Aion Java Kernel GitHub repository at https://github.com/aionnetwork/aion
 ---
 
 There are two methods for installing the Java kernel on your machine:
@@ -10,7 +10,7 @@ There are two methods for installing the Java kernel on your machine:
 
 ## Native Ubuntu Install
 
-This section walks you through installing the kernel from a package. You can either generate your own package by building the kernel from source, or you can download a [pre-built package from Github](https://github.com/aionnetwork/aion/releases).
+This section walks you through installing the kernel from a package. You can either generate your own package by building the kernel from source, or you can download a [pre-built package from GitHub](https://github.com/aionnetwork/aion/releases).
 
 We have used the latest build as an example on this page. If you want to use a different version of the Aion kernel you will need to change the commands to fit the version you are using. We do not recommend always using the latest Aion kernel version.
 

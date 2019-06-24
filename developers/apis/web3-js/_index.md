@@ -3,7 +3,7 @@ title: Web3.js
 description: Aion nodes only understand JSON RPC, and have no idea what to do with high-level languages like Java, Python, on Solidity. Since JSON RPC can be a bit cumbersome to work with, developers can use the Web3.js framework to deal with blockchain interactions. Web3.js was originally created by the Ethereum Foundation for Ethereum-based blockchains. The Aion Foundation modified the calls that Web3.js makes to the JSON RPC layer so that the framework is able to communicate with the Aion network. 
 ---
 
-The Aion specific framework can be [found on Github](https://github.com/aionnetwork/aion_web3). The Aion implementation of Web3.js (Aion Web3.js) is maintained by the Aion Foundation. At the start of 2019, further modifications were made to the Web3.js framework that allowed it to interact with the Aion Virtual Machine (AVM), allowing smart contract developers to create Java contracts and interact with them using this framework.
+The Aion specific framework can be [found on GitHub](https://github.com/aionnetwork/aion_web3). The Aion implementation of Web3.js (Aion Web3.js) is maintained by the Aion Foundation. At the start of 2019, further modifications were made to the Web3.js framework that allowed it to interact with the Aion Virtual Machine (AVM), allowing smart contract developers to create Java contracts and interact with them using this framework.
 
 ## How Web3.js Works
 
@@ -24,4 +24,4 @@ Both the `web3.min.js` file and the `script.js` file are included at the bottom 
 
 ## API Documentation
 
-The API documentation is hosted on the [`aion_web3` Github Wiki pages](https://github.com/aionnetwork/aion_web3/wiki). Checkout the [examples section](/developers/apis/web3-js/examples) to find out how to interact with the Aion Web3 API.
+The API documentation is hosted on the [`aion_web3` GitHub Wiki pages](https://github.com/aionnetwork/aion_web3/wiki). Checkout the [examples section](/developers/apis/web3-js/examples) to find out how to interact with the Aion Web3 API.
