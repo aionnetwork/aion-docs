@@ -128,7 +128,7 @@ const privateKey = "PRIVATE_KEY";
 const account = web3.eth.accounts.privateKeyToAccount(privateKey);
 ```
 
-To deploy the contract, you need to import the contract byte code by importing the compiled jar, and then deploy the contract along with the deployment arguments.
+To deploy the contract, you need to import the contract byte code by importing the compiled jar, and then encode the contract byte code along with the deployment arguments.
 
 ```js
 let jarPath = path.join(__dirname,'contract','contract.jar');
@@ -163,36 +163,37 @@ Then you can use your account to [sign the transaction](https://github.com/aionn
 const signedTransaction = await web3.eth.accounts.signTransaction(transaction, account.privateKey).then((transactionResponse) => signedCall = transactionResponse);
 
 // Send the Transaction.
-const transactionReceipt = await web3.eth.sendSignedTransaction( signedTransaction.rawTransaction).on('receipt', receipt => {
+const receipt = await web3.eth.sendSignedTransaction( signedTransaction.rawTransaction).on('receipt', receipt => {
 console.log("Receipt received!\ntransactionHash =", receipt.transactionHash)
 });
-console.log(transactionReceipt);
-
+console.log(receipt);
+console.log("Contract Address: " + receipt.contractAddress);
 ```
 
 This fallback function will return the transaction hash and the receipt when the transaction is mined, a sample output is:
 
 ```sh
 Receipt received!
-transactionHash = 0xb5190f6cb6e0732bf6ff212edf6b0d18cae06642dd5c98095a5799bb30e59062
-{ blockHash: '0xa9ef7d2bcb439a177218f7c6da31149b273f7f8740383ba1e7b51fa9a31206cb',
+txHash = 0x60e88c7b5332ae4407343ac5a5e2b208f5c32db1298181eb78c8f63ed65b1196
+{ blockHash: '0x81631a01844e5eb85f01c8f34987f4c666e961d31fe73bac2a9a44c0d005489d',
   nrgPrice: '0x02540be400',
   logsBloom: '00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000',
-  nrgUsed: '0x00bdab',
-  contractAddress: null,
+  nrgUsed: '0x0a7c2b',
+  contractAddress: '0xA0cFb255359eB53fd7a73efffAE91Fd6232395C5C170cF903bfc1e7889cB0261',
   transactionIndex: 0,
-  transactionHash: '0xb5190f6cb6e0732bf6ff212edf6b0d18cae06642dd5c98095a5799bb30e59062',
-  gasLimit: '0x1e8480',
-  cumulativeNrgUsed: '0xbdab',
-  gasUsed: 48555,
-  blockNumber: 2718848,
-  root: 'd811974eed0fe7529b4a3fa08bc49ce26b0ef944c3872508462e8e11c785df70',
-  cumulativeGasUsed: 48555,
+  transactionHash: '0x60e88c7b5332ae4407343ac5a5e2b208f5c32db1298181eb78c8f63ed65b1196',
+  gasLimit: '0x4c4b40',
+  cumulativeNrgUsed: '0xa7c2b',
+  gasUsed: 687147,
+  blockNumber: 2719715,
+  root: '213221305323f23cd4ff5986f34cf369389fe7c72a8c33db97d2080a851d8447',
+  cumulativeGasUsed: 687147,
   from: '0xa048630fff033d214b36879e62231cc77d81f45d348f6590d268b9b8cabb88a9',
-  to: '0xa0ceaa5b83fe4a8911928072b7e63ee32d880bef82fcbf91747721cfdd528db2',
+  to: null,
   logs: [],
   gasPrice: '0x02540be400',
   status: true }
+Contract Address: 0xA0cFb255359eB53fd7a73efffAE91Fd6232395C5C170cF903bfc1e7889cB0261
 ```
 
-where `status: true` means the transaction has been successfully sent.
+where `status: true` means the contract has been successfully deployed.
