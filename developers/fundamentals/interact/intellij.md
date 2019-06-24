@@ -79,7 +79,7 @@ If the `call` is successful, both `return data` and `decoded returned data` will
 
 *Note: `call` is directly executed in the VM of the node. Go to the next section to see how to [send a transaction](#transaction) to a contract if you want to change a state in the blockchain.
 
-## Transaction
+## Contract Transaction
 
 To change a state in the blockchain, you will need an account with sufficient balance to send a transaction to the contract.
 
@@ -91,7 +91,7 @@ Right click on the method you want to send the transaction to, and select `Remot
 
 ```sh
 ...
-[INFO] Response from Aion kernel: 
+[INFO] Response from Aion kernel:
 {
   "result": "0xf85ce26c9075027e42f2d1306ed4cf57d7cd565653a7a54ecdc142a8da963c38",
   "id": "131491",

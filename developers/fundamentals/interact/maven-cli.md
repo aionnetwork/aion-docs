@@ -127,7 +127,7 @@ If the `call` is successful, both `return data` and `decoded returned data` will
 
 *Note: `call` is directly executed in the VM of the node. Go to the next section to see how to [send a transaction](#transaction) to a contract if you want to change a state in the blockchain.
 
-## Transaction
+## Contract Transaction
 
 To change a state in the blockchain, you will need an account with sufficient balance to send a transaction to the contract.
 
@@ -149,7 +149,7 @@ Setup your **private key**  as an enviornment variable by runing the following c
     set pk=0xa01234567890abcdefghijk...
     ```
 
-### Send Transaction Call
+### Send Contract Transaction
 
 Use `aion4j: contract-txn` maven goal to send your transaction to a contract method.
 
