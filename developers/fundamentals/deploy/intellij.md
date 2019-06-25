@@ -45,7 +45,6 @@ public class HelloAvm
 
     @Callable
     public static Address getAdminAddress(){
-        Blockchain.require(Blockchain.getCaller().equals(adminAddress));
         return adminAddress;
     }
 }
