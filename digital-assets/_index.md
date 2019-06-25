@@ -1,6 +1,7 @@
 ---
 title: Digital Assets
 description: An overview of what digital assets are, the possible aspects of them, and their potential use cases.
+next_page: /developers
 ---
 
 ## What Digital Assets Are
