@@ -1,7 +1,7 @@
 ---
 title: Web3.js
 toc: true
-Description: We will be using Node.js and [aion-web3.js](https://github.com/aionnetwork/aion_web3) library to interact with a Java smart contract on the blockchain.
+Description: We will be using Node.js and aion-web3.js library to interact with a Java smart contract on the blockchain.
 ---
 
 ## Prerequisites
@@ -11,7 +11,7 @@ Description: We will be using Node.js and [aion-web3.js](https://github.com/aion
 - An Aion account that has sufficient balance (For contract transaction only).
 - A node to talk to Aion network.
 
-*Note: We will use Node.js for this example, see the tutorial [here](https://www.w3schools.com/nodejs/) first if you are not familiar with it. You can also flowing the [API use instruction](https://github.com/aionnetwork/aion_web3#api-use) to use it in your web project(html).
+*Note: We will use Node.js for this example, see the tutorial [here](https://www.w3schools.com/nodejs/) first if you are not familiar with it. If you want to embed web3.js directely in your `html` page, you can follow the [import minified web3.js instruction](https://github.com/aionnetwork/aion_web3/wiki/GUIDE:-Install#minifed-javascript-file).
 
 We will interact with the following contract as an example:
 
@@ -36,7 +36,6 @@ public class HelloAvm
 
     @Callable
     public static Address getAdminAddress(){
-        Blockchain.require(Blockchain.getCaller().equals(adminAddress));
         return adminAddress;
     }
 }
@@ -46,7 +45,7 @@ This contract is deployed on [Aion Mastery](https://mastery.aion.network/#/contr
 
 ## Install aion-web3
 
-To pull down the latest version of the `aion-web3` packages into your project by running the following command:
+Pull down the latest version of the `aion-web3` packages into your project by running the following command:
 
 ```sh
 npm install aion-web3
