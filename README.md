@@ -22,19 +22,19 @@ By following these guidelines you're helping to keep the Aion docs consistent.
 
 - Follow each list of three or more items with a comma. This is known as the [Oxford or Serial Comma](https://en.wikipedia.org/wiki/Serial_comma).
 
-| Use | Don't Use |
-| --- | --------- |
-| One, two, three, and four. | One, two, three and four. |
-| Henry, Elizabeth, and George. | Henry, Elizabeth and George. |
+    | Use | Don't Use |
+    | --- | --------- |
+    | One, two, three, and four. | One, two, three and four. |
+    | Henry, Elizabeth, and George. | Henry, Elizabeth and George. |
 
 - Write clearly and concisely. Sentences should be shorter than 25 words. Any longer and things tend to get a little _blurry_.
 - Don’t use formal or complex words when easy or short ones will do. Keeping the docs simple to read makes it accessible for everyone, especially those us whose English as a second language.
 
-| Use | Don't Use |
-| --- | --------- |
-| Get | Aquire |
-| Help | Assist |
-| About | Approximately |
+    | Use | Don't Use |
+    | --- | --------- |
+    | Get | Aquire |
+    | Help | Assist |
+    | About | Approximately |
 
 - Use consistent terminology. This isn't creative writing, so you don't need to describe the same thing differently every time you mention it.
 - Use American English spelling.
