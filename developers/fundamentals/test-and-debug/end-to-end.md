@@ -8,7 +8,7 @@ description: AvmRule is a JUnit Rule designed for testing Java contract on an em
 
 - [Java 10 or up](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html).
 - [IntelliJ IDE](https://www.jetbrains.com/idea/download/) (or any IDE you like that supports JUnit 5).
-- [AVM Lastest Tooling Jars](https://github.com/aionnetwork/AVM/releases)
+- [AVM Lastest Tooling Jars](https://github.com/aionnetwork/AVM/tree/latest-tooling)
 
 ## Set up a Project
 
