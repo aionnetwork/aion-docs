@@ -24,7 +24,7 @@ We will use IntelliJ to create a Java project and set it up to a Java smart cont
 6. Enter **Project name** and **Project location**
 7. Click **Finish**
 
-![project](/content/developers/fundamentals/test-and-debug/images/create-project.gif)
+![project](/developers/fundamentals/test-and-debug/images/create-project.gif)
 
 ### Set up the Project
 
@@ -33,11 +33,11 @@ For this project, we will have three directories:
 - **src** folder to contain contract classes, which is generated automatically when we created the project.
 - **lib** folder to contain *avm.jar*.
   
-  ![lib](/content/developers/fundamentals/test-and-debug/images/add-lib.gif)
+  ![lib](/developers/fundamentals/test-and-debug/images/add-lib.gif)
 
 - **test** folder to contain test classes.
 
-  ![test](/content/developers/fundamentals/test-and-debug/images/add-test.gif)
+  ![test](/developers/fundamentals/test-and-debug/images/add-test.gif)
 
 ## Write the Contract
 
@@ -50,7 +50,7 @@ To write a Java smart contract, we will first need to create a `Java Class` file
 3. Click **Java Class**
 4. Name it as `SimpleOwnable`
 
-Then we can start to write the contract. Since this guide is to show you how to write tests and debug a contract, we will provide a sample contract. Learn about [AVM concepts](/content/developers/fundamentals/avm-concepts/callable-functions/) and [AVM API packages](/developers/fundamentals/packages/abi/), and see some [contract examples](/developers/fundamentals/contracts/contract-to-contract/) if you have questions  about the contract.
+Then we can start to write the contract. Since this guide is to show you how to write tests and debug a contract, we will provide a sample contract. Learn about [AVM concepts](/developers/fundamentals/avm-concepts/callable-functions/) and [AVM API packages](/developers/fundamentals/packages/abi/), and see some [contract examples](/developers/fundamentals/contracts/contract-to-contract/) if you have questions  about the contract.
 
 Copy and paste the following contract:
 
@@ -240,7 +240,7 @@ public void testGetOwnerAddress() {
 
 Then we can run the test:
 
-![test-get-owner](/content/developers/fundamentals/test-and-debug/images/test-get-owner.gif)
+![test-get-owner](/developers/fundamentals/test-and-debug/images/test-get-owner.gif)
 
 Great, it passed!
 
@@ -274,7 +274,7 @@ public void testTransferOwnership() {
 
 Then if we run the test:
 
-![test-transfer-ownership](/content/developers/fundamentals/test-and-debug/images/test-transfer-ownership.gif)
+![test-transfer-ownership](/developers/fundamentals/test-and-debug/images/test-transfer-ownership.gif)
 
 The output shows that the test is passed because the call is failed as expected. Since we turned on the debug mode, we can see that the transaction is being reverted due to a revert exception in the AVM caused by `avm_require`:
 
@@ -305,10 +305,10 @@ We will use `testTransferOwnership` as an example. Let's see if the transaction 
 
 We first need to set the breakpoint in the contract:
 
-![set-up](/content/developers/fundamentals/test-and-debug/images/set-one-break-point.gif)
+![set-up](/developers/fundamentals/test-and-debug/images/set-one-break-point.gif)
 
 Then, we can `debug` the `testTransferOwnership`:
 
-![fail](/content/developers/fundamentals/test-and-debug/images/fail-requirement.gif)
+![fail](/developers/fundamentals/test-and-debug/images/fail-requirement.gif)
 
 We can see that `transferOwnership` is being called, and `Blockchain.require` is being checked and it fails since the caller address does not match the owner address.
