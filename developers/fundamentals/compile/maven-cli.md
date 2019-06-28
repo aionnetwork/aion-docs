@@ -3,6 +3,11 @@ title: Maven CLI
 toc: true
 ---
 
+## Prerequisites
+
+- [Maven](/developers/tools/maven-cli/install/)
+- [An intialized AVM Maven project](/developers/tools/maven-cli/create-a-project/)
+
 It  takes two steps for you to build and compile your Java smart contract:
 
 ## Define Main Class

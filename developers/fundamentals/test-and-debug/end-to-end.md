@@ -48,7 +48,7 @@ To write a Java smart contract, we will first need to create a `Java Class` file
 1. Right click on **src** folder
 2. Move to **New**
 3. Click **Java Class**
-4. Name it as `SimpleContract`
+4. Name it as `SimpleOwnable`
 
 Then we can start to write the contract. Since this guide is to show you how to write tests and debug a contract, we will provide a sample contract. Learn about [AVM concepts](/developers/fundamentals/avm-concepts/callable-functions/) and [AVM API packages](/developers/fundamentals/packages/abi/), and see some [contract examples](/developers/fundamentals/contracts/contract-to-contract/) if you have questions  about the contract.
 
