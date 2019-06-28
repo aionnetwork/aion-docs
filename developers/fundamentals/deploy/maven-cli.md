@@ -5,7 +5,7 @@ toc: true
 
 ## Prerequisites
 
-- [Aion4j AVM IntelliJ Plugin](/developers/tools/intellij/install-the-plugin/)
+- [Maven](/developers/tools/maven-cli/install/)
 - Private key to an Aion account that has sufficient balance.
 - A rpc endpoint.
 - AVM maven project and [compiled](/developers/fundamentals/compile/intellij/) contract *.jar*.

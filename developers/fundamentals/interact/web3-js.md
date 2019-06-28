@@ -6,6 +6,7 @@ Description: We will be using Node.js and aion-web3.js library to interact with 
 
 ## Prerequisites
 
+- [Maven](/developers/tools/maven-cli/install/)
 - [Node.js](https://nodejs.org/en/).
 - Java contract address.
 - An Aion account that has sufficient balance (For contract transaction only).
