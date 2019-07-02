@@ -1,17 +1,16 @@
 ---
 title: Initializable Fields
-description: The @Initializable annotation can be added onto a field to indicate that the field is initialized as deployment arguments at the time of the contract deployment.
+description: A static field can be labelled @Initializable if it should be initialized through a deployment argument.
 ---
 
-Initializable fields must follow these rules:
-
-- An `@Initializable` field must be static.
-- The type of an `@Initializable` field must be a supported [AVM ABI type](https://docs.aion.network/docs/abi).
-- Data supplied in the data field must be supplied in the exact same order as the  `@Initializable` field are defined. If not, an _ABIException_ will be thrown.
+> **Important:**
+> - An `@Initializable` field must be static.
+> - The type of an `@Initializable` field must be a supported [AVM ABI type](/developers/fundamentals/avm-concepts/abi-types/).
+> - Data supplied in the data field must be supplied in the exact same order as the  `@Initializable` field are defined. If not, an _ABIException_ will be thrown.
 
 During deployment, the `static{}` (also called [`<clinit>`](https://docs.oracle.com/javase/specs/jvms/se7/html/jvms-2.html#jvms-2.9)) will first try to decode the `data` field that is passed into the contract to set the values of the `@Initializable` fields.
 
-It decodes the values in the **same order** as the fields marked `@Initializable` in the contract using an ABIDecoder ([Read More](https://docs.aion.network/docs/avm-abidecoder)).
+It decodes the values in the **same order** as the fields marked `@Initializable` in the contract using an [ABIDecoder](/developers/fundamentals/packages/abi/#abidecoder-https-avm-api-aion-network-org-aion-avm-userlib-abi-abidecoder).
 
 For example:
 
