@@ -1,11 +1,12 @@
 ---
 title: ABI Packages
-description:
+toc:  true
+description: Defines classes related to encoding/decoding the high-level data types serialized into transaction payload data.
 ---
 
 ## [ABIDecoder](https://avm-api.aion.network/org/aion/avm/userlib/abi/abidecoder)
 
-`ABIDecoder` is a utility class for decoding transaction data as high-level ABI types. This class contains static methods for parsing transaction data. [Read More](https://avm-api.aion.network/org/aion/avm/userlib/abi/abidecoder)
+`ABIDecoder` is a utility class for decoding transaction data as high-level ABI types. This class contains [static methods](https://avm-api.aion.network/org/aion/avm/userlib/abi/abidecoder) for parsing transaction data.
 
 ### Instantiate an ABIDecoder
 
@@ -33,7 +34,7 @@ ABIEncoder is utility class for AVM ABI encoding. This class provides static hel
 
 ## [ABIStreamingEncoder](https://avm-api.aion.network/org/aion/avm/userlib/abi/abistreamingencoder)
 
-`ABIStreamingEncoder` is a utility class for AVM ABI encoding. Instances of this class are stateful, allowing several pieces of data to be serialized into the same buffer. [Read More](https://avm-api.aion.network/org/aion/avm/userlib/abi/abistreamingencoder)
+`ABIStreamingEncoder` is a utility class for [AVM ABI encoding](https://avm-api.aion.network/org/aion/avm/userlib/abi/abistreamingencoder). Instances of this class are stateful, allowing several pieces of data to be serialized into the same buffer.
 
 ### Instantiate an ABIStreamingEncoder
 

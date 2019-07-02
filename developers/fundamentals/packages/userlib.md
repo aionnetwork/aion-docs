@@ -1,6 +1,7 @@
 ---
 title: Userlib Packages
-description:
+description: Classes in the userlib package and userlib.abi package are optionally packaged along-side your contract code as common-case utilities and quality of life routines.
+toc: true
 ---
 
 Classes in the [userlib](https://avm-api.aion.network/org/aion/avm/userlib/package-summary.html) package and [userlib.abi](https://avm-api.aion.network/org/aion/avm/userlib/abi/package-summary.html) package are optionally packaged along-side your contract code as common-case utilities and quality of life routines.

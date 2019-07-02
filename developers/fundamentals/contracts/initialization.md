@@ -1,5 +1,6 @@
 ---
 title: Initializaion
+toc: true
 ---
 
 The `<clinit>` of every class submitted as part of the contract (including all the code within `static {}` blocks) will be run when the contract is first deployed, and never again.  This makes `static {}` the ideal place to run any contract initialization logic.
