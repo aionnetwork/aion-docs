@@ -4,7 +4,7 @@ Description: Java smart contracts are able to interact with other Java contracts
 toc: true
 ---
 
-> Note: Contract-to-contract calls still follow the same rules as regular contract calls. See [Java Contract Fundamentals](https://docs.aion.network/docs/contract-fundamentals) section for more information.
+> Note: Contract-to-contract calls still follow the same rules as regular contract calls. See [Java Contract Fundamentals](/developers/fundamentals/avm-concepts/callable-functions/) section for more information.
 
 ## Example Contracts
 

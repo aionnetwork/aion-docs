@@ -111,6 +111,7 @@ public class HelloAVM
 We need to pass in two arguments into the contract, *myStr* and *adminAddress*,  upon deployment. Learn about [deployment initialization](/developers/fundamentals/contracts/initialization/) if you are not familiar with it.
 
 Run following command in the directory where your `pom.xml` is.
+
 - If you **have** setup your *rpc endpoint* and *private key* as environment variables already, run:
 
     ```sh
@@ -123,7 +124,7 @@ Run following command in the directory where your `pom.xml` is.
     mvn aion4j:deploy -Dargs="-T 'Hello AVM' -A 0xa048630fff033d214b36879e62231cc77d81f45d348f6590d268b9b8cabb88a9" -Dweb3rpc.url="Your RPC Endpoint Url" -Dpk="Your Private Key" -Premote
     ```
 
-Here, `-Dargs` is the keyword for passing in deployment arguments. If your contract does not require any deployment arguements, this field is not required. Each [ABI type](#/) has its own [selector](#/) and you need to define it following by the argumentment data. For example,  `-T` is the selector for a string and `-A` is the selector for an Address.
+Here, `-Dargs` is the keyword for passing in deployment arguments. If your contract does not require any deployment arguments, this field is not required. Each [ABI type](/developers/fundamentals/avm-concepts/abi-types/) has its own [selector](/developers/tools/maven-cli/variable-types/) and you need to define it following by the argument data. For example,  `-T` is the selector for a string and `-A` is the selector for an Address.
 
 You will get a transaction hash as an output like:
 

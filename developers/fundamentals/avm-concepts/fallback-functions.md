@@ -5,7 +5,8 @@ description: Mark a function as the default function to be called when the data 
 
 If you want a method in the contract to be invoked when the data in the the transaction is null, emoty or doesn't match any method names, you can label it as `@Fallback`.
 
-> Important:
+> **Important**:
+  
 > - A `@Fallback` method must be **static**, must **return void** and must **take no parameters**.
 > - **Only one** method can be marked as @Fallback.
 

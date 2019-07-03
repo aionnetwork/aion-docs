@@ -10,6 +10,7 @@ Any usage of Java classes that is not listed in the following table will cause a
 ## Whitelisted Classes
 
 The following classes are available for use in your Java contracts.
+
 | Class | Method | Params | Static |
 | --- | --- | --- | --- |
 | `java.lang.IllegalAccessError` | `<init>` | `class java.lang.Throwable` | `false` |

@@ -2,11 +2,11 @@
 title: Require
 ---
 
-Use [Blockchain.require()](https://avm-api.aion.network/avm/blockchain#require(boolean%29) to add requirements or restrictions for an action to be executed. It checks the provided condition is true or not. If it is false, it triggers a [revert](https://avm-api.aion.network/avm/blockchain#revert%28%29). This is sometimes called a `modifier`.
+Use [Blockchain.require()](https://avm-api.aion.network/avm/blockchain#require(boolean)) to add requirements or restrictions for an action to be executed. It checks the provided condition is true or not. If it is false, it triggers a [revert](https://avm-api.aion.network/avm/blockchain#revert%28%29). This is sometimes called a `modifier`.
 
 ## Example Contract
 
-This contract contains a common requirement function, `onlyOwner`. Calling this function at the top of a function to make sure that function to only be called by the owner of the contract. The contract owner is set when the contract is deployed.
+This contract contains a common requirement function, `onlyOwner`. Calling this function at the top of a function to make sure that function to only be executed by the owner of the contract. The contract owner is set when the contract is deployed.
 
 ```java
 package aion;
