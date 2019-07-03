@@ -6,37 +6,45 @@ toc: true
 
 ## Prerequisites
 
-First up, you need [IntelliJ](https://www.jetbrains.com/idea/) and the [Aion4j](/developers/tools/intellij/install-the-plugin) plugin installed. Take a look at those sections for steps on how to get them installed. You'll also need a node to connect to if you want to deploy your contract to the testnet, but we'll walk you through that bit.
+- [Java SDK 11^](https://www.oracle.com/technetwork/java/javase/downloads/jdk12-downloads-5295953.html).
+- [IntelliJ](https://www.jetbrains.com/idea/) and [Aion4j](/developers/tools/intellij/install-the-plugin) plugin installed.
+- A RPC endpoint.
 
 ## Create a Project
 
 IntelliJ and Maven work together to create a basic project template that you can use to build your applications.
 
 1. Open IntelliJ
-2. Click **Create new Project**.
-3. Select **Maven** from the left panel.
-4. Check the **Create from archetype** checkbox.
-5. Expand `org.aion4j:avm-archetype` and select the latest version.
-6. Enter a **Group ID** and an **Artifact ID**. You can leave **Version** as the default.
-7. Click **Next**.
-8. Leave the Maven defaults selected and click **Next**.
-9. Click **Finish**.
+2. Select **Maven** from the left panel.
+3. Click **Create new Project**.
+4. Import the **Project SDK**.
+5. Check the **Create from archetype** checkbox.
+6. Expand `org.aion4j:avm-archetype` and select the latest version.
+7. Enter a **Group ID** and an **Artifact ID**. You can leave **Version** as the default.
+8. Click **Next**.
+9. Leave the Maven defaults selected and click **Next**.
+10. Click **Finish**.
+11. Wait for the project to be set up. Click `Enable Auto Import` in the bottom right corner pop up window.
+
+![create-project](/developers/tools/intellij/images/create-project.gif)
 
 ## Initialize Project
 
-This step creates the `avm.jar` file that's going to run all your contracts.
+This step pulls the `avm.jar` file that's going to run all your contracts locally.
 
-1. In the **Project** pane on the left, right click your top project folder.
+1. Right click anywhere in your project.
 2. Select **Aion Virtual Machine** > **Run Initialize**.
 
 ## View your Contract
 
-The Aion plugin creates a contract and unit tests for you by default. Within the `src` folder is two directories:
+The Aion AVM Maven Archetype includes a sample contract and corresponding unit tests. Within the `src` folder is two directories:
 
 - `main`: This is where the main logic of your application (ie your contracts) are stored.
 - `test`: Any tests you use are stored here. The Aion IntelliJ plugin creates some tests for you to use straight away.
 
 To view your contract open `src` > `main` > `java` > the name of your project > `HelloAvm`. This is your contract. By default, it's just a simple _Hello World_ type contract, with a `getString()` and `setString()` method.
+
+![contract](/developers/tools/intellij/images/the-contract.gif)
 
 ## Edit your Contract
 
@@ -44,12 +52,11 @@ We're going to customize this contract a little bit, so you can have a taste of 
 
 1. Open your contract in the editor.
 2. Remove the `sayHello()` and `greet` functions. Make sure to remove their associated `@Callable` annotations too.
-3. Change the `myStr` variable to `String hasn't been set yet.`.
-4. Rename the public class to `getSet`
+3. Change the `myStr` variable to `String hasn't been set yet.`
 
-## Run Tests
+## Run Tests and Debug
 
-All the tests for your contract are stored in the `src/test/java/example/` folder, and you get a standard test when you create a project with IntelliJ called `HelloAvmRuleTest`. The test class has three _actual_ tests `@Test`, and one function that runs at the start of every test `@BeforeClass`.
+All the Junit tests for your contract are stored in the `src/test/java/Your porject name/` folder, and you get a standard AVM rule test when you create the AVM project called `HelloAvmRuleTest`. The test class has three _actual_ tests `@Test`, and one function that runs at the start of every test `@BeforeClass`. Learn about [AVM Junit test](/developers/fundamentals/test-and-debug/end-to-end/) if you are not familiar with it.
 
 Since we removed the `sayHello()` function from our contract, the `testSayHello()` function in this test class will fail, so take it out.
 
@@ -57,7 +64,7 @@ To run a test, just click on the `run` button next to the test function.
 
 ![Running the testGetString() method](/developers/tools/intellij/images/test-getstring.gif)
 
-You can also run the test in _debug_ mode, which gives you more information on what's happening in the test.
+You can also set breakpoint in your contract and run the test in _debug_ mode, which gives you more information on what's happening in the test.
 
 ![Running the test in debug mode](/developers/tools/intellij/images/debug-getstring.gif)
 
@@ -73,7 +80,7 @@ Now we've made some basic changes and ran some tests, we're going try deploying 
 2. Click **OK**.
 3. Click **Aion Virtual Machine** > **Embedded** > **Deploy**.
 
-![Deployment Successful](/developers/tools/intellij/images/deployment-successful.png)
+![Deployment Successful](/developers/tools/intellij/images/deploy.gif)
 
 And you're done. You've just compiled your contract and deployed it to the local kernel. It's that easy.
 
@@ -101,7 +108,7 @@ Let's try setting a new string.
 
 Now try calling the `getString()` method again. You should be able to see your new string in the terminal window.
 
-## Deploy to Remote
+## Deploy to Aion network
 
 Deploying to a remote kernel follows the same process as deploying to a local kernel. We just need to grab a node URL, create an account, and add funds into it.
 
@@ -179,12 +186,12 @@ If you scroll up, you can find the contract address:
 "contractAddress": "0xa0e6f3c3479ba2a9853ea68f9325d3035841e92599d406939e3b274f1ceb82f4",
 ```
 
-## Call from Remote
+## Interact from Remote
 
-The process for calling your remote application is the same as calling it from the local kernel.
+The process for interact with your contract on the network is the same as calling it from the local kernel. Except for that you need to differentiate if the method is [constant](/developers/fundamentals/interact/intellij/#contract-transaction) or not.
 
 1. Right click on the function you want to call.
-2. Click **Aion Virtual Machine** > **Remote** > **Call**.
+2. Click **Aion Virtual Machine** > **Remote** > **Contract Transaction/Call**.
 3. Enter any arguments the function needs and click **OK**.
 4. The response from the network is printed in the terminal window below.
 
