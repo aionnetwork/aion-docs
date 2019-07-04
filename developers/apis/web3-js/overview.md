@@ -1,6 +1,8 @@
 ---
-title: Web3.js
+title: Overview
 description: Aion nodes only understand JSON RPC, and have no idea what to do with high-level languages like Java, Python, on Solidity. Since JSON RPC can be a bit cumbersome to work with, developers can use the Web3.js framework to deal with blockchain interactions. Web3.js was originally created by the Ethereum Foundation for Ethereum-based blockchains. The Aion Foundation modified the calls that Web3.js makes to the JSON RPC layer so that the framework is able to communicate with the Aion network. 
+table_of_contents: true
+weight: 1
 ---
 
 The Aion specific framework can be [found on GitHub](https://github.com/aionnetwork/aion_web3). The Aion implementation of Web3.js (Aion Web3.js) is maintained by the Aion Foundation. At the start of 2019, further modifications were made to the Web3.js framework that allowed it to interact with the Aion Virtual Machine (AVM), allowing smart contract developers to create Java contracts and interact with them using this framework.

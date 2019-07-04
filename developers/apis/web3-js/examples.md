@@ -1,5 +1,5 @@
 ---
-title: Web3.js
+title: Examples
 description: We've put together a few examples of how you can use Aion Web3.js in your projects. All these examples use the minified JavaScript file instead of the Node JS console. This is so you can copy and paste in the code examples into a boilerplate project.
 ---
 
