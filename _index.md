@@ -7,4 +7,5 @@ homepage_content:
     button:
         text: Start Rebuilding
         link: quickstart
+weight: 1
 ---
