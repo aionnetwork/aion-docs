@@ -1,8 +1,9 @@
 ---
 title: Hybrid Storage
+description: AVM Hybrid Storage is a storage design that allows developer to use both object graphs and manual storage at the same time.
 ---
 
-AVM Hybrid Storage is a storage design that allows developer to use both object graphs and manual storage at the same time. [Read More](https://blog.aion.network/avm-hybrid-storage-38f9892a5577).
+Learn about our [AVM Hybrid Storage](https://blog.aion.network/avm-hybrid-storage-38f9892a5577) here!.
 
 ## Example Contract
 

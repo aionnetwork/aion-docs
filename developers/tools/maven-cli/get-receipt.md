@@ -27,7 +27,7 @@ mvn aion4j:get-receipt -DtxHash=0x6007cb6662418923ab966d443b23abb8e7a03043279d77
 
 This function returns a large amount of JSON data. The contract address of the contract you deployed is in the field `contractAddress`.
 
-## Cleaner Responses
+## Automatic Responses
 
 When requesting a transaction receipt, you can include `-Dtail` and `-Dsilent` to get back a cleaner response from the kernel.
 

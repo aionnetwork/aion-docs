@@ -1,8 +1,9 @@
 ---
 title: Log
+toc: true
 ---
 
-A log is used to store arguments and data in a transaction receipt on the blockchain. For AVM, a log can have 0 to 4 topic(s) and at least one data field. [Read More](#https://avm-api.aion.network/avm/blockchain#log(byte%5B%5D%29).
+A log is used to store arguments and data in a transaction receipt on the blockchain. For AVM, a [log](<https://avm-api.aion.network/avm/blockchain#log(byte%5B%5D)>) can have 0 to 4 topic(s) and at least one data field.
 
 ## Example Contract
 
@@ -26,9 +27,6 @@ public class EventExample {
 ```
 
 ## Example Receipt
-
-```text
-## Example receipt
 
 Here is a sample receipt for the example contract deployment.
 
@@ -65,8 +63,8 @@ Here is a sample receipt for the example contract deployment.
 }
 ```
 
-In the *logs* section, we can see that
+In the *logs* section, we can see that:
+
 1. The first topic is `0x4a617661436f6e74726163744465706c6f796d656e7400000000000000000000` which is the hex data for string `JavaContractDeployment`.
 2. The second topic is `0xa048630fff033d214b36879e62231cc77d81f45d348f6590d268b9b8cabb88a9` which is the account deployed the contract.
 3. The `data` is `0x31353537383932343130` which is the time when block is forged.
-```

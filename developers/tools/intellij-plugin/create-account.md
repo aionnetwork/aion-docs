@@ -1,14 +1,15 @@
 ---
 title: Create Account
+toc : true
 ---
 
-Create an account.
+To send transactions, deploy contracts and interact with them, you need an AION account with sufficient balance.
 
 ### Local
 
-Create an account with a specified amount of `AION`.
+Create an account with a specified amount of `AION` for testing on embedded AVM locally.
 
-Run this command by right clicking anywhere in a contract and selecting **Aion Virtual Machine** > **Embedded** > **Create Account**. Then enter the address you want to create, and the amount of `AION` you want to be added into it. The address you enter must be a valid `AION` address.
+Right click anywhere in your AVM project and selecting **Aion Virtual Machine** > **Embedded** > **Create Account**. Then enter the address you want to create, and the amount of `AION` you want to be added into it. The address you enter must be a valid `AION` address. The `Balance` is in nAmp, where 1 AION = 10^18 nAmp.
 
 Here's ten sample addresses that you can use to create accounts on the embedded AVM (you are not limited to using just these addresses):
 
@@ -26,3 +27,30 @@ Here's ten sample addresses that you can use to create accounts on the embedded 
 ```
 
 Addresses used on the embedded AVM have no real world value, and cannot be _transfered_ over to any other network.
+
+### Remote
+
+Create an account by right clicking anywhere in your AVM project and select **Aion Virtual Machine** > **Remote** > **Create Account**. It will generate you an Aion key pair that includes public address and private key.
+
+Here's a sample output:
+
+```sh
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- aion4j-maven-plugin:0.6.7:create-account (default-cli) @ project101 ---
+[INFO] Account creation successful
+[INFO] Address : 0xa0837756504ff78fd0dabfec0218a1c417c492164c83561e88eeaca152119e9a
+[INFO] Private Key: HERE IS A PRIVATE KEY
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.258 s
+[INFO] Finished at: 2019-07-04T10:27:47-04:00
+[INFO] Final Memory: 6M/24M
+[INFO] ------------------------------------------------------------------------
+[INFO] Maven execution finished
+```
+
+Then you can go to our [faucet](/developers/tools/faucets/) to get some test Aion!
+
+> **Important:** Keep your private key private and safe!

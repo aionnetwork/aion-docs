@@ -17,3 +17,5 @@ The following ABI types are available when calling or interacting with a Java co
 | double | 1D, 2D |
 | Address | 1D |
 | String | 1D |
+
+> Note: Our [ABI specification](https://github.com/aionnetwork/AVM/wiki/ABI-Specification) lives entirely in the tooling & userlib space.

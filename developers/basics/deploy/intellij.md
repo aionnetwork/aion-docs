@@ -56,7 +56,7 @@ Open the Aion4j plugin in your project top level by right click on the project f
 
 We need to pass in two arguments into this contract, *myStr* and *adminAddress*,  upon deployment. Learn about [deployment initialization](/developers/fundamentals/contracts/initialization/) if you are not familiar with it.
 
-If your contract does not require any deployment arguements, this field is not required. Each [ABI type](#/) has its own [selector](#/) and you need to define it following by the argumentment data. For example,  `-T` is the selector for a string and `-A` is the selector for an Address.
+If your contract does not require any deployment arguments, this field is not required. Each [ABI type](/developers/fundamentals/avm-concepts/abi-types/) has its own [selector](/developers/tools/maven-cli/variable-types/) and you need to define it following by the argument data. For example,  `-T` is the selector for a string and `-A` is the selector for an Address.
 
 Click `OK` to deploy your contract. Then Aion4j plugin will build and compile your contract, run your test cases, if everything pass it will deploy the contract to your node.
 

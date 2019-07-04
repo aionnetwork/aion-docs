@@ -1,5 +1,6 @@
 ---
 title: Initializaion
+toc: true
 ---
 
 The `<clinit>` of every class submitted as part of the contract (including all the code within `static {}` blocks) will be run when the contract is first deployed, and never again.  This makes `static {}` the ideal place to run any contract initialization logic.
@@ -50,9 +51,9 @@ public class ClinitExample {
 ## Initialize variables
 
 You can initialize contract variables by passing in arguments while you deploy your smart contract. To do that, you can use either `@Initializable fields` (in the first tab) or
-an [**ABIDecoder** ]((https://docs.aion.network/docs/avm-abidecoder)to collect the data (in the second tab). 
+an [**ABIDecoder**](https://docs.aion.network/docs/avm-abidecoder) to collect the data (in the second tab).
 
-###[Using @Initializable field](https://docs.aion.network/docs/initializable-fields) 
+### [Using @Initializable field](/developers/fundamentals/avm-concepts/initializable-fields/) 
 Annotating variables with `@Initializable`  will collect the data that was passed into the contract upon deployment.
 
 ```java

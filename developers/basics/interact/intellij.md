@@ -82,7 +82,7 @@ If the `call` is successful, both `return data` and `decoded returned data` will
 
 To change a state in the blockchain, you will need an account with sufficient balance to send a transaction to the contract.
 
-Right click on the method you want to send the transaction to, and select `Remote - Contract Transaction` in Aion4j IntelliJ plugin. Input arguments that are required using the right [format](#/). You can also send `AION` to the contract while you making the transaction. Aion4j plugin can [auto-fill result cache](https://github.com/bloxbean/aion4j-maven-plugin/wiki/Client-side-signing-with-private-key-&-property-auto-fill-with-result-cache#2-property-auto-fill-with-result-cache-for-remote-kernel) for remote kernel, which means it stores the contract address of the last deployment. You can input your contract address if you want to call another contract.
+Right click on the method you want to send the transaction to, and select `Remote - Contract Transaction` in Aion4j IntelliJ plugin. Input arguments that are required using the right [format](/developers/tools/maven-cli/variable-types/). You can also send `AION` to the contract while you making the transaction. Aion4j plugin can [auto-fill result cache](https://github.com/bloxbean/aion4j-maven-plugin/wiki/Client-side-signing-with-private-key-&-property-auto-fill-with-result-cache#2-property-auto-fill-with-result-cache-for-remote-kernel) for remote kernel, which means it stores the contract address of the last deployment. You can input your contract address if you want to call another contract.
 
  ![IntelliJ-txn](/developers/fundamentals/interact/images/intellij-contract-txn.gif)
 

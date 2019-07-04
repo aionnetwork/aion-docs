@@ -7,7 +7,7 @@ description: AvmRule is a JUnit Rule designed for testing Java contract on an em
 ## Prerequisites
 
 - [Java 10 or up](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html).
-- [IntelliJ IDE](https://www.jetbrains.com/idea/download/) (or any IDE you like that supports JUnit 5).
+- [IntelliJ IDE](https://www.jetbrains.com/idea/download/) (or any IDE you like that supports JUnit 4.12^).
 - [AVM Lastest Tooling Jars](https://github.com/aionnetwork/AVM/tree/latest-tooling)
 
 ## Set up a Project
@@ -61,6 +61,7 @@ import avm.Blockchain;
 import org.aion.avm.tooling.abi.Callable;
 import org.aion.avm.tooling.abi.Initializable;
 
+
 public class SimpleOwnable {
 
     private static Address owner;
@@ -87,6 +88,7 @@ public class SimpleOwnable {
     // Save the address of the new owner, wait for acceptance.
     @Callable
     public static void transferOwnership(Address newOwnerAddress) {
+        Blockchain.require(Blockchain.getCaller().equals(owner));
         newOwner = newOwnerAddress;
     }
 
@@ -143,7 +145,7 @@ public  void deployContract() {...}
 
 Then we will get the bytes that represent the contract jar, along with the deployment arguments in byte[] if required.
 
-Use [ABIStreamingEnocder](/developers/fundamentals/packages/abi/#abistreamingencoder-https-avm-api-aion-network-org-aion-avm-userlib-abi-abistreamingencoder) to encode the deployment arguments:
+Use [ABIStreamingEnocder](/content/developers/fundamentals/packages/abi/#abistreamingencoder-https-avm-api-aion-network-org-aion-avm-userlib-abi-abistreamingencoder) to encode the deployment arguments:
 
 ```java
 byte[] deploymentArguments = encoder.encodeOneString("OwnershipTransferred").encodeOneString("Jennifer").toBytes();
