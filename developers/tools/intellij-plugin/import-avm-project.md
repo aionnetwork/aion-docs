@@ -1,6 +1,6 @@
 ---
 title: Import an Existing AVM project
-toc: true
+table_of_contents: true
 description: This section will show you how to import an exisiting AVM maven project to IntelliJ IDE.
 ---
 

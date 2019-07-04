@@ -1,7 +1,7 @@
 ---
 title: End to End
 description: The Aion4j plugin for IntelliJ is packed with features that can help speed up your contract development. You can compile, deploy, and call your contract to a local or remote node, all from within the IntelliJ IDE. In this section, we're going to be walking through the entire workflow of creating and deploying a Java smart contract to the Aion testnet. You can drop in as particular sections if you want to, or you can follow it through end-to-end.
-toc: true
+table_of_contents: true
 ---
 
 ## Prerequisites

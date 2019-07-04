@@ -1,6 +1,6 @@
 ---
 title: End to End
-toc: true
+table_of_contents: true
 description: AvmRule is a JUnit Rule designed for testing Java contract on an embedded AVM. It allows you to deploy your Java smart contract and write tests to interact with the contract under a real Aion blockchain environment without actually running an Aion blockchain. In this section, we're going to be walking through the entire workflow of deploying a Java contract to the local kernel and write JUnit tests to test and debug your contract. You can drop in as particular sections if you want to, or you can follow it through end-to-end.
 ---
 

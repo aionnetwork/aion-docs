@@ -1,7 +1,7 @@
 ---
 title: Contract to Contract
 Description: Java smart contracts are able to interact with other Java contracts on the Aion network. 
-toc: true
+table_of_contents: true
 ---
 
 > Note: Contract-to-contract calls still follow the same rules as regular contract calls. See [Java Contract Fundamentals](/developers/fundamentals/avm-concepts/callable-functions/) section for more information.

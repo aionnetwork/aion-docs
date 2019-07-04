@@ -1,6 +1,6 @@
 ---
 title: Web3.js
-toc: true
+table_of_contents: true
 Description: We will be using Node.js and aion-web3.js library to interact with a Java smart contract on the blockchain.
 ---
 

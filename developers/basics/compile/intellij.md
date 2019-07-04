@@ -1,6 +1,6 @@
 ---
 title: Intellij
-toc: true
+table_of_contents: true
 ---
 It  takes two steps for you to build and compile your Java smart contract in IntelliJ:
 

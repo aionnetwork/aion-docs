@@ -1,6 +1,6 @@
 ---
 title: Setup your Project
-toc: true
+table_of_contents: true
 ---
 
 Quickly run through setting up a project using the Aion IntelliJ plugin. This section assumes you have IntelliJ and the Aion plugin installed.

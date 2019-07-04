@@ -1,6 +1,6 @@
 ---
 title: Intellij
-toc: true
+table_of_contents: true
 ---
 
 ## Prerequisites
