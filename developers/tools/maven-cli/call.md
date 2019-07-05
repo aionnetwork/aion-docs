@@ -1,10 +1,9 @@
 ---
 title: Call
+description: Calls to a contract can either be simple calls, or contract transactions. Calls do not necessarily incur a cost, but contract transactions always incur a cost as they are changing the state of the blockchain. Calls to a contract will always return something, whereas contract transaction may not depending on the function called.
 ---
 
 Interact with a deployed contract: `mvn aion4j:call`
-
-Calls to a contract can either be simple calls, or [contract transactions](contract-transaction). Calls do not necessarily incur a cost, but contract transactions always incur a cost. Calls to a contract will always return something. More information about this difference can be found in the [Contract Transaction](contract-transaction) section.
 
 ## Local
 
