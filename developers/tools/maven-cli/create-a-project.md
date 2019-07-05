@@ -94,10 +94,5 @@ mvn initialize
 ...
 ```
 
-You can also call the initialize with the following command:
-
-```bash
-mvn aion4j:init
-```
 
 That's it! Your project has been initialized and everything ready for you to start developing your application.
