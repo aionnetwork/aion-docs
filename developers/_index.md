@@ -16,7 +16,7 @@ First up is writing and compiling your contract. Compiling your software before 
 
 ## Test
 
-Next up is testing. Because of the nature, speed, and permanency of blockchains, making changes to an application after deployment is either incredibly difficult or impossible. So you want to make sure that the application you're creating is doing what you want it to do. The Aion ecosystem comes with a suite of tests straight out of the box. Take a look at the [Test and Debug](/developers/test-and-debug) section for more details.
+Next up is testing. Because of the nature, speed, and permanency of blockchains, making changes to an application after deployment is either incredibly difficult or impossible. So you want to make sure that the application you're creating is doing what you want it to do. The Aion ecosystem comes with a suite of tests straight out of the box. Take a look at the [Test and Debug](/developers/basics/test-and-debug) section for more details.
 
 > The test below checks whether the `getString()` method in our code above actually works. Hit the **Run Test** button below to see the results of the test.
 
@@ -54,6 +54,6 @@ Now that everything's stored on the network, we can ask the blockchain what the 
 
 ## Next Steps
 
-That's pretty much the whole process! Next up is to try your hand at doing all this manually. Checkout the [IntelliJ](/developers/tools/intellij/end-to-end) or [Maven CLI](/developers/tools/maven-cli/end-to-end) end-to-end guides to get a full run-down on how to use those tools.
+That's pretty much the whole process! Next up is to try your hand at doing all this manually. Checkout the [IntelliJ](/developers/tools/intellij-plugin/end-to-end) or [Maven CLI](/developers/tools/maven-cli/end-to-end) end-to-end guides to get a full run-down on how to use those tools.
 
 {{< developers-quickstart/scripts >}}
