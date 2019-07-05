@@ -38,5 +38,5 @@ If **build success**, you will find three files under project's target folder:
 - `*.jar`: Post-processed jar after build. Post processes include: processing *@Initializable* anootated variables and *@Callable* annotated function through ABI Compiler; optimizing original .jar content.
 - `*.abi`: Contract ABI information, defines how you call functions in a contract for the AVM and get data from the blockchain.
   
-    ![result](/developers/fundamentals/compile/images/jars-and-abi.png)
+    ![result](/developers/basics/compile/images/jars-and-abi.png)
   

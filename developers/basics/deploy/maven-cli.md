@@ -8,13 +8,14 @@ table_of_contents: true
 - [Maven](/developers/tools/maven-cli/install/)
 - Private key to an Aion account that has sufficient balance.
 - A rpc endpoint.
-- AVM maven project and [compiled](/developers/fundamentals/compile/intellij/) contract *.jar*.
+- AVM maven project and [compiled](/developers/basics/compile/intellij/) contract *.jar*.
 
 ## Setup Node URL and Account
 
 You can setup your account and rpc endpoint as environment variables, or you can jump to [Deploy](#deploy) section and setup variables upon deployment.
 
 ### Setup Node URL
+
 The aion4j plugin needs the **url of rpc endpoint** to talk an Aion network.
 
 - **Option 1**: Setup RPC Endpoint in `pom.xml`.

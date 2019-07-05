@@ -40,7 +40,7 @@ public class HelloAvm
 }
 ```
 
-A contract `contract.jar` that is compiled by using [Maven Aion4j plugin](/developers/fundamentals/compile/maven-cli/) is included in the project `contract folder`.
+A contract `contract.jar` that is compiled by using [Maven Aion4j plugin](/developers/basics/compile/maven-cli/) is included in the project `contract folder`.
 
 Here is the project structure:
 

@@ -5,10 +5,10 @@ table_of_contents: true
 
 ## Prerequisites
 
-- [Aion4j AVM IntelliJ Plugin](/developers/tools/intellij/install-the-plugin/)
+- [Aion4j AVM IntelliJ Plugin](/developers/tools/intellij-plugin/install-the-plugin/)
 - Private key to an Aion account that has sufficient balance.
 - A rpc endpoint.
-- AVM maven project and [compiled](/developers/fundamentals/compile/intellij/) contract *.jar*.
+- AVM maven project and [compiled](/developers/basics/compile/intellij/) contract *.jar*.
 
 ## Setup RPC Endpoint URL and Account
 
@@ -16,7 +16,7 @@ The Aion4j plugin needs an **url of rpc endpoint** to talk an Aion network and a
 
 To setup the RPC endpoint URL and the account, open the `Configuration` window in the plugin, or you can use keyboard shortcut `Ctrl+Shift+A,C`.
 
- ![Configuration](/developers/fundamentals/deploy/images/configuration.gif)
+ ![Configuration](/developers/basics/deploy/images/configuration.gif)
 
 ## Deploy
 
@@ -52,15 +52,15 @@ public class HelloAvm
 
 Open the Aion4j plugin in your project top level by right click on the project folder,and select `Config Deploy Args`, or select the project folder and use keyboard shortcut `Ctrl+Shift+X,D`. A pop up window will ask you to input `Deployment Arguments`.
 
-![Deployment-popup](/developers/fundamentals/deploy/images/deployment-argument.gif)
+![Deployment-popup](/developers/basics/deploy/images/deployment-argument.gif)
 
-We need to pass in two arguments into this contract, *myStr* and *adminAddress*,  upon deployment. Learn about [deployment initialization](/developers/fundamentals/contracts/initialization/) if you are not familiar with it.
+We need to pass in two arguments into this contract, *myStr* and *adminAddress*,  upon deployment. Learn about [deployment initialization](/developers/basics/contracts/initialization/) if you are not familiar with it.
 
-If your contract does not require any deployment arguments, this field is not required. Each [ABI type](/developers/fundamentals/avm-concepts/abi-types/) has its own [selector](/developers/tools/maven-cli/variable-types/) and you need to define it following by the argument data. For example,  `-T` is the selector for a string and `-A` is the selector for an Address.
+If your contract does not require any deployment arguments, this field is not required. Each [ABI type](/developers/basics/avm-concepts/abi-types/) has its own [selector](/developers/tools/maven-cli/variable-types/) and you need to define it following by the argument data. For example,  `-T` is the selector for a string and `-A` is the selector for an Address.
 
 Click `OK` to deploy your contract. Then Aion4j plugin will build and compile your contract, run your test cases, if everything pass it will deploy the contract to your node.
 
- ![deployment-output](/developers/fundamentals/deploy/images/deploy.gif)
+ ![deployment-output](/developers/basics/deploy/images/deploy.gif)
 A sample output of a successful deployment is:
 
 ```sh
