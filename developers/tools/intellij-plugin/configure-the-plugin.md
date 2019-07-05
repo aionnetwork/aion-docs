@@ -1,8 +1,8 @@
 ---
 title: Configure the Plugin
+description: There are lots of configuration options available within the Aion4j plugin for IntelliJ to help speed up your contract development.
+weight: 300
 ---
-
-There are lots of configuration options available to help speed up your contract development.
 
 ## Configuration Menu
 

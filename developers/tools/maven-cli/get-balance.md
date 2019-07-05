@@ -1,6 +1,6 @@
 ---
 title: Get Balance
-description: Every account has a balance associated with it, including empty accounts. Finding out the balance of an account is incredibly simple with the Maven CLI and Aion4j plugin.
+description: Every account has a balance associated with it, including empty accounts. Finding out the balance of an account is incredibly simple with the Maven CLI tool.
 weight: 500
 ---
 

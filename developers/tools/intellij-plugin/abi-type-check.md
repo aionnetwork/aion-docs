@@ -1,8 +1,8 @@
 ---
 title: ABI Type Check
+description: ABI type check feature warns you if any non-allowed data types are used as an input into a function, or a return value from a function. Certain types are blocked from being called from outside the contract to increase the security and consistency of the network.
+weight: 1100
 ---
-
-ABI type check feature warns you if any non-allowed data types are used as an input into a function, or a return value from a function. Certain types are blocked from being called from outside the contract to increase the security and consistency of the network. Take a look at the [Variable Types](/aion-virtual-machine/variable-types) section for more information on what types are allowed.
 
 ## Return Type Error
 

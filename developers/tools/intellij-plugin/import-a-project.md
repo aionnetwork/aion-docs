@@ -1,7 +1,8 @@
 ---
-title: Import an Existing AVM project
+title: Import a project
 table_of_contents: true
-description: This section will show you how to import an exisiting AVM maven project to IntelliJ IDE.
+description: You can import existing projects into the IntelliJ IDE. If you are importing a project that utilizes the Aion4j plugin and the AVM, you need to follow these instructions in order for the project to be compiles and built properly.
+weight: 275
 ---
 
 If you have an existing AVM maven project and you want to import it to IntelliJ IDE, follow the steps below:

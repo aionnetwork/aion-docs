@@ -1,8 +1,8 @@
 ---
 title: Transfer
+description: Transfer funds from one account to another using the Aion4j plugin for IntelliJ. This function is only available through a remote node.
+weight: 900
 ---
-
-Transfer funds from one account to another. This function is only available through a remote node.
 
 Run this command by right clicking anywhere within a contract and selecting **Aion Virtual Machine** > **Remote** > **Transfer**.
 

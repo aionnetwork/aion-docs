@@ -1,5 +1,7 @@
 ---
 title: Get Balance
+description: Every account has a balance associated with it, including empty accounts. Finding out the balance of an account is incredibly simple with the Aion4j plugin for IntelliJ.
+weight: 800
 ---
 
 The `get-balance` command is split into two section, [Default](#default-account) and [Specific](#specific-account).

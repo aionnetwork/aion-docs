@@ -1,6 +1,7 @@
 ---
 title: Create Account
-toc : true
+description: The nature of blockchain development requires applications and users to have accounts. The IntelliJ IDE, along with the Aion4j plugin, allows developers to create accounts on the fly, and use them to deploy and interact with blockchain applications.
+weight: 400
 ---
 
 To send transactions, deploy contracts and interact with them, you need an AION account with sufficient balance.

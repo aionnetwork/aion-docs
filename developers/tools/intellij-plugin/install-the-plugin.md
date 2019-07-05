@@ -1,6 +1,7 @@
 ---
 title: Install the Plugin
 description: The Aion4j plugin available for IntelliJ allows you to create, test, compile, deploy, and call your Java blockchain applications, all from within the same IDE. No more copy-and-pasting contract from your local machine to a browser based IDE just to check if things actually work!
+weight: 100
 ---
 
 Install the latest stable build, or load the bleeding-edge edition.
