@@ -1,6 +1,7 @@
 ---
 title: Transfer
 description: You can also send tokens to and from contracts and accounts using the Maven CLI. Just like other transactions, the transaction receipt is not automatically returned once the transaction has finished, you need to request the receipt manually.
+weight: 1200
 ---
 
 Send `AION` from one account or contract to another: `mvn aion4j:transfer`

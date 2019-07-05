@@ -1,6 +1,7 @@
 ---
 title: Caching
 description: The embedded AVM includes the ability to automatically cache the results from certain commands.
+weight: 325
 ---
 
 After running `aion4j:deploy`, the embedded AVM will cache the application address. When the `aion4j:call` command is used, the embedded AVM will call the address stored in memory. This all happens automatically and without any input from the user. The same functionality is available when connecting to a remote kernel. The Maven plugin stores the transaction hash of the last deployment, the last contract deployment address, and the last transaction hash for other goals.

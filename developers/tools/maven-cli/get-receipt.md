@@ -1,6 +1,7 @@
 ---
 title: Get Receipt
 description: Just like regular real-world transactions, when a transaction is processed on a blockchain network a receipt is generated. This receipt lists pieces of information that can be helpful in debugging contracts, as well as vital information such as a contract's block hash and contract address. The Maven CLI does not automatically retrieve the receipt after a transaction has been sent.
+weight: 1000
 ---
 
 Return a transaction receipt: `mvn aion4j:get-receipt`
