@@ -48,14 +48,14 @@ brew install maven
    5. **Variable name**: Enter `JAVA_HOME`
    6. **Variable value**: Enter the path of your JDK installation into the field. If you didn't change anything during the JDK installation, it should be `C:\Program Files\Java\jdk-11.0.2`.
 
-![Java Home Variable](images/java-home-variable.jpg)
+![Java Home Variable](/developers/tools/maven-cli/images/java-home-variable.jpg)
 
 1. Assign the `MAVEN_HOME` system variable:
    1. Still under **System Variables** > click **New**
    2. **Variable name**: Enter `MAVEN_HOME` under the  field.
    3. **Variable value**: Enter the path of your **Maven installation** into the field. If you followed along with _Step 4_, it will be `C:\Program Files\apache-maven-3.6.0`.
 
-![Maven Home Variable](images/maven-home-variable.jpg)
+![Maven Home Variable](/developers/tools/maven-cli/images/maven-home-variable.jpg)
 
 1. Add `%JAVA_HOME%` and `%MAVEN_HOME%` to your **PATH** variable:
    1. Still in the **Environment Variables** window > Under the "User variables for ..." > Select the variable named **Path** > Then click **Edit...**.
@@ -63,10 +63,10 @@ brew install maven
    3. Click **New** again, and enter `%MAVEN_HOME%\bin`
    4. Click **OK** to close down the system windows.
 
-![Java and Maven Paths](images/java-and-maven-paths.jpg)
+![Java and Maven Paths](/developers/tools/maven-cli/images/java-and-maven-paths.jpg)
 
 1. Open Command Prompt and enter `mvn --version` to check that everything is working.
 
-![Command Prompt](images/command-prompt.jpg)
+![Command Prompt](/developers/tools/maven-cli/images/command-prompt.jpg)
 
 Now that you've got Maven installed correctly, take a look at Creating a HelloWorld Project locally using the embedded AVM.
