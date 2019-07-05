@@ -16,7 +16,7 @@ public static BigInteger exampleFunction() {
 }
 ```
 
-![Return Type Error](images/return-type-error.png)
+![Return Type Error](/developers/tools/intellij-plugin/images/return-type-error.png)
 
 ## Argument Type Error
 
@@ -30,7 +30,7 @@ public static String exampleFunction(BigInteger foo) {
 }
 ```
 
-![Argument Type Error](images/argument-type-error.png)
+![Argument Type Error](/developers/tools/intellij-plugin/images/argument-type-error.png)
 
 ## Private Functions
 

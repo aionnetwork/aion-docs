@@ -10,7 +10,7 @@ mvn archetype:generate -DarchetypeGroupId=org.aion4j -DarchetypeArtifactId=avm-a
 
 You can find the [latest archetype version on GitHub](https://github.com/bloxbean/avm-archetype).
 
-![Archetype Version Screenshot](images/bloxbean-archetype-version.png)
+![Archetype Version Screenshot](/developers/tools/maven-cli/images/bloxbean-archetype-version.png)
 
 ## GroupId, ArtifactId, Version, and Package
 
@@ -62,7 +62,7 @@ However, if you are using archetype version `0.9` or lower, then there's still a
 1. Open the `pom.xml` file in a text editor.
 2. Find the line that beings with `aion4j.plugin.version` and change the value to the [latest release listed on the GitHub page](https://github.com/bloxbean/aion4j-maven-plugin):
 
-![GitHub Package Version](images/github-package-version.png)
+![GitHub Package Version](/developers/tools/maven-cli/images/github-package-version.png)
 
 ```xml
 <properties>
@@ -93,6 +93,5 @@ mvn initialize
 
 ...
 ```
-
 
 That's it! Your project has been initialized and everything ready for you to start developing your application.
