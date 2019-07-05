@@ -1,10 +1,11 @@
 ---
 title: Get Logs
+description: Reviewing the logs from a node can be useful when attempting to debug issues with contracts or the node itself. Logs can also be useful at finding choke points or memory issues within your contracts.
 ---
 
 Return logs from a remote node: `mvn aion4j:get-logs`
 
-I order to have a node return logs, you must specify:
+In order to have a node return logs, you must specify:
 
 - The node `host` and `port` variables.
 - The starting (`fromBlock`) and ending (`toBlock`) blocks that you wish to capture log data for. Log data will be returned _inclusive_ of these blocks.

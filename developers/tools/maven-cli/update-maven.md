@@ -1,5 +1,6 @@
 ---
 title: Update Maven
+description: Because Maven is a command-line tool, updating any projects with a new Maven package requires some modification of the project configuration file and removal of the library folder.
 ---
 
 Follow this process to update the Aion plugin for Maven. All terminal commands are the same across operating systems.
@@ -14,11 +15,10 @@ Follow this process to update the Aion plugin for Maven. All terminal commands a
         <aion4j.plugin.version>0.5.4</aion4j.plugin.version>
         ...
 
-
     </properties>
     ```
 
-2. Rename or delete the `lib` folder within your project. Renaming the project to something like `lib-old` is safer since you can revert to it if something goes wrong:
+2. Rename or delete the `lib` folder within your project. Renaming the project to something like `lib-old` is safer since you can revert to it if something goes wrong. Run the following line in a terminal or command prompt:
 
     ```bash
     mv lib lib-old
@@ -30,4 +30,18 @@ Follow this process to update the Aion plugin for Maven. All terminal commands a
     mvn initialize
     ```
 
-4. You're done! You can now build your project using a new version of Maven.
+4. Check that your project successfully builds. If it does, you can remove the old `lib` folder:
+
+    **Linux / MacOS**
+
+    ```bash
+    rm -rf lib-old
+    ```
+
+    **Windows**
+
+    ```bash
+    rmdir lib-old
+    ```
+
+5. You're done! You can now build your project using a new version of Maven.

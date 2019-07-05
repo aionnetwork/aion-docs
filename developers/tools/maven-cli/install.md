@@ -1,8 +1,7 @@
 ---
 title: Install
+description: Installing Maven is quite simple, but differs between operating systems. If these instructions don't work for you check out the Apache Maven website to see detailed instructions for specific operating systems.
 ---
-
-Installing Maven is pretty simple, but differs between operating systems.
 
 ## Linux
 
@@ -52,7 +51,7 @@ brew install maven
 
 1. Assign the `MAVEN_HOME` system variable:
    1. Still under **System Variables** > click **New**
-   2. **Variable name**: Enter `MAVEN_HOME` under the  field.
+   2. **Variable name**: Enter `MAVEN_HOME` into the field.
    3. **Variable value**: Enter the path of your **Maven installation** into the field. If you followed along with _Step 4_, it will be `C:\Program Files\apache-maven-3.6.0`.
 
 ![Maven Home Variable](/developers/tools/maven-cli/images/maven-home-variable.jpg)
@@ -68,5 +67,3 @@ brew install maven
 1. Open Command Prompt and enter `mvn --version` to check that everything is working.
 
 ![Command Prompt](/developers/tools/maven-cli/images/command-prompt.jpg)
-
-Now that you've got Maven installed correctly, take a look at Creating a HelloWorld Project locally using the embedded AVM.

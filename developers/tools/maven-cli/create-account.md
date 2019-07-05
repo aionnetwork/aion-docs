@@ -1,5 +1,6 @@
 ---
 title: Create an Account
+description: The nature of blockchain development requires applications and users to have accounts. The Maven CLI, along with the Aion4j plugin, allows developers to create accounts on the fly, and use them to deploy and interact with blockchain applications.
 ---
 
 Create an account on the network: `mvn aion4j:create-account`

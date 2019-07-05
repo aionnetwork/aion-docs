@@ -1,14 +1,15 @@
 ---
 title: Create a Project
+description: When creating a new Aion project, developers can use Maven's built in project creation commands to download the latest version of the Aion archetype, and begin development with a fresh bolierplate template.
 ---
 
-Now that you've got Maven installed you can get started with your project. Run the following command in the directory where you want your code to be stored:
+To create a new Maven project, run the following command in the directory where you want your code to be stored:
 
 ```bash
 mvn archetype:generate -DarchetypeGroupId=org.aion4j -DarchetypeArtifactId=avm-archetype -DarchetypeVersion=0.20
 ```
 
-You can find the [latest archetype version on GitHub](https://github.com/bloxbean/avm-archetype).
+Take note of the `-DarchetypeVersion` above. You can find the [latest archetype version on GitHub](https://github.com/bloxbean/avm-archetype).
 
 ![Archetype Version Screenshot](/developers/tools/maven-cli/images/bloxbean-archetype-version.png)
 
@@ -35,7 +36,7 @@ Confirm properties configuration:
 
 ## Project Structure
 
-Once you've run the archetype command and filled in the fields, you will have a file structure similar to this:
+Once you've ran the archetype command and filled in the fields, you will have a file structure similar to this:
 
 ```text
 hello-world/
@@ -53,32 +54,9 @@ hello-world/
                     └── HelloAvmRuleTest.java
 ```
 
-## Configure POM
-
-In the latest version of the Maven Aion4J plugin, you don't have to do any further configuration to the `pom.xml` file after creating the project. If you are using archetype version `0.10` or higher, **you don't need to follow this section**. [Head straight to Initialize](#initialize).
-
-However, if you are using archetype version `0.9` or lower, then there's still a little bit of configuration left to do before you can deploy your contract. You need to change the Aion4j version number selected in the `pom.xml` file.
-
-1. Open the `pom.xml` file in a text editor.
-2. Find the line that beings with `aion4j.plugin.version` and change the value to the [latest release listed on the GitHub page](https://github.com/bloxbean/aion4j-maven-plugin):
-
-![GitHub Package Version](/developers/tools/maven-cli/images/github-package-version.png)
-
-```xml
-<properties>
-
-...
-
-    <aion4j.plugin.version>0.5.1</aion4j.plugin.version>
-
-...
-
-</properties>
-```
-
 ## Initialize
 
-Once the `pom.xml` file has been configured, you can launch the maven initializer to finalize the folder structure of your project.
+You can launch the Maven initializer to finalize the folder structure of your project, and create the `avm.jar` that will run your localized blockchain.
 
 ```bash
 mvn initialize
@@ -94,4 +72,4 @@ mvn initialize
 ...
 ```
 
-That's it! Your project has been initialized and everything ready for you to start developing your application.
+That's it! Your project has been initialized and everything is ready for you to start developing your Java blockchain application.
