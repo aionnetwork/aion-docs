@@ -32,7 +32,7 @@ IntelliJ and Maven work together to create a basic project template that you can
 
 This step pulls the `avm.jar` file that's going to run all your contracts locally.
 
-1. Right click anywhere in your project.
+1. Right-click anywhere in your project.
 2. Select **Aion Virtual Machine** > **Run Initialize**.
 
 ## View your Contract
@@ -56,7 +56,7 @@ We're going to customize this contract a little bit, so you can have a taste of 
 
 ## Run Tests and Debug
 
-All the Junit tests for your contract are stored in the `src/test/java/Your porject name/` folder, and you get a standard AVM rule test when you create the AVM project called `HelloAvmRuleTest`. The test class has three _actual_ tests `@Test`, and one function that runs at the start of every test `@BeforeClass`. Learn about [AVM Junit test](/developers/fundamentals/test-and-debug/end-to-end/) if you are not familiar with it.
+All the Junit tests for your contract are stored in the `src/test/java/Your project name/` folder, and you get a standard AVM rule test when you create the AVM project called `HelloAvmRuleTest`. The test class has three _actual_ tests `@Test`, and one function that runs at the start of every test `@BeforeClass`. Learn about [AVM JUnit test](/developers/fundamentals/test-and-debug/end-to-end/) if you are not familiar with it.
 
 Since we removed the `sayHello()` function from our contract, the `testSayHello()` function in this test class will fail, so take it out.
 
@@ -64,7 +64,7 @@ To run a test, just click on the `run` button next to the test function.
 
 ![Running the testGetString() method](/developers/tools/intellij-plugin/images/test-getstring.gif)
 
-You can also set breakpoint in your contract and run the test in _debug_ mode, which gives you more information on what's happening in the test.
+You can also set a breakpoint in your contract and run the test in _debug_ mode, which gives you more information on what's happening in the test.
 
 ![Running the test in debug mode](/developers/tools/intellij-plugin/images/debug-getstring.gif)
 
