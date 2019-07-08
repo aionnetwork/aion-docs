@@ -1,6 +1,6 @@
 # Aion Docs
 
-![Aion Logo](/aion-docs-logo.png) 
+![Aion Logo](/aion-docs-logo.png)
 
 Welcome to Aion Docs! This repository holds all the documentation for the Aion Network. The website [docs.aion.network](https://docs.aion.network/) gets content from this repository. The migration of content from this repo to the docs website is _not_ automatic and is a manual process. As such, this repository is always more up-to-date than the website. This repo should be seen as the source of truth for Aion Network documentation.
 
