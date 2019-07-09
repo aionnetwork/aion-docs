@@ -18,5 +18,3 @@ If you have an existing AVM maven project and you want to import it to IntelliJ 
 9. Click **Finish**.
 
 Ta-da! Your project is successfully imported!
-
-![import](/developers/tools/intellij-plugin/images/import-existing-avm-project.gif)
