@@ -50,7 +50,7 @@ To write a Java smart contract, we will first need to create a `Java Class` file
 3. Click **Java Class**
 4. Name it as `SimpleOwnable`
 
-Then we can start to write the contract. Since this guide is to show you how to write tests and debug a contract, we will provide a sample contract. Learn about [AVM concepts](/developers/basics/avm-concepts/callable-functions/) and [AVM API packages](/developers/basics/packages/abi/), and see some [contract examples](/developers/basics/contracts/contract-to-contract/) if you have questions  about the contract.
+Then we can start to write the contract. Since this guide is to show you how to write tests and debug a contract, we will provide a sample contract. Learn about [AVM concepts](/developers/fundamentals/avm-concepts/callable-functions/) and [AVM API packages](/developers/fundamentals/packages/abi/), and see some [contract examples](/developers/fundamentals/contracts/contract-to-contract/) if you have questions  about the contract.
 
 Copy and paste the following contract:
 
@@ -145,7 +145,7 @@ public  void deployContract() {...}
 
 Then we will get the bytes that represent the contract jar, along with the deployment arguments in byte[] if required.
 
-Use [ABIStreamingEnocder](/content/developers/basics/packages/abi/#abistreamingencoder-https-avm-api-aion-network-org-aion-avm-userlib-abi-abistreamingencoder) to encode the deployment arguments:
+Use [ABIStreamingEnocder](/developers/fundamentals/packages/abi) to encode the deployment arguments:
 
 ```java
 byte[] deploymentArguments = encoder.encodeOneString("OwnershipTransferred").encodeOneString("Jennifer").toBytes();

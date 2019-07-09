@@ -55,7 +55,7 @@ The common tab represents customizations that effect both local and remote funct
 
 | Configuration Option | Description | Default | Example |
 | --- | --- | --- | --- |
-| Deployment Arguments | Since the plugin is essentially a wrapper around Maven, you can ask the plugin to run Maven commands. These arguments are applicable for both remote and embedded mode. See the [Maven](/aion-virtual-machine/maven) section for a list of available commands. |  | `'-T Alice -I 30 -A 0xa001e2afd2cf...', '-<type> <value> -<type> <value> ...'` |
+| Deployment Arguments | Since the plugin is essentially a wrapper around Maven, you can ask the plugin to run Maven commands. These arguments are applicable for both remote and embedded mode. See the [Maven](/developers/tools/maven-cli) section for a list of available commands. |  | `'-T Alice -I 30 -A 0xa001e2afd2cf...', '-<type> <value> -<type> <value> ...'` |
 
 ## Pom File
 
@@ -99,4 +99,4 @@ The `pom.xml` file contains a `profiles` section where you can define custom pro
 
 IntelliJ allows users to assign keyboard shortcuts to individual plugins. To access this menu go to **Preferences** > **Keymap** > **Plug-ins** > **Aion4j AVM Integration**. Here you can set any keyboard shortcuts you want to. Depending on your IntelliJ installation, some default Aion plugin shortcuts may be overridden by other IntelliJ functions.
 
-![IntelliJ Keymaps](images/intellij-keymap.png)
+![IntelliJ Keymaps](/developers/tools/intellij-plugin/images/intellij-keymap.png)

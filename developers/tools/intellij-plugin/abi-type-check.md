@@ -34,7 +34,7 @@ public static String exampleFunction(BigInteger foo) {
 
 ## Private Functions
 
-Restricted variable types (those not listed in the [Variable Types](/aion-virtual-machine/variable-types) section) can be used freely between `private` functions, and can be fed into `public` functions.
+Restricted variable types (those not listed in the [Variable Types](/developers/fundamentals/avm-concepts/abi-types) section) can be used freely between `private` functions, and can be fed into `public` functions.
 
 ```java
 private static BigInteger setBigInteger() {

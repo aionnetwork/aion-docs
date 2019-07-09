@@ -165,7 +165,7 @@ Use `aion4j: contract-txn` maven goal to send your transaction to a contract met
     mvn aion4j:contract-txn -Dcontract=0xa0ceaa5b83fe4a8911928072b7e63ee32d880bef82fcbf91747721cfdd528db2 -Dmethod=setString  -Dargs="-T 'Hello Jennifer'" -Dweb3rpc.url="Your RPC Endpoint Url" -Dpk="Your Private Key" -Premote
     ```
 
-Contract address is assigned to `-Dcontract` and `-Dmethod` is the method name we are sending the transaction to. `-Dargs` is the keyword for passing in arguments. If your method does not require any arguements, this field is not required. Each [ABI type](//developers/basics/avm-concepts/abi-types/s) has its own [selector](/developers/tools/maven-cli/variable-types/) and you need to define it following by the argumentment data. For example, `setString` requires a `string`, where the selector is `-T`.
+Contract address is assigned to `-Dcontract` and `-Dmethod` is the method name we are sending the transaction to. `-Dargs` is the keyword for passing in arguments. If your method does not require any arguements, this field is not required. Each [ABI type](/developers/fundamentals/avm-concepts/abi-types) has its own [selector](/developers/tools/maven-cli/variable-types/) and you need to define it following by the argumentment data. For example, `setString` requires a `string`, where the selector is `-T`.
 
 You will get a `transaction hash` as an output like:
 

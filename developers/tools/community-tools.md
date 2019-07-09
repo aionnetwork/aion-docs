@@ -29,7 +29,7 @@ The following tools can help speed up your contract development, and even run a 
 
 ### [Maven Plugin](https://github.com/satran004/aion4j-maven-plugin)
 
-The Maven archetype provides build and deployment support for AVM based smart contracts. It also allows you to create, deploy, and call contracts locally on your machine without having to connect to a remote node! Take a look at the [Maven documentation](/aion-virtual-machine/maven/embedded-avm) for more information.
+The Maven archetype provides build and deployment support for AVM based smart contracts. It also allows you to create, deploy, and call contracts locally on your machine without having to connect to a remote node! Take a look at the [Maven documentation](/developers/tools/maven-cli) for more information.
 
 ## Node Services
 
@@ -54,10 +54,6 @@ These tools help you to monitor the Aion network as you develop your dApps.
 ### [Aion Explorer](https://mainnet.aion.network/#/dashboard)
 
 The Aion Blockchain Explorer service, hosted by the Aion Foundation.
-
-### [Amberdata Dashboard](https://aion-kilimanjaro.amberdata.io/)
-
-SaaS platform for monitoring, searching, analyzing, and securing public and private blockchains. Amberdata enables operational intelligence for blockchain infrastructure, applications, and transactions.
 
 ## Wallets
 
@@ -106,7 +102,7 @@ A light universal web-based crypto wallet that supports Ledger wallet integratio
 
 These are the top 5 most popular exchanges that support `AION`.
 
-- [Binance](https://www.binance.com/en)
+- [Binance](https://www.binance.com)
 - [BCex](https://www.bcex.ca/)
 - [BitFinex](https://www.bitfinex.com/)
 - [BitForex](https://bitforex.com/)

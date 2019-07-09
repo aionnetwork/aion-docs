@@ -17,7 +17,7 @@ First up is writing and compiling your contract. Compiling your software before 
 
 ## Test
 
-Next up is testing. Because of the nature, speed, and permanency of blockchains, making changes to an application after deployment is either incredibly difficult or impossible. So you want to make sure that the application you're creating is doing what you want it to do. The Aion ecosystem comes with a suite of tests straight out of the box. Take a look at the [Test and Debug](/developers/basics/test-and-debug) section for more details.
+Next up is testing. Because of the nature, speed, and permanency of blockchains, making changes to an application after deployment is either incredibly difficult or impossible. So you want to make sure that the application you're creating is doing what you want it to do. The Aion ecosystem comes with a suite of tests straight out of the box. Take a look at the [Test and Debug](/developers/basics/test-and-debug/end-to-end) section for more details.
 
 > The test below checks whether the `getString()` method in our code above actually works. Hit the **Run Test** button below to see the results of the test.
 

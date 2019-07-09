@@ -7,7 +7,7 @@ weight: 200
 
 ## Prerequisites
 
-First up, you need [IntelliJ](https://www.jetbrains.com/idea/) and the [Aion4j](/developers/tools/intellij/install-the-plugin) plugin installed. Take a look at those sections for steps on how to get them installed. You'll also need a node to connect to if you want to deploy your contract to the testnet, but we'll walk you through that bit.
+First up, you need [IntelliJ](https://www.jetbrains.com/idea/) and the [Aion4j](/developers/tools/intellij-plugin/install-the-plugin) plugin installed. Take a look at those sections for steps on how to get them installed. You'll also need a node to connect to if you want to deploy your contract to the testnet, but we'll walk you through that bit.
 
 ## Create a Project
 
@@ -73,7 +73,7 @@ It is important that all three of these name changes are identical. The `pom.xml
 
 ## Run Tests and Debug
 
-All the Junit tests for your contract are stored in the `src/test/java/<your_project_name>/` folder, and you get a standard AVM rule test when you create the AVM project called `HelloAvmRuleTest`. The test class has three _actual_ tests `@Test`, and one function that runs at the start of every test `@BeforeClass`. You can learn more about [AVM JUnit tests](/developers/fundamentals/test-and-debug/end-to-end/) if you are not familiar with it.
+All the Junit tests for your contract are stored in the `src/test/java/<your_project_name>/` folder, and you get a standard AVM rule test when you create the AVM project called `HelloAvmRuleTest`. The test class has three _actual_ tests `@Test`, and one function that runs at the start of every test `@BeforeClass`. You can learn more about [AVM JUnit tests](/developers/basics/test-and-debug/end-to-end/) if you are not familiar with it.
 
 Since we removed the `sayHello()` function from our contract and rename the Java class, we need to do a couple of things before we can run our test:
 

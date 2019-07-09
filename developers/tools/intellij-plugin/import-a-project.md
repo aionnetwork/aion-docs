@@ -19,4 +19,4 @@ If you have an existing AVM maven project and you want to import it to IntelliJ 
 
 Ta-da! Your project is successfully imported!
 
-![import](/developers/tools/intellij/images/import-existing-avm-project.gif)
+![import](/developers/tools/intellij-plugin/images/import-existing-avm-project.gif)
