@@ -14,7 +14,7 @@ Get the balance of the default account.
 
 Run this command by right clicking anywhere in a contract and selecting **Aion Virtual Machine** > **Embedded** > **Get Balance (Default)**. The results are printed in the Maven Goal terminal.
 
-![Get Default Balance Embedded](/developers/tools/intellj-plugin/images/get-balance-default-embedded.gif)
+![Get Default Balance Embedded](/developers/tools/intellij-plugin/images/get-balance-default-embedded.gif)
 
 This balance is reset back to ~99999997205856*10^-18 `AION` every time you compile a contract.
 
@@ -22,7 +22,7 @@ This balance is reset back to ~99999997205856*10^-18 `AION` every time you compi
 
 Return the balance of the account listed in the configuration window.
 
-Run this command by right clicking anywhere within a contract and selecting **Aion Virtual Machine** > **Remote** > **Get Balance**. 
+Run this command by right clicking anywhere within a contract and selecting **Aion Virtual Machine** > **Remote** > **Get Balance**.
 
 This command requires an address to be in the **Address** field of the **Confirguration** > **Remote Kernel** window.
 
