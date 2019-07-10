@@ -1,80 +1,57 @@
 ---
 title: End to End
+description: You can utilize the built in Java testing packages when creating your blockchain applications on the Aion network. They allow you to deploy your Java smart contract and write tests to interact with the contract under a real Aion blockchain environment without actually running an Aion blockchain. In this section, we're going to be walking through the entire workflow of deploying a Java contract to the local kernel, writing some tests, and finally running those tests against your project.
 table_of_contents: true
-description: AvmRule is a JUnit Rule designed for testing Java contract on an embedded AVM. It allows you to deploy your Java smart contract and write tests to interact with the contract under a real Aion blockchain environment without actually running an Aion blockchain. In this section, we're going to be walking through the entire workflow of deploying a Java contract to the local kernel and write JUnit tests to test and debug your contract. You can drop in as particular sections if you want to, or you can follow it through end-to-end.
+draft: true
 ---
 
 ## Prerequisites
 
-- [Java 10 or up](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html).
-- [IntelliJ IDE](https://www.jetbrains.com/idea/download/) (or any IDE you like that supports JUnit 4.12^).
-- [AVM Lastest Tooling Jars](https://github.com/aionnetwork/AVM/tree/latest-tooling)
+This guide assumes that you have the [IntelliJ IDE installed](https://www.jetbrains.com/idea/), along with the [Aion4j plugin](/developers/tools/intellij-plugin/install-the-plugin). You do not need to have an IntelliJ project ready, as we will be creating a new project in this guide.
 
 ## Set up a Project
 
-We will use IntelliJ to create a Java project and set it up to a Java smart contract project.
+We will use IntelliJ to create a new Java blockchain application project.
 
 ### Create a project
 
-1. Open IntelliJ
-2. Click **Create a new Project**
-3. Click **Java**
-4. Add **Project SDK** (Java 10^)
-5. Click **Next** and *Next**
-6. Enter **Project name** and **Project location**
-7. Click **Finish**
+1. With IntelliJ open, go to **File** > **New** > **Project** or click **Create New Project** from the splash screen.
+2. Select **Maven** from the options on the left.
+3. Check **Create from archetype**.
+4. Select `org.aion4j:avm-archetype` from the list and click **Next**.
+5. Enter the **GroupID** and **ArtifactID** for your project. For more information on these values check out the [Apache Maven documentation](https://maven.apache.org/guides/mini/guide-naming-conventions.html). For this guide we're going to enter `aion`, `example`. 
+6. Click **Next** when you have finished.
+7. Click **Next**.
+8. Click **Finish**.
+9. An Import popup will appear at the bottom right of the screen once everything has loaded. Click **Enable Auto-Import**.
 
-![project](/developers/basics/test-and-debug/images/create-project.gif)
+## Copy the Contract
 
-### Set up the Project
+We're going to use the contract below to create our tests. The contract assigns the variable `owner` to the address that deploys the contract. This _owner_ is allowed to transfer the ownership of the contract to another account. Ownership will only be transferred when the assigned _new owner_ accepts the ownership. Once the ownership transfer is completed, an `OwnershipTransferred` event will be logged along with the old owner address and the new owner address.
 
-For this project, we will have three directories:
+1\. Open the `HelloAvm` file within your project.
 
-- **src** folder to contain contract classes, which is generated automatically when we created the project.
-- **lib** folder to contain *avm.jar*.
-  
-  ![lib](/developers/basics/test-and-debug/images/add-lib.gif)
+2\. Delete the entire contents of the file.
 
-- **test** folder to contain test classes.
-
-  ![test](/developers/basics/test-and-debug/images/add-test.gif)
-
-## Write the Contract
-
-We will use a simple Ownable contract as an example. The contract assigns the account that deploys the contract as the owner upon deployment. The owner is allowed to transfer the ownership of the contract to another account later. Ownership will only be transferred when the assigned new owner accepts the ownership. Once the ownership transfer is completed, an `OwnershipTransferred` event will be logged along with the old owner address and the new owner address.
-
-To write a Java smart contract, we will first need to create a `Java Class` file:
-
-1. Right click on **src** folder
-2. Move to **New**
-3. Click **Java Class**
-4. Name it as `SimpleOwnable`
-
-Then we can start to write the contract. Since this guide is to show you how to write tests and debug a contract, we will provide a sample contract. Learn about [AVM concepts](/developers/fundamentals/avm-concepts/callable-functions/) and [AVM API packages](/developers/fundamentals/packages/abi/), and see some [contract examples](/developers/fundamentals/contracts/contract-to-contract/) if you have questions  about the contract.
-
-Copy and paste the following contract:
+3\. Copy and paste the contract listed below into the `HelloAvm` file.
 
 ```java
-
 import avm.Address;
 import avm.Blockchain;
 import org.aion.avm.tooling.abi.Callable;
 import org.aion.avm.tooling.abi.Initializable;
 
-
 public class SimpleOwnable {
 
     private static Address owner;
-
     private static Address newOwner;
 
     // Assign the log topic upon deployment.
     @Initializable
-    private static String tranferLogTopic;
+    private static String transferLogTopic;
 
     @Initializable
     private static String deployer;
-
 
     static {
         // Assign the deployer as the owner.
@@ -96,7 +73,7 @@ public class SimpleOwnable {
     @Callable
     public static void acceptOwnership() {
         Blockchain.require(Blockchain.getCaller().equals(newOwner));
-        Blockchain.log(tranferLogTopic.getBytes(), owner.toByteArray(), newOwner.toByteArray());
+        Blockchain.log(transferLogTopic.getBytes(), owner.toByteArray(), newOwner.toByteArray());
         owner = newOwner;
         newOwner = new Address(new byte[32]);
     }
@@ -109,30 +86,36 @@ public class SimpleOwnable {
 }
 ```
 
+5\. Save the file.
+
 ## Write Tests
 
-Now we are ready to test our contract without deploying the contract to the network. Take a look at [Junit test fundamentals](https://www.vogella.com/tutorials/JUnit/article.html) if you are not familiar with it. We will use the `AvmRule` to write our tests, which is a Junit Rule designed for testing Java contract on an embedded AVM.
+Now we are ready to test our contract without deploying the contract to the network. First up we need to create our test file.
 
-### Create Aion Blockchain Environment
+1. Within the `src/test/java/exmaple`, open the `RuleTest` file.
+2. Delete the contents of the file. You should be left with an empty `HelloAvmRuleTest` file.
 
-First, we will instantiate the AvmRule. It creates an in-memory representation of the Aion kernel and AVM. It not only allows developers to write tests for a single method but also logical tests from deploying the contract and performing a series of interaction with the contracts under a Blockchain runtime environment. Every time we run a test, the built kernel and AVM instances are refreshed.
+Next we need to instantiate the `AvmRule` class. It creates an _in-memory_ representation of the Aion kernel and AVM. Add the following lines to the top of the `HelloAvmRuleTest`.
 
 ```java
 @Rule
 public AvmRule avmRule = new AvmRule(true);
 ```
 
-Two things worth noticing here:
+There are two things to point out here:
 
-1. `@Rule` indicates that an embedded AVM will be instantiated for each test method, which means for each method, it is talking to a new kernel. If you want all your test to be run in the same AVM and kernel, define it as `@classRule`.
-2. `AvmRule` takes a boolean argument, where `true` enables the debug mode. AvmRule with debug mode not only gives your kernel responses but also verbose contract errors and concurrent executor.
+1. `@Rule` indicates that an embedded AVM will be instantiated for each test method with this file. This means that each individual test will talk to a _fresh_ version of the kernel. If you want all your tests to be run in the same AVM and kernel, change `@Rule` to `@ClassRule`.
+2. `AvmRule` takes a boolean argument where `true` enables _debug_ mode, giving you more verbose output from IntelliJ.
 
-### Deploy the Contract
-
-We need an account that has sufficient balance to deploy the contract, and a variable to hold the contract address:
+Next, we need to create an account for the test to use. The `avmRule` class comes with a default account and some tokens already in it. Add the following line to the test:
 
 ```java
 private Address deployer = avmRule.getPreminedAccount();
+```
+
+We should also create a `contractAddress` variable. Add the following line into the test:
+
+```java
 private Address contractAddress;
 ```
 
@@ -140,7 +123,7 @@ We will assign contract in a method with `@Before` so that it will be run before
 
 ```java
 @Before
-public  void deployContract() {...}
+public void deployContract() {...}
 ```
 
 Then we will get the bytes that represent the contract jar, along with the deployment arguments in byte[] if required.

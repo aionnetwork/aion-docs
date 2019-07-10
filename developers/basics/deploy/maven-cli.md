@@ -1,188 +1,83 @@
 ---
 title: Maven CLI
-table_of_contents: true
+description: Once a blockchain application has been written, it can be compiled and deployed to a local or remote blockchain network. Deploying blockchain applications is similar to how regular applications are deployed currently, however there are some differences. One major difference is that to deploy an application to a public blockchain network, an account must be supplied with tokens in order to cover the deployment costs. However, when deploying to a local network through the Maven CLI there is no need to create an account or supply it with test tokens, as everything is contained within the local network.
 ---
 
-## Prerequisites
+Deploy your contract on a blockchain network: `mvn aion4j:deploy`
 
-- [Maven](/developers/tools/maven-cli/install/)
-- Private key to an Aion account that has sufficient balance.
-- A rpc endpoint.
-- AVM maven project and [compiled](/developers/basics/compile/intellij/) contract *.jar*.
+Before you deploy your contract, make sure you have [compiled it](/developers/tools/maven-cli/compile).
 
-## Setup Node URL and Account
+## Local
 
-You can setup your account and rpc endpoint as environment variables, or you can jump to [Deploy](#deploy) section and setup variables upon deployment.
+Run the following command from the same location as your `pom.xml` file:
 
-### Setup Node URL
+```bash
+mvn aion4j:deploy
 
-The aion4j plugin needs the **url of rpc endpoint** to talk an Aion network.
-
-- **Option 1**: Setup RPC Endpoint in `pom.xml`.
-  - Use a node
-  
-    ```xml
-    ...
-    <profile>
-    <id>remote</id>
-    ...
-    <web3rpcUrl>http://localhost:8545</web3rpcUrl>
-    ...
-    </profile>
-    ...
-    ```
-
-  - Use NodeSmith(node hosting service) API endpoint
-  
-    ```xml
-    ...
-    <profile>
-    <id>remote</id>
-    ...
-    <web3rpcUrl>https://aion.api.nodesmith.io/v1/mastery/jsonrpc?apiKey=abcdefg12345678</web3rpcUrl>
-    ...
-    </profile>
-    ...
-    ```
-
-- **Option 2:** Setup RPC Endpoint as enviorment variables
-  
-  - Mac and Linux
-
-    ```sh
-    export web3rpc_url=http://localhost:8545
-    ```
-
-  - Windows
-
-    ```sh
-    set web3rpc_url=http://localhost:8545
-    ```
-
-### Setup Account
-
-An account that has sufficient balance for contract deployment is required as well. Aion4j maven plugin supports client side transaction signing with private key. You can deploy a smart contract on an Aion network without account management feature and your private key never leaves your machine.
-
-Setup your **private key**  as an enviornment variable by runing the following command:
-
-- Mac and Linux
-  
-    ```sh
-    export pk=0xa01234567890abcdefghijk...
-    ```
-
-- Windows
-
-    ```sh
-    set pk=0xa01234567890abcdefghijk...
-    ```
-
-## Deploy
-
-*Note: Deploy your contract to the [embedded AVM local kernel](/developers/tools/maven-cli/deploy/#local) to test it before you deploy the contract to the real network.
-
-We will deploy the following contract as an example.
-
-```java
-public class HelloAVM
-{
-    @Initializable
-    public static String myStr;
-
-    @Initializable
-    public static Address adminAddress;
-
-    @Callable
-    public static String getString(){
-        return myStr;
-    }
-
-    @Callable
-    public static void setString(String newStr) {
-        myStr = newStr;
-    }
-
-    @Callable
-    public static Address getAdminAddress(){
-        return adminAddress;
-    }
-}
+> [INFO] Scanning for projects...
+>
+> ...
+>
+> [INFO] BUILD SUCCESS
+> [INFO] ------------------------------------------------------------------------
+> [INFO] Total time:  1.032 s
+>
+> ...
 ```
 
-We need to pass in two arguments into the contract, *myStr* and *adminAddress*,  upon deployment. Learn about [deployment initialization](/developers/fundamentals/contracts/initialization/) if you are not familiar with it.
+You can also supply arguments to your contract during deployment:
 
-Run following command in the directory where your `pom.xml` is.
-
-- If you **have** setup your *rpc endpoint* and *private key* as environment variables already, run:
-
-    ```sh
-    mvn aion4j:deploy -Dargs="-T 'Hello AVM' -A 0xa048630fff033d214b36879e62231cc77d81f45d348f6590d268b9b8cabb88a9" -Premote
-    ```
-
-- If you **haven't** setup your *rpc endpoint* and *private key* as environment variables already, set them in the CLI as following:
-  
-    ```sh
-    mvn aion4j:deploy -Dargs="-T 'Hello AVM' -A 0xa048630fff033d214b36879e62231cc77d81f45d348f6590d268b9b8cabb88a9" -Dweb3rpc.url="Your RPC Endpoint Url" -Dpk="Your Private Key" -Premote
-    ```
-
-Here, `-Dargs` is the keyword for passing in deployment arguments. If your contract does not require any deployment arguments, this field is not required. Each [ABI type](/developers/fundamentals/avm-concepts/abi-types/) has its own [selector](/developers/tools/maven-cli/variable-types/) and you need to define it following by the argument data. For example,  `-T` is the selector for a string and `-A` is the selector for an Address.
-
-You will get a transaction hash as an output like:
-
-```sh
-...
-[INFO] Transaction # : 0x534ddf6e76699b74c0de650b1aae05c963aa5a850f58d4c68d0ab241ffcfecf2
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.070 s
-[INFO] Finished at: 2019-06-11T15:09:49-04:00
-[INFO] ------------------------------------------------------------------------
+```bash
+mvn aion4j:deploy -Dargs="-T 'Hello World'"
 ```
 
-where `0x534ddf6e76699b74c0de650b1aae05c963aa5a850f58d4c68d0ab241ffcfecf2` is your transaction hash.
+## Remote
 
-## Get Contract Address
+To deploy a contract to a remote node you will need to supply the `host` and `port` of your remote node.
 
-You can get the `contract address` of the contract by getting the receipt of your `transaction hash`. Aion4j maven plugin can [auto-fill result cache](https://github.com/bloxbean/aion4j-maven-plugin/wiki/Client-side-signing-with-private-key-&-property-auto-fill-with-result-cache#2-property-auto-fill-with-result-cache-for-remote-kernel) for remote kernel, which means it stores the transaction hash of the last transaction.
+The account you are using to deploy the contract must have funds in it in order to pay for the deployment. If not, you will get a `transaction dropped` error. You can get test `AION` [using a faucet](/developers/tools/faucets).
 
-Run the following to get the receipt of the most recent transaction:
+### Transaction Signing
 
-```sh
-mvn aion4j:get-receipt -Dtail -Dsilent -Premote
+All transactions must be signed. This is so that the network can confirm who sent which transaction. Transactions that happen on a local node are automatically signed so you don't need to worry about then. Transactions on remote nodes must be manually signed.
+
+You can sign the transaction _before_ sending it to the network, also known as [Client-Side Signing](/developers/tools/maven-cli/client-side-signing). This is the safest option. To do this, add the private key of the account you want to deploy with to your environment variables. Or add the private key as an argument when deploying.
+
+### Deploy though Client-Side Signing
+
+Run this command to deploy the contract, assuming you have your private key stored as an environment variable (see [Client-Side Singing](/developers/tools/maven-cli/client-side-signing) for more information):
+
+```bash
+mvn aion4j:deploy -Dweb3rpc.url=http://<HOST>:<PORT> -Premote
 ```
 
-Or get the receipt of a specific transaction hash:
+For example:
 
-```sh
-mvn aion4j:get-receipt -DtxHash=0x534ddf6e76699b74c0de650b1aae05c963aa5a850f58d4c68d0ab241ffcfecf2 -Dtail -Dsilent -Premote
+```bash
+mvn aion4j:deploy -Dweb3rpc.url=http://138.91.123.106:8545 -Premote
+
+> [INFO] Scanning for projects...
+>
+> ...
+>
+> [INFO] /Users/aion/hello-world/target/hello-world-1.0-SNAPSHOT.jar was deployed successfully.
+> [INFO] Transaction  : 0x6007cb6662418923ab966d443b23abb8e7a03043279d77e661f764bfc643ce83
+>
+> ...
 ```
 
-By including `-Dtail -Dsilent`, it will pull the receipt every 10s until the transaction is mined, and only necessary log messages will be shown.
+If you do not have your private key stored as an environment variable, or want to use a different key to what you have stored, you must supply it as an argument when deploying:
 
-The receipt looks like:
-
-```sh
-[INFO] {
-  "blockHash": "0xb6f98426a432b166b2dda2da8c93e767169ffda10dfc7293ad924e9fdc5929b3",
-  "nrgPrice": "0x174876e800",
-  "logsBloom": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
-  "nrgUsed": "0x0e225e",
-  "contractAddress": "0xa0ceaa5b83fe4a8911928072b7e63ee32d880bef82fcbf91747721cfdd528db2",
-  "transactionIndex": "0x1",
-  "transactionHash": "0x534ddf6e76699b74c0de650b1aae05c963aa5a850f58d4c68d0ab241ffcfecf2",
-  "gasLimit": "0x4c4b40",
-  "cumulativeNrgUsed": "0xe9d1d",
-  "gasUsed": "0x0e225e",
-  "blockNumber": "0x27f6c8",
-  "root": "5f17ec1b1e2c41835f14e2dd0b544ef14ba0ac7d6486f9f2133462f894313060",
-  "cumulativeGasUsed": "0xe9d1d",
-  "from": "0xa048630fff033d214b36879e62231cc77d81f45d348f6590d268b9b8cabb88a9",
-  "to": null,
-  "logs": [],
-  "gasPrice": "0x174876e800",
-  "status": "0x1"
-}
+```bash
+mvn aion4j:deploy -Dweb3rpc.url=http://138.91.123.106:8545 -Dpk=4b45d22a2f042d9... -Premote
 ```
 
-where `status: 0x1` means the contracts is deployed successfully and `0xa0ceaa5b83fe4a8911928072b7e63ee32d880bef82fcbf91747721cfdd528db2` is the contract address here.
+#### Node Hosting Service
+
+If you are using a node hosting service like Blockdaemon or Nodesmith you do not need to supply a port number.
+
+For example:
+
+```bash
+mvn aion4j:deploy -Dweb3rpc.url=https://aion.api.nodesmith.io/v1/avmtestnet/jsonrpc?apiKey=abcdef1234564400a69ab440a1123456 -Premote
+```

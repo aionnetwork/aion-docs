@@ -1,79 +1,14 @@
 ---
 title: Web3.js
-table_of_contents: true
+description: You can deploy your blockchain applications using the Aion Web3.js JavaScript framework. This guide assumes that you have Node.js installed, have an Aion account with sufficient balance to deploy a contract, access to an Aion node connected to the Aion network, and a compiled Java blockchain application.
+draft: true
 ---
 
-## Prerequisites
+## Node Application
 
-- [Node.js](https://nodejs.org/en/).
-- An Aion account that has sufficient balance (For contract transaction only).
-- A node to talk to Aion network.
-- A compiled contract *.jar*.
+Follow these steps if you want to deploy a contract from your local machine using Node.js through your computers terminal.
 
-*Note: We will use Node.js for this example, see the tutorial [here](https://www.w3schools.com/nodejs/) first if you are not familiar with it. If you want to embed web3.js directely in your `html` page, you can follow the [import minified web3.js instruction](https://github.com/aionnetwork/aion_web3/wiki/GUIDE:-Install#minifed-javascript-file).
-
-We will deploy the following contract as an example:
-
-```java
-public class HelloAvm
-{
-    @Initializable
-    public static String myStr;
-
-    @Initializable
-    public static Address adminAddress;
-
-    @Callable
-    public static String getString(){
-        return myStr;
-    }
-
-    @Callable
-    public static void setString(String newStr) {
-        myStr = newStr;
-    }
-
-    @Callable
-    public static Address getAdminAddress(){
-        return adminAddress;
-    }
-}
-```
-
-A contract `contract.jar` that is compiled by using [Maven Aion4j plugin](/developers/basics/compile/maven-cli/) is included in the project `contract folder`.
-
-Here is the project structure:
-
-```sh
-├── contract
-│   └── contract.jar
-├── deploy.js
-├── node_modules
-│   ├── aion-lib
-...
-│   └── yaeti
-├── package.json
-└── package-lock.json
-
-```
-
-## Install aion-web3
-
-Pull down the latest version of the `aion-web3` packages into your project by running the following command:
-
-```sh
-npm install aion-web3
-```
-
-Then you can create a JavaScript file and import the library at the top of the file:
-
-```javascript
-const Web3 = require("aion-web3");
-```
-
-## Contract Deployment
-
-The following scrip deploys the contract to the Aion Network.
+1\. In the same directory as your compiled `.jar` file, create the following `script.js` file:
 
 ```javascript
 // Import dependencies.
@@ -85,53 +20,57 @@ const privateKey = "PRIVATE_KEY";
 const account = web3.eth.accounts.privateKeyToAccount(privateKey);
 
 async function deploy() {
+    // Import the contract jar.
+    let jarPath = path.join(__dirname, 'contract', 'APPLICATION_NAME.jar');
 
-  // Import the contract jar.
-  let jarPath = path.join(__dirname,'contract','contract.jar');
+    // Encode the contract byte code and deployement arguments.
+    let data = web3.avm.contract.deploy(jarPath).args(['string', 'address'], ['Hello AVM', '0xa048630fff033d214b36879e62231cc77d81f45d348f6590d268b9b8cabb88a9']).init();
 
-  // Encode the contract byte code and deployement arguments.
-  let data = web3.avm.contract.deploy(jarPath).args(['string','address'],['Hello AVM', '0xa048630fff033d214b36879e62231cc77d81f45d348f6590d268b9b8cabb88a9']).init();
+    // Create the transaction object.
+    const transaction = {
+        from: account.address,
+        data: data,
+        gasPrice: 10000000000,
+        gas: 5000000,
+        type: '0x2'
+    };
 
-  // Construct a transaction object.
-  const transaction = {
-    from: account.address,
-    data: data,
-    gasPrice: 10000000000,
-    gas: 5000000,
-    type: '0x2' //AVM java contract deployment.
-  };
-
-  // Sign the transaction.
-  const signedTx = await web3.eth.accounts.signTransaction(
-      transaction, account.privateKey
+    // Sign the transaction.
+    const signedTx = await web3.eth.accounts.signTransaction(
+        transaction, account.privateKey
     ).then((res) => signedCall = res);
 
-  // Send the transaction.
-  const receipt = await web3.eth.sendSignedTransaction( 
-      signedTx.rawTransaction
+    // Send the transaction.
+    const receipt = await web3.eth.sendSignedTransaction(
+        signedTx.rawTransaction
     ).on('receipt', receipt => {
-       console.log("Receipt received!\ntxHash =", receipt.transactionHash)
-  });
+        console.log("Receipt received!\ntxHash =", receipt.transactionHash)
+    });
 
-  console.log(receipt);
-  console.log("Contract Address: " + receipt.contractAddress);
+    console.log("Contract Address: " + receipt.contractAddress);
 }
 deploy();
 ```
 
-For this script to run, you first need to change `NODE_URL` to the node you want to talk to, and the `PRIVATE_KEY` of the account you want to use to send the transaction.
+2\. Within the script you just created, edit the `NODE_URL`, `PRIVATE_KEY` and `APPLICATION_NAME` fields:
 
-```js
-const web3 = new Web3(new Web3.providers.HttpProvider("NODE_URL"));
+```javascript
+const web3 = new Web3(new Web3.providers.HttpProvider("https://aion.api.nodesmith.io/v1/mainnet/jsonrpc?apiKey=abcd1234abcd1234"));
 const privateKey = "PRIVATE_KEY";
-const account = web3.eth.accounts.privateKeyToAccount(privateKey);
+
+...
+
+let jarPath = path.join(__dirname, 'contract', 'example-1.0-SNAPSHOT.jar');
 ```
+
+3\. If there are any deployment arguments to go with your contract you must include them in the `data` object.
 
 To deploy the contract, you need to import the contract byte code by importing the compiled jar, and then encode the contract byte code along with the deployment arguments.
 
 ```js
-let jarPath = path.join(__dirname,'contract','contract.jar');
-let data = web3.avm.contract.deploy(jarPath).args(['string','address'],['Hello AVM', '0xa048630fff033d214b36879e62231cc77d81f45d348f6590d268b9b8cabb88a9']).init();
+let data = web3.avm.contract.deploy(jarPath)
+    .args(['string','address'],['Hello AVM', '0xa048630fff033d214b36879e62231cc77d81f45d348f6590d268b9b8cabb88a9'])
+    .init();
 ```
 
 Here:
