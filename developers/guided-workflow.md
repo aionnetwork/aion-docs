@@ -1,6 +1,6 @@
 ---
-title: Guided Tutorial
-description: This page details the steps you can take in order to get a solid understanding of blockchain development, and utilizing the Aion ecosystem. By following these steps through end-to-end you will develop a great foundation to start your blockchain development career!
+title: Guided Workflow
+description: This page walks you through the workflow you can take in order to become proficient at blockchain development. Although the workflow may look similar to other blockchain development processes, this guide was created with the Aion Network in mind. After completing each step listed here, you should have a solid understanding of how to create your blockchain applications on the Aion Network.
 table_of_contents: true
 next_page: /developers
 header_image: /developers/images/developers-header.png
@@ -55,6 +55,8 @@ Review the [end-to-end testing guide](/developers/basics/test-and-debug/end-to-e
 Having a solid understanding of both front-end and basic contract development is required before you jump into this section. Once you've got those parts down, you're ready to dive into the further complexities of how Aion smart contracts are created.
 
 The [Fundamentals](/developers/fundamentals/) section walks through these points. Things like `@Callable` and `@Fallback` annotations are incredibly valuable when creating a blockchain application. It's a good idea to get a solid understanding of the packages section under fundamentals.
+
+---
 
 ## Further Reading
 
