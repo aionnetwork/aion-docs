@@ -63,6 +63,10 @@ Wallets allow you to store your native Aion tokens and other cryptocurrencies lo
 
 Having your wallet stored on your phone is the perfect balance between security and ease-of-use.
 
+#### [Coinomi](https://www.coinomi.com/)
+
+Coinomi securely stores more than 500 digital assets including the AION native coin.
+
 #### [Trust Wallet](https://blog.aion.network/trust-wallet-adds-support-for-aion-c063e450652c)
 
 Trust Wallet is secure, multi-currency, anonymous, and tied to some advance web3 functionality you can’t get elsewhere like a Dapp browser and decentralized exchange.
@@ -85,10 +89,6 @@ The WandX desktop app is a decentralized token trading platform on Ethereum and 
 #### [AIWA](https://getaiwa.com/)
 
 A wallet and dApp interaction tool for Aion.
-
-#### [Coinomi](https://www.coinomi.com/)
-
-Coinomi securely stores more than 500 digital assets including the AION native coin.
 
 #### [CryptoCurve](https://cryptocurve.io/wallet)
 
