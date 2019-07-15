@@ -220,4 +220,4 @@ The process for calling your contract on the network is the same as calling it f
 
 ## Summary
 
-And there you have it. You created a contract, tested it, deploy it to the local kernel, made some local calls, created an account with funds, connected IntelliJ to an Aion node, deployed the contract to the Aion Testnet, and finally called it! You're now ready to go and create some incredible blockchain applications!
+And there you have it. You created a contract, tested it, deploy it to the local kernel, made some local calls, created an account with funds, connected IntelliJ to an Aion node, deployed the contract to the Aion Testnet, and finally called it! You're now ready to go and create some incredible dApps!

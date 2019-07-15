@@ -9,7 +9,7 @@ Having your wallet stored on your phone is the perfect balance between security 
 
 ### [Trust Wallet](https://blog.aion.network/trust-wallet-adds-support-for-aion-c063e450652c)
 
-Trust Wallet is secure, multi-currency, anonymous, and tied to some advance web3 functionality you can’t get elsewhere like a Dapp browser and decentralized exchange.
+Trust Wallet is secure, multi-currency, anonymous, and tied to some advance web3 functionality you can’t get elsewhere like a dAppbrowser and decentralized exchange.
 
 ## Offline Wallets
 

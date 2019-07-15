@@ -115,13 +115,13 @@ Following is the default `config.xml`:
 </aion>
 ```
 
-First, enable **rpc** connection so that you Dapp can talk to this node via Json RPC by changing `active="false"` to `active=true`.
+First, enable **rpc** connection so that you dAppcan talk to this node via Json RPC by changing `active="false"` to `active=true`.
 
 If you want to talk to this node remotely, change `ip="127.0.0.1"` to `ip="0.0.0.0"`.
 
 If you are using `minified aion web3.js` to interact with the network, update `<cors-enabled>` to `true`.
 
-For example, if your Dapp is talking to this node remotely with minified web3.js injected in your web application, your config should looks like:
+For example, if your dAppis talking to this node remotely with minified web3.js injected in your web application, your config should looks like:
 
 ```xml
  <rpc active="true" ip="0.0.0.0" port="8545">

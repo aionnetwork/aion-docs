@@ -1,6 +1,6 @@
 ---
 title: Guided Workflow
-description: This page walks you through the workflow you can take in order to become proficient at blockchain development. Although the workflow may look similar to other blockchain development processes, this guide was created with the Aion Network in mind. After completing each step listed here, you should have a solid understanding of how to create your blockchain applications on the Aion Network.
+description: This page walks you through the workflow you can take in order to become proficient at blockchain development. Although the workflow may look similar to other blockchain development processes, this guide was created with the Aion Network in mind. After completing each step listed here, you should have a solid understanding of how to create your dApps on the Aion Network.
 table_of_contents: true
 next_page: /developers
 header_image: /developers/images/developers-header.png
@@ -17,7 +17,7 @@ Both of these environments achieve the same goals, they just use different route
 
 ## Understand the Workflow
 
-The workflow of creating blockchain applications is somewhat different from _regular_ software development. This is mainly down to the unique features and restrictions that blockchain networks have.
+The workflow of creating dApps is somewhat different from _regular_ software development. This is mainly down to the unique features and restrictions that blockchain networks have.
 
 The basic flow is:
 
@@ -31,7 +31,7 @@ The [developer quickstart](/developers/) runs through this process without you h
 
 ## First Project
 
-Once you've got the workflow down and have a solid understanding of the process for creating blockchain applications, you are ready to create your first app. This app is incredibly basic and serves to show you how to use your chosen _deveplment environment_. 
+Once you've got the workflow down and have a solid understanding of the process for creating dApps, you are ready to create your first app. This app is incredibly basic and serves to show you how to use your chosen _deveplment environment_. 
 
 Follow through the [IntelliJ end-to-end](/developers/tools/intellij-plugin/end-to-end/), or [Maven CLI end-to-end](/developers/tools/maven-cli/end-to-end/).
 
@@ -46,7 +46,7 @@ Examples of how to interact with the blockchain through each of these frameworks
 
 ## Testing
 
-You may have been able to get up to this point without having to do much testing. Test-driven development (TDD) is important in any programming disciple, but especially more-so in blockchain application development.
+You may have been able to get up to this point without having to do much testing. Test-driven development (TDD) is important in any programming disciple, but especially more-so in dApp development.
 
 Review the [end-to-end testing guide](/developers/basics/test-and-debug/end-to-end/) to get a solid understanding of how to run tests within IntelliJ.
 
@@ -54,7 +54,7 @@ Review the [end-to-end testing guide](/developers/basics/test-and-debug/end-to-e
 
 Having a solid understanding of both front-end and basic contract development is required before you jump into this section. Once you've got those parts down, you're ready to dive into the further complexities of how Aion smart contracts are created.
 
-The [Fundamentals](/developers/fundamentals/) section walks through these points. Things like `@Callable` and `@Fallback` annotations are incredibly valuable when creating a blockchain application. It's a good idea to get a solid understanding of the packages section under fundamentals.
+The [Fundamentals](/developers/fundamentals/) section walks through these points. Things like `@Callable` and `@Fallback` annotations are incredibly valuable when creating a dApp. It's a good idea to get a solid understanding of the packages section under fundamentals.
 
 ---
 

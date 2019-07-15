@@ -1,6 +1,6 @@
 ---
 title: End to End
-description: You can utilize the built in Java testing packages when creating your blockchain applications on the Aion network. They allow you to deploy your Java smart contract and write tests to interact with the contract under a real Aion blockchain environment without actually running an Aion blockchain. In this section, we're going to be walking through the entire workflow of deploying a Java contract to the local kernel, writing some tests, and finally running those tests against your project.
+description: You can utilize the built in Java testing packages when creating your dApps on the Aion network. They allow you to deploy your Java smart contract and write tests to interact with the contract under a real Aion blockchain environment without actually running an Aion blockchain. In this section, we're going to be walking through the entire workflow of deploying a Java contract to the local kernel, writing some tests, and finally running those tests against your project.
 table_of_contents: true
 draft: true
 ---
@@ -11,7 +11,7 @@ This guide assumes that you have the [IntelliJ IDE installed](https://www.jetbra
 
 ## Set up a Project
 
-We will use IntelliJ to create a new Java blockchain application project.
+We will use IntelliJ to create a new Java dApp project.
 
 ### Create a project
 

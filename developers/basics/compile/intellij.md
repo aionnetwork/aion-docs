@@ -1,6 +1,6 @@
 ---
 title: Intellij
-description: Learn how to compile your blockchain applications using the IntelliJ IDE and the Aion4j plugin. In IntelliJ, each contract is compiled before it is deployed. During your development cycle, it is very unlikely that you will need to manually compile a contract within IntelliJ. However, if you do find the need to compile a contract without deploying it, then follow this process.
+description: Learn how to compile your dApps using the IntelliJ IDE and the Aion4j plugin. In IntelliJ, each contract is compiled before it is deployed. During your development cycle, it is very unlikely that you will need to manually compile a contract within IntelliJ. However, if you do find the need to compile a contract without deploying it, then follow this process.
 header_image: /developers/images/developers-header.png
 table_of_contents: true
 ---

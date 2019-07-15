@@ -73,4 +73,4 @@ mvn initialize
 ...
 ```
 
-That's it! Your project has been initialized and everything is ready for you to start developing your Java blockchain application.
+That's it! Your project has been initialized and everything is ready for you to start developing your Java dApp.

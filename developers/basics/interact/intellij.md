@@ -1,6 +1,6 @@
 ---
 title: IntelliJ
-description: This guide walks you through how to call blockchain applications on the local kernel and on remote networks using IntelliJ and the Aion4j plugin.
+description: This guide walks you through how to call dApps on the local kernel and on remote networks using IntelliJ and the Aion4j plugin.
 ---
 
 ## Local

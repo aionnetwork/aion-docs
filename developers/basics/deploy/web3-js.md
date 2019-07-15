@@ -1,6 +1,6 @@
 ---
 title: Web3.js
-description: You can deploy your blockchain applications using the Aion Web3.js JavaScript framework. This guide assumes that you have Node.js installed, have an Aion account with sufficient balance to deploy a contract, access to an Aion node connected to the Aion network, and a compiled Java blockchain application.
+description: You can deploy your dApps using the Aion Web3.js JavaScript framework. This guide assumes that you have Node.js installed, have an Aion account with sufficient balance to deploy a contract, access to an Aion node connected to the Aion network, and a compiled Java dApp.
 draft: true
 ---
 
