@@ -57,9 +57,10 @@ hello-world/
 
 ## Initialize
 
-You can launch the Maven initializer to finalize the folder structure of your project, and create the `avm.jar` that will run your localized blockchain.
+You can launch the Maven initializer to finalize the folder structure of your project, and create the `avm.jar` that will run your localized blockchain. Make sure you've moved into the same directory as your `pom.xml` file first.
 
 ```bash
+cd hello-world
 mvn initialize
 
 > [INFO] Scanning for projects...
