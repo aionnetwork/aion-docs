@@ -4,7 +4,7 @@ description: Custom your network and test your Dapp.
 table_of_contents: true
 ---
 
-This section will show you how to custom your node config and genesis file to create a custom network for testing you Dapp.
+This section will show you how to custom your node config and genesis file to create a custom network for testing your dApp.
 
 ## Prerequisites
 
