@@ -9,7 +9,7 @@ weight: 250
 
 Follow these steps to create a sample project. You can delete the sample classes when the project creation is complete.
 
-1. With IntelliJ open, go to **File** > **New** > **Project** or click **Create New Project** from the splash screen.
+1. With IntelliJ open, go to **File** → **New** → **Project** or click **Create New Project** from the splash screen.
 2. Select **Maven** from the options on the left.
 3. Check **Create from archetype**.
 4. Select `org.aion4j:avm-archetype` from the list and click **Next**.
@@ -29,7 +29,7 @@ Maven will start building your project. You should be able to see this in the co
 Since the plugin is based of the Maven toolset, each project needs to be initialize. In stable builds, the plugin will initialize your project automatically. However if you are using one of the _bleeding-edge_ builds you may have to manually initialize the project.
 
 1. Open the `pom.xml` file if it isn't open already.
-2. Right click anywhere in the file and click **Aion Virtual Machine** > **Run Initialize**.
+2. Right click anywhere in the file and click **Aion Virtual Machine** → **Run Initialize**.
 
 ![Run Initialize](/developers/tools/intellij-plugin/images/run-initialize.png)
 

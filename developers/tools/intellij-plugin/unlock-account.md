@@ -4,4 +4,4 @@ description: Unlock an account on a remote node. This allows you to use the spec
 weight: 1200
 ---
 
-Run this command by right clicking anywhere within a contract and selecting **Aion Virtual Machine** > **Remote** > **Unlock Account**.
+Run this command by right clicking anywhere within a contract and selecting **Aion Virtual Machine** → **Remote** → **Unlock Account**.

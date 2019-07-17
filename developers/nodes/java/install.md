@@ -106,10 +106,10 @@ docker run -it -p 8545:8545 -p 8547:8547 -p 30303:30303 --mount source=aion-main
 
 To use this Docker image your system must meet the following requirements:
 
-* `8GB` RAM (`16GB` recommended)
-* 2 CPU cores
-* 1GB HDD space
-* Docker `v18.0.0`
+- `8GB` RAM (`16GB` recommended)
+- 2 CPU cores
+- 1GB HDD space
+- Docker `v18.0.0`
 
 The HDD space required only takes the Docker image into account. You will need a significant amount of space for storing the blockchain itself. The database is currently around `22GB` in size, although this can be [pruned](https://docs.aion.network/docs/database#section-state-database-pruning).
 

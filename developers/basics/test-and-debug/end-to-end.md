@@ -15,7 +15,7 @@ We will use IntelliJ to create a new Java dApp project.
 
 ### Create a project
 
-1. With IntelliJ open, go to **File** > **New** > **Project** or click **Create New Project** from the splash screen.
+1. With IntelliJ open, go to **File** → **New** → **Project** or click **Create New Project** from the splash screen.
 2. Select **Maven** from the options on the left.
 3. Check **Create from archetype**.
 4. Select `org.aion4j:avm-archetype` from the list and click **Next**.
