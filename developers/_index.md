@@ -1,6 +1,6 @@
 ---
 title: Developer Quickstart
-description: New to Blockchain Development and don't know where to start? Follow this quickstart through to get a general understanding of the blockchain development workflow. Already know the workflow and just want to get your hands dirtying building something, checkout the IntelliJ and Maven CLI end-to-end tutorials.
+description: New to Blockchain Development and don't know where to start? Follow this quickstart through to get a general understanding of the blockchain development workflow. Already know the workflow and just want to get your hands dirty building something, checkout the IntelliJ and Maven CLI end-to-end tutorials.
 table_of_contents: true
 header_image: /developers/images/developers-header.png
 ---
