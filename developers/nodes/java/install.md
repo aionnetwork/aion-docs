@@ -93,23 +93,23 @@ Follow these steps to get started quickly, or skip this section if you want to l
 
 ```bash
 # Pull the Rust kernel image.
-docker pull aionnetwork/aion:0.3.3
+docker pull aionnetwork/aion:Latest
 
 # Create some local storage for the container:
 docker volume create aion-mainnet
 
 # Run the container:
-docker run -it -p 8545:8545 -p 8547:8547 -p 30303:30303 --mount source=aion-mainnet,destination=/aion/mainnet aionnetwork/aion:0.3.3
+docker run -it -p 8545:8545 -p 8547:8547 -p 30303:30303 --mount source=aion-mainnet,destination=/aion/mainnet aionnetwork/aion:Latest
 ```
 
 ### Java Prerequisites
 
 To use this Docker image your system must meet the following requirements:
 
-- `8GB` RAM (`16GB` recommended)
-- 2 CPU cores
-- 1GB HDD space
-- Docker `v18.0.0`
+* `8GB` RAM (`16GB` recommended)
+* 2 CPU cores
+* 1GB HDD space
+* Docker `v18.0.0`
 
 The HDD space required only takes the Docker image into account. You will need a significant amount of space for storing the blockchain itself. The database is currently around `22GB` in size, although this can be [pruned](https://docs.aion.network/docs/database#section-state-database-pruning).
 
@@ -117,12 +117,12 @@ The HDD space required only takes the Docker image into account. You will need a
 
 1. Pull down the latest Java Docker image.
 
-        docker pull aionnetwork/aion:0.3.3
+        docker pull aionnetwork/aion:Latest
 
-        > 0.3.3-latest: Pulling from aionnetwork/aion-staging
-        > 6cf436f81810: Downloading  14.83MB/32.37MB
+        > Latest: Pulling from aionnetwork/aion
+        > 6cf436f81810: Pull complete
         > ...
-        > Digest: sha256: efa8e77...
+        > Status: Downloaded newer image for aionnetwork/aion:Latest
 
 2. Create local storage for Aion image.
 
@@ -130,9 +130,9 @@ The HDD space required only takes the Docker image into account. You will need a
 
         > aion-mainnet
 
-1. Run the image.
+3. Run the image.
 
-        docker run -it -p 8545:8545 -p 8547:8547 -p 30303:30303 --mount source=aion-mainnet,destination=/aion/mainnet aionnetwork/aion:0.3.3
+        docker run -it -p 8545:8545 -p 8547:8547 -p 30303:30303 --mount source=aion-mainnet,destination=/aion/mainnet aionnetwork/aion:Latest
 
         >                     _____
         >      .'.       |  .~     ~.  |..          |
@@ -140,9 +140,9 @@ The HDD space required only takes the Docker image into account. You will need a
         >  .''''''''`.   | |         | |      ``..  |
         >.'           `. |  `._____.'  |          ``|
         >
-        >                v0.3.3.2886431
+        >               v0.4.0.2.092068b
         >                    mainnet
-        >                   using FVM
+        >                using FVM & AVM
 
     See the [Running the Java Container](#running-the-java-container) section for more information on what arguments to supply with the `docker run` command.
 
@@ -164,21 +164,25 @@ Once the kernel Docker image is pulled you can configure it by running the `dock
 
     docker exec -it <CONTAINER_NAME or CONTAINER_HASH> /bin/bash
 
+>List of `CONTAINER_ID`s and `CONTAINER_NAME`s can be found with command: `$ docker container list`
+
 This starts a standard terminal session within the container. You will need to install a text editor before you can edit any files, as the container doesn't come with one pre-installed:
 
-    sudo apt install nano
+    apt install nano
 
     OR
 
-    sudo apt install vim
+    apt install vim
 
 Then you can edit the `config.xml` file associated with the network you are running. For example, if you are running the Java kernel on Mainnet, then you should edit the `mainnet/config.xml` file. If you are running the Rust kernel on the Testnet (Mastery), then you should edit the `mastery/config.xml` file.
+
+    nano mainnet/config/config.xml
 
 #### Java Networks
 
 By default, running the image will start a node on the mainnet. To specify a network; for instance, the mastery testnet, use:
 
-    docker run aionnetwork/aion:0.3.3 /aion/aion.sh -n mastery
+    docker run -it aionnetwork/aion:Latest /aion/aion.sh -n mastery
 
 #### Java Ports
 
@@ -198,10 +202,12 @@ In most cases, storage should be attached so that configuration and blockchain s
 
 To start the Docker image with the volume, where VOLUME-NAME is the volume name and NETWORK is the Aion network name:
 
-    docker run -it --mount source=VOLUME-NAME,destination=/aion/NETWORK aionnetwork/aion:0.3.
+    docker run -it --mount source=VOLUME-NAME,destination=/aion/NETWORK aionnetwork/aion:Latest ./aion.sh -n NETWORK
 
 For the list of network names, see:
 
-    docker run -it aionnetwork/aion:0.3.3 /aion/aion.sh -h
+    docker run -it aionnetwork/aion:Latest /aion/aion.sh -h
 
 That's it! You're done.
+
+See the [Kernel wiki pages](https://github.com/aionnetwork/aion/wiki/Installation) on GitHub for more on installation and configuration.

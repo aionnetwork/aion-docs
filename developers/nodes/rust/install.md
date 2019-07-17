@@ -30,7 +30,7 @@ These storage size requirements are estimates only. Since the databases for each
 
 The Rust kernel depends on the following libraries.
 
-- `g++` 
+- `g++`
 - `gcc`
 - `libboost-all-dev` (version `1.65.0` or higher)
 - `libzmq3-dev`
@@ -75,4 +75,124 @@ Under construction.
 
 ### Docker Image
 
-Under construction.
+This section covers how to configure and run the Aion Rust kernel Docker container.
+
+#### Quickstart
+
+Follow these steps to get started quickly, or skip this section if you want to learn how to run the container in more detail.
+
+```bash
+# Pull the kernel image.
+$ docker pull aionnetwork/aionr:Latest
+
+# Create some local storage for the container:
+$ docker volume create aionr-mainnet
+
+# Run the container:
+$ docker run -it -p 8545:8545 -p 8546:8546 -p 30303:30303 --mount source=aionr-mainnet,destination=/aionr/mainnet aionnetwork/aionr:Latest
+```
+
+#### Rust Prerequisites
+
+To use this Docker image your system must meet the following requirements:
+
+* `8GB` RAM (`16GB` recommended)
+* 2 CPU cores
+* 1GB HDD space
+* Docker `v18.0.0`
+
+The HDD space required only takes the Docker image into account. You will need a significant amount of space for storing the blockchain itself. The database is currently around `22GB` in size, although this can be [pruned](https://docs.aion.network/docs/database#section-state-database-pruning).
+
+#### Installation
+
+1. Pull down the latest Docker image.
+
+        docker pull aionnetwork/aionr:Latest
+        
+        > Latest: Pulling from aionnetwork/aion
+        > f476d66f5408: Pull complete
+        > ...
+        > Status: Downloaded newer image for aionnetwork/aionr:Latest
+
+2. Create local storage for Aion image.
+
+        docker volume create aionr-mainnet
+
+        > aionr-mainnet
+
+3. Run the image.
+
+        docker run -it -p 8545:8545 -p 8546:8546 -p 30303:30303 --mount source=aionr-mainnet,destination=/aionr/mainnet aionnetwork/aionr:Latest
+
+        >             _____    ____    _   _
+        >     /\     |_   _|  / __ \  | \ | |
+        >    /  \      | |   | |  | | |  \| |
+        >   / /\ \     | |   | |  | | | . ` |
+        >  / ____ \   _| |_  | |__| | | |\  |
+        > /_/    \_\ |_____|  \____/  |_| \_|
+        >
+        >
+        >2019-07-12 17:14:11 Starting Aion(R)/v0.2.5.a60ae38/x86_64-linux-gnu/rustc-1.28.0
+
+4. Press `CTRL` + `c` to shut down and exit the container.
+
+#### Arguments and Configuration
+
+There are several arguments that you can supply with the `docker run` command.
+
+##### Configure the Rust Kernel
+
+Once the kernel Docker image is pulled you can configure it by running the `docker exec` command in a separate terminal window:
+
+    docker exec -it <CONTAINER_NAME or CONTAINER_ID> /bin/bash
+
+>List of `CONTAINER_ID`s and `CONTAINER_NAME`s can be found with command: `$ docker container list`
+
+This starts a standard terminal session within the container. You will need to install a text editor before you can edit any files, as the container doesn’t come with one pre-installed:
+
+    apt install nano
+
+    OR
+
+    apt install vim
+
+The configuration file locations will be printed upon starting the node:
+
+    2019-07-12 17:41:08 Config path /aionr/mainnet/mainnet.toml
+    2019-07-12 17:41:08 Genesis spec path /aionr/mainnet/mainnet.json
+    2019-07-12 17:41:08 Keys path /root/.aion/keys/mainnet
+    2019-07-12 17:41:08 DB path /root/.aion/chains/mainnet/db/a98e36807c1b0211
+
+Then you can edit the `.toml` file associated with the network you are running. For example, if you are running the Rust kernel on Mainnet, then you should edit the `mainnet/mainnet.toml` file. If you are running the Rust kernel on the Testnet (Mastery), then you should edit the `mastery/mastery.toml` file.
+
+    nano mainnet/mainnet.toml
+
+##### Rust Networks
+
+By default, running the image will start a node on the mainnet. To specify a network; for instance, the mastery testnet, use:
+
+    docker run -it aionnetwork/aionr:Latest /aionr/mastery.sh
+
+##### Rust Ports
+
+The Aion Docker image is configured to run the Rust WebSocket and RPC servers, as well as allow connections from other Aion nodes. When running the Docker container, it is necessary to publish those ports if you use to wish these functionalities.
+
+|Port|Connection Type|
+|-|-|
+|`30303`|P2P|
+|`8545`|JSON-RPC|
+|`8546`|WebSocket|
+
+##### Rust Storage
+
+In most cases, storage should be attached so that configuration and blockchain sync state can be persisted between each time the kernel is launched. You will need a separate Docker volume for each Aion Network, so it is recommended to include the network name in the volume name. To create a volume:
+
+    docker volume create <VOLUME_NAME>
+
+To start the Docker image with the volume, where `<VOLUME-NAME>` is the volume name and `<NETWORK>` is the Aion network name (`mainnet`, `mastery`, `custom`, etc.):
+
+    docker run -it --mount source=<VOLUME-NAME>,destination=/aionr/<NETWORK> aionnetwork/aionr:Latest ./<Network>.sh
+
+That’s it! You’re done.
+
+See the  [aionr repo](https://github.com/aionnetwork/aionr) and [Kernel wiki pages](https://github.com/aionnetwork/aionr/wiki/) on GitHub for more on installation and configuration.
