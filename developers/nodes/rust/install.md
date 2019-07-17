@@ -116,9 +116,9 @@ The HDD space required only takes the Docker image into account. You will need a
 
 2. Create local storage for Aion image.
 
-        docker volume create aion-mainnet
+        docker volume create aionr-mainnet
 
-        > aion-mainnet
+        > aionr-mainnet
 
 3. Run the image.
 
