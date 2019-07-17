@@ -34,7 +34,7 @@ Once the project has been created, you can have IntelliJ automatically import Ma
 This step pulls the `avm.jar` file that's going to run all your contracts locally.
 
 1. Right-click anywhere in your project.
-2. Select **Aion Virtual Machine** > **Run Initialize**.
+2. Select **Aion Virtual Machine** → **Run Initialize**.
 
 You can also run this step by clicking on the pop-up that is shown after you create your project.
 
@@ -49,7 +49,7 @@ The Aion plugin creates a contract and unit tests for you by default. Within the
 
 ![Navigation Panel](/developers/tools/intellij-plugin/images/navigation-panel.png)
 
-To view your contract open `src` > `main` > `java` > the name of your project > `HelloAvm`. This is your contract. By default, it's just a simple _Hello World_ type contract with a few methods, including the `getString()` and `setString()` methods.
+To view your contract open `src` → `main` → `java` → the name of your project → `HelloAvm`. This is your contract. By default, it's just a simple _Hello World_ type contract with a few methods, including the `getString()` and `setString()` methods.
 
 ## Edit your Contract
 
@@ -64,7 +64,7 @@ We're going to customize this contract a little bit, so you can have a taste of 
 We're also going to rename the contract, so that it's called something more suitable:
 
 1. Change the `public class` name to `GetSet`.
-2. Right click on the `HelloAvm.java` file, click **Refactor** > **Rename** and change it's name to `GetSet`.
+2. Right click on the `HelloAvm.java` file, click **Refactor** → **Rename** and change it's name to `GetSet`.
 3. Open the `pom.xml` file and change `example.HelloAvm` to `example.GetSet`.
 
 ![Rename Contract](/developers/tools/intellij-plugin/images/rename-contract.gif)
@@ -102,7 +102,7 @@ Now we've made some basic changes and ran some tests, we're going try deploying 
 
 1. Right click on the root folder of your project in the navigation panel.
 2. Click **OK**.
-3. Click **Aion Virtual Machine** > **Embedded** > **Deploy**.
+3. Click **Aion Virtual Machine** → **Embedded** → **Deploy**.
 
 ![Local Deployment Successful](/developers/tools/intellij-plugin/images/deploy-contract-local.gif)
 
@@ -113,7 +113,7 @@ And you're done. You've just compiled your contract and deployed it to the local
 Let's try and call the contract we just deployed.
 
 1. Right click on `getString()`.
-2. Click **Aion Virtual Machine** > **Embedded** > **Call**.
+2. Click **Aion Virtual Machine** → **Embedded** → **Call**.
 3. Click **OK**.
 
 You'll be able to see the results of the call in the terminal window.
@@ -123,7 +123,7 @@ You'll be able to see the results of the call in the terminal window.
 Let's try setting a new string.
 
 1. Right click on `setString()`.
-2. Click **Aion Virtual Machine** > **Embedded** > **Call**.
+2. Click **Aion Virtual Machine** → **Embedded** → **Call**.
 3. Enter a new string into the `newStr` field.
 
     ![Enter a New String](/developers/tools/intellij-plugin/images/set-string.png)
@@ -146,7 +146,7 @@ If you've got a node running on your network, grab the URL address. If you're no
 Now that you've got a node URL you need to enter it into IntelliJ.
 
 1. In IntelliJ right-click anywhere within your contract, or on the top level folder in the navigation pane.
-2. Click **Aion Virtual Machine** > **Configuration**.
+2. Click **Aion Virtual Machine** → **Configuration**.
 3. Paste in your node URL into the **Web3 Rpc Url** field.
 4. Click **OK**.
 
@@ -157,36 +157,36 @@ Whenever you deploy something to a live blockchain network, that transaction nee
 First up, let's create an account.
 
 1. In IntelliJ right-click anywhere within your contract, or on the top level folder in the navigation pane.
-2. Click **Aion Virtual Machine** > **Remote** > **Create Account**.
+2. Click **Aion Virtual Machine** → **Remote** → **Create Account**.
 3. The terminal window will then print out both your _address_ and _private key_.
 
     ![Public and Private Keys in IntelliJ](/developers/tools/intellij-plugin/images/public-private-key.png)
 
 4. Highlight and copy the `Private Key`.
 5. Right-click anywhere within your contract, or on the top level folder in the navigation pane.
-6. Click **Aion Virtual Machine** > **Configuration**.
+6. Click **Aion Virtual Machine** → **Configuration**.
 7. Paste your private key into the **Private Key** field.
 8. Click **OK**.
 9. Back in the terminal window, highlight and copy your `address`.
 10. Right-click anywhere within your contract, or on the top level folder in the navigation pane.
-11. Click **Aion Virtual Machine** > **Configuration**.
+11. Click **Aion Virtual Machine** → **Configuration**.
 12. Paste your `address` into the **Account (default)** field.
 13. Click **OK**.
 
-Now we have both our node and account in IntelliJ. But there's one issue, we still don't have any funds. If you call **Aion Virtual Machine** > **Remote** > **Get Balance (Default)**, you'll be able to see in the terminal window that you balance is set to `0 (0.000000000000 Aion)`. So our last step before we can deploy is to add funds into our account.
+Now we have both our node and account in IntelliJ. But there's one issue, we still don't have any funds. If you call **Aion Virtual Machine** → **Remote** → **Get Balance (Default)**, you'll be able to see in the terminal window that you balance is set to `0 (0.000000000000 Aion)`. So our last step before we can deploy is to add funds into our account.
 
-1. Copy your `address` again. You can view it by opening **Aion Virtual Machine** > **Configuration** and copying the **Account (default)** field.
+1. Copy your `address` again. You can view it by opening **Aion Virtual Machine** → **Configuration** and copying the **Account (default)** field.
 2. In your browser, go to [faucets.blockxlabs.com](https://faucets.blockxlabs.com) and sign up.
 3. Once you're logged in, click **Aion** and paste in the `address` you just copied.
 4. Click **Press to Pour** to get your tokens.
-5. After a few seconds, you should be able to see your balance after calling **Aion Virtual Machine** > **Remote** > **Get Balance (Default)**.
+5. After a few seconds, you should be able to see your balance after calling **Aion Virtual Machine** → **Remote** → **Get Balance (Default)**.
 
 ### Deploying
 
 Now that we've got our node setup and an account with some test tokens in it, we can actually get around to deploying our application!
 
 1. Right click on the top level folder in the navigation pane.
-2. Click **Aion Virtual Machine** > **Remote** > **Deploy**.
+2. Click **Aion Virtual Machine** → **Remote** → **Deploy**.
 3. Click **OK**.
 
 The Aion plugin will now attempt to deploy the application. Because we're dealing with an actual network here, and not just a local kernel, the deployment has to be confirmed by multiple nodes on the network. The terminal window will output:
@@ -214,7 +214,7 @@ If you scroll up, you can find the contract address:
 The process for calling your contract on the network is the same as calling it from the local kernel.
 
 1. Right click on the function you want to call.
-2. Click **Aion Virtual Machine** > **Remote** > **Contract Transaction/Call**.
+2. Click **Aion Virtual Machine** → **Remote** → **Contract Transaction/Call**.
 3. Enter any arguments the function needs and click **OK**.
 4. The response from the network is printed in the terminal window below.
 

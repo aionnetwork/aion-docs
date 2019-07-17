@@ -43,22 +43,22 @@ brew install maven
 5. Assign the `JAVA_HOME` system variable:
    1. Open the Start Menu.
    2. Search for `Environment Variables` and click **Edit the system environment variables**
-   3. In the Systems Properties Window > Click **Environment Variables...**
-   4. Under "System Variables" >  Click **New**.
+   3. In the Systems Properties Window → Click **Environment Variables...**
+   4. Under "System Variables" →  Click **New**.
    5. **Variable name**: Enter `JAVA_HOME`
    6. **Variable value**: Enter the path of your JDK installation into the field. If you didn't change anything during the JDK installation, it should be `C:\Program Files\Java\jdk-11.0.2`.
 
 ![Java Home Variable](/developers/tools/maven-cli/images/java-home-variable.jpg)
 
 1. Assign the `MAVEN_HOME` system variable:
-   1. Still under **System Variables** > click **New**
+   1. Still under **System Variables** → click **New**
    2. **Variable name**: Enter `MAVEN_HOME` into the field.
    3. **Variable value**: Enter the path of your **Maven installation** into the field. If you followed along with _Step 4_, it will be `C:\Program Files\apache-maven-3.6.0`.
 
 ![Maven Home Variable](/developers/tools/maven-cli/images/maven-home-variable.jpg)
 
 1. Add `%JAVA_HOME%` and `%MAVEN_HOME%` to your **PATH** variable:
-   1. Still in the **Environment Variables** window > Under the "User variables for ..." > Select the variable named **Path** > Then click **Edit...**.
+   1. Still in the **Environment Variables** window → Under the "User variables for ..." → Select the variable named **Path** → Then click **Edit...**.
    2. Click **New** and enter `%JAVA_HOME%\bin`
    3. Click **New** again, and enter `%MAVEN_HOME%\bin`
    4. Click **OK** to close down the system windows.

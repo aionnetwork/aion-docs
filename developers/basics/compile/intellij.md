@@ -29,5 +29,5 @@ If your contract successfully compile you will find three files under project's 
 
 Keep in mind that when you select to deploy your application again in IntelliJ, the IDE will automatically re-compile your contracts. If you want to disable this automatic re-compile, follow these steps:
 
-1. Open the Aion4j Configuration window by right-clicking in the editor pane and click **Aion Virtual Machine** > **Configuration**.
+1. Open the Aion4j Configuration window by right-clicking in the editor pane and click **Aion Virtual Machine** → **Configuration**.
 2. Uncheck the **Always compile before deploying** box.

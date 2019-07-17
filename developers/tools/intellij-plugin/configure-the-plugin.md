@@ -8,7 +8,7 @@ weight: 300
 
 This menu allows you to select which node to connect to, how much NRG you are willing to pay, and other configuration options.
 
-To open the confirguation menu, right click anywhere within your project and select **Aion Virtual Machine** > **Configuration**. The confirguation menu is split into four sections: **Remote Kernel**, **Remote - Details**, **Embedded AVM**, and **Common**.
+To open the confirguation menu, right click anywhere within your project and select **Aion Virtual Machine** → **Configuration**. The confirguation menu is split into four sections: **Remote Kernel**, **Remote - Details**, **Embedded AVM**, and **Common**.
 
 ### Remote Kernel
 
@@ -97,6 +97,6 @@ The `pom.xml` file contains a `profiles` section where you can define custom pro
 
 ## IntelliJ Keyboard Shortcuts
 
-IntelliJ allows users to assign keyboard shortcuts to individual plugins. To access this menu go to **Preferences** > **Keymap** > **Plug-ins** > **Aion4j AVM Integration**. Here you can set any keyboard shortcuts you want to. Depending on your IntelliJ installation, some default Aion plugin shortcuts may be overridden by other IntelliJ functions.
+IntelliJ allows users to assign keyboard shortcuts to individual plugins. To access this menu go to **Preferences** → **Keymap** → **Plug-ins** → **Aion4j AVM Integration**. Here you can set any keyboard shortcuts you want to. Depending on your IntelliJ installation, some default Aion plugin shortcuts may be overridden by other IntelliJ functions.
 
 ![IntelliJ Keymaps](/developers/tools/intellij-plugin/images/intellij-keymap.png)

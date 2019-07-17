@@ -10,7 +10,7 @@ To send transactions, deploy contracts and interact with them, you need an AION 
 
 Create an account with a specified amount of `AION` for testing on embedded AVM locally.
 
-Right click anywhere in your AVM project and selecting **Aion Virtual Machine** > **Embedded** > **Create Account**. Then enter the address you want to create, and the amount of `AION` you want to be added into it. The address you enter must be a valid `AION` address. The `Balance` is in nAmp, where 1 AION = 10^18 nAmp.
+Right click anywhere in your AVM project and selecting **Aion Virtual Machine** → **Embedded** → **Create Account**. Then enter the address you want to create, and the amount of `AION` you want to be added into it. The address you enter must be a valid `AION` address. The `Balance` is in nAmp, where 1 AION = 10^18 nAmp.
 
 Here's ten sample addresses that you can use to create accounts on the embedded AVM (you are not limited to using just these addresses):
 
@@ -31,7 +31,7 @@ Addresses used on the embedded AVM have no real world value, and cannot be _tran
 
 ### Remote
 
-Create an account by right clicking anywhere in your AVM project and select **Aion Virtual Machine** > **Remote** > **Create Account**. It will generate you an Aion key pair that includes public address and private key.
+Create an account by right clicking anywhere in your AVM project and select **Aion Virtual Machine** → **Remote** → **Create Account**. It will generate you an Aion key pair that includes public address and private key.
 
 Here's a sample output:
 

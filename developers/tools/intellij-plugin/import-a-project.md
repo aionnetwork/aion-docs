@@ -7,7 +7,7 @@ weight: 275
 
 If you have an existing AVM maven project and you want to import it to IntelliJ IDE, follow the steps below:
 
-1. If you are on `Welcome to IntelliJ IDEA` page, click **Import Project**; If you have a project open, Click **File -> New -> Project from Existing Sources**
+1. If you are on `Welcome to IntelliJ IDEA` page, click **Import Project**; If you have a project open, Click **File → New → Project from Existing Sources**
 2. Navigate to your AVM project.
 3. Click **OK**.
 4. Choose **Import Project from external model** and select **Maven**.
