@@ -72,7 +72,7 @@ The Aion AVM Maven Archetype includes a sample HelloAVM contract and correspondi
 - `main`: This is where your contracts are stored.
 - `test`: Unit tests are stored here.
 
-To view your contract go to `src` > `main` > `java` > `Your package name` > `HelloAvm`. This is your contract.
+To view your contract go to `src` → `main` → `java` → `Your package name` → `HelloAvm`. This is your contract.
 
 ## Edit your Contract
 
