@@ -36,3 +36,5 @@ For example:
 ```bash
 mvn aion4j:create-account -Daddress=0xa0f1002373877bd6987f23af0daa97f5d886d591cf308408cb396eda44f3456e -Dweb3rpc.url=https://aion.api.nodesmith.io/v1/avmtestnet/jsonrpc?apiKey=ab40c8f567874400a69c1e80a1399350 -Premote
 ```
+
+> Save your account address and private key is a safe place. Never share you private key with anyone. If someone knows your private key, they can withdraw all the funds within your account.
