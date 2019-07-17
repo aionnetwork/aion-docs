@@ -31,7 +31,6 @@ public class ReturnerExample {
 }
 ```
 
-
 ### Caller
 
 Make sure to supply the address of the contract you want to call as a deployment argument. Supplying the contract address as a hardcoded variable within a contract is more expensive and less efficient​.
@@ -76,7 +75,7 @@ public class ContractInteractionCaller {
 }
 ```
 
-## [Blockchain.call()](https://avm-api.aion.network/avm/blockchain#call(avm.Address,java.math.BigInteger,byte%5B%5D,long%29)
+## Blockchain Call
 
 To call a method in another Java contract, you can use [Blockchain.call()](https://avm-api.aion.network/avm/blockchain#call(avm.Address,java.math.BigInteger,byte%5B%5D,long%29) method, and pass in the `target contract address`, `value` to transfer, `data` to pass and the `max energy` the invoked contract can use.
 
@@ -90,9 +89,9 @@ Use it to encode the `method` name as a `String` first and then the `arguments` 
 Now you get everything you need to make a contract call.
 If you are expecting some return data, you must create a `Result` object.
 
-## [AVM Result](https://avm-api.aion.network/avm/result)
+## AVM Result
 
-A `Result` object represents a cross-call invocation result. To create a `Result` instance for the contract method call:
+The [AVM `Result`](https://avm-api.aion.network/avm/result) object represents a cross-call invocation result. To create a `Result` instance for the contract method call:
 
 ```java
 Result getString = Blockchain.call(calleeContractAddress, BigInteger.ZERO, data, Blockchain.getRemainingEnergy());
