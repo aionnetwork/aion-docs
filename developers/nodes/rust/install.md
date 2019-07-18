@@ -81,13 +81,13 @@ Follow these steps to get started quickly, or skip this section if you want to l
 
 ```bash
 # Pull the kernel image.
-$ docker pull aionnetwork/aionr:Latest
+docker pull aionnetwork/aionr:Latest
 
 # Create some local storage for the container:
-$ docker volume create aionr-mainnet
+docker volume create aionr-mainnet
 
 # Run the container:
-$ docker run -it -p 8545:8545 -p 8546:8546 -p 30303:30303 --mount source=aionr-mainnet,destination=/aionr/mainnet aionnetwork/aionr:Latest
+docker run -it -p 8545:8545 -p 8546:8546 -p 30303:30303 --mount source=aionr-mainnet,destination=/aionr/mainnet aionnetwork/aionr:Latest
 ```
 
 #### Rust Prerequisites
@@ -191,11 +191,11 @@ docker run -it aionnetwork/aionr:Latest /aionr/mastery.sh
 
 The Aion Docker image is configured to run the Rust WebSocket and RPC servers, as well as allow connections from other Aion nodes. When running the Docker container, it is necessary to publish those ports if you use to wish these functionalities.
 
-|Port|Connection Type|
+| Port | Connection Type |
 | ---- | ------- |
-|`30303`|P2P|
-|`8545`|JSON-RPC|
-|`8546`|WebSocket|
+| `30303` | P2P |
+| `8545` | JSON-RPC |
+| `8546` | WebSocket |
 
 ##### Rust Storage
 
