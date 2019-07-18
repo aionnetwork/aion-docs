@@ -21,8 +21,8 @@ To run the kernel, your computer must meet the following requirements.
 - [Ubuntu 16.04](http://releases.ubuntu.com/16.04/) or [Ubuntu 18.04](http://releases.ubuntu.com/18.04/)
 - `4GB` RAM
 - `~40GB` available storage
-    - `~25GB` for testnet
-    - `~15GB` for mainnet
+  - `~25GB` for testnet
+  - `~15GB` for mainnet
 
 These storage size requirements are estimates only. Since the databases for each network grow everytime a transaction is mined, these values will only increase in size.
 
@@ -71,8 +71,6 @@ sudo apt install g++ gcc libzmq3-dev libjsoncpp-dev python-dev libudev-dev libbo
 
 #### Run the Installation
 
-Under construction.
-
 ### Docker Image
 
 This section covers how to configure and run the Aion Rust kernel Docker container.
@@ -107,32 +105,38 @@ The HDD space required only takes the Docker image into account. You will need a
 
 1. Pull down the latest Docker image.
 
-        docker pull aionnetwork/aionr:Latest
-        
-        > Latest: Pulling from aionnetwork/aionr
-        > f476d66f5408: Pull complete
-        > ...
-        > Status: Downloaded newer image for aionnetwork/aionr:Latest
+    ```bash
+    docker pull aionnetwork/aionr:Latest
+
+    > Latest: Pulling from aionnetwork/aionr
+    > f476d66f5408: Pull complete
+    > ...
+    > Status: Downloaded newer image for aionnetwork/aionr:Latest
+    ```
 
 2. Create local storage for Aion image.
 
-        docker volume create aionr-mainnet
+    ```bash
+    docker volume create aionr-mainnet
 
-        > aionr-mainnet
+    > aionr-mainnet
+    ```
 
 3. Run the image.
 
-        docker run -it -p 8545:8545 -p 8546:8546 -p 30303:30303 --mount source=aionr-mainnet,destination=/aionr/mainnet aionnetwork/aionr:Latest
+    ```bash
+    docker run -it -p 8545:8545 -p 8546:8546 -p 30303:30303 --mount source=aionr-mainnet,destination=/aionr/mainnet aionnetwork/aionr:Latest
 
-        >             _____    ____    _   _
-        >     /\     |_   _|  / __ \  | \ | |
-        >    /  \      | |   | |  | | |  \| |
-        >   / /\ \     | |   | |  | | | . ` |
-        >  / ____ \   _| |_  | |__| | | |\  |
-        > /_/    \_\ |_____|  \____/  |_| \_|
-        >
-        >
-        >2019-07-12 17:14:11 Starting Aion(R)/v0.2.5.a60ae38/x86_64-linux-gnu/rustc-1.28.0
+    >             _____    ____    _   _
+    >     /\     |_   _|  / __ \  | \ | |
+    >    /  \      | |   | |  | | |  \| |
+    >   / /\ \     | |   | |  | | | . ` |
+    >  / ____ \   _| |_  | |__| | | |\  |
+    > /_/    \_\ |_____|  \____/  |_| \_|
+    >
+    >
+    >2019-07-12 17:14:11 Starting Aion(R)/v0.2.5.a60ae38/x86_64-linux-gnu/rustc-1.28.0
+    ```
 
 4. Press `CTRL` + `c` to shut down and exit the container.
 
@@ -144,41 +148,51 @@ There are several arguments that you can supply with the `docker run` command.
 
 Once the kernel Docker image is pulled you can configure it by running the `docker exec` command in a separate terminal window:
 
-    docker exec -it <CONTAINER_NAME or CONTAINER_ID> /bin/bash
+```bash
+docker exec -it <CONTAINER_NAME or CONTAINER_ID> /bin/bash
+```
 
 >List of `CONTAINER_ID`s and `CONTAINER_NAME`s can be found with command: `$ docker container list`
 
 This starts a standard terminal session within the container. You will need to install a text editor before you can edit any files, as the container doesn’t come with one pre-installed:
 
-    apt install nano
+```bash
+apt install nano
 
-    OR
+OR
 
-    apt install vim
+apt install vim
+```
 
 The configuration file locations will be printed upon starting the node:
 
-    2019-07-12 17:41:08 Config path /aionr/mainnet/mainnet.toml
-    2019-07-12 17:41:08 Genesis spec path /aionr/mainnet/mainnet.json
-    2019-07-12 17:41:08 Keys path /root/.aion/keys/mainnet
-    2019-07-12 17:41:08 DB path /root/.aion/chains/mainnet/db/a98e36807c1b0211
+```bash
+2019-07-12 17:41:08 Config path /aionr/mainnet/mainnet.toml
+2019-07-12 17:41:08 Genesis spec path /aionr/mainnet/mainnet.json
+2019-07-12 17:41:08 Keys path /root/.aion/keys/mainnet
+2019-07-12 17:41:08 DB path /root/.aion/chains/mainnet/db/a98e36807c1b0211
+```
 
 Then you can edit the `.toml` file associated with the network you are running. For example, if you are running the Rust kernel on Mainnet, then you should edit the `mainnet/mainnet.toml` file. If you are running the Rust kernel on the Testnet (Mastery), then you should edit the `mastery/mastery.toml` file.
 
-    nano mainnet/mainnet.toml
+```bash
+nano mainnet/mainnet.toml
+```
 
 ##### Rust Networks
 
 By default, running the image will start a node on the mainnet. To specify a network; for instance, the mastery testnet, use:
 
-    docker run -it aionnetwork/aionr:Latest /aionr/mastery.sh
+```bash
+docker run -it aionnetwork/aionr:Latest /aionr/mastery.sh
+```
 
 ##### Rust Ports
 
 The Aion Docker image is configured to run the Rust WebSocket and RPC servers, as well as allow connections from other Aion nodes. When running the Docker container, it is necessary to publish those ports if you use to wish these functionalities.
 
 |Port|Connection Type|
-|-|-|
+| ---- | ------- |
 |`30303`|P2P|
 |`8545`|JSON-RPC|
 |`8546`|WebSocket|
@@ -187,11 +201,15 @@ The Aion Docker image is configured to run the Rust WebSocket and RPC servers, a
 
 In most cases, storage should be attached so that configuration and blockchain sync state can be persisted between each time the kernel is launched. You will need a separate Docker volume for each Aion Network, so it is recommended to include the network name in the volume name. To create a volume:
 
-    docker volume create <VOLUME_NAME>
+```bash
+docker volume create <VOLUME_NAME>
+```
 
 To start the Docker image with the volume, where `<VOLUME-NAME>` is the volume name and `<NETWORK>` is the Aion network name (`mainnet`, `mastery`, `custom`, etc.):
 
-    docker run -it --mount source=<VOLUME-NAME>,destination=/aionr/<NETWORK> aionnetwork/aionr:Latest ./<Network>.sh
+```bash
+docker run -it --mount source=<VOLUME-NAME>,destination=/aionr/<NETWORK> aionnetwork/aionr:Latest ./<Network>.sh
+```
 
 That’s it! You’re done.
 

@@ -27,57 +27,75 @@ We have used the latest build as an example on this page. If you want to use a d
 1. Connect to your machine via SSH or open a terminal if you are working on a local installation.
 2. Change to your root `~` directory and update your system:
 
-        cd ~
-        sudo apt update -y && sudo apt upgrade -y
+    ```bash
+    cd ~
+    sudo apt update -y && sudo apt upgrade -y
+    ```
 
 3. Download the latest [Aion Java kernel package](https://github.com/aionnetwork/aion/releases) to your computer if you haven't already. You can also use `wget` if you'd prefer:
 
-        wget https://github.com/aionnetwork/aion/releases/download/v0.3.3/aion-v0.3.3.22362091d-2019-03-07.tar.bz2
+    ```bash
+    wget https://github.com/aionnetwork/aion/releases/download/v0.3.3/aion-v0.3.3.22362091d-2019-03-07.tar.bz2
+    ```
 
 4. Unzip the package and move the `aion` directory to your home `~` directory:
 
-        tar xvjf aion-v0.3.3.22362091d-2019-03-07.tar.bz2
-        mv aion ~/
+    ```bash
+    tar xvjf aion-v0.3.3.22362091d-2019-03-07.tar.bz2
+    mv aion ~/
+    ```
 
 5. Move to your `aion` directory and create an address & keystore:
 
-        cd ~/
-        ~/aion/aion.sh -a create
+    ```bash
+    cd ~/
+    ~/aion/aion.sh -a create
+    ```
 
 6. Enter a password and write it down, you'll need it later.
 7. The terminal shows an account address. Write it down somewhere, you'll need this later.
 
-        ~/.aion/aion.sh -a create
+    ```bash
+    ~/.aion/aion.sh -a create
 
-        > Please enter a password:
-        > Please re-enter your password:
-        > A new account has been created: 0xa09...
+    > Please enter a password:
+    > Please re-enter your password:
+    > A new account has been created: 0xa09...
+    ```
 
 8. The build script creates a keystore file in `aion/keystore`. Create a backup of the file:
 
     **On a Local Machine**:
 
-        cp ~/aion/mainnet/keystore/* ~/Documents/aion-keystore
+    ```bash
+    cp ~/aion/mainnet/keystore/* ~/Documents/aion-keystore
+    ```
 
     Make a copy of this `keystore` file and store it somewhere other than the computer you are installing the Java kernel on. Move onto the last step.
 
     **On a Remote Machine over SSH**
 
-        # exit your remote machine
-        exit
+    ```bash
+    # exit your remote machine
+    exit
 
-        # copy the aion keystore to your local machine
-        scp user@node_ip_address:~/aion/mainnet/keystore/* ~/Desktop
+    # copy the aion keystore to your local machine
+    scp user@node_ip_address:~/aion/mainnet/keystore/* ~/Desktop
+    ```
 
     Make a copy of this `keystore` file and store it somewhere other than the computer you are installing the Java kernel on. Reconnect to your remote machine:
 
-        ssh user@remote-node-ip
+    ```bash
+    ssh user@remote-node-ip
+    ```
 
     Move onto the last step.
 
 9. Run the Aion Java kernel:
 
-        ~/aion/aion.sh
+    ```bash
+    ~/aion/aion.sh
+    ```
 
 The kernel will now begin to _sync_ with the other nodes on the network. This process can take up to 72 hours depending on the speed of your network and the size of the database you are syncing. Everything is complete once that's finished. You have successfully installed the Aion Java kernel on your system.
 
@@ -117,42 +135,50 @@ The HDD space required only takes the Docker image into account. You will need a
 
 1. Pull down the latest Java Docker image.
 
-        docker pull aionnetwork/aion:Latest
+    ```bash
+    docker pull aionnetwork/aion:Latest
 
-        > Latest: Pulling from aionnetwork/aion
-        > 6cf436f81810: Pull complete
-        > ...
-        > Status: Downloaded newer image for aionnetwork/aion:Latest
+    > Latest: Pulling from aionnetwork/aion
+    > 6cf436f81810: Pull complete
+    > ...
+    > Status: Downloaded newer image for aionnetwork/aion:Latest
+    ```
 
 2. Create local storage for Aion image.
 
-        docker volume create aion-mainnet
+    ```bash
+    docker volume create aion-mainnet
 
-        > aion-mainnet
+    > aion-mainnet
+    ```
 
 3. Run the image.
 
-        docker run -it -p 8545:8545 -p 8547:8547 -p 30303:30303 --mount source=aion-mainnet,destination=/aion/mainnet aionnetwork/aion:Latest
+    ```bash
+    docker run -it -p 8545:8545 -p 8547:8547 -p 30303:30303 --mount source=aion-mainnet,destination=/aion/mainnet aionnetwork/aion:Latest
 
-        >                     _____
-        >      .'.       |  .~     ~.  |..          |
-        >    .'   `.     | |         | |  ``..      |
-        >  .''''''''`.   | |         | |      ``..  |
-        >.'           `. |  `._____.'  |          ``|
-        >
-        >               v0.4.0.2.092068b
-        >                    mainnet
-        >                using FVM & AVM
+    >                     _____
+    >      .'.       |  .~     ~.  |..          |
+    >    .'   `.     | |         | |  ``..      |
+    >  .''''''''`.   | |         | |      ``..  |
+    >.'           `. |  `._____.'  |          ``|
+    >
+    >               v0.4.0.2.092068b
+    >                    mainnet
+    >                using FVM & AVM
+    ```
 
     See the [Running the Java Container](#running-the-java-container) section for more information on what arguments to supply with the `docker run` command.
 
 4. Press `CTRL` + `c` to shut down and exit the container.
 
-        19-03-04 10:59:01.821 INFO  GEN  [shutdown]: Starting shutdown process...
-        ...
-        19-03-04 10:59:05.887 INFO  GEN  [shutdown]: ---------------------------------------------
-        19-03-04 10:59:05.888 INFO  GEN  [shutdown]: | Aion kernel graceful shutdown successful! |
-        19-03-04 10:59:05.888 INFO  GEN  [shutdown]: ---------------------------------------------
+    ```bash
+    19-03-04 10:59:01.821 INFO  GEN  [shutdown]: Starting shutdown process...
+    ...
+    19-03-04 10:59:05.887 INFO  GEN  [shutdown]: ---------------------------------------------
+    19-03-04 10:59:05.888 INFO  GEN  [shutdown]: | Aion kernel graceful shutdown successful! |
+    19-03-04 10:59:05.888 INFO  GEN  [shutdown]: ---------------------------------------------
+    ```
 
 ### Java Arguments and Configuration
 
@@ -162,27 +188,35 @@ There are several arguments that you can supply with the `docker run` command.
 
 Once the kernel Docker image is pulled you can configure it by running the `docker exec` command in a separate terminal window:
 
-    docker exec -it <CONTAINER_NAME or CONTAINER_HASH> /bin/bash
+```bash
+docker exec -it <CONTAINER_NAME or CONTAINER_HASH> /bin/bash
+```
 
 >List of `CONTAINER_ID`s and `CONTAINER_NAME`s can be found with command: `$ docker container list`
 
 This starts a standard terminal session within the container. You will need to install a text editor before you can edit any files, as the container doesn't come with one pre-installed:
 
-    apt install nano
+```bash
+apt install nano
 
-    OR
+OR
 
-    apt install vim
+apt install vim
+```
 
 Then you can edit the `config.xml` file associated with the network you are running. For example, if you are running the Java kernel on Mainnet, then you should edit the `mainnet/config.xml` file. If you are running the Rust kernel on the Testnet (Mastery), then you should edit the `mastery/config.xml` file.
 
-    nano mainnet/config/config.xml
+```bash
+nano mainnet/config/config.xml
+```
 
 #### Java Networks
 
 By default, running the image will start a node on the mainnet. To specify a network; for instance, the mastery testnet, use:
 
-    docker run -it aionnetwork/aion:Latest /aion/aion.sh -n mastery
+```bash
+docker run -it aionnetwork/aion:Latest /aion/aion.sh -n mastery
+```
 
 #### Java Ports
 
@@ -198,15 +232,21 @@ The Aion Docker image is configured to run the Java API and RPC servers, as well
 
 In most cases, storage should be attached so that configuration and blockchain sync state can be persisted between each time the kernel is launched. You will need a separate Docker volume for each Aion Network, so it is recommended to include the network name in the volume name. To create a volume:
 
-    docker volume create VOLUME-NAME
+```bash
+docker volume create VOLUME-NAME
+```
 
 To start the Docker image with the volume, where VOLUME-NAME is the volume name and NETWORK is the Aion network name:
 
-    docker run -it --mount source=VOLUME-NAME,destination=/aion/NETWORK aionnetwork/aion:Latest ./aion.sh -n NETWORK
+```bash
+docker run -it --mount source=VOLUME-NAME,destination=/aion/NETWORK aionnetwork/aion:Latest ./aion.sh -n NETWORK
+```
 
 For the list of network names, see:
 
-    docker run -it aionnetwork/aion:Latest /aion/aion.sh -h
+```bash
+docker run -it aionnetwork/aion:Latest /aion/aion.sh -h
+```
 
 That's it! You're done.
 
