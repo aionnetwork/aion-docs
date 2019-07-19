@@ -5,7 +5,7 @@ table_of_contents: true
 header_image: /developers/images/developers-header.png
 ---
 
-## Write & Compile
+## Write and Compile
 
 First up is writing and compiling your contract. Compiling your software before you deploy it might not be a big issue for any current Java developers out there, but if you've come from the web development world then this step might not be too familiar. All you need to know right now is that before an application can run on the Aion network, it needs to be passed through a Java compiler.
 

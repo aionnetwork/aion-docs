@@ -31,7 +31,7 @@ The [developer quickstart](/developers/) runs through this process without you h
 
 ## First Project
 
-Once you've got the workflow down and have a solid understanding of the process for creating dApps, you are ready to create your first app. This app is incredibly basic and serves to show you how to use your chosen _deveplment environment_. 
+Once you've got the workflow down and have a solid understanding of the process for creating dApps, you are ready to create your first app. This app is incredibly basic and serves to show you how to use your chosen _deveplment environment_.
 
 Follow through the [IntelliJ end-to-end](/developers/tools/intellij-plugin/end-to-end/), or [Maven CLI end-to-end](/developers/tools/maven-cli/end-to-end/).
 
