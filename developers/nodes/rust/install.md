@@ -81,13 +81,13 @@ Follow these steps to get started quickly, or skip this section if you want to l
 
 ```bash
 # Pull the kernel image.
-docker pull aionnetwork/aionr:Latest
+docker pull aionnetwork/aionr:latest
 
 # Create some local storage for the container:
 docker volume create aionr-mainnet
 
 # Run the container:
-docker run -it -p 8545:8545 -p 8546:8546 -p 30303:30303 --mount source=aionr-mainnet,destination=/aionr/mainnet aionnetwork/aionr:Latest
+docker run -it -p 8545:8545 -p 8546:8546 -p 30303:30303 --mount source=aionr-mainnet,destination=/aionr/mainnet aionnetwork/aionr:latest
 ```
 
 #### Rust Prerequisites
@@ -106,12 +106,12 @@ The HDD space required only takes the Docker image into account. You will need a
 1. Pull down the latest Docker image.
 
     ```bash
-    docker pull aionnetwork/aionr:Latest
+    docker pull aionnetwork/aionr:latest
 
-    > Latest: Pulling from aionnetwork/aionr
+    > latest: Pulling from aionnetwork/aionr
     > f476d66f5408: Pull complete
     > ...
-    > Status: Downloaded newer image for aionnetwork/aionr:Latest
+    > Status: Downloaded newer image for aionnetwork/aionr:latest
     ```
 
 2. Create local storage for Aion image.
@@ -125,7 +125,7 @@ The HDD space required only takes the Docker image into account. You will need a
 3. Run the image.
 
     ```bash
-    docker run -it -p 8545:8545 -p 8546:8546 -p 30303:30303 --mount source=aionr-mainnet,destination=/aionr/mainnet aionnetwork/aionr:Latest
+    docker run -it -p 8545:8545 -p 8546:8546 -p 30303:30303 --mount source=aionr-mainnet,destination=/aionr/mainnet aionnetwork/aionr:latest
 
     >             _____    ____    _   _
     >     /\     |_   _|  / __ \  | \ | |
@@ -184,7 +184,7 @@ nano mainnet/mainnet.toml
 By default, running the image will start a node on the mainnet. To specify a network; for instance, the mastery testnet, use:
 
 ```bash
-docker run -it aionnetwork/aionr:Latest /aionr/mastery.sh
+docker run -it aionnetwork/aionr:latest /aionr/mastery.sh
 ```
 
 ##### Rust Ports
@@ -208,7 +208,7 @@ docker volume create <VOLUME_NAME>
 To start the Docker image with the volume, where `<VOLUME-NAME>` is the volume name and `<NETWORK>` is the Aion network name (`mainnet`, `mastery`, `custom`, etc.):
 
 ```bash
-docker run -it --mount source=<VOLUME-NAME>,destination=/aionr/<NETWORK> aionnetwork/aionr:Latest ./<Network>.sh
+docker run -it --mount source=<VOLUME-NAME>,destination=/aionr/<NETWORK> aionnetwork/aionr:latest ./<Network>.sh
 ```
 
 That’s it! You’re done.
