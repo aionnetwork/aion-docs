@@ -1,6 +1,8 @@
 ---
 title: Maven CLI
 description: Translate your code from Java source-code down to Java bytecode, so that it can run on the Aion blockchain. This command is the same for both local and remote deployment. Regardless of where your contract is going to end up, you must compile it on your local machine first. There is no way to compile your contract using a remote node.
+table_of_contents: true
+next_page: /developers/basics/deploy/maven-cli
 ---
 
 This guide assumes you have the [Maven CLI already installed](/developers/tools/maven-cli/install), and you created your project using the [Maven Aion4j archetype](/developers/tools/maven-cli/create-a-project).

@@ -1,6 +1,8 @@
 ---
 title: IntelliJ
 description: This guide walks you through how to call dApps on the local kernel and on remote networks using IntelliJ and the Aion4j plugin.
+table_of_contents: true
+next_page: /developers/basics/test-and-debug/end-to-end/
 ---
 
 ## Local
