@@ -112,16 +112,16 @@ Follow these steps to get started quickly, or skip this section if you want to l
 
 ```bash
 # Pull the Rust kernel image.
-docker pull aionnetwork/aion:latest
+docker pull aionnetwork/aion:Latest
 
 # Create some local storage for the container:
 docker volume create aion-mainnet
 
 # Run the container:
-docker run -it -p 8545:8545 -p 8547:8547 -p 30303:30303 --mount source=aion-mainnet,destination=/aion/mainnet aionnetwork/aion:latest
+docker run -it -p 8545:8545 -p 8547:8547 -p 30303:30303 --mount source=aion-mainnet,destination=/aion/mainnet aionnetwork/aion:Latest
 ```
 
-### Java Prerequisites
+#### Java Prerequisites
 
 To use this Docker image your system must meet the following requirements:
 
@@ -132,17 +132,17 @@ To use this Docker image your system must meet the following requirements:
 
 The HDD space required only takes the Docker image into account. You will need a significant amount of space for storing the blockchain itself. The database is currently around `22GB` in size, although this can be [pruned](https://docs.aion.network/docs/database#section-state-database-pruning).
 
-### Install the Java Image
+#### Install the Java Image
 
 1. Pull down the latest Java Docker image.
 
     ```bash
-    docker pull aionnetwork/aion:latest
+    docker pull aionnetwork/aion:Latest
 
-    > latest: Pulling from aionnetwork/aion
+    > Latest: Pulling from aionnetwork/aion
     > 6cf436f81810: Pull complete
     > ...
-    > Status: Downloaded newer image for aionnetwork/aion:latest
+    > Status: Downloaded newer image for aionnetwork/aion:Latest
     ```
 
 2. Create local storage for Aion image.
@@ -153,10 +153,10 @@ The HDD space required only takes the Docker image into account. You will need a
     > aion-mainnet
     ```
 
-3. Run the image.
+1. Run the image.
 
     ```bash
-    docker run -it -p 8545:8545 -p 8547:8547 -p 30303:30303 --mount source=aion-mainnet,destination=/aion/mainnet aionnetwork/aion:latest
+    docker run -it -p 8545:8545 -p 8547:8547 -p 30303:30303 --mount source=aion-mainnet,destination=/aion/mainnet aionnetwork/aion:Latest
 
     >                     _____
     >      .'.       |  .~     ~.  |..          |
@@ -169,7 +169,7 @@ The HDD space required only takes the Docker image into account. You will need a
     >                using FVM & AVM
     ```
 
-    See the [Running the Java Container](#running-the-java-container) section for more information on what arguments to supply with the `docker run` command.
+    Take a look at the [Running the Java Container](#running-the-java-container) section for more information on what arguments to supply with the `docker run` command.
 
 4. Press `CTRL` + `c` to shut down and exit the container.
 
@@ -181,11 +181,11 @@ The HDD space required only takes the Docker image into account. You will need a
     19-03-04 10:59:05.888 INFO  GEN  [shutdown]: ---------------------------------------------
     ```
 
-### Java Arguments and Configuration
+#### Java Arguments and Configuration
 
 There are several arguments that you can supply with the `docker run` command.
 
-#### Configure the Java Kernel
+##### Configure the Java Kernel
 
 Once the kernel Docker image is pulled you can configure it by running the `docker exec` command in a separate terminal window:
 
@@ -193,16 +193,16 @@ Once the kernel Docker image is pulled you can configure it by running the `dock
 docker exec -it <CONTAINER_NAME or CONTAINER_HASH> /bin/bash
 ```
 
->List of `CONTAINER_ID`s and `CONTAINER_NAME`s can be found with command: `$ docker container list`
+A list of `CONTAINER_ID`s and `CONTAINER_NAME`s can be found by running `docker container list`
 
 This starts a standard terminal session within the container. You will need to install a text editor before you can edit any files, as the container doesn't come with one pre-installed:
 
 ```bash
-apt install nano
+sudo apt install nano
 
 OR
 
-apt install vim
+sudo apt install vim
 ```
 
 Then you can edit the `config.xml` file associated with the network you are running. For example, if you are running the Java kernel on Mainnet, then you should edit the `mainnet/config.xml` file. If you are running the Rust kernel on the Testnet (Mastery), then you should edit the `mastery/config.xml` file.
@@ -211,15 +211,15 @@ Then you can edit the `config.xml` file associated with the network you are runn
 nano mainnet/config/config.xml
 ```
 
-#### Java Networks
+##### Java Networks
 
 By default, running the image will start a node on the mainnet. To specify a network; for instance, the mastery testnet, use:
 
 ```bash
-docker run -it aionnetwork/aion:latest /aion/aion.sh -n mastery
+docker run -it aionnetwork/aion:Latest /aion/aion.sh -n mastery
 ```
 
-#### Java Ports
+##### Java Ports
 
 The Aion Docker image is configured to run the Java API and RPC servers, as well as allow connections from other Aion nodes. When running the Docker container, it is necessary to publish those ports if you use to wish these functionalities.
 
@@ -229,7 +229,7 @@ The Aion Docker image is configured to run the Java API and RPC servers, as well
 | `8545` | JSON-RPC |
 | `8547` | Java API |
 
-#### Java Storage
+##### Java Storage
 
 In most cases, storage should be attached so that configuration and blockchain sync state can be persisted between each time the kernel is launched. You will need a separate Docker volume for each Aion Network, so it is recommended to include the network name in the volume name. To create a volume:
 
@@ -240,15 +240,13 @@ docker volume create VOLUME-NAME
 To start the Docker image with the volume, where VOLUME-NAME is the volume name and NETWORK is the Aion network name:
 
 ```bash
-docker run -it --mount source=VOLUME-NAME,destination=/aion/NETWORK aionnetwork/aion:latest ./aion.sh -n NETWORK
+docker run -it --mount source=VOLUME-NAME,destination=/aion/NETWORK aionnetwork/aion:Latest ./aion.sh -n NETWORK
 ```
 
 For the list of network names, see:
 
 ```bash
-docker run -it aionnetwork/aion:latest /aion/aion.sh -h
+docker run -it aionnetwork/aion:Latest /aion/aion.sh -h
 ```
 
-That's it! You're done.
-
-See the [Kernel wiki pages](https://github.com/aionnetwork/aion/wiki/Installation) on GitHub for more on installation and configuration.
+That's it, you're done! See the [Kernel wiki pages](https://github.com/aionnetwork/aion/wiki/Installation) on GitHub for more on installation and configuration.
