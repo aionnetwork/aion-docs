@@ -1,9 +1,10 @@
 ---
 title: Log
+description: A log is used to store arguments and data in a transaction receipt on the blockchain. Within the Aion Virtual Machine, a log can have 0 to 4 topics and at least one data field.
 table_of_contents: true
 ---
 
-A log is used to store arguments and data in a transaction receipt on the blockchain. For AVM, a [log](<https://avm-api.aion.network/avm/blockchain#log(byte%5B%5D)>) can have 0 to 4 topic(s) and at least one data field.
+You can view further documentation into [Blockchain.require()](https://avm-api.aion.network/avm/blockchain#log%28byte%5B%5D%29) on the [AVM API website](https://avm-api.aion.network/).
 
 ## Example Contract
 

@@ -1,6 +1,6 @@
 ---
 title: ABI Packages
-toc:  true
+table_of_contents:  true
 description: Defines classes related to encoding/decoding the high-level data types serialized into transaction payload data.
 ---
 

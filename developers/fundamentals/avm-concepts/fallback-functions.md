@@ -1,6 +1,7 @@
 ---
 title: Fallback Functions
 description: Mark a function as the default function to be called when the data is null, empty, or doesn't match any method names.
+table_of_contents: true
 ---
 
 If you want a method in the contract to be invoked when the data in the the transaction is null, emoty or doesn't match any method names, you can label it as `@Fallback`.
