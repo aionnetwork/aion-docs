@@ -2,7 +2,7 @@
 title: Call
 description: Calls to a contract can either be simple calls, or contract transactions. Calls do not necessarily incur a cost, but contract transactions always incur a cost as they are changing the state of the blockchain. Calls to a contract will always return something, whereas contract transaction may not depending on the function called.
 table_of_contents: true
-next_page: /developers/tools/intellij/contract-transaction
+next_page: /developers/tools/intellij-plugin/contract-transaction
 weight: 600
 ---
 

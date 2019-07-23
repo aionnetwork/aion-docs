@@ -2,7 +2,7 @@
 title: Transfer
 description: Transfer funds from one account to another using the Aion4j plugin for IntelliJ. This function is only available through a remote node.
 table_of_contents: true
-next_page: /developers/tools/intellij/get-receipts
+next_page: /developers/tools/intellij-plugin/get-receipts
 weight: 900
 ---
 

@@ -2,7 +2,7 @@
 title: Contract Transaction
 description: Contract transactions are the same as calls, except transactions always initiate a state-change. This means that something within the contract, like a variable, changes. This changes the state of the blockchain, which incurs a cost. Transaction calls can also change the state, or value, of something _without_ the contract having to return anything. Calls do not necessarily initiate a state-change. Calls are able to simply request the content or value of a variable. Calls will always return something, whereas contract transaction may not.
 table_of_contents: true
-next_page: /developers/tools/intellij/get-balance
+next_page: /developers/tools/intellij-plugin/get-balance
 weight: 700
 ---
 
