@@ -1,6 +1,8 @@
 ---
 title: Endpoint URL
 description: You can define the URL of the endpoint that you want to use, within your configuration file. This enables you to use remote commands without having to specify the web3 endpoint URL every time. If you are storing your project in a public repository, you may want to remove this endpoint URL, as some node hosting-services like Nodesmith include your API key within the URL itself.
+table_of_contents: true
+next_page: /developers/tools/maven-cli/create-account
 weight: 350
 ---
 

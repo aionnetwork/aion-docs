@@ -2,6 +2,8 @@
 title: Update Maven
 description: Because Maven is a command-line tool, updating any projects with a new Maven package requires some modification of the project configuration file and removal of the library folder.
 weight: 200
+table_of_contents: true
+next_page: /developers/tools/maven-cli/client-side-signing
 ---
 
 Follow this process to update the Aion plugin for Maven. All terminal commands are the same across operating systems.

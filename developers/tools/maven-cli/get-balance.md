@@ -2,6 +2,8 @@
 title: Get Balance
 description: Every account has a balance associated with it, including empty accounts. Finding out the balance of an account is incredibly simple with the Maven CLI tool.
 weight: 500
+table_of_contents: true
+next_page: /developers/tools/maven-cli/compile
 ---
 
 Return the balance from an account: `mvn aion4j:get-balance`

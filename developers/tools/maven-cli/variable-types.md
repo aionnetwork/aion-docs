@@ -1,7 +1,7 @@
 ---
 title: Variable Types
 description: When calling or deploying a contract with arguments, you must specify the type of variable you are submitting.
-
+table_of_contents: true
 ---
 
 ## Available Types

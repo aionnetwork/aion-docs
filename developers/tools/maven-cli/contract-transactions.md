@@ -2,6 +2,8 @@
 title: Contract Transactions
 description: Contract transactions are the same as calls, except transactions always initiate a state-change. This means that something within the contract, like a variable, changes. This changes the state of the blockchain, which incurs a cost. Transaction calls can also change the state, or value, of something _without_ the contract having to return anything. Calls do not necessarily initiate a state-change. Calls are able to simply request the content or value of a variable. Calls will always return something, whereas contract transaction may not.
 weight: 900
+table_of_contents: true
+next_page: /developers/tools/maven-cli/get-receipt
 ---
 
 Call a transaction on a contract: `mvn aion4j:contract-txn`
