@@ -1,6 +1,7 @@
 ---
 title: Hosting Services
 description: Get up and running quickly by using an Aion node provided by a hosting service. There's no need to install anything or set up any software. Just grab a URL and you're good to go. There are two services currently offering free nodes for you to use, Blockdaemon and Nodesmith.
+table_of_contents: true
 ---
 
 Don't want to spin up or build your own node? Hosting services are available to do the legwork for you so you can get your dAppup and running quickly.

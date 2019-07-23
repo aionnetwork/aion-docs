@@ -1,8 +1,9 @@
 ---
 title: Install
 description: Follow these instructions to grab the latest version of Ether.js.
+table_of_content: true
+weight: 100
 ---
-
 
 1. Install [NPM](https://www.npmjs.com/) if you haven't already.
 2. Move to your application directory.

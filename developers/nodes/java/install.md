@@ -2,6 +2,7 @@
 title: Install
 description: The Java implementation of the Aion kernel. You can interact with this kernel directly through the JSON RPC or Protobuff API layers. Further documentation regarding the kernel can be found on the Aion Java Kernel GitHub repository at https://github.com/aionnetwork/aion
 weight: 100
+table_of_contents: true
 ---
 
 There are two methods for installing the Java kernel on your machine:

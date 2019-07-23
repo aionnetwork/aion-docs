@@ -1,7 +1,6 @@
 ---
 title: Developer Quickstart
-description: New to Blockchain Development and don't know where to start? Follow this quickstart through to get a general understanding of the blockchain development workflow. Already know the workflow and just want to get your hands dirty building something, checkout the IntelliJ and Maven CLI end-to-end tutorials.
-table_of_contents: true
+description: Blockchain development has a workflow that is significantly different to other types of software development. It's important to have a solid understanding of this workflow before you jump into the deep-end. We've created this application so that you can write, test, deploy, and call a Java contract all from within your browser. There's a huge amount of stuff we're not going to go into on this page. So once you've finished up here, we suggest taking a closer look into either the IntelliJ or Maven CLI sections to get a thorough understanding of the available functions within those tools.
 header_image: /developers/images/developers-header.png
 ---
 

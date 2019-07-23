@@ -4,7 +4,7 @@ table_of_contents:  true
 description: Defines classes related to encoding/decoding the high-level data types serialized into transaction payload data.
 ---
 
-## [ABIDecoder](https://avm-api.aion.network/org/aion/avm/userlib/abi/abidecoder)
+## ABIDecoder
 
 `ABIDecoder` is a utility class for decoding transaction data as high-level ABI types. This class contains [static methods](https://avm-api.aion.network/org/aion/avm/userlib/abi/abidecoder) for parsing transaction data.
 
@@ -28,11 +28,11 @@ public static void decodeMyData() {
 }
 ```
 
-## [ABIEncoder](https://avm-api.aion.network/org/aion/avm/userlib/abi/abiencoder)
+## ABIEncoder
 
 ABIEncoder is utility class for AVM ABI encoding. This class provides static helpers for encoding single data elements. It is typically more appropriate to use [ABIStreamingEncoder](https://docs.aion.network/docs/avm-apis#section--abistreamingencoder-https-avm-api-aion-network-org-aion-avm-userlib-abi-abistreamingencoder-).
 
-## [ABIStreamingEncoder](https://avm-api.aion.network/org/aion/avm/userlib/abi/abistreamingencoder)
+## ABIStreamingEncoder
 
 `ABIStreamingEncoder` is a utility class for [AVM ABI encoding](https://avm-api.aion.network/org/aion/avm/userlib/abi/abistreamingencoder). Instances of this class are stateful, allowing several pieces of data to be serialized into the same buffer.
 
@@ -62,6 +62,6 @@ Once you have the `ABIStreamingEncoder`, you can encode multiple values by calli
                       .toBytes();
 ```
 
-## [ABIToken](https://avm-api.aion.network/org/aion/avm/userlib/abi/abitoken)
+## ABIToken
 
 Identifiers of the tokens the ABI uses to describe extents of data in a serialized stream.
