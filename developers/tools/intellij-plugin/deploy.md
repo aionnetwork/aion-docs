@@ -1,6 +1,8 @@
 ---
 title: Deploy
 description: Once a dApp has been written, it can be compiled and deployed to a local or remote blockchain network. Deploying dApps is similar to how regular applications are deployed currently, however there are some differences. One major difference is that to deploy an application to a public blockchain network, an account must be supplied with tokens in order to cover the deployment costs. However, when deploying to a local network through the Aion4j plugin there is no need to create an account or supply it with test tokens, as everything is contained within the local network.
+table_of_contents: true
+next_page: /developers/tools/intellij/call
 weight: 500
 ---
 

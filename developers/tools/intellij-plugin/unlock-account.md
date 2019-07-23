@@ -1,6 +1,7 @@
 ---
 title: Unlock Account
 description: Unlock an account on a remote node. This allows you to use the specified account to deploy, call, and interact with contracts. This is not advised on public / shared nodes. Some hosting services disable the unlocking of account on their shared nodes.
+table_of_contents: true
 weight: 1200
 ---
 

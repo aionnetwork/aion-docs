@@ -1,6 +1,8 @@
 ---
 title: Get Balance
 description: Every account has a balance associated with it, including empty accounts. Finding out the balance of an account is incredibly simple with the Aion4j plugin for IntelliJ.
+table_of_contents: true
+next_page: /developers/tools/intellij/transfer
 weight: 800
 ---
 
