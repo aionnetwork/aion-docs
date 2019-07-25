@@ -38,6 +38,8 @@ brew install maven
 
 ## Windows
 
+{{ youtube J6WfDipE7Qo }}
+
 1. Download the [JDK installation file](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html), and open it to run through the installation. Leave the default options unless you have a specific reason to change them. If you change the default installation location, make a note of it.
 2. Download the [Maven binary zip archive](http://apache.mirror.colo-serv.net/maven/maven-3/3.6.0/binaries/apache-maven-3.6.0-bin.zip).
 3. Extract the Maven zip file.
