@@ -1,6 +1,7 @@
 ---
 title: ABI Types
 description: While Java blockchain appliactions don't need to use an ABI, they are handy if you're sharing a contract with other developers. If they don't have access to the original Java classes, developers can use the ABI to learn what methods and variables are available.
+table_of_contents: true
 ---
 
 The following ABI types are available when calling or interacting with a Java contract, form outside of the contract. No other types can be used. Each type can be used in an array, however only primative types can be used within two-dimensional arrays.

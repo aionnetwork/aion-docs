@@ -1,6 +1,7 @@
 ---
 title: Aion Virtual Machine
 description: The Aion Virtual Machine (AVM) is a Turing complete execution engine that is core to the Aion Network. The AVM runs Java bytecode on the blockchain, enabling developers to build blockchain-based applications in Java. Its goal is to provide a robust global ecosystem that is familiar to the mainstream developer audience to unlock the potential of dApps without learning new tools, frameworks or languages. The AVM will run alongside the solidity-compatible FastVM.
+table_of_contents: true
 ---
 
 ## AVM & JVM

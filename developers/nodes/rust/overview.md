@@ -1,7 +1,8 @@
 ---
-title: Rust Kernel Overview
+title: Overview
 description: The Rust implementation of the Aion kernel. You can interact with this kernel directly through the JSON RPC layer. Further documentation regarding the kernel can be found on the Aion Rust Kernel GitHub repository at https://github.com/aionnetwork/aionr
 weight: 1
+table_of_contents: true
 ---
 
 This section of the docs goes over how to configure and interact with the Rust kernel directly. If you're looking to develop the Aion kernel itself, or how to setup and Aion node, then this section is for you! If you're just looking to create some Dapps, then you can leave this section for now and head on over to the [fundamentals section](/developers/fundamentals).

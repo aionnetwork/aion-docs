@@ -1,6 +1,8 @@
 ---
 title: Maven CLI
 description: Translate your code from Java source-code down to Java bytecode, so that it can run on the Aion blockchain. This command is the same for both local and remote deployment. Regardless of where your contract is going to end up, you must compile it on your local machine first. There is no way to compile your contract using a remote node.
+table_of_contents: true
+next_page: /developers/basics/deploy/maven-cli
 ---
 
 This guide assumes you have the [Maven CLI already installed](/developers/tools/maven-cli/install), and you created your project using the [Maven Aion4j archetype](/developers/tools/maven-cli/create-a-project).
@@ -33,6 +35,6 @@ The class you want to compile should be listed within the `contract.main.class` 
 
 If your contract successfully compiles you will find three files under the project's `target` folder:
 
-- `original-*.jar`: In the build process, the AVM verifies all the classes used in the contract are available in the [JCL Whiltelist](/developers/fundamentals/jcl-whitelist) and all the test classes pass.  
+- `original-*.jar`: In the build process, the AVM verifies all the classes used in the contract are available in the [JCL Whiltelist](/developers/fundamentals/avm-concepts/jcl-whitelist) and all the test classes pass.  
 - `*.jar`: The `.jar` file that will be deployed to the network. There is some post-processing that happens to the `original-*.jar` to create this `.jar` file, including processing the `@Initializable` and `@Callable` annotations, and removing un-used classes according to the class optimizer.
 - `*.abi`: This file is the ABI for the application. It defines the callable functions within the application, as well as any arguments they take.

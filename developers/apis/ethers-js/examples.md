@@ -1,6 +1,8 @@
 ---
 title: Examples
 description: Outlined on this page are some examples on how to use Ethers.js on the Aion network. These examples have been designed to be copy-and-pasteable into your existing code. If you have some suggestion for further examples to include here, click on the GitHub icon at the bottom left of the screen to be take to this page in the AionNetwork/Docs repository.
+table_of_content: true
+weight: 200
 ---
 
 ## Base Contract

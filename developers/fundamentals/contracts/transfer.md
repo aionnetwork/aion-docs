@@ -1,5 +1,7 @@
 ---
 title: Transfer
+description: Send funds from one account or contract, to another account or contract.
+table_of_contents: true
 ---
 
 The **receiver** account can only be an **account** or a **Java contract address** that is deployed on Aion. **nAmp** is used as the unit to display decimals. [1 Aion = 10^18 nAmp](https://github.com/aionnetwork/aion/wiki/Aion-Terminology). Insufficient balance in the contract will cause a **Failed_Exception**. Once AION is transferred into the smart contract, they will be locked in the contract unless there are functions to transfer them to other accounts.

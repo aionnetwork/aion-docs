@@ -2,6 +2,8 @@
 title: Install the Plugin
 description: The Aion4j plugin available for IntelliJ allows you to create, test, compile, deploy, and call your Java dApps, all from within the same IDE. No more copy-and-pasting contract from your local machine to a browser based IDE just to check if things actually work!
 weight: 100
+table_of_contents: true
+next_page: /developers/tools/intellij-plugin/end-to-end
 ---
 
 Install the latest stable build, or load the bleeding-edge edition.

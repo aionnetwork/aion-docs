@@ -2,6 +2,8 @@
 title: Get Logs
 description: Reviewing the logs from a node can be useful when attempting to debug issues with contracts or the node itself. Logs can also be useful at finding choke points or memory issues within your contracts.
 weight: 1100
+table_of_contents: true
+next_page: /developers/tools/maven-cli/transfer
 ---
 
 Return logs from a remote node: `mvn aion4j:get-logs`

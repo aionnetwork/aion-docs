@@ -1,6 +1,8 @@
 ---
-title: Ethers.js
+title: Overview
 description: Aion nodes only understand JSON RPC, and have no idea what to do with high-level languages like Java, Python, on Solidity. Since JSON RPC can be a bit cumbersome to work with, developers can use the Ethers.js framework to deal with blockchain interactions. Ethers.js was originally created for use on Ethereum-based blockchains. The creator of Ether.js has since expanded the framework to include the Aion network.
+table_of_content: true
+weight: 1
 ---
 
 Some of the features of Ethers.js include:

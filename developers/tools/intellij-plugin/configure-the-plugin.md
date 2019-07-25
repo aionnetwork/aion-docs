@@ -1,6 +1,8 @@
 ---
 title: Configure the Plugin
 description: There are lots of configuration options available within the Aion4j plugin for IntelliJ to help speed up your contract development.
+table_of_contents: true
+next_page: /developers/tools/intellij-plugin/create-account
 weight: 300
 ---
 

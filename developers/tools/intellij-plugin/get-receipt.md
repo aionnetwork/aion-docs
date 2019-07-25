@@ -1,6 +1,8 @@
 ---
 title: Get Receipts
 description: Just like regular real-world transactions, when a transaction is processed on a blockchain network a receipt is generated. This receipt lists pieces of information that can be helpful in debugging contracts, as well as vital information such as a contract's block hash and contract address. The Aion4j plugin automatically receives the receipt of each transaction, so you shouldn't need to use this feature unless you are looking for the receipt of a specific historical transaction.
+table_of_contents: true
+next_page: /developers/tools/intellij-plugin/abi-type-check
 weight: 1000
 ---
 

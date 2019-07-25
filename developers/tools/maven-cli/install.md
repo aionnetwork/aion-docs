@@ -2,6 +2,8 @@
 title: Install
 description: Installing Maven is quite simple, but differs between operating systems. If these instructions don't work for you check out the Apache Maven website to see detailed instructions for specific operating systems.
 weight: 50
+table_of_contents: true
+next_page: /developers/tools/maven-cli/end-to-end
 ---
 
 ## Linux

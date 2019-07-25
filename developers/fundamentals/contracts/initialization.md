@@ -1,5 +1,6 @@
 ---
 title: Initializaion
+description: Call functions and supply arguments as soon as a contract is deployed to a network.
 table_of_contents: true
 ---
 

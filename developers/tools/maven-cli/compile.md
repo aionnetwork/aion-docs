@@ -2,6 +2,8 @@
 title: Compile
 description: Translate your code from Java source-code down to Java bytecode, so that it can run on the Aion blockchain. This command is the same for both local and remote deployment. Regardless of where your contract is going to end up, you must compile it on your local machine first. There is no way to compile your contract using a remote node.
 weight: 600
+table_of_contents: true
+next_page: /developers/tools/maven-cli/deploy
 ---
 
 Compile your contract: `mvn clean install`

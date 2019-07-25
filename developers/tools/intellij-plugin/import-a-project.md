@@ -1,7 +1,8 @@
 ---
 title: Import a project
-table_of_contents: true
 description: You can import existing projects into the IntelliJ IDE. If you are importing a project that utilizes the Aion4j plugin and the AVM, you need to follow these instructions in order for the project to be compiles and built properly.
+table_of_contents: true
+next_page: /developers/tools/intellij-plugin/configure-the-plugin
 weight: 275
 ---
 

@@ -1,6 +1,8 @@
 ---
 title: Client-side Signing
 description: This feature allows you to deploy a smart contract without having to access the account management features on the node you are connected to. Certain hosting providers like Nodesmith and Blockdaemon block access to account management features on their nodes for security reasons. This allows you to ignore that restriction as all transactions can be signed locally before being made public on the network. This is the preferred way to interact with a public network, as your private key never leaves your local machine.
+table_of_contents: true
+next_page: /developers/tools/maven-cli/caching
 weight: 300
 ---
 
