@@ -3,7 +3,7 @@ title: Setup your Project
 description: Quickly run through setting up a project using the Aion IntelliJ plugin. This section assumes you have IntelliJ and the Aion plugin installed.
 weight: 250
 table_of_contents: true
-next_page: /developers/tools/intellij/import-a-project
+next_page: /developers/tools/intellij-plugin/import-a-project
 ---
 
 ## Create a Project

@@ -2,7 +2,7 @@
 title: ABI Type Check
 description: ABI type check feature warns you if any non-allowed data types are used as an input into a function, or a return value from a function. Certain types are blocked from being called from outside the contract to increase the security and consistency of the network.
 table_of_contents: true
-next_page: /developers/tools/intellij/unlock-account
+next_page: /developers/tools/intellij-plugin/unlock-account
 weight: 1100
 ---
 
