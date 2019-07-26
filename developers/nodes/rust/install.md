@@ -13,6 +13,8 @@ This section walks you through installing the kernel from a package. You can eit
 
 ### System Requirements
 
+JAVA [JDK 11^](https://download.java.net/java/GA/jdk11/13/GPL/openjdk-11.0.1_linux-x64_bin.tar.gz) and [Apache Ant](http://ftp.tsukuba.wide.ad.jp/software/apache//ant/binaries/apache-ant-1.10.5-bin.tar.gz) are required to Build and Install
+
 To run the kernel, your computer must meet the following requirements.
 
 - [Ubuntu 16.04](http://releases.ubuntu.com/16.04/) or [Ubuntu 18.04](http://releases.ubuntu.com/18.04/)
@@ -57,18 +59,111 @@ cd boost_1_65_1
 ./bootstrap.sh --libdir=/usr/lib/x86_64-linux-gnu/
 ./b2
 sudo ./b2 install
+
+# Install ZMQ
+sudo apt-get install libzmq3-dev -y
 ```
 
 #### Ubuntu 18.04
 
 ```bash
 sudo apt update
+
+# Install Boost
 sudo apt install g++ gcc libzmq3-dev libjsoncpp-dev python-dev libudev-dev libboost-all-dev llvm-4.0-dev
+
+# Install ZMQ
+sudo apt-get install libzmq3-dev -y
 ```
+
+#### Set Environment Variables
+
+```bash
+export JAVA_HOME=<jdk_directory_location>
+export ANT_HOME=<apache_ant_directory>
+export LIBRARY_PATH=$JAVA_HOME/lib/server
+export PATH=$PATH:$JAVA_HOME/bin:$ANT_HOME/bin
+export LD_LIBRARY_PATH=$LIBRARY_PATH:/usr/local/lib
+```
+
+Replace `<jdk_directory_location>` and  `<apache_ant_directory>` with paths to your JDK and Apache Ant directory.
+
+### Build the Kernel
+
+Once you have installed the prerequisites, follow these steps to build the kernel.
+
+1. Download the Aion Rust git repository:
+
+    ```bash
+    git clone https://github.com/aionnetwork/aionr.git
+    cd aionr
+    ```
+
+2. Build the kernel from source:
+
+    ```bash
+    ./scripts/package.sh aionr-package
+    ```
+
+    `aionr-package` is the name that will be given to the Rust package when it as finished building. You can set this to anything you want by changing the last argument in the script call:
+
+    ```bash
+    ./scripts/package.sh example-package-name
+    ```
+
+    The package takes about 10 minutes to finish building.
+
+3. When the build has finished, you can find the finished binary at `package/aionr-package`.
 
 ### Run the Installation
 
-In progress.
+1. Navigate to the binary location:
+
+    ```bash
+    cd package/aionr-package
+    ```
+2. Run `./mainnet.sh`. You can find more information on supplying commands in the [user manual](https://github.com/aionnetwork/aionr/wiki/User-Manual#launch-rust-kernel). Kernel will print **configuration path**, **genesis file path**, **db directory**, and **keystore location** at the top of its log.
+
+```bash
+$ ./mainnet.sh
+> Create config file /home/aion/.aion/config.toml, you can modify it if needed
+> 2019-01-23 09:12:40 Config path /home/aion/.aion/config.toml
+> 2019-01-23 09:12:40 Load built-in Mainnet Genesis Spec.
+> 2019-01-23 09:12:40 Keys path /home/aion/.aion/keys/mainnet
+> 2019-01-23 09:12:40 DB path /home/aion/.aion/chains/mainnet/db/a98e36807c1b0211
+> 2019-01-23 09:12:40
+>              _____    ____    _   _
+>      /\     |_   _|  / __ \  | \ | |
+>     /  \      | |   | |  | | |  \| |
+>    / /\ \     | |   | |  | | | . ` |
+>   / ____ \   _| |_  | |__| | | |\  |
+>  /_/    \_\ |_____|  \____/  |_| \_|
+>
+>
+> 2019-01-23 09:12:40 Starting Aion(R)/v0.1.1.f9610e1/x86_64-linux-gnu/rustc-1.28.0
+> 2019-01-23 09:12:40 Configured for Mainnet using POWEquihashEngine engine
+> 2019-01-23 09:12:41 Genesis hash: 30793b4ea012c6d3a58c85c5b049962669369807a98e36807c1b02116417f823
+> 2019-01-23 09:12:41 State DB configuration: archive
+> 2019-01-23 09:12:41 Wallet API is disabled.
+> 2019-01-23 09:12:41 local node loaded: 48859e8a-0717-4354-bd9e-447ed35f27ac@0.0.0.0:30303
+> 2019-01-23 09:12:46 Listening on: 0.0.0.0:30303
+> 2019-01-23 09:12:46 Local node fill back!
+> 2019-01-23 09:12:46 ======================================================== Sync Statics =========================================================
+```
+
+To launch aionR kernel with a specific network, run the launch script that matches the network you would like to run:
+
+```bash
+./mastery.sh
+```
+
+or
+
+```bash
+./custom.sh
+```
+
+Configuration of these networks can be found in their corresponding directories. See more details about different kernel networks [here](https://github.com/aionnetwork/aionr/wiki/Kernel-Deployment-Examples).
 
 ## Docker Image
 
@@ -80,13 +175,13 @@ Follow these steps to get started quickly, or skip this section if you want to l
 
 ```bash
 # Pull the kernel image.
-$ docker pull aionnetwork/aionr:latest
+$ docker pull aionnetwork/aionr
 
 # Create some local storage for the container:
 $ docker volume create aionr-mainnet
 
 # Run the container:
-$ docker run -it -p 8545:8545 -p 8546:8546 -p 30303:30303 --mount source=aionr-mainnet,destination=/aionr/mainnet aionnetwork/aionr:latest
+$ docker run -it -p 8545:8545 -p 8546:8546 -p 30303:30303 --mount source=aionr-mainnet,destination=/aionr/mainnet aionnetwork/aionr
 ```
 
 ### Rust Prerequisites

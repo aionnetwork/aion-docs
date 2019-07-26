@@ -154,7 +154,7 @@ The HDD space required only takes the Docker image into account. You will need a
     > aion-mainnet
     ```
 
-1. Run the image.
+3. Run the image.
 
     ```bash
     docker run -it -p 8545:8545 -p 8547:8547 -p 30303:30303 --mount source=aion-mainnet,destination=/aion/mainnet aionnetwork/aion:latest
