@@ -67,7 +67,7 @@ public class ContractInteractionCaller {
         byte[] data = encoder.encodeOneString("getString")
                              .encodeOneInteger(index)
                              .toBytes();
-        Result getString = Blockchain.call(calleeContractAddress, BigInteger.ZERO, data, Blockchain.getRemainingEnergy());
+        Result getString = Blockchain.call(returnerContractAddress, BigInteger.ZERO, data, Blockchain.getRemainingEnergy());
         ABIDecoder decoder = new ABIDecoder(getString.getReturnData());
         String myString = decoder.decodeOneString();
         return myString;
