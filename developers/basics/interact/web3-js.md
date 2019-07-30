@@ -14,7 +14,7 @@ draft: true
 - An Aion account that has sufficient balance (For contract transaction only).
 - A node to talk to Aion network.
 
-*Note: We will use Node.js for this example, see the tutorial [here](https://www.w3schools.com/nodejs/) first if you are not familiar with it. If you want to embed web3.js directely in your `html` page, you can follow the [import minified web3.js instruction](https://github.com/aionnetwork/aion_web3/wiki/GUIDE:-Install#minifed-javascript-file).
+*Note: We will use Node.js for this example, see the tutorial [here](https://www.w3schools.com/nodejs/) first if you are not familiar with it. If you want to embed web3.js directly in your `html` page, you can follow the [import minified web3.js instruction](https://github.com/aionnetwork/aion_web3/wiki/GUIDE:-Install#minifed-javascript-file).
 
 We will interact with the following contract as an example:
 
@@ -96,7 +96,7 @@ For this script to run, you first need to change `NODE_URL` to the node you want
 const web3 = new Web3(new Web3.providers.HttpProvider("NODE_URL"));
 ```
 
-To make a contract call, you will need the contract address and the data that execute the call. You can encode the method name along with any agrguments that is required by doing the following:
+To make a contract call, you will need the contract address and the data that execute the call. You can encode the method name along with any arguments that is required by doing the following:
 
 ```js
 let data = web3.avm.contract.method("getString").inputs([],[]).encode();
@@ -184,7 +184,7 @@ const privateKey = "PRIVATE_KEY";
 const account = web3.eth.accounts.privateKeyToAccount(privateKey);
 ```
 
-To make a contract transaction, you will need the contract address and the transaction data. You can encode the method name along with any agrguments that is required by doing the following:
+To make a contract transaction, you will need the contract address and the transaction data. You can encode the method name along with any arguments that is required by doing the following:
 
 ```js
     let data = web3.avm.contract.method('setString').inputs(['string'],["AVM is awesome"]).encode();

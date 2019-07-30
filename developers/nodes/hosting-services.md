@@ -4,7 +4,7 @@ description: Get up and running quickly by using an Aion node provided by a host
 table_of_contents: true
 ---
 
-Don't want to spin up or build your own node? Hosting services are available to do the legwork for you so you can get your dAppup and running quickly.
+Don't want to spin up or build your own node? Hosting services are available to do the legwork for you so you can get your dApp up and running quickly.
 
 ## Services
 

@@ -26,7 +26,7 @@ Return the balance of the account listed in the configuration window.
 
 Run this command by right clicking anywhere within a contract and selecting **Aion Virtual Machine** → **Remote** → **Get Balance**.
 
-This command requires an address to be in the **Address** field of the **Confirguration** → **Remote Kernel** window.
+This command requires an address to be in the **Address** field of the **Configuration** → **Remote Kernel** window.
 
 ## Specific Account
 

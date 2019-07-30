@@ -188,7 +188,7 @@ Then, we will make the call and hold the result in an `AvmRule.ResultWrapper`:
 AvmRule.ResultWrapper result = avmRule.call(deployer, contractAddress, BigInteger.ZERO, txData);
 ```
 
-Then we can make sure the transacton call is successful by checking the `status` in the receipt:
+Then we can make sure the transaction call is successful by checking the `status` in the receipt:
 
 ```java
 ResultCode status = result.getReceiptStatus();

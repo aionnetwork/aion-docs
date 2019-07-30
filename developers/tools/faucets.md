@@ -23,4 +23,4 @@ The only thing you need is an Aion account on the Testnet (Mastery) network.
 
 You can request 10 `AION` every 24 hours per address. If you need more than 10 `AION` in a 24 hour period, create another Aion address and request tokens to that account, then transfer them to your main wallet.
 
-The test faucet is maintained by [BlockX Labs](https://www.blockxlabs.com/) and was commisioned by a grant from the Aion Foundation.
+The test faucet is maintained by [BlockX Labs](https://www.blockxlabs.com/) and was commissioned by a grant from the Aion Foundation.

@@ -11,7 +11,7 @@ The purpose of a node is to keep a copy of the network's database. Each node is 
 
 There are three different components on the Aion network: nodes, kernels, and the Aion Virtual Machine (AVM).
 
-Nodes are essentially a container for both the kernel and the AVM. Requests coming into a node first go to the kernel, using the JSON-RPC layer. JSON-RPC stands for _JavaScript Object Notation Remote Procedure Call_ and is an agreed-upon standard that allows different programs to interact with eath other. The kernel then translates this request into _bytecode_, which is somehting that the AVM can understand. This translated-request is then passed off to the AVM that processes it and returns a response to the kernel. Finally, the kernel translates the response back into JSON-RPC and sends it out back to the user on the internet.
+Nodes are essentially a container for both the kernel and the AVM. Requests coming into a node first go to the kernel, using the JSON-RPC layer. JSON-RPC stands for _JavaScript Object Notation Remote Procedure Call_ and is an agreed-upon standard that allows different programs to interact with each other. The kernel then translates this request into _bytecode_, which is something that the AVM can understand. This translated-request is then passed off to the AVM that processes it and returns a response to the kernel. Finally, the kernel translates the response back into JSON-RPC and sends it out back to the user on the internet.
 
 ![Diagram showing the relationship between nodes, kernels, and the AVM.](/developers/nodes/images/node-kernel-avm.png)
 
@@ -21,7 +21,7 @@ The reason that Aion has two kernels is for redundancy. If a huge failure or pot
 
 ## Mining
 
-Both full nodes and mining nodes are similar, in that they both have a full copy of the network database. They differ in the fact that only mining nodes process any data or requests on the network. Miners are responsible for taking requests and transactions from other users on the network and adding them into the network database. This process is called _propossing a block_ as is very computationally difficult to do. This process is essential to the network, and the blockchain cannot work without miners providing this service. As such, miners are rewarded for their services in the form of crypto-currency.
+Both full nodes and mining nodes are similar, in that they both have a full copy of the network database. They differ in the fact that only mining nodes process any data or requests on the network. Miners are responsible for taking requests and transactions from other users on the network and adding them into the network database. This process is called _proposing a block_ as is very computationally difficult to do. This process is essential to the network, and the blockchain cannot work without miners providing this service. As such, miners are rewarded for their services in the form of crypto-currency.
 
 Due to the difficulty of mining, the physical computers that run the mining nodes often contain multiple high-end graphics cards, as well as other expensive pieces of hardware. This makes them fairly expensive to build and maintain.
 

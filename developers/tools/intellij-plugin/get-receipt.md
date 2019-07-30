@@ -20,4 +20,4 @@ Return the transaction receipt for a specific transaction by providing transacti
 
 Run this command by right clicking anywhere on the contract and selecting **Aion Virtual Machine** → **Remote** → **Get Receipt**. Then enter the hash of the transaction you wish to see.
 
-If you do not enter a valid hash, the plugin will default back to requesting the receipt for the most recent deploynent / call.
+If you do not enter a valid hash, the plugin will default back to requesting the receipt for the most recent deployment / call.
