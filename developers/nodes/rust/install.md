@@ -122,6 +122,7 @@ Once you have installed the prerequisites, follow these steps to build the kerne
     ```bash
     cd package/aionr-package
     ```
+
 2. Run `./mainnet.sh`. You can find more information on supplying commands in the [user manual](https://github.com/aionnetwork/aionr/wiki/User-Manual#launch-rust-kernel). Kernel will print **configuration path**, **genesis file path**, **db directory**, and **keystore location** at the top of its log.
 
 ```bash

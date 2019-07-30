@@ -83,6 +83,7 @@ The Aion wallet is a software program that allows users to manage their Aion coi
 Protect your crypto assets with the most popular hardware wallet in the market.
 
 #### [WandX](https://www.wandx.co/)
+
 The WandX desktop app is a decentralized token trading platform on Ethereum and NEO blockchains for ERC20 and NEP5 tokens respectively, all with a wallet built in.
 
 ### Online Wallets

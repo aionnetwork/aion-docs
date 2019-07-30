@@ -163,7 +163,7 @@ async function sendtx() {
     ).then((transactionResponse) => signedCall = transactionResponse);
 
     // Send the Transaction.
-    const transactionReceipt = await web3.eth.sendSignedTransaction( 
+    const transactionReceipt = await web3.eth.sendSignedTransaction(
         signedTransaction.rawTransaction
     ).on('receipt', receipt => {
         console.log("Receipt received!\ntransactionHash =", receipt.transactionHash)

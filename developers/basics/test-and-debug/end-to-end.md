@@ -18,7 +18,7 @@ We will use IntelliJ to create a new Java dApp project.
 2. Select **Maven** from the options on the left.
 3. Check **Create from archetype**.
 4. Select `org.aion4j:avm-archetype` from the list and click **Next**.
-5. Enter the **GroupID** and **ArtifactID** for your project. For more information on these values check out the [Apache Maven documentation](https://maven.apache.org/guides/mini/guide-naming-conventions.html). For this guide we're going to enter `aion`, `example`. 
+5. Enter the **GroupID** and **ArtifactID** for your project. For more information on these values check out the [Apache Maven documentation](https://maven.apache.org/guides/mini/guide-naming-conventions.html). For this guide we're going to enter `aion`, `example`.
 6. Click **Next** when you have finished.
 7. Click **Next**.
 8. Click **Finish**.
@@ -203,6 +203,7 @@ Assert.assertTrue(res.equals(deployer));
 ```
 
 The complete test is:
+
 ```java
  @Test
 public void testGetOwnerAddress() {

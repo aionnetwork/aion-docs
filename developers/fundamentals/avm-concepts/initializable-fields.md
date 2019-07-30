@@ -5,6 +5,7 @@ table_of_contents: true
 ---
 
 > **Important:**
+>
 > - An `@Initializable` field must be static.
 > - The type of an `@Initializable` field must be a supported [AVM ABI type](/developers/fundamentals/avm-concepts/abi-types/).
 > - Data supplied in the data field must be supplied in the exact same order as the  `@Initializable` field are defined. If not, an _ABIException_ will be thrown.
