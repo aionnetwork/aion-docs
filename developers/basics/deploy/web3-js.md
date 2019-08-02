@@ -25,7 +25,7 @@ Follow these steps if you want to deploy a contract from your local machine usin
         // Import the contract jar.
         let jarPath = path.join(__dirname, 'contract', 'APPLICATION_NAME.jar');
 
-        // Encode the contract byte code and deployement arguments.
+        // Encode the contract byte code and deployment arguments.
         let data = web3.avm.contract.deploy(jarPath).args(['string', 'address'], ['Hello AVM', '0xa048630fff033d214b36879e62231cc77d81f45d348f6590d268b9b8cabb88a9']).init();
 
         // Create the transaction object.
@@ -86,7 +86,7 @@ Follow these steps if you want to deploy a contract from your local machine usin
         gasPrice: 10000000000,
         gas: 5000000,
         type: '0x2' //AVM java contract deployment.
-        };
+    };
     ```
 
     > **WARNING**: The `type` has to be set to `0x2` for Java contract deployment on Aion Network.
@@ -99,7 +99,7 @@ Follow these steps if you want to deploy a contract from your local machine usin
 
     // Send the Transaction.
     const receipt = await web3.eth.sendSignedTransaction( signedTransaction.rawTransaction).on('receipt', receipt => {
-    console.log("Receipt received!\ntransactionHash =", receipt.transactionHash)
+        console.log("Receipt received!\ntransactionHash =", receipt.transactionHash)
     });
     console.log(receipt);
     console.log("Contract Address: " + receipt.contractAddress);
