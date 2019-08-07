@@ -11,20 +11,17 @@ Learn about our [AVM Hybrid Storage](https://blog.aion.network/avm-hybrid-storag
 You can use this contract as a template.
 
 ```java
-package aion;import avm.*;
-
+package aion;
+import avm.*;
 import org.aion.avm.tooling.abi.Callable;
 import org.aion.avm.userlib.AionBuffer;
 import org.aion.avm.userlib.AionMap;
-
 import java.math.BigInteger;
-
 
 public class HybridStorageExample
 {
-
     private static Address owner;
-    private static final AionMap<String, Integer> carStock = new AionMap<>(); //key: car make; value: stock
+    private static final AionMap<String, Integer> carStock = new AionMap<>();
 
     static {
         owner = Blockchain.getCaller();
@@ -59,15 +56,15 @@ public class HybridStorageExample
     @Callable
     public static void addPurchaseInfo(long orderID, String customerID, String stockNumber, int price){
         onlyOwner();
-       byte[] newOrderInfo = AionBuffer.allocate(Integer.BYTES + customerID.length() + Integer.BYTES + stockNumber.length() + Integer.BYTES)
-                                            .putInt(customerID.length())
-                                            .put(customerID.getBytes())
-                                            .putInt(stockNumber.length())
-                                            .put(stockNumber.getBytes())
-                                            .putInt(price)
-                                            .getArray();
+        byte[] newOrderInfo = AionBuffer.allocate(Integer.BYTES + customerID.length() + Integer.BYTES + stockNumber.length() + Integer.BYTES)
+            .putInt(customerID.length())
+            .put(customerID.getBytes())
+            .putInt(stockNumber.length())
+            .put(stockNumber.getBytes())
+            .putInt(price)
+            .getArray();
 
-       Blockchain.putStorage(AionBuffer.allocate(32).put32ByteInt(BigInteger.valueOf(orderID)).getArray(),newOrderInfo);
+        Blockchain.putStorage(AionBuffer.allocate(32).put32ByteInt(BigInteger.valueOf(orderID)).getArray(),newOrderInfo);
     }
 
     @Callable
@@ -86,8 +83,8 @@ public class HybridStorageExample
         int price = orderInfoBuf.getInt();
 
         return "Order ID: " + orderID + "\nCustomer ID: " + new String(customerID)
-                + "\nStock Number: " + new String(stockNumber)
-                + "\nPrice: " + price;
+            + "\nStock Number: " + new String(stockNumber)
+            + "\nPrice: " + price;
 
     }
 
