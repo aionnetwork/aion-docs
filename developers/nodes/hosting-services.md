@@ -4,7 +4,7 @@ description: Get up and running quickly by using an Aion node provided by a host
 table_of_contents: true
 ---
 
-Don't want to spin up or build your own node? Hosting services are available to do the legwork for you so you can get your dAppup and running quickly.
+Don't want to spin up or build your own node? Hosting services are available to do the legwork for you so you can get your dApp up and running quickly.
 
 ## Services
 
@@ -12,13 +12,13 @@ We've partnered with Blockdaemon and Nodesmith to help you get on the Aion netwo
 
 ### Nodesmith
 
-![Nodesmith Logo](/developers/nodes/images/nodesmith-logo.png)
+[![Nodesmith Logo](/developers/nodes/images/nodesmith-logo.png)](https://nodesmith.io/)
 
 Nodesmith hosts several shared nodes that allow you to get connected to Aion, Ethereum, and IPFS in minutes. The host and manage scalable blockchain node infrastructure, so you can focus on building the features of your decentralized applications. All this, for free.
 
 ### Blockdaemon
 
-![Blockdaemon Logo](/developers/nodes/images/blockdaemon-logo.png)
+[![Blockdaemon Logo](/developers/nodes/images/blockdaemon-logo.png)](https://blockdaemon.com/)
 
 Spin up your own private node incredibly quickly. Instead of having to deal with compiling your own package and hosting your own hardware, Blockdaemon allows you to spin up a test net in minutes and validate your smart contract.
 

@@ -242,7 +242,7 @@ Then run:
 mvn aion4j:deploy
 ```
 
-You've just compiled your contract and deployed it to the local kernel. It's that easy. In your output, there is an AVM storage path where you data are stored for you to interact later, your deployer address and deployeed contract address.
+You've just compiled your contract and deployed it to the local kernel. It's that easy. In your output, there is an AVM storage path where you data are stored for you to interact later, your deployer address and deployed contract address.
 
 ```sh
 [INFO] --------------------------< org.aion:AVM101 >---------------------------
@@ -341,7 +341,7 @@ Now that you've got a node URL, the last thing you need is an account with a suf
 
 Whenever you deploy something to a live blockchain network, that transaction needs to be paid for with funds from an account. Luckily, when you're deploying to a test network then you can use test-tokens that don't actually cost anything.
 
-First up, let's create an account. Open a teminal in your project top level, where the `pom.xml` is, and run:
+First up, let's create an account. Open a terminal in your project top level, where the `pom.xml` is, and run:
 
 ```sh
 mvn aion4j:create-account
@@ -379,7 +379,7 @@ The balance for your new account should be 0 Aion:
 2. In your browser, go to [faucets.blockxlabs.com](https://faucets.blockxlabs.com) and sign up.
 3. Once you're logged in, click **Aion** and paste in the address you just copied.
 4. Click **Press to Pour** to get your tokens.
-5. After a few seconds, run `get-balance` agian. You should be able to see your balance is now 10 Aion.
+5. After a few seconds, run `get-balance` again. You should be able to see your balance is now 10 Aion.
 
 ### Actually Deploying
 
@@ -441,7 +441,7 @@ Once it's mined,  you will see your transaction receipt, for example:
 
 ```
 
-And ou can find the contract address:
+And you can find the contract address:
 
 ```text
 "contractAddress": "0xa06a4c35cf6c8058a7bb483e34ab6a0f0d909252e4e12eb79dc0b997e2a05f62",

@@ -29,7 +29,7 @@ Here's ten sample addresses that you can use to create accounts on the embedded 
 0xa022a61e4c9cc38868ba6697b6deecc086ba7b218996f416974f99893bb2c8d7
 ```
 
-Addresses used on the embedded AVM have no real world value, and cannot be _transfered_ over to any other network.
+Addresses used on the embedded AVM have no real world value, and cannot be _transferred_ over to any other network.
 
 ### Remote
 
@@ -39,7 +39,7 @@ Here's a sample output:
 
 ```sh
 [INFO] ------------------------------------------------------------------------
-[INFO] 
+[INFO]
 [INFO] --- aion4j-maven-plugin:0.6.7:create-account (default-cli) @ project101 ---
 [INFO] Account creation successful
 [INFO] Address : 0xa0837756504ff78fd0dabfec0218a1c417c492164c83561e88eeaca152119e9a

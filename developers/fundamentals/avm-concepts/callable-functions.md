@@ -8,7 +8,7 @@ next_page: /developers/fundamentals/avm-concepts/fallback-functions/
 In order for a function or method to be called from **outside** the contract (by a user on the blockchain, or from another contract) it needs to be annotated as `@Callable`.
 
 > **Important:**
-> 
+>
 > - A `@Callable` function must be **public** and **static**.
 > - `Return type` and `method arguments type` must be a supported [AVM ABI type](/developers/fundamentals/avm-concepts/abi-types/).
 
