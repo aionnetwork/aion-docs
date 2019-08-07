@@ -102,8 +102,8 @@ Finally, you can run all the tests in the class at once by selecting the icon ne
 Now we've made some basic changes and ran some tests, we're going try deploying the contract to the local kernel.
 
 1. Right click on the root folder of your project in the navigation panel.
-2. Click **OK**.
-3. Click **Aion Virtual Machine** → **Embedded** → **Deploy**.
+2. Click **Aion Virtual Machine** → **Embedded** → **Deploy**.
+3. Click **OK**.
 
 ![Local Deployment Successful](/developers/tools/intellij-plugin/images/deploy-contract-local.gif)
 
