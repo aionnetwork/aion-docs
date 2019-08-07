@@ -42,11 +42,11 @@ Spin up a fully functional Aion Node from within Azure's software as a service (
 
 ### [Blockdaemon](http://bit.ly/blockdaemon-aion-node)
 
-Launch your own Aion node on a public blockchain network, or join a private network in three clicks. Blockdaemon is easy to set up and comes with a free 2-month trial on all shared nodes. You can find a guide for Blockdaemon over at [Aion University](https://learn.aion.network/docs/blockdaemon)
+Launch your own Aion node on a public blockchain network, or join a private network in three clicks. Blockdaemon is easy to set up and comes with a free 2-month trial on all shared nodes.
 
 ### [Nodesmith](https://nodesmith.io/)
 
-Quickly spin up and connect to an Aion node with web3 built in. All nodes are free and come with unlimited usage. You can find a guide for Nodesmith over at [Aion University](https://learn.aion.network/docs/nodesmith).
+Quickly spin up and connect to an Aion node with web3 built in. All nodes are free and come with unlimited usage.
 
 ## Explorers and Blockchain Statistics
 
