@@ -20,7 +20,7 @@ draft: true
 
     **Transactions** are generally found with their hex hash (eg. `0xe93e9873cd3639f90c51ec59519e14a089057c10b757beed3dd5f3a4210c3c7d`)
 
-3. Here, you will see the the [Details](/developers/tools/dashboard/_index.md#Details-Pages) page for the desired item.
+3. Here, you will see the [Details](/developers/tools/dashboard/_index.md#Details-Pages) page for the desired item.
 
     ![Contract Details Page](/developers/tools/dashboard/images/contract-details-page.png)
 

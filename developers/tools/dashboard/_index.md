@@ -39,10 +39,10 @@ The **Recent Blocks** section displays a list containing the four of the most re
 
 Each list item contains the:
 
-- **Block number**
-- **Proposer's address**: direct to the respective [**Accounts Details Page**](#Accounts) upon click
-- **Number of transactions**
-- **Time taken to propose**
+- Block number
+- Proposer's address: direct to the respective [**Accounts Details Page**](#Accounts) upon click
+- Number of transactions
+- Time taken to propose
 
 You can click on the blue arrow to go to the respective [**Block Details Page**](#Blocks) for the block. Also, click on **View All** to see a longer list.
 
@@ -54,10 +54,10 @@ The **Recent Transactions** section displays a list containing the ten most rece
 
 Each list item includes:
 
-- **Transaction age**: how long ago the transaction was proposed
-- **Transaction Value**: amount of Aion sent within the transaction - direct to the respective [**Transaction Details Page**](#Transactions) upon click
-- **From Address**: direct to the respective [**Accounts Details Page**](#Accounts) upon click
-- **To Address**: direct to the respective [**Accounts Details Page**](#Accounts) upon click
+- Transaction age: how long ago the transaction was proposed
+- Transaction Value: the amount of Aion sent within the transaction - direct to the respective [**Transaction Details Page**](#Transactions) upon click
+- From Address: direct to the respective [**Accounts Details Page**](#Accounts) upon click
+- To Address: direct to the respective [**Accounts Details Page**](#Accounts) upon click
 
 You can click on **View All** to see a longer list.
 
@@ -67,7 +67,7 @@ The **Navigation Bar** sits at the top of the window at all times. It contains s
 
 ### Explorer
 <!-- explain better... probably with better terminology-->
-The **Explorer** function is a dropdown menu that allows you to browse lists of each item type on the network. After selecting an the **Account** type, for example, you are provided with a list of accounts in which you can sort in various ways.
+The **Explorer** function is a dropdown menu that allows you to browse lists of each item type on the network. After selecting the **Account** type, for example, you are provided with a list of accounts in which you can sort in various ways.
 
 ![Explorer](/developers/tools/dashboard/images/explorer.gif)
 
@@ -79,7 +79,7 @@ The **Analytics** function is a dropdown menu that features various charts relev
 
 ### Switch Network
 
-The **Mainnet** isn't the only network featured on the dashboard. By clicking on the **Mainnet** dropdown menu you are able to switch between the dashboards for other networks, such as the **Mastery** network, Aion's testnet.
+The **Mainnet** isn't the only network featured on the dashboard. By clicking on the **Mainnet** dropdown menu you can switch between the dashboards for other networks, such as the **Mastery** network, Aion's testnet.
 
 ![Switch Network](/developers/tools/dashboard/images/switch-network.gif)
 
@@ -87,7 +87,7 @@ For those with sensitive eyes, you can find the **dark mode** toggle here as wel
 
 ### Search bar
 
-The **Search Bar** allows you to easily find any item on the network wether it be an **Account**, **Transaction**, **Block**, etc.
+The **Search Bar** allows you to easily find any item on the network whether it be an **Account**, **Transaction**, **Block**, etc.
 
 ![Input Contract Address in Search](/developers/tools/dashboard/images/input-contract-address.gif)
 
@@ -95,11 +95,11 @@ A detailed guide on the search function can be found [here](/developers/tools/da
 
 ## Details Pages
 
-Details pages contain information on the items on the network. You can find these pages through the [**Search Function**](/developers/tools/dashboard/usingSearchFunction.md) or by clicking on any of the address hex addresses on the site.
-
-<!-- This section is currently very barren... might remove... might extend and move to another page... would also be much better with some sort of glossary as explaining each of these terms here would be very messy-->
+Details pages contain information on the items on the network. You can find these pages through the [**Search Function**](/developers/tools/dashboard/usingSearchFunction.md) or by clicking on any of the hex addresses on the site.
 
 ### Accounts
+
+**Accounts** on an Aion network are the things that are able to sign and send any transaction to the network using their balance of Aion to pay the NRG cost. This page will be helpful to determine an account's balance or see their past transactions.
 
 The upper part of the **Account Details** page contains the following:
 
@@ -120,12 +120,10 @@ The lower part of the **Account Details** page contains lists of the account's t
 
 ### Blocks
 
+**Blocks** are a ledger of transactions that take place on an Aion network. This page will be helpful when trying to determine a block's difficulty, included transactions, block reward, block size and more.
+
 The **Block Details** page contains the following:
 
-<!--seems like a bad idea to have this long list here. thought id add it for the benefit of the docs-site search function if it works like that 😐 will probably end up chopping it down a bit-->
-- Time Proposed
-- Block Number
-- Transaction Count
 - Block Hash
 - Parent Hash
 - Miner
@@ -135,17 +133,23 @@ The **Block Details** page contains the following:
 - Difficulty
 - Total Difficulty
 - Nonce
-- Block Reward
-- NRG Reward
-- NRG Consumed
-- NRG Limit
-- Block Size
-- Bloom Filter
-- Equihash Solution
+- Included Transactions
+<!-- - Time Proposed -->
+<!-- - Block Number -->
+<!-- - Transaction Count -->
+<!-- - Block Reward -->
+<!-- - NRG Reward -->
+<!-- - NRG Consumed -->
+<!-- - NRG Limit -->
+<!-- - Block Size -->
+<!-- - Bloom Filter -->
+<!-- - Equihash Solution -->
 
 ![Block Details](/developers/tools/dashboard/images/block-details.png)
 
 ### Contracts
+
+**Contracts** are protocols that any account can deploy onto an Aion network. This page will be helpful when deploying a contract and what to  monitor its properties.
 
 The upper part of the **Contract Details** page contains the following:
 
@@ -158,11 +162,13 @@ The upper part of the **Contract Details** page contains the following:
 
 ![Contract Details Upper](/developers/tools/dashboard/images/contract-details-upper.png)
 
-The lower part of the **Contract Details** page contains lists of the contract's transactions, and events.
+The lower part of the **Contract Details** page contains lists of the contract's transactions and events.
 
 ![Contract Details Lower](/developers/tools/dashboard/images/contract-details-lower.png)
 
 ### Tokens
+
+**Tokens** are a special kind of contract that act as currency that can be transferred between accounts. This page will be helpful for determining a token's properties, its holders and its transfers.
 
 The upper part of the **Token Details** page contains the following:
 
@@ -176,16 +182,16 @@ The upper part of the **Token Details** page contains the following:
 
 ![Token Details Upper](/developers/tools/dashboard/images/token-details-upper.png)
 
-The lower part of the **Token Details** page contains lists of the Token's transfers, and holders.
-
-![Token Details Lower](/developers/tools/dashboard/images/token-details-lower.png)
+The lower part of the **Token Details** page contains lists of the Token's transfers and holders.
+<!-- 
+![Token Details Lower](/developers/tools/dashboard/images/token-details-lower.png) -->
 
 ### Transactions
 
+**Transactions** represent every change on an Aion network. This includes transfer of tokens, deployment of contracts, or contract interaction. This page will be helpful when making a transaction and monitoring its status.
+
 The upper part of the **Transaction Details** page contains the following:
 
-<!--seems like a bad idea to have this long list here. thought id add it for the benefit of the docs-site search function if it works like that 😐 will probably end up chopping it down a bit-->
-- Time Sealed
 - Coin
 - Transaction Hash
 - Block Number
@@ -193,13 +199,12 @@ The upper part of the **Transaction Details** page contains the following:
 - NRG Price
 - NRG Consumed
 - Status
-- Index
 - Nonce
 - From Address
 - To Address
-- Transaction Logs
 - Input Data
-
-The lower part of the **Transaction Details** page contains lists of the Transaction's transfers.
+<!-- - Index -->
+<!-- - Transaction Logs -->
+<!-- - Time Sealed -->
 
 ![Transaction Details Upper](/developers/tools/dashboard/images/transaction-details.png)
