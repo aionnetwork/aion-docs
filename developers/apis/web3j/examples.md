@@ -2,6 +2,7 @@
 title: Examples
 section: Web3J
 description: Web3J allows you to deploy, call, and send transactions to a contract straight from the framework itself. This article walks you through each of those workflows.
+weight: 500
 ---
 
 These examples assume you have already created a wrapper for your application. See the [end-to-end walkthrough for more details](/developers/apis/web3j/walkthrough).

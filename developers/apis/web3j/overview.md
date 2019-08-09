@@ -1,6 +1,7 @@
 ---
 title: Overview
 description: Web3J allows you to connect JVM applications to Aion blockchains with Web3J, a lightweight, reactive, type-safe library for Java, Android, Kotlin and Scala. It does this by wrapping your blockchain application in a standard application wrapper.
+weight: 1
 ---
 
 Web3J is a highly modular, reactive, type-safe Java and Android library for working with Smart Contracts and integrating with clients (nodes) on the Aion network. This allows you to work with the Aion blockchain, without the additional overhead of having to write your own integration code for the platform. Java and the Blockchain talk provides an overview of blockchain, Aion, and Web3J.

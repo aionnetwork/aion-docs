@@ -1,7 +1,8 @@
 ---
-title: Web3J Example
+title: Setup Project
 section: Web3J
 description: Web3J allows you to integrate your Java blockchain application into an existing standard Java application. It does this by wrapping your blockchain application in a standard application wrapper. This article walks you through this process. We recommend that you follow this article through by using the supplied Counter contract. Once you are comfortable with the process, you can attempt to wrap your custom Java blockchain application.
+weight: 300
 ---
 
 ## Prerequisites
