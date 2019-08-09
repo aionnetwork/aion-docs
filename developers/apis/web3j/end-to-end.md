@@ -52,6 +52,14 @@ public class GetterSetter
 8. You should now have a `gettersetter-1.0-SNAPSHOT.abi` and `gettersetter-1.0-SNAPSHOT.jar` files within your projects `target` folder. Copy them to somewhere handy like your desktop. These are the files we're going to wrap within the Web3J packages.
 9. You can close this project now: **File** → **Close Project**.
 
+A quick note here. Although the steps above say to _Deploy_ your contract, we're not deploying it anywhere special. The Aion4j plugin we're using compiles and deploys your Java contract in the **Deploy** command. Since we used the **Embedded** > **Deploy** feature, the Aion4j compiles and deploys your contract to the local kernel. It never leaves your machine. If you'd prefer to not use Aion4J to compile your project, you can use Maven:
+
+```bash
+mvn clean install
+```
+
+This requires that you have Maven installed and configured on your machine.
+
 ## Wrap the Contract
 
 For a standard Java application to interact with your Java contract, you need to _wrap_ the contract within the Web3J wrapper. While the process is the same for any Java contract, the output is different. A wrapper for one Java contract will not work for any other Java contract.
