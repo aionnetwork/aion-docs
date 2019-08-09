@@ -18,7 +18,7 @@ Once you have your node and account setup, you can use them in your Java applica
 
  private static final Aion aion = Aion.build(new HttpService(NODE_ENDPOINT));
  private static final TransactionManager manager = new AionTransactionManager(
- aion, new Ed25519KeyPair(PRIVATE_KEY), VirtualMachine.AVM
+    aion, new Ed25519KeyPair(PRIVATE_KEY), VirtualMachine.AVM
  );
 ```
 
@@ -57,7 +57,7 @@ To change a state in the blockchain, you will need an account with sufficient ba
 Use contract wrapper to generator an instance for a deployed contract and send a transaction to the desired method and make sure the transaction is senr successfully:
 
 ```java
-final Counter counterContract = Counter.load("Your_Contract_Address, aion, manager, AionGasProvider.INSTANCE)
+final Counter counterContract = Counter.load("Your_Contract_Address", aion, manager, AionGasProvider.INSTANCE)
  TransactionReceipt tx = counterContract.send_incrementCounter(1).send();
  System.out.println("Success? " + tx.isStatusOK());
  if(tx.isStatusOK()) {
