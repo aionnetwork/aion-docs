@@ -69,7 +69,7 @@ You can use the response from the blockchain as a standard variable:
 System.out.println("Current count is: " + result);
 ```
 
-## Transaction Call
+## Contract Transaction
 
 To change a state in the blockchain, you will need an account with sufficient balance to send a transaction to the contract:
 
