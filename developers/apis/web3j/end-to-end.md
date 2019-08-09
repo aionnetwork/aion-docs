@@ -62,7 +62,7 @@ This requires that you have Maven installed and configured on your machine.
 
 ## Wrap the Contract
 
-For a standard Java application to interact with your Java contract, you need to _wrap_ the contract within the Web3J wrapper. While the process is the same for any Java contract, the output is different. A wrapper for one Java contract will not work for any other Java contract.
+For a standard Java application to interact with your Java contract, you need to _wrap_ the contract within the Web3J wrapper. While the process is the same for any Java contract, the output is different. A wrapper for one Java contract will not work for any other Java contract. This wrapper is created using a script called `web3j-aion`.
 
 1. Download the Aion Web3J package from GitHub:
 
@@ -137,7 +137,7 @@ For a standard Java application to interact with your Java contract, you need to
     > File written to /Users/aion/Desktop
     ```
 
-The `-o ~/Desktop` directory in this command is the location where you wrapper will be saved. To keep thing simple we've told the script to save it to the desktop. You can now find your `GetterSetter.java` wrapper in the `~/Desktop/gettersetter/` folder.
+The `-o ~/Desktop` directory in this command is the location where you wrapper will be saved. To keep thing simple we've told the `web3j-aion` script to save it to the desktop. You can now find your `GetterSetter.java` wrapper in the `~/Desktop/gettersetter/` folder.
 
 For future reference, the following arguments are available for the `web3j-aion` script:
 
