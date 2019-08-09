@@ -24,7 +24,7 @@ The contract we're going to create is a simple _getter-setter_ application. The 
 1. Open IntelliJ and create a new Maven project using the latest AVM archetype.
 2. Set the `GroupId` field to `aionexample` and the `ArtifactId` field to `gettersetter`.
 3. Click **Next** through the rest project creation window and click **Finish**.
-4. Click **Run Initialize** in the pop-up at the bottom right, or right-click within your project and select **Aion Virtual Machine** > **Run Intialize**.
+4. Click **Run Initialize** in the pop-up at the bottom right, or right-click within your project and select **Aion Virtual Machine** → **Run Intialize**.
 5. To keep things simple we won't be using tests in this project. So within the `src` folder of your new project, delete the `test` folder.
 6. Within the `src/main/java/aionexample` folder, right-click on `HelloAvm`, select **Refactor** → **Rename**, and rename `HelloAvm` to `GetterSetter`.
 7. Depending on your IntelliJ setup, IntelliJ might rename all the instances of `HelloAvm` within the class to `GetterSetter`. If it doesn't however, do this manually. Make sure to set the `contract.main.class` field within your `pom.xml` file to `<contract.main.class>aionexample.GetterSetter</contract.main.class>`
@@ -52,7 +52,7 @@ public class GetterSetter
 8. You should now have a `gettersetter-1.0-SNAPSHOT.abi` and `gettersetter-1.0-SNAPSHOT.jar` files within your projects `target` folder. Copy them to somewhere handy like your desktop. These are the files we're going to wrap within the Web3J packages.
 9. You can close this project now: **File** → **Close Project**.
 
-A quick note here. Although the steps above say to _Deploy_ your contract, we're not deploying it anywhere special. The Aion4j plugin we're using compiles and deploys your Java contract in the **Deploy** command. Since we used the **Embedded** > **Deploy** feature, the Aion4j compiles and deploys your contract to the local kernel. It never leaves your machine. If you'd prefer to not use Aion4J to compile your project, you can use Maven:
+A quick note here. Although the steps above say to _Deploy_ your contract, we're not deploying it anywhere special. The Aion4j plugin we're using compiles and deploys your Java contract in the **Deploy** command. Since we used the **Embedded** → **Deploy** feature, the Aion4j compiles and deploys your contract to the local kernel. It never leaves your machine. If you'd prefer to not use Aion4J to compile your project, you can use Maven:
 
 ```bash
 mvn clean install
@@ -192,7 +192,7 @@ In this step, we're going to create an incredibly simple Java application that p
 
 Lastly, we need to tell IntelliJ that we want to use the `lib` folder as this project library location.
 
-1. Go to **File** > **Project Structure**.
+1. Go to **File** → **Project Structure**.
 2. Select **Libraries** from the left panel.
 3. Click the `+` icon and select **Java**.
 4. In the window that opens, go into the `lib` folder within your `GetTheString` project folder.
@@ -267,7 +267,7 @@ We can now get to deploying your contract. Since we've already set up the scaffo
     System.out.println("Contract Address: " + counterContract.getContractAddress());
     ```
 
-3. You should now be able to run your application. Click **Run** > **Run...** from the title bar. 
+3. You should now be able to run your application. Click **Run** → **Run...** from the title bar. 
 
 You may get an error about `JDK7 types`. You can safely ignore this. It can take up to 30 seconds to deploy your contract. Once it's deployed you should be able to see the transaction hash and contract address:
 
