@@ -173,46 +173,162 @@ In this step we're going to create an incredibly simple Java application that pr
 2. Within your projects root folder create a new directory called `lib`.
 3. Within this new `lib` folder, paste the `web3j-aion-avm-0.1.0-SNAPSHOT-all.jar` file we created and saved into `~/Desktop/gettersetter` in the previous step.
 4. Copy the `GetterSetter.java` file from within `~/Desktop/gettersetter` into the `src` folder.
-5. Within the `src` folder, create a new Java class called `GetTheString`.
+5. Within the `src` folder, create a new Java class called `GetTheString`. Your project folder should look something like this now:
 
-Your project folder should look something like this now:
+    ```txt
+    GetTheString/
+    ├── GetTheString.iml
+    ├── lib
+    │   └── web3j-aion-avm-0.1.0-SNAPSHOT-all.jar
+    └── src
+        ├── GetTheString.java
+        └── GetterSetter.java
+    ```
 
-```txt
-GetTheString/
-├── GetTheString.iml
-├── lib
-│   └── web3j-aion-avm-0.1.0-SNAPSHOT-all.jar
-└── src
-    ├── GetTheString.java
-    └── GetterSetter.java
-```
+Lastly, we need to tell IntelliJ that we want to use the `lib` folder as this project library location.
+
+1. Go to **File** > **Project Structure**.
+2. Select **Libraries** from the left panel.
+3. Click the `+` icon and select **Java**.
+4. In the window that opens, go into the `lib` folder within your `GetTheString` project folder.
+5. Select the `web3j-aion-avm-0.1.0-SNAPSHOT-all.jar` file and click **Open**.
+6. Click **OK** on the confirmation window. Then click **Apply** and **OK** within the **Project Structure** window.
 
 Now we have the framework to start interacting with the blockchain. Next up, we're going to deploy our contract and interact with it using the Aion test network.
 
-### Deploy and Interact
+### Write, Deploy, and Interact
 
 First up we need to tell our Java application to deploy our contract to the Aion test network. To do this you'll need an Aion node on the _Mastery_ testnet, and an account with sufficent balance to deploy and call a contract. You can use [Nodesmith to connect to a node](/developers/nodes/hosting-services), and the [Aion Testnet Faucet](/developers/tools/faucets) to get some free test tokens.
+
+#### Write
 
 Now that you've got those two details, we're ready to start writing our Java application.
 
 1. Open the `GetTheString` file.
-2. Within the `GetTheString` class definiton add these two lines, filling in your information:
+2. At the very top of the file add the following lines to import the packages we need:
+
+    ```java
+    import org.web3j.aion.VirtualMachine;
+    import org.web3j.aion.crypto.Ed25519KeyPair;
+    import org.web3j.aion.protocol.Aion;
+    import org.web3j.aion.tx.AionTransactionManager;
+    import org.web3j.aion.tx.gas.AionGasProvider;
+    import org.web3j.protocol.core.methods.response.TransactionReceipt;
+    import org.web3j.protocol.http.HttpService;
+    import org.web3j.tx.TransactionManager;
+    ```
+
+3. Within the `public class GetTheString` class definiton add these two lines, filling in your information:
 
     ```java
     private static String NODE_ENDPOINT = "YOUR_NODE_URL";
     private static String PRIVATE_KEY = "YOUR_PRIVATE_KEY";
     ```
 
-3. Create an `aion` object by adding this line:
+4. Create an `aion` object by adding this line:
 
     ```java
     private static final Aion aion = Aion.build(new HttpService(NODE_ENDPOINT));
     ```
 
-4. Create `TranasactionManager` object called `manager`:
+5. Create `TranasactionManager` object called `manager`:
 
     ```java
     private static final TransactionManager manager = new AionTransactionManager(aion, new Ed25519KeyPair(PRIVATE_KEY), VirtualMachine.AVM);
     ```
 
-    
+6. Create a `main()` class that will house all our further code:
+
+    ```java
+    public static void main(String [] args) throws Exception {
+
+    }
+    ```
+
+#### Deploy
+
+We can now get to deploying your contract. Since we've already set up the scafolding in the rest of this class, all we need to do is call one function.
+
+1. Call the `.deploy` function within your `GetterSetter` object:
+
+    ```java
+    final GetterSetter getterSetterContract = GetterSetter.deploy(aion, manager, AionGasProvider.INSTANCE).send();
+    ```
+
+2. You can also request the transaction receipt and contract address once your Java contract has been deployed:
+
+    ```java
+    System.out.println("Tx Hash:"+ counterContract.getTransactionReceipt());
+    System.out.println("Contract Address: " + counterContract.getContractAddress());
+    ```
+
+3. You should now be able to run your application. Click **Run** > **Run...** from the title bar. 
+
+You may get an error about `JDK7 types`. You can safely ignore this. It can take up to 30 seconds to deploy your contract. Once it's deployed you should be able to see the transaction hash and contract address:
+
+```bash
+WARNING: Unable to load JDK7 types (annotations, java.nio.file.Path): no Java7 support added
+Tx Hash:Optional[TransactionReceipt{transactionHash='0x82ed1b830d5420f4d0ed591f1' ...
+Contract Address: 0xa0a6468149676f ...
+```
+
+#### Interact
+
+So now that we're able to deploy our contract, we should be able to interact with it. There are two functions within our contract `getString` and `setString`. Let's start out by calling the `getString` method and checking the response.
+
+1. Create a variable called `result` of type `String`, and have it set to the response of the `getString` method:
+
+    ```java
+    String firstResult = getterSetterContract.call_getString().send();
+    ```
+
+2. Print out the `result` variable:
+
+    ```java
+    System.out.println("Current string is: " + firstResult);
+    ```
+
+3. Run your project again to see the results.
+
+    ```bash
+    > WARNING: Unable to load JDK7 types (annotations, java.nio.file.Path): no Java7 support added
+    >
+    > ...
+    >
+    > Current string is: Hello AVM
+    ```
+
+Next, lets try setting the string. Since we're going to change the state of the blockchain this action will use funds from your account, so [make sure there is enough](https://beta-docs.aion.network/developers/tools/intellij-plugin/get-balance/) `AION` in there to facilitate the request.
+
+1. Create a variable called `transactionReceipt` of type `TransactionReceipt`, and have it set to the response of the `setString` method. Add the string you want to set the `myStr` variable to as an argument:
+
+    ```java
+    TransactionReceipt transactionReceipt = getterSetterContract.send_setString("Hello World!").send();
+    ```
+
+2. Print out whether or not the transaction was successful and the string was set:
+
+    ```java
+    System.out.println("String Set: " + transactionReceipt.isStatusOK());
+    ```
+
+3. Call the `getString` method again using the same code from earlier:
+
+    ```java
+    String secondResult = getterSetterContract.call_getString().send();
+    System.out.println("Current string is: " + secondResult);
+    ```
+
+4. Run your project again to see the results.
+
+    ```bash
+    > WARNING: Unable to load JDK7 types (annotations, java.nio.file.Path): no Java7 support added
+    >
+    > ...
+    >
+    > Current string is: Hello AVM
+    > String Set: true
+    > Current string is: Hello World!
+    ```
+
+And there you have it! You've successfully written, deployed, and interacted with a Java contract on the Aion test network using Web3J! Checkout the official Web3J documentation for more information on what you can do with the framework.
