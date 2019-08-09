@@ -24,7 +24,7 @@ The contract we're going to create is a simple _getter-setter_ application. The 
 1. Open IntelliJ and create a new Maven project using the latest AVM archetype.
 2. Set the `GroupId` field to `aionexample` and the `ArtifactId` field to `gettersetter`.
 3. Click **Next** through the rest project creation window and click **Finish**.
-4. Click **Run Initialize** in the pop-up at the bottom right, or right-click within your project and select **Aion Virtual Machine** → **Run Intialize**.
+4. Click **Run Initialize** in the pop-up at the bottom right, or right-click within your project and select **Aion Virtual Machine** > **Run Intialize**.
 5. To keep things simple we won't be using tests in this project. So within the `src` folder of your new project, delete the `test` folder.
 6. Within the `src/main/java/aionexample` folder, right-click on `HelloAvm`, select **Refactor** → **Rename**, and rename `HelloAvm` to `GetterSetter`.
 7. Depending on your IntelliJ setup, IntelliJ might rename all the instances of `HelloAvm` within the class to `GetterSetter`. If it doesn't however, do this manually. Make sure to set the `contract.main.class` field within your `pom.xml` file to `<contract.main.class>aionexample.GetterSetter</contract.main.class>`
@@ -52,17 +52,9 @@ public class GetterSetter
 8. You should now have a `gettersetter-1.0-SNAPSHOT.abi` and `gettersetter-1.0-SNAPSHOT.jar` files within your projects `target` folder. Copy them to somewhere handy like your desktop. These are the files we're going to wrap within the Web3J packages.
 9. You can close this project now: **File** → **Close Project**.
 
-A quick note here. Although the steps above say to _Deploy_ your contract, we're not deploying it anywhere special. The Aion4j plugin we're using compiles and deploys your Java contract in the **Deploy** command. Since we used the **Embedded** → **Deploy** feature, the Aion4j compiles and deploys your contract to the local kernel. It never leaves your machine. If you'd prefer to not use Aion4J to compile your project, you can use Maven:
-
-```bash
-mvn clean install
-```
-
-This requires that you have Maven installed and configured on your machine.
-
 ## Wrap the Contract
 
-For a standard Java application to interact with your Java contract, you need to _wrap_ the contract within the Web3J wrapper. While the process is the same for any Java contract, the output is different. A wrapper for one Java contract will not work for any other Java contract. This wrapper is created using a script called `web3j-aion`.
+For a standard Java application to interact with your Java contract, you need to _wrap_ the contract within the Web3J wrapper. While the process is the same for any Java contract, the output is different. A wrapper for one Java contract will not work for any other Java contract.
 
 1. Download the Aion Web3J package from GitHub:
 
@@ -137,7 +129,7 @@ For a standard Java application to interact with your Java contract, you need to
     > File written to /Users/aion/Desktop
     ```
 
-The `-o ~/Desktop` directory in this command is the location where you wrapper will be saved. To keep thing simple we've told the `web3j-aion` script to save it to the desktop. You can now find your `GetterSetter.java` wrapper in the `~/Desktop/gettersetter/` folder.
+The `-o ~/Desktop` directory in this command is the location where you wrapper will be saved. To keep thing simple we've told the script to save it to the desktop. You can now find your `GetterSetter.java` wrapper in the `~/Desktop/gettersetter/` folder.
 
 For future reference, the following arguments are available for the `web3j-aion` script:
 
@@ -192,7 +184,7 @@ In this step, we're going to create an incredibly simple Java application that p
 
 Lastly, we need to tell IntelliJ that we want to use the `lib` folder as this project library location.
 
-1. Go to **File** → **Project Structure**.
+1. Go to **File** > **Project Structure**.
 2. Select **Libraries** from the left panel.
 3. Click the `+` icon and select **Java**.
 4. In the window that opens, go into the `lib` folder within your `GetTheString` project folder.
@@ -230,17 +222,19 @@ Now that you've got those two details, we're ready to start writing our Java app
     private static String PRIVATE_KEY = "YOUR_PRIVATE_KEY";
     ```
 
-4. Create an `aion` object by adding this line:
+4. Create an `Aion` object by adding this line:
 
     ```java
     private static final Aion aion = Aion.build(new HttpService(NODE_ENDPOINT));
     ```
+    This sets up the endpoint to talk to an Aion network.
 
 5. Create `TranasactionManager` object called `manager`:
 
     ```java
     private static final TransactionManager manager = new AionTransactionManager(aion, new Ed25519KeyPair(PRIVATE_KEY), VirtualMachine.AVM);
     ```
+    This sets up the account for signing and sending the transactions later.
 
 6. Create a `main()` class that will house all our further code:
 
@@ -266,8 +260,9 @@ We can now get to deploying your contract. Since we've already set up the scaffo
     System.out.println("Tx Hash:"+ counterContract.getTransactionReceipt());
     System.out.println("Contract Address: " + counterContract.getContractAddress());
     ```
-
-3. You should now be able to run your application. Click **Run** → **Run...** from the title bar. 
+    Note: Remember to check the status of the of the transaction as well. A contract address will be returned even the deployment fails.
+    
+3. You should now be able to run your application. Click **Run** > **Run...** from the title bar. 
 
 You may get an error about `JDK7 types`. You can safely ignore this. It can take up to 30 seconds to deploy your contract. Once it's deployed you should be able to see the transaction hash and contract address:
 
@@ -286,6 +281,7 @@ So now that we're able to deploy our contract, we should be able to interact wit
     ```java
     String firstResult = getterSetterContract.call_getString().send();
     ```
+    Note: We are using `call_getString` instead of `send_getString` here is because `getString()` is a constant function, we are only getting information from the blockchain and not change any state.
 
 2. Print out the `result` variable:
 
