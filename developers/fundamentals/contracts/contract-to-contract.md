@@ -1,6 +1,6 @@
 ---
 title: Contract to Contract
-Description: Java smart contracts are able to interact with other Java contracts on the Aion network. This page details how that is achived.
+Description: Java smart contracts are able to interact with other Java contracts on the Aion network. This page details how that is achieved.
 table_of_contents: true
 ---
 
