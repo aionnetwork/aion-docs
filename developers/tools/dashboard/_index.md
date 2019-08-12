@@ -5,13 +5,10 @@ table_of_contents: true
 draft: true
 ---
 
-<!--come up with a better word for item -->
-
 ## Dashboard Landing Page
 
-The [**Landing Page**](https://mainnet.aion.network/#/dashboard) is the home of the Aion Dashboard. It provides the current view of recent blocks and transactions on the network, as well as some current statistics. You can reach this page at any time via the Aion logo on the top left.
+The [**Landing Page**](https://mainnet.aion.network/#/dashboard) is the home of the Aion Dashboard. It provides the current view of recent blocks and transactions on the network, as well as some current statistics. You can reach this page at any time by clicking the Aion logo on the top left.
 
-<!--to be renamed? -->
 ### Heads-up Display
 
 The **Heads-up Display** shows some of the Network's current statistics. It is split into two sections: Network and Transaction.
@@ -20,7 +17,7 @@ The **Heads-up Display** shows some of the Network's current statistics. It is s
 
 The **Network** section contains:
 
-- Current Average Block Time <!--find out how calculated? -->
+- Current Average Block Time
 - Network Hash Rate
 - Average Block Difficulty
 - Consumed NRG per Block
@@ -110,7 +107,7 @@ The upper part of the **Account Details** page contains the following:
 
 ![Account Details Upper](/developers/tools/dashboard/images/account-details-upper.png)
 
-Here, you can click the **Aion (Default)** dropdown and select the ATS token you would like to see info on.
+Here, you can click the **Aion (Default)** dropdown and select the ATS token that you would like to see info on.
 
 ![Change Token View](/developers/tools/dashboard/images/change-token-view.gif)
 
@@ -143,7 +140,6 @@ The **Block Details** page contains the following:
 <!-- - NRG Limit -->
 <!-- - Block Size -->
 <!-- - Bloom Filter -->
-<!-- - Equihash Solution -->
 
 ![Block Details](/developers/tools/dashboard/images/block-details.png)
 
@@ -183,8 +179,6 @@ The upper part of the **Token Details** page contains the following:
 ![Token Details Upper](/developers/tools/dashboard/images/token-details-upper.png)
 
 The lower part of the **Token Details** page contains lists of the Token's transfers and holders.
-<!-- 
-![Token Details Lower](/developers/tools/dashboard/images/token-details-lower.png) -->
 
 ### Transactions
 

@@ -172,7 +172,7 @@ _classpath_ when running an Aion Java contract wrapper. The Encoding and decodin
     cd ~/Downloads/web3-aion-master
     ```
 
-<!-- What is this that we're creating? What is a shadow jar? -->
+    <!-- What is this that we're creating? What is a shadow jar? -->
 
 2. Create **SOMETHING**:
 
