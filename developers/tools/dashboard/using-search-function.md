@@ -4,6 +4,8 @@ description: You can easily use the Aion Dashboard to find details of a Contract
 draft: true
 ---
 
+Find the Aion Dashboard [here](https://mainnet.aion.network/#/dashboard)!
+
 ## Using the Search Bar
 
 1. From any page on the [Aion Dashboard](https://mainnet.aion.network/#/dashboard), click on the **Filter By Default** dropdown menu and select the item type that you wish to search for. If you don't specify you will simply be asked to specify after input if there are any conflicts.

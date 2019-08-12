@@ -37,7 +37,7 @@ The **Recent Blocks** section displays a list containing the four of the most re
 Each list item contains the:
 
 - Block number
-- Proposer's address: direct to the respective [**Accounts Details Page**](#Accounts) upon click
+- Proposer's address: direct to the respective [**Accounts Details Page**](#Accounts) when clicked
 - Number of transactions
 - Time taken to propose
 
@@ -52,9 +52,9 @@ The **Recent Transactions** section displays a list containing the ten most rece
 Each list item includes:
 
 - Transaction age: how long ago the transaction was proposed
-- Transaction Value: the amount of Aion sent within the transaction - direct to the respective [**Transaction Details Page**](#Transactions) upon click
-- From Address: direct to the respective [**Accounts Details Page**](#Accounts) upon click
-- To Address: direct to the respective [**Accounts Details Page**](#Accounts) upon click
+- Transaction Value: the amount of Aion sent within the transaction - direct to the respective [**Transaction Details Page**](#Transactions) when clicked
+- From Address: direct to the respective [**Accounts Details Page**](#Accounts) when clicked
+- To Address: direct to the respective [**Accounts Details Page**](#Accounts) when clicked
 
 You can click on **View All** to see a longer list.
 
