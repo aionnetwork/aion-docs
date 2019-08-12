@@ -75,7 +75,7 @@ Follow these steps if you want to deploy a contract from your local machine usin
 
     The contract takes two deployment arguments in order, where is a `String` and an `Address`.
 
-    > **WARNING**: You have to pass in the deployments arguments in the same order as the fields marked [`@Initialzable`](/developers/fundamentals/avm-concepts/initializable-fields/) in the contract.
+    > **WARNING**: You have to pass in the deployments arguments in the same order as the fields marked [`@Initializable`](/developers/fundamentals/avm-concepts/initializable-fields/) in the contract.
 
 4. Then you need to create a [transaction object](https://github.com/aionnetwork/aion_web3/wiki/API:-web3-eth#parameters-9) and filled in the field as desired:
 

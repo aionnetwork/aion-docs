@@ -1,6 +1,6 @@
 ---
 title: Using the Search function
-description: You can easily use the Aion Dashboard to find details of a Contracts, Accounts, Transactions, Blocks, and Tokens on the network.
+description: You can easily use the Aion Dashboard to find properties of any Contract, Account, Transaction, Block, or Token on the network.
 draft: true
 ---
 
