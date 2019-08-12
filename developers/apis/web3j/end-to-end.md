@@ -29,28 +29,28 @@ The contract we're going to create is a simple _getter-setter_ application. The 
 6. Within the `src/main/java/aionexample` folder, right-click on `HelloAvm`, select **Refactor** → **Rename**, and rename `HelloAvm` to `GetterSetter`.
 7. Depending on your IntelliJ setup, IntelliJ might rename all the instances of `HelloAvm` within the class to `GetterSetter`. If it doesn't however, do this manually. Make sure to set the `contract.main.class` field within your `pom.xml` file to `<contract.main.class>aionexample.GetterSetter</contract.main.class>`
 
-You should now have the basis of your Java contract project. If you want, you can delete the `greet()` and `sayHello()` functions within your `GetterSetter` class since we won't be using them. But there's no harm in leaving them in there. You can also copy and paste the contract below:
+    You should now have the basis of your Java contract project. If you want, you can delete the `greet()` and `sayHello()` functions within your `GetterSetter` class since we won't be using them. But there's no harm in leaving them in there. You can also copy and paste the contract below:
 
-```java
-package aionexample;
-import avm.Blockchain;
-import org.aion.avm.tooling.abi.Callable;
+    ```java
+    package aionexample;
+    import avm.Blockchain;
+    import org.aion.avm.tooling.abi.Callable;
 
-public class GetterSetter
-{
- private static String myStr = "Hello AVM";
+    public class GetterSetter
+    {
+    private static String myStr = "Hello AVM";
 
- @Callable
- public static String getString() { return myStr; }
+    @Callable
+    public static String getString() { return myStr; }
 
- @Callable
- public static void setString(String newStr) { myStr = newStr; }
-}
-```
+    @Callable
+    public static void setString(String newStr) { myStr = newStr; }
+    }
+    ```
 
-7. Compile your contract by right-clicking on the `gettersetter` folder in the navigation panel and selecting **Aion Virtual Machine** → **Embedded** → **Deploy**.
-8. You should now have a `gettersetter-1.0-SNAPSHOT.abi` and `gettersetter-1.0-SNAPSHOT.jar` files within your projects `target` folder. Copy them to somewhere handy like your desktop. These are the files we're going to wrap within the Web3J packages.
-9. You can close this project now: **File** → **Close Project**.
+8. Compile your contract by right-clicking on the `gettersetter` folder in the navigation panel and selecting **Aion Virtual Machine** → **Embedded** → **Deploy**.
+9. You should now have a `gettersetter-1.0-SNAPSHOT.abi` and `gettersetter-1.0-SNAPSHOT.jar` files within your projects `target` folder. Copy them to somewhere handy like your desktop. These are the files we're going to wrap within the Web3J packages.
+10. You can close this project now: **File** → **Close Project**.
 
 ## Wrap the Contract
 
@@ -81,7 +81,7 @@ For a standard Java application to interact with your Java contract, you need to
     > 9 actionable tasks: 9 executed
     ```
 
- You might see a warning about `Deprecated Gradle features`. You can safely ignore this for now. It will be fixed in a future release.
+    You might see a warning about `Deprecated Gradle features`. You can safely ignore this for now. It will be fixed in a future release.
 
 4. Move into the distributions folder:
 
@@ -101,7 +101,7 @@ For a standard Java application to interact with your Java contract, you need to
     > ...
     >
     > creating: web3j-aion-0.1.0-SNAPSHOT/bin/
-    > inflating: web3j-aion-0.1.0-SNAPSHOT/bin/web3j-aion.bat 
+    > inflating: web3j-aion-0.1.0-SNAPSHOT/bin/web3j-aion.bat
     > inflating: web3j-aion-0.1.0-SNAPSHOT/bin/web3j-aion
     ```
 
@@ -129,30 +129,30 @@ For a standard Java application to interact with your Java contract, you need to
     > File written to /Users/aion/Desktop
     ```
 
-The `-o ~/Desktop` directory in this command is the location where you wrapper will be saved. To keep thing simple we've told the script to save it to the desktop. You can now find your `GetterSetter.java` wrapper in the `~/Desktop/gettersetter/` folder.
+    The `-o ~/Desktop` directory in this command is the location where you wrapper will be saved. To keep thing simple we've told the script to save it to the desktop. You can now find your `GetterSetter.java` wrapper in the `~/Desktop/gettersetter/` folder.
 
-For future reference, the following arguments are available for the `web3j-aion` script:
+    For future reference, the following arguments are available for the `web3j-aion` script:
 
-| Flag | Required | Description |
-|------|----------|-------------|
-| `-a`, `--abiFile` | `true` | ABI file in AVM format with a contract definition. |
-| `-b`, `--binFile` | `false` | BIN or JAR file with the contract compiled code in order to generate deploy methods. |
-| `-o`, `--outputDir` | `true` | Destination base directory. |
-| `-p`, `--package` | `true` | Base package name. |
-| `-t`, `--targetVm` | `false` | Target Aion virtual machine (AVM by default). |`
+    | Flag | Required | Description |
+    |------|----------|-------------|
+    | `-a`, `--abiFile` | `true` | ABI file in AVM format with a contract definition. |
+    | `-b`, `--binFile` | `false` | BIN or JAR file with the contract compiled code in order to generate deploy methods. |
+    | `-o`, `--outputDir` | `true` | Destination base directory. |
+    | `-p`, `--package` | `true` | Base package name. |
+    | `-t`, `--targetVm` | `false` | Target Aion virtual machine (AVM by default). |`
 
 9. We also need to create a `shadowJar` file. Back in the root of the Web3J repository run:
 
- ```bash
- ./gradlew shadowJar
+    ```bash
+    ./gradlew shadowJar
 
- > <===========--> 90% EXECUTING [2s]
- >
- > ...
- >
- > BUILD SUCCESSFUL in 9s
- > 7 actionable tasks: 3 executed, 4 up-to-date
- ```
+    > <===========--> 90% EXECUTING [2s]
+    >
+    > ...
+    >
+    > BUILD SUCCESSFUL in 9s
+    > 7 actionable tasks: 3 executed, 4 up-to-date
+    ```
 
 10. Copy this new `.jar` into the `gettersetter` folder on your desktop:
 
@@ -227,6 +227,7 @@ Now that you've got those two details, we're ready to start writing our Java app
     ```java
     private static final Aion aion = Aion.build(new HttpService(NODE_ENDPOINT));
     ```
+
     This sets up the endpoint to talk to an Aion network.
 
 5. Create `TranasactionManager` object called `manager`:
@@ -234,6 +235,7 @@ Now that you've got those two details, we're ready to start writing our Java app
     ```java
     private static final TransactionManager manager = new AionTransactionManager(aion, new Ed25519KeyPair(PRIVATE_KEY), VirtualMachine.AVM);
     ```
+
     This sets up the account for signing and sending the transactions later.
 
 6. Create a `main()` class that will house all our further code:
@@ -260,9 +262,10 @@ We can now get to deploying your contract. Since we've already set up the scaffo
     System.out.println("Tx Hash:"+ counterContract.getTransactionReceipt());
     System.out.println("Contract Address: " + counterContract.getContractAddress());
     ```
+
     Note: Remember to check the status of the of the transaction as well. A contract address will be returned even the deployment fails.
-    
-3. You should now be able to run your application. Click **Run** > **Run...** from the title bar. 
+
+3. You should now be able to run your application. Click **Run** > **Run...** from the title bar.
 
 You may get an error about `JDK7 types`. You can safely ignore this. It can take up to 30 seconds to deploy your contract. Once it's deployed you should be able to see the transaction hash and contract address:
 
@@ -281,6 +284,7 @@ So now that we're able to deploy our contract, we should be able to interact wit
     ```java
     String firstResult = getterSetterContract.call_getString().send();
     ```
+
     Note: We are using `call_getString` instead of `send_getString` here is because `getString()` is a constant function, we are only getting information from the blockchain and not change any state.
 
 2. Print out the `result` variable:

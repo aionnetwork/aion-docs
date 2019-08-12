@@ -77,7 +77,7 @@ public class ContractInteractionCaller {
 
 ## Blockchain Call
 
-To call a method in another Java contract, you can use [Blockchain.call()](https://avm-api.aion.network/avm/blockchain#call(avm.Address,java.math.BigInteger,byte%5B%5D,long%29) method, and pass in the `target contract address`, `value` to transfer, `data` to pass and the `max energy` the invoked contract can use.
+To call a method in another Java contract, you can use [Blockchain.call()](https://avm-api.aion.network/avm/blockchain#call(avm.Address,java.math.BigInteger,byte%5B%5D,long%29)) method, and pass in the `target contract address`, `value` to transfer, `data` to pass and the `max energy` the invoked contract can use.
 
 To get the right `data` you want to pass, you will need an **ABI StreamingEncoder**. [Learn More](/developers/fundamentals/packages/abi/#abistreamingencoder).
 Use it to encode the `method` name as a `String` first and then the `arguments` corresponding to their types in order.
