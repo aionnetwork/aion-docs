@@ -36,11 +36,11 @@ The **Recent Blocks** section displays a list containing the four of the most re
 Each list item contains the:
 
 - Block number
-- Proposer's address: direct to the respective [**Accounts Details Page**](#Accounts) when clicked
+- Proposer's address: direct to the respective [Accounts Details Page](#accounts) when clicked
 - Number of transactions
 - Time taken to propose this block
 
-You can click on the blue arrow to go to the respective [**Block Details Page**](#Blocks) for the block. Also, click on **View All** to see a longer list.
+You can click on the blue arrow to go to the respective [Block Details Page](#blocks) for the block. Also, click on **View All** to see a longer list.
 
 ### Recent Transactions
 
@@ -62,7 +62,7 @@ You can click on **View All** to see a longer list.
 The **Navigation Bar** sits at the top of the window at all times. It contains some useful tools for navigating the Aion Dashboard.
 
 ### Explorer
-<!-- explain better... probably with better terminology-->
+
 The **Explorer** function is a dropdown menu that allows you to browse lists of each item type on the network. After selecting the **Account** type, for example, you are provided with a list of accounts in which you can sort in various ways.
 
 ![Explorer](/developers/tools/dashboard/images/explorer.gif)
@@ -75,7 +75,7 @@ The **Analytics** function is a dropdown menu that features various charts relev
 
 ### Switch Network
 
-The **Mainnet** isn't the only network featured on the dashboard. By clicking on the **Mainnet** dropdown menu you can switch between the dashboards for other networks, such as the **Mastery** network, Aion's testnet.
+The **Mainnet** isn't the only network featured on the dashboard. By clicking on the **Mainnet** dropdown menu you can switch between the dashboards for other networks, such as the **Mastery** test network.
 
 ![Switch Network](/developers/tools/dashboard/images/switch-network.gif)
 
@@ -130,15 +130,6 @@ The **Block Details** page contains the following:
 - Total Difficulty
 - Nonce
 - Included Transactions
-<!-- - Time Proposed -->
-<!-- - Block Number -->
-<!-- - Transaction Count -->
-<!-- - Block Reward -->
-<!-- - NRG Reward -->
-<!-- - NRG Consumed -->
-<!-- - NRG Limit -->
-<!-- - Block Size -->
-<!-- - Bloom Filter -->
 
 ![Block Details](/developers/tools/dashboard/images/block-details.png)
 
