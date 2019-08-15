@@ -22,7 +22,7 @@ public class EventExample {
     public static void emitEvent() {
         String eventTopic = "Emit Event"; // topic
         Address eventCaller = Blockchain.getCaller(); // data
-        Blockchain.log(eventTopic.getBytes(), eventCaller.unwrap());
+	Blockchain.log(eventTopic.getBytes(), eventCaller.toByteArray());
     }
 }
 ```

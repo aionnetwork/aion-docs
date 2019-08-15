@@ -11,7 +11,8 @@ Learn about our [AVM Hybrid Storage](https://blog.aion.network/avm-hybrid-storag
 You can use this contract as a template.
 
 ```java
-package aion;import avm.*;
+package aion;
+import avm.*;
 
 import org.aion.avm.tooling.abi.Callable;
 import org.aion.avm.userlib.AionBuffer;
