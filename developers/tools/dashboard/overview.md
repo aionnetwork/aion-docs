@@ -1,17 +1,16 @@
 ---
 title: Aion Dashboard
-description: The Aion Dashboard is a tool you can use to view the current state of the blockchain network. It's useful for viewing a transaction status, checking account balances, and gathering all kinds of information on the network.
+description: The Aion Dashboard is a tool you can use to view the current state of the network. It's useful for viewing a transaction status, checking account balances, and gathering all kinds of information about the network.
 table_of_contents: true
-draft: true
 ---
 
-## Dashboard Landing Page
+## Landing Page
 
-The [**Landing Page**](https://mainnet.aion.network/#/dashboard) is the home of the Aion Dashboard. It provides the current view of recent blocks and transactions on the network, as well as some current statistics. You can reach this page at any time by clicking the Aion logo on the top left.
+The [Landing Page](https://mainnet.aion.network/#/dashboard) is the home of the Aion Dashboard. It provides the current view of recent blocks and transactions on the network, as well as some current statistics. You can reach this page at any time by clicking the Aion logo on the top left.
 
 ### Heads-up Display
 
-The **Heads-up Display** shows some of the Network's current statistics. It is split into two sections: Network and Transaction.
+The _Heads-up Display_ shows some of the Network's current statistics. It is split into two sections: Network and Transaction.
 
 ![Dashboard HUD](/developers/tools/dashboard/images/dashboard-hud.png)
 
@@ -25,7 +24,7 @@ The **Network** section contains:
 The **Transaction** section contains:
 
 - Transactions per second
-- 24 hour peak of transactions per block
+- 24-hour peak of transactions per block
 - Number of transactions within the last 24 hours
 
 ### Recent Blocks
@@ -39,7 +38,7 @@ Each list item contains the:
 - Block number
 - Proposer's address: direct to the respective [**Accounts Details Page**](#Accounts) when clicked
 - Number of transactions
-- Time taken to propose
+- Time taken to propose this block
 
 You can click on the blue arrow to go to the respective [**Block Details Page**](#Blocks) for the block. Also, click on **View All** to see a longer list.
 
@@ -96,7 +95,7 @@ Details pages contain information on the items on the network. You can find thes
 
 ### Accounts
 
-**Accounts** on an Aion network are the things that are able to sign and send any transaction to the network using their balance of Aion to pay the NRG cost. This page will be helpful to determine an account's balance or see their past transactions.
+**Accounts** on an Aion network are the things that can sign and send any transaction to the network using their balance of Aion to pay the NRG cost. This page will be helpful to determine an account's balance or see their past transactions.
 
 The upper part of the **Account Details** page contains the following:
 
@@ -145,7 +144,7 @@ The **Block Details** page contains the following:
 
 ### Contracts
 
-**Contracts** are protocols that any account can deploy onto an Aion network. This page will be helpful when deploying a contract and what to  monitor its properties.
+**Contracts** are protocols that any account can deploy onto an Aion network. This page will be helpful when deploying a contract and what to monitor its properties.
 
 The upper part of the **Contract Details** page contains the following:
 
@@ -164,7 +163,7 @@ The lower part of the **Contract Details** page contains lists of the contract's
 
 ### Tokens
 
-**Tokens** are a special kind of contract that act as currency that can be transferred between accounts. This page will be helpful for determining a token's properties, its holders and its transfers.
+**Tokens** are a special kind of contract that act as currency that can be transferred between accounts. This page can help determine a token's properties, its holders, and its transfers.
 
 The upper part of the **Token Details** page contains the following:
 
@@ -182,7 +181,7 @@ The lower part of the **Token Details** page contains lists of the Token's trans
 
 ### Transactions
 
-**Transactions** represent every change on an Aion network. This includes transfer of tokens, deployment of contracts, or contract interaction. This page will be helpful when making a transaction and monitoring its status.
+**Transactions** represent every change on an Aion network. This includes the transfer of tokens, deployment of contracts, or contract interaction. This page will be helpful when making a transaction and monitoring its status.
 
 The upper part of the **Transaction Details** page contains the following:
 
