@@ -11,6 +11,7 @@ In order for a function or method to be called from **outside** the contract (by
 >
 > - A `@Callable` function must be **public** and **static**.
 > - `Return type` and `method arguments type` must be a supported [AVM ABI type](/developers/fundamentals/avm-concepts/abi-types/).
+> - Only functions in the contract main class should be labelled as `@Callable`.
 
 ```java
 @Callable

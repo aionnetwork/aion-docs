@@ -13,8 +13,8 @@ package aion;
 
 import avm.Blockchain;
 import org.aion.avm.tooling.abi.Callable;
+import org.aion.avm.tooling.abi.Initializable;
 import org.aion.avm.userlib.abi.ABIDecoder;
-
 public class ClinitExample {
 
     @Initializable

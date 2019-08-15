@@ -250,7 +250,7 @@ public void testTransferOwnership() {
     Address caller = avmRule.getRandomAddress(BigInteger.TEN.pow(10));
     AvmRule.ResultWrapper result = avmRule.call(caller, contractAddress, BigInteger.ZERO, txData);
 
-    ResultCode status = result.getReceiptStatus();
+    TransactionStatus status = result.getReceiptStatus();
     Assert.assertTrue(status.isFailed());
 }
 ```
