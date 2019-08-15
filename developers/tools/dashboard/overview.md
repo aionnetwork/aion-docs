@@ -33,14 +33,14 @@ The **Recent Blocks** section displays a list containing the four of the most re
 
 ![Recent Blocks](/developers/tools/dashboard/images/recent-blocks.png)
 
-Each list item contains the:
+Each list object contains the:
 
 - Block number
-- Proposer's address: direct to the respective [Accounts Details Page](#accounts) when clicked
+- Proposer's address: direct to the respective [**Accounts Details Page**](#Accounts) when clicked
 - Number of transactions
 - Time taken to propose this block
 
-You can click on the blue arrow to go to the respective [Block Details Page](#blocks) for the block. Also, click on **View All** to see a longer list.
+You can click on the blue arrow to go to the respective [**Block Details Page**](#Blocks) for the block. Also, click on **View All** to see a longer list.
 
 ### Recent Transactions
 
@@ -48,7 +48,7 @@ The **Recent Transactions** section displays a list containing the ten most rece
 
 ![Recent Transactions](/developers/tools/dashboard/images/recent-transactions.png)
 
-Each list item includes:
+Each list object includes:
 
 - Transaction age: how long ago the transaction was proposed
 - Transaction Value: the amount of Aion sent within the transaction - direct to the respective [**Transaction Details Page**](#Transactions) when clicked
@@ -62,8 +62,8 @@ You can click on **View All** to see a longer list.
 The **Navigation Bar** sits at the top of the window at all times. It contains some useful tools for navigating the Aion Dashboard.
 
 ### Explorer
-
-The **Explorer** function is a dropdown menu that allows you to browse lists of each item type on the network. After selecting the **Account** type, for example, you are provided with a list of accounts in which you can sort in various ways.
+<!-- explain better... probably with better terminology-->
+The **Explorer** function is a dropdown menu that allows you to browse lists of each object type on the network. After selecting the **Account** type, for example, you are provided with a list of accounts in which you can sort in various ways.
 
 ![Explorer](/developers/tools/dashboard/images/explorer.gif)
 
@@ -75,7 +75,7 @@ The **Analytics** function is a dropdown menu that features various charts relev
 
 ### Switch Network
 
-The **Mainnet** isn't the only network featured on the dashboard. By clicking on the **Mainnet** dropdown menu you can switch between the dashboards for other networks, such as the **Mastery** test network.
+The **Mainnet** isn't the only network featured on the dashboard. By clicking on the **Mainnet** dropdown menu you can switch between the dashboards for other networks, such as the **Mastery** network, Aion's testnet.
 
 ![Switch Network](/developers/tools/dashboard/images/switch-network.gif)
 
@@ -83,7 +83,7 @@ For those with sensitive eyes, you can find the **dark mode** toggle here as wel
 
 ### Search bar
 
-The **Search Bar** allows you to easily find any item on the network whether it be an **Account**, **Transaction**, **Block**, etc.
+The **Search Bar** allows you to easily find any object on the network whether it be an **Account**, **Transaction**, **Block**, etc.
 
 ![Input Contract Address in Search](/developers/tools/dashboard/images/input-contract-address.gif)
 
@@ -91,7 +91,7 @@ A detailed guide on the search function can be found [here](/developers/tools/da
 
 ## Details Pages
 
-Details pages contain information on the items on the network. You can find these pages through the [**Search Function**](/developers/tools/dashboard/usingSearchFunction.md) or by clicking on any of the hex addresses on the site.
+Details pages contain information on the objects on the network. You can find these pages through the [**Search Function**](/developers/tools/dashboard/usingSearchFunction.md) or by clicking on any of the hex addresses on the site.
 
 ### Accounts
 
@@ -187,8 +187,5 @@ The upper part of the **Transaction Details** page contains the following:
 - From Address
 - To Address
 - Input Data
-<!-- - Index -->
-<!-- - Transaction Logs -->
-<!-- - Time Sealed -->
 
 ![Transaction Details Upper](/developers/tools/dashboard/images/transaction-details.png)

@@ -7,7 +7,7 @@ Find the Aion Dashboard [here](https://mainnet.aion.network/#/dashboard)!
 
 ## Using the Search Bar
 
-1. From any page on the [Aion Dashboard](https://mainnet.aion.network/#/dashboard), click on the **Filter By Default** dropdown menu and select the item type that you wish to search for. If you don't specify you will simply be asked to specify after input if there are any conflicts.
+1. From any page on the [Aion Dashboard](https://mainnet.aion.network/#/dashboard), click on the **Filter By Default** dropdown menu and select the object type that you wish to search for. If you don't specify you will simply be asked to specify after input if there are any conflicts.
 
  ![Filter Search by Contract](/developers/tools/dashboard/images/filter-search-by-contract.gif)
 
@@ -21,7 +21,7 @@ Find the Aion Dashboard [here](https://mainnet.aion.network/#/dashboard)!
 
  **Transactions** are generally found with their hex hash (eg. `0xe93e9873cd3639f90c51ec59519e14a089057c10b757beed3dd5f3a4210c3c7d`)
 
-3. Here, you will see the [Details](/developers/tools/dashboard/_index.md#Details-Pages) page for the desired item.
+3. Here, you will see the [Details](/developers/tools/dashboard/_index.md#Details-Pages) page for the desired object.
 
  ![Contract Details Page](/developers/tools/dashboard/images/contract-details-page.png)
 
