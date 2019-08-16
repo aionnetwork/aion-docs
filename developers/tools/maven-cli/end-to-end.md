@@ -124,7 +124,7 @@ The modified the test can be like the following:
         byte[] txData = ABIUtil.encodeMethodArguments("getString");
         AvmRule.ResultWrapper result = avmRule.call(from, dappAddr, BigInteger.ZERO, txData);
 
-        ResultCode status = result.getReceiptStatus();
+        TransactionStatus status = result.getReceiptStatus();
         String res = (String) result.getDecodedReturnData();
         Assert.assertTrue(status.isSuccess());
     }
@@ -134,11 +134,10 @@ And your tests can be like:
 
 ```java
 package contract;
-
-import org.aion.avm.core.util.ABIUtil;
 import avm.Address;
-import org.aion.avm.tooling.AvmRule;
-import org.aion.vm.api.interfaces.ResultCode;
+import org.aion.avm.embed.AvmRule;
+import org.aion.avm.tooling.ABIUtil;
+import org.aion.types.TransactionStatus;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.ClassRule;
@@ -173,7 +172,7 @@ public class HelloAvmRuleTest {
         AvmRule.ResultWrapper result = avmRule.call(from, dappAddr, BigInteger.ZERO, txData);
 
         // getReceiptStatus() checks the status of the transaction execution
-        ResultCode status = result.getReceiptStatus();
+        TransactionStatus status = result.getReceiptStatus();
         Assert.assertTrue(status.isSuccess());
     }
 
@@ -186,7 +185,7 @@ public class HelloAvmRuleTest {
         AvmRule.ResultWrapper result = avmRule.call(from, dappAddr, BigInteger.ZERO, txData);
 
         // getReceiptStatus() checks the status of the transaction execution
-        ResultCode status = result.getReceiptStatus();
+        TransactionStatus status = result.getReceiptStatus();
         Assert.assertTrue(status.isSuccess());
     }
 }

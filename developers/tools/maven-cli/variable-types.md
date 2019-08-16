@@ -19,7 +19,9 @@ If you wanted to call a function within a contract with an address you would pas
 | Integer | `-I` | `true`| `true` | `mvn aion4j:deploy -Dargs='-I 42'` |
 | Long | `-L` | `true`| `true` | `mvn aion4j:deploy -Dargs='-L 3141592653589793238462643383279502884197169'` |
 | Short | `-S` | `true`| `true` | `mvn aion4j:deploy -Dargs='-S 314159'` |
-| String | `-S` | `true`| `false` | `mvn aion4j:deploy -Dargs='-T "Don't panic."'` |
+| String | `-T` | `true`| `false` | `mvn aion4j:deploy -Dargs='-T "Don't panic."'` |
+| BigInteger | `-K` | `true` | `false` |  `mvn aion4j:deploy -Dargs='-K 1000000000'` |
+
 
 ## Unavailable Types
 
