@@ -11,7 +11,7 @@ The IntelliJ IDE is the most popular working environment for Java developers. Le
 
 ## Maven CLI
 
-Maven has long been a favorite build tool of the Java community and it has now been encorporated into the Aion ecosystem! This tutorial walks you through how to write, compile, deploy, and interact with your smart contracts. The Maven CLI also comes with the added benefit of being able to deploy and interact with your smart contracts locally through the terminal, cutting down your development time massively.
+Maven has long been a favorite build tool of the Java community and it has now been incorporated into the Aion ecosystem! This tutorial walks you through how to write, compile, deploy, and interact with your smart contracts. The Maven CLI also comes with the added benefit of being able to deploy and interact with your smart contracts locally through the terminal, cutting down your development time massively.
 
 ## Web3J
 

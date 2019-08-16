@@ -18,6 +18,12 @@ Every **Account** has a Private Key that can be used to send transactions and a 
 
 You can use the public address to see the details of an account using the Aion Dashboard's [Search function](/developers/tools/dashboard/using-search-function.md).
 
+## ATS Token
+
+<!-- Aion Token Standard -->
+
+## Aion Virtual Machine
+
 ## Networks on Aion
 
 The Aion Network has multiple official Networks that serve different purposes.
@@ -28,9 +34,19 @@ The **Mastery** testnet is the Network where you can deploy contracts and experi
 
 You can browse these networks on the [Aion Dashboard](https://mainnet.aion.network/#/dashboard) website.
 
+## Node
+
+A **Node** is a computer that is connected to a [network](#Networks-on-Aion). In our case, each node is running the Aion kernel. Each node talks to other **Nodes** on the network to do things like run applications or confirm transactions.
+
+Unlike other networks, we have implemented the Aion virtual machine ([AVM](#Aion-Virtual-Machine)) on both the Java and Rust kernels. Operationally both these kernels function the same way and react identically when queried by the network.
+
+The purpose of having two kernels is for redundancy. If one of the kernels is compromised, the other kernel is able to take the weight and keep the network alive.
+
+Learn to set up your own **Node** [here](/developers/nodes/_index.md).
+
 ## Nonce
 
-A Nonce, or "Number only used once", is a value found in various different objects on the network. For each object type, it serves a slightly different purpose.
+A **Nonce**, or "Number only used once", is a value found in various different objects on the network. For each object type, it serves a slightly different purpose.
 
 An **Account Nonce** represents the number of transactions that account has sent. This prevents the same transaction from submitting multiple times.
 

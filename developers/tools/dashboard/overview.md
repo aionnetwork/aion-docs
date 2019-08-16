@@ -126,7 +126,7 @@ The **Block Details** page contains the following:
 - Receipt Root
 - Transaction Root
 - State Root
-- Difficulty
+- Block Difficulty
 - Total Difficulty
 - Nonce
 - Included Transactions
