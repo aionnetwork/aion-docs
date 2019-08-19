@@ -62,7 +62,7 @@ You can click on **View All** to see a longer list.
 The **Navigation Bar** sits at the top of the window at all times. It contains some useful tools for navigating the Aion Dashboard.
 
 ### Explorer
-<!-- explain better... probably with better terminology-->
+
 The **Explorer** function is a dropdown menu that allows you to browse lists of each object type on the network. After selecting the **Account** type, for example, you are provided with a list of accounts in which you can sort in various ways.
 
 ![Explorer](/developers/tools/dashboard/images/explorer.gif)
@@ -116,7 +116,7 @@ The lower part of the **Account Details** page contains lists of the account's t
 
 ### Blocks
 
-**Blocks** are a ledger of transactions that take place on an Aion network. This page will be helpful when trying to determine a block's difficulty, included transactions, block reward, block size and more.
+**Blocks** are each a ledger of transactions that take place on an Aion network. This page will be helpful when trying to determine a block's difficulty, included transactions, block reward, block size and more.
 
 The **Block Details** page contains the following:
 

@@ -1,6 +1,6 @@
 ---
 title: Aion Glossary
-description: A collection of various terminology used throughout the Aion docs site.
+description: A collection of various terminology used throughout the Aion docs and Community.
 draft: true
 ---
 
@@ -16,13 +16,13 @@ All **Accounts** have the potential to contain a balance of Aion Coins and Token
 
 Every **Account** has a Private Key that can be used to send transactions and a Public Address (hexadecimal) that can be used to identify the **Account** and receive Coins and Tokens.
 
-You can use the public address to see the details of an account using the Aion Dashboard's [Search function](/developers/tools/dashboard/using-search-function.md).
+You can use the public address to see the details of an account using the Aion Dashboard's [search function](/developers/tools/dashboard/using-search-function.md).
 
 ## ATS Token
 
-<!-- Aion Token Standard -->
+**ATS** is an abbreviation for "Aion Token Standard" - and that standard is the protocol that allows tokens to be used natively on the Aion blockchain and along with other connected blockchain networks - given that it's setup to do so.
 
-## Aion Virtual Machine
+The purpose of its creation is to allow developers to create a fungible token that intersects functionality requirements of current DApp developers and the innovation to allow cross-chain token movements.
 
 ## Networks on Aion
 
