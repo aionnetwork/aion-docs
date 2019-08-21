@@ -12,8 +12,8 @@ Only specific variable types can be used as return data from a `public` function
 
 ```java
 @Callable
-public static BigInteger exampleFunction() {
-    BigInteger foo = new BigInteger("3141");
+public static BigDecimal exampleFunction() {
+    BigDecimal foo = new BigDecimal("3141");
     return foo;
 }
 ```
@@ -26,7 +26,7 @@ Only specific variable types can be used as argument data from a `public` functi
 
 ```java
 @Callable
-public static String exampleFunction(BigInteger foo) {
+public static String exampleFunction(BigDecimal foo) {
     String bar = foo.toString();
     return bar;
 }
@@ -39,20 +39,20 @@ public static String exampleFunction(BigInteger foo) {
 Restricted variable types (those not listed in the [Variable Types](/developers/fundamentals/avm-concepts/abi-types) section) can be used freely between `private` functions, and can be fed into `public` functions.
 
 ```java
-private static BigInteger setBigInteger() {
-    // Create a big integer.
-    BigInteger foo = new BigInteger("3141592653589793238462643383279");
+private static BigDecimal setBigDecimal()) {
+    // Create a big decimal.
+    BigDecimal foo = BigDecimal.valueOf(1.23456);
 
-    // Return the big integer.
+    // Return the big decimal.
     return foo;
 }
 
 @Callable
-public static String getBigInteger(int bigInt) {
-    // Get a big integer from the setBigInteger() function.
-    BigInteger foo = setBigInteger();
+public static String getBigDecimal() {
+    // Get a big decimal from the setBigDecimal() function.
+    BigDecimal foo = setBigDecimal();
 
-    // Convert the big integer into a string.
+    // Convert the big decimal into a string.
     String bar = foo.toString();
 
     // Return the string.
@@ -60,4 +60,4 @@ public static String getBigInteger(int bigInt) {
 }
 ```
 
-In this example, you would be able to call `getBigInteger()` and it would return data. However, you would not be able to access `setBigInteger()` directly.
+In this example, you would be able to call `getBigDecimal()` and it would return data. However, you would not be able to access `setBigDecimal()` directly.

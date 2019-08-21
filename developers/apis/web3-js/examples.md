@@ -82,7 +82,7 @@ If the method you want to call takes arguments, you need to enter them into the 
 ```javascript
 let data = web3.avm.contract
     .method(methodName)
-    .inputs([["int"], [13]], [["string"], ["Hello World"]])
+    .input(["int", "string"],[13,"Hello world"])
     .encode();
 ```
 
