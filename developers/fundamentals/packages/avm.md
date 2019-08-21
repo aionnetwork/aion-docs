@@ -4,7 +4,7 @@ description: There are three classes in the avm package, Address, Blockchain and
 table_of_contents: true
 ---
 
-There are three classes in the [avm](https://avm-api.aion.network/avm/package-summary.html) package, [Address](https://docs.aion.network/docs/avm-apis#section-address), [Blockchain](https://docs.aion.network/docs/avm-apis#section-blockchain) and [Result](https://docs.aion.network/docs/avm-apis#section-result), which can be used to access blockchain-specific functionality exposed by the AVM.
+There are three classes in the [AVM](https://avm-api.aion.network/avm/package-summary.html) package, [Address](#address), [Blockchain](#blockchain) and [Result](#result), which can be used to access blockchain-specific functionality exposed by the AVM.
 
 ## Address
 

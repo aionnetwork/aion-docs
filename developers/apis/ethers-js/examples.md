@@ -38,7 +38,6 @@ public class HelloAvm
 
 Get data from the blockchain  by performing a contract method call.
 
-
 ```javascript
 "use strict"
 
@@ -135,4 +134,3 @@ console.log("INTERFACE", iface);
     }
 })();
 ```
-

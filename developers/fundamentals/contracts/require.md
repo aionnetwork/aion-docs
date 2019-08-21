@@ -35,7 +35,7 @@ public class ModifierExample {
 
     @Callable
     public static void setString(String newStr) {
-      	onlyOwner();
+        onlyOwner();
         myStr = newStr;
     }
 

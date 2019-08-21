@@ -3,7 +3,7 @@ title: Create a Project
 description: When creating a new Aion project, developers can use Maven's built in project creation commands to download the latest version of the Aion archetype, and begin development with a fresh bolierplate template.
 weight: 100
 table_of_contents: true
-next_page: /developers/tools/maven-cli/update-maven
+next_page: /developers/tools/maven-cli/environment-variables
 ---
 
 To create a new Maven project, run the following command in the directory where you want your code to be stored:

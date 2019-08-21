@@ -1,6 +1,6 @@
 ---
 title: Contract to Contract
-Description: Java smart contracts are able to interact with other Java contracts on the Aion network. This page details how that is achived.
+Description: Java smart contracts are able to interact with other Java contracts on the Aion network. This page details how that is achieved.
 table_of_contents: true
 ---
 
@@ -67,7 +67,7 @@ public class ContractInteractionCaller {
         byte[] data = encoder.encodeOneString("getString")
                              .encodeOneInteger(index)
                              .toBytes();
-        Result getString = Blockchain.call(calleeContractAddress, BigInteger.ZERO, data, Blockchain.getRemainingEnergy());
+        Result getString = Blockchain.call(returnerContractAddress, BigInteger.ZERO, data, Blockchain.getRemainingEnergy());
         ABIDecoder decoder = new ABIDecoder(getString.getReturnData());
         String myString = decoder.decodeOneString();
         return myString;
@@ -77,10 +77,10 @@ public class ContractInteractionCaller {
 
 ## Blockchain Call
 
-To call a method in another Java contract, you can use [Blockchain.call()](https://avm-api.aion.network/avm/blockchain#call(avm.Address,java.math.BigInteger,byte%5B%5D,long%29) method, and pass in the `target contract address`, `value` to transfer, `data` to pass and the `max energy` the invoked contract can use.
+To call a method in another Java contract, you can use [Blockchain.call()](https://avm-api.aion.network/avm/blockchain#call(avm.Address,java.math.BigInteger,byte%5B%5D,long%29)) method, and pass in the `target contract address`, `value` to transfer, `data` to pass and the `max energy` the invoked contract can use.
 
-To get the right `data` you want to pass, you will need an **ABI StreamingEncoder**. [Learn More](https://docs.aion.network/docs/abistreamingencoder).
-Use it to encode the `method` name as a `String` first and then the `arguments` corresponding to their types in order. 
+To get the right `data` you want to pass, you will need an **ABI StreamingEncoder**. [Learn More](/developers/fundamentals/packages/abi/#abistreamingencoder).
+Use it to encode the `method` name as a `String` first and then the `arguments` corresponding to their types in order.
 
 ```java
  byte[] data = encoder.encodeOneString("getString").encodeOneInteger(index).toBytes();
@@ -97,7 +97,7 @@ The [AVM `Result`](https://avm-api.aion.network/avm/result) object represents a 
 Result getString = Blockchain.call(calleeContractAddress, BigInteger.ZERO, data, Blockchain.getRemainingEnergy());
 ```
 
-Then, you must create an ABIDecoder object and use [`Result.getReturnData()`](https://avm-api.aion.network/avm/result)  to get the data returned by the invoked call. See [AVM ABIDecoder](https://docs.aion.network/docs/deployment-initialization#section--avm-abi-decoder-https-avm-api-aion-network-org-aion-avm-userlib-abi-abidecoder-) section for more details.
+Then, you must create an ABIDecoder object and use [`Result.getReturnData()`](https://avm-api.aion.network/avm/result)  to get the data returned by the invoked call. See [AVM ABIDecoder](/developers/fundamentals/packages/abi/#abistreamingencoder) section for more details.
 
 ```java
 ABIDecoder decoder = new ABIDecoder(getString.getReturnData());

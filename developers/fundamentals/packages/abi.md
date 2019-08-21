@@ -30,7 +30,7 @@ public static void decodeMyData() {
 
 ## ABIEncoder
 
-ABIEncoder is utility class for AVM ABI encoding. This class provides static helpers for encoding single data elements. It is typically more appropriate to use [ABIStreamingEncoder](https://docs.aion.network/docs/avm-apis#section--abistreamingencoder-https-avm-api-aion-network-org-aion-avm-userlib-abi-abistreamingencoder-).
+ABIEncoder is utility class for AVM ABI encoding. This class provides static helpers for encoding single data elements. It is typically more appropriate to use [ABIStreamingEncoder](/developers/fundamentals/packages/abi/#abistreamingencoder).
 
 ## ABIStreamingEncoder
 

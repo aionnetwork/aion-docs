@@ -8,7 +8,7 @@ next_page: /developers/tools/intellij-plugin/install-the-plugin
 
 ## Intellj Plugin Overview
 
-IntelliJ by Jetbrains is one of the most popular Java IDEs avaiable. It comes with a lot of built-in tool and debuggers to help you developer Java applications. [It's also free](https://www.jetbrains.com/idea/). To compliment IntelliJ, a plugin has been developed to enable contract developers to create Java contracts using IntelliJ and the Aion virtual machine.
+IntelliJ by Jetbrains is one of the most popular Java IDEs available. It comes with a lot of built-in tool and debuggers to help you developer Java applications. [It's also free](https://www.jetbrains.com/idea/). To compliment IntelliJ, a plugin has been developed to enable contract developers to create Java contracts using IntelliJ and the Aion virtual machine.
 
 ### Features
 

@@ -10,7 +10,7 @@ weight: 300
 
 This menu allows you to select which node to connect to, how much NRG you are willing to pay, and other configuration options.
 
-To open the confirguation menu, right click anywhere within your project and select **Aion Virtual Machine** → **Configuration**. The confirguation menu is split into four sections: **Remote Kernel**, **Remote - Details**, **Embedded AVM**, and **Common**.
+To open the configuration menu, right click anywhere within your project and select **Aion Virtual Machine** → **Configuration**. The configuration menu is split into four sections: **Remote Kernel**, **Remote - Details**, **Embedded AVM**, and **Common**.
 
 ### Remote Kernel
 
@@ -35,7 +35,7 @@ These options manage NRG prices for deploying and interacting with contracts on 
 | NRG Price (Deploy) | Fee charged per NRG transaction. | `100000000000` |  |
 | NRG (Contract Transaction) | The maximum amount of NRG the sender is willing to pay for the transaction. | `2000000` |  |
 | NRG Price (Contract Transaction) | Free charged per NRG transaction. | `100000000000` |  |
-| Maven Profile for Remote Deployment | Tells Maven which profile you wish to use, as specified in your `pom.xml` file. [See Chaning Class Name](#changing-class-name) for more information. | | `alt-profile`, `production`, `dev` |
+| Maven Profile for Remote Deployment | Tells Maven which profile you wish to use, as specified in your `pom.xml` file. [See Changing Class Name](#changing-class-name) for more information. | | `alt-profile`, `production`, `dev` |
 | Get Receipt | Specify whether you want the plugin to return transaction receipts from the node. | Yes | |
 
 ### Embedded AVM
@@ -76,7 +76,7 @@ When you first create a project using the Aion plugin, the default class used by
     </properties>
 ```
 
-This coresponds to the class of your contract `HelloAvm.java` file:
+This corresponds to the class of your contract `HelloAvm.java` file:
 
 ```java
 package example;
