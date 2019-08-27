@@ -17,8 +17,6 @@ The only thing you need is an Aion account on the Testnet (Mastery) network.
 5. Check the **I'm not a robot** checkbox.
 6. Click **Press to pour**.
 
-{{< youtube qhkAHsg5EeU >}}
-
 ## Details
 
 You can request 10 `AION` every 24 hours per address. If you need more than 10 `AION` in a 24 hour period, create another Aion address and request tokens to that account, then transfer them to your main wallet.
