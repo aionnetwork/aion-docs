@@ -1,6 +1,6 @@
 ---
 title: Faucet
-description: When creating a Dapp, it is generally a good idea to run it on test network before deploying it to a Mainnet. To do that, you're going to need some cryptocurrency to test with. Luckily, faucets exist to supply you with all the test coins you'll ever need. Test faucets are a way for developers to get some tokens to test on the Testnet (Mastery) with.
+description: A faucet is a way for a developer to get free coins or tokens to test their applications on a test-network. This is because deploying an application on a blockchain network requires funds. These funds are then taken and distributed to the network so that they can process your request. Faucets are generally free to use so often require some kind of authentication to deter abuse.
 table_of_contents: true
 ---
 
@@ -16,8 +16,6 @@ The only thing you need is an Aion account on the Testnet (Mastery) network.
 4. Check the **Terms of Service** and **Privacy Policy** checkbox.
 5. Check the **I'm not a robot** checkbox.
 6. Click **Press to pour**.
-
-{{< youtube qhkAHsg5EeU >}}
 
 ## Details
 
