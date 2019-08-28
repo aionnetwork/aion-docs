@@ -1,6 +1,6 @@
 ---
-title: End-to-End
-section: Web3J
+title: Web3J
+section: Tutorials
 description: In this walkthrough, we're going to create a simple Java contract and compile it. We're then going to run the compiled contract through the Web3J wrapping tool which will give us a Java class we can import into a standard Java application. Finally, we'll build a simple Java application and import the wrapped Java contract and have it interact with the blockchain.
 draft: false
 table_of_contents: true

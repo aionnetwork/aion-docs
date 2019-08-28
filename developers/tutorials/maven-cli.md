@@ -1,5 +1,6 @@
 ---
-title: End to End
+title: Maven CLI
+section: Tutorials
 description: The Aion4j plugin for Maven is packed with features that can help speed up your contract development. You can compile, deploy, and call your contract to a local or remote node using simple CLI. In this section, we're going to be walking through the entire workflow of creating and deploying a Java smart contract to the Aion testnet. You can drop in as particular sections if you want to, or you can follow it through end-to-end.
 table_of_contents: true
 weight: 90

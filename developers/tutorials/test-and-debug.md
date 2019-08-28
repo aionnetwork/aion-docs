@@ -1,5 +1,6 @@
 ---
-title: End to End
+title: Test and Debug
+section: Tutorials
 description: You can utilize the built in Java testing packages when creating your dApps on the Aion network. They allow you to deploy your Java smart contract and write tests to interact with the contract under a real Aion blockchain environment without actually running an Aion blockchain. In this section, we're going to be walking through the entire workflow of deploying a Java contract to the local kernel, writing some tests, and finally running those tests against your project.
 table_of_contents: true
 ---
