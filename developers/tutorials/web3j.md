@@ -59,7 +59,7 @@ For a standard Java application to interact with your Java contract, you need to
 1. Download the Aion Web3J package from GitHub:
 
     ```bash
-    git clone https://github.com:web3j/web3j-aion.git
+    git clone https://github.com/web3j/aion
     ```
 
 2. Move into the new folder:
@@ -269,11 +269,11 @@ We can now get to deploying your contract. Since we've already set up the scaffo
 
 You may get an error about `JDK7 types`. You can safely ignore this. It can take up to 30 seconds to deploy your contract. Once it's deployed you should be able to see the transaction hash and contract address:
 
-    ```bash
-    WARNING: Unable to load JDK7 types (annotations, java.nio.file.Path): no Java7 support added
-    Tx Hash:Optional[TransactionReceipt{transactionHash='0x82ed1b830d5420f4d0ed591f1' ...
-    Contract Address: 0xa0a6468149676f ...
-    ```
+```bash
+WARNING: Unable to load JDK7 types (annotations, java.nio.file.Path): no Java7 support added
+Tx Hash:Optional[TransactionReceipt{transactionHash='0x82ed1b830d5420f4d0ed591f1' ...
+Contract Address: 0xa0a6468149676f ...
+```
 
 ### Interact
 
