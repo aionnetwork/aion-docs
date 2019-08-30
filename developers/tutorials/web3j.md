@@ -36,15 +36,14 @@ The contract we're going to create is a simple _getter-setter_ application. The 
     import avm.Blockchain;
     import org.aion.avm.tooling.abi.Callable;
 
-    public class GetterSetter
-    {
-    private static String myStr = "Hello AVM";
+    public class GetterSetter {
+        private static String myStr = "Hello AVM";
 
-    @Callable
-    public static String getString() { return myStr; }
+        @Callable
+        public static String getString() { return myStr; }
 
-    @Callable
-    public static void setString(String newStr) { myStr = newStr; }
+        @Callable
+        public static void setString(String newStr) { myStr = newStr; }
     }
     ```
 
