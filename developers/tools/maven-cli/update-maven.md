@@ -10,41 +10,31 @@ Follow this process to update the Aion plugin for Maven. All terminal commands a
 
 1. Change the `aion4j` version variable within your projects `pom.xml` file:
 
-    ```xml
-    <name>helloworld</name>
-    <properties>
+```xml
+<name>helloworld</name>
+<properties>
 
-        ...
-        <aion4j.plugin.version>0.5.4</aion4j.plugin.version>
-        ...
+    ...
+    <aion4j.plugin.version>0.5.4</aion4j.plugin.version>
+    ...
 
-    </properties>
-    ```
+</properties>
+```
 
 2. Rename or delete the `lib` folder within your project. Renaming the project to something like `lib-old` is safer since you can revert to it if something goes wrong. Run the following line in a terminal or command prompt:
 
-    ```bash
-    mv lib lib-old
-    ```
+```bash
+mv lib lib-old
+```
 
 3. Re-initialize your project:
 
-    ```bash
-    mvn initialize
-    ```
+```bash
+mvn initialize
+```
 
 4. Check that your project successfully builds. If it does, you can remove the old `lib` folder:
-
-    **Linux / MacOS**
-
-    ```bash
-    rm -rf lib-old
-    ```
-
-    **Windows**
-
-    ```bash
-    rmdir lib-old
-    ```
+    1. Linux / MacOS: `rm -rf lib-old`
+    2. Windows: `rmdir lib-old`
 
 5. You're done! You can now build your project using a new version of Maven.

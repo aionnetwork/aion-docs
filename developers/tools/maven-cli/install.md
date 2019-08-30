@@ -12,33 +12,31 @@ The following instructions assume you have Ubuntu 18.04 or higher installed. Ste
 
 1. Update your package list:
 
-    ```bash
-    sudo apt update
-    ```
+```bash
+sudo apt update
+```
 
 2. Download and install Maven:
 
-    ```bash
-    sudo apt install maven
-    ```
+```bash
+sudo apt install maven
+```
 
 ## MacOS
 
 1. Install [Homebrew](https://brew.sh/) if you haven't already:
 
-    ```bash
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-    ```
+```bash
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
 
 2. Download and install Maven:
 
-    ```bash
-    brew install maven
-    ```
+```bash
+brew install maven
+```
 
 ## Windows
-
-{{< youtube J6WfDipE7Qo >}}
 
 1. Download the [JDK installation file](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html), and open it to run through the installation. Leave the default options unless you have a specific reason to change them. If you change the default installation location, make a note of it.
 2. Download the [Maven binary zip archive](http://apache.mirror.colo-serv.net/maven/maven-3/3.6.0/binaries/apache-maven-3.6.0-bin.zip).

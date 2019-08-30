@@ -29,79 +29,52 @@ We have used the latest build as an example on this page. If you want to use a d
 1. Connect to your machine via SSH or open a terminal if you are working on a local installation.
 2. Change to your root `~` directory and update your system:
 
-    ```bash
-    cd ~
-    sudo apt update -y && sudo apt upgrade -y
-    ```
+```bash
+cd ~
+sudo apt update -y && sudo apt upgrade -y
+```
 
 3. Download the latest [Aion Java kernel package](https://github.com/aionnetwork/aion/releases) to your computer if you haven't already. You can also use `wget` if you'd prefer:
 
-    ```bash
-    wget https://github.com/aionnetwork/aion/releases/download/v0.3.3/aion-v0.3.3.22362091d-2019-03-07.tar.bz2
-    ```
+```bash
+wget https://github.com/aionnetwork/aion/releases/download/v0.3.3/aion-v0.3.3.22362091d-2019-03-07.tar.bz2
+```
 
 4. Unzip the package and move the `aion` directory to your home `~` directory:
 
-    ```bash
-    tar xvjf aion-v0.3.3.22362091d-2019-03-07.tar.bz2
-    mv aion ~/
-    ```
+```bash
+tar xvjf aion-v0.3.3.22362091d-2019-03-07.tar.bz2
+mv aion ~/
+```
 
 5. Move to your `aion` directory and create an address & keystore:
 
-    ```bash
-    cd ~/
-    ~/aion/aion.sh -a create
-    ```
+```bash
+cd ~/
+~/aion/aion.sh -a create
+```
 
 6. Enter a password and write it down, you'll need it later.
 7. The terminal shows an account address. Write it down somewhere, you'll need this later.
 
-    ```bash
-    ~/.aion/aion.sh -a create
+```bash
+~/.aion/aion.sh -a create
 
-    > Please enter a password:
-    > Please re-enter your password:
-    > A new account has been created: 0xa09...
-    ```
+> Please enter a password:
+> Please re-enter your password:
+> A new account has been created: 0xa09...
+```
 
 8. The build script creates a keystore file in `aion/keystore`. Create a backup of the file:
-
-    **On a Local Machine**:
-
-    ```bash
-    cp ~/aion/mainnet/keystore/* ~/Documents/aion-keystore
-    ```
-
-    Make a copy of this `keystore` file and store it somewhere other than the computer you are installing the Java kernel on. Move onto the last step.
-
-    **On a Remote Machine over SSH**
-
-    ```bash
-    # exit your remote machine
-    exit
-
-    # copy the aion keystore to your local machine
-    scp user@node_ip_address:~/aion/mainnet/keystore/* ~/Desktop
-    ```
-
-    Make a copy of this `keystore` file and store it somewhere other than the computer you are installing the Java kernel on. Reconnect to your remote machine:
-
-    ```bash
-    ssh user@remote-node-ip
-    ```
-
-    Move onto the last step.
-
+   1. On a local machine: `cp ~/aion/mainnet/keystore/* ~/Documents/aion-keystore`. Make a copy of this `keystore` file and store it somewhere other than the computer you are installing the Java kernel on. Move onto the last step.
+   2. On a Remote Machine over SSH: `exit && scp user@node_ip_address:~/aion/mainnet/keystore/* ~/Desktop`. Make a copy of this `keystore` file and store it somewhere other than the computer you are installing the Java kernel on. Reconnect to your remote machine: `ssh user@remote-node-ip`.
 9. Run the Aion Java kernel:
 
-    ```bash
-    ~/aion/aion.sh
-    ```
+```bash
+~/aion/aion.sh
+```
 
 The kernel will now begin to _sync_ with the other nodes on the network. This process can take up to 72 hours depending on the speed of your network and the size of the database you are syncing. Everything is complete once that's finished. You have successfully installed the Aion Java kernel on your system.
-
----
 
 ## Docker Image
 
@@ -137,50 +110,50 @@ The HDD space required only takes the Docker image into account. You will need a
 
 1. Pull down the latest Java Docker image.
 
-    ```bash
-    docker pull aionnetwork/aion:latest
+```bash
+docker pull aionnetwork/aion:latest
 
-    > latest: Pulling from aionnetwork/aion
-    > 6cf436f81810: Pull complete
-    > ...
-    > Status: Downloaded newer image for aionnetwork/aion:latest
-    ```
+> latest: Pulling from aionnetwork/aion
+> 6cf436f81810: Pull complete
+> ...
+> Status: Downloaded newer image for aionnetwork/aion:latest
+```
 
 2. Create local storage for Aion image.
 
-    ```bash
-    docker volume create aion-mainnet
+```bash
+docker volume create aion-mainnet
 
-    > aion-mainnet
-    ```
+> aion-mainnet
+```
 
 3. Run the image.
 
-    ```bash
-    docker run -it -p 8545:8545 -p 8547:8547 -p 30303:30303 --mount source=aion-mainnet,destination=/aion/mainnet aionnetwork/aion:latest
+```bash
+docker run -it -p 8545:8545 -p 8547:8547 -p 30303:30303 --mount source=aion-mainnet,destination=/aion/mainnet aionnetwork/aion:latest
 
-    >                     _____
-    >      .'.       |  .~     ~.  |..          |
-    >    .'   `.     | |         | |  ``..      |
-    >  .''''''''`.   | |         | |      ``..  |
-    >.'           `. |  `._____.'  |          ``|
-    >
-    >               v0.4.0.2.092068b
-    >                    mainnet
-    >                using FVM & AVM
-    ```
+>                     _____
+>      .'.       |  .~     ~.  |..          |
+>    .'   `.     | |         | |  ``..      |
+>  .''''''''`.   | |         | |      ``..  |
+>.'           `. |  `._____.'  |          ``|
+>
+>               v0.4.0.2.092068b
+>                    mainnet
+>                using FVM & AVM
+```
 
-    Take a look at the [Running the Java Container](#running-the-java-container) section for more information on what arguments to supply with the `docker run` command.
+Take a look at the [Running the Java Container](#running-the-java-container) section for more information on what arguments to supply with the `docker run` command.
 
 4. Press `CTRL` + `c` to shut down and exit the container.
 
-    ```bash
-    19-03-04 10:59:01.821 INFO  GEN  [shutdown]: Starting shutdown process...
-    ...
-    19-03-04 10:59:05.887 INFO  GEN  [shutdown]: ---------------------------------------------
-    19-03-04 10:59:05.888 INFO  GEN  [shutdown]: | Aion kernel graceful shutdown successful! |
-    19-03-04 10:59:05.888 INFO  GEN  [shutdown]: ---------------------------------------------
-    ```
+```bash
+19-03-04 10:59:01.821 INFO  GEN  [shutdown]: Starting shutdown process...
+...
+19-03-04 10:59:05.887 INFO  GEN  [shutdown]: ---------------------------------------------
+19-03-04 10:59:05.888 INFO  GEN  [shutdown]: | Aion kernel graceful shutdown successful! |
+19-03-04 10:59:05.888 INFO  GEN  [shutdown]: ---------------------------------------------
+```
 
 #### Java Arguments and Configuration
 
