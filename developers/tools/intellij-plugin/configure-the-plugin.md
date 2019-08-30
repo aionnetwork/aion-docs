@@ -18,12 +18,12 @@ This tab manages the options for when you are deploying to and calling from a re
 
 | Configuration Option | Description | Default | Example |
 | --- | --- | --- | --- |
-| **Web3 RPC URL** | The URL or IP address of the remote node you are connecting to. | | `https://aion.api.nodesmith.io/v1/mainnet/jsonrpc?apiKey=a1b2c4d567874400abcdefa1234567890`, `http://138.0.192.33:8545`, `http://localhost:8545` |
-| **Private Key** | The private key you want to use to deploy, call, and make transactions. Leave this field blank if you are using the _Account & Password_ field. This private key must exist on the node in order for any transactions to work. | | `241b7c50abcd08db96035b0273298790b02b05869687e0db6712347e92e945985c7281891625858babcdcf0f0ddeab880a6811234d9a880b009378b47ee0abcd` |
-| **Account** | The address of the account you want to use. Leave this field blank if you are using the _Private Key_ field. This account must be _unlocked_ on the remote node in order for any transactions to work. | | `0xa001e2afd2cf8eca0be0858326a50f68df006ea1e1db366d20ca52a1bba0ef13` |
-| **Password** | The password associated with the account you want to use. Leave this field blank if you are using the _Private Key_ field. This account must be _unlocked_ on the remote node in order for any transactions to work. | | `wP!j!v7B6p^Av` |
-| **Always ask for credentials** | Should the plugin store the supplied account and password information, or should it forget them after each session? We recommend you leave this checked. | Yes | |
-| **Always compile before deploying** | Should the plugin run the `mvn clean install` command to compile your contract before every single deploy? | Yes | |
+| Web3 RPC URL | The URL or IP address of the remote node you are connecting to. | | `https://aion.api.nodesmith.io/v1/mainnet/jsonrpc?apiKey=a1b2c4d567874400abcdefa1234567890`, `http://138.0.192.33:8545`, `http://localhost:8545` |
+| Private Key | The private key you want to use to deploy, call, and make transactions. Leave this field blank if you are using the _Account & Password_ field. This private key must exist on the node in order for any transactions to work. | | `241b7c50abcd08db96035b0273298790b02b05869687e0db6712347e92e945985c7281891625858babcdcf0f0ddeab880a6811234d9a880b009378b47ee0abcd` |
+| Account | The address of the account you want to use. Leave this field blank if you are using the _Private Key_ field. This account must be _unlocked_ on the remote node in order for any transactions to work. | | `0xa001e2afd2cf8eca0be0858326a50f68df006ea1e1db366d20ca52a1bba0ef13` |
+| Password | The password associated with the account you want to use. Leave this field blank if you are using the _Private Key_ field. This account must be _unlocked_ on the remote node in order for any transactions to work. | | `wP!j!v7B6p^Av` |
+| Always ask for credentials | Should the plugin store the supplied account and password information, or should it forget them after each session? We recommend you leave this checked. | Yes | |
+| Always compile before deploying | Should the plugin run the `mvn clean install` command to compile your contract before every single deploy? | Yes | |
 
 ### Remote - Details
 
@@ -57,7 +57,7 @@ The common tab represents customizations that effect both local and remote funct
 
 | Configuration Option | Description | Default | Example |
 | --- | --- | --- | --- |
-| Deployment Arguments | Since the plugin is essentially a wrapper around Maven, you can ask the plugin to run Maven commands. These arguments are applicable for both remote and embedded mode. See the [Maven](/developers/tools/maven-cli) section for a list of available commands. |  | `'-T Alice -I 30 -A 0xa001e2afd2cf...', '-<type> <value> -<type> <value> ...'` |
+| Deployment Arguments | Since the plugin is essentially a wrapper around Maven, you can ask the plugin to run Maven commands. These arguments are applicable for both remote and embedded mode. See the [Maven](tools-maven-cli) section for a list of available commands. |  | `'-T Alice -I 30 -A 0xa001e2afd2cf...', '-<type> <value> -<type> <value> ...'` |
 
 ## Pom File
 
@@ -101,4 +101,4 @@ The `pom.xml` file contains a `profiles` section where you can define custom pro
 
 IntelliJ allows users to assign keyboard shortcuts to individual plugins. To access this menu go to **Preferences** → **Keymap** → **Plug-ins** → **Aion4j AVM Integration**. Here you can set any keyboard shortcuts you want to. Depending on your IntelliJ installation, some default Aion plugin shortcuts may be overridden by other IntelliJ functions.
 
-![IntelliJ Keymaps](/developers/tools/intellij-plugin/images/intellij-keymap.png)
+![IntelliJ Keymaps](https://raw.githubusercontent.com/aionnetwork/docs/dev/developers/tools/intellij-plugin/images/intellij-keymap.png)
