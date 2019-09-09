@@ -4,7 +4,7 @@ This website contains multiple code examples. These examples are all listed here
 
 ## Contracts
 
-These examples are specific to Java contract creation.
+These examples are specific to Java contract creation. They do not contains any setup or configuration files, unlike the [IntelliJ Plugin](#intellij-plugin)) and [Maven CLI](#maven-cli) examples.
 
 ## Ethers.js
 
