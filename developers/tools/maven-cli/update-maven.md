@@ -10,21 +10,29 @@ Follow this process to update the Aion plugin for Maven. All terminal commands a
 
 1. Change the `aion4j` version variable within your projects `pom.xml` file:
 
-    ```xml
-    <name>helloworld</name>
-    <properties>
+```xml
+<name>helloworld</name>
+<properties>
 
-        ...
-        <aion4j.plugin.version>0.5.4</aion4j.plugin.version>
-        ...
+    ...
+    <aion4j.plugin.version>0.5.4</aion4j.plugin.version>
+    ...
 
-    </properties>
-    ```
+</properties>
+```
 
-2. Run the following line in a terminal or command prompt:
+1. Run the following line in a terminal or command prompt:
 
     ```bash
     mvn aion4j:init -Dforcecopy  
     ```
 
-    This will pull you the latest jars!
+    This will pull in the latest `jar` files.
+
+1. Re-initialize your project:
+
+    ```bash
+    mvn initialize
+    ```
+
+1. You're done! You can now build your project using a new version of Maven.

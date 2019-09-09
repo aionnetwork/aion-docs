@@ -2,24 +2,15 @@
 
 ![Aion Logo](/aion-docs-logo.png)
 
-Welcome to Aion Docs! This repository holds all the documentation for the Aion Network. The website [docs.aion.network](https://docs.aion.network/) gets content from this repository. The migration of content from this repo to the docs website is _not_ automatic and is a manual process. As such, this repository is always more up-to-date than the website. This repo should be seen as the source of truth for Aion Network documentation.
+Welcome to Aion Docs! This repository holds all the documentation for the Aion Network. The website [docs.aion.network](https://docs.aion.network/) gets content from this repository. The migration of content from this repo to the docs website is currently _not_ an automatic process. As such, this repository is always more up-to-date than the website. This repo should be seen as the source of truth for Aion Network documentation.
 
 This repository **does not** maintain the [docs.aion.network](https://docs.aion.network) website itself. You'll find no `HTML` or `CSS` in these folders, except where used in code examples.
 
-## Hugo Variables
-
-These documents are built using the [Hugo Static Site Generator](https://gohugo.io/). Within the front-matter of each article, certain variables can be used that affect the output Hugo generates. The following are the custom variables available on docs.aion.network, along with the [default variables](https://gohugo.io/variables/) supplied by Hugo:
-
-| Variable | Type | Description | Examples |
-| -------- | ---- | ----------- | ------- |
-| `draft` | `boolean` | Hides the article from the sidebar. The article can still be viewed using it's URL. | `draft: true`, `draft: false` |
-| `next_page` | `string` | Defines the page to be linked at the bottom of the article. If this variable is not listed, the _Next Page_ button will not show. | `next_page: /developers/basics/deploy/maven-cli` |
-| `table_of_contents` | `boolean` | Shows the table of contents for the article when set to `true`. If set to false, or not defined in the front matter, the table of contents will not show. | `table_of_contents: true`, `table_of_contents: false` |
-| `header_image` | `string` | Displays a header image for the article. Also, splits the top section of the article into two rows on large devices. This variable takes the path of an image as a string | `header_image: images/developers-header-image.png` |
+Code examples used in this repository are also available in the [`aionnetwork/docs-example` repository](https://github.com/aionnetwork/docs-examples).
 
 ## Contributions
 
-If you want to make a suggestion to an article, create an [Issue](https://github.com/aionnetwork/docs/issues). If you want to create a completely new article, check out the contribution guidelines below and make a [Pull Request](https://github.com/aionnetwork/docs/pulls)! If you just want to show us some love, click the star :star: button!
+If you want to suggest changes for an article, create an [issue](https://github.com/aionnetwork/docs/issues). If you want to create a completely new article, check out the contribution guidelines below and make a [Pull Request](https://github.com/aionnetwork/docs/pulls)! If you just want to show us some love, click the star :star: button!
 
 ### Contribuition Guidelines
 
@@ -49,7 +40,7 @@ By following these guidelines you're helping to keep the Aion docs consistent.
 
 - Use consistent terminology. This isn't creative writing, so you don't need to describe the same thing differently every time you mention it.
 - Use American English spelling.
-- Try to not use acronyms. If you absolutely have to use acronyms, spell full phrase first and include the acronym in parentheses `()` the first time they are used in each document.
+- Try to not use acronyms. If you _absolutely_ have to use acronyms, spell full phrase first and include the acronym in parentheses `()` the first time they are used in each document.
 
     > Decentralized Application (Dapp), Virtual Machine (VM)
 

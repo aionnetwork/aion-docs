@@ -9,10 +9,10 @@ next_page: /developers/tools/maven-cli/environment-variables
 To create a new Maven project, run the following command in the directory where you want your code to be stored:
 
 ```bash
-mvn archetype:generate -DarchetypeGroupId=org.aion4j -DarchetypeArtifactId=avm-archetype -DarchetypeVersion=0.20
+mvn archetype:generate -DarchetypeGroupId=org.aion4j -DarchetypeArtifactId=avm-archetype -DarchetypeVersion=LATEST
 ```
 
-Take note of the `-DarchetypeVersion` above. You can find the [latest archetype version on GitHub](https://github.com/bloxbean/avm-archetype).
+The code snippet above uses the `LATEST` tag for the archetype version. This will download and use the latest archetype version available on the Apache Maven repository. You can also find the latest archetype version on the [Maven CLI Aion4j plugin repository](https://github.com/bloxbean/avm-archetype).
 
 ![Archetype Version Screenshot](/developers/tools/maven-cli/images/bloxbean-archetype-version.png)
 

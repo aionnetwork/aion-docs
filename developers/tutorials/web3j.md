@@ -1,6 +1,6 @@
 ---
-title: End-to-End
-section: Web3J
+title: Web3J
+section: Tutorials
 description: In this walkthrough, we're going to create a simple Java contract and compile it. We're then going to run the compiled contract through the Web3J wrapping tool which will give us a Java class we can import into a standard Java application. Finally, we'll build a simple Java application and import the wrapped Java contract and have it interact with the blockchain.
 draft: false
 table_of_contents: true
@@ -36,15 +36,14 @@ The contract we're going to create is a simple _getter-setter_ application. The 
     import avm.Blockchain;
     import org.aion.avm.tooling.abi.Callable;
 
-    public class GetterSetter
-    {
-    private static String myStr = "Hello AVM";
+    public class GetterSetter {
+        private static String myStr = "Hello AVM";
 
-    @Callable
-    public static String getString() { return myStr; }
+        @Callable
+        public static String getString() { return myStr; }
 
-    @Callable
-    public static void setString(String newStr) { myStr = newStr; }
+        @Callable
+        public static void setString(String newStr) { myStr = newStr; }
     }
     ```
 
@@ -59,7 +58,7 @@ For a standard Java application to interact with your Java contract, you need to
 1. Download the Aion Web3J package from GitHub:
 
     ```bash
-    git clone https://github.com:web3j/web3j-aion.git
+    git clone https://github.com/web3j/aion
     ```
 
 2. Move into the new folder:
@@ -269,11 +268,11 @@ We can now get to deploying your contract. Since we've already set up the scaffo
 
 You may get an error about `JDK7 types`. You can safely ignore this. It can take up to 30 seconds to deploy your contract. Once it's deployed you should be able to see the transaction hash and contract address:
 
-    ```bash
-    WARNING: Unable to load JDK7 types (annotations, java.nio.file.Path): no Java7 support added
-    Tx Hash:Optional[TransactionReceipt{transactionHash='0x82ed1b830d5420f4d0ed591f1' ...
-    Contract Address: 0xa0a6468149676f ...
-    ```
+```bash
+WARNING: Unable to load JDK7 types (annotations, java.nio.file.Path): no Java7 support added
+Tx Hash:Optional[TransactionReceipt{transactionHash='0x82ed1b830d5420f4d0ed591f1' ...
+Contract Address: 0xa0a6468149676f ...
+```
 
 ### Interact
 

@@ -9,8 +9,6 @@ table_of_contents: true
 
 This section walks you through installing the kernel from a package. You can either generate your own package by building the kernel from source, or you can download a [pre-built package from GitHub](https://github.com/aionnetwork/aionr/releases). We also made a quick video walking through how you can install the Rust kernel on your computer using Vagrant.
 
-{{< youtube IsAdOz5vPhk >}}
-
 ### System Requirements
 
 JAVA [JDK 11^](https://download.java.net/java/GA/jdk11/13/GPL/openjdk-11.0.1_linux-x64_bin.tar.gz) and [Apache Ant](http://ftp.tsukuba.wide.ad.jp/software/apache//ant/binaries/apache-ant-1.10.5-bin.tar.gz) are required to Build and Install
@@ -94,24 +92,24 @@ Once you have installed the prerequisites, follow these steps to build the kerne
 
 1. Download the Aion Rust git repository:
 
-    ```bash
-    git clone https://github.com/aionnetwork/aionr.git
-    cd aionr
-    ```
+```bash
+git clone https://github.com/aionnetwork/aionr.git
+cd aionr
+```
 
 2. Build the kernel from source:
 
-    ```bash
-    ./scripts/package.sh aionr-package
-    ```
+```bash
+./scripts/package.sh aionr-package
+```
 
-    `aionr-package` is the name that will be given to the Rust package when it as finished building. You can set this to anything you want by changing the last argument in the script call:
+`aionr-package` is the name that will be given to the Rust package when it as finished building. You can set this to anything you want by changing the last argument in the script call:
 
-    ```bash
-    ./scripts/package.sh example-package-name
-    ```
+```bash
+./scripts/package.sh example-package-name
+```
 
-    The package takes about 10 minutes to finish building.
+The package takes about 10 minutes to finish building.
 
 3. When the build has finished, you can find the finished binary at `package/aionr-package`.
 
@@ -119,9 +117,9 @@ Once you have installed the prerequisites, follow these steps to build the kerne
 
 1. Navigate to the binary location:
 
-    ```bash
-    cd package/aionr-package
-    ```
+```bash
+cd package/aionr-package
+```
 
 2. Run `./mainnet.sh`. You can find more information on supplying commands in the [user manual](https://github.com/aionnetwork/aionr/wiki/User-Manual#launch-rust-kernel). Kernel will print **configuration path**, **genesis file path**, **db directory**, and **keystore location** at the top of its log.
 
@@ -200,38 +198,38 @@ The HDD space required only takes the Docker image into account. You will need a
 
 1. Pull down the latest Docker image.
 
-    ```bash
-    docker pull aionnetwork/aionr:latest
+```bash
+docker pull aionnetwork/aionr:latest
 
-    > latest: Pulling from aionnetwork/aionr
-    > f476d66f5408: Pull complete
-    > ...
-    > Status: Downloaded newer image for aionnetwork/aionr:latest
-    ```
+> latest: Pulling from aionnetwork/aionr
+> f476d66f5408: Pull complete
+> ...
+> Status: Downloaded newer image for aionnetwork/aionr:latest
+```
 
 2. Create local storage for Aion image.
 
-    ```bash
-    docker volume create aionr-mainnet
+```bash
+docker volume create aionr-mainnet
 
-    > aionr-mainnet
-    ```
+> aionr-mainnet
+```
 
 3. Run the image.
 
-    ```bash
-    docker run -it -p 8545:8545 -p 8546:8546 -p 30303:30303 --mount source=aionr-mainnet,destination=/aionr/mainnet aionnetwork/aionr:latest
+```bash
+docker run -it -p 8545:8545 -p 8546:8546 -p 30303:30303 --mount source=aionr-mainnet,destination=/aionr/mainnet aionnetwork/aionr:latest
 
-    >             _____    ____    _   _
-    >     /\     |_   _|  / __ \  | \ | |
-    >    /  \      | |   | |  | | |  \| |
-    >   / /\ \     | |   | |  | | | . ` |
-    >  / ____ \   _| |_  | |__| | | |\  |
-    > /_/    \_\ |_____|  \____/  |_| \_|
-    >
-    >
-    >2019-07-12 17:14:11 Starting Aion(R)/v0.2.5.a60ae38/x86_64-linux-gnu/rustc-1.28.0
-    ```
+>             _____    ____    _   _
+>     /\     |_   _|  / __ \  | \ | |
+>    /  \      | |   | |  | | |  \| |
+>   / /\ \     | |   | |  | | | . ` |
+>  / ____ \   _| |_  | |__| | | |\  |
+> /_/    \_\ |_____|  \____/  |_| \_|
+>
+>
+>2019-07-12 17:14:11 Starting Aion(R)/v0.2.5.a60ae38/x86_64-linux-gnu/rustc-1.28.0
+```
 
 4. Press `CTRL` + `c` to shut down and exit the container.
 
