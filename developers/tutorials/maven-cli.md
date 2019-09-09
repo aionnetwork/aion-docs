@@ -17,11 +17,11 @@ next_page: /developers/tools/maven-cli/create-an-account
 
 Maven AVM archetype creates a basic Java smart contract project template that you can use to build your applications. Go to your desired folder and open the terminal:
 
-```sh
-mvn archetype:generate -DarchetypeGroupId=org.aion4j -DarchetypeArtifactId=avm-archetype -DarchetypeVersion=0.20
+```bash
+mvn archetype:generate -DarchetypeGroupId=org.aion4j -DarchetypeArtifactId=avm-archetype -DarchetypeVersion=LATEST
 ```
 
-You can find the [latest archetype version on GitHub](https://github.com/bloxbean/avm-archetype).
+The code snippet above uses the `LATEST` tag for the archetype version. This will download and use the latest archetype version available on the Apache Maven repository. You can also find the latest archetype version on the [Maven CLI Aion4j plugin repository](https://github.com/bloxbean/avm-archetype).
 
 Archetype generator will ask you for a set of [pom configuration](https://maven.apache.org/pom.html). Enter your `groupID`, `artifactID`, you can leave the `version` as default, and enter the package name. For example:
 
