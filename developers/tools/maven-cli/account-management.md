@@ -9,13 +9,13 @@ The account management Maven _goal_ allows you to create, fund, list, and clear 
 mvn aion4j:account
 ```
 
-All remote actions require you to either specify your [endpoint URL](/developers/tools/maven-cli/endpoint-url) within the `pom.xml` file, or supply it as an argument when making a call. The supply your endpoint URL as an inline argument add `-Dweb3rpc.url="YOUR_ENDPOINT_URL"` to each command below. For example:
+All remote actions require you to either specify your [endpoint URL](tools-maven-cli-endpoint-url) within the `pom.xml` file, or supply it as an argument when making a call. The supply your endpoint URL as an inline argument add `-Dweb3rpc.url="YOUR_ENDPOINT_URL"` to each command below. For example:
 
 ```bash
 mvn aion4j:account -Dcreate -Dweb3rpc.url="https://aion.api.nodesmith.io/v1/mastery/jsonrpc?apiKey=ab40c8f5...."
 ```
 
-This rest of the remote code examples in this article assume that you have entered your endpoint URL within your project's `pom.xml` file. Check out the [Endpoint URL section](/developers/tools/maven-cli/endpoint-url) if you need a refresher.
+This rest of the remote code examples in this article assume that you have entered your endpoint URL within your project's `pom.xml` file. Check out the [Endpoint URL section](tools-maven-cli-endpoint-url) if you need a refresher.
 
 ## Create an Account
 
@@ -39,7 +39,7 @@ To create an account and also top it up using the Maven CLI faucet, add `-Dtopup
 mvn aion4j:account -Dcreate -Dtopup
 ```
 
-Check out the [Maven CLI Faucet section](/developers/tools/maven-cli/faucet) for more information on how the faucet works.
+Check out the [Maven CLI Faucet section](tools-maven-cli-faucet) for more information on how the faucet works.
 
 ## Fund an Account
 
@@ -65,7 +65,7 @@ Add funds to an account: `mvn aion4j:account -Dtopup -Dpk=... -Daddress=... -Pre
 
 Both the _private key_ and the _public address_ of the account you want to fund are required. This is to double-check that you are requesting funding for the correct account. The Maven CLI toolset _could_ determine the _public address_ by just using your _private key_. But by requiring both, the toolset can confirm that the information you have entered is correct and where you want to funds to be sent.
 
-Check out the [Maven CLI Faucet section](/developers/tools/maven-cli/faucet) for more information on how the faucet works.
+Check out the [Maven CLI Faucet section](tools-maven-cli/faucet) for more information on how the faucet works.
 
 ## List Accounts
 
