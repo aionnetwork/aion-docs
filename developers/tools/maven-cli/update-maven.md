@@ -29,10 +29,4 @@ Follow this process to update the Aion plugin for Maven. All terminal commands a
 
     This will pull in the latest `jar` files.
 
-1. Re-initialize your project:
-
-    ```bash
-    mvn initialize
-    ```
-
-1. You're done! You can now build your project using a new version of Maven.
+You're done! You can now build your project using a new version of Maven.
