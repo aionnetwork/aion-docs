@@ -21,7 +21,7 @@ Follow this process to update the Aion plugin for Maven. All terminal commands a
 </properties>
 ```
 
-1. Run the following line in a terminal or command prompt:
+2. Run the following line in a terminal or command prompt:
 
     ```bash
     mvn aion4j:init -Dforcecopy  
