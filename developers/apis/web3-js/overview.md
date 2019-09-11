@@ -30,4 +30,4 @@ Both the `web3.min.js` file and the `script.js` file are included at the bottom 
 
 ## API Documentation
 
-The API documentation is hosted on the [`aion_web3` GitHub Wiki pages](https://github.com/aionnetwork/aion_web3/wiki). Checkout the [examples section](/developers/apis/web3-js/examples) to find out how to interact with the Aion Web3 API.
+The API documentation is hosted on the [`aion_web3` GitHub Wiki pages](https://github.com/aionnetwork/aion_web3/wiki). Checkout the [examples section](apis-web3-js-examples) to find out how to interact with the Aion Web3 API.

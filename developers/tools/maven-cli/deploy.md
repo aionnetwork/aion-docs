@@ -8,7 +8,7 @@ next_page: /developers/tools/maven-cli/call
 
 Deploy your contract on a blockchain network: `mvn aion4j:deploy`
 
-Before you deploy your contract, make sure you have [compiled it](/developers/tools/maven-cli/compile).
+Before you deploy your contract, make sure you have [compiled it](tools-maven-cli-compile).
 
 ## Local
 
@@ -38,17 +38,17 @@ mvn aion4j:deploy -Dargs="-T 'Hello World'"
 
 To deploy a contract to a remote node you will need to supply the `host` and `port` of your remote node.
 
-The account you are using to deploy the contract must have funds in it in order to pay for the deployment. If not, you will get a `transaction dropped` error. You can get test `AION` [using a faucet](/developers/tools/faucets).
+The account you are using to deploy the contract must have funds in it in order to pay for the deployment. If not, you will get a `transaction dropped` error. You can get test `AION` [using a faucet](tools-faucets).
 
 ### Transaction Signing
 
 All transactions must be signed. This is so that the network can confirm who sent which transaction. Transactions that happen on a local node are automatically signed so you don't need to worry about then. Transactions on remote nodes must be manually signed.
 
-You can sign the transaction _before_ sending it to the network, also known as [Client-Side Signing](/developers/tools/maven-cli/client-side-signing). This is the safest option. To do this, add the private key of the account you want to deploy with to your environment variables. Or add the private key as an argument when deploying.
+You can sign the transaction _before_ sending it to the network, also known as [Client-Side Signing](tools-maven-cli-client-side-signing). This is the safest option. To do this, add the private key of the account you want to deploy with to your environment variables. Or add the private key as an argument when deploying.
 
 ### Deploy though Client-Side Signing
 
-Run this command to deploy the contract, assuming you have your private key stored as an environment variable (see [Client-Side Singing](/developers/tools/maven-cli/client-side-signing) for more information):
+Run this command to deploy the contract, assuming you have your private key stored as an environment variable (see [Client-Side Singing](tools-maven-cli-client-side-signing) for more information):
 
 ```bash
 mvn aion4j:deploy -Dweb3rpc.url=http://<HOST>:<PORT> -Premote

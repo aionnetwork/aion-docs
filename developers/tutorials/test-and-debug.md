@@ -7,7 +7,7 @@ table_of_contents: true
 
 ## Prerequisites
 
-This guide assumes that you have the [IntelliJ IDE installed](https://www.jetbrains.com/idea/), along with the [Aion4j plugin](/developers/tools/intellij-plugin/install-the-plugin). You do not need to have an IntelliJ project ready, as we will be creating a new project in this guide.
+This guide assumes that you have the [IntelliJ IDE installed](https://www.jetbrains.com/idea/), along with the [Aion4j plugin](tools-intellij-plugin-install-the-plugin). You do not need to have an IntelliJ project ready, as we will be creating a new project in this guide.
 
 ## Set up a Project
 
@@ -128,7 +128,7 @@ public void deployContract() {...}
 
 Then we will get the bytes that represent the contract jar, along with the deployment arguments in byte[] if required.
 
-Use [ABIStreamingEnocder](/developers/fundamentals/packages/abi) to encode the deployment arguments:
+Use [ABIStreamingEnocder](fundamentals-packages-abi) to encode the deployment arguments:
 
 ```java
 byte[] deploymentArguments = encoder.encodeOneString("OwnershipTransferred").encodeOneString("Jennifer").toBytes();

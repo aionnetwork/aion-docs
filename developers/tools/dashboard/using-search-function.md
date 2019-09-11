@@ -21,10 +21,10 @@ Find the Aion Dashboard [here](https://mainnet.aion.network/#/dashboard)!
 
  **Transactions** are generally found with their hex hash (eg. `0xe93e9873cd3639f90c51ec59519e14a089057c10b757beed3dd5f3a4210c3c7d`)
 
-3. Here, you will see the [Details](/developers/tools/dashboard/_index.md#Details-Pages) page for the desired object.
+3. Here, you will see the [Details](tools-dashboard-_index.md#Details-Pages) page for the desired object.
 
  ![Contract Details Page](/developers/tools/dashboard/images/contract-details-page.png)
 
-These [Details](/developers/tools/dashboard/_index.md#Details-Pages) pages contain information regarding the requested item.
+These [Details](tools-dashboard-_index.md#Details-Pages) pages contain information regarding the requested item.
 
-See the various [**Details Page**](/developers/tools/dashboard/_index.md#Details-Pages) documentation for more detail on the contents of these pages such as **Account Balance**, **Nonce**, or **Transaction Status**.
+See the various [**Details Page**](tools-dashboard-_index.md#Details-Pages) documentation for more detail on the contents of these pages such as **Account Balance**, **Nonce**, or **Transaction Status**.

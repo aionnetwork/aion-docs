@@ -76,9 +76,9 @@ This variable creates a new `web3` object using the `Web3` object supplied by `w
 
 ### Aion Node
 
-This is the last step in our project set up. We need to paste in the URL of the Aion node that we want to connect to. The easiest way to connect to a node is to use a node [hosting service](/developers/nodes/hosting-services/) like [Nodesmith](https://nodesmith.io/) or [Blockdaemon](https://blockdaemon.com/). Both these services have free options that allow you to spin up an Aion node on the Mastery test network.
+This is the last step in our project set up. We need to paste in the URL of the Aion node that we want to connect to. The easiest way to connect to a node is to use a node [hosting service](nodes-hosting-services-) like [Nodesmith](https://nodesmith.io/) or [Blockdaemon](https://blockdaemon.com/). Both these services have free options that allow you to spin up an Aion node on the Mastery test network.
 
-If you'd prefer to spin up your own Aion node, take a look at the [Java](/developers/nodes/java/overview/) or [Rust](/developers/nodes/rust/overview/) kernel sections. Keep in mind that it can take quite a while for a node to fully sync to the network.
+If you'd prefer to spin up your own Aion node, take a look at the [Java](nodes-java-overview-) or [Rust](nodes-rust-overview-) kernel sections. Keep in mind that it can take quite a while for a node to fully sync to the network.
 
 Once you have your node URL, paste it into your `script.js` file:
 

@@ -14,12 +14,12 @@ The point of Web3J is to allow regular _off-chain_ Java applications to talk to 
 2. Create an importable Java class.
 3. Import that Java class into a regular blockchain application.
 
-The [end-to-end example](/developers/apis/web3j/end-to-end) walks you through this whole process, so we suggest you start there if you aren't familiar with the Web3J process.
+The [end-to-end example](apis-web3j-end-to-end) walks you through this whole process, so we suggest you start there if you aren't familiar with the Web3J process.
 
 ## Getting Started
 
-If you're new to Web3J, we recommend following the [end-to-end tutorial](/developers/apis/web3j/end-to-end) through. It will give you a good grasp on the basics of integrating Web3J into your standard Java applications. If you've used Web3J before and want to know the process for setting it up on an Aion blockchain, take a look at the [Setup Project](/developers/apis/web3j/setup-project) section.
+If you're new to Web3J, we recommend following the [end-to-end tutorial](apis-web3j-end-to-end) through. It will give you a good grasp on the basics of integrating Web3J into your standard Java applications. If you've used Web3J before and want to know the process for setting it up on an Aion blockchain, take a look at the [Setup Project](apis-web3j-setup-project) section.
 
 ## Official Documentation
 
-Web3 Labs hosts and maintains the official Web3J documentation. Aion specific [examples](/developers/apis/web3j/examples) and [walkthroughs](/developers/apis/web3j/end-to-end) can be found here.
+Web3 Labs hosts and maintains the official Web3J documentation. Aion specific [examples](apis-web3j-examples) and [walkthroughs](apis-web3j-end-to-end) can be found here.

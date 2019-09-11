@@ -3,7 +3,7 @@ title: CLI Faucet
 description: A faucet is a way for you to get free coins or tokens to test your applications on the Aion testnet. This is because deploying an application on a blockchain network requires funds. These funds are then taken and distributed to the network so that they can process your request. The Maven CLI and Aion4:j plugin has a built-in faucet that can help you speed up your blockchain application development! Now there's no need to leave your development workflow just to get some test tokens!
 ---
 
-If you want to know how to use the CLI faucet in your projects, check out the [Account Management section](/developers/tools/maven-cli/account-management). This page discusses how the faucet works and how it's protected from abuse.
+If you want to know how to use the CLI faucet in your projects, check out the [Account Management section](tools-maven-cli-account-management). This page discusses how the faucet works and how it's protected from abuse.
 
 ## Faucet Flow
 

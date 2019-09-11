@@ -10,7 +10,7 @@ next_page: /developers/tools/maven-cli/create-an-account
 ## Prerequisites
 
 - [Java SDK 10^](https://www.oracle.com/technetwork/java/javase/downloads/jdk12-downloads-5295953.html).
-- [Maven](/developers/tools/maven-cli/install/)
+- [Maven](tools-maven-cli-install-)
 - A RPC endpoint.
 
 ## Create a Project
@@ -79,7 +79,7 @@ To view your contract go to `src` → `main` → `java` → `Your package name` 
 
 ## Edit your Contract
 
-The sample contract you get from contains for [`@Callable`](/developers/fundamentals/avm-concepts/callable-functions/) function, `sayHello`, `greet`, `getString` and `setString`. For demonstration purpose, let's remove `sayHello` and `greet`. Now our contract is a basic `setter/getter` contract.
+The sample contract you get from contains for [`@Callable`](fundamentals-avm-concepts-callable-functions-) function, `sayHello`, `greet`, `getString` and `setString`. For demonstration purpose, let's remove `sayHello` and `greet`. Now our contract is a basic `setter/getter` contract.
 
 ```java
 package contract;
@@ -114,7 +114,7 @@ We will modify the tests for our contracts.
 
 First, remove `testSayHello` since we have removed the method from our contract.
 
-Then, let get the decoded data from `testGetString`, and make sure it is the same as the one we set in `testSetString`. Check out [AVM Junit test tutorial](/developers/fundamentals/test-and-debug/end-to-end/) to learn about how AVMRule test works.
+Then, let get the decoded data from `testGetString`, and make sure it is the same as the one we set in `testSetString`. Check out [AVM Junit test tutorial](fundamentals-test-and-debug-end-to-end-) to learn about how AVMRule test works.
 
 The modified the test can be like the following:
 
@@ -278,7 +278,7 @@ Let's first call `setString` to set it to `AVM is great` by running the followin
 mvn aion4j:call -Dcontract=0b7c8a9d0055a4794679ba1b34cfb90f53aa5f04614ddc35793edfa65577d50a -Dmethod=setString -Dargs="-T 'AVM is great'"
 ```
 
-where `-Dcontract` is the contract address, `-Dmethod` is the method we want to call and `-Dargs` are the corresponding arguments type [selectors](/developers/tools/maven-cli/variable-types/) and data we want to pass in.
+where `-Dcontract` is the contract address, `-Dmethod` is the method we want to call and `-Dargs` are the corresponding arguments type [selectors](tools-maven-cli-variable-types-) and data we want to pass in.
 
 In the `setString` method, we have `Blockchain.println("New string is " + myStr);`, which will also be printed in the embedded AVM output. This can be used to debug your contract as well.
 

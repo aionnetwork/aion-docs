@@ -8,11 +8,11 @@ header_image:
 weight: 100
 ---
 
-We'll be using [IntelliJ and the Aion4J](/developers/tools/intellij-plugin/install-the-plugin) plugin.
+We'll be using [IntelliJ and the Aion4J](tools-intellij-plugin-install-the-plugin) plugin.
 
 ## Prerequisities
 
-This project assumes that you're already familiar with IntelliJ and how to create Aion contracts using the Aion4j plugin. To find out more on how to do this, check out the [IntelliJ section](/developers/tools/intellij-plugin). You will also need to following software installed.
+This project assumes that you're already familiar with IntelliJ and how to create Aion contracts using the Aion4j plugin. To find out more on how to do this, check out the [IntelliJ section](tools-intellij-plugin). You will also need to following software installed.
 
 1. Java 10 or above.
 2. IntelliJ
@@ -194,7 +194,7 @@ Now we have the framework to start interacting with the blockchain. Next up, we'
 
 ## Write, Deploy, and Interact
 
-First up we need to tell our Java application to deploy our contract to the Aion test network. To do this you'll need an Aion node on the _Mastery_ testnet, and an account with sufficient balance to deploy and call a contract. You can use [Nodesmith to connect to a node](/developers/nodes/hosting-services), and the [Aion Testnet Faucet](/developers/tools/faucets) to get some free test tokens.
+First up we need to tell our Java application to deploy our contract to the Aion test network. To do this you'll need an Aion node on the _Mastery_ testnet, and an account with sufficient balance to deploy and call a contract. You can use [Nodesmith to connect to a node](nodes-hosting-services), and the [Aion Testnet Faucet](tools-faucets) to get some free test tokens.
 
 ### Write
 

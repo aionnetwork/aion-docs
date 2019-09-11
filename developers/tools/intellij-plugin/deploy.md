@@ -20,6 +20,6 @@ You should see a notice when the contract has successfully deployed:
 
 ## Remote
 
-Run this command by right clicking anywhere on the contract and selecting **Aion Virtual Machine** → **Remote** → **Deploy**. You will be prompted to enter a [node URL](/developers/tools/intellij-plugin/configure-the-plugin) and [deployer address](/developers/tools/intellij-plugin/configure-the-plugin) if you haven't filled them in already.
+Run this command by right clicking anywhere on the contract and selecting **Aion Virtual Machine** → **Remote** → **Deploy**. You will be prompted to enter a [node URL](tools-intellij-plugin-configure-the-plugin) and [deployer address](tools-intellij-plugin-configure-the-plugin) if you haven't filled them in already.
 
-This command will compile your contract before attempting to deploy, unless you have specified that you do not want this to happen in the [configuration options](/developers/tools/intellij-plugin/configure-the-plugin).
+This command will compile your contract before attempting to deploy, unless you have specified that you do not want this to happen in the [configuration options](tools-intellij-plugin-configure-the-plugin).

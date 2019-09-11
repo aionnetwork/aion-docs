@@ -54,6 +54,6 @@ Here's a sample output:
 [INFO] Maven execution finished
 ```
 
-Then you can go to our [faucet](/developers/tools/faucets/) to get some test Aion!
+Then you can go to our [faucet](tools-faucets-) to get some test Aion!
 
 > **Important:** Keep your private key private and safe!

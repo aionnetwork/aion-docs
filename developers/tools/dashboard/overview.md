@@ -87,11 +87,11 @@ The **Search Bar** allows you to easily find any object on the network whether i
 
 ![Input Contract Address in Search](/developers/tools/dashboard/images/input-contract-address.gif)
 
-A detailed guide on the search function can be found [here](/developers/tools/dashboard/usingSearchFunction.md).
+A detailed guide on the search function can be found [here](tools-dashboard-usingSearchFunction.md).
 
 ## Details Pages
 
-Details pages contain information on the objects on the network. You can find these pages through the [**Search Function**](/developers/tools/dashboard/usingSearchFunction.md) or by clicking on any of the hex addresses on the site.
+Details pages contain information on the objects on the network. You can find these pages through the [**Search Function**](tools-dashboard-usingSearchFunction.md) or by clicking on any of the hex addresses on the site.
 
 ### Accounts
 

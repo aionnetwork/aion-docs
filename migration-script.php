@@ -41,19 +41,21 @@ function main() {
     // Get list of files.
     $files = findFiles();
 
-    // // Readme-ify internal links.
-    // foreach($files as $file) {
-    //     replaceSlashesWithDashes($file);
-    // }
+    // Readme-ify internal links.
+    foreach($files as $file) {
+        replaceSlashesWithDashes($file);
+    }
 
     // // GitHub-ify images.
     // foreach($files as $file) {
     //     hardcodeImagesToGitHub($file);
     // }
 
-    // Readme-ify # sections.
-    foreach($files as $file) {
-        fixSectionLinks($file);
-    }
+    // // Readme-ify # sections.
+    // foreach($files as $file) {
+    //     fixSectionLinks($file);
+    // }
 
 }
+
+main(); 

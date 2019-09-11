@@ -36,4 +36,4 @@ Both the `ethers.min.js` file and the `script.js` file are included at the botto
 
 ## API Documentation
 
-Since Ether.js has been developers by a community member, the [documentation is contained on their third-party site](https://docs.ethers.io/ethers.js/html/). Check out the [examples section](/developers/apis/ethers-js/examples) for more details information on how to use Ethers.js with Aion.
+Since Ether.js has been developers by a community member, the [documentation is contained on their third-party site](https://docs.ethers.io/ethers.js/html/). Check out the [examples section](apis-ethers-js-examples) for more details information on how to use Ethers.js with Aion.
