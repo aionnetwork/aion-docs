@@ -13,20 +13,20 @@ function main($single_file = null) {
         $files = findFiles();
     }
 
-    // // Internal links.
-    // foreach($files as $file) {
-    //     replaceSlashesWithDashes($file);
-    // }
+    // Internal links.
+    foreach($files as $file) {
+        replaceSlashesWithDashes($file);
+    }
 
     // Images.
     foreach($files as $file) {
         hardcodeImagesToGitHub($file);
     }
 
-    // // Sections.
-    // foreach($files as $file) {
-    //     fixSectionLinks($file);
-    // }
+    // Sections.
+    foreach($files as $file) {
+        fixSectionLinks($file);
+    }
 }
 
 // Find and replace any slashes `/` with dashes `-` in links, but not images.
