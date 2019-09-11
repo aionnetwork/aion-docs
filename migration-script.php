@@ -1,4 +1,33 @@
 <?php
+main('developers/file'); 
+
+// Call all other functions from here.
+function main($single_file = null) {
+
+    // If a single file argument is supplied...
+    if($single_file) {
+        // Make the files array just that one file.
+        $files = [$single_file];
+    } else {
+        // Get list of files.
+        $files = findFiles();
+    }
+    
+    // Readme-ify internal links.
+    foreach($files as $file) {
+        replaceSlashesWithDashes($file);
+    }
+
+    // GitHub-ify images.
+    foreach($files as $file) {
+        hardcodeImagesToGitHub($file);
+    }
+
+    // Readme-ify # sections.
+    foreach($files as $file) {
+        fixSectionLinks($file);
+    }
+}
 
 // Find and replace any slashes `/` with dashes `-` in links, but not images.
 function replaceSlashesWithDashes($filename) {
@@ -35,27 +64,3 @@ function findFiles() {
     }
     return $return_array;
 }
-
-// Call all other functions from here.
-function main() {
-    // Get list of files.
-    $files = findFiles();
-
-    // Readme-ify internal links.
-    foreach($files as $file) {
-        replaceSlashesWithDashes($file);
-    }
-
-    // // GitHub-ify images.
-    // foreach($files as $file) {
-    //     hardcodeImagesToGitHub($file);
-    // }
-
-    // // Readme-ify # sections.
-    // foreach($files as $file) {
-    //     fixSectionLinks($file);
-    // }
-
-}
-
-main(); 
