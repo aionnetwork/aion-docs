@@ -25,11 +25,11 @@ IntelliJ and Maven work together to create a basic project template that you can
 8. Leave the Maven defaults selected and click **Next**.
 9. Click **Finish**.
 
-![Create a Project](/developers/tools/intellij-plugin/images/create-a-project.gif)
+![Create a Project](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/intellij-plugin/images/create-a-project.gif)
 
 Once the project has been created, you can have IntelliJ automatically import Maven projects for you by clicking on the pop-up in the bottom right of the screen.
 
-![Auto-Import Maven Projects](/developers/tools/intellij-plugin/images/auto-import-maven-projects.png)
+![Auto-Import Maven Projects](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/intellij-plugin/images/auto-import-maven-projects.png)
 
 ## Initialize Project
 
@@ -40,7 +40,7 @@ This step pulls the `avm.jar` file that's going to run all your contracts locall
 
 You can also run this step by clicking on the pop-up that is shown after you create your project.
 
-![Run Initialize Pop-up](/developers/tools/intellij-plugin/images/run-initialize-popup.png)
+![Run Initialize Pop-up](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/intellij-plugin/images/run-initialize-popup.png)
 
 ## View your Contract
 
@@ -49,7 +49,7 @@ The Aion plugin creates a contract and unit tests for you by default. Within the
 - `main`: This is where the main logic of your application (ie your contracts) are stored.
 - `test`: Any tests you use are stored here. The Aion IntelliJ plugin creates some tests for you to use straight away.
 
-![Navigation Panel](/developers/tools/intellij-plugin/images/navigation-panel.png)
+![Navigation Panel](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/intellij-plugin/images/navigation-panel.png)
 
 To view your contract open `src` → `main` → `java` → the name of your project → `HelloAvm`. This is your contract. By default, it's just a simple _Hello World_ type contract with a few methods, including the `getString()` and `setString()` methods.
 
@@ -61,7 +61,7 @@ We're going to customize this contract a little bit, so you can have a taste of 
 2. Remove the `sayHello()` and `greet` functions. Make sure to remove their associated `@Callable` annotations too.
 3. Change the `myStr` variable to `String hasn't been set yet.`.
 
-![Change Contract](/developers/tools/intellij-plugin/images/change-contract.gif)
+![Change Contract](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/intellij-plugin/images/change-contract.gif)
 
 We're also going to rename the contract, so that it's called something more suitable:
 
@@ -69,7 +69,7 @@ We're also going to rename the contract, so that it's called something more suit
 2. Right click on the `HelloAvm.java` file, click **Refactor** → **Rename** and change it's name to `GetSet`.
 3. Open the `pom.xml` file and change `example.HelloAvm` to `example.GetSet`.
 
-![Rename Contract](/developers/tools/intellij-plugin/images/rename-contract.gif)
+![Rename Contract](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/intellij-plugin/images/rename-contract.gif)
 
 It is important that all three of these name changes are identical. The `pom.xml` file tells Maven which Java file to use. Java classes should always be within a file of the same name as the `public class`.
 
@@ -84,19 +84,19 @@ Since we removed the `sayHello()` function from our contract and rename the Java
 3. Remove the `testSayHello()` function from within the test class.
 4. On line `28` rename `example.HelloAvm` to `example.GetSet`.
 
-![Rename the Test Class](/developers/tools/intellij-plugin/images/rename-the-test-class.gif)
+![Rename the Test Class](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/intellij-plugin/images/rename-the-test-class.gif)
 
 Now that we've sorted that out, we can start running out tests! To run a test, just click on the `play` button next to the test function.
 
-![Running the testGetString() method](/developers/tools/intellij-plugin/images/test-getstring.gif)
+![Running the testGetString() method](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/intellij-plugin/images/test-getstring.gif)
 
 You can also set a breakpoint in your contract and run the test in _debug_ mode, which gives you more information on what's happening in the test.
 
-![Running the test in debug mode](/developers/tools/intellij-plugin/images/debug-getstring.gif)
+![Running the test in debug mode](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/intellij-plugin/images/debug-getstring.gif)
 
 Finally, you can run all the tests in the class at once by selecting the icon next to the class name.
 
-![Run all the tests](/developers/tools/intellij-plugin/images/run-all-tests.png)
+![Run all the tests](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/intellij-plugin/images/run-all-tests.png)
 
 ## Deploy to Local
 
@@ -106,7 +106,7 @@ Now we've made some basic changes and ran some tests, we're going try deploying 
 2. Click **Aion Virtual Machine** → **Embedded** → **Deploy**.
 3. Click **OK**.
 
-![Local Deployment Successful](/developers/tools/intellij-plugin/images/deploy-contract-local.gif)
+![Local Deployment Successful](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/intellij-plugin/images/deploy-contract-local.gif)
 
 And you're done. You've just compiled your contract and deployed it to the local kernel. It's that easy.
 
@@ -120,7 +120,7 @@ Let's try and call the contract we just deployed.
 
 You'll be able to see the results of the call in the terminal window.
 
-![Method Call Results](/developers/tools/intellij-plugin/images/method-call-results.png)
+![Method Call Results](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/intellij-plugin/images/method-call-results.png)
 
 Let's try setting a new string.
 
@@ -128,7 +128,7 @@ Let's try setting a new string.
 2. Click **Aion Virtual Machine** → **Embedded** → **Call**.
 3. Enter a new string into the `newStr` field.
 
-    ![Enter a New String](/developers/tools/intellij-plugin/images/set-string.png)
+    ![Enter a New String](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/intellij-plugin/images/set-string.png)
 
 4. Click **OK**.
 
@@ -162,7 +162,7 @@ First up, let's create an account.
 2. Click **Aion Virtual Machine** → **Remote** → **Create Account**.
 3. The terminal window will then print out both your _address_ and _private key_.
 
-    ![Public and Private Keys in IntelliJ](/developers/tools/intellij-plugin/images/public-private-key.png)
+    ![Public and Private Keys in IntelliJ](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/intellij-plugin/images/public-private-key.png)
 
 4. Highlight and copy the `Private Key`.
 5. Right-click anywhere within your contract, or on the top level folder in the navigation pane.

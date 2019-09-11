@@ -58,7 +58,7 @@ mvn aion4j:deploy -Dargs="-A 0xa04462684b510796c186d19abfa6929742f79394583d6efb1
 
 If you are using IntelliJ, add the `-Dargs` into the **Deployment Arguments** section, under the **Common** configurations tab.
 
-![Array Deployment Arguments](/developers/tools/maven-cli/images/array-deployment-arguments.png)
+![Array Deployment Arguments](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/maven-cli/images/array-deployment-arguments.png)
 
 ### Two Dimensional Arrays
 

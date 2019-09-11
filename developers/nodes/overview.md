@@ -13,7 +13,7 @@ There are three different components on the Aion network: nodes, kernels, and th
 
 Nodes are essentially a container for both the kernel and the AVM. Requests coming into a node first go to the kernel, using the JSON-RPC layer. JSON-RPC stands for _JavaScript Object Notation Remote Procedure Call_ and is an agreed-upon standard that allows different programs to interact with each other. The kernel then translates this request into _bytecode_, which is something that the AVM can understand. This translated-request is then passed off to the AVM that processes it and returns a response to the kernel. Finally, the kernel translates the response back into JSON-RPC and sends it out back to the user on the internet.
 
-![Diagram showing the relationship between nodes, kernels, and the AVM.](/developers/nodes/images/node-kernel-avm.png)
+![Diagram showing the relationship between nodes, kernels, and the AVM.](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/nodes/images/node-kernel-avm.png)
 
 ## Multiple Kernels
 

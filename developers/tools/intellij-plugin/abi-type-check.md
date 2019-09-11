@@ -18,7 +18,7 @@ public static BigDecimal exampleFunction() {
 }
 ```
 
-![Return Type Error](/developers/tools/intellij-plugin/images/return-type-error.png)
+![Return Type Error](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/intellij-plugin/images/return-type-error.png)
 
 ## Argument Type Error
 
@@ -32,7 +32,7 @@ public static String exampleFunction(BigDecimal foo) {
 }
 ```
 
-![Argument Type Error](/developers/tools/intellij-plugin/images/argument-type-error.png)
+![Argument Type Error](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/intellij-plugin/images/argument-type-error.png)
 
 ## Private Functions
 

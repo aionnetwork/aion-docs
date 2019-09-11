@@ -22,7 +22,7 @@ example/
 
 Both the `web3.min.js` file and the `script.js` file are included at the bottom of the `index.html` file. The `web3.min.js` file is included first so that any subsequent JavaScript in the `script.js` file can have access to the `Web3` object created by the `web3.min.js` file. Once the `script.js` file has access to this `Web3` object it can interact with an Aion node, which in turn can interact with the rest of the blockchain.
 
-![A diagram of a webpage using the Web3 object, supplied by the Aion Web3.js framework.](/developers/apis/web3-js/images/web3-diagram.png)
+![A diagram of a webpage using the Web3 object, supplied by the Aion Web3.js framework.](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/apis/web3-js/images/web3-diagram.png)
 
 ## ABI Binding
 

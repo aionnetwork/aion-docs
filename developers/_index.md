@@ -44,7 +44,7 @@ This section comes in two phases: loading an account with some test coins, and a
 
 ## Call
 
-Now that everything's stored on the network, we can ask the blockchain what the value of the `myStr` variable is. If everything went correctly, it should be the value that you set back in the [Write & Compile step](#write-and-compile).
+Now that everything's stored on the network, we can ask the blockchain what the value of the `myStr` variable is. If everything went correctly, it should be the value that you set back in the [Write & Compile step](#section-write-and-compile).
 
 > Now that your application is on the blockchain you can call it! Click the call button to see the response from the network.
 

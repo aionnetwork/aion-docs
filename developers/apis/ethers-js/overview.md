@@ -32,7 +32,7 @@ example/
 
 Both the `ethers.min.js` file and the `script.js` file are included at the bottom of the `index.html` file. The `ethers.min.js` file is included first so that any subsequent JavaScript in the `script.js` file can have access to the `ethers` object created by the `ethers.min.js` file. Once the `script.js` file has access to this `ethers` object it can interact with an Aion node, which in turn can interact with the rest of the blockchain.
 
-![A diagram of a webpage using the ethers object, supplied by the ethers.js framework.](/developers/apis/ethers-js/images/ethers-diagram.png)
+![A diagram of a webpage using the ethers object, supplied by the ethers.js framework.](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/apis/ethers-js/images/ethers-diagram.png)
 
 ## API Documentation
 

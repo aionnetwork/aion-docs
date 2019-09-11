@@ -6,7 +6,7 @@ next_page: /developers/tools/intellij-plugin/transfer
 weight: 800
 ---
 
-The `get-balance` command is split into two section, [Default](#default-account) and [Specific](#specific-account).
+The `get-balance` command is split into two section, [Default](#default-account) and [Specific](#section-specific-account).
 
 ## Default Account
 
@@ -16,7 +16,7 @@ Get the balance of the default account.
 
 Run this command by right clicking anywhere in a contract and selecting **Aion Virtual Machine** → **Embedded** → **Get Balance (Default)**. The results are printed in the Maven Goal terminal.
 
-![Get Default Balance Embedded](/developers/tools/intellij-plugin/images/get-balance-default-embedded.gif)
+![Get Default Balance Embedded](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/intellij-plugin/images/get-balance-default-embedded.gif)
 
 This balance is reset back to ~99999997205856*10^-18 `AION` every time you compile a contract.
 
@@ -38,7 +38,7 @@ Get the balance of a specific account.
 
 Run this command by right clicking anywhere in a contract and selecting **Aion Virtual Machine** → **Embedded** → **Get Balance (Default)**. Then enter the address you want to find the balance of in the **Enter Account** window that is shown. The results are printed in the Maven Goal terminal.
 
-![Get Default Balance Embedded](/developers/tools/intellij-plugin/images/get-balance-account-window-embedded.png)
+![Get Default Balance Embedded](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/intellij-plugin/images/get-balance-account-window-embedded.png)
 
 Only accounts within the embedded AVM will show their balance. Accounts on the Mainnet or Testnet (Mastery) are not known to the embedded AVM.
 

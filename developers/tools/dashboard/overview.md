@@ -6,13 +6,13 @@ table_of_contents: true
 
 ## Landing Page
 
-The [Landing Page](https://mainnet.aion.network/#/dashboard) is the home of the Aion Dashboard. It provides the current view of recent blocks and transactions on the network, as well as some current statistics. You can reach this page at any time by clicking the Aion logo on the top left.
+The [Landing Page](https://mainnet.aion.network/#section-/dashboard) is the home of the Aion Dashboard. It provides the current view of recent blocks and transactions on the network, as well as some current statistics. You can reach this page at any time by clicking the Aion logo on the top left.
 
 ### Heads-up Display
 
 The _Heads-up Display_ shows some of the Network's current statistics. It is split into two sections: Network and Transaction.
 
-![Dashboard HUD](/developers/tools/dashboard/images/dashboard-hud.png)
+![Dashboard HUD](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/dashboard/images/dashboard-hud.png)
 
 The **Network** section contains:
 
@@ -31,29 +31,29 @@ The **Transaction** section contains:
 
 The **Recent Blocks** section displays a list containing the four of the most recent blocks proposed in addition to the block that is currently being proposed.
 
-![Recent Blocks](/developers/tools/dashboard/images/recent-blocks.png)
+![Recent Blocks](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/dashboard/images/recent-blocks.png)
 
 Each list object contains the:
 
 - Block number
-- Proposer's address: direct to the respective [**Accounts Details Page**](#Accounts) when clicked
+- Proposer's address: direct to the respective [**Accounts Details Page**](#section-Accounts) when clicked
 - Number of transactions
 - Time taken to propose this block
 
-You can click on the blue arrow to go to the respective [**Block Details Page**](#Blocks) for the block. Also, click on **View All** to see a longer list.
+You can click on the blue arrow to go to the respective [**Block Details Page**](#section-Blocks) for the block. Also, click on **View All** to see a longer list.
 
 ### Recent Transactions
 
 The **Recent Transactions** section displays a list containing the ten most recent transactions on the network.
 
-![Recent Transactions](/developers/tools/dashboard/images/recent-transactions.png)
+![Recent Transactions](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/dashboard/images/recent-transactions.png)
 
 Each list object includes:
 
 - Transaction age: how long ago the transaction was proposed
-- Transaction Value: the amount of Aion sent within the transaction - direct to the respective [**Transaction Details Page**](#Transactions) when clicked
-- From Address: direct to the respective [**Accounts Details Page**](#Accounts) when clicked
-- To Address: direct to the respective [**Accounts Details Page**](#Accounts) when clicked
+- Transaction Value: the amount of Aion sent within the transaction - direct to the respective [**Transaction Details Page**](#section-Transactions) when clicked
+- From Address: direct to the respective [**Accounts Details Page**](#section-Accounts) when clicked
+- To Address: direct to the respective [**Accounts Details Page**](#section-Accounts) when clicked
 
 You can click on **View All** to see a longer list.
 
@@ -65,19 +65,19 @@ The **Navigation Bar** sits at the top of the window at all times. It contains s
 
 The **Explorer** function is a dropdown menu that allows you to browse lists of each object type on the network. After selecting the **Account** type, for example, you are provided with a list of accounts in which you can sort in various ways.
 
-![Explorer](/developers/tools/dashboard/images/explorer.gif)
+![Explorer](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/dashboard/images/explorer.gif)
 
 ### Analytics
 
 The **Analytics** function is a dropdown menu that features various charts relevant to the network such as **Hash Power** over time and **Transactions per hour**
 
-![Analytics](/developers/tools/dashboard/images/analytics.gif)
+![Analytics](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/dashboard/images/analytics.gif)
 
 ### Switch Network
 
 The **Mainnet** isn't the only network featured on the dashboard. By clicking on the **Mainnet** dropdown menu you can switch between the dashboards for other networks, such as the **Mastery** network, Aion's testnet.
 
-![Switch Network](/developers/tools/dashboard/images/switch-network.gif)
+![Switch Network](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/dashboard/images/switch-network.gif)
 
 For those with sensitive eyes, you can find the **dark mode** toggle here as well under the **explorer settings**.
 
@@ -85,7 +85,7 @@ For those with sensitive eyes, you can find the **dark mode** toggle here as wel
 
 The **Search Bar** allows you to easily find any object on the network whether it be an **Account**, **Transaction**, **Block**, etc.
 
-![Input Contract Address in Search](/developers/tools/dashboard/images/input-contract-address.gif)
+![Input Contract Address in Search](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/dashboard/images/input-contract-address.gif)
 
 A detailed guide on the search function can be found [here](tools-dashboard-usingSearchFunction.md).
 
@@ -104,15 +104,15 @@ The upper part of the **Account Details** page contains the following:
 - Balance of token currently viewing
 - Nonce
 
-![Account Details Upper](/developers/tools/dashboard/images/account-details-upper.png)
+![Account Details Upper](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/dashboard/images/account-details-upper.png)
 
 Here, you can click the **Aion (Default)** dropdown and select the ATS token that you would like to see info on.
 
-![Change Token View](/developers/tools/dashboard/images/change-token-view.gif)
+![Change Token View](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/dashboard/images/change-token-view.gif)
 
 The lower part of the **Account Details** page contains lists of the account's transactions, mind blocks, and token transfers.
 
-![Account Details Lower](/developers/tools/dashboard/images/account-details-lower.gif)
+![Account Details Lower](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/dashboard/images/account-details-lower.gif)
 
 ### Blocks
 
@@ -131,7 +131,7 @@ The **Block Details** page contains the following:
 - Nonce
 - Included Transactions
 
-![Block Details](/developers/tools/dashboard/images/block-details.png)
+![Block Details](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/dashboard/images/block-details.png)
 
 ### Contracts
 
@@ -146,11 +146,11 @@ The upper part of the **Contract Details** page contains the following:
 - Nonce
 - Contract Type
 
-![Contract Details Upper](/developers/tools/dashboard/images/contract-details-upper.png)
+![Contract Details Upper](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/dashboard/images/contract-details-upper.png)
 
 The lower part of the **Contract Details** page contains lists of the contract's transactions and events.
 
-![Contract Details Lower](/developers/tools/dashboard/images/contract-details-lower.png)
+![Contract Details Lower](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/dashboard/images/contract-details-lower.png)
 
 ### Tokens
 
@@ -166,7 +166,7 @@ The upper part of the **Token Details** page contains the following:
 - Total Supply
 - Liquid Supply
 
-![Token Details Upper](/developers/tools/dashboard/images/token-details-upper.png)
+![Token Details Upper](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/dashboard/images/token-details-upper.png)
 
 The lower part of the **Token Details** page contains lists of the Token's transfers and holders.
 
@@ -188,4 +188,4 @@ The upper part of the **Transaction Details** page contains the following:
 - To Address
 - Input Data
 
-![Transaction Details Upper](/developers/tools/dashboard/images/transaction-details.png)
+![Transaction Details Upper](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/dashboard/images/transaction-details.png)

@@ -19,11 +19,11 @@ Follow these steps to create a sample project. You can delete the sample classes
 7. Click **Finish**.
 8. An Import popup will appear at the bottom right of the screen once everything has loaded. Click **Enable Auto-Import**.
 
-![Maven Import Popup](/developers/tools/intellij-plugin/images/maven-import-popup.png)
+![Maven Import Popup](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/intellij-plugin/images/maven-import-popup.png)
 
 Maven will start building your project. You should be able to see this in the console window within IntelliJ. This process takes a few seconds. Once it's finished you should be able to see the following hierarchy in the explorer pane.
 
-![Explorer Pane](/developers/tools/intellij-plugin/images/explorer-pane.jpg)
+![Explorer Pane](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/intellij-plugin/images/explorer-pane.jpg)
 
 ### Initialize Project
 
@@ -32,7 +32,7 @@ Since the plugin is based of the Maven toolset, each project needs to be initial
 1. Open the `pom.xml` file if it isn't open already.
 2. Right click anywhere in the file and click **Aion Virtual Machine** → **Run Initialize**.
 
-![Run Initialize](/developers/tools/intellij-plugin/images/run-initialize.png)
+![Run Initialize](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/intellij-plugin/images/run-initialize.png)
 
 Alternatively, you can run `mvn initialize` from the built-in terminal in IntelliJ.
 

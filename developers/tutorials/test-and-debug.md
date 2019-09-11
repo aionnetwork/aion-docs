@@ -224,7 +224,7 @@ public void testGetOwnerAddress() {
 
 Then we can run the test:
 
-![test-get-owner](/developers/basics/test-and-debug/images/test-get-owner.gif)
+![test-get-owner](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/basics/test-and-debug/images/test-get-owner.gif)
 
 Great, it passed!
 
@@ -258,7 +258,7 @@ public void testTransferOwnership() {
 
 Then if we run the test:
 
-![test-transfer-ownership](/developers/basics/test-and-debug/images/test-transfer-ownership.gif)
+![test-transfer-ownership](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/basics/test-and-debug/images/test-transfer-ownership.gif)
 
 The output shows that the test is passed because the call is failed as expected. Since we turned on the debug mode, we can see that the transaction is being reverted due to a revert exception in the AVM caused by `avm_require`:
 
@@ -289,10 +289,10 @@ We will use `testTransferOwnership` as an example. Let's see if the transaction 
 
 We first need to set the breakpoint in the contract:
 
-![set-up](/developers/basics/test-and-debug/images/set-one-break-point.gif)
+![set-up](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/basics/test-and-debug/images/set-one-break-point.gif)
 
 Then, we can `debug` the `testTransferOwnership`:
 
-![fail](/developers/basics/test-and-debug/images/fail-requirement.gif)
+![fail](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/basics/test-and-debug/images/fail-requirement.gif)
 
 We can see that `transferOwnership` is being called, and `Blockchain.require` is being checked and it fails since the caller address does not match the owner address.

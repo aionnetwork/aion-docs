@@ -12,13 +12,13 @@ We've partnered with Blockdaemon and Nodesmith to help you get on the Aion netwo
 
 ### Nodesmith
 
-[![Nodesmith Logo](/developers/nodes/images/nodesmith-logo.png)](https://nodesmith.io/)
+[![Nodesmith Logo](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/nodes/images/nodesmith-logo.png)](https://nodesmith.io/)
 
 Nodesmith hosts several shared nodes that allow you to get connected to Aion, Ethereum, and IPFS in minutes. The host and manage scalable blockchain node infrastructure, so you can focus on building the features of your decentralized applications. All this, for free.
 
 ### Blockdaemon
 
-[![Blockdaemon Logo](/developers/nodes/images/blockdaemon-logo.png)](https://blockdaemon.com/)
+[![Blockdaemon Logo](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/nodes/images/blockdaemon-logo.png)](https://blockdaemon.com/)
 
 Spin up your own private node incredibly quickly. Instead of having to deal with compiling your own package and hosting your own hardware, Blockdaemon allows you to spin up a test net in minutes and validate your smart contract.
 

@@ -14,7 +14,7 @@ mvn archetype:generate -DarchetypeGroupId=org.aion4j -DarchetypeArtifactId=avm-a
 
 The code snippet above uses the `LATEST` tag for the archetype version. This will download and use the latest archetype version available on the Apache Maven repository. You can also find the latest archetype version on the [Maven CLI Aion4j plugin repository](https://github.com/bloxbean/avm-archetype).
 
-![Archetype Version Screenshot](/developers/tools/maven-cli/images/bloxbean-archetype-version.png)
+![Archetype Version Screenshot](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/maven-cli/images/bloxbean-archetype-version.png)
 
 ## GroupId, ArtifactId, Version, and Package
 
@@ -25,7 +25,7 @@ The archetype generator will ask you for a `groupId`, `artifactid`, `version`, a
 | `groupId` | Uniquely identifies your project across all projects. Must follow Apache's [reverse domain naming control](https://maven.apache.org/guides/mini/guide-naming-conventions.html) convention. | `org.apache.maven`, `org.example.commons` |
 | `artifactId` | The name of the `.jar` file without version. | `commons-math`, `hello-world` |
 | `version` | Which version of the project you're building. You can choose any typical version with numbers and dots. | `0.0.1`, `19.5`, `5.1.3-NIGHTLY` |
-| `package` | [Apache is very specific about what to use here](https://docs.oracle.com/javase/specs/jls/se6/html/packages.html#7.7). However for the purposes of this HelloWorld project, the package name doesn't really matter. | `HelloWorld`, `gov.whitehouse.socks.mousefinder`, `edu.cmu.cs.bovik.cheese` |
+| `package` | [Apache is very specific about what to use here](https://docs.oracle.com/javase/specs/jls/se6/html/packages.html#section-7.7). However for the purposes of this HelloWorld project, the package name doesn't really matter. | `HelloWorld`, `gov.whitehouse.socks.mousefinder`, `edu.cmu.cs.bovik.cheese` |
 
 Here's an example:
 

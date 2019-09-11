@@ -19,7 +19,7 @@ The installation process for the Aion IntelliJ plugin is incredibly simple, than
 5. Click **Restart IDE** → **Restart**.
 6. The plugin is now installed.
 
-![Installing the Aion IntelliJ Plugin](/developers/tools/intellij-plugin/images/standard-install.gif)
+![Installing the Aion IntelliJ Plugin](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/intellij-plugin/images/standard-install.gif)
 
 ## Bleeding Edge
 
@@ -35,4 +35,4 @@ Some users prefer to have the very latest build possible, regardless of how stab
 8. Click **Restart IDE** → **Restart**.
 9. The plugin is now installed.
 
-![Installing the Aion IntelliJ Plugin](/developers/tools/intellij-plugin/images/bleeding-edge-install.gif)
+![Installing the Aion IntelliJ Plugin](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/intellij-plugin/images/bleeding-edge-install.gif)

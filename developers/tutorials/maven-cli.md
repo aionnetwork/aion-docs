@@ -32,7 +32,7 @@ version: 1.0-SNAPSHOT
 package: contract
 ```
 
-![create-project](/developers/tools/maven-cli/images/create-project.gif)
+![create-project](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/maven-cli/images/create-project.gif)
 
 ## Initialize Project
 

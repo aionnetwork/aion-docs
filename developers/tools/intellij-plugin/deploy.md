@@ -12,11 +12,11 @@ Compile and deploy the contract.
 
 Run this command by right clicking anywhere on the contract and selecting **Aion Virtual Machine** → **Embedded** → **Deploy**.
 
-![Deploy to Embedded AVM](/developers/tools/intellij-plugin/images/deploy-to-embedded.gif)
+![Deploy to Embedded AVM](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/intellij-plugin/images/deploy-to-embedded.gif)
 
 You should see a notice when the contract has successfully deployed:
 
-![Successful Deployment Notice](/developers/tools/intellij-plugin/images/successful-deployment-notice.png)
+![Successful Deployment Notice](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/tools/intellij-plugin/images/successful-deployment-notice.png)
 
 ## Remote
 
