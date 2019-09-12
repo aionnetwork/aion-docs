@@ -20,10 +20,10 @@ import java.math.BigInteger;
 
 public class HybridStorage
 {
-    // Create an empty address variable that will be filled later.
+    // Create an address object to hold the owner of this contract.
     private static Address owner;
 
-    // Create an empty carStock array.
+    // Create an empty carStock Map object.
     private static final AionMap<String, Integer> carStock = new AionMap<>();
 
     static {
@@ -31,45 +31,45 @@ public class HybridStorage
         owner = Blockchain.getCaller();
     }
 
-    // Add a new car to the array.
+    // Add a new car to the Map object.
     @Callable
     public static void addCarStock(String make, int currentStock) {
         onlyOwner();
 
-        // Check that the carStock array doesn't already contain this make.
+        // Check that the carStock Map object doesn't already contain this make.
         Blockchain.require(!carStock.containsKey(make));
 
-        // Put the car into the carStock array.
+        // Put the car into the carStock Map object.
         carStock.put(make, currentStock);
     }
 
-    // Update a car already in the array.
+    // Update a car already in the Map object.
     @Callable
     public static void updateCarStock(String make, int newStock) {
         onlyOwner();
 
-        // Check that the supplied $make already exists in the carStock array.
+        // Check that the supplied $make already exists in the carStock Map object.
         Blockchain.require(carStock.containsKey(make));
 
         // Update the map using make as the key.
         carStock.put(make, newStock);
     }
 
-    // Remove a car from the array.
+    // Remove a car from the Map object.
     @Callable
     public static void removeCarMake(String make) {
         onlyOwner();
         carStock.remove(make);
     }
 
-    // Return an item from the array using make as the key.
+    // Return an item from the Map object using make as the key.
     @Callable
     public static int getCarStock(String make, String model) {
         Blockchain.require(carStock.containsKey(make));
         return carStock.get(make);
     }
 
-    // Add car information about a car to the vm storage.
+    // Add car information about a car to the object graph.
     @Callable
     public static void addPurchaseInfo(long orderID, String customerID, String stockNumber, int price){
         onlyOwner();
@@ -83,11 +83,11 @@ public class HybridStorage
                 .putInt(price)
                 .getArray();
 
-        // Add the newOrderInfo byte array into the vm storage.
+        // Add the newOrderInfo byte array into the object graph.
         Blockchain.putStorage(AionBuffer.allocate(32).put32ByteInt(BigInteger.valueOf(orderID)).getArray(),newOrderInfo);
     }
 
-    // Get an order from the byte array stored in the vm storage.
+    // Get an order from the byte array stored in the object graph.
     @Callable
     public static String getOrderInformation(long orderID) {
         // Grab the correct array item by using the orderId as the key.
