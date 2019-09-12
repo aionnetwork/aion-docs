@@ -52,7 +52,11 @@ public class ClinitExample {
 
 You can initialize contract variables by passing in arguments while you deploy your smart contract. To do that, you can use either `@Initializable fields` (in the first tab) or an [**ABIDecoder**](fundamentals-packages-abi-#section-section-abidecoder) to collect the data (in the second tab).
 
+<<<<<<< HEAD:developers/fundamentals/contracts/initialization.md
 ### [Using @Initializable field](fundamentals-avm-concepts-initializable-fields-)
+=======
+### [Using @Initializable field](/developers/fundamentals/aion-virtual-machine/initializable-fields/)
+>>>>>>> dev:developers/fundamentals/writing-contracts/initialization.md
 
 Annotating variables with `@Initializable`  will collect the data that was passed into the contract upon deployment.
 

@@ -4,7 +4,11 @@ Description: Java smart contracts are able to interact with other Java contracts
 table_of_contents: true
 ---
 
+<<<<<<< HEAD:developers/fundamentals/contracts/contract-to-contract.md
 > Note: Contract-to-contract calls still follow the same rules as regular contract calls. See [Java Contract Fundamentals](fundamentals-avm-concepts-callable-functions-) section for more information.
+=======
+> Note: Contract-to-contract calls still follow the same rules as regular contract calls. See [Java Contract Fundamentals](/developers/fundamentals/aion-virtual-machine/callable-functions/) section for more information.
+>>>>>>> dev:developers/fundamentals/writing-contracts/contract-to-contract.md
 
 ## Example Contracts
 

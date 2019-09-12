@@ -79,7 +79,11 @@ To view your contract go to `src` → `main` → `java` → `Your package name` 
 
 ## Edit your Contract
 
+<<<<<<< HEAD
 The sample contract you get from contains for [`@Callable`](fundamentals-avm-concepts-callable-functions-) function, `sayHello`, `greet`, `getString` and `setString`. For demonstration purpose, let's remove `sayHello` and `greet`. Now our contract is a basic `setter/getter` contract.
+=======
+The sample contract you get from contains for [`@Callable`](/developers/fundamentals/aion-virtual-machine/callable-functions/) function, `sayHello`, `greet`, `getString` and `setString`. For demonstration purpose, let's remove `sayHello` and `greet`. Now our contract is a basic `setter/getter` contract.
+>>>>>>> dev
 
 ```java
 package contract;

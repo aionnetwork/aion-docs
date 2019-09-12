@@ -36,7 +36,11 @@ public static String exampleFunction(BigDecimal foo) {
 
 ## Private Functions
 
+<<<<<<< HEAD
 Restricted variable types (those not listed in the [Variable Types](fundamentals-avm-concepts-abi-types) section) can be used freely between `private` functions, and can be fed into `public` functions.
+=======
+Restricted variable types (those not listed in the [Variable Types](/developers/fundamentals/aion-virtual-machine/abi-types) section) can be used freely between `private` functions, and can be fed into `public` functions.
+>>>>>>> dev
 
 ```java
 private static BigDecimal setBigDecimal()) {
