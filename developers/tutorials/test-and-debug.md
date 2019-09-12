@@ -128,7 +128,7 @@ public void deployContract() {...}
 
 Then we will get the bytes that represent the contract jar, along with the deployment arguments in byte[] if required.
 
-Use [ABIStreamingEnocder](/developers/fundamentals/packages/abi) to encode the deployment arguments:
+Use [ABIStreamingEnocder](/developers/fundamentals/aion-packages/abi) to encode the deployment arguments:
 
 ```java
 byte[] deploymentArguments = encoder.encodeOneString("OwnershipTransferred").encodeOneString("Jennifer").toBytes();

@@ -2,7 +2,7 @@
 title: Callable Functions
 description: Mark a function as entry point to the contract.
 table_of_contents: true
-next_page: /developers/fundamentals/avm-concepts/fallback-functions/
+next_page: /developers/fundamentals/aion-virtual-machine/fallback-functions/
 ---
 
 In order for a function or method to be called from **outside** the contract (by a user on the blockchain, or from another contract) it needs to be annotated as `@Callable`.
@@ -10,7 +10,7 @@ In order for a function or method to be called from **outside** the contract (by
 > **Important:**
 >
 > - A `@Callable` function must be **public** and **static**.
-> - `Return type` and `method arguments type` must be a supported [AVM ABI type](/developers/fundamentals/avm-concepts/abi-types/).
+> - `Return type` and `method arguments type` must be a supported [AVM ABI type](/developers/fundamentals/aion-virtual-machine/abi-types/).
 
 ```java
 @Callable
