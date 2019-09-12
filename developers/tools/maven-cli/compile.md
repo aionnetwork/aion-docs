@@ -36,10 +36,6 @@ The class you want to compile should be listed within the `contract.main.class` 
 
 If your contract successfully compiles you will find three files under the project's `target` folder:
 
-<<<<<<< HEAD
 - `original-*.jar`: In the build process, the AVM verifies all the classes used in the contract are available in the [JCL Whitelist](fundamentals-avm-concepts-jcl-whitelist) and all the test classes pass.  
-=======
-- `original-*.jar`: In the build process, the AVM verifies all the classes used in the contract are available in the [JCL Whitelist](/developers/fundamentals/aion-virtual-machine/jcl-whitelist) and all the test classes pass.  
->>>>>>> dev
 - `*.jar`: The `.jar` file that will be deployed to the network. There is some post-processing that happens to the `original-*.jar` to create this `.jar` file, including processing the `@Initializable` and `@Callable` annotations, and removing unused classes according to the class optimizer.
 - `*.abi`: This file is the ABI for the application. It defines the callable functions within the application, as well as any arguments they take.
