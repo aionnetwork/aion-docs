@@ -26,12 +26,12 @@ We focus our time and energy on these problems so that we can serve our ultimate
 Opening the true potential of smart contracts, Aion has decided to go into the direction of releasing the Aion Virtual Machine (based on the JVM). Aion now supports Java smart contracts which makes it easy to:
 
 - Write robust code due to the ability to construct complex user-defined types.
-- Combined with the compiler (embedded [AVM](/developers/fundamentals/aion-virtual-machine)) immediately verifying contracts.
+- Combined with the compiler (embedded [AVM](fundamentals-aion-virtual-machine)) immediately verifying contracts.
 - IDEs being able to provide code completion and debugging processes.
 
 This doesn’t even begin to tap into the treasure trove of open source tools which have grown around the Java ecosystem, many of which can be applied to this environment to improve quality and velocity.
 
-Quality strengths of the [AVM](/developers/fundamentals/aion-virtual-machine):
+Quality strengths of the [AVM](fundamentals-aion-virtual-machine):
 
 - **Reliability & Maturity**: The AVM uses the JIT compiler which optimizes the DApp code. It also features multi-threading, allowing increased throughput via concurrent transaction execution as opposed to most blockchain VMs.
 - **Developer Friendly:** The Java-based AVM leverages the entire Java tooling ecosystem, making developer onboarding and experience extremely streamlined. You get the full developer package including the compiler and IDE straight out of the box! That said, the AVM taps into a well-established community that has claimed the top spot for the #1 language (Java) in the past few years.
@@ -44,7 +44,7 @@ Read more about the direction of utilizing the Java Virtual Machine for the AVM:
 ## Features
 
 - **Distributed Network powered by Proof of Work:** The Aion Platform is powered by a distributed network with an optimized modification of the equihash proof of work consensus algorithm.
-- **Write and Deploy Java applications**: [Deploy your first Java Smart Contract!](/developers/tutorials/intellij-plugin).
+- **Write and Deploy Java applications**: [Deploy your first Java Smart Contract!](tutorials-intellij-plugin).
 - **Extensive Documentation:** Written in English, Chinese, and German.
 - **Ecosystem of third party developer tools**: For a recommended environment setup and list of tools and plugins to get started, you can view our up to date list of tooling by category.
 - **Free shared hosted node infrastructure**:  When prototyping, and deploying contracts to both the Mastery test network or Main network, you can use free shared nodes powered by Nodesmith.

@@ -6,7 +6,7 @@ next_page: /developers/tools/intellij-plugin/transfer
 weight: 800
 ---
 
-The `get-balance` command is split into two section, [Default](#default-account) and [Specific](#section-specific-account).
+The `get-balance` command is split into two section, [Default](#default-account) and [Specific](#section-section-specific-account).
 
 ## Default Account
 

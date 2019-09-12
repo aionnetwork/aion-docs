@@ -35,7 +35,7 @@ These options manage NRG prices for deploying and interacting with contracts on 
 | NRG Price (Deploy) | Fee charged per NRG transaction. | `100000000000` |  |
 | NRG (Contract Transaction) | The maximum amount of NRG the sender is willing to pay for the transaction. | `2000000` |  |
 | NRG Price (Contract Transaction) | Free charged per NRG transaction. | `100000000000` |  |
-| Maven Profile for Remote Deployment | Tells Maven which profile you wish to use, as specified in your `pom.xml` file. [See Changing Class Name](#section-changing-class-name) for more information. | | `alt-profile`, `production`, `dev` |
+| Maven Profile for Remote Deployment | Tells Maven which profile you wish to use, as specified in your `pom.xml` file. [See Changing Class Name](#section-section-changing-class-name) for more information. | | `alt-profile`, `production`, `dev` |
 | Get Receipt | Specify whether you want the plugin to return transaction receipts from the node. | Yes | |
 
 ### Embedded AVM

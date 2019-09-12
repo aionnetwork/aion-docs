@@ -14,11 +14,11 @@ These examples show how to use Ethers.js as a frontend JavaScript framework for 
 
 ## IntelliJ Plugin
 
-These examples are specific to using the IntelliJ IDE with the Aion4j plugin. These examples may be similar to [Maven CLI](#maven-cli), and [Contract](#section-contracts) examples, but have been built using the IntelliJ IDE so they might have a different folder structure. They have been designed to be directly imported into IntelliJ.
+These examples are specific to using the IntelliJ IDE with the Aion4j plugin. These examples may be similar to [Maven CLI](#maven-cli), and [Contract](#section-section-contracts) examples, but have been built using the IntelliJ IDE so they might have a different folder structure. They have been designed to be directly imported into IntelliJ.
 
 ## Maven CLI
 
-These examples are specific to using the Maven CLI. These examples may be similar to [IntelliJ Plugin](#maven-cli), and [Contract](#section-contracts) examples, but have been built using the Maven CLI so they might have a different folder structure. Projects within this section have been designed to be directly ran using the Maven CLI.
+These examples are specific to using the Maven CLI. These examples may be similar to [IntelliJ Plugin](#maven-cli), and [Contract](#section-section-contracts) examples, but have been built using the Maven CLI so they might have a different folder structure. Projects within this section have been designed to be directly ran using the Maven CLI.
 
 ## Web3J
 

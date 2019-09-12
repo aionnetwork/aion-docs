@@ -47,7 +47,7 @@ From there on, the nodes start the process again, looking for valid transactions
 
 We can consider PayPal a _centralized_ system, as to get money from Alice to Joe, both need to interact through PayPal. We can consider a more _classic_ bank transfer _decentralized_: if Joe wants to send to Alice, he gives an order to his bank, which then contacts Alice's bank to credit her account.
 
-![The different types of networks.](/developers/fundamentals/blockchain-concepts/images/distributed-system.png)
+![The different types of networks.](https://raw.githubusercontent.com/aionnetwork/docs/master/developers/fundamentals/blockchain-concepts/images/distributed-system.png)
 
 A blockchain, however, is _distributed_. There is not one party like PayPal, nor are there different parties with uneven roles likes banks and clients. Everyone running a node is equal in the system, and the settlement of balances and state are handled by consensus.
 
