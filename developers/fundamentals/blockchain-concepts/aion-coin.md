@@ -19,7 +19,7 @@ The AION Coin has four main purposes:
 There are several exchanges that hold and trade AION on their platform. Relatively up-to-date lists of exchanges can be found on:
 
 - [Coingecko](https://www.coingecko.com/en/coins/aion)
-- [CoinMarketCap](https://coinmarketcap.com/currencies/aion/#section-markets)
+- [CoinMarketCap](https://coinmarketcap.com/currencies/aion/#markets)
 - [Cryptocompare](https://www.cryptocompare.com/coins/aion/markets)
 - [Changelly](https://cryptospaceguides.com/changelly-guide/)
 

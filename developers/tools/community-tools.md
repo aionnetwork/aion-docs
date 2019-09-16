@@ -52,7 +52,7 @@ Quickly spin up and connect to an Aion node with web3 built in. All nodes are fr
 
 These tools help you to monitor the Aion network as you develop your dApps.
 
-### [Aion Explorer](https://mainnet.aion.network/#section-section-/dashboard)
+### [Aion Explorer](https://mainnet.aion.network/#/dashboard)
 
 The Aion Blockchain Explorer service, hosted by the Aion Foundation.
 

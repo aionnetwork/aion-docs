@@ -4,7 +4,7 @@ description: You can use Blockchain.require() to add requirements or restriction
 table_of_contents: true
 ---
 
-You can view further documentation into [Blockchain.require()](https://avm-api.aion.network/avm/blockchain#section-section-require%28boolean%29) on the [AVM API website](https://avm-api.aion.network/).
+You can view further documentation into [Blockchain.require()](https://avm-api.aion.network/avm/blockchain#require%28boolean%29) on the [AVM API website](https://avm-api.aion.network/).
 
 ## Example Contract
 
