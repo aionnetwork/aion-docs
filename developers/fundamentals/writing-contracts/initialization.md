@@ -50,7 +50,7 @@ public class ClinitExample {
 
 ## Initialize variables
 
-You can initialize contract variables by passing in arguments while you deploy your smart contract. To do that, you can use either `@Initializable fields` (in the first tab) or an [**ABIDecoder**](fundamentals-packages-abi-#section-abidecoder) to collect the data (in the second tab).
+You can initialize contract variables by passing in arguments while you deploy your smart contract. To do that, you can use either `@Initializable fields` (in the first tab) or an [**ABIDecoder**](fundamentals-packages-abi-#abidecoder) to collect the data (in the second tab).
 
 ### [Using @Initializable field](fundamentals-avm-concepts-initializable-fields-)
 
@@ -66,7 +66,7 @@ private static int[] intArray;
 
 ### Using ABIDecoder
 
-To capture deployment arguments you can an `ABIDecoder` object and use [Blockchain.getData()](https://avm-api.aion.network/avm/blockchain#section-getData%28%29) method to get the data that is passed into the contract upon deployment. You must decode those variables in the **exact same order** as they were passed in.
+To capture deployment arguments you can an `ABIDecoder` object and use [Blockchain.getData()](https://avm-api.aion.network/avm/blockchain#getData%28%29) method to get the data that is passed into the contract upon deployment. You must decode those variables in the **exact same order** as they were passed in.
 
 ```java
 static {

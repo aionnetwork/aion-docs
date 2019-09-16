@@ -4,7 +4,7 @@ description: A log is used to store arguments and data in a transaction receipt 
 table_of_contents: true
 ---
 
-You can view further documentation into [Blockchain.require()](https://avm-api.aion.network/avm/blockchain#section-log%28byte%5B%5D%29) on the [AVM API website](https://avm-api.aion.network/).
+You can view further documentation into [Blockchain.require()](https://avm-api.aion.network/avm/blockchain#log%28byte%5B%5D%29) on the [AVM API website](https://avm-api.aion.network/).
 
 ## Example Contract
 

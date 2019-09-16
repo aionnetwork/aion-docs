@@ -6,7 +6,7 @@ table_of_contents: true
 
 ## Landing Page
 
-The [Landing Page](https://mainnet.aion.network/#section-/dashboard) is the home of the Aion Dashboard. It provides the current view of recent blocks and transactions on the network, as well as some current statistics. You can reach this page at any time by clicking the Aion logo on the top left.
+The [Landing Page](https://mainnet.aion.network/#/dashboard) is the home of the Aion Dashboard. It provides the current view of recent blocks and transactions on the network, as well as some current statistics. You can reach this page at any time by clicking the Aion logo on the top left.
 
 ### Heads-up Display
 
@@ -36,11 +36,11 @@ The **Recent Blocks** section displays a list containing the four of the most re
 Each list object contains the:
 
 - Block number
-- Proposer's address: direct to the respective [**Accounts Details Page**](#section-Accounts) when clicked
+- Proposer's address: direct to the respective [**Accounts Details Page**](#Accounts) when clicked
 - Number of transactions
 - Time taken to propose this block
 
-You can click on the blue arrow to go to the respective [**Block Details Page**](#section-Blocks) for the block. Also, click on **View All** to see a longer list.
+You can click on the blue arrow to go to the respective [**Block Details Page**](#Blocks) for the block. Also, click on **View All** to see a longer list.
 
 ### Recent Transactions
 
@@ -51,9 +51,9 @@ The **Recent Transactions** section displays a list containing the ten most rece
 Each list object includes:
 
 - Transaction age: how long ago the transaction was proposed
-- Transaction Value: the amount of Aion sent within the transaction - direct to the respective [**Transaction Details Page**](#section-Transactions) when clicked
-- From Address: direct to the respective [**Accounts Details Page**](#section-Accounts) when clicked
-- To Address: direct to the respective [**Accounts Details Page**](#section-Accounts) when clicked
+- Transaction Value: the amount of Aion sent within the transaction - direct to the respective [**Transaction Details Page**](#Transactions) when clicked
+- From Address: direct to the respective [**Accounts Details Page**](#Accounts) when clicked
+- To Address: direct to the respective [**Accounts Details Page**](#Accounts) when clicked
 
 You can click on **View All** to see a longer list.
 
