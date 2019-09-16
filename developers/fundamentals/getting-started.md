@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-description: This page walks you through the workflow you can take in order to become proficient at blockchain development. Although the workflow may look similar to other blockchain development processes, this guide was created with the Aion Network in mind. After completing each step listed here, you should have a solid understanding of how to create your dApps on the Aion Network.
+description: This page walks you through the workflow you can take to become proficient at blockchain development. Although the workflow may look similar to other blockchain development processes, this guide was created with the Aion Network in mind. After completing each step listed here, you should have a solid understanding of how to create your dApps on the Aion Network.
 ---
 
 ## Pick a Development Environment
@@ -28,7 +28,7 @@ The [developer quickstart](/developers/) runs through this process without you h
 
 ## First Project
 
-Once you've got the workflow down and have a solid understanding of the process for creating dApps, you are ready to create your first app. This app is incredibly basic and serves to show you how to use your chosen _deveplment environment_.
+Once you've got the workflow down and have a solid understanding of the process for creating dApps, you are ready to create your first app. This app is incredibly basic and serves to show you how to use your chosen _development environment_.
 
 Follow through the [IntelliJ end-to-end](/developers/tools/intellij-plugin/end-to-end/), or [Maven CLI end-to-end](/developers/tools/maven-cli/end-to-end/).
 
