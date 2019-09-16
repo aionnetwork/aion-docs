@@ -57,7 +57,7 @@ To get the transaction hash and the receipt of your deployment use the following
 
 ## Contract Call
 
-Simple calls to the network do not change the _state_ of the blockchain, they simply ask for a particular variable or value. Because of this, they are substantially simpler than [Transaction Calls](#section-section-transaction) which _do_ change the blockchain.
+Simple calls to the network do not change the _state_ of the blockchain, they simply ask for a particular variable or value. Because of this, they are substantially simpler than [Transaction Calls](#section-transaction) which _do_ change the blockchain.
 
 ```java
 Integer result = counterContract.call_getCount().send();

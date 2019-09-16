@@ -13,7 +13,7 @@ draft: false
 - An Aion account that has sufficient balance (For contract transaction only).
 - A node to talk to Aion network.
 
-*Note: We will use Node.js for this example, see the tutorial [here](https://www.w3schools.com/nodejs/) first if you are not familiar with it. If you want to embed web3.js directly in your `html` page, you can follow the [import minified web3.js instruction](https://github.com/aionnetwork/aion_web3/wiki/GUIDE:-Install#section-section-minifed-javascript-file).
+*Note: We will use Node.js for this example, see the tutorial [here](https://www.w3schools.com/nodejs/) first if you are not familiar with it. If you want to embed web3.js directly in your `html` page, you can follow the [import minified web3.js instruction](https://github.com/aionnetwork/aion_web3/wiki/GUIDE:-Install#minifed-javascript-file).
 
 We will interact with the following contract as an example:
 
@@ -43,7 +43,7 @@ public class HelloAvm
 }
 ```
 
-This contract is deployed on [Aion Mastery](https://mastery.aion.network/#section-section-/contract/a0ceaa5b83fe4a8911928072b7e63ee32d880bef82fcbf91747721cfdd528db2), and the contract address is: `0xa0ceaa5b83fe4a8911928072b7e63ee32d880bef82fcbf91747721cfdd528db2`.
+This contract is deployed on [Aion Mastery](https://mastery.aion.network/#section-/contract/a0ceaa5b83fe4a8911928072b7e63ee32d880bef82fcbf91747721cfdd528db2), and the contract address is: `0xa0ceaa5b83fe4a8911928072b7e63ee32d880bef82fcbf91747721cfdd528db2`.
 
 ## Install aion-web3
 
@@ -191,7 +191,7 @@ To make a contract transaction, you will need the contract address and the trans
 
 Here, we are calling `setString` and a `new string` as in type `String` is required.
 
-Create a [transaction object](https://github.com/aionnetwork/aion_web3/wiki/API:-web3-eth#section-section-parameters-9) and filled in the field as desired:
+Create a [transaction object](https://github.com/aionnetwork/aion_web3/wiki/API:-web3-eth#section-parameters-9) and filled in the field as desired:
 
 ```js
 const transaction = {
@@ -203,7 +203,7 @@ const transaction = {
     };
 ```
 
-Then you can use your account to [sign the transaction](https://github.com/aionnetwork/aion_web3/wiki/API:-web3-eth-accounts#signtransaction) and [send](https://github.com/aionnetwork/aion_web3/wiki/API:-web3-eth#section-section-sendsignedtransaction) it.
+Then you can use your account to [sign the transaction](https://github.com/aionnetwork/aion_web3/wiki/API:-web3-eth-accounts#signtransaction) and [send](https://github.com/aionnetwork/aion_web3/wiki/API:-web3-eth#section-sendsignedtransaction) it.
 
 ```js
 // Sign the Transaction.

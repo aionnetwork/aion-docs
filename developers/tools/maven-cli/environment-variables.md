@@ -34,7 +34,7 @@ You can run this:
 mvn aion4j:deploy -Dweb3rpc.url=http://192.168.0.9 -Premote
 ```
 
-When combined with the [`web3rpc` variable](#section-section-web3-rpc), this command shrinks down to:
+When combined with the [`web3rpc` variable](#section-web3-rpc), this command shrinks down to:
 
 ```bash
 mvn aion4j:deploy -Premote

@@ -121,7 +121,7 @@ The package takes about 10 minutes to finish building.
 cd package/aionr-package
 ```
 
-2. Run `./mainnet.sh`. You can find more information on supplying commands in the [user manual](https://github.com/aionnetwork/aionr/wiki/User-Manual#section-section-launch-rust-kernel). Kernel will print **configuration path**, **genesis file path**, **db directory**, and **keystore location** at the top of its log.
+1. Run `./mainnet.sh`. You can find more information on supplying commands in the [user manual](https://github.com/aionnetwork/aionr/wiki/User-Manual#launch-rust-kernel). Kernel will print **configuration path**, **genesis file path**, **db directory**, and **keystore location** at the top of its log.
 
 ```bash
 $ ./mainnet.sh

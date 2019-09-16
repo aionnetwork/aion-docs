@@ -9,7 +9,7 @@ This section of the docs goes over how to configure and interact with the Rust k
 
 ## Further Documentation
 
-The [GitHub Wiki](https://github.com/aionnetwork/aionr/wiki) section contains detailed information on building and interacting with the kernel. Take a look at the [Installation](#section-section-installation) section to find out how to install the Rust kernel on your machine.
+The [GitHub Wiki](https://github.com/aionnetwork/aionr/wiki) section contains detailed information on building and interacting with the kernel. Take a look at the [Installation](#section-installation) section to find out how to install the Rust kernel on your machine.
 
 ## Get Involved
 

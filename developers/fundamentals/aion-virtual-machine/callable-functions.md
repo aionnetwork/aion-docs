@@ -24,7 +24,7 @@ If you are calling a function within contract, you do not have to assign the `@C
 
 It is possible to have functions that do not have the `@Callable` annotation, and your contract will be able to compile. However, any attempt to call a `non-Callable` function from outside of the contract will be **reverted**, even if it is a public function.
 
-One of our AVM  tool, called the [ABI compiler](https://github.com/aionnetwork/AVM/blob/1536a6d98e1aea82756cd7ceff247db8797ac885/org.aion.avm.tooling/src/org/aion/avm/tooling/abi/ABICompiler.java#section-section-L118), is run on an input jar, it collects the list of methods labelled `@Callable`. This information is used in 2 places:
+One of our AVM  tool, called the [ABI compiler](https://github.com/aionnetwork/AVM/blob/1536a6d98e1aea82756cd7ceff247db8797ac885/org.aion.avm.tooling/src/org/aion/avm/tooling/abi/ABICompiler.java#section-L118), is run on an input jar, it collects the list of methods labelled `@Callable`. This information is used in 2 places:
 
 - If we generate a main method for the contract (We only generate a main method if there was no main method in the user code!).
 - When generating `Contract ABI`.
