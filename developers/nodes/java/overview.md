@@ -9,7 +9,7 @@ This section of the docs goes over how to configure and interact with the Java k
 
 ## Further Documentation
 
-The [GitHub Wiki](https://github.com/aionnetwork/aion/wiki) section contains detailed information on building and interacting with the kernel. Take a look at the [Installation](#section-installation) section to find out how to install the Java kernel on your machine.
+The [GitHub Wiki](https://github.com/aionnetwork/aion/wiki) section contains detailed information on building and interacting with the kernel. Take a look at the [Installation](#installation) section to find out how to install the Java kernel on your machine.
 
 ## Get Involved
 

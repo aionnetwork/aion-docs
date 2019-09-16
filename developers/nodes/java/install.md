@@ -7,8 +7,8 @@ table_of_contents: true
 
 There are two methods for installing the Java kernel on your machine:
 
-1. [Native Ubuntu Install](#section-native-ubuntu-install)
-2. [Docker Image](#section-docker-image)
+1. [Native Ubuntu Install](#native-ubuntu-install)
+2. [Docker Image](#docker-image)
 
 ## Native Ubuntu Install
 
@@ -104,7 +104,7 @@ To use this Docker image your system must meet the following requirements:
 - 1GB HDD space
 - Docker `v18.0.0`
 
-The HDD space required only takes the Docker image into account. You will need a significant amount of space for storing the blockchain itself. The database is currently around `22GB` in size, although this can be [pruned](https://github.com/aionnetwork/aion/wiki/Database#section-state-database-pruning).
+The HDD space required only takes the Docker image into account. You will need a significant amount of space for storing the blockchain itself. The database is currently around `22GB` in size, although this can be [pruned](https://github.com/aionnetwork/aion/wiki/Database#state-database-pruning).
 
 #### Install the Java Image
 
@@ -143,7 +143,7 @@ docker run -it -p 8545:8545 -p 8547:8547 -p 30303:30303 --mount source=aion-main
 >                using FVM & AVM
 ```
 
-Take a look at the [Running the Java Container](#section-running-the-java-container) section for more information on what arguments to supply with the `docker run` command.
+Take a look at the [Running the Java Container](#running-the-java-container) section for more information on what arguments to supply with the `docker run` command.
 
 4. Press `CTRL` + `c` to shut down and exit the container.
 
