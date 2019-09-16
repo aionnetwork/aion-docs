@@ -6,7 +6,7 @@ description: This website contains multiple code examples. These examples are al
 
 ## Contracts
 
-These examples are specific to Java contract creation. They do not contains any setup or configuration files, unlike the [IntelliJ Plugin](#intellij-plugin)) and [Maven CLI](#maven-cli) examples.
+These examples are specific to Java contract creation. They do not contains any setup or configuration files, unlike the [IntelliJ Plugin](#section-intellij-plugin)) and [Maven CLI](#section-maven-cli) examples.
 
 - [Getter Setter](https://github.com/aionnetwork/docs-examples/tree/master/contracts/getter-setter)
 - [Secret Message](https://github.com/aionnetwork/docs-examples/tree/master/contracts/secret-messages)
@@ -19,13 +19,13 @@ There are currently no Ether.js example projects.
 
 ## IntelliJ Plugin
 
-These examples are specific to using the IntelliJ IDE with the Aion4j plugin. These examples may be similar to [Maven CLI](#maven-cli), and [Contract](#contracts) examples, but have been built using the IntelliJ IDE so they might have a different folder structure. They have been designed to be directly imported into IntelliJ.
+These examples are specific to using the IntelliJ IDE with the Aion4j plugin. These examples may be similar to [Maven CLI](#section-maven-cli), and [Contract](#section-contracts) examples, but have been built using the IntelliJ IDE so they might have a different folder structure. They have been designed to be directly imported into IntelliJ.
 
 There are currently no IntelliJ Plugin example projects.
 
 ## Maven CLI
 
-These examples are specific to using the Maven CLI. These examples may be similar to [IntelliJ Plugin](#intellij-plugin), and [Contract](#contracts) examples, but have been built using the Maven CLI so they might have a different folder structure. Projects within this section have been designed to be directly ran using the Maven CLI.
+These examples are specific to using the Maven CLI. These examples may be similar to [IntelliJ Plugin](#section-intellij-plugin), and [Contract](#section-contracts) examples, but have been built using the Maven CLI so they might have a different folder structure. Projects within this section have been designed to be directly ran using the Maven CLI.
 
 There are currently no Maven CLI example projects.
 

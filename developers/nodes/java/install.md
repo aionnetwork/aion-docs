@@ -5,11 +5,6 @@ weight: 100
 table_of_contents: true
 ---
 
-There are two methods for installing the Java kernel on your machine:
-
-1. [Native Ubuntu Install](#native-ubuntu-install)
-2. [Docker Image](#docker-image)
-
 ## Native Ubuntu Install
 
 This section walks you through installing the kernel from a package. You can either generate your own package by building the kernel from source, or you can download a [pre-built package from GitHub](https://github.com/aionnetwork/aion/releases).
@@ -143,7 +138,7 @@ docker run -it -p 8545:8545 -p 8547:8547 -p 30303:30303 --mount source=aion-main
 >                using FVM & AVM
 ```
 
-Take a look at the [Running the Java Container](#running-the-java-container) section for more information on what arguments to supply with the `docker run` command.
+Take a look at the [Running the Java Container](#section-running-the-java-container) section for more information on what arguments to supply with the `docker run` command.
 
 4. Press `CTRL` + `c` to shut down and exit the container.
 
