@@ -1,6 +1,6 @@
 ---
 title: Userlib Packages
-description: Classes in the userlib package and userlib.abi package are optionally packaged along-side your contract code as common-case utilities and quality of life routines.
+description: Classes in the userlib package and userlib.abi package is optionally packaged along-side your contract code as common-case utilities and quality of life routines.
 table_of_contents: true
 ---
 
@@ -60,7 +60,7 @@ public class BufferExample
 
 ## AionList
 
-The Aion specific implementation of the Java List interface. A list is an ojbect that contains one or more of the same type of element. You cannon have a list that contains both `String` and `int` elements.
+The Aion specific implementation of the Java List interface. A list is an object that contains one or more of the same type of element. You cannon have a list that contains both `String` and `int` elements.
 
 Take a look at the [AVM API page for AionList](https://avm-api.aion.network/org/aion/avm/userlib/aionlist).
 
@@ -222,7 +222,7 @@ public static String getCars() {
 
 ## AionSet
 
-The Aion specific implementation of the Java Set interface. A set is a collection of elements with absoultely no duplicate elements. Each element in the set is completely unique.
+The Aion specific implementation of the Java Set interface. A set is a collection of elements with absolutely no duplicate elements. Each element in the set is completely unique.
 
 Take a look at the [AVM API page for AionSet](https://avm-api.aion.network/org/aion/avm/userlib/aionset).
 
