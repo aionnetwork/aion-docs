@@ -24,12 +24,13 @@ ABI binding is a feature available for the Web3.js framework. It allows you to c
 
 ```javascript
 // Create an ABI Object using the .abi file created from compiling the contract.
-let abi = `0.0
-org.aion.web3.Counter
-Clinit: ()
-public static void incrementCounter(int)
-public static int getCount()`;
-let abiObject = web3.avm.contract.Interface(abi);
+let abiObject = web3.avm.contract.Interface(
+    `0.0
+    org.aion.web3.Counter
+    Clinit: ()
+    public static void incrementCounter(int)
+    public static int getCount()`
+);
 
 // Initiate the binding within the web3 object.
 web3.avm.contract.initBinding(contractAddress, abiObject, privateKey);
@@ -67,7 +68,7 @@ The ABI encoding specifies how inputs to a contract are sent over the RPC layer 
 | `0.0` | double | 1D, 2D |
 | `0.0` | Address | 1D |
 | `0.0` | String | 1D |
-| `1.0` and above | BigInteger | 1D |
+| `1.0` | BigInteger | 1D |
 
 ### Internal Contract Calls
 
