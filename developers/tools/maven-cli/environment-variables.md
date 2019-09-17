@@ -16,10 +16,10 @@ To export your private key run the following in a terminal window:
 
 ```bash
 # On Linux / MacOS
-$> export pk=0x5e444d8bf64f9f6d9022...
+export pk=0x5e444d8bf64f9f6d9022...
 
 # On Windows
-C:> set pk=0x5e444d8bf64f9f6d9022...
+set pk=0x5e444d8bf64f9f6d9022...
 ```
 
 Instead of this:
@@ -50,10 +50,10 @@ To use your computers environment variables, enter the following in a terminal w
 
 ```bash
 # For Mac / Linux
-$> export web3rpc_url=http://host:port
+export web3rpc_url=http://host:port
 
 # For Windows
-c:> set web3rpc_url=http://host:port
+set web3rpc_url=http://host:port
 ```
 
 ### Modifying the Pom File
@@ -67,7 +67,7 @@ In your project's `pom.xml` file find the `<web3rpcUrl>` field. Within this fiel
 
  ...
 
- <web3rpcUrl>https://aion.api.nodesmith.io/v1/mastery/jsonrpc?apiKey=abcdef123456...</web3rpcUrl>
+ <web3rpcUrl>http://192.168.0.9</web3rpcUrl>
 
  ...
 

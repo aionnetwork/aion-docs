@@ -5,7 +5,7 @@ table_of_content: true
 weight: 1
 ---
 
-The Aion specific framework can be [found on GitHub](https://github.com/aionnetwork/aion_web3). The Aion implementation of Web3.js (Aion Web3.js) is maintained by the Aion Foundation. At the start of 2019, further modifications were made to the Web3.js framework that allowed it to interact with the Aion Virtual Machine (AVM), allowing smart contract developers to create Java contracts and interact with them using this framework.
+The Aion specific framework can be [found on GitHub](https://github.com/aionnetwork/aion_web3). The Aion implementation of Web3.js is maintained by the Aion Foundation. At the start of 2019, further modifications were made to the Web3.js framework that allowed it to interact with the Aion Virtual Machine (AVM), allowing smart contract developers to create Java contracts and interact with them using this framework.
 
 ## How Web3.js Works
 
