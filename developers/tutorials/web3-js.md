@@ -1,22 +1,10 @@
 ---
 title: End to End
 section: Web3.js
-description: In this tutorial we're going to run through the entire end-to-end process of setting up your Web3.js project, connecting to a node, deploying a contract, and then with it. This is a great place to get started with building web front-ends for your Java blockchain applications. We'll be supplying a sample contract for you to use, so you don't have to write any Java in this tutorial.
+description: In this tutorial we're going to run through the entire end-to-end process of setting up your Web3.js project, connecting to a node, deploying a contract, and then interacting with it. This is a great place to get started with building web front-ends for your applications. We'll be supplying a sample contract for you to use, so you don't have to write any Java in this tutorial, and can focus on the JavaScript.
 ---
 
-## Steps
-
-1. Set Up a Project
-   1. Grab the `web3.min.js` file.
-   2. Include it in an `index.html` file.
-   3. Connect to a node.
-2. Grab the jar and abi files.
-3. Deploy a Contract.
-4. Call the Contract.
-5. Change the Blockchain.
-6. Send Coins to an Account.
-
-## Set Up
+## Project Set Up
 
 Our project is going to be made up of three files:
 
@@ -27,7 +15,7 @@ aion-web3-examples/
 └── web3.min.js
 ```
 
-Our frontend HTML will be held within `index.html` and all our custom JavaScript will be in `script.js`. The `web3.min.js` file is what gives us the `Web3` object and allows us to interact with the blockchain. We won't be making any changes to this file.
+Our frontend HTML will be held within `index.html` and all our custom JavaScript will be in `script.js`. The `web3.min.js` file is what gives us the `Web3` object and allows us to interact with the network, and we won't be making any changes to this file.
 
 ### Index
 
@@ -48,17 +36,15 @@ Create a file called `index.html` and paste in the following code:
     </body>
 
     <script src="web3.min.js"></script> <!-- Make sure that web3.min.js is included before any other scripts. -->
-    <script src="script.js"></script> <!-- Your custom Javascript should go into here. -->
+    <script src="script.js"></script> <!-- Your custom Javascript code will go in here. -->
 </html>
 ```
 
-We're keeping thing incredibly simple here. The most important thing to note is that we've included `web3.min.js` _before_ our custom JavaScript. This is because our custom JavaScript will rely on the `Web3` object supplied by `web3.min.js`.
+We're keeping thing incredibly simple here. The most important thing to note is that we've included `web3.min.js` _before_ our custom JavaScript. This is because our custom JavaScript code will rely on the `Web3` object supplied by `web3.min.js`.
 
 ### Web3 JavaScript
 
-You can download the latest `web3.min.js` file from the Aion Web3 GitHub repository. Navigate to the releases section and click the latest `web3.min.js` file.
-
-If you have `wget` installed on your machine, you can download the `web3.min.js` file by running this command:
+You can download the latest `web3.min.js` file from the Aion Web3 GitHub repository. Navigate to the releases section and click the latest `web3.min.js` file. Or if you have `wget` installed on your machine, you can download the `web3.min.js` file by running this command:
 
 ```bash
 wget https://github.com/aionnetwork/aion_web3/releases/download/v1.1.5/web3.min.js
@@ -76,9 +62,9 @@ This variable creates a new `web3` object using the `Web3` object supplied by `w
 
 ### Aion Node
 
-This is the last step in our project set up. We need to paste in the URL of the Aion node that we want to connect to. The easiest way to connect to a node is to use a node [hosting service](nodes-hosting-services-) like [Nodesmith](https://nodesmith.io/) or [Blockdaemon](https://blockdaemon.com/). Both these services have free options that allow you to spin up an Aion node on the Mastery test network.
+This is the last step in our project set up. We need to paste in the URL of the Aion node that we want to connect to. The easiest way to connect to a node is to use a node [hosting service](nodes-hosting-services) like [Nodesmith](https://nodesmith.io/) or [Blockdaemon](https://blockdaemon.com/). Both these services have free options that allow you to spin up an Aion node on the test network.
 
-If you'd prefer to spin up your own Aion node, take a look at the [Java](nodes-java-overview-) or [Rust](nodes-rust-overview-) kernel sections. Keep in mind that it can take quite a while for a node to fully sync to the network.
+If you'd prefer to spin up your own Aion node, take a look at the [Java](nodes-java-overview) or [Rust](nodes-rust-overview) kernel sections. Keep in mind that it can take quite a while for a node to fully sync to the network.
 
 Once you have your node URL, paste it into your `script.js` file:
 
@@ -86,17 +72,17 @@ Once you have your node URL, paste it into your `script.js` file:
 const web3 = new Web3(new Web3.providers.HttpProvider("https://aion.api.nodesmith.io/v1/mastery/jsonrpc?apiKey=ab40c8f..."));
 ```
 
-Finally, we just need to set the private key you plan on using for this project. Hard coding a private key into _anything_ is a bad idea, but since this is a simple tutorial it's ok. Add the following code and enter the private key for the account you want to use.
+Finally, we just need to set the private key you plan on using for this project. Hard coding a private key into _anything_ is a bad idea, but since this is a simple tutorial it's ok. Add the following code and enter the private key for the account you want to use:
 
 ```javascript
-const privateKey = "PRIVATE_KEY";
+const privateKey = "269a1fd07297b...";
 ```
 
 ## The Project
 
-For the rest of this project, we're going to be creating a _secret messages_ application. This application allows users to view secret messages. To do this, the user must call the `getMessage` function and supply the secret key in order to read the message. If the user enters the wrong secret key, they get an error message. The owner of the application is the account that deployed the contract. Only the owner can change the secret message and the secret key.
+We're going to be creating a _secret messages_ application. The owner of the app sets a message and defines who can have access to the messages. Only users who have already been authorized can access the messages.
 
-Since this tutorial is focused on using the Web3.js framework, you won't be building the contract side of things. Instead, we've supplied the following contract, along with the `.jar` and `.abi` files which we will use later. If you'd like, take a look through this contract to get a better idea of how things work.
+Since this tutorial is focused on using the Web3.js framework, you won't be building the backend logic. Instead, we've written and deployed everything for you. So all you have to do is tell your JavaScript the address, but we'll get to that shortly. If you're interested, here is the Java that controls the backend:
 
 ```java
 package aionexample;
@@ -148,6 +134,8 @@ public class SecretMessages
     }
 }
 ```
+
+We're not going to discuss compiling and deploying the backend logic here. But if you'd rather deploy things yourself, take a look at the [Maven](tutorials-maven-cli) or [IntelliJ Plugin](tutorials-intellij-plugin) tutorials for a refresher.
 
 ### The Jar and ABI Files
 
