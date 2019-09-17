@@ -1,42 +1,58 @@
 ---
 title: Digital Assets
-description: In 2009, Bitcoin gave us the first provably scarce **digital asset** for the masses. Today, we have a multitude of digital asset designs that allow society to digitize assets, programmatically pay for services, securely hold value and much more.
+description: An overview of what digital assets are, the possible aspects of them, and their potential use cases.
 ---
 
-The prevailing business model of the internet, used by Google, Facebook and others are one of exploitation and manipulation. We need to come up with new, less intrusive business models, which don't involve selling off your customer's private data. At the center of this shift are digital assets and cryptocurrency. This section is a primer on designs achieving success in the space.
+## What Digital Assets Are
 
-## What a Digital Asset It
+Digital assets are often called _tokens_, _coins_, or _crypto_. We're going to try to stick to just _tokens_ in this article.
 
-In its raw form, a _digital asset_ is anything that exists in a binary format and comes with the right to use, however for your purposes we'll focus on a subclass of digital assets, notably _coins_ and _tokens_ that are programmatic, use cryptography and distributed ledgers to secure their value.
+## Asset Composition
 
-### The Power of Incentives
+That's just a fancy way of saying, _what digital assets are made from_ or _what conceptual elements make up a digital asset_. We don't mean, the physical `bits` and `bytes` that represent a coin or token. That discussion is best left to the engineers.
 
-As you'll see from the next section, digital assets on the blockchain are such a novel invention because they shift our profit motive from the individual to the collective. Tokens enable us to align the interests of all participants in a network towards a common end!
+There are two major decisions to make when creating a digital asset.
 
-From **individual value creation:**
+### Value
 
-- Private actors extract value from society.
-- Individual profit maximization.
-- Externalization of costs where possible.
-- Internalizing private profit.
+Do you want all the tokens to be exactly the same, and hold the exact same value? The United States Dollar is a good example of this. Every one dollar bill is worth exactly one dollar. If I have five one-dollar bills, and you have a five-dollar bill, then we have exactly the same value. This is called _fungibility_, which is a silly economic term that we don't like to use. Tokens with this attribute are all exactly the same and can be exchanged for the exact same value. If we both have one bitcoin each, then the amount of _value_ we possess is exactly equal.
 
-To **collective value creation:**
+The opposite of this is where two items have different values and are unique. Say we both have a bottle of wine each. Mine is some bottom shelf White Zinfandel, and yours is a fancy vintage from somewhere in France. While both are bottles of wine are in-fact _bottles of wine_ the value between them is drastically different. The value of each bottle is based upon the characteristics of the wine. This is called _non-fungibility_, but again, that's a silly term for people who studied economics so we won't be using it. Tokens can have this attribute as well.
 
-- Incentivize purpose of the network with a network token.
-- Collective value creation instead of individual value creation.
+There is a game called Crypto Kitties, where players can trade and breed digital cats. Certain attributes are more desired by the community, and players can demand a higher price for cats with desirable attributes. In this example, the cats themselves are the digital asset. Each cat is created from the same template, just with different attributes and variables.
 
-### Tokens
+So when creating a digital asset, you'll need to decide if you want all of them to be identical in value, or if you want them to be unique.
 
-Tokens are not a new thing, you have likely handled tokens in your daily life whether it be money-themed tokens like flight miles, loyalty program rewards, casino chips or computing based tokens like access rights to documents, or computing operations. Tokens are _a combination of value representation and/or access rights_.
+### Usage
 
-In a blockchain, the term _token_ is used a few different ways in relation to cryptocurrency, but in actuality, it refers to a cryptographic string of numbers and letters that contains no real data but relates back to real data. You _tokenize_ data in order to encrypt it when it passes open and exposed on the internet.
+What are you going to be using the token for? Is it going to be used for purely economic purposes, or will it be granting the holder some kind of right?
 
-A token might looks something like this:
+An example of a token that is used for economic purposes is Bitcoin. Bitcoin is mainly used to buy goods and services, with some people using it as a form of financial savings. This is the foundation of an economically based token, it is used to purchase something. It's possible to exchange Bitcoin for a pizza if you really wanted to!
 
-```text
-947153d332beaf39dec6ebae8883bfb84eda47abccccbc2d61436d8d1e81584d
-```
+The opposite of an economically based digital asset is one that is rights-based, giving the holder particular rights to either access or interact with something. Passports and driver's licenses are real-world examples of this, they give you the right to enter a country, or the right to drive a vehicle. Something to keep in mind is that not all of these assets may not be created equal. Your driver's license may allow you to drive trucks, cars, and motorbikes, whereas mine only lets me drive a car.
 
-Much of the early innovation in blockchain came from a simple idea. You can create a store of value by setting a scare number of tokenized bits in a shared, decentralized ledger. Since then, we've seen a proliferation in the types and designs of tokens, many of which are not easily classifiable as they have a hybrid function. However, we can reason about the classifications of these tokens from four perspectives.
+### Pick Two
 
-In a blockchain, tokens are a combination of value representation and/or access to rights. This broad scope makes it non-trivial for determining how you should design your token, however, we're here to help. In order to identify the desired characteristics of your token, we will walk through four considerations.
+These four options from the basis of every single digital asset:
+
+|                  | Equal Value         | Differing Value      |
+| ---              | ---                 | ---                  |
+| **Financial**    | US Dollars, Bitcoin | Wine, Crypto Kitties |
+| **Rights-Based** | Passport            | Drivers License      |
+
+You must decide, based on the needs of your application, what kind of token you need.
+
+## Extra Features
+
+While the above four options form the basis of any digital asset, there are further design considerations you need to consider.
+
+| Feature | Description |
+| --- | --- |
+| Supply | How many tokens are you going to create? Is the supply going to be limited like the US dollar, or are you going to constantly produce new tokens? |
+| Expiry | Are the tokens going to _live_ forever, or will the be destroyed at a certain point? In many countries, gift certificates and coupons have an expiry date attached to them. Currency generally doesn't have an expiry date. |
+| Transferability | Can users transfer and trade their tokens? Or is each token assigned to only one user? |
+| Rights | What kind of rights are associated with this token? The right to drive a car, or enter a country, or vote? |
+
+## Create Your Digital Assets
+
+You should now have an idea of the kind of asset you need to create. Use the form below to create a template to launch your asset with:
