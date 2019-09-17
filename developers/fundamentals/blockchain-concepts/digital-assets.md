@@ -52,7 +52,3 @@ While the above four options form the basis of any digital asset, there are furt
 | Expiry | Are the tokens going to _live_ forever, or will the be destroyed at a certain point? In many countries, gift certificates and coupons have an expiry date attached to them. Currency generally doesn't have an expiry date. |
 | Transferability | Can users transfer and trade their tokens? Or is each token assigned to only one user? |
 | Rights | What kind of rights are associated with this token? The right to drive a car, or enter a country, or vote? |
-
-## Create Your Digital Assets
-
-You should now have an idea of the kind of asset you need to create. Use the form below to create a template to launch your asset with:
