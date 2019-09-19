@@ -1,11 +1,12 @@
 # Getting Started
 
-This documentation is for
+So you want to build contracts on the Aion network? This article lists out each step you should take in order to fully understand the blockchain world, and how to build upon it.
 
-- Integration People
-- Making Contracts
+Other devs just wanting to use the Open SDKs should [go here](example.com). Developers who want to focus on wallet and exchange intergrations, check out the [integrations section](example.com).
 
-Other devs just wanting to integrate the SDKs should [go here](example.com).
+## Understand Blockchain
+
+The blockchain world is substantially different from how things work in regular developer land. There are lots of nuances and special considerations to keep in mind when creating a blockchain application. Therefore it is important to have a solid understanding on _what_ blockchain is, _how_ it's useful, and _how_ it works.
 
 ## General Workflow
 
@@ -31,7 +32,7 @@ These are the suggested tools for creating your contracts.
 <!-- TODO: What is it? -->
 <!-- TODO: How does it work with Maven CLI and the embedded AVM? -->
 
-## Frontend APIs
+## Interaction APIs
 
 ### What we mean by frontend
 
