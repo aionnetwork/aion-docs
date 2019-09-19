@@ -24,13 +24,11 @@ These are the suggested tools for creating your contracts.
 ### Maven CLI
 
 <!-- TODO: What is it? -->
-
 <!-- TODO: How does the embedded AVM work? -->
 
 ### IntelliJ Plugin
 
 <!-- TODO: What is it? -->
-
 <!-- TODO: How does it work with Maven CLI and the embedded AVM? -->
 
 ## Frontend APIs
