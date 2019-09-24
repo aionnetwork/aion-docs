@@ -7,7 +7,7 @@ weight: 200
 
 ## Prerequisites
 
-You need an [installed node](nodes-java-install-).
+You need an [installed node](developers/nodes/java/install).
 
 ## Create a Custom Network
 
