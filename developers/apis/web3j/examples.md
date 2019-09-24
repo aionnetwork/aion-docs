@@ -5,7 +5,7 @@ description: Web3J allows you to deploy, call, and send transactions to a contra
 weight: 500
 ---
 
-These examples assume you have already created a wrapper for your application. See the [end-to-end walkthrough for more details](apis-web3j-walkthrough).
+These examples assume you have already created a wrapper for your application. See the [end-to-end walkthrough for more details](/developers/tutorials/web3-j).
 
 ## Connect to a Node
 

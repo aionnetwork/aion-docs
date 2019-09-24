@@ -7,7 +7,7 @@ table_of_content: true
 
 We've put together a _boilerplate_ project that you can use to quickly start playing around with the examples listed here. You don't have to use this project, and you can create your own if you want. To set this project up:
 
-1. Download the [`project.zip` file](apis-web3-js-project-assets-aion-web3-boilerplate-examples.zip).
+1. Download the [`project.zip` file](/developers/apis/web3-js/project-assets/aion-web3-boilerplate-examples.zip).
 2. Unzip the package somewhere.
 3. Run `npm install -g serve` to install the Serve mini-server.
 4. Run `serve` to start a local mini-server.

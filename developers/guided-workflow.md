@@ -39,8 +39,8 @@ Now that you're up to speed on how to create a simple application and store it o
 
 Examples of how to interact with the blockchain through each of these frameworks can be found on their respective examples pages:
 
-- [Web3.js Examples](apis-web3-js-examples)
-- [Ethers.js Examples](apis-ethers-js-examples)
+- [Web3.js Examples](/developers/apis/web3-js/examples)
+- [Ethers.js Examples](/developers/apis/ethers-js/examples)
 
 ## Testing
 
