@@ -7,7 +7,7 @@ table_of_contents: true
 
 ## Prerequisites
 
-This guide assumes that you have the [IntelliJ IDE installed](https://www.jetbrains.com/idea/), along with the [Aion4j plugin](tools-intellij-plugin-install-the-plugin). You do not need to have an IntelliJ project ready, as we will be creating a new project in this guide.
+This guide assumes that you have the [IntelliJ IDE installed](https://www.jetbrains.com/idea/), along with the [Aion4j plugin](/developers/tools/intellij-plugin/install-the-plugin). You do not need to have an IntelliJ project ready, as we will be creating a new project in this guide.
 
 ## Set up a Project
 

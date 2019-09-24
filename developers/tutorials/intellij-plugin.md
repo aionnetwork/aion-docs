@@ -9,7 +9,7 @@ weight: 200
 
 ## Prerequisites
 
-First up, you need [IntelliJ](https://www.jetbrains.com/idea/) and the [Aion4j](tools-intellij-plugin-install-the-plugin) plugin installed. Take a look at those sections for steps on how to get them installed. You'll also need a node to connect to if you want to deploy your contract to the testnet, but we'll walk you through that bit.
+First up, you need [IntelliJ](https://www.jetbrains.com/idea/) and the [Aion4j](/developers/tools/intellij-plugin/install-the-plugin) plugin installed. Take a look at those sections for steps on how to get them installed. You'll also need a node to connect to if you want to deploy your contract to the testnet, but we'll walk you through that bit.
 
 ## Create a Project
 

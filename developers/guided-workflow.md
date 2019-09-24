@@ -10,8 +10,8 @@ header_image: /developers/images/developers-header.png
 
 The development environment is where you spend most of the time creating applications and interacting with the blockchain. There are two major setups available.
 
-- [IntelliJ Plugin](tools-intellj-plugin)
-- [Maven Command Line Interface Tool](tools-maven-cli)
+- [IntelliJ Plugin](/developers/tools/intellj-plugin)
+- [Maven Command Line Interface Tool](/developers/tools/maven-cli)
 
 Both of these environments achieve the same goals, they just use different routes to get there. The IntelliJ plugin is generally easier to use since everything can be performed using a user interface. However, if you're not comfortable with IntelliJ, or just prefer another IDE or text editor, then you may prefer to use the Maven CLI tool.
 

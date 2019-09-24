@@ -54,6 +54,6 @@ Now that everything's stored on the network, we can ask the blockchain what the 
 
 ## Next Steps
 
-That's pretty much the whole process! Next up is to try your hand at doing all this manually. Checkout the [IntelliJ](tools-intellij-plugin-end-to-end) or [Maven CLI](tools-maven-cli-end-to-end) end-to-end guides to get a full run-down on how to use those tools.
+That's pretty much the whole process! Next up is to try your hand at doing all this manually. Checkout the [IntelliJ](/developers/tutorials/intellij-plugin) or [Maven CLI](/developers/tutorials/maven-cli) end-to-end guides to get a full run-down on how to use those tools.
 
 {{< developers-quickstart/scripts >}}

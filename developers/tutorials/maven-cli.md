@@ -10,7 +10,7 @@ next_page: /developers/tools/maven-cli/create-an-account
 ## Prerequisites
 
 - [Java SDK 10^](https://www.oracle.com/technetwork/java/javase/downloads/jdk12-downloads-5295953.html).
-- [Maven](tools-maven-cli-install-)
+- [Maven](/developers/tools/maven-cli/install)
 - A RPC endpoint.
 
 ## Create a Project
@@ -278,7 +278,7 @@ Let's first call `setString` to set it to `AVM is great` by running the followin
 mvn aion4j:call -Dcontract=0b7c8a9d0055a4794679ba1b34cfb90f53aa5f04614ddc35793edfa65577d50a -Dmethod=setString -Dargs="-T 'AVM is great'"
 ```
 
-where `-Dcontract` is the contract address, `-Dmethod` is the method we want to call and `-Dargs` are the corresponding arguments type [selectors](tools-maven-cli-variable-types-) and data we want to pass in.
+where `-Dcontract` is the contract address, `-Dmethod` is the method we want to call and `-Dargs` are the corresponding arguments type [selectors](/developers/tools/maven-cli/variable-types) and data we want to pass in.
 
 In the `setString` method, we have `Blockchain.println("New string is " + myStr);`, which will also be printed in the embedded AVM output. This can be used to debug your contract as well.
 
