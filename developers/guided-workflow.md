@@ -31,7 +31,7 @@ The basic flow is:
 
 Once you've got the workflow down and have a solid understanding of the process for creating dApps, you are ready to create your first app. This app is incredibly basic and serves to show you how to use your chosen _deveplment environment_.
 
-Follow through the [IntelliJ end-to-end](tutorials-intellij-plugin), or [Maven CLI end-to-end](tutorials-maven-cli).
+Follow through the [IntelliJ end-to-end](/developers/tutorials/intellij-plugin), or [Maven CLI end-to-end](/developers/tutorials/maven-cli).
 
 ## Front End
 
@@ -46,7 +46,7 @@ Examples of how to interact with the blockchain through each of these frameworks
 
 You may have been able to get up to this point without having to do much testing. Test-driven development (TDD) is important in any programming disciple, but especially more-so in dApp development.
 
-Review the [end-to-end testing guide](tutorials-intellij-plugin-test-and-debug) to get a solid understanding of how to run tests within IntelliJ.
+Review the [end-to-end testing guide](/developers/tutorials/test-and-debug) to get a solid understanding of how to run tests within IntelliJ.
 
 ## Aion Fundamentals
 

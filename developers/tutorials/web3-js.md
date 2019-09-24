@@ -61,7 +61,7 @@ public class SecretMessages
 }
 ```
 
-We're not going to discuss compiling and deploying the backend logic here. But if you'd rather deploy things yourself, take a look at the [Maven](tutorials/maven-cli) or [IntelliJ Plugin](tutorials/intellij-plugin) tutorials for a refresher.
+We're not going to discuss compiling and deploying the backend logic here. But if you'd rather deploy things yourself, take a look at the [Maven](/developers/tutorials/maven-cli) or [IntelliJ Plugin](/developers/tutorials/intellij-plugin) tutorials for a refresher.
 
 ## Set Up
 

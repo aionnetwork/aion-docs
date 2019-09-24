@@ -44,7 +44,7 @@ Read more about the direction of utilizing the Java Virtual Machine for the AVM:
 ## Features
 
 - **Distributed Network powered by Proof of Work:** The Aion Platform is powered by a distributed network with an optimized modification of the equihash proof of work consensus algorithm.
-- **Write and Deploy Java applications**: [Deploy your first Java Smart Contract!](tutorials-intellij-plugin).
+- **Write and Deploy Java applications**: [Deploy your first Java Smart Contract!](/developers/tutorials/intellij-plugin).
 - **Extensive Documentation:** Written in English, Chinese, and German.
 - **Ecosystem of third party developer tools**: For a recommended environment setup and list of tools and plugins to get started, you can view our up to date list of tooling by category.
 - **Free shared hosted node infrastructure**:  When prototyping, and deploying contracts to both the Mastery test network or Main network, you can use free shared nodes powered by Nodesmith.
