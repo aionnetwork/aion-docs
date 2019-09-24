@@ -79,7 +79,7 @@ To view your contract go to `src` → `main` → `java` → `Your package name` 
 
 ## Edit your Contract
 
-The sample contract you get from contains for [`@Callable`](fundamentals-avm-concepts-callable-functions-) function, `sayHello`, `greet`, `getString` and `setString`. For demonstration purpose, let's remove `sayHello` and `greet`. Now our contract is a basic `setter/getter` contract.
+The sample contract you get from contains for [`@Callable`](/developers/fundamentals/avm-concepts/callable-functions) function, `sayHello`, `greet`, `getString` and `setString`. For demonstration purpose, let's remove `sayHello` and `greet`. Now our contract is a basic `setter/getter` contract.
 
 ```java
 package contract;
@@ -114,7 +114,7 @@ We will modify the tests for our contracts.
 
 First, remove `testSayHello` since we have removed the method from our contract.
 
-Then, let get the decoded data from `testGetString`, and make sure it is the same as the one we set in `testSetString`. Check out [AVM Junit test tutorial](fundamentals-test-and-debug-end-to-end-) to learn about how AVMRule test works.
+Then, let get the decoded data from `testGetString`, and make sure it is the same as the one we set in `testSetString`. Check out [AVM Junit test tutorial](/developers/tutorials/test-and-debug) to learn about how AVMRule test works.
 
 The modified the test can be like the following:
 

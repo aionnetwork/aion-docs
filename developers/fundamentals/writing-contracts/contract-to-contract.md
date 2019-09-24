@@ -4,7 +4,7 @@ Description: Java smart contracts are able to interact with other Java contracts
 table_of_contents: true
 ---
 
-Contract-to-contract calls still follow the same rules as regular contract calls. See [Java Contract Fundamentals](fundamentals-avm-concepts-callable-functions) section for more information.
+Contract-to-contract calls still follow the same rules as regular contract calls. See [Java Contract Fundamentals](/developers/fundamentals/avm-concepts/callable-functions) section for more information.
 
 ## Example Contracts
 
@@ -79,7 +79,7 @@ public class ContractInteractionCaller {
 
 To call a method in another Java contract, you can use [Blockchain.call()](https://avm-api.aion.network/avm/blockchain#call(avm.Address,java.math.BigInteger,byte%5B%5D,long%29)) method, and pass in the `target contract address`, `value` to transfer, `data` to pass and the `max energy` the invoked contract can use.
 
-To get the right `data` you want to pass, you will need an **ABI StreamingEncoder**. [Learn More](fundamentals-aion-packages-abi-#abistreamingencoder).
+To get the right `data` you want to pass, you will need an **ABI StreamingEncoder**. [Learn More](/developers/fundamentals/aion-packages-abi#abistreamingencoder).
 Use it to encode the `method` name as a `String` first and then the `arguments` corresponding to their types in order.
 
 ```java
@@ -97,7 +97,7 @@ The [AVM `Result`](https://avm-api.aion.network/avm/result) object represents a 
 Result getString = Blockchain.call(calleeContractAddress, BigInteger.ZERO, data, Blockchain.getRemainingEnergy());
 ```
 
-Then, you must create an ABIDecoder object and use [`Result.getReturnData()`](https://avm-api.aion.network/avm/result)  to get the data returned by the invoked call. See [AVM ABIDecoder](fundamentals-aion-packages-abi-#section-abistreamingencoder) section for more details.
+Then, you must create an ABIDecoder object and use [`Result.getReturnData()`](https://avm-api.aion.network/avm/result)  to get the data returned by the invoked call. See [AVM ABIDecoder](/developers/fundamentals/aion-packages-abi#section-abistreamingencoder) section for more details.
 
 ```java
 ABIDecoder decoder = new ABIDecoder(getString.getReturnData());

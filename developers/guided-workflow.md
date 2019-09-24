@@ -52,7 +52,7 @@ Review the [end-to-end testing guide](tutorials-intellij-plugin-test-and-debug) 
 
 Having a solid understanding of both front-end and basic contract development is required before you jump into this section. Once you've got those parts down, you're ready to dive into the further complexities of how Aion smart contracts are created.
 
-The [Fundamentals](fundamentals-avm-concepts) section walks through these points. Things like `@Callable` and `@Fallback` annotations are incredibly valuable when creating a dApp. It's a good idea to get a solid understanding of the packages section under fundamentals.
+The [Fundamentals](/developers/fundamentals/avm-concepts) section walks through these points. Things like `@Callable` and `@Fallback` annotations are incredibly valuable when creating a dApp. It's a good idea to get a solid understanding of the packages section under fundamentals.
 
 ---
 
