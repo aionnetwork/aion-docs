@@ -1,17 +1,14 @@
 ---
 title: Guided Workflow
 description: This page walks you through the workflow you can take in order to become proficient at blockchain development. Although the workflow may look similar to other blockchain development processes, this guide was created with the Aion Network in mind. After completing each step listed here, you should have a solid understanding of how to create your dApps on the Aion Network.
-table_of_contents: true
-next_page: /developers
-header_image: /developers/images/developers-header.png
 ---
 
 ## Pick a Development Environment
 
 The development environment is where you spend most of the time creating applications and interacting with the blockchain. There are two major setups available.
 
-- [IntelliJ Plugin](/developers/tools/intellj-plugin)
-- [Maven Command Line Interface Tool](/developers/tools/maven-cli)
+- [IntelliJ Plugin](/developers/tools/intellj-plugin/overview)
+- [Maven Command Line Interface Tool](/developers/tools/maven-cli/overview)
 
 Both of these environments achieve the same goals, they just use different routes to get there. The IntelliJ plugin is generally easier to use since everything can be performed using a user interface. However, if you're not comfortable with IntelliJ, or just prefer another IDE or text editor, then you may prefer to use the Maven CLI tool.
 
@@ -31,7 +28,7 @@ The basic flow is:
 
 Once you've got the workflow down and have a solid understanding of the process for creating dApps, you are ready to create your first app. This app is incredibly basic and serves to show you how to use your chosen _deveplment environment_.
 
-Follow through the [IntelliJ end-to-end](/developers/tutorials/intellij-plugin), or [Maven CLI end-to-end](/developers/tutorials/maven-cli).
+Follow through the [IntelliJ end-to-end](/developers/tutorials/intellij-plugin/overview), or [Maven CLI end-to-end](/developers/tutorials/maven-cli/overview).
 
 ## Front End
 
@@ -52,7 +49,7 @@ Review the [end-to-end testing guide](/developers/tutorials/test-and-debug) to g
 
 Having a solid understanding of both front-end and basic contract development is required before you jump into this section. Once you've got those parts down, you're ready to dive into the further complexities of how Aion smart contracts are created.
 
-The [Fundamentals](/developers/fundamentals/avm-concepts) section walks through these points. Things like `@Callable` and `@Fallback` annotations are incredibly valuable when creating a dApp. It's a good idea to get a solid understanding of the packages section under fundamentals.
+The [Fundamentals](/developers/fundamentals/getting-started) section walks through these points. Things like [`@Callable`](/developers/fundamentals/aion-virtual-machine/callable-functions) and [`@Fallback`](/developers/fundamentals/aion-virtual-machine/fallback-functions) annotations are incredibly valuable when creating a dApp. It's a good idea to get a solid understanding of the packages section under fundamentals.
 
 ---
 
