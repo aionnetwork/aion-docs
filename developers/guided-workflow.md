@@ -7,8 +7,8 @@ description: This page walks you through the workflow you can take in order to b
 
 The development environment is where you spend most of the time creating applications and interacting with the blockchain. There are two major setups available.
 
-- [IntelliJ Plugin](/developers/tools/intellj-plugin/)
-- [Maven Command Line Interface Tool](/developers/tools/maven-cli/)
+- [IntelliJ Plugin](https://github.com/aionnetwork/docs/tree/master/developers/tools/intellij-plugin)
+- [Maven Command Line Interface Tool](https://github.com/aionnetwork/docs/tree/master/developers/tools/maven-cli)
 
 Both of these environments achieve the same goals, they just use different routes to get there. The IntelliJ plugin is generally easier to use since everything can be performed using a user interface. However, if you're not comfortable with IntelliJ, or just prefer another IDE or text editor, then you may prefer to use the Maven CLI tool.
 
@@ -28,7 +28,7 @@ The basic flow is:
 
 Once you've got the workflow down and have a solid understanding of the process for creating dApps, you are ready to create your first app. This app is incredibly basic and serves to show you how to use your chosen _deveplment environment_.
 
-Follow through the [IntelliJ end-to-end](/developers/tutorials/intellij-plugin/), or [Maven CLI end-to-end](/developers/tutorials/maven-cli/).
+Follow through the [IntelliJ end-to-end](https://github.com/aionnetwork/docs/tree/master/developers/tools/intellij-plugin), or [Maven CLI end-to-end](https://github.com/aionnetwork/docs/tree/master/developers/tools/maven-cli).
 
 ## Front End
 
@@ -36,20 +36,20 @@ Now that you're up to speed on how to create a simple application and store it o
 
 Examples of how to interact with the blockchain through each of these frameworks can be found on their respective examples pages:
 
-- [Web3.js Examples](/developers/apis/web3-js/)
-- [Ethers.js Examples](/developers/apis/ethers-js/)
+- [Web3.js Examples](https://github.com/aionnetwork/docs/tree/master/developers/apis/web3-js)
+- [Ethers.js Examples](https://github.com/aionnetwork/docs/tree/master/developers/apis/ethers-js)
 
 ## Testing
 
 You may have been able to get up to this point without having to do much testing. Test-driven development (TDD) is important in any programming disciple, but especially more-so in dApp development.
 
-Review the [end-to-end testing guide](/developers/tutorials/test-and-debug.md) to get a solid understanding of how to run tests within IntelliJ.
+Review the [end-to-end testing guide](https://github.com/aionnetwork/docs/blob/master/developers/tutorials/test-and-debug.md) to get a solid understanding of how to run tests within IntelliJ.
 
 ## Aion Fundamentals
 
 Having a solid understanding of both front-end and basic contract development is required before you jump into this section. Once you've got those parts down, you're ready to dive into the further complexities of how Aion smart contracts are created.
 
-The [Fundamentals](/developers/fundamentals/getting-started.md) section walks through these points. Things like [`@Callable`](/developers/fundamentals/aion-virtual-machine/callable-functions.md) and [`@Fallback`](/developers/fundamentals/aion-virtual-machine/fallback-functions.md) annotations are incredibly valuable when creating a dApp. It's a good idea to get a solid understanding of the packages section under fundamentals.
+The [Fundamentals](https://github.com/aionnetwork/docs/tree/master/developers/fundamentals) section walks through these points. Things like [`@Callable`](https://github.com/aionnetwork/docs/blob/master/developers/fundamentals/aion-virtual-machine/callable-functions.md) and [`@Fallback`](https://github.com/aionnetwork/docs/blob/master/developers/fundamentals/aion-virtual-machine/fallback-functions.md) annotations are incredibly valuable when creating a dApp. It's a good idea to get a solid understanding of the packages section under fundamentals.
 
 ---
 
