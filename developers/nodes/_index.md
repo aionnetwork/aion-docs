@@ -1,4 +1,0 @@
----
-title: Nodes
-description: A node is a computer that is connected to a network. In our case, each node is running the Aion kernel. Each node talks to other nodes on the network to do things like run applications, or confirm transactions. Unlike other networks, we have implemented the Aion virtual machine (AVM) on both the Java and Rust kernels. Operationally both these kernels function the same way and react identically when queried by the network. The purpose of having two kernels is for redundancy. If one of the kernels is compromised, the other kernel is able to take the weight and keep the network alive.
----
