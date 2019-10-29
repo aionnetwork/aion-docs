@@ -1,3 +1,3 @@
 ---
-title Makkii
+title: Makkii
 ---
