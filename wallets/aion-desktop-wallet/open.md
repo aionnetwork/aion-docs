@@ -1,5 +1,5 @@
 ---
-title: Wallets
+title: Open
 ---
 
 This page is under construction.

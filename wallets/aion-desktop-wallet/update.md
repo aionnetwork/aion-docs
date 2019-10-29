@@ -1,5 +1,5 @@
 ---
-title: Wallets
+title: Update
 ---
 
 This page is under construction.
