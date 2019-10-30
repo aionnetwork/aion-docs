@@ -2,4 +2,4 @@
 title: Aion Documentation 
 ---
 
-You've found the Aion documentation. It's not quite ready yet. Come back on November 4th!
+Welcome to the Aion Unity and Integration documentation. This site is a work in progress. The documents contained within this site may contain broken links and images. If you find any, please email [jennifer@aion.network](mailto:jennifer@aion.network).
