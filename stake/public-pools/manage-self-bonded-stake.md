@@ -1,5 +1,5 @@
 ---
-title: Manage Self-Bond
+title: Manage Self-Bonded Stake
 ---
 
 An ADS staking pool is eligible to receive delegated stake and produce PoS blocks only if the pool is in _active_ state. The pool is set to the _broken_ state if any of the following invariant is violated:

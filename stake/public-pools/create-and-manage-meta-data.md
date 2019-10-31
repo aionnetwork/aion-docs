@@ -1,5 +1,5 @@
 ---
-title: Manage Meta-Data
+title: Create and Manage Meta-Data
 ---
 
 ## Meta-data JSON File and URL

@@ -1,5 +1,5 @@
 ---
-title: Register
+title: Register a Pool
 ---
 
 To become an ADS staking pool and be listed by the foundation supported Unity staking interface, the pool operator must sign up to the Pool Registry with the following information:
