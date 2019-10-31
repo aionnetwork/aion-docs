@@ -2,7 +2,7 @@
 title: Account Creation and Management
 ---
 
-As mentioned in the [ADS public pool operator guide](https://learn.aion.network/docs/public-pool-operator), the staking pool operator is required to manage two keys: [management key](https://learn.aion.network/docs/public-pool-operator#section-management-key-cold-key-) and [block-signing key](https://learn.aion.network/docs/public-pool-operator#section-block-signing-key-hotkey-). In this guide, we will walk you through how you can create new accounts and export the keys.
+As mentioned in the [ADS public pool operator guide](/docs/stake/public-pools/pool-operator-guide), the staking pool operator is required to manage two keys: [management key](/docs/stake/public-pools/pool-operator-guide#management-key-cold-key) and [block-signing key](/docs/stake/public-pools/pool-operator-guide#block-signing-key-hotkey). In this guide, we will walk you through how you can create new accounts and export the keys.
 
 ## Java Client
 
