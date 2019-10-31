@@ -147,4 +147,4 @@ If you want to disable the internal miner, simply set `<mining>` to *false*.
 
 Follow the [Aion node(Java) installation using docker image guide](https://docs.aion.network/docs/nodes-java-install#section-docker-image).
 
-Replace `docker pull aionnetwork/aion:latest` to `aionfarbod/aion-kernel:0.4.2.2-amity-20191022`.
+Replace `docker pull aionnetwork/aion:latest` to `docker pull aionfarbod/aion-kernel:v1.0.rc2-20191031`.
