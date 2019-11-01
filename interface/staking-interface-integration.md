@@ -156,7 +156,7 @@ async function methodCall() {
     // Set value to be delegated
     web3.avm.contract.setValue(amountToDelegate);
 
-    // Make a delegation transation to the pool
+    // Make a call transation to the PoolRegistry
     let avmResponse = await web3.avm.contract.call.getPoolInfo(poolAddress);
 
     // Print the response to the console.
@@ -197,7 +197,7 @@ async function methodCall() {
     // Set value to be delegated
     web3.avm.contract.setValue(amountToDelegate);
 
-    // Make a delegation transation to the pool
+    // Make a call transation to the PoolRegistry
     let avmResponse = await web3.avm.contract.call.getRewards(poolAddress, delegatorAddress);
 
     // Print the response to the console.
@@ -238,7 +238,7 @@ async function methodCall() {
     // Set value to be delegated
     web3.avm.contract.setValue(amountToDelegate);
 
-    // Make a delegation transation to the pool
+    // Make a call transation to the PoolRegistry
     let avmResponse = await web3.avm.contract.call.getStake(poolAddress, delegatorAddress);
 
     // Print the response to the console.
@@ -252,12 +252,13 @@ Returns the total stake of a pool
 
 ```java
 /**
- * Returns the total stake of a pool.
- *
- * @param pool the pool address
- * @return the amount of stake
- */
-public static BigInteger getTotalStake(Address pool)
+* Returns the total stake of a pool.
+*
+* @param pool the pool address
+* @return the amount of stake. returned array has two elements:
+* first element represents the total stake of the pool, and the second element represents the stake that was transferred but has not been finalized yet.
+*/
+public static BigInteger[] getTotalStake(Address pool)
 ```
 
 Usage example
@@ -278,7 +279,7 @@ async function methodCall() {
     // Set value to be delegated
     web3.avm.contract.setValue(amountToDelegate);
 
-    // Make a delegation transation to the pool
+    // Make a call to the PoolRegistry
     let avmResponse = await web3.avm.contract.call.getTotalStake(poolAddress);
 
     // Print the response to the console.
@@ -324,7 +325,7 @@ To delegate stake, a user must send their coins to the PoolRegistry in a delegat
 
 When the user delegates to a pool, they invoke a function in the staking contract, with the cold address of the staking pool as a transaction parameter.
 
-![Delegate](https://files.readme.io/4273c74-delegate.png)
+![Delegate](/resources/interface/delegate.png)
 
 Smart contract reference - call delegate method https://github.com/aionnetwork/protocol_contracts/blob/master/pool-registry/src/main/java/org/aion/unity/PoolRegistry.java#L145
 
@@ -372,7 +373,7 @@ async function methodCall() {
 
 The un-delegation of stake is a **two-step process** (since unbonding of stake is involved). When a user calls the undelegate function in the PoolRegistry, an undelegateTo is triggered in the StakerRegistry, which returns the corresponding undelegateId, which uniquely identifies the thawing of this parcel of stake. After the thawing period has elapsed, any user can call the finalizeUndelegate function, either through the PoolRegistry or directly in the StakerRegistry with the unvoteId of the delegator, to release the liquid coins back to their account.
 
-![Undelegate](https://files.readme.io/083896f-undelegate.png)
+![Undelegate](/resources/interface/undelegate.png)
 
 ### Step 1: Initiate Undelegation
 
@@ -476,7 +477,7 @@ Contract reference
 *
 * @param pool the pool address
 */
-public static void redelegate(Address pool)
+public static void redelegateRewards(Address pool)
 ```
 
 Usage example
@@ -499,7 +500,7 @@ async function methodCall() {
     web3.avm.contract.setValue(amountToRedelegate);
 
     // Make a transation to the pool
-    let avmResponse = await web3.avm.contract.transaction.redelegate(poolAddress, fee);
+    let avmResponse = await web3.avm.contract.transaction.redelegateRewards(poolAddress, fee);
 
     // Print the response to the console.
     console.log(avmResponse);
@@ -515,9 +516,7 @@ A user can enable this feature after the fact of deligation as a separate transa
 – Opt-in auto rewards delegation: If the user did not opt into the auto-rewards delegation scheme, they can do so at any time while their stake is delegated, by sending a transaction to the PoolRegistry contract.  
 – Opt-out auto rewards delegation: If the user chooses to opt-out of the auto-rewards delegation scheme, they can do so at any time while their stake is delegated, by sending a transaction to the PoolRegistry contract.
 
-> Update with the newest scheme
-
-![Auto Redelegation](https://files.readme.io/873db16-auto-redelegation.png)
+![Auto Redelegation](/resources/interface/auto-redelegate.png)
 
 ### Enable auto-redelegation as a separate transaction
 
@@ -610,7 +609,7 @@ It's a two-step process: Initiate Transfer and Transfer Finalization
 
 > NOTE: pool operator cannot transfer their stake to another pool
 
-![Transfer](https://files.readme.io/71643d4-transfer.png)
+![Transfer](/resources/interface/stake-transfer.png)
 
 ### Step 1: Initiate Transfer
 
@@ -696,7 +695,7 @@ async function methodCall() {
 
  Rewards are continually withdrawn from a pool’s coinbase contract any time the stake apportionment in the pool changes (via a delegation, un-delegation, etc.) and managed by the PoolRegistry (see §2.14.1 for details). A withdraw is yet another trigger for the pool’s coinbase to be emptied of accumulated rewards (if any exist). Then, the F1 rewards sharing algorithm is invoked to compute the rewards owed to the delegator, which are promptly disbursed before winding down the transaction.
 
-![Withdrawal](https://files.readme.io/588336e-withdrawal.png)
+![Withdrawal](/resources/interface/withdrawal.png)
 
 Contract example
 
@@ -706,7 +705,7 @@ Contract example
  *
  * @param pool the pool address
  */
-public static BigInteger withdraw(Address pool)
+public static BigInteger withdrawRewards(Address pool)
 ```
 
 Usage example
@@ -727,7 +726,7 @@ web3.avm.contract.initBinding(contractAddress, abiObject, privateKey, web3);
 async function methodCall() {
 
     // Make a transation to the pool
-    let avmResponse = await web3.avm.contract.transaction.withdraw(poolAddress);
+    let avmResponse = await web3.avm.contract.transaction.withdrawRewards(poolAddress);
 
     // Print the response to the console.
     console.log(avmResponse);
