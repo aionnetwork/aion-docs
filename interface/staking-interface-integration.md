@@ -30,7 +30,7 @@ For interface providers (such as crypto wallets or exchange) there are built-in 
 
 ### Implementation Examples
 
-For advanced users, there's a set of Shell scripts provided by Aion to interact with the staking contract - [Unity Bootstrap](https://github.com/jeff-aion/UnityBootstrap)
+For advanced users, there's a set of Shell scripts provided by Aion to interact with the pool registry contract - [Unity Bootstrap](https://github.com/aionnetwork/staking_pool_scripts)
 
 ### Pool Registry Presentation
 
@@ -38,7 +38,7 @@ The user interface shall produce a list of all active and retired pools in the s
 
 #### Metadata-Proxy Server
 
-The user interface should retrieve the PoolRegistry and associated metadata from the metadata-proxy server (defined in §2.10 of [Engineering Design and Incentive Specification for Aion-Unity](https://github.com/aionnetwork/unity-engineering-spec)). If the metadata is malformed (i.e. any of the metadata rules defined in §2.10 are violated), the metadata will be unavailable on the proxy servers; UI should be designed to handle such scenarios.
+The user interface should retrieve the list of staking pools and associated metadata from the metadata-proxy server (defined in §2.10 of [Engineering Design and Incentive Specification for Aion-Unity](https://github.com/aionnetwork/unity-engineering-spec)). If the metadata is malformed (i.e. any of the metadata rules defined in §2.10 are violated), the metadata will be unavailable on the proxy servers; UI should be designed to handle such scenarios.
 
 UI should be configurable to query several metadata-proxy servers to promote diversity in metadata-proxy server providers.
 
@@ -59,7 +59,7 @@ The wallets should report some notion of up-time for a pool; this measure is cri
 
 The UI is responsible to produce notifications for all key life-cycle events for the pools a user has delegated staking rights to, to enable a user to make appropriate delegation decisions.
 
-Management Actions The UI must notify a user when a pool goes into the broken stake and changes its fees (§2.7 of [Engineering Design and Incentive Specification for Aion-Unity](https://github.com/aionnetwork/unity-engineering-spec)). Any broken pools must be identified. The user should be able to transfer any delegations from a broken pool to an active pool at any time.
+Management Actions: The UI must notify a user when a pool goes into the broken stake, changes its metadata or its fees (§2.7 of [Engineering Design and Incentive Specification for Aion-Unity](https://github.com/aionnetwork/unity-engineering-spec)). Any broken pools must be identified. The user should be able to transfer any delegations from a broken pool to an active pool at any time.
 
 Inactive and Underperforming Pools The should monitor the attractiveness score (§2.15.1 of [Engineering Design and Incentive Specification for Aion-Unity](https://github.com/aionnetwork/unity-engineering-spec)) of all the pools the user has delegated stake too, to notify the user of any significant drops in this metric. Particularly, any significant drops in this metric imply one or more of the following things:
 
@@ -126,7 +126,7 @@ async function logs(){
 
 ### Get Pool Information
 
-Function that returns pool information: coinbaseAddress, commissionRate, isSelfStakeSatisfied(pool), metaDataHash, metaDataUrl
+Function that returns pool information: coinbaseAddress, commissionRate, poolState, metaDataHash, metaDataUrl
 
 ```java
 /**
@@ -207,7 +207,7 @@ async function methodCall() {
 
 ### Get Stake
 
-A function that returns the stake of a delegator to a pool
+A function that returns the stake of a delegator in a pool
 
 ```java
 /**
@@ -248,7 +248,9 @@ async function methodCall() {
 
 ### Get Total Stake
 
-Returns the total stake of a pool
+Returns array that has two elements:
+ 1. the total stake of the pool
+ 2. the stake that was transferred but has not been finalized yet.
 
 ```java
 /**
@@ -293,17 +295,21 @@ async function methodCall() {
 
 There are several instances of “asynchronous” tasks in the Aion-Unity staking and stake delegation systems:
 
-- Transfer Stake: Upon transfer of stake from one staker to another in the Staker Registry contract, the coins must be ineffective in PoS and immobile (not liquid) for at-least the transfer-pending period [§2.4 Engineering Design and Incentive Specification for Aion Unity](https://github.com/aionnetwork/unity-engineering-spec).
+- Undelegation of Stake: This is a managed-wrapper around the unbond functionality ex- posed in the Staker Registry.
+    - Incentive: A fixed fee incentive mechanism should be implemented (as defined for the unbond function in Staker Registry).
+- Transfer Delegated Stake: This is a managed-wrapper around the transfer functionality exposed in the Staker Registry.
+    - Incentive: A fixed fee incentive mechanism should be implemented (as defined for the unbond function in Staker Registry §3.4).
+- Auto Rewards Delegation: Rewards earned by delegators in the system can be automati- cally cast to stake on behalf of the delegator.
+    - Incentive: The delegator must specify a fee as a percentage of the coin transfer amount (with four (4) decimal precision) that callers of the finalization function could collect. Bounty-seekers could then scrape accounts registered for this finalization function; they would wait for enough coins to be accumulated such that the fee collected upon the function call exceeds the caller’s transaction cost by some profit threshold.
+- Update Commission Rate: Update of the commission rate (by an operator) is subject to a lock-out period to give delegators time to react to fee changes, before rate-change is imposed.
+    - Incentive: This is the only asynchronous transaction in the Pool Registry that exclusively affects the pool operators. It is assumed that pool operators have sufficient motivation to promptly come back online after the lockout period has elapsed in order to make the finalization transaction to make the new commission rate effective. There- fore, no incentive mechanisms shall be built-in for this call.
 
-- Auto Rewards Delegation: Rewards earned by delegators in the system can be “auto-delegated”; i.e. coins earned as part of block rewards can be automatically cast to stake on behalf of the delegator.
-
-- Undelegate: stakes delegated to a pool can be undelegated by the delegator.
 
 These features are asynchronous in the sense that they cannot be implemented within one transaction initiated by the user; they require some action by the protocol itself (not initiated by a user), after some condition on contract or chain state has been met.
 
-In the case of unbonding and transfer stake, they are examples of time-locks, which require an action from the system, delayed into the future from some trigger-action. On the other hand, auto rewards delegation (in it’s most trivial incarnation) is a case of the protocol taking an action on behalf of the user upon an event (disbursement of rewards).
+In the case of unbonding, transfer stake, and update comission rate they are examples of time-locks, which require an action from the system, delayed into the future from some trigger-action. On the other hand, auto rewards delegation (in it’s most trivial incarnation) is a case of the protocol taking an action on behalf of the user upon an event (disbursement of rewards).
 
-Therefore, we had to flatten the aforementioned features into two disparate transactions: an initiating transaction and a finalizing transaction. The initiating transaction is sent by a user looking to affect their state (unbond, transfer or enable auto rewards delegation). The finalizing transaction can be performed by anyone in the system (including the user himself) to unwind the initiated action.
+Therefore, we had to flatten the aforementioned features into two disparate transactions: an initiating transaction and a finalizing transaction. The initiating transaction is sent by a user looking to affect their state (unbond, transfer or enable auto rewards delegation, update comission rate). For unbond, transfer or enable auto rewards delegation the finalizing transaction can be performed by anyone in the system (including the user himself) to unwind the initiated action. For update comission rate it has to be performed by pool operator.
 
 We considered incentives that people would have to make finalization calls on other users’ behalf.
 
@@ -371,7 +377,7 @@ async function methodCall() {
 
 ## Undelegate
 
-The un-delegation of stake is a **two-step process** (since unbonding of stake is involved). When a user calls the undelegate function in the PoolRegistry, an undelegateTo is triggered in the StakerRegistry, which returns the corresponding undelegateId, which uniquely identifies the thawing of this parcel of stake. After the thawing period has elapsed, any user can call the finalizeUndelegate function, either through the PoolRegistry or directly in the StakerRegistry with the unvoteId of the delegator, to release the liquid coins back to their account.
+The un-delegation of stake is a **two-step process** (since unbonding of stake is involved). When a user calls the undelegate function in the PoolRegistry, an undelegateTo is triggered in the StakerRegistry, which returns the corresponding undelegateId, which uniquely identifies the thawing of this parcel of stake. After the thawing period has elapsed, any user can call the finalizeUndelegate function, either through the PoolRegistry or directly in the StakerRegistry with the unvoteId (undelegateId) of the delegator, to release the liquid coins back to their account.
 
 ![Undelegate](/resources/interface/undelegate.png)
 
