@@ -30,7 +30,7 @@ For interface providers (such as crypto wallets or exchange) there are built-in 
 
 ### Implementation Examples
 
-For advanced users, there's a set of Shell scripts provided by Aion to interact with the staking contract - [Unity Bootstrap](https://github.com/jeff-aion/UnityBootstrap)
+For advanced users, there's a set of Shell scripts provided by Aion to interact with the pool registry contract - [Unity Bootstrap](https://github.com/aionnetwork/staking_pool_scripts)
 
 ### Pool Registry Presentation
 
@@ -38,7 +38,7 @@ The user interface shall produce a list of all active and retired pools in the s
 
 #### Metadata-Proxy Server
 
-The user interface should retrieve the PoolRegistry and associated metadata from the metadata-proxy server (defined in §2.10 of [Engineering Design and Incentive Specification for Aion-Unity](https://github.com/aionnetwork/unity-engineering-spec)). If the metadata is malformed (i.e. any of the metadata rules defined in §2.10 are violated), the metadata will be unavailable on the proxy servers; UI should be designed to handle such scenarios.
+The user interface should retrieve the list of staking pools and associated metadata from the metadata-proxy server (defined in §2.10 of [Engineering Design and Incentive Specification for Aion-Unity](https://github.com/aionnetwork/unity-engineering-spec)). If the metadata is malformed (i.e. any of the metadata rules defined in §2.10 are violated), the metadata will be unavailable on the proxy servers; UI should be designed to handle such scenarios.
 
 UI should be configurable to query several metadata-proxy servers to promote diversity in metadata-proxy server providers.
 
@@ -59,7 +59,7 @@ The wallets should report some notion of up-time for a pool; this measure is cri
 
 The UI is responsible to produce notifications for all key life-cycle events for the pools a user has delegated staking rights to, to enable a user to make appropriate delegation decisions.
 
-Management Actions The UI must notify a user when a pool goes into the broken stake and changes its fees (§2.7 of [Engineering Design and Incentive Specification for Aion-Unity](https://github.com/aionnetwork/unity-engineering-spec)). Any broken pools must be identified. The user should be able to transfer any delegations from a broken pool to an active pool at any time.
+Management Actions: The UI must notify a user when a pool goes into the broken stake, changes its metadata or its fees (§2.7 of [Engineering Design and Incentive Specification for Aion-Unity](https://github.com/aionnetwork/unity-engineering-spec)). Any broken pools must be identified. The user should be able to transfer any delegations from a broken pool to an active pool at any time.
 
 Inactive and Underperforming Pools The should monitor the attractiveness score (§2.15.1 of [Engineering Design and Incentive Specification for Aion-Unity](https://github.com/aionnetwork/unity-engineering-spec)) of all the pools the user has delegated stake too, to notify the user of any significant drops in this metric. Particularly, any significant drops in this metric imply one or more of the following things:
 
@@ -126,7 +126,7 @@ async function logs(){
 
 ### Get Pool Information
 
-Function that returns pool information: coinbaseAddress, commissionRate, isSelfStakeSatisfied(pool), metaDataHash, metaDataUrl
+Function that returns pool information: coinbaseAddress, commissionRate, poolState, metaDataHash, metaDataUrl
 
 ```java
 /**
@@ -156,7 +156,7 @@ async function methodCall() {
     // Set value to be delegated
     web3.avm.contract.setValue(amountToDelegate);
 
-    // Make a delegation transation to the pool
+    // Make a call transation to the PoolRegistry
     let avmResponse = await web3.avm.contract.call.getPoolInfo(poolAddress);
 
     // Print the response to the console.
@@ -197,7 +197,7 @@ async function methodCall() {
     // Set value to be delegated
     web3.avm.contract.setValue(amountToDelegate);
 
-    // Make a delegation transation to the pool
+    // Make a call transation to the PoolRegistry
     let avmResponse = await web3.avm.contract.call.getRewards(poolAddress, delegatorAddress);
 
     // Print the response to the console.
@@ -207,7 +207,7 @@ async function methodCall() {
 
 ### Get Stake
 
-A function that returns the stake of a delegator to a pool
+A function that returns the stake of a delegator in a pool
 
 ```java
 /**
@@ -238,7 +238,7 @@ async function methodCall() {
     // Set value to be delegated
     web3.avm.contract.setValue(amountToDelegate);
 
-    // Make a delegation transation to the pool
+    // Make a call transation to the PoolRegistry
     let avmResponse = await web3.avm.contract.call.getStake(poolAddress, delegatorAddress);
 
     // Print the response to the console.
@@ -248,16 +248,19 @@ async function methodCall() {
 
 ### Get Total Stake
 
-Returns the total stake of a pool
+Returns array that has two elements:
+ 1. the total stake of the pool
+ 2. the stake that was transferred but has not been finalized yet.
 
 ```java
 /**
- * Returns the total stake of a pool.
- *
- * @param pool the pool address
- * @return the amount of stake
- */
-public static BigInteger getTotalStake(Address pool)
+* Returns the total stake of a pool.
+*
+* @param pool the pool address
+* @return the amount of stake. returned array has two elements:
+* first element represents the total stake of the pool, and the second element represents the stake that was transferred but has not been finalized yet.
+*/
+public static BigInteger[] getTotalStake(Address pool)
 ```
 
 Usage example
@@ -278,7 +281,7 @@ async function methodCall() {
     // Set value to be delegated
     web3.avm.contract.setValue(amountToDelegate);
 
-    // Make a delegation transation to the pool
+    // Make a call to the PoolRegistry
     let avmResponse = await web3.avm.contract.call.getTotalStake(poolAddress);
 
     // Print the response to the console.
@@ -292,17 +295,21 @@ async function methodCall() {
 
 There are several instances of “asynchronous” tasks in the Aion-Unity staking and stake delegation systems:
 
-- Transfer Stake: Upon transfer of stake from one staker to another in the Staker Registry contract, the coins must be ineffective in PoS and immobile (not liquid) for at-least the transfer-pending period [§2.4 Engineering Design and Incentive Specification for Aion Unity](https://github.com/aionnetwork/unity-engineering-spec).
+- Undelegation of Stake: This is a managed-wrapper around the unbond functionality ex- posed in the Staker Registry.
+    - Incentive: A fixed fee incentive mechanism should be implemented (as defined for the unbond function in Staker Registry).
+- Transfer Delegated Stake: This is a managed-wrapper around the transfer functionality exposed in the Staker Registry.
+    - Incentive: A fixed fee incentive mechanism should be implemented (as defined for the unbond function in Staker Registry §3.4).
+- Auto Rewards Delegation: Rewards earned by delegators in the system can be automati- cally cast to stake on behalf of the delegator.
+    - Incentive: The delegator must specify a fee as a percentage of the coin transfer amount (with four (4) decimal precision) that callers of the finalization function could collect. Bounty-seekers could then scrape accounts registered for this finalization function; they would wait for enough coins to be accumulated such that the fee collected upon the function call exceeds the caller’s transaction cost by some profit threshold.
+- Update Commission Rate: Update of the commission rate (by an operator) is subject to a lock-out period to give delegators time to react to fee changes, before rate-change is imposed.
+    - Incentive: This is the only asynchronous transaction in the Pool Registry that exclusively affects the pool operators. It is assumed that pool operators have sufficient motivation to promptly come back online after the lockout period has elapsed in order to make the finalization transaction to make the new commission rate effective. There- fore, no incentive mechanisms shall be built-in for this call.
 
-- Auto Rewards Delegation: Rewards earned by delegators in the system can be “auto-delegated”; i.e. coins earned as part of block rewards can be automatically cast to stake on behalf of the delegator.
-
-- Undelegate: stakes delegated to a pool can be undelegated by the delegator.
 
 These features are asynchronous in the sense that they cannot be implemented within one transaction initiated by the user; they require some action by the protocol itself (not initiated by a user), after some condition on contract or chain state has been met.
 
-In the case of unbonding and transfer stake, they are examples of time-locks, which require an action from the system, delayed into the future from some trigger-action. On the other hand, auto rewards delegation (in it’s most trivial incarnation) is a case of the protocol taking an action on behalf of the user upon an event (disbursement of rewards).
+In the case of unbonding, transfer stake, and update comission rate they are examples of time-locks, which require an action from the system, delayed into the future from some trigger-action. On the other hand, auto rewards delegation (in it’s most trivial incarnation) is a case of the protocol taking an action on behalf of the user upon an event (disbursement of rewards).
 
-Therefore, we had to flatten the aforementioned features into two disparate transactions: an initiating transaction and a finalizing transaction. The initiating transaction is sent by a user looking to affect their state (unbond, transfer or enable auto rewards delegation). The finalizing transaction can be performed by anyone in the system (including the user himself) to unwind the initiated action.
+Therefore, we had to flatten the aforementioned features into two disparate transactions: an initiating transaction and a finalizing transaction. The initiating transaction is sent by a user looking to affect their state (unbond, transfer or enable auto rewards delegation, update comission rate). For unbond, transfer or enable auto rewards delegation the finalizing transaction can be performed by anyone in the system (including the user himself) to unwind the initiated action. For update comission rate it has to be performed by pool operator.
 
 We considered incentives that people would have to make finalization calls on other users’ behalf.
 
@@ -324,7 +331,7 @@ To delegate stake, a user must send their coins to the PoolRegistry in a delegat
 
 When the user delegates to a pool, they invoke a function in the staking contract, with the cold address of the staking pool as a transaction parameter.
 
-![Delegate](https://files.readme.io/4273c74-delegate.png)
+![Delegate](/resources/interface/delegate.png)
 
 Smart contract reference - call delegate method https://github.com/aionnetwork/protocol_contracts/blob/master/pool-registry/src/main/java/org/aion/unity/PoolRegistry.java#L145
 
@@ -370,9 +377,9 @@ async function methodCall() {
 
 ## Undelegate
 
-The un-delegation of stake is a **two-step process** (since unbonding of stake is involved). When a user calls the undelegate function in the PoolRegistry, an undelegateTo is triggered in the StakerRegistry, which returns the corresponding undelegateId, which uniquely identifies the thawing of this parcel of stake. After the thawing period has elapsed, any user can call the finalizeUndelegate function, either through the PoolRegistry or directly in the StakerRegistry with the unvoteId of the delegator, to release the liquid coins back to their account.
+The un-delegation of stake is a **two-step process** (since unbonding of stake is involved). When a user calls the undelegate function in the PoolRegistry, an undelegateTo is triggered in the StakerRegistry, which returns the corresponding undelegateId, which uniquely identifies the thawing of this parcel of stake. After the thawing period has elapsed, any user can call the finalizeUndelegate function, either through the PoolRegistry or directly in the StakerRegistry with the unvoteId (undelegateId) of the delegator, to release the liquid coins back to their account.
 
-![Undelegate](https://files.readme.io/083896f-undelegate.png)
+![Undelegate](/resources/interface/undelegate.png)
 
 ### Step 1: Initiate Undelegation
 
@@ -476,7 +483,7 @@ Contract reference
 *
 * @param pool the pool address
 */
-public static void redelegate(Address pool)
+public static void redelegateRewards(Address pool)
 ```
 
 Usage example
@@ -499,7 +506,7 @@ async function methodCall() {
     web3.avm.contract.setValue(amountToRedelegate);
 
     // Make a transation to the pool
-    let avmResponse = await web3.avm.contract.transaction.redelegate(poolAddress, fee);
+    let avmResponse = await web3.avm.contract.transaction.redelegateRewards(poolAddress, fee);
 
     // Print the response to the console.
     console.log(avmResponse);
@@ -515,9 +522,7 @@ A user can enable this feature after the fact of deligation as a separate transa
 – Opt-in auto rewards delegation: If the user did not opt into the auto-rewards delegation scheme, they can do so at any time while their stake is delegated, by sending a transaction to the PoolRegistry contract.  
 – Opt-out auto rewards delegation: If the user chooses to opt-out of the auto-rewards delegation scheme, they can do so at any time while their stake is delegated, by sending a transaction to the PoolRegistry contract.
 
-> Update with the newest scheme
-
-![Auto Redelegation](https://files.readme.io/873db16-auto-redelegation.png)
+![Auto Redelegation](/resources/interface/auto-redelegate.png)
 
 ### Enable auto-redelegation as a separate transaction
 
@@ -610,7 +615,7 @@ It's a two-step process: Initiate Transfer and Transfer Finalization
 
 > NOTE: pool operator cannot transfer their stake to another pool
 
-![Transfer](https://files.readme.io/71643d4-transfer.png)
+![Transfer](/resources/interface/stake-transfer.png)
 
 ### Step 1: Initiate Transfer
 
@@ -696,7 +701,7 @@ async function methodCall() {
 
  Rewards are continually withdrawn from a pool’s coinbase contract any time the stake apportionment in the pool changes (via a delegation, un-delegation, etc.) and managed by the PoolRegistry (see §2.14.1 for details). A withdraw is yet another trigger for the pool’s coinbase to be emptied of accumulated rewards (if any exist). Then, the F1 rewards sharing algorithm is invoked to compute the rewards owed to the delegator, which are promptly disbursed before winding down the transaction.
 
-![Withdrawal](https://files.readme.io/588336e-withdrawal.png)
+![Withdrawal](/resources/interface/withdrawal.png)
 
 Contract example
 
@@ -706,7 +711,7 @@ Contract example
  *
  * @param pool the pool address
  */
-public static BigInteger withdraw(Address pool)
+public static BigInteger withdrawRewards(Address pool)
 ```
 
 Usage example
@@ -727,7 +732,7 @@ web3.avm.contract.initBinding(contractAddress, abiObject, privateKey, web3);
 async function methodCall() {
 
     // Make a transation to the pool
-    let avmResponse = await web3.avm.contract.transaction.withdraw(poolAddress);
+    let avmResponse = await web3.avm.contract.transaction.withdrawRewards(poolAddress);
 
     // Print the response to the console.
     console.log(avmResponse);
