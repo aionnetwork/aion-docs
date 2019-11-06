@@ -383,6 +383,8 @@ The un-delegation of stake is a **two-step process** (since unbonding of stake i
 
 When a user decides that they want to withdraw any fraction of their funds from the PoolRegistry, they can perform an undelegate action in the PoolRegistry contract. For a period measured in a number of blocks since the un-staking action, the coin will be in the thawing state; it will be held in the staking contract, but will neither contribute to stake securing the system nor will it be liquid until the unbonding period has elapsed.
 
+Undelegation lockout period is 8640 blocks (~ 24 hours).
+
 Smart contract reference - call undelegate method https://github.com/aionnetwork/protocol_contracts/blob/master/pool-registry/src/main/java/org/aion/unity/PoolRegistry.java
 
 Contract reference
@@ -606,6 +608,8 @@ async function methodCall() {
 ## Transfer Delegation
 
 A delegator must initiate a transfer of stake between stakers (pools) at PoolRegistry, which in-turn reflects the transfer in the StakerRegistry. A transferId is returned, which uniquely identifies this transfer. After the transfer lockout period has elapsed, any user can call finalize through PoolRegistry to move the stake between the source and destination stakers.
+
+Transfer pending lockout period 60 blocks (~ 10 minutes)
 
 It's a two-step process: Initiate Transfer and Transfer Finalization
 
