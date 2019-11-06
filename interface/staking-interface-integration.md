@@ -1,5 +1,5 @@
 ---
-title: Staking Interfact Integration
+title: Staking Interface Integration
 ---
 
 ## Staking Interface Integration Guide
@@ -71,15 +71,13 @@ This way, if the pool ceases to operate without being properly retired, it’s d
 
 Aion Web3js - getpastlogs function documentation used in this example https://github.com/aionnetwork/aion_web3/wiki/API:-web3-eth#getpastlogs
 
-Usage example
+Usage example using aion-web3
 
-```js
+```java
 /**
 Allows pulling the list of the registered pools.
 Implementers are gonna have to parse contract events to get the list of all pools and their states.
 */
-
-// showListOfAllPools()
 
 const Web3 = require("aion-web3");
 
@@ -138,9 +136,9 @@ Function that returns pool information: coinbaseAddress, commissionRate, poolSta
 public static byte[] getPoolInfo(Address pool)
 ```
 
-Usage example
+Usage example using aion-web3
 
-```js
+```java
 const web3 = new Web3(new Web3.providers.HttpProvider("NODE_URL"));
 const contractAddress = "POOL_REGISTRY_CONTRACT_ADDRESS";
 const abi = "POOL_REGISTRY_ABI";
@@ -179,9 +177,9 @@ A function that returns the outstanding rewards of a delegator
 public static BigInteger getRewards(Address pool, Address delegator)
 ```
 
-Usage example
+Usage example using aion-web3
 
-```js
+```java
 const web3 = new Web3(new Web3.providers.HttpProvider("NODE_URL"));
 const contractAddress = "POOL_REGISTRY_CONTRACT_ADDRESS";
 const abi = "POOL_REGISTRY_ABI";
@@ -220,9 +218,9 @@ A function that returns the stake of a delegator in a pool
 public static BigInteger getStake(Address pool, Address delegator)
 ```
 
-Usage example
+Usage example using aion-web3
 
-```js
+```java
 const web3 = new Web3(new Web3.providers.HttpProvider("NODE_URL"));
 const contractAddress = "POOL_REGISTRY_CONTRACT_ADDRESS";
 const abi = "POOL_REGISTRY_ABI";
@@ -263,9 +261,9 @@ Returns array that has two elements:
 public static BigInteger[] getTotalStake(Address pool)
 ```
 
-Usage example
+Usage example using aion-web3
 
-```js
+```java
 const web3 = new Web3(new Web3.providers.HttpProvider("NODE_URL"));
 const contractAddress = "POOL_REGISTRY_CONTRACT_ADDRESS";
 const abi = "POOL_REGISTRY_ABI";
@@ -333,7 +331,7 @@ When the user delegates to a pool, they invoke a function in the staking contrac
 
 ![Delegate](/resources/interface/delegate.png)
 
-Smart contract reference - call delegate method https://github.com/aionnetwork/protocol_contracts/blob/master/pool-registry/src/main/java/org/aion/unity/PoolRegistry.java#L145
+Smart contract reference - call delegate method https://github.com/aionnetwork/protocol_contracts/blob/master/pool-registry/src/main/java/org/aion/unity/PoolRegistry.java
 
 PoolRegistry contract method:
 
@@ -346,11 +344,11 @@ PoolRegistry contract method:
 public static void delegate(Address pool)
 ```
 
-Aion Web3js interaction example - https://beta-docs.aion.network/developers/apis/web3-js/examples/
+For advanced users, there's a set of Shell scripts provided by Aion to interact with the pool registry contract - [Unity Bootstrap](https://github.com/aionnetwork/staking_pool_scripts)
 
-Usage example
+Usage example using aion-web3
 
-```js
+```java
 const web3 = new Web3(new Web3.providers.HttpProvider("NODE_URL"));
 const privateKey = "PRIVATE_KEY";
 const contractAddress = "POOL_REGISTRY_CONTRACT_ADDRESS";
@@ -385,7 +383,9 @@ The un-delegation of stake is a **two-step process** (since unbonding of stake i
 
 When a user decides that they want to withdraw any fraction of their funds from the PoolRegistry, they can perform an undelegate action in the PoolRegistry contract. For a period measured in a number of blocks since the un-staking action, the coin will be in the thawing state; it will be held in the staking contract, but will neither contribute to stake securing the system nor will it be liquid until the unbonding period has elapsed.
 
-Smart contract reference - call undelegate method https://github.com/aionnetwork/protocol_contracts/blob/master/pool-registry/src/main/java/org/aion/unity/PoolRegistry.java#L202
+Undelegation lockout period is 8640 blocks (~ 24 hours).
+
+Smart contract reference - call undelegate method https://github.com/aionnetwork/protocol_contracts/blob/master/pool-registry/src/main/java/org/aion/unity/PoolRegistry.java
 
 Contract reference
 
@@ -400,11 +400,11 @@ Contract reference
 public static long undelegate(Address pool, BigInteger amount, BigInteger fee)
 ```
 
-Aion Web3js interaction example - https://beta-docs.aion.network/developers/apis/web3-js/examples/
+For advanced users, there's a set of Shell scripts provided by Aion to interact with the pool registry contract - [Unity Bootstrap](https://github.com/aionnetwork/staking_pool_scripts)
 
-Usage example
+Usage example using aion-web3
 
-```js
+```java
 const web3 = new Web3(new Web3.providers.HttpProvider("NODE_URL"));
 const privateKey = "PRIVATE_KEY";
 const contractAddress = "POOL_REGISTRY_CONTRACT_ADDRESS";
@@ -442,11 +442,11 @@ Contract reference
 public static void finalizeUndelegate(long id)
 ```
 
-Aion Web3js interaction example - https://beta-docs.aion.network/developers/apis/web3-js/examples/
+For advanced users, there's a set of Shell scripts provided by Aion to interact with the pool registry contract - [Unity Bootstrap](https://github.com/aionnetwork/staking_pool_scripts)
 
-Usage example
+Usage example using aion-web3
 
-```js
+```java
 const web3 = new Web3(new Web3.providers.HttpProvider("NODE_URL"));
 const privateKey = "PRIVATE_KEY";
 const contractAddress = "POOL_REGISTRY_CONTRACT_ADDRESS";
@@ -473,7 +473,7 @@ async function methodCall() {
 
 Delegates block rewards to a pool
 
-Smart Contract reference https://github.com/aionnetwork/protocol_contracts/blob/master/pool-registry/src/main/java/org/aion/unity/PoolRegistry.java#L240
+Smart Contract reference https://github.com/aionnetwork/protocol_contracts/blob/master/pool-registry/src/main/java/org/aion/unity/PoolRegistry.java
 
 Contract reference
 
@@ -486,9 +486,9 @@ Contract reference
 public static void redelegateRewards(Address pool)
 ```
 
-Usage example
+Usage example using aion-web3
 
-```js
+```java
 const web3 = new Web3(new Web3.providers.HttpProvider("NODE_URL"));
 const privateKey = "PRIVATE_KEY";
 const contractAddress = "POOL_REGISTRY_CONTRACT_ADDRESS";
@@ -538,11 +538,11 @@ Contract reference
 public static void enableAutoRewardsDelegation(Address pool, int feePercentage)
 ```
 
-Aion Web3js interaction example - https://beta-docs.aion.network/developers/apis/web3-js/examples/
+For advanced users, there's a set of Shell scripts provided by Aion to interact with the pool registry contract - [Unity Bootstrap](https://github.com/aionnetwork/staking_pool_scripts)
 
-Usage example
+Usage example using aion-web3
 
-```js
+```java
 const web3 = new Web3(new Web3.providers.HttpProvider("NODE_URL"));
 const privateKey = "PRIVATE_KEY";
 const contractAddress = "POOL_REGISTRY_CONTRACT_ADDRESS";
@@ -578,11 +578,11 @@ Contract reference
 public static void disableAutoRewardsDedelegation(Address pool)
 ```
 
-Aion Web3js interaction example - https://beta-docs.aion.network/developers/apis/web3-js/examples/
+For advanced users, there's a set of Shell scripts provided by Aion to interact with the pool registry contract - [Unity Bootstrap](https://github.com/aionnetwork/staking_pool_scripts)
 
-Usage example
+Usage example using aion-web3
 
-```js
+```java
 const web3 = new Web3(new Web3.providers.HttpProvider("NODE_URL"));
 const privateKey = "PRIVATE_KEY";
 const contractAddress = "POOL_REGISTRY_CONTRACT_ADDRESS";
@@ -609,6 +609,8 @@ async function methodCall() {
 
 A delegator must initiate a transfer of stake between stakers (pools) at PoolRegistry, which in-turn reflects the transfer in the StakerRegistry. A transferId is returned, which uniquely identifies this transfer. After the transfer lockout period has elapsed, any user can call finalize through PoolRegistry to move the stake between the source and destination stakers.
 
+Transfer pending lockout period 60 blocks (~ 10 minutes)
+
 It's a two-step process: Initiate Transfer and Transfer Finalization
 
 – Transfer-delegation: The user should be able to, without triggering the unbonding period, transfer the delegation of any proportion of their stake to another staking pool.
@@ -632,11 +634,11 @@ It's a two-step process: Initiate Transfer and Transfer Finalization
     public static long transferDelegation(Address fromPool, Address toPool, BigInteger amount, BigInteger fee)
 ```
 
-Aion Web3js interaction example - https://beta-docs.aion.network/developers/apis/web3-js/examples/
+For advanced users, there's a set of Shell scripts provided by Aion to interact with the pool registry contract - [Unity Bootstrap](https://github.com/aionnetwork/staking_pool_scripts)
 
-Usage example
+Usage example using aion-web3
 
-```js
+```java
 const web3 = new Web3(new Web3.providers.HttpProvider("NODE_URL"));
 const privateKey = "PRIVATE_KEY";
 const contractAddress = "POOL_REGISTRY_CONTRACT_ADDRESS";
@@ -670,11 +672,11 @@ async function methodCall() {
 public static void finalizeTransfer(long id)
 ```
 
-Aion Web3js interaction example - https://beta-docs.aion.network/developers/apis/web3-js/examples/
+For advanced users, there's a set of Shell scripts provided by Aion to interact with the pool registry contract - [Unity Bootstrap](https://github.com/aionnetwork/staking_pool_scripts)
 
-Usage example
+Usage example using aion-web3
 
-```js
+```java
 const web3 = new Web3(new Web3.providers.HttpProvider("NODE_URL"));
 const privateKey = "PRIVATE_KEY";
 const contractAddress = "POOL_REGISTRY_CONTRACT_ADDRESS";
@@ -714,9 +716,9 @@ Contract example
 public static BigInteger withdrawRewards(Address pool)
 ```
 
-Usage example
+Usage example using aion-web3
 
-```js
+```java
 const web3 = new Web3(new Web3.providers.HttpProvider("NODE_URL"));
 const privateKey = "PRIVATE_KEY";
 const contractAddress = "POOL_REGISTRY_CONTRACT_ADDRESS";
